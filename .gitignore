@@ -9,9 +9,14 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+# This repo is pnpm-only. Extra lockfiles from a stray npm/yarn install
+# would desync CI's frozen pnpm-lock.yaml.
+package-lock.json
+yarn.lock
 
-# testing
+# testing / linter cache
 /coverage
+.eslintcache
 
 # next.js
 /.next/
