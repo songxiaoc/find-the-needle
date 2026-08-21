@@ -4,7 +4,7 @@
  * The pixel look uses a ROUNDED BOLD display face (Fredoka), NOT an 8-bit
  * pixel font — pixel fonts (Press Start 2P et al.) wreck prose readability and
  * SEO. The pixel feel comes from frames / hard shadows / bevels. See
- * docs/PITFALLS.md and docs/ui-design-pixel.md.
+ * docs/PITFALLS.md.
  *
  * - display / body  → Fredoka       (rounded, bold-capable, readable for prose)
  * - mono            → JetBrains Mono (tiny data labels, prices, version stamps)

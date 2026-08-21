@@ -4,7 +4,7 @@
  * These are inert unless you add them to elements, so it's safe to import
  * even on a non-pixel site (they just won't be used). All hard shadows /
  * outlines read from --ink (set by the pixel token preset). Zero blur, ever
- * — CSS blur shadows don't read as "pixel". See docs/ui-design-pixel.md.
+ * — CSS blur shadows don't read as "pixel". See docs/PITFALLS.md.
  *
  * Activate by importing this from global.css — see docs/THEMES.md.
  * ════════════════════════════════════════════════════════════════════════ */

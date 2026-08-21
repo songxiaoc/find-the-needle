@@ -43,6 +43,8 @@
 | `final-cta` | 收尾 CTA 横幅（title + description + CTA）。 |
 | `latest-guides` | 最近更新的 N 篇 guide（运行期数据）。 |
 | `category-grid` | 每个 guide 分类一张卡（数量取自 registry）。 |
+| `database-stats` | 从已发布 Entity 汇总的四格数据（无记录时自动隐藏）。 |
+| `entity-index` | 每个 Entity 分类的预览行（空分类自动隐藏）。 |
 | `faq` | Q&A 手风琴（同时输出 FAQ JSON-LD）。 |
 
 内容类 block（`code-cards` / `tier-grid` / `step-by-step` / `card-list`）可带一个可选 `href` →
