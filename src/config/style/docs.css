@@ -1,0 +1,32 @@
+/* Scoped to the (docs) route group only — imported by its layout, not by
+ * global.css. Fumadocs ships its own reset and typography, so the /docs section
+ * deliberately does not inherit prose.css; these rules only pull fumadocs back
+ * toward the site's tokens where the two disagree. */
+@import 'tailwindcss';
+@import 'fumadocs-ui/css/neutral.css';
+@import 'fumadocs-ui/css/preset.css';
+
+/* Fumadocs paints its own page background; use the active theme's instead. */
+body {
+  background-color: var(--background);
+}
+
+/* Fumadocs' bold is heavier than the site's body font carries well. */
+.docs strong {
+  font-weight: 500;
+}
+
+.docs ul li {
+  list-style-type: square;
+  margin-left: 1em;
+  line-height: 2em;
+}
+
+.docs h2 {
+  font-size: 1.5em;
+}
+
+/* Accent inline links, but leave heading anchors ('#') muted. */
+.docs a:not([href^='#']) {
+  color: var(--primary);
+}

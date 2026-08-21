@@ -1,0 +1,8 @@
+/* SAKURA — effect utilities.
+ *
+ * This theme uses no special effect classes (the cozy look is driven entirely
+ * by tokens.css — warm surfaces + soft radius). The file exists so every theme
+ * bundle has the same three parts (tokens.css / utils.css / fonts.ts) and
+ * active-theme.css can import it unconditionally. Add theme-specific utility
+ * classes here if needed.
+ */

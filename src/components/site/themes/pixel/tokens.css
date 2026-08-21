@@ -1,0 +1,246 @@
+/* ════════════════════════════════════════════════════════════════════════
+ * PIXEL HUD — theme preset (alternate design tokens for the site).
+ *
+ * A warm, dark, square "retro game HUD" look: charcoal-brown panels, gold
+ * ornate trim, crimson buttons/banners, cream text, hard zero-blur shadows.
+ * The pixel feel comes from FRAMES / HARD SHADOWS / BEVELS, not from pixel
+ * letterforms (those wreck readability + SEO — see docs/PITFALLS.md).
+ *
+ * This is a DROP-IN REPLACEMENT for tokens.css. To activate, follow the
+ * recipe in docs/THEMES.md. The default ("Tactical Console") theme lives in
+ * tokens.css and is unaffected by this file until you wire it up.
+ *
+ * The CSS variable NAMES match the ones the components already use
+ * (--site-primary, --site-surface, …) so swapping the palette re-themes the
+ * whole site without renaming a single utility class.
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.site-theme {
+  /* --- Surfaces (darkest → lightest) ----------------------------------- *
+   * KEY: keep these clearly stepped. If two adjacent levels are too close,
+   * cards on the page bg disappear (no hierarchy). See docs/PITFALLS.md. */
+  --site-surface-lowest: #141110; /* footer */
+  --site-surface: #1a1614; /* page bg (warm near-black) */
+  --site-surface-low: #221c19; /* alternating section bg */
+  --site-surface-container: #2c2521; /* card / panel interior */
+  --site-surface-high: #382f29; /* card hover */
+  --site-surface-highest: #463a31; /* raised tier */
+
+  /* --- Foreground (warm cream) ----------------------------------------- */
+  --site-on-surface: #f3e7d5; /* text */
+  --site-on-surface-variant: #bfae9c; /* textDim */
+  --site-outline: #9a8674; /* textMute (mono labels) */
+  --site-outline-variant: #36302a; /* thin 1px rule */
+  --site-outline-strong: #574638; /* card borders — visible warm */
+  --site-text-faint: #463a30;
+
+  /* --- Ink: ALL hard shadows & outer outlines use this ----------------- */
+  --ink: #0c0908;
+
+  /* --- Primary: derived from the brand knob (../../brand.css) ----------
+   * The Pixel HUD's signature is its warm surfaces + bevels, not a fixed
+   * accent. Set your game's accent in brand.css (gold #d8ae62 is the classic
+   * pixel-HUD choice). Ornate trim / text accents / links / arrows use it. */
+  --site-primary: var(--brand-primary);
+  --site-primary-dim: var(--brand-primary-dim);
+  --site-primary-container: var(--brand-primary);
+  --site-on-primary: var(--brand-on-primary);
+  --site-on-primary-container: var(--brand-on-primary);
+
+  /* --- Crimson (primary buttons / banners / hot badges) ---------------- *
+   * KEY: keep crimson (buttons) and red (alerts, below) distinct hues, or
+   * a red button on a red banner reads as one blob. */
+  --site-crimson: #b23a3a;
+  --site-crimson-dim: #6e1e1e;
+  --site-secondary: #b23a3a;
+  --site-secondary-container: #b23a3a;
+  --site-on-secondary: #f3e7d5;
+  --site-on-secondary-container: #f3e7d5;
+
+  /* --- Functional accents --------------------------------------------- */
+  --site-blue: #5aa2ff; /* info / external link */
+  --site-blue-dim: #1e47a8;
+  --site-green: #5bd46a; /* live / online / buff */
+  --site-green-dim: #15803d;
+  --site-red: #ff6b5c; /* alerts / nerf (coral — distinct from crimson) */
+  --site-red-dim: #8c2020;
+
+  /* --- Tertiary remap -------------------------------------------------- */
+  --site-tertiary: #5bd46a;
+  --site-tertiary-container: #15803d;
+  --site-on-tertiary: #1a1614;
+  --site-on-tertiary-container: #f3e7d5;
+
+  /* --- Error / negative ------------------------------------------------ */
+  --site-error: #ff6b5c;
+  --site-error-container: #8c2020;
+  --site-on-error: #f3e7d5;
+
+  /* Pixel HUD is square — zero radius (also overrides the shadcn docs radius). */
+  --radius: 0rem;
+
+  background-color: var(--site-surface);
+  color: var(--site-on-surface);
+  color-scheme: dark;
+}
+/* Square the shadcn/docs corners too (this file only loads when pixel is the
+ * active theme, so overriding the shadcn :root radius here is safe). */
+:root {
+  --radius: 0rem;
+}
+
+/* Tailwind v4 theme tokens — generates bg-site-*, text-site-*, etc.
+ * NOTE: @theme is global + build-time, so these can't be runtime-switched by
+ * a data-attribute. That's why a theme swap is a build-time file change (see
+ * docs/THEMES.md), not an env toggle. */
+@theme {
+  --color-site-surface: #1a1614;
+  --color-site-surface-lowest: #141110;
+  --color-site-surface-low: #221c19;
+  --color-site-surface-container: #2c2521;
+  --color-site-surface-high: #382f29;
+  --color-site-surface-highest: #463a31;
+
+  --color-site-on-surface: #f3e7d5;
+  --color-site-on-surface-variant: #bfae9c;
+  --color-site-outline: #9a8674;
+  --color-site-outline-variant: #36302a;
+  --color-site-outline-strong: #574638;
+
+  --color-ink: #0c0908;
+
+  /* --color-site-primary* intentionally omitted — supplied by ../../brand.css
+   * (@theme inline) so the accent honors the per-game brand knob. */
+
+  --color-site-crimson: #b23a3a;
+  --color-site-secondary: #b23a3a;
+  --color-site-secondary-container: #b23a3a;
+  --color-site-on-secondary: #f3e7d5;
+  --color-site-on-secondary-container: #f3e7d5;
+
+  --color-site-tertiary: #5bd46a;
+  --color-site-tertiary-container: #15803d;
+  --color-site-on-tertiary: #1a1614;
+  --color-site-on-tertiary-container: #f3e7d5;
+
+  --color-site-blue: #5aa2ff;
+  --color-site-green: #5bd46a;
+  --color-site-red: #ff6b5c;
+  --color-site-purple: #c58bff;
+
+  --color-site-error: #ff6b5c;
+  --color-site-error-container: #8c2020;
+  --color-site-on-error: #f3e7d5;
+
+  /* Rounded display face (readable bold — NOT a pixel font). One family
+   * across headings + body; mono is reserved for tiny data labels. The fonts
+   * themselves are loaded in fonts.ts (next/font). */
+  --font-site-display:
+    var(--font-site-display, 'Fredoka'), ui-sans-serif, system-ui, sans-serif;
+  --font-site-body:
+    var(--font-site-body, 'Fredoka'), ui-sans-serif, system-ui, sans-serif;
+  --font-site-mono:
+    var(--font-site-mono, 'JetBrains Mono'), ui-monospace, monospace;
+}
+
+/* --- Typography helpers (scoped to .site-theme to avoid shadcn clashes) - */
+/* Heavy rounded display weight + game-style hard outline. Short strings only. */
+.site-theme .site-pixel {
+  font-family: var(--font-site-display);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.4;
+  text-shadow:
+    2px 2px 0 var(--ink),
+    -1px 0 0 var(--ink),
+    1px 0 0 var(--ink),
+    0 1px 0 var(--ink),
+    0 -1px 0 var(--ink);
+}
+.site-theme .site-display-lg {
+  font-family: var(--font-site-display);
+  font-size: clamp(38px, 6.4vw, 76px);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: 0;
+  text-wrap: balance;
+  text-shadow:
+    3px 3px 0 var(--ink),
+    -1px 0 0 var(--ink),
+    1px 0 0 var(--ink),
+    0 1px 0 var(--ink),
+    0 -1px 0 var(--ink);
+}
+.site-theme .site-headline-lg {
+  font-family: var(--font-site-display);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+.site-theme .site-headline-md {
+  font-family: var(--font-site-display);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+.site-theme .site-headline-sm {
+  font-family: var(--font-site-display);
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+.site-theme .site-body-lg {
+  font-family: var(--font-site-body);
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--site-on-surface-variant);
+}
+.site-theme .site-body-md {
+  font-family: var(--font-site-body);
+  font-size: 16px;
+  line-height: 1.7;
+}
+.site-theme .site-label-md {
+  font-family: var(--font-site-body);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.site-theme .site-label-sm {
+  font-family: var(--font-site-mono);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+/* Wide-tracked monospace label — used for "§ 01", "EARLY ACCESS", etc. */
+.site-theme .site-mono {
+  font-family: var(--font-site-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* Pixel HUD is square — kill default rounding on our primitives. */
+.site-theme .site-square,
+.site-theme .site-square * {
+  border-radius: 0 !important;
+}
+
+@media (max-width: 768px) {
+  /* site-display-lg uses clamp() — let it govern on mobile. */
+  .site-theme .site-headline-lg {
+    font-size: 28px;
+  }
+}
+
+/* Focus ring — gold */
+.site-theme a:focus-visible,
+.site-theme button:focus-visible {
+  outline: 1px solid var(--site-primary);
+  outline-offset: 2px;
+}

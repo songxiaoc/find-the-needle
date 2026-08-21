@@ -1,0 +1,31 @@
+/*
+ * ╔══════════════════════════════════════════════════════════════════╗
+ * ║  SCAFFOLD STEP 1 — the per-GAME accent knob (theme-independent).  ║
+ * ║  Edit these 3 lines to set your game's accent color. It applies   ║
+ * ║  on TOP of whichever theme is active (see active-theme.css), so   ║
+ * ║  accent × theme are independent axes.                             ║
+ * ╚══════════════════════════════════════════════════════════════════╝
+ *
+ * Every theme derives --site-primary from this knob (var(--brand-primary)),
+ * and the wiki/docs theme.css derives --primary/--ring from it too — so one
+ * edit re-accents the whole site (homepage + wiki/docs, all themes).
+ *
+ * Pick --brand-on-primary = dark ink for light/bright accents, white for dark
+ * accents (it's the text/icon color that sits ON the brand color).
+ */
+:root {
+  --brand-primary: #6366f1; /* indigo placeholder — replace per game */
+  --brand-primary-dim: #3730a3; /* darker tint for gradient/hover */
+  --brand-on-primary: #ffffff; /* ink on the brand color */
+}
+
+/* Map the brand knob into the Tailwind color utilities. `inline` lets the
+ * generated bg-site-primary / text-site-primary classes reference var() at
+ * runtime, so a --brand-primary edit re-themes them without a rebuild of the
+ * palette. Theme-independent — lives here, not in any themes/*\/tokens.css. */
+@theme inline {
+  --color-site-primary: var(--brand-primary);
+  --color-site-primary-container: var(--brand-primary);
+  --color-site-on-primary: var(--brand-on-primary);
+  --color-site-on-primary-container: var(--brand-on-primary);
+}

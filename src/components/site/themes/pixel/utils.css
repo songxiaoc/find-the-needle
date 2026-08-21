@@ -1,0 +1,124 @@
+/* ════════════════════════════════════════════════════════════════════════
+ * Pixel HUD utilities — opt-in classes for the pixel theme preset.
+ *
+ * These are inert unless you add them to elements, so it's safe to import
+ * even on a non-pixel site (they just won't be used). All hard shadows /
+ * outlines read from --ink (set by the pixel token preset). Zero blur, ever
+ * — CSS blur shadows don't read as "pixel". See docs/ui-design-pixel.md.
+ *
+ * Activate by importing this from global.css — see docs/THEMES.md.
+ * ════════════════════════════════════════════════════════════════════════ */
+
+/* --- Hard shadows (no blur) ---------------------------------------------- */
+.px-shadow {
+  box-shadow: 4px 4px 0 0 var(--ink, #0c0908);
+}
+.px-shadow-sm {
+  box-shadow: 2px 2px 0 0 var(--ink, #0c0908);
+}
+.px-shadow-lg {
+  box-shadow: 6px 6px 0 0 var(--ink, #0c0908);
+}
+
+/* --- Pixel borders ------------------------------------------------------- */
+/* Solid hard outline (default chunky edge). */
+.px-border {
+  border: 2px solid var(--ink, #0c0908);
+}
+/* 3D beveled clickable block — classic 8-bit button. */
+.px-bevel {
+  border: 2px solid var(--ink, #0c0908);
+  box-shadow:
+    inset 2px 2px 0 0 rgba(255, 255, 255, 0.25),
+    inset -2px -2px 0 0 rgba(0, 0, 0, 0.45),
+    4px 4px 0 0 var(--ink, #0c0908);
+}
+/* Stepped/clipped corners — low-res "rounding". Accent use only. */
+.px-corner {
+  clip-path: polygon(
+    4px 0,
+    calc(100% - 4px) 0,
+    100% 4px,
+    100% calc(100% - 4px),
+    calc(100% - 4px) 100%,
+    4px 100%,
+    0 calc(100% - 4px),
+    0 4px
+  );
+}
+
+/* --- Pixel-perfect image rendering --------------------------------------- */
+.pixel-art,
+img.pixel {
+  image-rendering: pixelated;
+}
+
+/* --- Interaction: tactile "press" ---------------------------------------- */
+/* Apply to buttons / clickable cards alongside .px-bevel or .px-shadow. */
+.px-press {
+  transition:
+    transform 0.08s steps(2, end),
+    box-shadow 0.08s steps(2, end);
+}
+.px-press:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 0 var(--ink, #0c0908);
+}
+.px-press:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0 0 0 0 var(--ink, #0c0908);
+}
+
+/* Pixel link underline (hard, no transition). */
+.site-theme .px-link:hover {
+  box-shadow: 0 2px 0 0 currentColor;
+}
+
+/* Blinking live dot — stepped, not faded. */
+@keyframes px-blink {
+  0%,
+  60% {
+    opacity: 1;
+  }
+  61%,
+  100% {
+    opacity: 0.25;
+  }
+}
+.px-blink {
+  animation: px-blink 1.2s steps(1, end) infinite;
+}
+
+/* Optional: walking sprite decoration (e.g. across a hero "taskbar"). */
+@keyframes px-walk {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(100% - 24px));
+  }
+}
+.px-walk {
+  animation: px-walk 6s steps(40, end) infinite alternate;
+}
+
+/* Faint pixel-grid backdrop (dot matrix). */
+.px-grid-bg {
+  background-image: radial-gradient(
+    var(--site-outline-variant, #36302a) 1px,
+    transparent 1px
+  );
+  background-size: 16px 16px;
+}
+
+/* --- Accessibility: respect reduced motion ------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .px-blink,
+  .px-walk {
+    animation: none;
+    opacity: 1;
+  }
+  .px-press {
+    transition: none;
+  }
+}

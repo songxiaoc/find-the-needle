@@ -1,0 +1,75 @@
+/* Load order matters: each layer overrides the one above it.
+ *   theme.css        shadcn/fumadocs token contract
+ *   brand.css        the per-game accent knob (--brand-*)
+ *   active-theme.css the selected theme preset's palette + utilities
+ *   design-tokens    generated overrides from the UI recipe
+ *   semantic.css     game-data meaning (rarity tiers), theme-independent
+ *   prose.css        shared article typography, driven by --site-*
+ * See docs/THEMES.md before reordering. */
+@import 'tailwindcss';
+@import './theme.css';
+@import '../../components/site/brand.css';
+@import './active-theme.css';
+@import '../../generated/design-tokens.css';
+@import '../../components/site/semantic.css';
+@import '../../components/site/prose.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@plugin 'tailwindcss-animate';
+@plugin '@tailwindcss/typography';
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+.container {
+  @apply mx-auto max-w-7xl px-4 md:px-8;
+}
+
+/* Horizontal card rails scroll by drag; the scrollbar would sit on top of the
+ * cards. Needs all three properties — no single cross-browser way to do it. */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+input,
+select,
+textarea {
+  @apply border-border outline-ring/50 bg-background;
+}
+
+button {
+  @apply border-border outline-ring/50 cursor-pointer;
+}
+
+pre {
+  @apply px-4;
+}
+
+.docs th,
+.docs td {
+  @apply border-border border p-3;
+}
+
+/* The '#' anchor that rehype-autolink-headings prepends to every heading in
+ * guide and docs articles. Hidden until the heading is hovered. */
+.anchor-icon {
+  @apply text-muted-foreground mr-2 text-sm font-normal opacity-0 select-none;
+}
+
+h1:hover .anchor-icon,
+h2:hover .anchor-icon,
+h3:hover .anchor-icon,
+h4:hover .anchor-icon {
+  @apply opacity-60;
+}

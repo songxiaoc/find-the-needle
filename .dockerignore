@@ -1,0 +1,8 @@
+.next
+.vercel
+.vscode
+.wrangler
+.turbo
+node_modules
+.git
+wrangler.toml

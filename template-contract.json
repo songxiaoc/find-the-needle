@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "templateContractVersion": 1,
+  "capabilities": [
+    "asset-manifest-v1",
+    "generated-config-v1",
+    "hash-bound-receipts-v1",
+    "homepage-blocks-v1",
+    "locale-messages-v1",
+    "managed-content-v1",
+    "theme-selector-v1"
+  ],
+  "supported": {
+    "locales": ["en", "zh", "ja", "ko", "de", "fr", "es", "pt", "id"],
+    "defaultLocales": ["en"],
+    "themes": ["tactical", "pixel", "neon", "aurora", "sakura"],
+    "heroStyles": ["cover-split", "video-center", "text-only"],
+    "homeBlockTypes": [
+      "hero",
+      "start-cards",
+      "code-cards",
+      "tier-grid",
+      "step-by-step",
+      "card-list",
+      "about",
+      "final-cta",
+      "latest-guides",
+      "category-grid",
+      "database-stats",
+      "entity-index",
+      "faq"
+    ],
+    "categoryIcons": [
+      "BookOpen",
+      "Code2",
+      "Flame",
+      "Map",
+      "Package",
+      "Swords",
+      "Trophy"
+    ]
+  },
+  "managedFiles": [
+    "src/generated/game-config.ts",
+    "src/generated/guide-categories.ts",
+    "src/generated/homepage.ts",
+    "src/generated/site-locales.ts",
+    "src/generated/site-manifest.json",
+    "src/generated/ui-recipe.json",
+    "src/generated/visual-profile.json",
+    "src/generated/asset-manifest.json",
+    "src/components/site/brand.css",
+    "src/config/style/active-theme.css",
+    "src/components/site/active-fonts.ts",
+    "src/config/locale/messages/*/common.json"
+  ]
+}

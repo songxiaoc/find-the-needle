@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "hero": {
+    "type": "none",
+    "source": "",
+    "official": false,
+    "title": "Example Game hero media",
+    "fallback": "",
+    "desktopFocus": "50% 50%",
+    "mobileFocus": "50% 50%"
+  },
+  "brand": {
+    "logo": "/logo.png",
+    "favicon": "/favicon.png",
+    "ogImage": "/og-image.png"
+  },
+  "source": {
+    "path": "",
+    "generationMode": "existing"
+  }
+}

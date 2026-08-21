@@ -1,0 +1,33 @@
+/* NEON — effect utilities.
+ *
+ * Optional, opt-in glow helpers for the synthwave look. Nothing here is applied
+ * automatically — add the class to an element to light it up. The base theme
+ * stays driven by tokens.css so the glow never leaks where you don't want it.
+ *
+ * Every theme bundle ships the same three parts (tokens.css / utils.css /
+ * fonts.ts) so active-theme.css can import this unconditionally.
+ */
+
+/* Soft neon halo using the per-game primary accent. */
+.site-theme .neon-glow {
+  box-shadow:
+    0 0 4px color-mix(in srgb, var(--site-primary) 70%, transparent),
+    0 0 16px color-mix(in srgb, var(--site-primary) 45%, transparent),
+    0 0 40px color-mix(in srgb, var(--site-primary) 25%, transparent);
+}
+
+/* Magenta secondary halo — for accent pairing / hover states. */
+.site-theme .neon-glow-secondary {
+  box-shadow:
+    0 0 4px color-mix(in srgb, var(--site-secondary) 70%, transparent),
+    0 0 16px color-mix(in srgb, var(--site-secondary) 45%, transparent),
+    0 0 40px color-mix(in srgb, var(--site-secondary) 25%, transparent);
+}
+
+/* Glowing text — pairs well with .site-display-lg headings. */
+.site-theme .neon-text {
+  color: var(--site-primary);
+  text-shadow:
+    0 0 6px color-mix(in srgb, var(--site-primary) 60%, transparent),
+    0 0 20px color-mix(in srgb, var(--site-primary) 35%, transparent);
+}

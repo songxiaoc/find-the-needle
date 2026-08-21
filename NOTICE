@@ -1,0 +1,44 @@
+game-wiki-template
+Copyright (c) 2026 tiankonglan
+
+This product includes third-party software. The components below are used under
+their own licenses, which are reproduced in the packages themselves and in
+node_modules after install.
+
+Vendored source (copied into this repository)
+---------------------------------------------
+
+The UI primitives under src/shared/components/ui/ and the helpers in
+src/shared/lib/utils.ts and src/shared/hooks/use-mobile.ts were generated with
+the shadcn CLI from the shadcn/ui registry and then adapted to this project's
+import aliases and formatting.
+
+  shadcn/ui — MIT License — https://github.com/shadcn-ui/ui
+
+The theme token contract in src/config/style/theme.css follows the shadcn/ui
+CSS variable convention; the values are this project's own.
+
+Runtime and build dependencies
+------------------------------
+
+Declared in package.json and resolved by pnpm. The principal ones:
+
+  Next.js                 MIT   https://github.com/vercel/next.js
+  React                   MIT   https://github.com/facebook/react
+  Radix UI                MIT   https://github.com/radix-ui/primitives
+  Tailwind CSS            MIT   https://github.com/tailwindlabs/tailwindcss
+  next-intl               MIT   https://github.com/amannn/next-intl
+  Fumadocs                MIT   https://github.com/fuma-nama/fumadocs
+  Zod                     MIT   https://github.com/colinhacks/zod
+  Lucide                  ISC   https://github.com/lucide-icons/lucide
+  Shiki                   MIT   https://github.com/shikijs/shiki
+  OpenNext Cloudflare     MIT   https://github.com/opennextjs/opennextjs-cloudflare
+
+Trademarks
+----------
+
+This is a template for building unofficial fan guide sites. Game titles,
+artwork and trademarks referenced in any site built from it belong to their
+respective owners, and are not licensed by this project. Sites generated from
+this template must identify themselves as unofficial — see the `disclaimer`
+field in src/config/game.ts.

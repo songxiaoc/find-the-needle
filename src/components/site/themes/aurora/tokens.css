@@ -1,0 +1,189 @@
+/* ════════════════════════════════════════════════════════════════════════
+ * AURORA — clean light theme preset.
+ *
+ * Near-white cool-gray surfaces, dark slate text, soft rounded edges. Airy and
+ * modern — a polished SaaS / docs look. The bright counterpart to the default
+ * dark themes.
+ *
+ * Per-theme palette + typography + radius. The per-GAME accent comes from the
+ * brand knob in ../../brand.css (--brand-primary); --site-primary derives from
+ * it, so accent × theme stay independent. Variable NAMES match every other
+ * theme, so swapping themes never touches a component.
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.site-theme {
+  /* --- Surfaces (lightest → slightly darker for stepping) -------------- */
+  --site-surface-lowest: #eef1f6; /* footer */
+  --site-surface: #ffffff; /* page bg */
+  --site-surface-low: #f6f8fb; /* alternating section bg */
+  --site-surface-container: #f1f4f9; /* card */
+  --site-surface-high: #e7ecf3; /* card hover */
+  --site-surface-highest: #dee4ed; /* unused tier */
+
+  /* --- Foreground ------------------------------------------------------ */
+  --site-on-surface: #0f172a; /* text (dark slate) */
+  --site-on-surface-variant: #475569; /* textDim */
+  --site-outline: #64748b; /* textMute (mono labels) */
+  --site-outline-variant: #e2e8f0; /* thin 1px rule */
+  --site-outline-strong: #cbd5e1; /* 1px rule for stronger separators */
+  --site-text-faint: #94a3b8;
+
+  /* --- Primary: derived from the brand knob (../../brand.css) ---------- */
+  --site-primary: var(--brand-primary);
+  --site-primary-dim: var(--brand-primary-dim);
+  --site-primary-container: var(--brand-primary);
+  --site-on-primary: var(--brand-on-primary);
+  --site-on-primary-container: var(--brand-on-primary);
+
+  /* --- Secondary (matches primary by default) -------------------------- */
+  --site-secondary: var(--brand-primary);
+  --site-secondary-container: var(--brand-primary);
+  --site-on-secondary: var(--brand-on-primary);
+  --site-on-secondary-container: var(--brand-on-primary);
+
+  /* --- Functional accents (tuned for a light surface) ----------------- */
+  --site-blue: #2563eb; /* pick / team / info */
+  --site-blue-dim: #1d4ed8;
+  --site-green: #16a34a; /* live / buff / selected */
+  --site-green-dim: #15803d;
+  --site-red: #dc2626; /* ban / nerf / CC */
+  --site-red-dim: #b91c1c;
+
+  /* --- Tertiary remap (kept for Tier-A badge etc.) --------------------- */
+  --site-tertiary: #16a34a;
+  --site-tertiary-container: #dcfce7;
+  --site-on-tertiary: #ffffff;
+  --site-on-tertiary-container: #14532d;
+
+  /* --- Error / negative ------------------------------------------------ */
+  --site-error: #dc2626;
+  --site-error-container: #fee2e2;
+  --site-on-error: #ffffff;
+
+  /* Corner radius for this theme (soft). Also overrides shadcn docs radius. */
+  --radius: 0.75rem;
+
+  background-color: var(--site-surface);
+  color: var(--site-on-surface);
+  color-scheme: light;
+}
+
+/* Tailwind v4 theme tokens — generates bg-site-*, text-site-*, etc.
+ * NOTE: --color-site-primary* are NOT here — they come from ../../brand.css
+ * (@theme inline) so the accent honors the per-game brand knob. */
+@theme {
+  --color-site-surface: #ffffff;
+  --color-site-surface-lowest: #eef1f6;
+  --color-site-surface-low: #f6f8fb;
+  --color-site-surface-container: #f1f4f9;
+  --color-site-surface-high: #e7ecf3;
+  --color-site-surface-highest: #dee4ed;
+
+  --color-site-on-surface: #0f172a;
+  --color-site-on-surface-variant: #475569;
+  --color-site-outline: #64748b;
+  --color-site-outline-variant: #e2e8f0;
+  --color-site-outline-strong: #cbd5e1;
+
+  --color-site-tertiary: #16a34a;
+  --color-site-tertiary-container: #dcfce7;
+  --color-site-on-tertiary: #ffffff;
+  --color-site-on-tertiary-container: #14532d;
+
+  --color-site-blue: #2563eb;
+  --color-site-green: #16a34a;
+  --color-site-red: #dc2626;
+
+  --color-site-error: #dc2626;
+  --color-site-error-container: #fee2e2;
+  --color-site-on-error: #ffffff;
+
+  --font-site-display: 'Sora', ui-sans-serif, system-ui, sans-serif;
+  --font-site-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-site-mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+/* --- Typography helpers (scoped to .site-theme to avoid shadcn clashes) - */
+.site-theme .site-display-lg {
+  font-family: var(--font-site-display);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+  text-wrap: pretty;
+}
+.site-theme .site-headline-lg {
+  font-family: var(--font-site-display);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.site-theme .site-headline-md {
+  font-family: var(--font-site-display);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+.site-theme .site-headline-sm {
+  font-family: var(--font-site-display);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.site-theme .site-body-lg {
+  font-family: var(--font-site-body);
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--site-on-surface-variant);
+}
+.site-theme .site-body-md {
+  font-family: var(--font-site-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+.site-theme .site-label-md {
+  font-family: var(--font-site-body);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.site-theme .site-label-sm {
+  font-family: var(--font-site-mono);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+/* Wide-tracked monospace label — used for "§ 01", "EARLY ACCESS", etc. */
+.site-theme .site-mono {
+  font-family: var(--font-site-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* Square edges (no border-radius) on site primitives — remove if your game uses rounded UI. */
+.site-theme .site-square,
+.site-theme .site-square * {
+  border-radius: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .site-theme .site-display-lg {
+    font-size: 44px;
+  }
+  .site-theme .site-headline-lg {
+    font-size: 28px;
+  }
+}
+
+/* Focus ring — matches primary accent */
+.site-theme a:focus-visible,
+.site-theme button:focus-visible {
+  outline: 1px solid var(--site-primary);
+  outline-offset: 2px;
+}

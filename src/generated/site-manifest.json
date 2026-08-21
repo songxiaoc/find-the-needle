@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "templateContractVersion": 1,
+  "templateContractSha256": "70b6679331811aec109d598782e07f1eb3e2f5dc573809e9c01f85b06f39675d",
+  "requiredCapabilities": [
+    "asset-manifest-v1",
+    "generated-config-v1",
+    "hash-bound-receipts-v1",
+    "homepage-blocks-v1",
+    "locale-messages-v1",
+    "managed-content-v1",
+    "theme-selector-v1"
+  ],
+  "planSha256": null,
+  "sources": [],
+  "managedFiles": [
+    "src/components/site/active-fonts.ts",
+    "src/components/site/brand.css",
+    "src/config/locale/messages/en/common.json",
+    "src/config/style/active-theme.css",
+    "src/generated/asset-manifest.json",
+    "src/generated/game-config.ts",
+    "src/generated/guide-categories.ts",
+    "src/generated/homepage.ts",
+    "src/generated/site-locales.ts",
+    "src/generated/site-manifest.json",
+    "src/generated/ui-recipe.json",
+    "src/generated/visual-profile.json"
+  ],
+  "theme": "tactical",
+  "defaultLocale": "en",
+  "locales": ["en"]
+}

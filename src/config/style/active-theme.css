@@ -1,0 +1,14 @@
+/* ╔══════════════════════════════════════════════════════════════════════╗
+ * ║  ACTIVE THEME — the single CSS selection point.                       ║
+ * ║  To switch the site's visual theme, change `tactical` below to        ║
+ * ║  another folder in src/components/site/themes/ (e.g. `pixel`).         ║
+ * ║  Then update the matching font in ../../components/site/active-fonts.ts║
+ * ║  (or just run scaffold with --theme <name>, which writes both).        ║
+ * ╚══════════════════════════════════════════════════════════════════════╝
+ *
+ * Build-time selection — Tailwind @theme generates utilities at build, so a
+ * theme is chosen here, not toggled at runtime. The per-game accent is set
+ * separately in ../../components/site/brand.css.
+ */
+@import '../../components/site/themes/tactical/tokens.css';
+@import '../../components/site/themes/tactical/utils.css';

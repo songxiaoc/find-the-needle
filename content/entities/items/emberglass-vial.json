@@ -1,0 +1,18 @@
+{
+  "id": "emberglass-vial",
+  "name": "Emberglass Vial",
+  "summary": "A single-use alchemical vial that briefly raises fire resistance.",
+  "updatedAt": "2026-07-22",
+  "version": "1.0.0",
+  "data": {
+    "type": "Consumable",
+    "rarity": "Uncommon",
+    "slot": "Utility",
+    "power": 18,
+    "weight": 0.3,
+    "source": "Cinder Alchemist",
+    "location": "Lower Foundry"
+  },
+  "relatedEntities": [],
+  "relatedGuides": []
+}

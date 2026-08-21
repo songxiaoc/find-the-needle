@@ -1,0 +1,58 @@
+# Dependencies
+node_modules
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Build outputs
+.next
+out
+dist
+build
+.vercel
+.turbo
+
+# Cache
+.cache
+*.log
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated files
+*.d.ts
+!src/**/*.d.ts
+
+# Public assets
+public
+
+# Config files that shouldn't be formatted
+.prettierrc
+.prettierrc.*
+prettier.config.*
+
+# Markdown & MDX — deliberately NOT formatted. The docs are hand-wrapped and
+# largely Chinese, where printWidth 80 rewrapping every paragraph turns future
+# diffs into noise; content/**/*.mdx is authored by hand or by a generator,
+# so reformatting it only fights the source.
+*.md
+*.mdx
+
+# Generated UI contract — validated by src/config/ui.ts. Formatting it
+# fights the generator.
+src/generated
+src/config/style/active-theme.css
+src/components/site/active-fonts.ts
+
+# Other
+coverage
+.DS_Store
+
+src/shared/components

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "archetype": "tactical",
+  "theme": "tactical",
+  "hero": "text-only",
+  "navigation": "wiki-sidebar",
+  "guideCard": "data-panel",
+  "categoryCard": "outlined",
+  "articleLayout": "technical-document",
+  "density": "comfortable",
+  "shape": "square",
+  "motion": "minimal",
+  "customBlocks": [],
+  "rationale": "Template safe default. Replace when you change the visual contract.",
+  "homepage": {
+    "defaultSection": "plain",
+    "defaultCollectionLayout": "equal-grid",
+    "rhythm": "uniform",
+    "blocks": {}
+  }
+}

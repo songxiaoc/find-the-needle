@@ -1,0 +1,75 @@
+/* ─── Long-form article prose (@tailwindcss/typography) ──────────────────────
+ * THEME-AGNOSTIC: drives Tailwind Typography entirely from the --site-* tokens,
+ * so the article body follows whichever theme is active (and its accent) with
+ * zero per-theme duplication. Loaded once in global.css, after the active
+ * theme. Apply via `prose` on the MDX body wrapper — no `prose-invert` needed.
+ */
+.site-theme .prose {
+  --tw-prose-body: var(--site-on-surface-variant);
+  --tw-prose-headings: var(--site-on-surface);
+  --tw-prose-lead: var(--site-on-surface-variant);
+  --tw-prose-links: var(--site-primary);
+  --tw-prose-bold: var(--site-on-surface);
+  --tw-prose-counters: var(--site-on-surface-variant);
+  --tw-prose-bullets: var(--site-outline);
+  --tw-prose-hr: var(--site-outline-variant);
+  --tw-prose-quotes: var(--site-on-surface);
+  --tw-prose-quote-borders: var(--site-primary);
+  --tw-prose-captions: var(--site-outline);
+  --tw-prose-code: var(--site-on-surface);
+  --tw-prose-pre-code: var(--site-on-surface);
+  --tw-prose-pre-bg: var(--site-surface-container);
+  --tw-prose-th-borders: var(--site-outline-strong);
+  --tw-prose-td-borders: var(--site-outline-variant);
+
+  color: var(--tw-prose-body);
+  max-width: 72ch;
+}
+/* H1 inside article body is always a content error — the hero owns the page H1.
+ * Demote it visually to match h2 so accidental MDX h1s don't break the page. */
+.site-theme .prose h1 {
+  font-size: var(--tw-prose-headings-size-h2, 1.5em);
+}
+
+/* Headings use the active theme's display font + tracking. */
+.site-theme .prose :is(h1, h2, h3, h4) {
+  font-family: var(--font-site-display);
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+/* Auto-linked headings (rehype anchors) must keep the heading color, not the
+ * link color — otherwise every heading renders in the accent color. */
+.site-theme .prose :is(h1, h2, h3, h4) a {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+}
+/* The heading anchor-link icon (svg sibling) is hidden until you hover the
+ * heading — otherwise it sits permanently next to every title. */
+.site-theme .prose :is(h1, h2, h3, h4) svg {
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+.site-theme .prose :is(h1, h2, h3, h4):hover svg {
+  opacity: 0.5;
+}
+/* Links: accent color, underline on hover only (less noisy in body copy). */
+.site-theme .prose a {
+  text-decoration: none;
+  font-weight: 500;
+}
+.site-theme .prose a:hover {
+  text-decoration: underline;
+}
+/* Inline code chips — bordered, themed surface. */
+.site-theme .prose :not(pre) > code {
+  background: var(--site-surface-container);
+  border: 1px solid var(--site-outline-variant);
+  padding: 0.1em 0.4em;
+  font-size: 0.875em;
+  font-weight: 500;
+}
+.site-theme .prose :not(pre) > code::before,
+.site-theme .prose :not(pre) > code::after {
+  content: none; /* kill Typography's backtick quotes */
+}

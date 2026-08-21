@@ -1,0 +1,188 @@
+/* ════════════════════════════════════════════════════════════════════════
+ * TACTICAL CONSOLE — default theme preset.
+ *
+ * Cool blue-black surfaces, monospace data labels, square edges. Quiet,
+ * info-dense — the out-of-the-box look that fits most games.
+ *
+ * Per-theme palette + typography + radius. The per-GAME accent comes from the
+ * brand knob in ../../brand.css (--brand-primary); --site-primary derives from
+ * it, so accent × theme stay independent. Variable NAMES match every other
+ * theme, so swapping themes never touches a component.
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.site-theme {
+  /* --- Surfaces (darkest → lightest) ----------------------------------- */
+  --site-surface-lowest: #070a0f; /* footer */
+  --site-surface: #0a0e14; /* page bg */
+  --site-surface-low: #0e1320; /* alternating section bg */
+  --site-surface-container: #131a24; /* card */
+  --site-surface-high: #1a2330; /* card hover */
+  --site-surface-highest: #1f2a38; /* unused tier */
+
+  /* --- Foreground ------------------------------------------------------ */
+  --site-on-surface: #e8ecf1; /* text */
+  --site-on-surface-variant: #94a0ae; /* textDim */
+  --site-outline: #5b6776; /* textMute (mono labels) */
+  --site-outline-variant: #1f2a38; /* thin 1px rule */
+  --site-outline-strong: #2a3849; /* 1px rule for stronger separators */
+  --site-text-faint: #3a4452;
+
+  /* --- Primary: derived from the brand knob (../../brand.css) ---------- */
+  --site-primary: var(--brand-primary);
+  --site-primary-dim: var(--brand-primary-dim);
+  --site-primary-container: var(--brand-primary);
+  --site-on-primary: var(--brand-on-primary);
+  --site-on-primary-container: var(--brand-on-primary);
+
+  /* --- Secondary (matches primary by default) -------------------------- */
+  --site-secondary: var(--brand-primary);
+  --site-secondary-container: var(--brand-primary);
+  --site-on-secondary: var(--brand-on-primary);
+  --site-on-secondary-container: var(--brand-on-primary);
+
+  /* --- Functional accents (match the game's HUD) ---------------------- */
+  --site-blue: #3b82f6; /* pick / team / info */
+  --site-blue-dim: #1e47a8;
+  --site-green: #22c55e; /* live / buff / selected */
+  --site-green-dim: #15803d;
+  --site-red: #ef4444; /* ban / nerf / CC */
+  --site-red-dim: #8c2020;
+
+  /* --- Tertiary remap (kept for Tier-A badge etc.) --------------------- */
+  --site-tertiary: #22c55e;
+  --site-tertiary-container: #15803d;
+  --site-on-tertiary: #0a0e14;
+  --site-on-tertiary-container: #e8ecf1;
+
+  /* --- Error / negative ------------------------------------------------ */
+  --site-error: #ef4444;
+  --site-error-container: #8c2020;
+  --site-on-error: #e8ecf1;
+
+  /* Corner radius for this theme (square). Also overrides shadcn docs radius. */
+  --radius: 0.5rem;
+
+  background-color: var(--site-surface);
+  color: var(--site-on-surface);
+  color-scheme: dark;
+}
+
+/* Tailwind v4 theme tokens — generates bg-site-*, text-site-*, etc.
+ * NOTE: --color-site-primary* are NOT here — they come from ../../brand.css
+ * (@theme inline) so the accent honors the per-game brand knob. */
+@theme {
+  --color-site-surface: #0a0e14;
+  --color-site-surface-lowest: #070a0f;
+  --color-site-surface-low: #0e1320;
+  --color-site-surface-container: #131a24;
+  --color-site-surface-high: #1a2330;
+  --color-site-surface-highest: #1f2a38;
+
+  --color-site-on-surface: #e8ecf1;
+  --color-site-on-surface-variant: #94a0ae;
+  --color-site-outline: #5b6776;
+  --color-site-outline-variant: #1f2a38;
+  --color-site-outline-strong: #2a3849;
+
+  --color-site-tertiary: #22c55e;
+  --color-site-tertiary-container: #15803d;
+  --color-site-on-tertiary: #0a0e14;
+  --color-site-on-tertiary-container: #e8ecf1;
+
+  --color-site-blue: #3b82f6;
+  --color-site-green: #22c55e;
+  --color-site-red: #ef4444;
+
+  --color-site-error: #ef4444;
+  --color-site-error-container: #8c2020;
+  --color-site-on-error: #e8ecf1;
+
+  --font-site-display: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-site-body: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-site-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+/* --- Typography helpers (scoped to .site-theme to avoid shadcn clashes) - */
+.site-theme .site-display-lg {
+  font-family: var(--font-site-display);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+  text-wrap: pretty;
+}
+.site-theme .site-headline-lg {
+  font-family: var(--font-site-display);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.site-theme .site-headline-md {
+  font-family: var(--font-site-display);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+.site-theme .site-headline-sm {
+  font-family: var(--font-site-display);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.site-theme .site-body-lg {
+  font-family: var(--font-site-body);
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--site-on-surface-variant);
+}
+.site-theme .site-body-md {
+  font-family: var(--font-site-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+.site-theme .site-label-md {
+  font-family: var(--font-site-body);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.site-theme .site-label-sm {
+  font-family: var(--font-site-mono);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+/* Wide-tracked monospace label — used for "§ 01", "EARLY ACCESS", etc. */
+.site-theme .site-mono {
+  font-family: var(--font-site-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* Square edges (no border-radius) on site primitives — remove if your game uses rounded UI. */
+.site-theme .site-square,
+.site-theme .site-square * {
+  border-radius: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .site-theme .site-display-lg {
+    font-size: 44px;
+  }
+  .site-theme .site-headline-lg {
+    font-size: 28px;
+  }
+}
+
+/* Focus ring — matches primary accent */
+.site-theme a:focus-visible,
+.site-theme button:focus-visible {
+  outline: 1px solid var(--site-primary);
+  outline-offset: 2px;
+}

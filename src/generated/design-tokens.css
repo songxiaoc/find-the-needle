@@ -1,0 +1,24 @@
+/* Safe template defaults. Replace when you change the visual contract. */
+.site-theme {
+  --generated-ui-archetype: "tactical";
+  --generated-ui-density: "comfortable";
+  --generated-ui-shape: "square";
+  --generated-ui-motion: "minimal";
+  --ui-radius: 0px;
+  --ui-section-gap: 4rem;
+  --ui-motion-duration: 0ms;
+}
+
+.site-theme[data-ui-shape='square'] .ui-shaped { border-radius: 0; }
+.site-theme[data-ui-shape='soft'] .ui-shaped { border-radius: var(--ui-radius); }
+.site-theme[data-ui-shape='rounded'] .ui-shaped { border-radius: var(--ui-radius); }
+
+.ui-home-stack > * + * { margin-top: var(--ui-section-gap); }
+
+.site-theme[data-ui-density='compact'] .ui-density-padding { padding: 1.25rem; }
+.site-theme[data-ui-density='comfortable'] .ui-density-padding { padding: 1.5rem; }
+.site-theme[data-ui-density='airy'] .ui-density-padding { padding: 2rem; }
+
+.site-theme[data-ui-motion='minimal'] *,
+.site-theme[data-ui-motion='minimal'] *::before,
+.site-theme[data-ui-motion='minimal'] *::after { scroll-behavior: auto !important; }
