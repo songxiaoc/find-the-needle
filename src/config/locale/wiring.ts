@@ -35,7 +35,10 @@ export function stripLocaleSuffix(name: string): string {
 
 let verified = false;
 
-/** Build-time, idempotent consistency check used by the filesystem content layer. */
+/**
+ * Build-time-only consistency check. Invoke from scripts/validate-site.ts, never
+ * from a request path: Cloudflare Workers do not expose the source filesystem.
+ */
 export function assertI18nWiring(contentFiles: readonly string[]): void {
   if (verified) return;
 

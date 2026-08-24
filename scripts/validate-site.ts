@@ -14,6 +14,7 @@ import {
   supportedLocaleCodes,
 } from '../src/config/locale';
 import { readCommonMessages } from '../src/config/locale/message-schema';
+import { assertI18nWiring } from '../src/config/locale/wiring';
 import { uiRecipe, validateUIRecipe } from '../src/config/ui';
 import siteManifest from '../src/generated/site-manifest.json';
 import contract from '../template-contract.json';
@@ -21,6 +22,19 @@ import contract from '../template-contract.json';
 const root = process.cwd();
 const errors: string[] = [];
 let checks = 0;
+
+function scanGuideFiles(dir: string): string[] {
+  if (!fs.existsSync(dir)) return [];
+  const files: string[] = [];
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const filePath = path.join(dir, entry.name);
+    if (entry.isDirectory()) files.push(...scanGuideFiles(filePath));
+    else if (entry.name.endsWith('.md') || entry.name.endsWith('.mdx')) {
+      files.push(filePath);
+    }
+  }
+  return files;
+}
 
 function check(condition: unknown, message: string): void {
   checks += 1;
@@ -163,6 +177,12 @@ for (const item of gameConfig.nav) {
 }
 
 const contentRoot = path.join(root, 'content/guides');
+try {
+  assertI18nWiring(scanGuideFiles(contentRoot));
+  checks += 1;
+} catch (error) {
+  errors.push(error instanceof Error ? error.message : String(error));
+}
 if (fs.existsSync(contentRoot)) {
   for (const entry of fs.readdirSync(contentRoot, { withFileTypes: true })) {
     if (entry.isDirectory()) {

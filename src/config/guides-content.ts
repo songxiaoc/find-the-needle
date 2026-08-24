@@ -17,11 +17,7 @@ import GithubSlugger from 'github-slugger';
 import matter from 'gray-matter';
 
 import { GUIDE_CATEGORIES, type GuideCategory } from '@/config/guides';
-import {
-  assertI18nWiring,
-  localeOfFile,
-  stripLocaleSuffix,
-} from '@/config/locale/wiring';
+import { localeOfFile, stripLocaleSuffix } from '@/config/locale/wiring';
 
 const CONTENT_DIR = path.join(process.cwd(), 'content/guides');
 
@@ -126,10 +122,6 @@ function toItem(
  */
 export function getAllGuides(locale = 'en'): GuideItem[] {
   const files = scanDir(CONTENT_DIR);
-
-  // Fails the build if a translation exists for an unregistered locale, or a
-  // registered locale has no message bundle. Both are silent otherwise.
-  assertI18nWiring(files);
 
   // key → { defaultFile, localeFiles }
   const byKey = new Map<string, { def?: string; loc: Map<string, string> }>();
