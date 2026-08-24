@@ -24,7 +24,7 @@ That runs, in order: Prettier check → ESLint → `tsc --noEmit` → `validate:
 - Keep the change scoped. This is a template: avoid adding auth, a database, or a SaaS admin console.
 - Do not commit secrets, `.env`, or `.dev.vars`.
 - User-facing copy for the placeholder site stays generic ("Example Game"). Do not add a real game's name, domain, or assets.
-- Architecture notes live in `CLAUDE.md` and `docs/`. Update them when behavior changes.
+- Architecture notes live in `CLAUDE.md` and `docs/`. Agent-skill usage for cloners is `docs/SKILL.md`; keep `.claude/skills/` and `.cursor/skills/` in sync when the procedure changes.
 
 ## License
 

@@ -3,7 +3,7 @@
  * ║  To switch the site's visual theme, change `tactical` below to        ║
  * ║  another folder in src/components/site/themes/ (e.g. `pixel`).         ║
  * ║  Then update the matching font in ../../components/site/active-fonts.ts║
- * ║  (or just run scaffold with --theme <name>, which writes both).        ║
+ * ║  The bundled skill writes both files when you pick a theme.            ║
  * ╚══════════════════════════════════════════════════════════════════════╝
  *
  * Build-time selection — Tailwind @theme generates utilities at build, so a

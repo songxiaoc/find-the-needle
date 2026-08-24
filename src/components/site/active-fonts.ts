@@ -2,7 +2,7 @@
  * ║  ACTIVE FONTS — the single font selection point (pairs with the CSS    ║
  * ║  selection in src/config/style/active-theme.css).                      ║
  * ║  To switch theme fonts, change `tactical` below to another theme       ║
- * ║  folder (e.g. `pixel`). scaffold --theme <name> writes this for you.   ║
+ * ║  folder (e.g. `pixel`). The bundled skill writes this for you.         ║
  * ╚══════════════════════════════════════════════════════════════════════╝
  *
  * Frames (page.tsx, PageFrame.tsx, …) import `fontVars` from here and apply it

@@ -4,9 +4,7 @@
 
 面向**非官方粉丝攻略 / Wiki 站**的 Next.js 模板。壳、主题、SEO、MDX、i18n、部署已经搭好，页面结构留给你。
 
-动手步骤见 **[Quick Start](./docs/QUICKSTART.md)**。
-
-用 Cursor / Claude Code 时，克隆后直接说「把这个模板改成某某游戏的攻略站」即可。仓库内置 [`.claude/skills/game-wiki-quick-start/`](./.claude/skills/game-wiki-quick-start/SKILL.md)，会按 allowlist 改身份、主题、SEO、首页和品牌图，不必对照文档逐项手改。
+动手步骤见 **[Quick Start](./docs/QUICKSTART.md)**。最快的方式是在 Cursor / Claude Code 里用自带 skill，见下面 **[用 Agent 定制](#用-agent-定制)**。
 
 ## 理念
 
@@ -36,6 +34,37 @@
 ```
 
 删掉用不到的页面，按自己的内容结构组装即可。
+
+## 用 Agent 定制
+
+仓库里带了一轮接入 skill，不用自己翻配置文件。
+
+**放在哪**
+
+- Claude Code：[`.claude/skills/game-wiki-quick-start/`](./.claude/skills/game-wiki-quick-start/SKILL.md)
+- Cursor：[`.cursor/skills/game-wiki-quick-start/`](./.cursor/skills/game-wiki-quick-start/SKILL.md)（内容相同）
+
+克隆下来就有，不用另装。
+
+**怎么用**
+
+```bash
+git clone https://github.com/tiankonglan/game-wiki-template.git my-game-wiki
+cd my-game-wiki
+pnpm install
+```
+
+用 **Cursor** 或 **Claude Code** 打开这个目录，发一条类似：
+
+> 把这个模板改成 **\<游戏名\>** 的非官方攻略站。域名 **\<example.com\>**。品牌色 **\<#hex\>**（可选）。主题 **tactical / pixel / neon / aurora / sakura**（可选）。
+
+至少给：游戏名 + 域名。其余有默认值或 `TODO:`。
+
+Agent 应按 skill 描述自动加载（没有的话用 `@` / `/` 点名）。第一轮会改身份、SEO、首页文案、主题和品牌图，然后跑 `pnpm validate:site` 和 `pnpm build`。
+
+**它不会**加路由、登录、数据库，也不会写真正的攻略正文。`content/guides/` 里的种子页要你自己换。不要让它编 Steam ID，或把站点写成官方站。
+
+完整说明（提示词、要准备什么、第一轮之后做什么）：**[docs/SKILL.md](./docs/SKILL.md)**。之后补真实 MDX/JSON，再部署（`pnpm cf:deploy` 或 Vercel）。手工步骤：[Quick Start](./docs/QUICKSTART.md)。
 
 ## 开发
 

@@ -4,7 +4,7 @@ English · [简体中文](./README.zh-CN.md)
 
 A production-ready Next.js base for **unofficial fan guide / wiki sites**. Brings the boring stuff (shell, theme, SEO patterns, MDX, i18n, deploy) and gets out of your way for page structure.
 
-Hands-on steps: **[Quick Start](./docs/QUICKSTART.md)**.
+Hands-on steps: **[Quick Start](./docs/QUICKSTART.md)**. Fastest path: open the clone in Cursor or Claude Code and use the bundled skill — see **[Customize with an agent](#customize-with-an-agent)** below.
 
 ## Philosophy
 
@@ -47,11 +47,40 @@ pages all ship with "Example Game" placeholder copy marked *replace this*. Delet
 pages you don't need and assemble your own from the recipes below — **no assumptions are
 made about your content architecture.**
 
+## Customize with an agent
+
+This repo ships a first-pass skill so you do not have to hunt config files by hand.
+
+**Where it lives**
+
+- Claude Code: [`.claude/skills/game-wiki-quick-start/`](./.claude/skills/game-wiki-quick-start/SKILL.md)
+- Cursor: [`.cursor/skills/game-wiki-quick-start/`](./.cursor/skills/game-wiki-quick-start/SKILL.md) (same text)
+
+Both copies travel with the clone. You do not install anything extra.
+
+**How to run it**
+
+```bash
+git clone https://github.com/tiankonglan/game-wiki-template.git my-game-wiki
+cd my-game-wiki
+pnpm install
+```
+
+Open that folder as the workspace in **Cursor** or **Claude Code**. Then say, in one message:
+
+> Turn this template into an unofficial fan wiki for **\<game name\>**. Domain is **\<example.com\>**. Accent color **\<#hex\>** (optional). Theme **tactical / pixel / neon / aurora / sakura** (optional).
+
+Minimum you must give: game name + domain. Everything else has defaults or a `TODO:`.
+
+The agent should pick up the skill from the description (or `@` / `/` the skill if it does not). First pass rewrites identity, SEO, homepage copy, theme, and brand images, then runs `pnpm validate:site` and `pnpm build`.
+
+**It will not** add routes, auth, a database, or real guide articles. Seed pages under `content/guides/` stay until you replace them. Do not ask it to invent Steam IDs or claim the site is official.
+
+Full walkthrough (what to say, what to prepare, what happens next): **[docs/SKILL.md](./docs/SKILL.md)**. After that, add real MDX/JSON and deploy (`pnpm cf:deploy` or Vercel). Manual steps: **[docs/QUICKSTART.md](./docs/QUICKSTART.md)**.
+
 ## 5-minute setup
 
-If you are in Cursor or Claude Code, the fastest path is: clone, `pnpm install`, then ask the agent to turn this template into your game's wiki. It will load [`.claude/skills/game-wiki-quick-start/SKILL.md`](./.claude/skills/game-wiki-quick-start/SKILL.md) and do the first-pass identity / theme / SEO / homepage / brand work for you.
-
-Manual path: **[docs/QUICKSTART.md](./docs/QUICKSTART.md)** for clone → run → first content. Short version:
+Prefer the agent path above. Manual clone → run → first content: **[docs/QUICKSTART.md](./docs/QUICKSTART.md)**. Short version:
 
 1. **Edit [`src/generated/game-config.ts`](./src/generated/game-config.ts)** — site name, domain, game name, tagline, version, nav, disclaimer. [`src/config/game.ts`](./src/config/game.ts) is the typed adapter; header, footer, SEO metadata, sitemap, robots, and llms.txt are all generated from these values.
 2. **Replace the placeholder content** — edit/replace `src/config/guides.ts`, `src/config/homepage.ts`, `content/docs/*`, and the genericized pages under `src/app/[locale]/`. Swap `public/logo.png`, `public/favicon.png`, `public/og-image.png` for your own.
