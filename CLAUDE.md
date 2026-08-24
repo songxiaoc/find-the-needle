@@ -4,7 +4,7 @@ This repository is a Next.js template for unofficial fan game-guide / wiki sites
 
 ## First-pass customization
 
-When the user wants to turn this clone into a real game wiki, follow **`.claude/skills/tomtwiki-quick-start/SKILL.md`**. Human-facing usage is in **`docs/SKILL.md`**. Do not wander into routing or components on the first pass.
+When the user wants to turn this clone into a real game wiki, follow **`.claude/skills/tomtwiki-quick-start/SKILL.md`**. The same skill is also at `.cursor/skills/tomtwiki-quick-start/` (Cursor) and `.agents/skills/tomtwiki-quick-start/` (Codex). Human-facing usage is in **`docs/SKILL.md`**. Do not wander into routing or components on the first pass.
 
 ## Commands
 

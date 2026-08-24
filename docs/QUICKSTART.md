@@ -2,7 +2,7 @@
 
 从克隆到本地可预览、改成自己的站，大约 10 分钟。英文总览见 [README](../README.md)，中文总览见 [README.zh-CN.md](../README.zh-CN.md)。
 
-**用 AI 接入（推荐）：** 在 Cursor 或 Claude Code 打开本仓库，说「把这个模板改成 \<游戏名\> 的攻略站」。用法、提示词和范围见 **[SKILL.md](./SKILL.md)**。下面是同一件事的手工步骤。
+**用 AI 接入（推荐）：** 在 Cursor、Claude Code 或 Codex 打开本仓库，说「把这个模板改成 \<游戏名\> 的攻略站」。用法、提示词和范围见 **[SKILL.md](./SKILL.md)**。下面是同一件事的手工步骤。
 
 ## 0. 环境
 

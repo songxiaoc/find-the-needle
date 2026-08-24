@@ -10,7 +10,7 @@ description: >-
 
 # TomeWiki Quick Start
 
-Keep this folder at `.claude/skills/tomtwiki-quick-start/`. Copy it to `.cursor/skills/tomtwiki-quick-start/` so Cursor loads the same text.
+Keep this folder identical in three places: `.claude/skills/tomtwiki-quick-start/` (Claude Code), `.cursor/skills/tomtwiki-quick-start/` (Cursor), and `.agents/skills/tomtwiki-quick-start/` (Codex).
 
 A new clone of [TomeWiki](https://github.com/tiankonglan/tomtwiki) still reads "Example Game". This skill swaps that identity using knobs the template already ships. It does not add routes, features, or a new content model.
 

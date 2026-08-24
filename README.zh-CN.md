@@ -4,7 +4,7 @@
 
 面向**独立非官方粉丝攻略 / Wiki 站**的 Next.js 模板。壳、主题、SEO、MDX、i18n、部署已经搭好，页面结构留给你。
 
-动手步骤见 **[Quick Start](./docs/QUICKSTART.md)**。最快的方式是在 Cursor / Claude Code 里用自带 skill，见下面 **[用 Agent 定制](#用-agent-定制)**。
+动手步骤见 **[Quick Start](./docs/QUICKSTART.md)**。最快的方式是在 Cursor、Claude Code 或 Codex 里用自带 skill，见下面 **[用 Agent 定制](#用-agent-定制)**。
 
 ## 理念
 
@@ -42,9 +42,10 @@
 **放在哪**
 
 - Claude Code：[`.claude/skills/tomtwiki-quick-start/`](./.claude/skills/tomtwiki-quick-start/SKILL.md)
-- Cursor：[`.cursor/skills/tomtwiki-quick-start/`](./.cursor/skills/tomtwiki-quick-start/SKILL.md)（内容相同）
+- Cursor：[`.cursor/skills/tomtwiki-quick-start/`](./.cursor/skills/tomtwiki-quick-start/SKILL.md)
+- Codex：[`.agents/skills/tomtwiki-quick-start/`](./.agents/skills/tomtwiki-quick-start/SKILL.md)
 
-克隆下来就有，不用另装。
+三份内容相同，克隆下来就有，不用另装。
 
 **怎么用**
 
@@ -54,13 +55,13 @@ cd my-game-wiki
 pnpm install
 ```
 
-用 **Cursor** 或 **Claude Code** 打开这个目录，发一条类似：
+用 **Cursor**、**Claude Code** 或 **Codex** 打开这个目录，发一条类似：
 
 > 把这个模板改成 **\<游戏名\>** 的非官方攻略站。域名 **\<example.com\>**。品牌色 **\<#hex\>**（可选）。主题 **tactical / pixel / neon / aurora / sakura**（可选）。
 
 至少给：游戏名 + 域名。其余有默认值或 `TODO:`。
 
-Agent 应按 skill 描述自动加载（没有的话用 `@` / `/` 点名）。第一轮会改身份、SEO、首页文案、主题和品牌图，然后跑 `pnpm validate:site` 和 `pnpm build`。
+Agent 应按 skill 描述自动加载（没有的话用 `@` / `/` / `$tomtwiki-quick-start` 点名）。第一轮会改身份、SEO、首页文案、主题和品牌图，然后跑 `pnpm validate:site` 和 `pnpm build`。
 
 **它不会**加路由、登录、数据库，也不会写真正的攻略正文。`content/guides/` 里的种子页要你自己换。不要让它编 Steam ID，或把站点写成官方站。
 

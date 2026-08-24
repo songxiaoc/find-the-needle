@@ -4,7 +4,7 @@ English · [简体中文](./README.zh-CN.md)
 
 A Next.js template for **independent unofficial fan game wikis**. Brings the boring stuff (shell, theme, SEO patterns, MDX, i18n, deploy) and gets out of your way for page structure.
 
-Hands-on steps: **[Quick Start](./docs/QUICKSTART.md)**. Fastest path: open the clone in Cursor or Claude Code and use the bundled skill — see **[Customize with an agent](#customize-with-an-agent)** below.
+Hands-on steps: **[Quick Start](./docs/QUICKSTART.md)**. Fastest path: open the clone in Cursor, Claude Code, or Codex and use the bundled skill — see **[Customize with an agent](#customize-with-an-agent)** below.
 
 ## Philosophy
 
@@ -54,9 +54,10 @@ This repo ships a first-pass skill so you do not have to hunt config files by ha
 **Where it lives**
 
 - Claude Code: [`.claude/skills/tomtwiki-quick-start/`](./.claude/skills/tomtwiki-quick-start/SKILL.md)
-- Cursor: [`.cursor/skills/tomtwiki-quick-start/`](./.cursor/skills/tomtwiki-quick-start/SKILL.md) (same text)
+- Cursor: [`.cursor/skills/tomtwiki-quick-start/`](./.cursor/skills/tomtwiki-quick-start/SKILL.md)
+- Codex: [`.agents/skills/tomtwiki-quick-start/`](./.agents/skills/tomtwiki-quick-start/SKILL.md)
 
-Both copies travel with the clone. You do not install anything extra.
+All three copies are the same text and travel with the clone. You do not install anything extra.
 
 **How to run it**
 
@@ -66,13 +67,13 @@ cd my-game-wiki
 pnpm install
 ```
 
-Open that folder as the workspace in **Cursor** or **Claude Code**. Then say, in one message:
+Open that folder as the workspace in **Cursor**, **Claude Code**, or **Codex**. Then say, in one message:
 
 > Turn this template into an unofficial fan wiki for **\<game name\>**. Domain is **\<example.com\>**. Accent color **\<#hex\>** (optional). Theme **tactical / pixel / neon / aurora / sakura** (optional).
 
 Minimum you must give: game name + domain. Everything else has defaults or a `TODO:`.
 
-The agent should pick up the skill from the description (or `@` / `/` the skill if it does not). First pass rewrites identity, SEO, homepage copy, theme, and brand images, then runs `pnpm validate:site` and `pnpm build`.
+The agent should pick up the skill from the description (or `@` / `/` / `$tomtwiki-quick-start` if it does not). First pass rewrites identity, SEO, homepage copy, theme, and brand images, then runs `pnpm validate:site` and `pnpm build`.
 
 **It will not** add routes, auth, a database, or real guide articles. Seed pages under `content/guides/` stay until you replace them. Do not ask it to invent Steam IDs or claim the site is official.
 

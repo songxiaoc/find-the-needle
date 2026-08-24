@@ -5,9 +5,10 @@
 给 Agent 执行的步骤在：
 
 - [`.claude/skills/tomtwiki-quick-start/SKILL.md`](../.claude/skills/tomtwiki-quick-start/SKILL.md)（Claude Code）
-- [`.cursor/skills/tomtwiki-quick-start/SKILL.md`](../.cursor/skills/tomtwiki-quick-start/SKILL.md)（Cursor，内容相同）
+- [`.cursor/skills/tomtwiki-quick-start/SKILL.md`](../.cursor/skills/tomtwiki-quick-start/SKILL.md)（Cursor）
+- [`.agents/skills/tomtwiki-quick-start/SKILL.md`](../.agents/skills/tomtwiki-quick-start/SKILL.md)（Codex）
 
-两份随仓库走，不用再装 marketplace skill。手工改配置见 [QUICKSTART.md](./QUICKSTART.md)。
+三份随仓库走，不用再装 marketplace skill。手工改配置见 [QUICKSTART.md](./QUICKSTART.md)。
 
 ## 它做什么
 
@@ -26,7 +27,7 @@
 ## 环境
 
 - Node.js 24、pnpm 10.34.5（与 CI 一致）
-- **Cursor** 或 **Claude Code** 打开的是克隆后的仓库根目录（能看见 `.claude/skills/`）
+- **Cursor**、**Claude Code** 或 **Codex** 打开的是克隆后的仓库根目录（能看见 `.claude/skills/` / `.agents/skills/`）
 
 ```bash
 git clone https://github.com/tiankonglan/tomtwiki.git my-game-wiki
@@ -42,6 +43,7 @@ pnpm install
 
 - Cursor：`/` 或 `@` 技能列表里找 `tomtwiki-quick-start`
 - Claude Code：`/tomtwiki-quick-start`
+- Codex：`$tomtwiki-quick-start`
 
 ### 提示词模板
 
@@ -116,6 +118,6 @@ Agent 结束时应做到：
 - 部署：`pnpm cf:deploy` 或 Vercel；自定义域名在 Cloudflare 绑定
 - 上线前扫一遍 [PITFALLS.md](./PITFALLS.md)
 
-## 维护这两份 skill
+## 维护这三份 skill
 
-改流程时 **`.claude/skills/` 与 `.cursor/skills/` 必须一起改**，保持字节级相同，否则 Cursor 和 Claude Code 行为会漂。
+改流程时 **`.claude/skills/`、`.cursor/skills/` 与 `.agents/skills/` 必须一起改**，保持字节级相同，否则 Cursor、Claude Code 和 Codex 行为会漂。
