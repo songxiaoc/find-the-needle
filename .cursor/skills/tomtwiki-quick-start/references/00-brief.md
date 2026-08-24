@@ -19,8 +19,9 @@ Ask for a game name and a hostname. Fill the rest with defaults or `TODO:` — d
 - **heroFacts** — up to four `{ label }` chips (genre, platform, version)
 - **playUrl** / **playLabel** — `""` / `Play now`
 - **contactEmail** — `""`
-- **coverImage** — only a real file under `public/`
-- **heroStyle** — `text-only`, unless they have art (`cover-split`) or a trailer (`video-center`)
+- **coverImage** — key art / store banner only; use a real file under `public/` when possible
+- **gameplayImage** — a clean gameplay screenshot, used only by `gameplay-panel`
+- **heroStyle** — `text-only` by default; use `cover-split` for key art, `gameplay-panel` for a clean gameplay screenshot, or `video-center` for a trailer
 - **trailerUrl** — `""` unless `heroStyle` is `video-center`
 - **accentColor** — hex; borrow from official art if they did not pick one
 - **theme** — `tactical` unless the game clearly fits `pixel`, `neon`, `aurora`, or `sakura`

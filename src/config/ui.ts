@@ -15,7 +15,12 @@ export const UI_THEMES = [
   'aurora',
   'sakura',
 ] as const;
-export const UI_HEROES = ['cover-split', 'video-center', 'text-only'] as const;
+export const UI_HEROES = [
+  'cover-split',
+  'gameplay-panel',
+  'video-center',
+  'text-only',
+] as const;
 export const UI_NAVIGATIONS = [
   'wiki-sidebar',
   'top-bar',

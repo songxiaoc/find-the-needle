@@ -96,12 +96,18 @@ export default async function HomePage({
     guideCategories: getGuideCategories(locale),
     entityKinds,
   };
+  const homeBlocks = getHomeBlocks(locale);
+  const heroBlocks = homeBlocks.filter((block) => block.type === 'hero');
+  const contentBlocks = homeBlocks.filter((block) => block.type !== 'hero');
 
   return (
     <div className={fontVars}>
-      <SiteShell activeHref="/">
+      <SiteShell activeHref="/" locale={locale}>
+        <div className="mx-auto max-w-[1440px] px-6 pt-8 md:px-14 md:pt-12">
+          <HomeBlocks blocks={heroBlocks} ctx={ctx} />
+        </div>
         <WikiShell sidebar={<WikiSidebar locale={locale} />}>
-          <HomeBlocks blocks={getHomeBlocks(locale)} ctx={ctx} />
+          <HomeBlocks blocks={contentBlocks} ctx={ctx} />
         </WikiShell>
       </SiteShell>
     </div>

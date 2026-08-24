@@ -45,7 +45,7 @@ Delete `.next` first if `public/logo.png` still looks like the template mark.
 - CSS preset, font preset, `site-manifest.theme`, and `ui-recipe.theme` disagree
 - brand CSS variables are missing or duplicated
 - `public/logo.png`, `favicon.png`, or `og-image.png` is absent
-- `cover-split` lacks `coverImage`, or `video-center` lacks `trailerUrl`
+- `cover-split` lacks `coverImage`, `gameplay-panel` lacks `gameplayImage`, or `video-center` lacks `trailerUrl`
 - `// scaffold-default:en-only` is still in `site-locales.ts`
 
 If `site-manifest.planSha256` is set, leftover `Example Game`, `REPLACE_WITH_OFFICIAL_SOURCE`, or `Replace this` in generated identity files also fail.

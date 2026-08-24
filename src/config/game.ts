@@ -27,8 +27,15 @@ export type GameConfig = {
   playLabel?: string;
   social?: { discord?: string; youtube?: string; x?: string; roblox?: string };
   contactEmail?: string;
+  /** Key art, capsule art, or a store banner for cards and cover-split heroes. */
   coverImage?: string;
-  heroStyle?: 'cover-split' | 'video-center' | 'text-only';
+  /** A clean gameplay screenshot for the gameplay-panel hero. */
+  gameplayImage?: string;
+  heroStyle?:
+    | 'cover-split'
+    | 'gameplay-panel'
+    | 'video-center'
+    | 'text-only';
   trailerUrl?: string;
   game?: {
     description?: string;
@@ -106,6 +113,7 @@ export const gameConfig: GameConfig = {
   social: generated.social ? { ...generated.social } : {},
   contactEmail: generated.contactEmail ?? '',
   coverImage: generated.coverImage ?? '',
+  gameplayImage: generated.gameplayImage ?? '',
   heroStyle: generated.heroStyle,
   trailerUrl: generated.trailerUrl ?? '',
   game: generated.game

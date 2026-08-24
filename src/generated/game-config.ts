@@ -19,6 +19,7 @@ export const generatedGameConfig = {
   social: {},
   contactEmail: '',
   coverImage: '',
+  gameplayImage: '',
   heroStyle: 'text-only',
   trailerUrl: '',
   game: {

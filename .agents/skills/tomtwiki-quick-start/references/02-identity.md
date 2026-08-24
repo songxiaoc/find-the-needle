@@ -18,8 +18,9 @@ Keep the object shape. Fill:
 | `playUrl` / `playLabel` | Store or official CTA |
 | `social` | Adapter keys only: `discord`, `youtube`, `x`, `roblox` |
 | `contactEmail` | |
-| `coverImage` | `""` or a file that exists under `public/` |
-| `heroStyle` | `text-only` \| `cover-split` \| `video-center` |
+| `coverImage` | `""` or key art / a store banner under `public/`; never use it as a gameplay screenshot |
+| `gameplayImage` | `""` or a clean gameplay screenshot under `public/`; required by `gameplay-panel` |
+| `heroStyle` | `text-only` \| `cover-split` \| `gameplay-panel` \| `video-center` |
 | `trailerUrl` | Required for `video-center` |
 | `game.genre` / `game.platforms` | Short factual lists |
 | `nav` | Keep shipped routes (`/guides`, `/faq`, `/about`) |

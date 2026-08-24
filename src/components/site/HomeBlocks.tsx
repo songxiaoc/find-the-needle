@@ -419,7 +419,14 @@ function HeroBlock({
         ? "heroStyle 'video-center' needs gameConfig.trailerUrl"
         : style === 'cover-split' && !gameConfig.coverImage
           ? "heroStyle 'cover-split' needs gameConfig.coverImage"
-          : !['video-center', 'cover-split', 'text-only'].includes(style)
+          : style === 'gameplay-panel' && !gameConfig.gameplayImage
+            ? "heroStyle 'gameplay-panel' needs gameConfig.gameplayImage"
+            : ![
+                  'video-center',
+                  'cover-split',
+                  'gameplay-panel',
+                  'text-only',
+                ].includes(style)
             ? `heroStyle '${style}' is not a supported value`
             : null;
     if (reason) {
@@ -476,6 +483,38 @@ function HeroBlock({
           {chips}
         </div>
         <Ctas ctas={block.ctas} center />
+      </section>
+    );
+  }
+
+  if (style === 'gameplay-panel' && gameConfig.gameplayImage) {
+    return (
+      <section className="border-site-outline-strong bg-site-outline-strong grid gap-px overflow-hidden border lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="px-grid-bg bg-site-surface flex min-h-[480px] flex-col justify-center p-7 md:min-h-[560px] md:p-12 lg:p-16">
+          {eyebrow}
+          <h1 className="site-display-lg text-site-on-surface max-w-[10ch]">
+            {block.title}
+          </h1>
+          <p className="site-body-lg mt-7 max-w-[52ch]">{block.description}</p>
+          <div className="mt-6 flex flex-wrap gap-2.5">{chips}</div>
+          <Ctas ctas={block.ctas} />
+          <p className="site-mono text-site-primary mt-10 border-t border-[var(--site-outline-strong)] pt-4">
+            {gameConfig.gameShortName} · v{gameConfig.gameVersion}
+          </p>
+        </div>
+        <div className="bg-site-surface-container relative min-h-[320px] overflow-hidden lg:min-h-0">
+          <img
+            src={gameConfig.gameplayImage}
+            alt={`${gameConfig.gameFullName} gameplay`}
+            className="absolute inset-0 h-full w-full object-cover"
+            width={1920}
+            height={1080}
+          />
+          <div
+            aria-hidden
+            className="absolute inset-0 bg-[linear-gradient(180deg,transparent_55%,color-mix(in_srgb,var(--site-surface)_78%,transparent)_100%)]"
+          />
+        </div>
       </section>
     );
   }

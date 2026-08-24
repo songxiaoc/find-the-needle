@@ -5,7 +5,7 @@ import { envConfigs, getPrimaryNavigation, siteProfile } from '@/config';
 import { getPublishedEntityKinds } from '@/config/entities-content';
 import { gameConfig, type FooterLinkGroup, type NavItem } from '@/config/game';
 import { getGuideCategories } from '@/config/guides-content';
-import { locales } from '@/config/locale';
+import { defaultLocale, locales } from '@/config/locale';
 import { uiDataAttributes } from '@/config/ui';
 
 import { LocaleSwitcher } from './LocaleSwitcher';
@@ -35,14 +35,17 @@ function BrandMark({
 function SiteHeader({
   activeHref,
   navItems,
+  locale,
 }: {
   activeHref?: string;
   navItems: readonly NavItem[];
+  locale: string;
 }) {
+  const localizedNavItems = navItems;
   // Categories for the mobile drawer (the desktop sidebar's equivalent on phones,
   // so content pages also get category nav). MobileNav is a client component and
   // can't read the content index itself — we resolve it here on the server.
-  const categories = getGuideCategories().map((c) => ({
+  const categories = getGuideCategories(locale).map((c) => ({
     label: c.title,
     href: `/guides/${c.slug}`,
     count: c.count,
@@ -61,8 +64,8 @@ function SiteHeader({
         </Link>
         <div className="hidden items-center gap-8 md:flex">
           {(() => {
-            const activeNav = activeNavHref(activeHref, navItems);
-            return navItems.map((item) => {
+            const activeNav = activeNavHref(activeHref, localizedNavItems);
+            return localizedNavItems.map((item) => {
               const active = activeNav === item.href;
               return (
                 <Link
@@ -97,23 +100,26 @@ function SiteHeader({
 
 function SiteFooter({
   entityKinds,
+  locale,
 }: {
   entityKinds: ReturnType<typeof getPublishedEntityKinds>;
+  locale: string;
 }) {
   // The "Guides" column is derived from content/guides/** so it always mirrors
   // the live category set (and renders on every page — site-wide internal links
   // to each category). Empty categories are already filtered out. Falls back to
   // a single hub link before any content exists.
-  const categories = getGuideCategories();
+  const categories = getGuideCategories(locale);
+  const isChinese = locale === 'zh';
   const guidesGroup: FooterLinkGroup = {
-    heading: 'Guides',
+    heading: isChinese ? '攻略' : 'Guides',
     links: categories.length
       ? categories.map((c) => ({ label: c.title, href: `/guides/${c.slug}` }))
-      : [{ label: 'All guides', href: '/guides' }],
+      : [{ label: isChinese ? '全部攻略' : 'All guides', href: '/guides' }],
   };
   const entityGroup: FooterLinkGroup | null = entityKinds.length
     ? {
-        heading: 'Database',
+        heading: isChinese ? '数据库' : 'Database',
         links: entityKinds.map((kind) => ({
           label: kind.label,
           href: kind.route,
@@ -145,9 +151,9 @@ function SiteFooter({
                 lineHeight: 1.55,
               }}
             >
-              Independent fan database for {gameConfig.gameFullName}. Not
-              affiliated with {gameConfig.disclaimer.publisher}.{' '}
-              {gameConfig.disclaimer.trademarkOwners}
+              {isChinese
+                ? `${gameConfig.gameFullName} 非官方玩家攻略站，与 ${gameConfig.disclaimer.publisher} 没有隶属关系。${gameConfig.disclaimer.trademarkOwners}`
+                : `Independent fan guide for ${gameConfig.gameFullName}. Not affiliated with ${gameConfig.disclaimer.publisher}. ${gameConfig.disclaimer.trademarkOwners}`}
             </p>
             <SocialLinks className="mt-5" />
           </div>
@@ -225,9 +231,11 @@ function SiteFooter({
 export function SiteShell({
   children,
   activeHref,
+  locale = defaultLocale,
 }: {
   children: ReactNode;
   activeHref?: string;
+  locale?: string;
 }) {
   const entityKinds = siteProfile.features.entities
     ? getPublishedEntityKinds()
@@ -246,10 +254,10 @@ export function SiteShell({
       className="site-theme bg-site-surface min-h-screen"
       {...uiDataAttributes}
     >
-      <SiteHeader activeHref={activeHref} navItems={navItems} />
+      <SiteHeader activeHref={activeHref} navItems={navItems} locale={locale} />
       <PatchBar />
       <main>{children}</main>
-      <SiteFooter entityKinds={entityKinds} />
+      <SiteFooter entityKinds={entityKinds} locale={locale} />
     </div>
   );
 }

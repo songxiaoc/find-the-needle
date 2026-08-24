@@ -345,6 +345,18 @@ if (gameConfig.heroStyle === 'cover-split') {
     );
   }
 }
+if (gameConfig.heroStyle === 'gameplay-panel') {
+  check(
+    Boolean(gameConfig.gameplayImage),
+    'gameplay-panel hero requires gameplayImage'
+  );
+  if (gameConfig.gameplayImage?.startsWith('/')) {
+    check(
+      fs.existsSync(publicFile(gameConfig.gameplayImage)),
+      `gameplay image is missing: ${gameConfig.gameplayImage}`
+    );
+  }
+}
 
 if (siteManifest.planSha256) {
   check(

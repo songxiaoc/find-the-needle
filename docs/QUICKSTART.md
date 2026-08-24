@@ -48,8 +48,11 @@ NEXTJS_ENV=development
 - `siteName` / `domain`（`origin` 会自动拼成 `https://<domain>`）
 - `gameFullName` / `gameShortName` / `tagline` / `gameVersion`
 - `nav`、`disclaimer`
+- Hero 素材：`coverImage` 用于 key art / 商店横幅；`gameplayImage` 用于实机截图；`heroStyle` 决定呈现方式
 
 改完刷新：顶栏、页脚、`<title>`、sitemap、robots、llms.txt 都从这里派生。
+
+Hero 选择：`text-only` 不需要媒体，`cover-split` 需要 `coverImage`，`gameplay-panel` 需要干净的 `gameplayImage`，`video-center` 需要 `trailerUrl`。不要把带游戏标题的商店横幅作为实机截图或大背景图使用。
 
 同时替换：
 

@@ -14,7 +14,7 @@
     "locales": ["en", "zh", "ja", "ko", "de", "fr", "es", "pt", "id"],
     "defaultLocales": ["en"],
     "themes": ["tactical", "pixel", "neon", "aurora", "sakura"],
-    "heroStyles": ["cover-split", "video-center", "text-only"],
+    "heroStyles": ["cover-split", "gameplay-panel", "video-center", "text-only"],
     "homeBlockTypes": [
       "hero",
       "start-cards",

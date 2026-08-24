@@ -83,7 +83,7 @@ pnpm install
 | 品牌色、主题 | 否 | 未给则按品类猜，可事后改 |
 | Steam ID | 否 | **禁止猜测** |
 | logo / 方形 emblem | 否 | 没有则跑仓库自带 `scripts/gen-brand-assets.mjs` |
-| 封面图、预告片 URL | 否 | 有才用 `cover-split` / `video-center` Hero |
+| Key art、实机截图、预告片 URL | 否 | Key art 用 `cover-split`，干净实机截图用 `gameplay-panel`，预告片用 `video-center` |
 | 分析 ID | 否 | 没给就留空 |
 
 ## 第一轮会动哪些文件

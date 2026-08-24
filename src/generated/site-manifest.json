@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "templateContractVersion": 1,
-  "templateContractSha256": "70b6679331811aec109d598782e07f1eb3e2f5dc573809e9c01f85b06f39675d",
+  "templateContractSha256": "426a03a4cbcb993832187bff9bda64d5c99f6e74491e963f2504f8fb03091661",
   "requiredCapabilities": [
     "asset-manifest-v1",
     "generated-config-v1",

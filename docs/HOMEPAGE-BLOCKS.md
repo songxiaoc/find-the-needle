@@ -33,7 +33,7 @@
 
 | `type` | 渲染成 |
 |--------|---------|
-| `hero` | `<h1>` 区：eyebrow + title + description + CTA（第一个=主按钮）。版式由 `gameConfig.heroStyle` 决定。 |
+| `hero` | `<h1>` 区：eyebrow + title + description + CTA（第一个=主按钮）。版式由 `gameConfig.heroStyle` 决定：`text-only`、`cover-split`（key art）、`gameplay-panel`（全宽首屏中的实机截图面板）或 `video-center`。 |
 | `start-cards` | 手工挑选的「Start here」卡片行（`DragScrollRow`）。 |
 | `code-cards` | 兑换码卡片（`code` + `reward` + 状态徽章）。 |
 | `tier-grid` | 等级行（S/A/B… + label + detail）。 |
