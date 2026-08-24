@@ -4,8 +4,8 @@
 
 给 Agent 执行的步骤在：
 
-- [`.claude/skills/game-wiki-quick-start/SKILL.md`](../.claude/skills/game-wiki-quick-start/SKILL.md)（Claude Code）
-- [`.cursor/skills/game-wiki-quick-start/SKILL.md`](../.cursor/skills/game-wiki-quick-start/SKILL.md)（Cursor，内容相同）
+- [`.claude/skills/tomtwiki-quick-start/SKILL.md`](../.claude/skills/tomtwiki-quick-start/SKILL.md)（Claude Code）
+- [`.cursor/skills/tomtwiki-quick-start/SKILL.md`](../.cursor/skills/tomtwiki-quick-start/SKILL.md)（Cursor，内容相同）
 
 两份随仓库走，不用再装 marketplace skill。手工改配置见 [QUICKSTART.md](./QUICKSTART.md)。
 
@@ -29,7 +29,7 @@
 - **Cursor** 或 **Claude Code** 打开的是克隆后的仓库根目录（能看见 `.claude/skills/`）
 
 ```bash
-git clone https://github.com/tiankonglan/game-wiki-template.git my-game-wiki
+git clone https://github.com/tiankonglan/tomtwiki.git my-game-wiki
 cd my-game-wiki
 pnpm install
 ```
@@ -40,8 +40,8 @@ pnpm install
 
 没被选中时：
 
-- Cursor：`/` 或 `@` 技能列表里找 `game-wiki-quick-start`
-- Claude Code：`/game-wiki-quick-start`
+- Cursor：`/` 或 `@` 技能列表里找 `tomtwiki-quick-start`
+- Claude Code：`/tomtwiki-quick-start`
 
 ### 提示词模板
 
@@ -86,7 +86,7 @@ pnpm install
 
 ## 第一轮会动哪些文件
 
-完整白名单在 skill 的 [`references/07-checklist.md`](../.claude/skills/game-wiki-quick-start/references/07-checklist.md)。概要：
+完整白名单在 skill 的 [`references/07-checklist.md`](../.claude/skills/tomtwiki-quick-start/references/07-checklist.md)。概要：
 
 - `.env`、`wrangler.jsonc`（Worker 名）
 - `src/generated/game-config.ts`、`homepage.ts`、`site-locales.ts` 等生成配置

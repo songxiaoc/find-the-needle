@@ -27,4 +27,4 @@ NEXTJS_ENV=development
 
 ## Cloudflare worker
 
-In `wrangler.jsonc`, the top-level `"name"` and the `services[]` item with `"binding": "WORKER_SELF_REFERENCE"` (`"service"`) must be the same kebab-case slug (from domain or short name). Leaving `game-wiki-template` collides with other workers on the same account.
+In `wrangler.jsonc`, the top-level `"name"` and the `services[]` item with `"binding": "WORKER_SELF_REFERENCE"` (`"service"`) must be the same kebab-case slug (from domain or short name). Leaving `tomtwiki` collides with other workers on the same account.

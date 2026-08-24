@@ -1,18 +1,18 @@
 ---
-name: game-wiki-quick-start
+name: tomtwiki-quick-start
 description: >-
-  Turns a fresh game-wiki-template clone into a named unofficial fan wiki.
+  Turns a fresh TomeWiki clone into a named unofficial fan wiki.
   Fills site identity, SEO, homepage copy, theme, and brand images from a short
   game brief. Use when the user names a game and wants this template customized,
   when Example Game placeholders remain, or when they say 建站, 快速接入,
   改成自己的站, or bootstrap a guide site from this repo.
 ---
 
-# Game Wiki Quick Start
+# TomeWiki Quick Start
 
-Keep this folder at `.claude/skills/game-wiki-quick-start/`. Copy it to `.cursor/skills/game-wiki-quick-start/` so Cursor loads the same text.
+Keep this folder at `.claude/skills/tomtwiki-quick-start/`. Copy it to `.cursor/skills/tomtwiki-quick-start/` so Cursor loads the same text.
 
-A new clone of [game-wiki-template](https://github.com/tiankonglan/game-wiki-template) still reads "Example Game". This skill swaps that identity using knobs the template already ships. It does not add routes, features, or a new content model.
+A new clone of [TomeWiki](https://github.com/tiankonglan/tomtwiki) still reads "Example Game". This skill swaps that identity using knobs the template already ships. It does not add routes, features, or a new content model.
 
 Open a single file under `references/` when you need it. Do not dump the whole folder into context.
 

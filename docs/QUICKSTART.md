@@ -24,7 +24,7 @@ corepack prepare pnpm@10.34.5 --activate
 ## 1. 安装并跑起来
 
 ```bash
-git clone https://github.com/tiankonglan/game-wiki-template.git my-game-wiki
+git clone https://github.com/tiankonglan/tomtwiki.git my-game-wiki
 cd my-game-wiki
 cp .env.example .env
 pnpm install

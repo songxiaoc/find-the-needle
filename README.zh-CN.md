@@ -1,8 +1,8 @@
-# Game Wiki Template
+# TomeWiki
 
 [English](./README.md) · 简体中文
 
-面向**非官方粉丝攻略 / Wiki 站**的 Next.js 模板。壳、主题、SEO、MDX、i18n、部署已经搭好，页面结构留给你。
+面向**独立非官方粉丝攻略 / Wiki 站**的 Next.js 模板。壳、主题、SEO、MDX、i18n、部署已经搭好，页面结构留给你。
 
 动手步骤见 **[Quick Start](./docs/QUICKSTART.md)**。最快的方式是在 Cursor / Claude Code 里用自带 skill，见下面 **[用 Agent 定制](#用-agent-定制)**。
 
@@ -41,15 +41,15 @@
 
 **放在哪**
 
-- Claude Code：[`.claude/skills/game-wiki-quick-start/`](./.claude/skills/game-wiki-quick-start/SKILL.md)
-- Cursor：[`.cursor/skills/game-wiki-quick-start/`](./.cursor/skills/game-wiki-quick-start/SKILL.md)（内容相同）
+- Claude Code：[`.claude/skills/tomtwiki-quick-start/`](./.claude/skills/tomtwiki-quick-start/SKILL.md)
+- Cursor：[`.cursor/skills/tomtwiki-quick-start/`](./.cursor/skills/tomtwiki-quick-start/SKILL.md)（内容相同）
 
 克隆下来就有，不用另装。
 
 **怎么用**
 
 ```bash
-git clone https://github.com/tiankonglan/game-wiki-template.git my-game-wiki
+git clone https://github.com/tiankonglan/tomtwiki.git my-game-wiki
 cd my-game-wiki
 pnpm install
 ```

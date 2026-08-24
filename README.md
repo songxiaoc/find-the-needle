@@ -1,8 +1,8 @@
-# Game Wiki Template
+# TomeWiki
 
 English · [简体中文](./README.zh-CN.md)
 
-A production-ready Next.js base for **unofficial fan guide / wiki sites**. Brings the boring stuff (shell, theme, SEO patterns, MDX, i18n, deploy) and gets out of your way for page structure.
+A Next.js template for **independent unofficial fan game wikis**. Brings the boring stuff (shell, theme, SEO patterns, MDX, i18n, deploy) and gets out of your way for page structure.
 
 Hands-on steps: **[Quick Start](./docs/QUICKSTART.md)**. Fastest path: open the clone in Cursor or Claude Code and use the bundled skill — see **[Customize with an agent](#customize-with-an-agent)** below.
 
@@ -53,15 +53,15 @@ This repo ships a first-pass skill so you do not have to hunt config files by ha
 
 **Where it lives**
 
-- Claude Code: [`.claude/skills/game-wiki-quick-start/`](./.claude/skills/game-wiki-quick-start/SKILL.md)
-- Cursor: [`.cursor/skills/game-wiki-quick-start/`](./.cursor/skills/game-wiki-quick-start/SKILL.md) (same text)
+- Claude Code: [`.claude/skills/tomtwiki-quick-start/`](./.claude/skills/tomtwiki-quick-start/SKILL.md)
+- Cursor: [`.cursor/skills/tomtwiki-quick-start/`](./.cursor/skills/tomtwiki-quick-start/SKILL.md) (same text)
 
 Both copies travel with the clone. You do not install anything extra.
 
 **How to run it**
 
 ```bash
-git clone https://github.com/tiankonglan/game-wiki-template.git my-game-wiki
+git clone https://github.com/tiankonglan/tomtwiki.git my-game-wiki
 cd my-game-wiki
 pnpm install
 ```

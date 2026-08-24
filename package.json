@@ -1,5 +1,5 @@
 {
-  "name": "game-wiki-template",
+  "name": "tomtwiki",
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
@@ -10,7 +10,7 @@
   "packageManager": "pnpm@10.34.5",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tiankonglan/game-wiki-template.git"
+    "url": "git+https://github.com/tiankonglan/tomtwiki.git"
   },
   "scripts": {
     "dev": "next dev --turbopack",

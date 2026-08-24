@@ -1,6 +1,6 @@
 ---
 version: alpha
-name: Game Wiki Template Safe Default
+name: TomeWiki Safe Default
 description: A neutral tactical documentation system. Replace when you have a reviewed visual direction.
 colors:
   primary: "#F5A300"
