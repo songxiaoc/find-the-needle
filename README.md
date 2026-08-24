@@ -49,7 +49,9 @@ made about your content architecture.**
 
 ## 5-minute setup
 
-Follow **[docs/QUICKSTART.md](./docs/QUICKSTART.md)** for clone → run → first content. Short version:
+If you are in Cursor or Claude Code, the fastest path is: clone, `pnpm install`, then ask the agent to turn this template into your game's wiki. It will load [`.claude/skills/game-wiki-quick-start/SKILL.md`](./.claude/skills/game-wiki-quick-start/SKILL.md) and do the first-pass identity / theme / SEO / homepage / brand work for you.
+
+Manual path: **[docs/QUICKSTART.md](./docs/QUICKSTART.md)** for clone → run → first content. Short version:
 
 1. **Edit [`src/generated/game-config.ts`](./src/generated/game-config.ts)** — site name, domain, game name, tagline, version, nav, disclaimer. [`src/config/game.ts`](./src/config/game.ts) is the typed adapter; header, footer, SEO metadata, sitemap, robots, and llms.txt are all generated from these values.
 2. **Replace the placeholder content** — edit/replace `src/config/guides.ts`, `src/config/homepage.ts`, `content/docs/*`, and the genericized pages under `src/app/[locale]/`. Swap `public/logo.png`, `public/favicon.png`, `public/og-image.png` for your own.

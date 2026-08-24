@@ -2,6 +2,10 @@
 
 This repository is a Next.js template for unofficial fan game-guide / wiki sites.
 
+## First-pass customization
+
+When the user wants to turn this clone into a real game wiki, follow **`.claude/skills/game-wiki-quick-start/SKILL.md`**. That skill is the v1 bootstrap (identity, SEO, homepage copy, theme, brand assets). Do not wander into routing or components on the first pass.
+
 ## Commands
 
 ```bash

@@ -2,6 +2,8 @@
 
 从克隆到本地可预览、改成自己的站，大约 10 分钟。英文总览见 [README](../README.md)，中文总览见 [README.zh-CN.md](../README.zh-CN.md)。
 
+**用 AI 接入（推荐）：** 在 Cursor 或 Claude Code 打开本仓库，说「把这个模板改成 \<游戏名\> 的攻略站」。Agent 会走 [`.claude/skills/game-wiki-quick-start/SKILL.md`](../.claude/skills/game-wiki-quick-start/SKILL.md) 的第一轮定制（身份 / SEO / 首页 / 主题 / 品牌图）。下面是同一件事的手工步骤。
+
 ## 0. 环境
 
 - Node.js **24**（当前 LTS；Node 20 已于 2026-03 EOL）

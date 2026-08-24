@@ -6,6 +6,8 @@
 
 动手步骤见 **[Quick Start](./docs/QUICKSTART.md)**。
 
+用 Cursor / Claude Code 时，克隆后直接说「把这个模板改成某某游戏的攻略站」即可。仓库内置 [`.claude/skills/game-wiki-quick-start/`](./.claude/skills/game-wiki-quick-start/SKILL.md)，会按 allowlist 改身份、主题、SEO、首页和品牌图，不必对照文档逐项手改。
+
 ## 理念
 
 每个游戏的攻略站长得都不一样：魂类要流程 + Boss 页，肉鸽要职业 + 道具 + 配装，卡牌要卡表 + 卡组 + 环境。模板**不假定你的信息架构**，只提供：
