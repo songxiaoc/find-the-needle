@@ -42,7 +42,7 @@ pnpm install
 pnpm dev
 ```
 
-打开 http://localhost:3000 。需要 Node 20 和 pnpm 8.15.9。
+打开 http://localhost:3000 。需要 Node 24 和 pnpm 10.34.5。
 
 ```bash
 pnpm quality:gate   # Prettier + ESLint + tsc + validate:site + build

@@ -1,13 +1,13 @@
 # Node standalone image. The primary deploy target is Cloudflare Workers via
 # OpenNext (`pnpm cf:deploy`); this exists for self-hosting and for Vercel-free
-# CI. Node 20 and the pinned pnpm match .github/workflows/ci.yml so a container
+# CI. Node 24 and the pinned pnpm match .github/workflows/ci.yml so a container
 # build cannot succeed on a dependency tree that CI never tested.
-FROM node:20-alpine AS base
+FROM node:24-alpine AS base
 RUN apk add --no-cache libc6-compat
 # Pin the package manager rather than `npm i -g pnpm`: an unpinned install
 # resolves to whatever is latest on build day, which silently changes the
 # lockfile format the build runs against.
-RUN corepack enable && corepack prepare pnpm@8.15.9 --activate
+RUN corepack enable && corepack prepare pnpm@10.34.5 --activate
 WORKDIR /app
 
 FROM base AS deps

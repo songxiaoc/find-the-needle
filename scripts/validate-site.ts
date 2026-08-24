@@ -2,7 +2,6 @@ import { createHash } from 'crypto';
 import fs from 'fs';
 import path from 'path';
 
-import contract from '../template-contract.json';
 import { envConfigs } from '../src/config';
 import { siteAssets } from '../src/config/assets';
 import { gameConfig } from '../src/config/game';
@@ -17,6 +16,7 @@ import {
 import { readCommonMessages } from '../src/config/locale/message-schema';
 import { uiRecipe, validateUIRecipe } from '../src/config/ui';
 import siteManifest from '../src/generated/site-manifest.json';
+import contract from '../template-contract.json';
 
 const root = process.cwd();
 const errors: string[] = [];

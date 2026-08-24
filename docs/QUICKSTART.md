@@ -4,19 +4,19 @@
 
 ## 0. 环境
 
-- Node.js **20**
-- pnpm **8.15.9**（与 CI 一致；用 pnpm 10 会改写 lockfile 格式）
+- Node.js **24**（当前 LTS；Node 20 已于 2026-03 EOL）
+- pnpm **10.34.5**（与 CI 一致；用 pnpm 8 读不了现在的 lockfile）
 
 ```bash
-node -v    # v20.x
-pnpm -v    # 8.15.9
+node -v    # v24.x
+pnpm -v    # 10.34.5
 ```
 
 没有 pnpm 时：
 
 ```bash
 corepack enable
-corepack prepare pnpm@8.15.9 --activate
+corepack prepare pnpm@10.34.5 --activate
 ```
 
 ## 1. 安装并跑起来

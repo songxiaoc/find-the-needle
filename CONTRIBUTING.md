@@ -3,11 +3,11 @@
 ## Setup
 
 ```bash
-pnpm install   # lockfile is pnpm 8.x (`lockfileVersion: '6.0'`)
+pnpm install   # lockfile is pnpm 10.x (`lockfileVersion: '9.0'`)
 pnpm dev       # http://localhost:3000
 ```
 
-Use pnpm 8.15.9 (the version CI pins) so you do not rewrite `pnpm-lock.yaml` to a newer format.
+Use pnpm 10.34.5 (the version CI pins) so you do not rewrite `pnpm-lock.yaml` to a newer format. Node 24 is required (`engines.node`).
 
 ## Checks
 

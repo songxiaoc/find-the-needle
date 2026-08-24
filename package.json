@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
+  "engines": {
+    "node": ">=24",
+    "pnpm": ">=10"
+  },
+  "packageManager": "pnpm@10.34.5",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tiankonglan/game-wiki-template.git"
@@ -95,7 +100,7 @@
     "@ianvs/prettier-plugin-sort-imports": "^4.7.0",
     "@tailwindcss/postcss": "^4",
     "@types/markdown-it": "^14.1.2",
-    "@types/node": "^20",
+    "@types/node": "^24",
     "@types/react": "19.2.2",
     "@types/react-copy-to-clipboard": "^5.0.7",
     "@types/react-dom": "19.2.1",
@@ -118,6 +123,14 @@
     "overrides": {
       "@types/react": "19.2.2",
       "@types/react-dom": "19.2.1"
-    }
+    },
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "@swc/core",
+      "esbuild",
+      "sharp",
+      "unrs-resolver",
+      "workerd"
+    ]
   }
 }
