@@ -1,6 +1,10 @@
 # Game Wiki Template
 
+English · [简体中文](./README.zh-CN.md)
+
 A production-ready Next.js base for **unofficial fan guide / wiki sites**. Brings the boring stuff (shell, theme, SEO patterns, MDX, i18n, deploy) and gets out of your way for page structure.
+
+Hands-on steps: **[Quick Start](./docs/QUICKSTART.md)**.
 
 ## Philosophy
 
@@ -45,7 +49,9 @@ made about your content architecture.**
 
 ## 5-minute setup
 
-1. **Edit [`src/config/game.ts`](./src/config/game.ts)** — site name, domain, game name, tagline, version, nav, footer, disclaimer. This is the single source of truth for site identity; header, footer, SEO metadata, sitemap, robots, and llms.txt are all generated from it.
+Follow **[docs/QUICKSTART.md](./docs/QUICKSTART.md)** for clone → run → first content. Short version:
+
+1. **Edit [`src/generated/game-config.ts`](./src/generated/game-config.ts)** — site name, domain, game name, tagline, version, nav, disclaimer. [`src/config/game.ts`](./src/config/game.ts) is the typed adapter; header, footer, SEO metadata, sitemap, robots, and llms.txt are all generated from these values.
 2. **Replace the placeholder content** — edit/replace `src/config/guides.ts`, `src/config/homepage.ts`, `content/docs/*`, and the genericized pages under `src/app/[locale]/`. Swap `public/logo.png`, `public/favicon.png`, `public/og-image.png` for your own.
 3. **Select the visual contract** — choose a preset via [`docs/THEMES.md`](./docs/THEMES.md) and, if you need to, edit the safe defaults under `src/generated/`.
 4. **Build your pages** — create folders under `src/app/[locale]/<slug>/page.tsx`, compose with the UI building blocks below, add the slug to `nav` / `footerExtras`, and add the URL to [`src/app/sitemap.ts`](./src/app/sitemap.ts).
