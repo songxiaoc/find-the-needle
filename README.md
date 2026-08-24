@@ -4,6 +4,8 @@ English · [简体中文](./README.zh-CN.md)
 
 A Next.js template for **independent unofficial fan game wikis**. Brings the boring stuff (shell, theme, SEO patterns, MDX, i18n, deploy) and gets out of your way for page structure.
 
+Example site: **[fortunemill.xyz](https://fortunemill.xyz/)**
+
 Hands-on steps: **[Quick Start](./docs/QUICKSTART.md)**. Fastest path: open the clone in Cursor, Claude Code, or Codex and use the bundled skill — see **[Customize with an agent](#customize-with-an-agent)** below.
 
 ## Philosophy

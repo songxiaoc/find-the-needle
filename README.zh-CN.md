@@ -4,6 +4,8 @@
 
 面向**独立非官方粉丝攻略 / Wiki 站**的 Next.js 模板。壳、主题、SEO、MDX、i18n、部署已经搭好，页面结构留给你。
 
+示例站：**[fortunemill.xyz](https://fortunemill.xyz/)**
+
 动手步骤见 **[Quick Start](./docs/QUICKSTART.md)**。最快的方式是在 Cursor、Claude Code 或 Codex 里用自带 skill，见下面 **[用 Agent 定制](#用-agent-定制)**。
 
 ## 理念
