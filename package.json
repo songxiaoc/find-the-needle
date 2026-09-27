@@ -27,7 +27,8 @@
     "cf:preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview --config wrangler.jsonc",
     "cf:deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy --config wrangler.jsonc",
     "cf:upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload --config wrangler.jsonc",
-    "cf:typegen": "wrangler types --config wrangler.jsonc --env-interface CloudflareEnv src/shared/types/cloudflare.d.ts"
+    "cf:typegen": "wrangler types --config wrangler.jsonc --env-interface CloudflareEnv src/shared/types/cloudflare.d.ts",
+    "indexnow:submit": "node scripts/indexnow-submit.mjs"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^15.5.7",
