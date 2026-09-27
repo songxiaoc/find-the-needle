@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 export type TocItem = { id: string; label: string };
 
@@ -25,6 +26,7 @@ export function OnThisPage({
   /** Hide the fixed desktop rail until scroll exceeds this px value. */
   scrollThreshold?: number;
 }) {
+  const t = useTranslations('common.ui');
   const [active, setActive] = useState<string>(items[0]?.id ?? '');
   const [visible, setVisible] = useState(scrollThreshold === 0);
 
@@ -113,7 +115,7 @@ export function OnThisPage({
         textTransform: 'uppercase',
       }}
     >
-      On this page
+      {t('onThisPage')}
     </p>
   );
 
@@ -127,7 +129,7 @@ export function OnThisPage({
 
       {/* Desktop: fixed rail in the left gutter of the reading column. */}
       <nav
-        aria-label="On this page"
+        aria-label={t('onThisPage')}
         className="fixed top-28 z-10 hidden max-h-[70vh] w-52 overflow-y-auto xl:block"
         style={{
           left: 'max(1rem, calc((100vw - 820px) / 2 - 14rem))',

@@ -2,6 +2,7 @@ import React from 'react';
 import defaultMdxComponents from 'fumadocs-ui/mdx';
 import type { MDXComponents } from 'mdx/types';
 
+import { Link } from '@/core/i18n/navigation';
 import {
   Accordion,
   AccordionContent,
@@ -56,6 +57,9 @@ export function withNoFollow(LinkComponent: React.ComponentType<AnchorProps>) {
 }
 
 function PlainAnchor(props: AnchorProps) {
+  if (props.href?.startsWith('/') && !props.href.startsWith('//')) {
+    return <Link {...props} href={props.href} />;
+  }
   return <a {...props} />;
 }
 

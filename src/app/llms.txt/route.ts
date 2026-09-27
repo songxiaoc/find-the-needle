@@ -1,81 +1,51 @@
 import { gameConfig } from '@/config/game';
-import { getGuideCategories } from '@/config/guides-content';
+import { getAllGuides, getGuideCategories } from '@/config/guides-content';
+import { localeNames, locales } from '@/config/locale';
+import { PUBLIC_PAGES } from '@/config/locale/routes';
+import { localizedUrl } from '@/shared/lib/seo';
 
-/**
- * /llms.txt — generated at build time from the same config that drives the
- * site (gameConfig + content/guides/**), so the version stamp and guide list
- * never drift from the rest of the site. Prose blocks that have no structured source
- * (sourcing policy, the about paragraph, affiliation) live here as the source
- * of truth — edit them for your game.
- *
- * Served at the canonical /llms.txt. The intl middleware skips any path with a
- * dot, so this stays un-localized like robots.ts / sitemap.ts.
- */
 export const dynamic = 'force-static';
 
-// Canonical production origin, matching robots.ts / sitemap.ts behaviour:
-// llms.txt URLs should always point at the real domain regardless of the
-// preview env's NEXT_PUBLIC_APP_URL.
-const SITE = gameConfig.origin;
-
-/** Reference / utility pages, in display order. */
-const REFERENCE: { label: string; path: string }[] = [
-  { label: 'FAQ', path: '/faq' },
-  { label: 'System requirements', path: '/system-requirements' },
-  { label: 'Troubleshooting', path: '/troubleshooting' },
-  { label: 'About + sourcing policy', path: '/about' },
-  { label: 'Contact', path: '/contact' },
-  { label: 'Sitemap', path: '/sitemap.xml' },
-];
-
 function buildLlmsTxt(): string {
-  // Grouped by category so the structure mirrors the site's information
-  // architecture (one section per content type), discovered from the filesystem.
-  const guideLines = getGuideCategories()
-    .map((cat) => {
-      const articles = cat.items
-        .map((g) => `- ${g.title}: ${SITE}${g.href}\n  — ${g.description}`)
+  const languageSections = locales
+    .map((locale) => {
+      const references = PUBLIC_PAGES.map(
+        (page) => `- ${page.label}: ${localizedUrl(page.path, locale)}`
+      ).join('\n');
+      const categories = getGuideCategories(locale)
+        .map(
+          (category) =>
+            `- ${category.title}: ${localizedUrl(`/guides/${category.slug}`, locale)}`
+        )
         .join('\n');
-      return `### ${cat.title} (${SITE}/guides/${cat.slug})\n${articles}`;
+      const guides = getAllGuides(locale)
+        .map(
+          (guide) =>
+            `- ${guide.title}: ${localizedUrl(guide.href, locale)}\n  ${guide.description}`
+        )
+        .join('\n');
+      return `## ${localeNames[locale]}\n\n${references}\n${categories}\n${guides}`;
     })
     .join('\n\n');
 
-  const referenceLines = REFERENCE.map(
-    (r) => `- ${r.label}: ${SITE}${r.path}`
-  ).join('\n');
+  return `# ${gameConfig.siteName}
 
-  return `# ${gameConfig.siteName} — ${gameConfig.domain}
+> Independent fan guides for Find The Needle, the incremental automation game developed by FindTheNeedleDev and published by Hay Passionates.
+> The Steam demo was released on September 10, 2026. The full game's Steam listing gives Q4 2026 as its planned release window.
 
-> Independent fan site for ${gameConfig.gameFullName} (${gameConfig.disclaimer.publisher}).
-> All content version-stamped against the patch it was last verified on.
-> Currently tracking v${gameConfig.gameVersion}.
+This site covers the demo, the basic search and upgrade loop, automation, PC requirements and troubleshooting. Demo information is kept separate from announced full-game features. It does not claim a complete walkthrough or an optimal upgrade order.
 
-## Sourcing policy
+${languageSections}
 
-No fabricated facts. Every value is verified against an in-game screen or
-an official source before it ships. Patch summaries quote official
-announcements and pages retain their validation version.
+## Official sources
 
-## Guides
-
-- Home: ${SITE}/
-${guideLines}
-- All guides: ${SITE}/guides
-
-## Reference
-
-${referenceLines}
-
-## About the game
-
-${gameConfig.tagline}
-Platforms tracked by this guide: ${gameConfig.game?.platforms?.join(', ') || 'see the official game listing'}.
-Genres: ${gameConfig.game?.genre?.join(', ') || 'see the official game listing'}.
+- Full game: https://store.steampowered.com/app/5160800/Find_The_Needle/
+- Demo: https://store.steampowered.com/app/5165210/Find_The_Needle_Demo/
+- Sitemap: ${gameConfig.origin}/sitemap.xml
 
 ## Affiliation
 
-Unofficial fan site. Not affiliated with, endorsed by, or sponsored by
-${gameConfig.disclaimer.publisher}. ${gameConfig.disclaimer.trademarkOwners}
+An unofficial fan site. Not affiliated with FindTheNeedleDev or Hay Passionates. Game names, artwork and trademarks belong to their respective owners.
 `;
 }
 

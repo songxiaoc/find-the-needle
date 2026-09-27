@@ -1,7 +1,12 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "main": ".open-next/worker.js",
-  "name": "tomtwiki",
+  "name": "find-the-needle",
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "findtheneedle.site", "custom_domain": true },
+    { "pattern": "www.findtheneedle.site", "custom_domain": true },
+  ],
   "compatibility_date": "2026-05-11",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "assets": {
@@ -13,7 +18,7 @@
       // Self-reference service binding, the service name must match the worker name
       // see https://opennext.js.org/cloudflare/caching
       "binding": "WORKER_SELF_REFERENCE",
-      "service": "tomtwiki",
+      "service": "find-the-needle",
     },
   ],
   "images": {

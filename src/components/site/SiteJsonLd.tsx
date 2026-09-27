@@ -1,5 +1,7 @@
 import { envConfigs } from '@/config';
 import { gameConfig } from '@/config/game';
+import { locales } from '@/config/locale';
+import { getCommonMessages } from '@/config/locale/messages';
 
 /**
  * Site-wide JSON-LD @graph — emitted once in the root layout, so every page
@@ -20,7 +22,7 @@ import { gameConfig } from '@/config/game';
  * yet, and pointing Google at a search URL that 404s is a negative signal. Add
  * it only once a real /search exists.
  */
-export function SiteJsonLd() {
+export function SiteJsonLd({ locale = 'en' }: { locale?: string }) {
   const origin = gameConfig.origin;
   const game = gameConfig.game ?? {};
   const developer = game.developer ?? gameConfig.disclaimer.publisher;
@@ -36,8 +38,8 @@ export function SiteJsonLd() {
     '@id': `${origin}/#website`,
     name: gameConfig.siteName,
     url: `${origin}/`,
-    description: `Unofficial ${gameConfig.gameFullName} wiki and guide hub.`,
-    inLanguage: 'en',
+    description: getCommonMessages(locale).metadata.description,
+    inLanguage: locales,
     publisher: { '@id': `${origin}/#org` },
     about: { '@id': `${origin}/#game` },
   };
@@ -57,9 +59,11 @@ export function SiteJsonLd() {
     description: game.description ?? gameConfig.tagline,
     ...(game.genre?.length ? { genre: game.genre } : {}),
     ...(game.platforms?.length ? { gamePlatform: game.platforms } : {}),
-    datePublished: gameConfig.eaLaunchDate,
     author: { '@type': 'Organization', name: developer },
-    publisher: { '@type': 'Organization', name: developer },
+    publisher: {
+      '@type': 'Organization',
+      name: gameConfig.disclaimer.publisher,
+    },
     ...(steamUrl ? { url: steamUrl } : {}),
     ...(game.price
       ? {

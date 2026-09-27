@@ -2,6 +2,7 @@ import { ChevronDown } from 'lucide-react';
 
 import { Link } from '@/core/i18n/navigation';
 import { getGuideCategories } from '@/config/guides-content';
+import { getCommonMessages } from '@/config/locale/messages';
 
 import { AdSlot } from './AdSlot';
 import { PlayCard } from './PlayCard';
@@ -28,12 +29,13 @@ export function WikiSidebar({
   locale?: string;
 }) {
   const categories = getGuideCategories(locale);
+  const copy = getCommonMessages(locale ?? 'en');
 
   return (
     <div className="space-y-6">
       {categories.length > 0 && (
         <nav
-          aria-label="Wiki navigation"
+          aria-label={copy.ui.wikiNavigation}
           className="border-site-outline-strong bg-site-surface-container border"
         >
           <p
@@ -46,7 +48,7 @@ export function WikiSidebar({
               textTransform: 'uppercase',
             }}
           >
-            Wiki Navigation
+            {copy.ui.wikiNavigation}
           </p>
           {/* Native <details> = expand/collapse with zero client JS, fully
               keyboard-accessible. The active category starts open. */}
@@ -96,7 +98,7 @@ export function WikiSidebar({
                             fontSize: 13,
                           }}
                         >
-                          Overview
+                          {copy.ui.overview}
                         </Link>
                       </li>
                       {c.items.map((a) => (
@@ -122,7 +124,7 @@ export function WikiSidebar({
         </nav>
       )}
 
-      <PlayCard />
+      <PlayCard locale={locale} />
       <AdSlot />
     </div>
   );

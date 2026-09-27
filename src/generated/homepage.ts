@@ -1,79 +1,119 @@
-// Generated configuration seam. Application code imports src/config/homepage.ts.
 import type { HomeBlock } from '@/config/homepage-schema';
+
+import { homeCopy } from './home-copy';
 
 export const generatedHomeBlocks = [
   {
     id: 'hero',
     type: 'hero',
-    eyebrow: 'Game Guide & Reference',
-    title: 'Example Game',
+    eyebrow: 'Unofficial Steam game guide',
+    title: 'Find the Needle',
     description:
-      'Verified Example Game guides and reference — codes, walkthroughs, and tier lists, version-stamped against the live build.',
+      'A mountain of hay. A tiny needle. Learn the opening loop, plan your first production line and turn the search into a factory.',
     ctas: [
-      { label: 'Browse the guides', href: '/guides' },
-      { label: 'About this site', href: '/about' },
+      { label: 'Start the guide', href: '/guides/guide/getting-started' },
+      {
+        label: 'Get the free demo',
+        href: 'https://store.steampowered.com/app/5165210/',
+      },
     ],
   },
   {
     id: 'start',
     type: 'start-cards',
-    title: 'Start here',
+    title: 'What do you need help with?',
     items: [
       {
         type: 'featured',
-        id: 'example-boss',
-        href: '/guides/bosses/example-boss',
-        title: 'Example Game guide: how to get started',
+        id: 'getting-started',
+        href: '/guides/guide/getting-started',
+        title: 'From your first shovel to your first machine',
         description:
-          'A template guide page showing the structure — replace this with your own pillar guide.',
-        readingTime: '5 min',
-        tag: 'PILLAR',
+          'Make sense of collecting, selling and choosing your next upgrade.',
+        readingTime: '3 min',
+        tag: 'GETTING STARTED',
         tagTone: 'solid',
       },
-    ],
-  },
-  {
-    id: 'database-stats',
-    type: 'database-stats',
-    title: 'Database at a glance',
-    sub: 'A live summary calculated from the structured records published on this site.',
-  },
-  {
-    id: 'entity-index',
-    type: 'entity-index',
-    title: 'Browse the database',
-    sub: 'Structured records with comparable attributes and guide references.',
-    previewLimit: 3,
-  },
-  {
-    id: 'latest-guides',
-    type: 'latest-guides',
-    title: 'Latest updates',
-    sub: 'The most recently updated guides — every page version-stamped.',
-  },
-  {
-    id: 'categories',
-    type: 'category-grid',
-    title: 'Explore the wiki',
-    sub: 'Every guide, organized by type.',
-  },
-  {
-    id: 'faq',
-    type: 'faq',
-    title: 'Frequently asked',
-    sub: 'A few common questions. Full list on the FAQ page.',
-    items: [
-      { q: 'What is Example Game?', a: 'Replace this with a short description of the game.' },
       {
-        q: 'Where do your facts come from?',
-        a: 'Everything is sourced from in-game screens and official announcements, cross-checked as we verify each patch.',
+        type: 'latest',
+        id: 'automation',
+        href: '/guides/guide/automation',
+        title: 'Build a line you can follow',
+        description:
+          'Plan the supply, belts, power and output before expanding.',
+        readingTime: '3 min',
+        tag: 'AUTOMATION',
+        tagTone: 'amber',
       },
       {
-        q: 'How often is the site updated?',
-        a: 'We aim to update guides within days of each new update. (Edit this to match your real cadence.)',
+        type: 'latest',
+        id: 'demo',
+        href: '/guides/guide/demo',
+        title: 'Try the Steam demo',
+        description:
+          'Find the official download, PC requirements and full-game release window.',
+        readingTime: '2 min',
+        tag: 'DEMO & RELEASE',
+        tagTone: 'green',
       },
     ],
+  },
+  {
+    id: 'about-game',
+    type: 'about',
+    title: 'The haystack is only the beginning',
+    paragraphs: [
+      'Find the Needle is a first-person hay-processing game by FindTheNeedleDev. Start with manual tools, earn money from hay and build machinery that takes over the work.',
+      'Conveyor belts, scanners and processing lines turn a simple search into a growing factory. This independent guide helps you get oriented without spoiling the mystery at the end.',
+    ],
+    stats: [
+      { label: 'Platform', value: 'Windows · Steam' },
+      { label: 'Available now', value: 'Free demo' },
+      { label: 'Full game planned', value: 'Q4 2026' },
+    ],
+    cta: {
+      label: 'View the game on Steam',
+      href: 'https://store.steampowered.com/app/5160800/',
+    },
   },
 ] satisfies readonly HomeBlock[];
 
-export const generatedHomeBlocksI18n = {} satisfies Record<string, HomeBlock[]>;
+export const generatedHomeBlocksI18n = Object.fromEntries(
+  Object.entries(homeCopy).map(([locale, copy]) => [
+    locale,
+    generatedHomeBlocks.map((block): HomeBlock => {
+      if (block.type === 'hero')
+        return {
+          ...block,
+          eyebrow: copy.eyebrow,
+          description: copy.description,
+          ctas: block.ctas.map((cta, i) => ({
+            ...cta,
+            label: i === 0 ? copy.start : copy.demo,
+          })),
+        };
+      if (block.type === 'start-cards')
+        return {
+          ...block,
+          title: copy.help,
+          items: block.items.map((item, i) => ({
+            ...item,
+            title: copy.cards[i][0],
+            description: copy.cards[i][1],
+            tag: copy.cards[i][2],
+            readingTime:
+              locale === 'ru'
+                ? item.readingTime.replace('min', 'мин')
+                : item.readingTime,
+          })),
+        };
+      return {
+        ...block,
+        title: copy.about,
+        paragraphs: [...copy.paragraphs],
+        stats: copy.stats.map(([label, value]) => ({ label, value })),
+        cta: { ...block.cta, label: copy.steam },
+      };
+    }),
+  ])
+) satisfies Record<string, HomeBlock[]>;

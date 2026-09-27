@@ -1,4 +1,5 @@
 import { gameConfig } from '@/config/game';
+import { getCommonMessages } from '@/config/locale/messages';
 
 /**
  * "Play the game" promo card for the sidebar. Pulls the external play URL from
@@ -9,20 +10,20 @@ import { gameConfig } from '@/config/game';
  * social card, which is a screenshot of this very homepage. When no coverImage
  * is set the card simply omits the image.
  */
-export function PlayCard() {
-  const { playUrl, playLabel, gameFullName, tagline, siteName, coverImage } =
-    gameConfig;
+export function PlayCard({ locale = 'en' }: { locale?: string }) {
+  const copy = getCommonMessages(locale);
+  const { playUrl, gameFullName, coverImage } = gameConfig;
   if (!playUrl) return null;
 
   return (
     <section
-      aria-label={`Play ${gameFullName}`}
+      aria-label={`${copy.ui.viewOnSteam}: ${gameFullName}`}
       className="ui-shaped border-site-outline-strong bg-site-surface-container overflow-hidden border"
     >
       {coverImage && (
         <img
           src={coverImage}
-          alt={`${gameFullName} cover art`}
+          alt={gameFullName}
           className="aspect-[16/9] w-full object-cover"
           width={320}
           height={180}
@@ -47,7 +48,7 @@ export function PlayCard() {
             lineHeight: 1.5,
           }}
         >
-          {tagline}
+          {copy.ui.comingQ4}
         </p>
         <a
           href={playUrl}
@@ -59,17 +60,14 @@ export function PlayCard() {
             fontSize: 13,
             fontWeight: 600,
           }}
-          title={`Play ${gameFullName} (opens ${new URL(playUrl).hostname})`}
+          title={`${copy.ui.viewOnSteam}: ${gameFullName}`}
         >
-          {playLabel || 'Play now'}
+          {copy.ui.viewOnSteam}
           <span aria-hidden style={{ fontFamily: 'var(--font-site-mono)' }}>
             ↗
           </span>
         </a>
       </div>
-      <span className="sr-only">
-        External link to {siteName}&apos;s game page.
-      </span>
     </section>
   );
 }

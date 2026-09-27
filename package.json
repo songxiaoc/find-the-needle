@@ -1,5 +1,5 @@
 {
-  "name": "tomtwiki",
+  "name": "find-the-needle",
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
@@ -10,7 +10,7 @@
   "packageManager": "pnpm@10.34.5",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tiankonglan/tomtwiki.git"
+    "url": "git+https://github.com/songxiaoc/find-the-needle.git"
   },
   "scripts": {
     "dev": "next dev --turbopack",

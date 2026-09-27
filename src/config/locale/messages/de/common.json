@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "title": "Find the Needle: Wiki & Guides — Demo, Automatisierung und Tipps",
+    "description": "Dein Einstieg in Find the Needle: kostenlose Steam-Demo, Heuhaufen durchsuchen, Upgrades, Automatisierung und PC-Anforderungen. Unabhängige Guides zum kommenden Incremental-Spiel.",
+    "keywords": "Find the Needle, Find the Needle Guide, Find the Needle Wiki, Find the Needle Demo, Automatisierung"
+  },
+  "navigation": {
+    "home": "Startseite",
+    "guides": "Guides",
+    "faq": "FAQ",
+    "requirements": "Systemanforderungen",
+    "troubleshooting": "Problemlösung",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "language": "Sprache",
+    "primary": "Hauptnavigation",
+    "demo": "Demo"
+  },
+  "footer": {
+    "guides": "Guides",
+    "resources": "Spiel & Hilfe",
+    "site": "Über diese Website",
+    "disclaimer": "Unabhängiger Fan-Guide zu Find the Needle. Keine Verbindung zu Hay Passionates. Namen, Grafiken und Marken des Spiels gehören ihren jeweiligen Eigentümern."
+  },
+  "category": {
+    "title": "Spiel-Guides",
+    "description": "Lerne die Nadelsuche kennen, plane deine Upgrades und erfahre, was die Steam-Demo bietet."
+  },
+  "languagePrompt": {
+    "title": "Auf {language} lesen?",
+    "description": "Du kannst diesen Guide in deiner bevorzugten Sprache lesen. Deine Auswahl wird für künftige Besuche gespeichert.",
+    "close": "Sprachvorschlag schließen",
+    "dismiss": "Diese Sprache beibehalten"
+  },
+  "ui": {
+    "readGuide": "Guide lesen",
+    "allGuides": "Alle Guides",
+    "onThisPage": "Auf dieser Seite",
+    "overview": "Übersicht",
+    "relatedGuides": "Weitere Guides",
+    "updated": "Aktualisiert",
+    "published": "Veröffentlicht",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "siteNavigation": "Seitennavigation",
+    "wikiNavigation": "Guide-Navigation",
+    "viewOnSteam": "Auf Steam ansehen",
+    "demoAvailable": "Kostenlose Demo verfügbar",
+    "comingQ4": "Vollversion für Q4 2026 geplant",
+    "guideCount": "{count} Guides",
+    "backHome": "Zur Startseite",
+    "notFound": "Seite nicht gefunden",
+    "gameplayImageAlt": "Förderband transportiert Heu zur Verkaufsstation in Find The Needle",
+    "aboutGame": "Über das Spiel",
+    "atAGlance": "Auf einen Blick"
+  }
+}

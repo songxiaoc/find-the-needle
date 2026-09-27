@@ -1,7 +1,59 @@
 {
   "metadata": {
-    "title": "Example Game Guide — guides & reference",
-    "description": "Verified Example Game guides and reference, version-stamped against the live build.",
-    "keywords": "Example Game guide, Example Game, Example Game wiki, Example Game tips"
+    "title": "Find the Needle Wiki & Guides — Demo, Automation and Tips",
+    "description": "Get started with Find the Needle: the free Steam demo, searching haystacks, upgrades, automation and PC requirements. Independent guides for the upcoming incremental game.",
+    "keywords": "Find the Needle, Find the Needle guide, Find the Needle wiki, Find the Needle demo, automation"
+  },
+  "navigation": {
+    "home": "Home",
+    "guides": "Guides",
+    "faq": "FAQ",
+    "requirements": "PC requirements",
+    "troubleshooting": "Troubleshooting",
+    "about": "About",
+    "contact": "Contact",
+    "privacy": "Privacy policy",
+    "terms": "Terms of use",
+    "language": "Language",
+    "primary": "Primary navigation",
+    "demo": "Demo"
+  },
+  "footer": {
+    "guides": "Guides",
+    "resources": "Game & support",
+    "site": "About this site",
+    "disclaimer": "Independent fan guide for Find the Needle. Not affiliated with Hay Passionates. Game names, artwork and trademarks belong to their respective owners."
+  },
+  "category": {
+    "title": "Game guides",
+    "description": "Learn the search loop, plan your upgrades and understand what the Steam demo offers."
+  },
+  "languagePrompt": {
+    "title": "Read in {language}?",
+    "description": "You can view this guide in your preferred language. Your choice stays saved for future visits.",
+    "close": "Close language suggestion",
+    "dismiss": "Keep this language"
+  },
+  "ui": {
+    "readGuide": "Read guide",
+    "allGuides": "All guides",
+    "onThisPage": "On this page",
+    "overview": "Overview",
+    "relatedGuides": "Related guides",
+    "updated": "Updated",
+    "published": "Published",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "siteNavigation": "Site navigation",
+    "wikiNavigation": "Guide navigation",
+    "viewOnSteam": "View on Steam",
+    "demoAvailable": "Free demo available",
+    "comingQ4": "Full game planned for Q4 2026",
+    "guideCount": "{count} guides",
+    "backHome": "Back to home",
+    "notFound": "Page not found",
+    "gameplayImageAlt": "Conveyor carrying hay to the selling station in Find The Needle",
+    "aboutGame": "About the game",
+    "atAGlance": "At a glance"
   }
 }

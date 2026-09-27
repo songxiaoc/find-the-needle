@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 import { Link } from '@/core/i18n/navigation';
 import type { NavItem } from '@/config/game';
@@ -17,6 +18,7 @@ export function MobileNav({
   /** Guide categories shown below the primary nav (the sidebar's mobile form). */
   categories?: { label: string; href: string; count?: number }[];
 }) {
+  const t = useTranslations('common.ui');
   const [open, setOpen] = useState(false);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const drawerRef = useRef<HTMLDivElement>(null);
@@ -83,7 +85,7 @@ export function MobileNav({
       <button
         ref={triggerRef}
         type="button"
-        aria-label={open ? 'Close menu' : 'Open menu'}
+        aria-label={open ? t('closeMenu') : t('openMenu')}
         aria-expanded={open}
         aria-controls="mobile-site-navigation"
         onClick={() => setOpen((v) => !v)}
@@ -126,7 +128,7 @@ export function MobileNav({
             id="mobile-site-navigation"
             role="dialog"
             aria-modal="true"
-            aria-label="Site navigation"
+            aria-label={t('siteNavigation')}
             className="border-site-outline-variant bg-site-surface fixed inset-x-0 top-[73px] z-50 max-h-[calc(100dvh-73px)] overflow-y-auto border-b shadow-lg"
           >
             <ul className="mx-auto flex max-w-[1440px] flex-col px-6 py-2">
@@ -156,7 +158,7 @@ export function MobileNav({
             </ul>
             {categories.length > 0 && (
               <nav
-                aria-label="Wiki navigation"
+                aria-label={t('wikiNavigation')}
                 className="border-site-outline-variant mx-auto max-w-[1440px] border-t px-6 py-3"
               >
                 <p
@@ -169,7 +171,7 @@ export function MobileNav({
                     textTransform: 'uppercase',
                   }}
                 >
-                  Guides
+                  {t('allGuides')}
                 </p>
                 <ul className="flex flex-col">
                   {categories.map((c) => (
@@ -179,7 +181,7 @@ export function MobileNav({
                         onClick={() => setOpen(false)}
                         aria-label={
                           c.count !== undefined
-                            ? `${c.label}, ${c.count} guide${c.count === 1 ? '' : 's'}`
+                            ? `${c.label}, ${t('guideCount', { count: c.count })}`
                             : c.label
                         }
                         className="text-site-on-surface-variant hover:text-site-primary flex items-center justify-between py-2.5"

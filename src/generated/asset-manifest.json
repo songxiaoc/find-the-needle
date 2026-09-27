@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "hero": {
-    "type": "none",
-    "source": "",
-    "official": false,
-    "title": "Example Game hero media",
-    "fallback": "",
+    "type": "image",
+    "source": "https://store.steampowered.com/app/5160800/Find_The_Needle/",
+    "official": true,
+    "title": "Find The Needle warehouse gameplay",
+    "fallback": "/images/find-the-needle/screenshot-1.webp",
     "desktopFocus": "50% 50%",
     "mobileFocus": "50% 50%"
   },

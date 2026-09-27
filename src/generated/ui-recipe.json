@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "archetype": "tactical",
   "theme": "tactical",
-  "hero": "text-only",
+  "hero": "gameplay-panel",
   "navigation": "wiki-sidebar",
   "guideCard": "data-panel",
   "categoryCard": "outlined",
@@ -11,7 +11,7 @@
   "shape": "square",
   "motion": "minimal",
   "customBlocks": [],
-  "rationale": "Template safe default. Replace when you change the visual contract.",
+  "rationale": "TomeWiki reading layouts with a warm hay accent and official warehouse gameplay.",
   "homepage": {
     "defaultSection": "plain",
     "defaultCollectionLayout": "equal-grid",

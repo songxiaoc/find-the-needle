@@ -12,6 +12,7 @@ export const SUPPORTED_LOCALES = {
   de: 'Deutsch',
   fr: 'Français',
   es: 'Español',
+  ru: 'Русский',
   pt: 'Português',
   id: 'Bahasa Indonesia',
 } as const;

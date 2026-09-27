@@ -31,11 +31,7 @@ export type GameConfig = {
   coverImage?: string;
   /** A clean gameplay screenshot for the gameplay-panel hero. */
   gameplayImage?: string;
-  heroStyle?:
-    | 'cover-split'
-    | 'gameplay-panel'
-    | 'video-center'
-    | 'text-only';
+  heroStyle?: 'cover-split' | 'gameplay-panel' | 'video-center' | 'text-only';
   trailerUrl?: string;
   game?: {
     description?: string;

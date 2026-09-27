@@ -31,7 +31,26 @@ const nextConfig = {
   async redirects() {
     // Add 301s here when you move or rename a URL, e.g.
     //   { source: '/old-path', destination: '/new-path', permanent: true }
-    return [];
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.findtheneedle.site' }],
+        destination: 'https://findtheneedle.site/:path*',
+        permanent: true,
+      },
+    ];
+  },
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          { key: 'X-Content-Type-Options', value: 'nosniff' },
+          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+          { key: 'Strict-Transport-Security', value: 'max-age=31536000' },
+        ],
+      },
+    ];
   },
   experimental: {
     // mdxRs is the Rust MDX compiler. It breaks fumadocs-mdx on Vercel's build

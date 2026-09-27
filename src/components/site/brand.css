@@ -14,9 +14,9 @@
  * accents (it's the text/icon color that sits ON the brand color).
  */
 :root {
-  --brand-primary: #6366f1; /* indigo placeholder — replace per game */
-  --brand-primary-dim: #3730a3; /* darker tint for gradient/hover */
-  --brand-on-primary: #ffffff; /* ink on the brand color */
+  --brand-primary: #e9bc62;
+  --brand-primary-dim: #8c682a;
+  --brand-on-primary: #19170f;
 }
 
 /* Map the brand knob into the Tailwind color utilities. `inline` lets the

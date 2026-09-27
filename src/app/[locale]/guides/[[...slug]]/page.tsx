@@ -26,13 +26,14 @@ import {
   SectionTitle,
 } from '@/components/site/ui';
 import { getMDXComponents } from '@/mdx-components';
+import { setRequestLocale } from 'next-intl/server';
 import { compileMDX } from 'next-mdx-remote/rsc';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 import remarkGfm from 'remark-gfm';
 
 import { gameConfig } from '@/config/game';
-import { getCategory, isGuideCategory } from '@/config/guides';
+import { isGuideCategory } from '@/config/guides';
 import {
   extractToc,
   getAllGuides,
@@ -43,6 +44,8 @@ import {
   type GuideItem,
 } from '@/config/guides-content';
 import { locales } from '@/config/locale';
+import { getCommonMessages } from '@/config/locale/messages';
+import { localizedUrl } from '@/shared/lib/seo';
 
 // No `revalidate`: it puts the route in ISR mode. Cloudflare Workers has no
 // cache backend, so every request MISSes, falls back to a runtime render, and
@@ -94,18 +97,20 @@ export async function generateMetadata({
   params: Promise<Params>;
 }) {
   const { locale, slug } = await params;
+  setRequestLocale(locale);
+  const copy = getCommonMessages(locale);
 
   if (!slug || slug.length === 0) {
     return buildPageMetadata({
-      titleTopic: 'Guides',
-      description: `Every ${gameConfig.gameFullName} guide on the site, organized by type.`,
+      titleTopic: copy.navigation.guides,
+      description: copy.category.description,
       path: '/guides',
       locale,
     });
   }
 
   if (slug.length === 1 && isGuideCategory(slug[0])) {
-    const cat = getCategory(slug[0])!;
+    const cat = getGuideCategories(locale).find((c) => c.slug === slug[0])!;
     return buildPageMetadata({
       titleTopic: cat.overviewTitle ?? cat.title,
       description:
@@ -139,6 +144,7 @@ export default async function GuidesPage({
   params: Promise<Params>;
 }) {
   const { locale, slug } = await params;
+  setRequestLocale(locale);
 
   if (!slug || slug.length === 0) return <Hub locale={locale} />;
   if (slug.length === 1 && isGuideCategory(slug[0]))
@@ -149,8 +155,8 @@ export default async function GuidesPage({
 /* ── Hub: /guides ────────────────────────────────────────────────────────── */
 
 function Hub({ locale }: { locale: string }) {
+  const copy = getCommonMessages(locale);
   const categories = getGuideCategories(locale);
-  const total = categories.reduce((n, c) => n + c.count, 0);
 
   const itemList = {
     '@context': 'https://schema.org',
@@ -159,7 +165,7 @@ function Hub({ locale }: { locale: string }) {
     itemListElement: categories.map((c, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      url: `${SITE}/guides/${c.slug}`,
+      url: localizedUrl(`/guides/${c.slug}`, locale),
       name: c.title,
     })),
   };
@@ -171,19 +177,17 @@ function Hub({ locale }: { locale: string }) {
         activeHref="/guides"
         mode="wide"
         breadcrumbs={[
-          { label: 'Home', href: '/' },
-          { label: 'Guides', href: '/guides' },
+          { label: copy.navigation.home, href: '/' },
+          { label: copy.navigation.guides, href: '/guides' },
         ]}
       >
         <SectionTitle
           as="h1"
-          eyebrow="Guides"
-          title={`${gameConfig.gameFullName} guides`}
+          eyebrow={copy.navigation.guides}
+          title={`${gameConfig.gameFullName} — ${copy.navigation.guides}`}
         />
         <p className="site-body-lg text-site-on-surface-variant mb-10 max-w-[70ch]">
-          {total} guide{total === 1 ? '' : 's'} across {categories.length}{' '}
-          categor
-          {categories.length === 1 ? 'y' : 'ies'}. Pick a type to dive in.
+          {copy.category.description}
         </p>
         {categories.length === 0 ? (
           <p className="text-site-on-surface-variant">
@@ -200,7 +204,7 @@ function Hub({ locale }: { locale: string }) {
                   `${c.count} guide${c.count === 1 ? '' : 's'}.`
                 }
                 href={`/guides/${c.slug}`}
-                cta={`${c.count} guide${c.count === 1 ? '' : 's'}`}
+                cta={copy.ui.readGuide}
               />
             ))}
           </div>
@@ -219,7 +223,8 @@ function CategoryListing({
   locale: string;
   category: string;
 }) {
-  const cat = getCategory(category)!;
+  const copy = getCommonMessages(locale);
+  const cat = getGuideCategories(locale).find((c) => c.slug === category)!;
   const items = getGuidesByCategory(category, locale);
 
   const itemList = {
@@ -229,7 +234,7 @@ function CategoryListing({
     itemListElement: items.map((it, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      url: `${SITE}${it.href}`,
+      url: localizedUrl(it.href, locale),
       name: it.title,
     })),
   };
@@ -241,14 +246,14 @@ function CategoryListing({
         activeHref={`/guides/${cat.slug}`}
         mode="wide"
         breadcrumbs={[
-          { label: 'Home', href: '/' },
-          { label: 'Guides', href: '/guides' },
+          { label: copy.navigation.home, href: '/' },
+          { label: copy.navigation.guides, href: '/guides' },
           { label: cat.title, href: `/guides/${cat.slug}` },
         ]}
       >
         <SectionTitle
           as="h1"
-          eyebrow="Guides"
+          eyebrow={copy.navigation.guides}
           title={cat.overviewTitle ?? cat.title}
         />
         {cat.overviewDescription && (
@@ -268,7 +273,7 @@ function CategoryListing({
                 title={it.title}
                 description={it.description}
                 href={it.href}
-                cta="Read"
+                cta={copy.ui.readGuide}
                 tag={it.badge}
               />
             ))}
@@ -288,11 +293,12 @@ async function ArticleDetail({
   locale: string;
   slug: string[];
 }) {
+  const copy = getCommonMessages(locale);
   const page = getGuidePage(slug, locale);
   if (!page) notFound();
 
   const category = slug[0];
-  const cat = getCategory(category);
+  const cat = getGuideCategories(locale).find((c) => c.slug === category);
   const catTitle = cat?.title ?? category;
   const data = page.data;
   const lastUpdated = data.lastModified ?? data.date;
@@ -317,7 +323,8 @@ async function ArticleDetail({
     description: data.description,
     datePublished: data.date,
     dateModified: lastUpdated,
-    mainEntityOfPage: `${SITE}${page.url}`,
+    mainEntityOfPage: localizedUrl(page.url, locale),
+    inLanguage: locale,
     ...(data.image
       ? {
           image: data.image.startsWith('http')
@@ -346,7 +353,7 @@ async function ArticleDetail({
       <PageFrame
         activeHref={`/guides/${category}`}
         breadcrumbs={[
-          { label: 'Home', href: '/' },
+          { label: copy.navigation.home, href: '/' },
           { label: catTitle, href: `/guides/${category}` },
           { label: data.title, href: page.url },
         ]}

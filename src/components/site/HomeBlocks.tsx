@@ -10,6 +10,7 @@ import {
   GuideCard,
   SectionHead,
 } from '@/components/site/ui';
+import { useTranslations } from 'next-intl';
 
 import { Link } from '@/core/i18n/navigation';
 import type { EntityKind, EntityRecord } from '@/config/entities';
@@ -173,7 +174,7 @@ function DatabaseStatsBlock({
         num={num}
         title={block.title ?? 'Database at a glance'}
         sub={block.sub}
-        rightSlot={hubLink('/database')}
+        rightSlot={<HubLink href={'/database'} />}
       />
       <dl className="border-site-outline-strong bg-site-surface grid border sm:grid-cols-2 lg:grid-cols-[1.35fr_repeat(3,minmax(0,0.75fr))]">
         <div className="border-site-outline-variant flex min-h-40 flex-col justify-between border-b p-6 sm:col-span-2 md:p-8 lg:col-span-1 lg:border-r lg:border-b-0">
@@ -256,7 +257,7 @@ function EntityIndexBlock({
         num={num}
         title={block.title ?? 'Browse the database'}
         sub={block.sub}
-        rightSlot={hubLink('/database')}
+        rightSlot={<HubLink href={'/database'} />}
       />
       <div className="border-site-outline-strong bg-site-outline-strong border">
         {ctx.entityKinds.map(({ kind, entities }) => (
@@ -380,7 +381,8 @@ function Ctas({
   );
 }
 
-function hubLink(href?: string): ReactNode {
+function HubLink({ href }: { href?: string }): ReactNode {
+  const t = useTranslations('common.ui');
   if (!href) return undefined;
   return (
     <Link
@@ -393,7 +395,7 @@ function hubLink(href?: string): ReactNode {
         textTransform: 'uppercase',
       }}
     >
-      View all →
+      {t('allGuides')} →
     </Link>
   );
 }
@@ -407,6 +409,7 @@ function HeroBlock({
   block: Extract<HomeBlock, { type: 'hero' }>;
   totalGuides: number;
 }) {
+  const t = useTranslations('common.ui');
   const style =
     gameConfig.heroStyle ??
     (gameConfig.coverImage ? 'cover-split' : uiRecipe.hero);
@@ -427,8 +430,8 @@ function HeroBlock({
                   'gameplay-panel',
                   'text-only',
                 ].includes(style)
-            ? `heroStyle '${style}' is not a supported value`
-            : null;
+              ? `heroStyle '${style}' is not a supported value`
+              : null;
     if (reason) {
       throw new Error(
         `[gameConfig] ${reason} — hero would silently render as text-only. Fix the config or unset heroStyle.`
@@ -453,10 +456,8 @@ function HeroBlock({
           {gameConfig.statusBadge.toUpperCase()}
         </Chip>
       ) : null}
-      <Chip tone="amber">VERSION {gameConfig.gameVersion}</Chip>
-      <Chip tone="mute">
-        {totalGuides} {totalGuides === 1 ? 'guide' : 'guides'}
-      </Chip>
+      <Chip tone="amber">{t('demoAvailable')}</Chip>
+      <Chip tone="mute">{t('guideCount', { count: totalGuides })}</Chip>
       {gameConfig.heroFacts?.map((f) => (
         <Chip key={f.label} tone="mute">
           {f.label}
@@ -492,20 +493,20 @@ function HeroBlock({
       <section className="border-site-outline-strong bg-site-outline-strong grid gap-px overflow-hidden border lg:grid-cols-[0.9fr_1.1fr]">
         <div className="px-grid-bg bg-site-surface flex min-h-[480px] flex-col justify-center p-7 md:min-h-[560px] md:p-12 lg:p-16">
           {eyebrow}
-          <h1 className="site-display-lg text-site-on-surface max-w-[10ch]">
+          <h1 className="site-display-lg text-site-on-surface max-w-[14ch]">
             {block.title}
           </h1>
           <p className="site-body-lg mt-7 max-w-[52ch]">{block.description}</p>
           <div className="mt-6 flex flex-wrap gap-2.5">{chips}</div>
           <Ctas ctas={block.ctas} />
           <p className="site-mono text-site-primary mt-10 border-t border-[var(--site-outline-strong)] pt-4">
-            {gameConfig.gameShortName} · v{gameConfig.gameVersion}
+            {t('comingQ4')}
           </p>
         </div>
         <div className="bg-site-surface-container relative min-h-[320px] overflow-hidden lg:min-h-0">
           <img
             src={gameConfig.gameplayImage}
-            alt={`${gameConfig.gameFullName} gameplay`}
+            alt={t('gameplayImageAlt')}
             className="absolute inset-0 h-full w-full object-cover"
             width={1920}
             height={1080}
@@ -577,11 +578,7 @@ function StartCardsBlock({
   if (recipe.layout === 'featured-split' && featured) {
     return (
       <SectionFrame recipe={recipe}>
-        <SectionHead
-          num={num}
-          title={block.title}
-          sub="Your entry point: the core guides"
-        />
+        <SectionHead num={num} title={block.title} />
         <div className="grid gap-4 lg:grid-cols-[minmax(0,1.55fr)_minmax(280px,0.8fr)]">
           <StartCard
             item={featured}
@@ -607,11 +604,7 @@ function StartCardsBlock({
   if (recipe.layout === 'compact-index') {
     return (
       <SectionFrame recipe={recipe}>
-        <SectionHead
-          num={num}
-          title={block.title}
-          sub="Your entry point: the core guides"
-        />
+        <SectionHead num={num} title={block.title} />
         <div className="divide-site-outline-variant border-site-outline-strong divide-y border-y">
           {block.items.map((item, i) => (
             <StartCard
@@ -628,11 +621,7 @@ function StartCardsBlock({
   }
   return (
     <SectionFrame recipe={recipe}>
-      <SectionHead
-        num={num}
-        title={block.title}
-        sub="Your entry point: the core guides"
-      />
+      <SectionHead num={num} title={block.title} />
       {recipe.layout === 'horizontal-rail' ? (
         <DragScrollRow>
           {block.items.map((item, i) => (
@@ -728,7 +717,7 @@ function CodeCardsBlock({
         num={num}
         title={block.title}
         sub={block.description}
-        rightSlot={hubLink(block.href)}
+        rightSlot={<HubLink href={block.href} />}
       />
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {block.codes.map((c) => (
@@ -782,7 +771,7 @@ function TierGridBlock({
         num={num}
         title={block.title}
         sub={block.description}
-        rightSlot={hubLink(block.href)}
+        rightSlot={<HubLink href={block.href} />}
       />
       <div className="border-site-outline-strong bg-site-surface-container border">
         {block.rows.map((r, i) => (
@@ -843,7 +832,7 @@ function StepByStepBlock({
         num={num}
         title={block.title}
         sub={block.description}
-        rightSlot={hubLink(block.href)}
+        rightSlot={<HubLink href={block.href} />}
       />
       <ol
         className={
@@ -918,7 +907,7 @@ function CardListBlock({
         num={num}
         title={block.title}
         sub={block.description}
-        rightSlot={hubLink(block.href)}
+        rightSlot={<HubLink href={block.href} />}
       />
       <div
         className={
@@ -981,11 +970,12 @@ function AboutBlock({
 }: {
   block: Extract<HomeBlock, { type: 'about' }>;
 }) {
+  const t = useTranslations('common.ui');
   return (
     <section>
       <div className="grid grid-cols-1 gap-14 lg:grid-cols-2">
         <div>
-          <Chip tone="mute">ABOUT</Chip>
+          <Chip tone="mute">{t('aboutGame')}</Chip>
           <h2 className="site-headline-lg text-site-on-surface mt-4">
             {block.title}
           </h2>
@@ -1007,7 +997,7 @@ function AboutBlock({
               textTransform: 'uppercase',
             }}
           >
-            At a glance
+            {t('atAGlance')}
           </p>
           {block.stats.map((s, i) => (
             <div
@@ -1095,7 +1085,7 @@ function LatestGuidesBlock({
           block.sub ??
           'The most recently updated guides — every page version-stamped.'
         }
-        rightSlot={hubLink('/guides')}
+        rightSlot={<HubLink href={'/guides'} />}
       />
       <div className="border-site-outline-strong bg-site-surface-container border">
         {latestGuides.map((g, i) => (
@@ -1195,7 +1185,7 @@ function CategoryGridBlock({
         num={num}
         title={block.title ?? 'Explore the wiki'}
         sub={block.sub ?? 'Every guide, organized by type.'}
-        rightSlot={hubLink('/guides')}
+        rightSlot={<HubLink href={'/guides'} />}
       />
       <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
         {ctx.guideCategories.map((c) => {
@@ -1235,7 +1225,7 @@ function FaqBlock({
         num={num}
         title={block.title ?? 'Frequently asked'}
         sub={block.sub ?? 'A few common questions. Full list on the FAQ page.'}
-        rightSlot={hubLink('/faq')}
+        rightSlot={<HubLink href={'/faq'} />}
       />
       <FaqAccordion items={block.items} />
     </section>

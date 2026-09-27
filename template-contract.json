@@ -11,10 +11,15 @@
     "theme-selector-v1"
   ],
   "supported": {
-    "locales": ["en", "zh", "ja", "ko", "de", "fr", "es", "pt", "id"],
+    "locales": ["en", "zh", "ja", "ko", "de", "fr", "es", "pt", "id", "ru"],
     "defaultLocales": ["en"],
     "themes": ["tactical", "pixel", "neon", "aurora", "sakura"],
-    "heroStyles": ["cover-split", "gameplay-panel", "video-center", "text-only"],
+    "heroStyles": [
+      "cover-split",
+      "gameplay-panel",
+      "video-center",
+      "text-only"
+    ],
     "homeBlockTypes": [
       "hero",
       "start-cards",

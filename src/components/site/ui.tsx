@@ -3,8 +3,10 @@
 import type { CSSProperties, ReactNode } from 'react';
 import * as Accordion from '@radix-ui/react-accordion';
 import { ChevronRight, Plus, Square, XCircle } from 'lucide-react';
+import { useLocale, useTranslations } from 'next-intl';
 
 import { Link } from '@/core/i18n/navigation';
+import { defaultLocale } from '@/config/locale';
 
 /* =============================================================================
  * "Tactical Console" UI primitives — chips, stats, section heads, cards.
@@ -543,6 +545,7 @@ export function ArticleHeader({
   lastUpdated: string;
   readingTime?: string;
 }) {
+  const t = useTranslations('common.ui');
   return (
     <header className="border-site-outline-variant mb-8 border-b pb-6">
       <h1 className="site-headline-lg text-site-on-surface">{h1}</h1>
@@ -555,8 +558,8 @@ export function ArticleHeader({
           textTransform: 'uppercase',
         }}
       >
-        Updated {lastUpdated}
-        {readingTime ? ` · ${readingTime} read` : ''}
+        {t('updated')} {lastUpdated}
+        {readingTime ? ` · ${readingTime}` : ''}
       </p>
     </header>
   );
@@ -846,6 +849,7 @@ export function RelatedGuides({
 }: {
   items: { title: string; href: string; description: string }[];
 }) {
+  const t = useTranslations('common.ui');
   return (
     <div className="border-site-outline-strong mt-16 border-t pt-10">
       <p
@@ -858,7 +862,7 @@ export function RelatedGuides({
           textTransform: 'uppercase',
         }}
       >
-        Related Guides
+        {t('relatedGuides')}
       </p>
       <div className="grid gap-4 md:grid-cols-2">
         {items.map((it) => (
@@ -867,7 +871,7 @@ export function RelatedGuides({
             title={it.title}
             description={it.description}
             href={it.href}
-            cta={`Read →`}
+            cta={t('readGuide')}
           />
         ))}
       </div>
@@ -953,6 +957,8 @@ export function BreadcrumbJsonLd({
   items: { label: string; href: string }[];
   site: string;
 }) {
+  const locale = useLocale();
+  const prefix = locale === defaultLocale ? '' : `/${locale}`;
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -960,7 +966,7 @@ export function BreadcrumbJsonLd({
       '@type': 'ListItem',
       position: i + 1,
       name: it.label,
-      item: `${site}${it.href}`,
+      item: `${site}${prefix}${it.href === '/' ? '' : it.href}`,
     })),
   };
   return (

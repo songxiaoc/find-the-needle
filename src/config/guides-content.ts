@@ -17,6 +17,7 @@ import GithubSlugger from 'github-slugger';
 import matter from 'gray-matter';
 
 import { GUIDE_CATEGORIES, type GuideCategory } from '@/config/guides';
+import { getCommonMessages } from '@/config/locale/messages';
 import { localeOfFile, stripLocaleSuffix } from '@/config/locale/wiring';
 
 const CONTENT_DIR = path.join(process.cwd(), 'content/guides');
@@ -201,6 +202,12 @@ export function getGuideCategories(locale = 'en'): GuideCategoryGroup[] {
   const all = getAllGuides(locale);
   return GUIDE_CATEGORIES.map((cat) => ({
     ...cat,
+    ...(cat.slug === 'guide'
+      ? {
+          title: getCommonMessages(locale).category.title,
+          overviewDescription: getCommonMessages(locale).category.description,
+        }
+      : {}),
     items: all.filter((it) => it.category === cat.slug),
   }))
     .filter((cat) => cat.items.length > 0)

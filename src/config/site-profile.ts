@@ -54,8 +54,8 @@ export const siteProfile: SiteProfile = {
   shellPreset: 'wiki',
   features: {
     search: false,
-    patchStatus: true,
-    entities: true,
+    patchStatus: false,
+    entities: false,
     tools: false,
     saveImport: false,
     community: false,

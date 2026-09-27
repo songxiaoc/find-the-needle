@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "title": "Find the Needle : wiki et guides — Démo, automatisation et astuces",
+    "description": "Découvrez Find the Needle : démo gratuite sur Steam, recherche dans les meules de foin, améliorations, automatisation et configuration PC. Guides indépendants du jeu incrémental à venir.",
+    "keywords": "Find the Needle, guide Find the Needle, wiki Find the Needle, démo Find the Needle, automatisation"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "guides": "Guides",
+    "faq": "FAQ",
+    "requirements": "Configuration PC",
+    "troubleshooting": "Dépannage",
+    "about": "À propos",
+    "contact": "Contact",
+    "privacy": "Confidentialité",
+    "terms": "Conditions d’utilisation",
+    "language": "Langue",
+    "primary": "Navigation principale",
+    "demo": "Démo"
+  },
+  "footer": {
+    "guides": "Guides",
+    "resources": "Jeu et assistance",
+    "site": "À propos du site",
+    "disclaimer": "Guide de fans indépendant consacré à Find the Needle, sans affiliation avec Hay Passionates. Les noms, illustrations et marques du jeu appartiennent à leurs propriétaires respectifs."
+  },
+  "category": {
+    "title": "Guides du jeu",
+    "description": "Découvrez la recherche d’aiguilles, préparez vos améliorations et explorez le contenu de la démo Steam."
+  },
+  "languagePrompt": {
+    "title": "Lire en {language} ?",
+    "description": "Vous pouvez consulter ce guide dans votre langue préférée. Votre choix sera conservé pour vos prochaines visites.",
+    "close": "Fermer la suggestion de langue",
+    "dismiss": "Garder cette langue"
+  },
+  "ui": {
+    "readGuide": "Lire le guide",
+    "allGuides": "Tous les guides",
+    "onThisPage": "Sur cette page",
+    "overview": "Présentation",
+    "relatedGuides": "Guides associés",
+    "updated": "Mis à jour",
+    "published": "Publié",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "siteNavigation": "Navigation du site",
+    "wikiNavigation": "Navigation des guides",
+    "viewOnSteam": "Voir sur Steam",
+    "demoAvailable": "Démo gratuite disponible",
+    "comingQ4": "Jeu complet prévu au 4e trimestre 2026",
+    "guideCount": "{count} guides",
+    "backHome": "Retour à l’accueil",
+    "notFound": "Page introuvable",
+    "gameplayImageAlt": "Convoyeur transportant le foin vers le point de vente dans Find The Needle",
+    "aboutGame": "À propos du jeu",
+    "atAGlance": "En bref"
+  }
+}

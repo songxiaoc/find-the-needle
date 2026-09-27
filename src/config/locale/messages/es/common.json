@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "title": "Find the Needle: wiki y guías — Demo, automatización y consejos",
+    "description": "Empieza en Find the Needle: demo gratuita de Steam, búsqueda en pajares, mejoras, automatización y requisitos de PC. Guías independientes del próximo juego incremental.",
+    "keywords": "Find the Needle, guía Find the Needle, wiki Find the Needle, demo Find the Needle, automatización"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "guides": "Guías",
+    "faq": "Preguntas frecuentes",
+    "requirements": "Requisitos de PC",
+    "troubleshooting": "Solución de problemas",
+    "about": "Acerca del sitio",
+    "contact": "Contacto",
+    "privacy": "Privacidad",
+    "terms": "Condiciones de uso",
+    "language": "Idioma",
+    "primary": "Navegación principal",
+    "demo": "Demo"
+  },
+  "footer": {
+    "guides": "Guías",
+    "resources": "Juego y ayuda",
+    "site": "Acerca del sitio",
+    "disclaimer": "Guía independiente de fans de Find the Needle, sin afiliación con Hay Passionates. Los nombres, las imágenes y las marcas del juego pertenecen a sus respectivos propietarios."
+  },
+  "category": {
+    "title": "Guías del juego",
+    "description": "Aprende a buscar agujas, planifica tus mejoras y descubre qué ofrece la demo de Steam."
+  },
+  "languagePrompt": {
+    "title": "¿Leer en {language}?",
+    "description": "Puedes consultar esta guía en tu idioma preferido. Guardaremos tu elección para futuras visitas.",
+    "close": "Cerrar sugerencia de idioma",
+    "dismiss": "Mantener este idioma"
+  },
+  "ui": {
+    "readGuide": "Leer guía",
+    "allGuides": "Todas las guías",
+    "onThisPage": "En esta página",
+    "overview": "Resumen",
+    "relatedGuides": "Guías relacionadas",
+    "updated": "Actualizado",
+    "published": "Publicado",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "siteNavigation": "Navegación del sitio",
+    "wikiNavigation": "Navegación de guías",
+    "viewOnSteam": "Ver en Steam",
+    "demoAvailable": "Demo gratuita disponible",
+    "comingQ4": "Juego completo previsto para el cuarto trimestre de 2026",
+    "guideCount": "{count} guías",
+    "backHome": "Volver al inicio",
+    "notFound": "Página no encontrada",
+    "gameplayImageAlt": "Cinta que lleva heno al punto de venta en Find The Needle",
+    "aboutGame": "Sobre el juego",
+    "atAGlance": "De un vistazo"
+  }
+}

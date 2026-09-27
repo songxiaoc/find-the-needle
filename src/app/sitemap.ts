@@ -1,108 +1,46 @@
 import type { MetadataRoute } from 'next';
 
-import {
-  getAllEntities,
-  getEntities,
-  getPublishedEntityKinds,
-} from '@/config/entities-content';
-import { gameConfig } from '@/config/game';
 import { getAllGuides, getGuideCategories } from '@/config/guides-content';
+import { locales } from '@/config/locale';
+import { PUBLIC_PAGES } from '@/config/locale/routes';
+import { hreflangAlternates, localizedUrl } from '@/shared/lib/seo';
 
-const SITE =
-  process.env.NEXT_PUBLIC_APP_URL?.replace(/\/$/, '') || gameConfig.origin;
-
-// Bump manually when the home hub gains aggregated content or layout changes.
-// Detail + category pages keep their own dates so they stay honest.
-const SITE_LAST_UPDATED = '2026-01-01';
-
-const max = (...dates: string[]) => dates.sort().at(-1)!;
+const SITE_LAST_UPDATED = '2026-09-27';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Content is discovered from the filesystem (content/guides/**) — adding a
-  // guide automatically adds its sitemap entry. Category listing pages are
-  // included too; empty categories are skipped (getGuideCategories filters).
-  const articles = getAllGuides();
-  const categories = getGuideCategories();
-  const entityKinds = getPublishedEntityKinds();
-  const entities = getAllEntities();
-
-  const latestGuideDate = articles
-    .map((g) => g.lastModified ?? g.date)
+  const guides = getAllGuides();
+  const latestContent = guides
+    .map((guide) => guide.lastModified ?? guide.date)
     .sort()
     .at(-1);
-  const hubLastModified = latestGuideDate
-    ? max(SITE_LAST_UPDATED, latestGuideDate)
-    : SITE_LAST_UPDATED;
-
-  const staticPages: MetadataRoute.Sitemap = [
-    {
-      url: `${SITE}/`,
-      lastModified: hubLastModified,
-      changeFrequency: 'weekly',
-      priority: 1,
-    },
-    {
-      url: `${SITE}/guides`,
-      lastModified: hubLastModified,
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
+  const hubDate = [SITE_LAST_UPDATED, latestContent ?? SITE_LAST_UPDATED]
+    .sort()
+    .at(-1)!;
+  const pages = [
+    ...PUBLIC_PAGES.map((page) => ({
+      path: page.path as string,
+      updated: hubDate,
+    })),
+    ...getGuideCategories().map((category) => ({
+      path: `/guides/${category.slug}`,
+      updated: hubDate,
+    })),
+    ...guides.map((guide) => ({
+      path: guide.href,
+      updated: guide.lastModified ?? guide.date,
+    })),
   ];
-
-  const categoryPages: MetadataRoute.Sitemap = categories.map((c) => ({
-    url: `${SITE}/guides/${c.slug}`,
-    lastModified: hubLastModified,
-    changeFrequency: 'weekly',
-    priority: 0.7,
-  }));
-
-  const guidePages: MetadataRoute.Sitemap = articles.map((g) => ({
-    url: `${SITE}${g.href}`,
-    lastModified: g.lastModified ?? g.date,
-    changeFrequency: 'monthly',
-    priority: 0.8,
-  }));
-
-  const entityHubPages: MetadataRoute.Sitemap =
-    entityKinds.length > 0
-      ? [
-          {
-            url: `${SITE}/database`,
-            lastModified:
-              entities
-                .map((entity) => entity.updatedAt)
-                .sort()
-                .at(-1) ?? SITE_LAST_UPDATED,
-            changeFrequency: 'weekly',
-            priority: 0.9,
-          },
-        ]
-      : [];
-
-  const entityCatalogPages: MetadataRoute.Sitemap = entityKinds.map((kind) => ({
-    url: `${SITE}${kind.route}`,
-    lastModified:
-      getEntities(kind.id)
-        .map((entity) => entity.updatedAt)
-        .sort()
-        .at(-1) ?? SITE_LAST_UPDATED,
-    changeFrequency: 'weekly',
-    priority: 0.8,
-  }));
-
-  const entityDetailPages: MetadataRoute.Sitemap = entities.map((entity) => ({
-    url: `${SITE}${entity.href}`,
-    lastModified: entity.updatedAt,
-    changeFrequency: 'monthly',
-    priority: 0.7,
-  }));
-
-  return [
-    ...staticPages,
-    ...categoryPages,
-    ...guidePages,
-    ...entityHubPages,
-    ...entityCatalogPages,
-    ...entityDetailPages,
-  ];
+  return locales.flatMap((locale) =>
+    pages.map((page) => ({
+      url: localizedUrl(page.path, locale),
+      lastModified: page.updated,
+      changeFrequency:
+        page.path === '/' || page.path === '/guides'
+          ? ('weekly' as const)
+          : ('monthly' as const),
+      priority:
+        page.path === '/' ? 1 : page.path.startsWith('/guides') ? 0.8 : 0.5,
+      alternates: { languages: hreflangAlternates(page.path) ?? {} },
+    }))
+  );
 }

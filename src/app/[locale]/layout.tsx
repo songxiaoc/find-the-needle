@@ -43,7 +43,7 @@ export default async function LocaleLayout({
       <head>
         {/* Site-wide @graph: WebSite + Organization + VideoGame, cross-linked
          * by @id. Per-page Article JSON-LD references #website / #game. */}
-        <SiteJsonLd />
+        <SiteJsonLd locale={locale} />
         {/* GA must load in <head> with beforeInteractive — afterInteractive at
          * the end of <body> can miss the initial pageview on fast navigations,
          * so analytics under-reports. See docs/PITFALLS.md. */}

@@ -1,13 +1,16 @@
 import type { ReactNode } from 'react';
+import { useLocale } from 'next-intl';
 
 import { Link } from '@/core/i18n/navigation';
 import { envConfigs, getPrimaryNavigation, siteProfile } from '@/config';
 import { getPublishedEntityKinds } from '@/config/entities-content';
 import { gameConfig, type FooterLinkGroup, type NavItem } from '@/config/game';
 import { getGuideCategories } from '@/config/guides-content';
-import { defaultLocale, locales } from '@/config/locale';
+import { locales } from '@/config/locale';
+import { getCommonMessages } from '@/config/locale/messages';
 import { uiDataAttributes } from '@/config/ui';
 
+import { LanguagePrompt } from './LanguagePrompt';
 import { LocaleSwitcher } from './LocaleSwitcher';
 import { MobileNav } from './MobileNav';
 import { activeNavHref } from './navActive';
@@ -42,6 +45,7 @@ function SiteHeader({
   locale: string;
 }) {
   const localizedNavItems = navItems;
+  const copy = getCommonMessages(locale);
   // Categories for the mobile drawer (the desktop sidebar's equivalent on phones,
   // so content pages also get category nav). MobileNav is a client component and
   // can't read the content index itself — we resolve it here on the server.
@@ -54,7 +58,7 @@ function SiteHeader({
     <header className="border-site-outline-variant bg-site-surface border-b">
       <nav
         className="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-4 md:px-14"
-        aria-label="Primary"
+        aria-label={copy.navigation.primary}
       >
         <Link
           href="/"
@@ -110,16 +114,16 @@ function SiteFooter({
   // to each category). Empty categories are already filtered out. Falls back to
   // a single hub link before any content exists.
   const categories = getGuideCategories(locale);
-  const isChinese = locale === 'zh';
+  const copy = getCommonMessages(locale);
   const guidesGroup: FooterLinkGroup = {
-    heading: isChinese ? '攻略' : 'Guides',
+    heading: copy.footer.guides,
     links: categories.length
       ? categories.map((c) => ({ label: c.title, href: `/guides/${c.slug}` }))
-      : [{ label: isChinese ? '全部攻略' : 'All guides', href: '/guides' }],
+      : [{ label: copy.ui.allGuides, href: '/guides' }],
   };
   const entityGroup: FooterLinkGroup | null = entityKinds.length
     ? {
-        heading: isChinese ? '数据库' : 'Database',
+        heading: 'Database',
         links: entityKinds.map((kind) => ({
           label: kind.label,
           href: kind.route,
@@ -129,7 +133,23 @@ function SiteFooter({
   const footerGroups: FooterLinkGroup[] = [
     guidesGroup,
     ...(entityGroup ? [entityGroup] : []),
-    ...gameConfig.footerExtras,
+    {
+      heading: copy.footer.resources,
+      links: [
+        { label: copy.navigation.faq, href: '/faq' },
+        { label: copy.navigation.requirements, href: '/system-requirements' },
+        { label: copy.navigation.troubleshooting, href: '/troubleshooting' },
+      ],
+    },
+    {
+      heading: copy.footer.site,
+      links: [
+        { label: copy.navigation.about, href: '/about' },
+        { label: copy.navigation.contact, href: '/contact' },
+        { label: copy.navigation.privacy, href: '/privacy-policy' },
+        { label: copy.navigation.terms, href: '/terms-of-service' },
+      ],
+    },
   ];
 
   return (
@@ -151,9 +171,7 @@ function SiteFooter({
                 lineHeight: 1.55,
               }}
             >
-              {isChinese
-                ? `${gameConfig.gameFullName} 非官方玩家攻略站，与 ${gameConfig.disclaimer.publisher} 没有隶属关系。${gameConfig.disclaimer.trademarkOwners}`
-                : `Independent fan guide for ${gameConfig.gameFullName}. Not affiliated with ${gameConfig.disclaimer.publisher}. ${gameConfig.disclaimer.trademarkOwners}`}
+              {copy.footer.disclaimer}
             </p>
             <SocialLinks className="mt-5" />
           </div>
@@ -231,16 +249,32 @@ function SiteFooter({
 export function SiteShell({
   children,
   activeHref,
-  locale = defaultLocale,
+  locale: requestedLocale,
 }: {
   children: ReactNode;
   activeHref?: string;
   locale?: string;
 }) {
+  const currentLocale = useLocale();
+  const locale = requestedLocale ?? currentLocale;
   const entityKinds = siteProfile.features.entities
     ? getPublishedEntityKinds()
     : [];
-  const navItems: NavItem[] = [...getPrimaryNavigation()];
+  const copy = getCommonMessages(locale);
+  const routeLabels: Record<string, string> = {
+    '/': copy.navigation.home,
+    '/guides': copy.navigation.guides,
+    '/faq': copy.navigation.faq,
+    '/system-requirements': copy.navigation.requirements,
+    '/troubleshooting': copy.navigation.troubleshooting,
+    '/about': copy.navigation.about,
+    '/contact': copy.navigation.contact,
+    '/guides/guide/demo': copy.navigation.demo,
+  };
+  const navItems: NavItem[] = getPrimaryNavigation().map((item) => ({
+    ...item,
+    label: routeLabels[item.href] ?? item.label,
+  }));
 
   if (
     entityKinds.length > 0 &&
@@ -258,6 +292,7 @@ export function SiteShell({
       <PatchBar />
       <main>{children}</main>
       <SiteFooter entityKinds={entityKinds} locale={locale} />
+      <LanguagePrompt locale={locale} />
     </div>
   );
 }

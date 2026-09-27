@@ -1,7 +1,10 @@
-import type { NextRequest } from 'next/server';
+import { NextResponse, type NextRequest } from 'next/server';
 import createIntlMiddleware from 'next-intl/middleware';
 
 import { routing } from '@/core/i18n/config';
+import { locales } from '@/config/locale';
+import { getCommonMessages } from '@/config/locale/messages';
+import { PUBLIC_PATHS } from '@/config/locale/routes';
 
 const intlMiddleware = createIntlMiddleware(routing);
 
@@ -15,7 +18,34 @@ const intlMiddleware = createIntlMiddleware(routing);
 const CACHE_CONTROL = 'public, s-maxage=3600, stale-while-revalidate=14400';
 
 export async function middleware(request: NextRequest) {
+  const hostname = request.nextUrl.hostname;
+  const preview =
+    hostname.endsWith('.workers.dev') || hostname.endsWith('.pages.dev');
+  const pathname = request.nextUrl.pathname;
+  if (['/sitemap.xml', '/robots.txt', '/llms.txt'].includes(pathname)) {
+    const response = NextResponse.next();
+    if (preview) response.headers.set('X-Robots-Tag', 'noindex, nofollow');
+    return response;
+  }
+  const segments = pathname.split('/').filter(Boolean);
+  const locale = locales.includes(segments[0]) ? segments.shift()! : 'en';
+  const route = `/${segments.join('/')}`;
+  if (!PUBLIC_PATHS.has(route)) {
+    const copy = getCommonMessages(locale);
+    const home = locale === 'en' ? '/' : `/${locale}`;
+    return new NextResponse(
+      `<!doctype html><html lang="${locale}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>${copy.ui.notFound}</title></head><body style="margin:0;min-height:100vh;display:grid;place-items:center;background:#141712;color:#f5f0df;font-family:system-ui;text-align:center"><main><h1>${copy.ui.notFound}</h1><p><a style="color:#d4bb6b" href="${home}">${copy.ui.backHome}</a></p></main></body></html>`,
+      {
+        status: 404,
+        headers: {
+          'Content-Type': 'text/html; charset=utf-8',
+          'X-Robots-Tag': 'noindex, nofollow',
+        },
+      }
+    );
+  }
   const response = intlMiddleware(request);
+  if (preview) response.headers.set('X-Robots-Tag', 'noindex, nofollow');
 
   response.headers.set('Cache-Control', CACHE_CONTROL);
   response.headers.set('CDN-Cache-Control', CACHE_CONTROL);
@@ -37,6 +67,9 @@ export const config = {
   // Skip Next internals, generated image routes, and anything with a file
   // extension — notably /llms.txt, which must not get a locale prefix.
   matcher: [
-    '/((?!_next|_vercel|icon|apple-icon|favicon|opengraph-image|twitter-image|manifest|sitemap|robots|.*\\..*).*)',
+    '/((?!api|_next|_vercel|icon|apple-icon|favicon|opengraph-image|twitter-image|manifest|sitemap|robots|.*\\..*).*)',
+    '/sitemap.xml',
+    '/robots.txt',
+    '/llms.txt',
   ],
 };

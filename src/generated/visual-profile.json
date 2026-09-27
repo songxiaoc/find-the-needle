@@ -1,19 +1,37 @@
 {
   "schemaVersion": 1,
-  "game": "Example Game",
-  "genre": ["game guide"],
-  "world": ["template default"],
-  "artStyle": ["neutral"],
-  "mood": ["clear", "readable"],
+  "game": "Find The Needle",
+  "genre": [
+    "automation",
+    "simulation"
+  ],
+  "world": [
+    "hay-filled industrial warehouse"
+  ],
+  "artStyle": [
+    "3D gameplay"
+  ],
+  "mood": [
+    "warm",
+    "industrial"
+  ],
   "contentDensity": "medium",
-  "primaryUserTasks": ["find guide information"],
-  "visualMotifs": ["brand accent", "content-first layout"],
-  "avoid": ["decorative obstruction", "low contrast"],
+  "primaryUserTasks": [
+    "find guide information"
+  ],
+  "visualMotifs": [
+    "brand accent",
+    "content-first layout"
+  ],
+  "avoid": [
+    "decorative obstruction",
+    "low contrast"
+  ],
   "evidence": [
     {
       "sourceType": "official-store",
-      "source": "REPLACE_WITH_OFFICIAL_SOURCE",
-      "observation": "Template placeholder. Replace with evidence from the game's official visual identity."
+      "source": "https://store.steampowered.com/app/5160800/Find_The_Needle/",
+      "observation": "Golden hay contrasts with dark factory machinery."
     }
   ]
 }

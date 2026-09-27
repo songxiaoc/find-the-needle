@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "templateContractVersion": 1,
-  "templateContractSha256": "426a03a4cbcb993832187bff9bda64d5c99f6e74491e963f2504f8fb03091661",
+  "templateContractSha256": "2c666b1e47e86159f123f18661364df02ea83969b80c61694ddd31ba8a043ea9",
   "requiredCapabilities": [
     "asset-manifest-v1",
     "generated-config-v1",
@@ -16,7 +16,11 @@
   "managedFiles": [
     "src/components/site/active-fonts.ts",
     "src/components/site/brand.css",
+    "src/config/locale/messages/de/common.json",
     "src/config/locale/messages/en/common.json",
+    "src/config/locale/messages/es/common.json",
+    "src/config/locale/messages/fr/common.json",
+    "src/config/locale/messages/ru/common.json",
     "src/config/style/active-theme.css",
     "src/generated/asset-manifest.json",
     "src/generated/game-config.ts",
@@ -29,5 +33,11 @@
   ],
   "theme": "tactical",
   "defaultLocale": "en",
-  "locales": ["en"]
+  "locales": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "ru"
+  ]
 }
