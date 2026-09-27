@@ -30,7 +30,7 @@ function BrandMark({
       alt={gameConfig.siteName}
       width={width}
       height={height}
-      className="block h-auto w-[160px] shrink-0 md:w-[230px]"
+      className="site-brandmark block h-auto w-[160px] shrink-0 md:w-[230px]"
     />
   );
 }

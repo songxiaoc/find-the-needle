@@ -19,15 +19,35 @@ export type Tone = 'amber' | 'blue' | 'red' | 'green' | 'mute' | 'solid';
 
 const TONE_STYLES: Record<Tone, { c: string; bd: string; bg: string }> = {
   amber: {
-    c: '#F5A524',
-    bd: 'rgba(245,165,36,.4)',
-    bg: 'rgba(245,165,36,.08)',
+    c: 'var(--site-primary)',
+    bd: 'color-mix(in srgb, var(--site-primary) 40%, transparent)',
+    bg: 'color-mix(in srgb, var(--site-primary) 8%, transparent)',
   },
-  blue: { c: '#3B82F6', bd: 'rgba(59,130,246,.4)', bg: 'rgba(59,130,246,.08)' },
-  red: { c: '#EF4444', bd: 'rgba(239,68,68,.4)', bg: 'rgba(239,68,68,.08)' },
-  green: { c: '#22C55E', bd: 'rgba(34,197,94,.4)', bg: 'rgba(34,197,94,.08)' },
-  mute: { c: '#94A0AE', bd: '#2A3849', bg: 'transparent' },
-  solid: { c: '#0A0E14', bd: '#F5A524', bg: '#F5A524' },
+  blue: {
+    c: 'var(--site-blue)',
+    bd: 'color-mix(in srgb, var(--site-blue) 40%, transparent)',
+    bg: 'color-mix(in srgb, var(--site-blue) 8%, transparent)',
+  },
+  red: {
+    c: 'var(--site-red)',
+    bd: 'color-mix(in srgb, var(--site-red) 40%, transparent)',
+    bg: 'color-mix(in srgb, var(--site-red) 8%, transparent)',
+  },
+  green: {
+    c: 'var(--site-green)',
+    bd: 'color-mix(in srgb, var(--site-green) 40%, transparent)',
+    bg: 'color-mix(in srgb, var(--site-green) 8%, transparent)',
+  },
+  mute: {
+    c: 'var(--site-on-surface-variant)',
+    bd: 'var(--site-outline-strong)',
+    bg: 'transparent',
+  },
+  solid: {
+    c: 'var(--site-on-primary)',
+    bd: 'var(--site-primary)',
+    bg: 'var(--site-primary)',
+  },
 };
 
 export function Chip({
@@ -91,7 +111,7 @@ export function Stat({
         style={{
           fontFamily: 'var(--font-site-display)',
           fontSize: 28,
-          color: color || '#E8ECF1',
+          color: color || 'var(--site-on-surface)',
           marginTop: 4,
           fontWeight: 600,
           lineHeight: 1,
@@ -592,7 +612,7 @@ export function ArticleHero({
         style={{
           fontSize: 'clamp(80px, 14vw, 180px)',
           fontWeight: 900,
-          color: 'rgba(255,255,255,0.03)',
+          color: 'color-mix(in srgb, var(--site-on-surface) 3%, transparent)',
           lineHeight: 1,
           whiteSpace: 'nowrap',
           letterSpacing: '-0.02em',

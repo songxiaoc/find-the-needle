@@ -19,6 +19,7 @@ export default function NotFoundPage() {
       <Image
         src={envConfigs.app_logo}
         alt={envConfigs.app_name}
+        className="site-brandmark"
         width={80}
         height={80}
       />

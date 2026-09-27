@@ -1,7 +1,7 @@
 /* ════════════════════════════════════════════════════════════════════════
  * TACTICAL CONSOLE — default theme preset.
  *
- * Cool blue-black surfaces, monospace data labels, square edges. Quiet,
+ * Warm light surfaces, monospace data labels, square edges. Quiet,
  * info-dense — the out-of-the-box look that fits most games.
  *
  * Per-theme palette + typography + radius. The per-GAME accent comes from the
@@ -11,21 +11,21 @@
  * ════════════════════════════════════════════════════════════════════════ */
 
 .site-theme {
-  /* --- Surfaces (darkest → lightest) ----------------------------------- */
-  --site-surface-lowest: #070a0f; /* footer */
-  --site-surface: #0a0e14; /* page bg */
-  --site-surface-low: #0e1320; /* alternating section bg */
-  --site-surface-container: #131a24; /* card */
-  --site-surface-high: #1a2330; /* card hover */
-  --site-surface-highest: #1f2a38; /* unused tier */
+  /* --- Surfaces ----------------------------------- */
+  --site-surface-lowest: #eeede8; /* footer */
+  --site-surface: #faf9f6; /* page bg */
+  --site-surface-low: #f3f2ed; /* alternating section bg */
+  --site-surface-container: #ffffff; /* card */
+  --site-surface-high: #f5f3ed; /* card hover */
+  --site-surface-highest: #e2e0d8; /* unused tier */
 
   /* --- Foreground ------------------------------------------------------ */
-  --site-on-surface: #e8ecf1; /* text */
-  --site-on-surface-variant: #94a0ae; /* textDim */
-  --site-outline: #5b6776; /* textMute (mono labels) */
-  --site-outline-variant: #1f2a38; /* thin 1px rule */
-  --site-outline-strong: #2a3849; /* 1px rule for stronger separators */
-  --site-text-faint: #3a4452;
+  --site-on-surface: #202733; /* text */
+  --site-on-surface-variant: #53606f; /* textDim */
+  --site-outline: #626d7b; /* textMute (mono labels) */
+  --site-outline-variant: #e2e0d8; /* thin 1px rule */
+  --site-outline-strong: #cdc9be; /* 1px rule for stronger separators */
+  --site-text-faint: #667383;
 
   /* --- Primary: derived from the brand knob (../../brand.css) ---------- */
   --site-primary: var(--brand-primary);
@@ -41,61 +41,61 @@
   --site-on-secondary-container: var(--brand-on-primary);
 
   /* --- Functional accents (match the game's HUD) ---------------------- */
-  --site-blue: #3b82f6; /* pick / team / info */
-  --site-blue-dim: #1e47a8;
-  --site-green: #22c55e; /* live / buff / selected */
-  --site-green-dim: #15803d;
-  --site-red: #ef4444; /* ban / nerf / CC */
-  --site-red-dim: #8c2020;
+  --site-blue: #245fba; /* pick / team / info */
+  --site-blue-dim: #1c478b;
+  --site-green: #1c7540; /* live / buff / selected */
+  --site-green-dim: #e8f4ec;
+  --site-red: #b82d35; /* ban / nerf / CC */
+  --site-red-dim: #fbe9eb;
 
   /* --- Tertiary remap (kept for Tier-A badge etc.) --------------------- */
-  --site-tertiary: #22c55e;
-  --site-tertiary-container: #15803d;
-  --site-on-tertiary: #0a0e14;
-  --site-on-tertiary-container: #e8ecf1;
+  --site-tertiary: #1c7540;
+  --site-tertiary-container: #e8f4ec;
+  --site-on-tertiary: #ffffff;
+  --site-on-tertiary-container: #202733;
 
   /* --- Error / negative ------------------------------------------------ */
-  --site-error: #ef4444;
-  --site-error-container: #8c2020;
-  --site-on-error: #e8ecf1;
+  --site-error: #b82d35;
+  --site-error-container: #fbe9eb;
+  --site-on-error: #ffffff;
 
   /* Corner radius for this theme (square). Also overrides shadcn docs radius. */
   --radius: 0.5rem;
 
   background-color: var(--site-surface);
   color: var(--site-on-surface);
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 /* Tailwind v4 theme tokens — generates bg-site-*, text-site-*, etc.
  * NOTE: --color-site-primary* are NOT here — they come from ../../brand.css
  * (@theme inline) so the accent honors the per-game brand knob. */
 @theme {
-  --color-site-surface: #0a0e14;
-  --color-site-surface-lowest: #070a0f;
-  --color-site-surface-low: #0e1320;
-  --color-site-surface-container: #131a24;
-  --color-site-surface-high: #1a2330;
-  --color-site-surface-highest: #1f2a38;
+  --color-site-surface: #faf9f6;
+  --color-site-surface-lowest: #eeede8;
+  --color-site-surface-low: #f3f2ed;
+  --color-site-surface-container: #ffffff;
+  --color-site-surface-high: #f5f3ed;
+  --color-site-surface-highest: #e2e0d8;
 
-  --color-site-on-surface: #e8ecf1;
-  --color-site-on-surface-variant: #94a0ae;
-  --color-site-outline: #5b6776;
-  --color-site-outline-variant: #1f2a38;
-  --color-site-outline-strong: #2a3849;
+  --color-site-on-surface: #202733;
+  --color-site-on-surface-variant: #53606f;
+  --color-site-outline: #626d7b;
+  --color-site-outline-variant: #e2e0d8;
+  --color-site-outline-strong: #cdc9be;
 
-  --color-site-tertiary: #22c55e;
-  --color-site-tertiary-container: #15803d;
-  --color-site-on-tertiary: #0a0e14;
-  --color-site-on-tertiary-container: #e8ecf1;
+  --color-site-tertiary: #1c7540;
+  --color-site-tertiary-container: #e8f4ec;
+  --color-site-on-tertiary: #ffffff;
+  --color-site-on-tertiary-container: #202733;
 
-  --color-site-blue: #3b82f6;
-  --color-site-green: #22c55e;
-  --color-site-red: #ef4444;
+  --color-site-blue: #245fba;
+  --color-site-green: #1c7540;
+  --color-site-red: #b82d35;
 
-  --color-site-error: #ef4444;
-  --color-site-error-container: #8c2020;
-  --color-site-on-error: #e8ecf1;
+  --color-site-error: #b82d35;
+  --color-site-error-container: #fbe9eb;
+  --color-site-on-error: #ffffff;
 
   --font-site-display: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
   --font-site-body: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
