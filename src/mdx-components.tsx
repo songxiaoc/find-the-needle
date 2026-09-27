@@ -99,12 +99,34 @@ function MdxVideo({ className, ...props }: React.ComponentProps<'video'>) {
   );
 }
 
+function MdxPre({ className, ...props }: React.ComponentProps<'pre'>) {
+  return (
+    <pre
+      {...props}
+      className={cn(
+        'max-w-full overflow-x-auto rounded-lg border p-4',
+        className
+      )}
+    />
+  );
+}
+
+function MdxTable({ className, ...props }: React.ComponentProps<'table'>) {
+  return (
+    <div className="my-6 max-w-full overflow-x-auto" tabIndex={0}>
+      <table {...props} className={cn('w-full min-w-xl', className)} />
+    </div>
+  );
+}
+
 export function getMDXComponents(components?: MDXComponents): MDXComponents {
   const overrides = components ?? {};
 
   return {
     ...defaultMdxComponents,
     img: MdxImage,
+    pre: MdxPre,
+    table: MdxTable,
     Video: MdxVideo,
     Accordion,
     AccordionItem,

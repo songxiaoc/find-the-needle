@@ -6,6 +6,8 @@ import {
 import { SectionTitle } from '@/components/site/ui';
 import { setRequestLocale } from 'next-intl/server';
 
+import { Link } from '@/core/i18n/navigation';
+
 type Locale = 'en' | 'fr' | 'de' | 'es' | 'ru';
 export type ReferenceKey =
   | 'faq'
@@ -22,6 +24,43 @@ type Copy = {
   intro: string;
   sections: Section[];
 };
+const practicalGuides = {
+  en: [
+    'Help with your current save',
+    'Back up your Demo save',
+    'Check a stalled conveyor or power grid',
+    'Track a missing needle through the Silo and scanners',
+  ],
+  fr: [
+    'Aide pour votre partie',
+    'Sauvegarder une copie de votre partie',
+    'Vérifier un convoyeur ou un réseau électrique arrêté',
+    'Chercher une aiguille dans le silo et les scanners',
+  ],
+  de: [
+    'Hilfe für deinen Spielstand',
+    'Demo-Spielstand sichern',
+    'Stillstehende Förderbänder und Stromnetze prüfen',
+    'Eine fehlende Nadel durch Silo und Scanner verfolgen',
+  ],
+  es: [
+    'Ayuda para tu partida',
+    'Crear una copia de tu partida de la demo',
+    'Revisar una cinta o una red eléctrica detenida',
+    'Seguir una aguja perdida por el silo y los escáneres',
+  ],
+  ru: [
+    'Помощь с текущей игрой',
+    'Сохранить резервную копию прогресса',
+    'Проверить остановившийся конвейер или электросеть',
+    'Проследить путь пропавшей иголки через силос и сканеры',
+  ],
+} as const;
+const practicalGuidePaths = [
+  '/guides/guide/demo',
+  '/guides/guide/automation',
+  '/guides/guide/needles-and-scanners',
+] as const;
 const LINKS = {
   store: 'https://store.steampowered.com/app/5160800/Find_the_Needle/',
   demo: 'https://store.steampowered.com/app/5165210/Find_the_Needle_Demo/',
@@ -1240,6 +1279,25 @@ export function ReferencePage({
             </section>
           ))}
         </div>
+        {(page === 'faq' || page === 'troubleshooting') && (
+          <section className="mt-10">
+            <h2 className="site-headline-md text-site-on-surface mb-3">
+              {practicalGuides[language][0]}
+            </h2>
+            <ul className="space-y-3">
+              {practicalGuidePaths.map((href, index) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className="site-body-md text-site-primary underline underline-offset-4"
+                  >
+                    {practicalGuides[language][index + 1]}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
       </PageFrame>
     </PageRoot>
   );

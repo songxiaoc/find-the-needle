@@ -1,6 +1,6 @@
 ---
-title: 'Find the Needle: demo, lanzamiento y requisitos para PC'
-description: 'Encuentra la demo gratuita de Steam, consulta el lanzamiento previsto y compara tu PC con los requisitos publicados.'
+title: 'Demo de Find the Needle: descarga, partidas guardadas y requisitos para PC'
+description: 'Instala la demo oficial de Steam, localiza y copia sus partidas guardadas en Windows y consulta los requisitos y el lanzamiento previsto.'
 date: '2026-09-27'
 lastModified: '2026-09-27'
 image: '/images/find-the-needle/header.webp'
@@ -20,15 +20,39 @@ También puedes [añadir el juego completo a tu lista de deseados](https://store
 
 La ficha de Steam indica Windows. Estos son los requisitos publicados para la demo:
 
-| Componente | Mínimo | Recomendado |
-| --- | --- | --- |
-| Sistema operativo | Windows 10, 64 bits | Windows 11, 64 bits |
-| Procesador | Intel i5-8400 o Ryzen 5 2600 | Ryzen 5 5600 o Intel i5-12400 |
-| Memoria | 8 GB de RAM | 16 GB de RAM |
-| Gráficos | GPU dedicada, Vulkan 1.3, 4 GB de VRAM; GTX 1050 Ti o RX 570 | GTX 1660 Super o RTX 2060, 6 GB de VRAM |
-| Almacenamiento | 2 GB libres | 2 GB libres |
+| Componente        | Mínimo                                                       | Recomendado                             |
+| ----------------- | ------------------------------------------------------------ | --------------------------------------- |
+| Sistema operativo | Windows 10, 64 bits                                          | Windows 11, 64 bits                     |
+| Procesador        | Intel i5-8400 o Ryzen 5 2600                                 | Ryzen 5 5600 o Intel i5-12400           |
+| Memoria           | 8 GB de RAM                                                  | 16 GB de RAM                            |
+| Gráficos          | GPU dedicada, Vulkan 1.3, 4 GB de VRAM; GTX 1050 Ti o RX 570 | GTX 1660 Super o RTX 2060, 6 GB de VRAM |
+| Almacenamiento    | 2 GB libres                                                  | 2 GB libres                             |
 
 El desarrollador advierte que los gráficos integrados no son compatibles y pueden provocar cierres inesperados. Las fábricas grandes también exigen más a la CPU. Cumplir las especificaciones no garantiza una tasa de fotogramas concreta.
+
+## Haz una copia de tu partida de la demo
+
+El desarrollador indica esta carpeta de guardado de Windows en una respuesta de Steam:
+
+```text
+%APPDATA%\Godot\app_userdata\Haystack Incremental\saves
+```
+
+1. Guarda el progreso con las opciones disponibles en el juego y ciérralo.
+2. Pulsa **Win + R**, pega la ruta anterior y pulsa Intro.
+3. Copia la carpeta **saves** completa en otra ubicación. Añade la fecha a la copia para distinguirla de las anteriores.
+
+Copia la carpeta y deja la original donde está. Si Windows no la encuentra, comprueba la ruta desde la cuenta de Windows con la que juegas. Este procedimiento crea una copia local; no confirma la compatibilidad con Steam Cloud ni la transferencia entre versiones.
+
+**¿Podré usar la partida de la demo en el juego completo?** No hay una confirmación oficial verificada en las fuentes consultadas el 27 de septiembre. Conserva una copia, pero no des por hecho que será compatible con la versión final.
+
+Ubicación de las partidas: [respuesta del desarrollador](https://steamcommunity.com/app/5160800/discussions/0/563667940587675789/). Si el contador de agujas se queda atascado, consulta las [comprobaciones del silo y del escáner](/guides/guide/needles-and-scanners) antes de desmontar el equipo.
+
+## ¿Hasta dónde se puede llegar en la demo?
+
+La demo permite probar el ciclo de retirada de heno y automatización. La descripción general del equipo y la investigación en la tienda no es una lista detallada de los elementos desbloqueables en la demo. Las fuentes oficiales enlazadas no especifican un límite de tiempo universal, todas las restricciones de desbloqueo ni un tiempo garantizado para completarla.
+
+Guíate por los objetivos y las investigaciones bloqueadas que aparecen en tu versión. El informe de un jugador con 5/6 agujas no determina cuántas hay en cada montón ni en el juego completo. Consulta las [actualizaciones de la demo](/guides/guide/demo-updates) para conocer los cambios documentados que pueden diferir de los vídeos antiguos.
 
 ## Idiomas y juego con amigos
 

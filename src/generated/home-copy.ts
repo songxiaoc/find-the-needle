@@ -13,14 +13,32 @@ export const homeCopy = {
         'PREMIERS PAS',
       ],
       [
-        'Construire une chaîne facile à suivre',
-        'Prévoyez l’approvisionnement, les convoyeurs, l’électricité et la sortie avant d’agrandir.',
+        'Relier les convoyeurs et rétablir le courant',
+        'Utilisez l’accrochage au point de vente, vérifiez le réseau et repérez où la chaîne s’arrête.',
         'AUTOMATISATION',
       ],
       [
         'Essayer la démo Steam',
-        'Téléchargement officiel, configuration PC et période de sortie du jeu complet.',
+        'Installez la démo, vérifiez votre PC et faites une copie de votre sauvegarde.',
         'DÉMO ET SORTIE',
+      ],
+    ],
+    explore: 'Machines, aiguilles et mises à jour de la démo',
+    exploreCards: [
+      [
+        'Découvrir les machines et les produits',
+        'Comprenez le rôle des équipements et les différentes façons de transformer le foin.',
+        'MACHINES ET PRODUITS',
+      ],
+      [
+        'Une aiguille manque ? Suivez les produits',
+        'Vérifiez le silo, les trajets qui évitent les scanners et le problème des 5/6 aiguilles.',
+        'TROUVER LES AIGUILLES',
+      ],
+      [
+        'Suivre les mises à jour de la démo',
+        'Retrouvez les annonces du développeur et les changements apportés à la démo jouable.',
+        'MISES À JOUR DE LA DÉMO',
       ],
     ],
     about: 'La meule de foin n’est que le début',
@@ -49,14 +67,32 @@ export const homeCopy = {
         'EINSTIEG',
       ],
       [
-        'Eine übersichtliche Produktionslinie bauen',
-        'Plane Materialzufuhr, Förderbänder, Strom und Ausgabe, bevor du erweiterst.',
+        'Förderbänder verbinden und die Stromversorgung prüfen',
+        'Nutze das Einrasten am Verkaufsstand, prüfe das Stromnetz und finde die blockierte Stelle.',
         'AUTOMATISIERUNG',
       ],
       [
         'Die Steam-Demo ausprobieren',
-        'Offizieller Download, PC-Anforderungen und geplanter Release der Vollversion.',
+        'Installiere die Demo, prüfe deinen PC und sichere deinen Spielstand.',
         'DEMO UND RELEASE',
+      ],
+    ],
+    explore: 'Maschinen, Nadeln und Demo-Updates',
+    exploreCards: [
+      [
+        'Maschinen und Produkte kennenlernen',
+        'Erfahre, wozu die Geräte dienen und wie sich Heu weiterverarbeiten lässt.',
+        'MASCHINEN UND PRODUKTE',
+      ],
+      [
+        'Eine Nadel fehlt? Folge den Heuprodukten',
+        'Prüfe Silo, Wege am Scanner vorbei und das gemeldete Problem mit 5/6 Nadeln.',
+        'NADELN FINDEN',
+      ],
+      [
+        'Die Demo-Updates verfolgen',
+        'Lies die Entwicklerankündigungen und erfahre, was sich in der spielbaren Demo ändert.',
+        'DEMO-UPDATES',
       ],
     ],
     about: 'Der Heuhaufen ist erst der Anfang',
@@ -85,14 +121,32 @@ export const homeCopy = {
         'PRIMEROS PASOS',
       ],
       [
-        'Construye una línea fácil de seguir',
-        'Planifica el suministro, las cintas, la electricidad y la salida antes de ampliar.',
+        'Conecta las cintas y comprueba la electricidad',
+        'Usa el ajuste al puesto de venta, revisa la red y localiza el punto donde se detiene la línea.',
         'AUTOMATIZACIÓN',
       ],
       [
         'Prueba la demo de Steam',
-        'Descarga oficial, requisitos de PC y fecha prevista para el juego completo.',
+        'Instala la demo, comprueba tu PC y crea una copia de tu partida.',
         'DEMO Y LANZAMIENTO',
+      ],
+    ],
+    explore: 'Máquinas, agujas y actualizaciones de la demo',
+    exploreCards: [
+      [
+        'Conoce las máquinas y los productos',
+        'Descubre para qué sirve el equipo y las distintas formas de procesar el heno.',
+        'MÁQUINAS Y PRODUCTOS',
+      ],
+      [
+        '¿Falta una aguja? Sigue los productos',
+        'Revisa el silo, las rutas que evitan el escáner y el problema de las 5/6 agujas.',
+        'ENCONTRAR AGUJAS',
+      ],
+      [
+        'Sigue las actualizaciones de la demo',
+        'Ponte al día con los anuncios del desarrollador y los cambios de la demo jugable.',
+        'ACTUALIZACIONES DE LA DEMO',
       ],
     ],
     about: 'El pajar es solo el principio',
@@ -121,14 +175,32 @@ export const homeCopy = {
         'НАЧАЛО ИГРЫ',
       ],
       [
-        'Постройте понятную производственную линию',
-        'Продумайте подачу сырья, конвейеры, питание и выход продукции до расширения.',
+        'Соедините конвейеры и проверьте питание',
+        'Используйте привязку к пункту продажи, проверьте электросеть и найдите место остановки.',
         'АВТОМАТИЗАЦИЯ',
       ],
       [
         'Попробуйте демоверсию в Steam',
-        'Официальная загрузка, требования к ПК и сроки выхода полной версии.',
+        'Установите демоверсию, проверьте ПК и сделайте резервную копию сохранения.',
         'ДЕМОВЕРСИЯ И РЕЛИЗ',
+      ],
+    ],
+    explore: 'Машины, иголки и обновления демоверсии',
+    exploreCards: [
+      [
+        'Знакомство с машинами и продукцией',
+        'Разберитесь в назначении оборудования и способах переработки сена.',
+        'МАШИНЫ И ПРОДУКЦИЯ',
+      ],
+      [
+        'Не хватает иголки? Проследите путь продукции',
+        'Проверьте силос, обходные пути мимо сканеров и ситуацию с 5/6 иголок.',
+        'ПОИСК ИГОЛОК',
+      ],
+      [
+        'Следите за обновлениями демоверсии',
+        'Читайте объявления разработчика и узнавайте, что меняется в доступной демоверсии.',
+        'ОБНОВЛЕНИЯ ДЕМОВЕРСИИ',
       ],
     ],
     about: 'Стог сена — только начало',

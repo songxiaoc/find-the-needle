@@ -28,7 +28,6 @@ import {
 import { getMDXComponents } from '@/mdx-components';
 import { setRequestLocale } from 'next-intl/server';
 import { compileMDX } from 'next-mdx-remote/rsc';
-import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 import remarkGfm from 'remark-gfm';
 
@@ -59,21 +58,8 @@ const SITE = gameConfig.origin;
 const MDX_OPTIONS = {
   mdxOptions: {
     remarkPlugins: [remarkGfm],
-    rehypePlugins: [
-      rehypeSlug,
-      [
-        rehypeAutolinkHeadings,
-        {
-          behavior: 'prepend' as const,
-          content: {
-            type: 'element',
-            tagName: 'span',
-            properties: { 'aria-hidden': 'true', className: ['anchor-icon'] },
-            children: [{ type: 'text', value: '#' }],
-          },
-        },
-      ],
-    ],
+    // Fumadocs headings already link their children; a second autolink nests anchors.
+    rehypePlugins: [rehypeSlug],
   },
 } as const;
 

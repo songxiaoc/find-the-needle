@@ -1,40 +1,47 @@
 ---
-title: 'Plan your first hay automation line'
-description: 'Connect a small production line, look for bottlenecks and decide what to expand before buying more machines.'
+title: 'Connect conveyor belts, power and the hay sell stand'
+description: 'Use sell-stand snapping and No Snap mode, check a stopped power grid, and trace bottlenecks before expanding your hay production line.'
 date: '2026-09-27'
 lastModified: '2026-09-27'
 image: '/images/find-the-needle/screenshot-1.webp'
 ---
 
-Build one complete path for the hay before adding more branches. Start with material supply, connect the processing equipment and power it, then watch where the output goes. A short working line gives you a clearer next purchase than a collection of disconnected machines.
+For a first working route, connect the hay supply to its destination, confirm power where needed, then send material through before adding another branch. **Demo V8 added snapping at the Hay Sell Stand, F for No Snap mode and an E interaction at power poles to shut down the grid.** Those details are useful when a line looks connected but will not run.
 
-## Follow the material
+## Connect the sale end first
 
-![A conveyor carries hay from beside the pile to the stall marked SELL HAY.](/images/find-the-needle/screenshot-1.webp)
+![A conveyor runs from beside the hay pile toward the stall marked SELL HAY.](/images/find-the-needle/screenshot-1.webp)
 
-In this official screenshot, the belt leads toward the sale point. Follow your own route from its input to its destination when checking a line.
+The destination in this official screenshot is the **SELL HAY** stall. The V8 update added belt snapping there and reworked conveyor placement with automatic pathfinding.
 
-Use this checklist while laying out a line:
+1. Identify the selling point and leave room to approach it.
+2. Place the final belt section using the sell stand's snap connection.
+3. Connect upstream toward the supply or machine output you want to carry.
+4. Feed a small batch and follow it all the way to the sale point. Check that the money display changes.
 
-1. **Supply:** decide how hay will reach the first machine.
-2. **Connection:** follow the belt route from that supply to the machine that needs it.
-3. **Power:** check the machine's connection and the status shown in the game.
-4. **Output:** leave space for the next processing step and check that material continues moving.
+If placement keeps snapping where you do not want it, **F activates No Snap mode**, according to the V8 notes. Use the in-game mode indicator and prompts when switching placement behavior. Free placement is useful for layout control; it does not prove that two endpoints actually connect, so test material flow afterward.
 
-Change one part at a time when something stops. This makes it easier to tell whether your last adjustment helped.
+## When powered machines stop together
 
-## Buy for the bottleneck
+Before replacing machines, check the shared electricity supply. V8 lets you **shut down the entire power grid by pressing E at a power pole**. If several machines stopped after you interacted with a pole, inspect the grid state first and follow the pole's current prompt to restore it.
 
-If your setup spends time waiting for hay, inspect the supply side before buying another processor. If hay reaches a machine but does not move beyond it, look at that machine and its output route first. If one section works while the next does not, start at the connection between them.
+The same update added a visual notice when power is below the required level. A belt delivering hay to a machine does not establish that the machine has enough power. Read the electricity indication before changing your material route.
 
-These are planning checks, not guaranteed diagnoses. Use the machine information in your current build to confirm what it needs.
+## Find the first point where hay stops
 
-## Choose what to produce
+| What you observe | Check next |
+| --- | --- |
+| The input belt is empty | Follow the route back to the collector or preceding machine. |
+| Hay arrives but the next machine stays idle | Check electricity, the required input and the machine's output path. |
+| A queue builds in front of a scanner | Watch whether the scanner processes material more slowly than it arrives. |
+| Material reaches a junction but misses its destination | Trace each outgoing branch separately, including any route to the sell stand. |
 
-The official store describes production beyond loose hay, including bales, paper, pulp, pellets and eco bricks. Treat each new product as a possible production chain: check its available machinery, connections and space requirements before spending your budget.
+These checks help isolate a fault; they are not promises that every stalled machine has the same cause. On the **Pellet Disc Machine**, V8 added **BRICKS / HAY** resource indicators, so inspect those instead of assuming a visually full belt supplies everything it needs.
 
-Leave expansion space around a working setup. You can then add a branch without having to untangle the route you already understand.
+## Expand without bypassing the needle check
 
-For the manual opening loop, read [Getting started](/guides/guide/getting-started).
+V8 introduced **U-Splitters** and **U-Joiners**. Players discussing scanner congestion have also suggested splitting into separate scanner lanes and joining the output afterward. That is a community layout suggestion, not a measured throughput guarantee. Test each lane before copying it across the factory.
 
-Equipment and product overview: [official Steam page](https://store.steampowered.com/app/5160800/). These layout suggestions are general planning advice. Check prices, unlocks and production details in your current game before buying.
+If the goal is to check every product for needles, trace **every** path to the sale point through your scanning setup. A tidy main line does not help if another branch bypasses it. See [needles and scanners](/guides/guide/needles-and-scanners) for the developer's explanation of needles inside hay products.
+
+Sources: [official Demo V8 notes, September 11, 2026 UTC](https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126), [community scanner discussion](https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/). Check your current build's prompts if controls differ.

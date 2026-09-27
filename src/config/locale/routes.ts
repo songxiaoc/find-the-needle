@@ -15,6 +15,9 @@ export const GUIDE_PATHS = [
   '/guides/guide/getting-started',
   '/guides/guide/automation',
   '/guides/guide/demo',
+  '/guides/guide/machines-and-products',
+  '/guides/guide/needles-and-scanners',
+  '/guides/guide/demo-updates',
 ] as const;
 
 export const PUBLIC_PATHS: ReadonlySet<string> = new Set([

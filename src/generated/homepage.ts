@@ -38,9 +38,9 @@ export const generatedHomeBlocks = [
         type: 'latest',
         id: 'automation',
         href: '/guides/guide/automation',
-        title: 'Build a line you can follow',
+        title: 'Connect belts and get the power running',
         description:
-          'Plan the supply, belts, power and output before expanding.',
+          'Use sell-point snapping, check the grid and trace a stalled production line.',
         readingTime: '3 min',
         tag: 'AUTOMATION',
         tagTone: 'amber',
@@ -51,9 +51,49 @@ export const generatedHomeBlocks = [
         href: '/guides/guide/demo',
         title: 'Try the Steam demo',
         description:
-          'Find the official download, PC requirements and full-game release window.',
-        readingTime: '2 min',
+          'Install the demo, check your PC and make a copy of your save.',
+        readingTime: '3 min',
         tag: 'DEMO & RELEASE',
+        tagTone: 'green',
+      },
+    ],
+  },
+  {
+    id: 'explore',
+    type: 'start-cards',
+    title: 'Machines, needles and demo updates',
+    items: [
+      {
+        type: 'featured',
+        id: 'machines-and-products',
+        href: '/guides/guide/machines-and-products',
+        title: 'Get to know the machines and products',
+        description:
+          'Understand the equipment and the different ways hay can be processed.',
+        readingTime: '3 min',
+        tag: 'MACHINES & PRODUCTS',
+        tagTone: 'amber',
+      },
+      {
+        type: 'latest',
+        id: 'needles-and-scanners',
+        href: '/guides/guide/needles-and-scanners',
+        title: 'Missing a needle? Follow the hay products',
+        description:
+          'Check the Silo, scanner bypasses and the reported 5/6 needle problem.',
+        readingTime: '3 min',
+        tag: 'FINDING NEEDLES',
+        tagTone: 'solid',
+      },
+      {
+        type: 'latest',
+        id: 'demo-updates',
+        href: '/guides/guide/demo-updates',
+        title: 'Follow the demo updates',
+        description:
+          'Catch up on developer announcements and changes to the playable demo.',
+        readingTime: '3 min',
+        tag: 'DEMO UPDATES',
         tagTone: 'green',
       },
     ],
@@ -92,21 +132,23 @@ export const generatedHomeBlocksI18n = Object.fromEntries(
             label: i === 0 ? copy.start : copy.demo,
           })),
         };
-      if (block.type === 'start-cards')
+      if (block.type === 'start-cards') {
+        const cards = block.id === 'explore' ? copy.exploreCards : copy.cards;
         return {
           ...block,
-          title: copy.help,
+          title: block.id === 'explore' ? copy.explore : copy.help,
           items: block.items.map((item, i) => ({
             ...item,
-            title: copy.cards[i][0],
-            description: copy.cards[i][1],
-            tag: copy.cards[i][2],
+            title: cards[i][0],
+            description: cards[i][1],
+            tag: cards[i][2],
             readingTime:
               locale === 'ru'
                 ? item.readingTime.replace('min', 'мин')
                 : item.readingTime,
           })),
         };
+      }
       return {
         ...block,
         title: copy.about,

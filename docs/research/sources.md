@@ -27,13 +27,16 @@
 
 ## 内容范围
 
-只建立三个实用页面，每页英语、法语、德语、西班牙语、俄语完整对应：
+现有六个攻略主题，每篇英语、法语、德语、西班牙语、俄语完整对应。深入资料与官方回复见 [Demo研究记录](./demo-evidence-2026-09-27.md)：
 
-1. `/guides/guide/getting-started`：收集—出售—装备的基本循环，以及明确标为建议的购买思路。
-2. `/guides/guide/automation`：供料、传送、供电、出料的规划检查；不是未经实测的最优机器排行。
-3. `/guides/guide/demo`：下载入口、正式版状态、PC 配置、语言与单人模式。
+1. `/guides/guide/getting-started`：手动收集、容器UI、研究树及购买思路。
+2. `/guides/guide/automation`：V8售卖口吸附、F自由放置、电线杆E关闭电网、低电提示、扫描器分流检查。
+3. `/guides/guide/demo`：下载、配置、官方存档目录与备份、试玩范围及继承边界。
+4. `/guides/guide/machines-and-products`：工具/机器用途与草产品、输入输出采购检查。
+5. `/guides/guide/needles-and-scanners`：开发者解释Silo中的针、售出回草堆、明确归属的社区排查、5/6未解决报告。
+6. `/guides/guide/demo-updates`：V8历史改动与有日期的官方动态，不能据此推定当前build。
 
-不收录未经核实的按键、针的位置、存档路径、机器配方/产能/价格、流程计时、针总数、试玩上限、结局、跨平台兼容结论。网络搜索出现多个将 Roblox 内容混为 Steam 的站点，均未用作事实来源。没有将第三方联机模组等同于官方联机。
+不收录未经核实的按键、针的位置、机器配方/产能/当前价格、流程计时、针总数、试玩上限、结局、跨平台兼容结论。F/E与存档路径已有官方依据；80%价格变化仅按V8历史公告表述。网络搜索出现多个将 Roblox 内容混为 Steam 的站点，均未用作事实来源。没有将第三方联机模组等同于官方联机。
 
 ## 素材
 
@@ -44,7 +47,10 @@
 - `header.webp`：Steam 头图，用于封面。
 - `screenshot-0.webp`：仓库与草堆俯瞰图，适合入门页。
 - `screenshot-1.webp`：传送带通往 SELL HAY 售卖口，适合自动化与首页场景。
-- `screenshot-2.webp` 至 `screenshot-6.webp`：其余官方游戏截图，保留供后续选用；未据画面数值推导当前机制。
+- `screenshot-2.webp`：多分支工厂全景，用于机器布局及寻针线路检查。
+- `screenshot-4.webp`：草叉与桶容量UI，用于入门和工具用途；画面数值不泛化成所有桶的容量。
+- `screenshot-5.webp`：研究树，展示Hay Lines/Power/Processing分支，不当作Demo全部解锁证明。
+- `screenshot-3.webp` 和 `screenshot-6.webp`：保留，未为增加图片数量而插入。
 - WebP 仅作尺寸/格式压缩，最长宽度 1600，质量 85；不改变游戏画面信息。
 
 图片权利归游戏权利方；站点为独立非官方网站，不暗示开发者或发行商背书。

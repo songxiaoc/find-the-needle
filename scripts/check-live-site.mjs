@@ -1,10 +1,16 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
+import matter from 'gray-matter';
+
+import { PUBLIC_PATHS } from '../src/config/locale/routes.ts';
+import {
+  generatedDefaultLocale as defaultLocale,
+  generatedLocales as locales,
+} from '../src/generated/site-locales.ts';
 
 const base = new URL(process.argv[2] || 'http://localhost:3000');
 const canonicalOrigin = 'https://findtheneedle.site';
-const locales = ['en', 'fr', 'de', 'es', 'ru'];
-const expectedPages = 65;
+const expectedPages = PUBLIC_PATHS.size * locales.length;
 const preview = /\.(workers|pages)\.dev$/.test(base.hostname);
 const failures = [];
 const snapshots = new Map();
@@ -41,11 +47,17 @@ const tags = (html, name) =>
     attributes(match[0])
   );
 const routeLocale = (pathname) =>
-  locales.includes(pathname.split('/')[1]) ? pathname.split('/')[1] : 'en';
-const semanticPath = (pathname) =>
-  pathname.replace(/^\/(fr|de|es|ru)(?=\/|$)/, '') || '/';
+  locales.includes(pathname.split('/')[1])
+    ? pathname.split('/')[1]
+    : defaultLocale;
+const semanticPath = (pathname) => {
+  const locale = routeLocale(pathname);
+  return locale === defaultLocale
+    ? pathname
+    : pathname.slice(locale.length + 1) || '/';
+};
 const languageUrl = (path, locale) =>
-  `${canonicalOrigin}${locale === 'en' ? '' : `/${locale}`}${path === '/' ? '' : path}`;
+  `${canonicalOrigin}${locale === defaultLocale ? '' : `/${locale}`}${path === '/' ? '' : path}`;
 
 function check(condition, message) {
   if (!condition) failures.push(message);
@@ -81,6 +93,15 @@ assert.equal(
   'Sitemap must not contain duplicate URLs'
 );
 const publishedPaths = new Set(urls.map((url) => new URL(url).pathname));
+for (const path of PUBLIC_PATHS) {
+  for (const locale of locales) {
+    const expectedPath = new URL(languageUrl(path, locale)).pathname;
+    check(
+      publishedPaths.has(expectedPath),
+      `Sitemap is missing published route ${expectedPath}`
+    );
+  }
+}
 
 for (let offset = 0; offset < urls.length; offset += 4) {
   await Promise.all(
@@ -106,6 +127,53 @@ for (let offset = 0; offset < urls.length; offset += 4) {
             .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, '')
             .replace(/<[^>]*>/g, ' ')
         );
+        if (/^\/guides\/guide\/[^/]+$/.test(semanticPath(path))) {
+          const slug = semanticPath(path).split('/').at(-1);
+          const suffix = locale === defaultLocale ? '' : `.${locale}`;
+          const guide = matter(
+            readFileSync(
+              new URL(
+                `../content/guides/guide/${slug}${suffix}.mdx`,
+                import.meta.url
+              ),
+              'utf8'
+            )
+          );
+          const heading = decode(
+            (html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1] || '').replace(
+              /<[^>]*>/g,
+              ''
+            )
+          ).trim();
+          check(
+            heading === guide.data.title,
+            `${path}: rendered H1 does not match the localized article`
+          );
+          for (const headingHtml of html.matchAll(
+            /<h[2-6]\b[^>]*>[\s\S]*?<\/h[2-6]>/gi
+          )) {
+            check(
+              !/<a\b[^>]*>(?:(?!<\/a>)[\s\S])*<a\b/i.test(headingHtml[0]),
+              `${path}: nested heading links can break hydration`
+            );
+          }
+          for (const line of guide.content
+            .split('\n')
+            .filter((line) => /^## /.test(line))) {
+            check(
+              text.includes(line.slice(3).trim()),
+              `${path}: missing localized section ${line.slice(3)}`
+            );
+          }
+          for (const match of guide.content.matchAll(
+            /!\[[^\]]*\]\((\/images\/[^)]+)\)/g
+          )) {
+            check(
+              html.includes(match[1]),
+              `${path}: missing guide image ${match[1]}`
+            );
+          }
+        }
         check(
           text.includes(commonCopy[locale].footer.disclaimer),
           `${path}: footer must use the route language ${locale}`
@@ -129,15 +197,15 @@ for (let offset = 0; offset < urls.length; offset += 4) {
             .map((link) => [link.hreflang, link.href])
         );
         check(
-          alternates.size === 6,
-          `${path}: expected en/fr/de/es/ru/x-default hreflang`
+          alternates.size === locales.length + 1,
+          `${path}: expected ${[...locales, 'x-default'].join('/')} hreflang`
         );
         for (const language of [...locales, 'x-default']) {
           check(
             alternates.get(language) ===
               languageUrl(
                 semanticPath(path),
-                language === 'x-default' ? 'en' : language
+                language === 'x-default' ? defaultLocale : language
               ),
             `${path}: invalid ${language} alternate`
           );
@@ -240,6 +308,6 @@ if (failures.length) {
   process.exitCode = 1;
 } else {
   console.log(
-    `PASS: ${urls.length} pages, self-canonicals, 6 reciprocal hreflang links, HTML languages, single H1s, localized internal links, ${absentPaths.length} real 404s, sitemap and llms.txt on ${base.origin}.`
+    `PASS: ${urls.length} pages, self-canonicals, ${locales.length + 1} reciprocal hreflang links, HTML languages, single H1s, localized internal links, ${absentPaths.length} real 404s, sitemap and llms.txt on ${base.origin}.`
   );
 }

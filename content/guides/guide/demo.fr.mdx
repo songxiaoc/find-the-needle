@@ -1,6 +1,6 @@
 ---
-title: 'Démo de Find the Needle, sortie et configuration PC'
-description: 'Retrouvez la démo gratuite sur Steam, la période de sortie prévue et la configuration PC publiée.'
+title: 'Démo de Find the Needle : téléchargement, sauvegardes et configuration PC'
+description: 'Installez la démo officielle sur Steam, trouvez et copiez ses sauvegardes Windows, puis consultez la configuration requise et la sortie prévue.'
 date: '2026-09-27'
 lastModified: '2026-09-27'
 image: '/images/find-the-needle/header.webp'
@@ -20,15 +20,39 @@ Vous pouvez aussi [ajouter le jeu complet à votre liste de souhaits](https://st
 
 La fiche Steam indique Windows. Voici les exigences publiées pour la démo :
 
-| Composant | Minimum | Recommandé |
-| --- | --- | --- |
-| Système | Windows 10, 64 bits | Windows 11, 64 bits |
-| Processeur | Intel i5-8400 ou Ryzen 5 2600 | Ryzen 5 5600 ou Intel i5-12400 |
-| Mémoire | 8 Go de RAM | 16 Go de RAM |
+| Composant       | Minimum                                                     | Recommandé                               |
+| --------------- | ----------------------------------------------------------- | ---------------------------------------- |
+| Système         | Windows 10, 64 bits                                         | Windows 11, 64 bits                      |
+| Processeur      | Intel i5-8400 ou Ryzen 5 2600                               | Ryzen 5 5600 ou Intel i5-12400           |
+| Mémoire         | 8 Go de RAM                                                 | 16 Go de RAM                             |
 | Carte graphique | GPU dédié, Vulkan 1.3, 4 Go de VRAM ; GTX 1050 Ti ou RX 570 | GTX 1660 Super ou RTX 2060, 6 Go de VRAM |
-| Stockage | 2 Go libres | 2 Go libres |
+| Stockage        | 2 Go libres                                                 | 2 Go libres                              |
 
 Le développeur avertit que les puces graphiques intégrées ne sont pas prises en charge et peuvent provoquer des plantages. Les grandes usines sollicitent davantage le processeur. Respecter une configuration indiquée ne garantit pas une fréquence d’images précise.
+
+## Faites une copie de vos sauvegardes
+
+Dans une réponse sur Steam, le développeur indique ce dossier de sauvegarde sous Windows :
+
+```text
+%APPDATA%\Godot\app_userdata\Haystack Incremental\saves
+```
+
+1. Enregistrez votre progression avec les commandes disponibles dans le jeu, puis fermez-le.
+2. Appuyez sur **Win + R**, collez le chemin ci-dessus et validez avec Entrée.
+3. Copiez le dossier **saves** entier dans un autre emplacement. Datez cette copie pour la distinguer des précédentes.
+
+Copiez le dossier en laissant l’original à sa place. Si Windows ne le trouve pas, vérifiez le chemin depuis le compte Windows avec lequel vous jouez. Cette procédure crée une copie locale ; elle ne confirme pas la prise en charge de Steam Cloud ni le transfert entre versions.
+
+**La sauvegarde de la démo sera-t-elle compatible avec le jeu complet ?** Les sources consultées le 27 septembre ne contiennent aucune confirmation officielle vérifiée. Conservez une copie, sans présumer de sa compatibilité avec la version finale.
+
+Emplacement des sauvegardes : [réponse du développeur](https://steamcommunity.com/app/5160800/discussions/0/563667940587675789/). Si le compteur d’aiguilles reste bloqué, consultez les [vérifications du silo et du scanner](/guides/guide/needles-and-scanners) avant de démonter vos équipements.
+
+## Jusqu’où peut-on aller dans la démo ?
+
+La démo permet de découvrir le déblaiement du foin et l’automatisation. La présentation générale des équipements et des recherches sur la boutique ne constitue pas une liste détaillée des éléments déblocables dans la démo. Les sources officielles citées ne précisent ni limite de temps universelle, ni plafond complet de déblocage, ni durée garantie pour terminer.
+
+Fiez-vous aux objectifs et aux recherches verrouillées affichés dans votre version. Le signalement d’un joueur bloqué à 5/6 aiguilles ne permet pas de déduire le nombre d’aiguilles de chaque tas ou du jeu complet. Consultez les [mises à jour de la démo](/guides/guide/demo-updates) pour connaître les changements documentés qui peuvent différer des anciennes vidéos.
 
 ## Langues et jeu entre amis
 
