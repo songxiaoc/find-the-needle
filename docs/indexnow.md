@@ -15,6 +15,6 @@ pnpm indexnow:submit https://findtheneedle.site/
 
 首次配置时，用户已授权提交当前五种语言的可索引页面；从线上 sitemap 保存显式清单，检查后传给脚本。以后仅传需要通知的已发布页面。
 
-HTTP 200 代表接口已收到 URL，不代表已经收录。HTTP 202 代表 key 验证仍在等待，脚本最多间隔 5 秒重试 6 次。
+HTTP 200 代表接口已收到 URL，不代表已经收录。HTTP 202 代表接口已接收、key 验证仍在等待；脚本明确报告 pending，不重复提交同一批 URL。
 
 协议参考：https://www.indexnow.org/documentation

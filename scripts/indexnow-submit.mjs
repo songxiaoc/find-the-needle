@@ -117,31 +117,26 @@ async function main() {
     urlList: urls,
   });
 
-  for (let attempt = 1; attempt <= 6; attempt += 1) {
-    const response = await request(endpoint, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json; charset=utf-8',
-        'User-Agent': 'find-the-needle-indexnow/1.0',
-      },
-      body: payload,
-    });
-    const body = await response.text();
-    if (response.status === 200) {
-      console.log(`IndexNow submitted ${urls.length} URL(s) with HTTP 200.`);
-      return;
-    }
-    if (response.status === 202 && attempt < 6) {
-      console.log(
-        `IndexNow key validation is pending (attempt ${attempt}/6); retrying in 5 seconds.`
-      );
-      await new Promise((resolve) => setTimeout(resolve, 5_000));
-      continue;
-    }
-    throw new Error(
-      `IndexNow submission failed with HTTP ${response.status}: ${body || 'no response body'}`
+  const response = await request(endpoint, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json; charset=utf-8',
+      'User-Agent': 'find-the-needle-indexnow/1.0',
+    },
+    body: payload,
+  });
+  const body = await response.text();
+  if (response.status === 200 || response.status === 202) {
+    const pending =
+      response.status === 202 ? ' (accepted; key validation pending)' : '';
+    console.log(
+      `IndexNow received ${urls.length} URL(s): HTTP ${response.status}${pending}.`
     );
+    return;
   }
+  throw new Error(
+    `IndexNow submission failed with HTTP ${response.status}: ${body || 'no response body'}`
+  );
 }
 
 main().catch((error) => {
