@@ -47,6 +47,7 @@ export const siteOrigin = (
 
 export const envConfigs: ConfigMap = {
   app_url: siteOrigin,
+  bing_site_verification: 'CCAD1FC2C2B3EF7E430BBFE0D5D23850',
   app_name: process.env.NEXT_PUBLIC_APP_NAME ?? gameConfig.siteName,
   app_description:
     process.env.NEXT_PUBLIC_APP_DESCRIPTION ?? gameConfig.tagline,

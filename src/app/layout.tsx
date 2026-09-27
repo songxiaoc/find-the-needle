@@ -6,6 +6,9 @@ import { envConfigs } from '@/config';
 
 export const metadata: Metadata = {
   metadataBase: new URL(envConfigs.app_url),
+  verification: {
+    other: { 'msvalidate.01': envConfigs.bing_site_verification },
+  },
   icons: {
     // Brand assets live in public/ and are listed in src/generated/asset-manifest.json.
     icon: [
