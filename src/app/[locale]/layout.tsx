@@ -5,6 +5,7 @@ import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 
 import { routing } from '@/core/i18n/config';
+import { analyticsConfig } from '@/config/analytics';
 import { siteMetadata } from '@/shared/lib/seo';
 
 export async function generateMetadata({
@@ -34,9 +35,9 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
 
-  const gaId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || '';
+  const gaId = analyticsConfig.googleAnalyticsId;
   const clarityId = process.env.NEXT_PUBLIC_CLARITY_ID || '';
-  const plausibleId = process.env.NEXT_PUBLIC_PLAUSIBLE_ID || '';
+  const plausibleDomain = analyticsConfig.plausibleDomain;
 
   return (
     <html lang={locale} suppressHydrationWarning>
@@ -57,7 +58,7 @@ export default async function LocaleLayout({
               {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', '${gaId}');`}
+gtag('config', ${JSON.stringify(gaId)});`}
             </Script>
           </>
         )}
@@ -65,16 +66,14 @@ gtag('config', '${gaId}');`}
       <body suppressHydrationWarning className="overflow-x-hidden">
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
 
-        {plausibleId && (
-          <>
-            <Script
-              src={`https://plausible.io/js/${plausibleId}.js`}
-              strategy="afterInteractive"
-            />
-            <Script id="plausible" strategy="afterInteractive">
-              {`window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()`}
-            </Script>
-          </>
+        {plausibleDomain && (
+          <Script
+            id="plausible"
+            defer
+            data-domain={plausibleDomain}
+            src={analyticsConfig.plausibleScriptUrl}
+            strategy="afterInteractive"
+          />
         )}
 
         {clarityId && (

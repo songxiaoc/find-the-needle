@@ -333,7 +333,7 @@ const content: Record<Locale, Record<ReferenceKey, Copy>> = {
     'privacy-policy': {
       title: 'Privacy policy',
       description:
-        'How findtheneedle.site handles hosting requests, browser preferences and third-party links, without accounts, advertising or analytics scripts.',
+        'How findtheneedle.site handles hosting requests, browser preferences, audience statistics and third-party links.',
       intro:
         'This policy covers findtheneedle.site, an independent Find the Needle guide. Reading the site does not require an account, a payment or a form submission.',
       sections: [
@@ -348,7 +348,7 @@ const content: Record<Locale, Record<ReferenceKey, Copy>> = {
         },
         {
           title: 'Analytics, advertising and payments',
-          text: 'This site does not currently embed advertising, session-recording or analytics scripts. It does not offer user accounts or take payments. We do not sell personal information.',
+          text: 'We use Google Analytics 4 and Plausible, hosted at plausible.shipsolo.io, to understand site visits through aggregate statistics. Google Analytics may use cookies and send visit data to Google. You can manage cookies through your browser settings. This site does not currently embed advertising or session-recording scripts, offer user accounts or take payments. We do not sell personal information.',
         },
         {
           title: 'External links and messages',
@@ -524,7 +524,7 @@ const content: Record<Locale, Record<ReferenceKey, Copy>> = {
     'privacy-policy': {
       title: 'Datenschutzerklärung',
       description:
-        'Wie findtheneedle.site Hosting-Anfragen, Browser-Einstellungen und externe Links behandelt, ohne Konten, Werbung oder Analyseskripte.',
+        'Wie findtheneedle.site Hosting-Anfragen, Browser-Einstellungen, Besuchsstatistiken und externe Links behandelt.',
       intro:
         'Diese Erklärung gilt für findtheneedle.site, einen unabhängigen Guide zu Find the Needle. Zum Lesen brauchst du kein Konto, keine Zahlung und kein Formular.',
       sections: [
@@ -539,7 +539,7 @@ const content: Record<Locale, Record<ReferenceKey, Copy>> = {
         },
         {
           title: 'Analyse, Werbung und Zahlungen',
-          text: 'Die Website bindet derzeit keine Werbe-, Sitzungsaufzeichnungs- oder Analyseskripte ein. Sie bietet keine Nutzerkonten an und nimmt keine Zahlungen entgegen. Wir verkaufen keine personenbezogenen Daten.',
+          text: 'Wir verwenden Google Analytics 4 und das unter plausible.shipsolo.io gehostete Plausible, um Website-Besuche anhand zusammengefasster Statistiken auszuwerten. Google Analytics kann Cookies verwenden und Besuchsdaten an Google senden. Cookies kannst du in den Einstellungen deines Browsers verwalten. Die Website bindet derzeit keine Werbe- oder Sitzungsaufzeichnungsskripte ein, bietet keine Nutzerkonten an und nimmt keine Zahlungen entgegen. Wir verkaufen keine personenbezogenen Daten.',
         },
         {
           title: 'Externe Links und Nachrichten',
@@ -715,7 +715,7 @@ const content: Record<Locale, Record<ReferenceKey, Copy>> = {
     'privacy-policy': {
       title: 'Política de privacidad',
       description:
-        'Cómo trata findtheneedle.site las solicitudes de alojamiento, preferencias del navegador y enlaces externos, sin cuentas, anuncios ni analítica.',
+        'Cómo trata findtheneedle.site las solicitudes de alojamiento, preferencias del navegador, estadísticas de visitas y enlaces externos.',
       intro:
         'Esta política cubre findtheneedle.site, una guía independiente de Find the Needle. No necesitas una cuenta, un pago ni enviar un formulario para leer el sitio.',
       sections: [
@@ -730,7 +730,7 @@ const content: Record<Locale, Record<ReferenceKey, Copy>> = {
         },
         {
           title: 'Analítica, publicidad y pagos',
-          text: 'El sitio no incorpora actualmente scripts de publicidad, grabación de sesiones o analítica. No ofrece cuentas de usuario ni acepta pagos. No vendemos información personal.',
+          text: 'Utilizamos Google Analytics 4 y Plausible, alojado en plausible.shipsolo.io, para conocer las visitas al sitio mediante estadísticas agregadas. Google Analytics puede utilizar cookies y enviar datos de las visitas a Google. Puedes gestionar las cookies en los ajustes de tu navegador. El sitio no incorpora actualmente scripts de publicidad ni de grabación de sesiones, no ofrece cuentas de usuario ni acepta pagos. No vendemos información personal.',
         },
         {
           title: 'Enlaces externos y mensajes',
@@ -906,7 +906,7 @@ const content: Record<Locale, Record<ReferenceKey, Copy>> = {
     'privacy-policy': {
       title: 'Политика конфиденциальности',
       description:
-        'Как findtheneedle.site обрабатывает запросы к хостингу, настройки браузера и внешние ссылки: без аккаунтов, рекламы и скриптов аналитики.',
+        'Как findtheneedle.site обрабатывает запросы к хостингу, настройки браузера, статистику посещений и внешние ссылки.',
       intro:
         'Эта политика относится к findtheneedle.site, независимому руководству по Find the Needle. Для чтения сайта не нужны регистрация, оплата или отправка формы.',
       sections: [
@@ -921,7 +921,7 @@ const content: Record<Locale, Record<ReferenceKey, Copy>> = {
         },
         {
           title: 'Аналитика, реклама и платежи',
-          text: 'Сайт в настоящее время не встраивает скрипты рекламы, записи сеансов или аналитики. На нём нет пользовательских аккаунтов и приёма платежей. Мы не продаём персональные данные.',
+          text: 'Мы используем Google Analytics 4 и Plausible, размещённый на plausible.shipsolo.io, для анализа посещений сайта по сводной статистике. Google Analytics может использовать файлы cookie и передавать данные о посещениях в Google. Управлять файлами cookie можно в настройках браузера. Сайт в настоящее время не встраивает скрипты рекламы или записи сеансов, не предлагает пользовательских аккаунтов и не принимает платежи. Мы не продаём персональные данные.',
         },
         {
           title: 'Внешние ссылки и сообщения',
@@ -1097,7 +1097,7 @@ const content: Record<Locale, Record<ReferenceKey, Copy>> = {
     'privacy-policy': {
       title: 'Politique de confidentialité',
       description:
-        'Traitement des requêtes, préférences du navigateur et liens externes sur findtheneedle.site, sans comptes, publicité ni scripts de mesure d’audience.',
+        'Traitement des requêtes, préférences du navigateur, statistiques de fréquentation et liens externes sur findtheneedle.site.',
       intro:
         'Cette politique concerne findtheneedle.site, guide indépendant de Find the Needle. Aucun compte, paiement ou formulaire n’est requis pour consulter le site.',
       sections: [
@@ -1112,7 +1112,7 @@ const content: Record<Locale, Record<ReferenceKey, Copy>> = {
         },
         {
           title: 'Mesure d’audience, publicité et paiements',
-          text: 'Le site n’intègre actuellement aucun script de publicité, d’enregistrement de session ou de mesure d’audience. Il ne propose pas de comptes et ne reçoit pas de paiements. Nous ne vendons pas de données personnelles.',
+          text: 'Nous utilisons Google Analytics 4 et Plausible, hébergé sur plausible.shipsolo.io, pour comprendre la fréquentation du site à partir de statistiques agrégées. Google Analytics peut utiliser des cookies et transmettre des données de visite à Google. Vous pouvez gérer les cookies dans les paramètres de votre navigateur. Le site n’intègre actuellement aucun script de publicité ou d’enregistrement de session, ne propose pas de comptes et ne reçoit pas de paiements. Nous ne vendons pas de données personnelles.',
         },
         {
           title: 'Liens externes et messages',
