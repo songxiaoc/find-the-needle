@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import { NativeAdRuntime } from '@/components/site/NativeAd';
+import { PlausibleAnalytics } from '@/components/site/PlausibleAnalytics';
 import { SiteJsonLd } from '@/components/site/SiteJsonLd';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
@@ -39,7 +40,6 @@ export default async function LocaleLayout({
 
   const gaId = analyticsConfig.googleAnalyticsId;
   const clarityId = process.env.NEXT_PUBLIC_CLARITY_ID || '';
-  const plausibleDomain = analyticsConfig.plausibleDomain;
 
   return (
     <html lang={locale} suppressHydrationWarning>
@@ -76,15 +76,12 @@ gtag('config', ${JSON.stringify(gaId)});`}
           data-cfasync="false"
         />
 
-        {plausibleDomain && (
-          <Script
-            id="plausible"
-            defer
-            data-domain={plausibleDomain}
-            src={analyticsConfig.plausibleScriptUrl}
-            strategy="afterInteractive"
-          />
+        {analyticsConfig.gameradarPlausibleScriptUrl && (
+          <Script id="gameradar-plausible-init" strategy="beforeInteractive">
+            {`window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()`}
+          </Script>
         )}
+        <PlausibleAnalytics />
 
         {clarityId && (
           <Script id="clarity" strategy="afterInteractive">
