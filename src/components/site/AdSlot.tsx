@@ -30,6 +30,7 @@ export function AdSlot({
 }) {
   const slot = useRef<HTMLDivElement>(null);
   const [unit, setUnit] = useState<BannerUnit | null>(null);
+  const [availableWidth, setAvailableWidth] = useState(0);
 
   useEffect(() => {
     const element = slot.current;
@@ -37,11 +38,17 @@ export function AdSlot({
 
     const observer = new ResizeObserver(([entry]) => {
       const width = entry.contentRect.width;
+      setAvailableWidth(width);
       const candidates =
         variant === 'leaderboard'
           ? [adsterraConfig.banners.desktop, adsterraConfig.banners.mobile]
           : [adsterraConfig.banners.rectangle];
-      setUnit(candidates.find((candidate) => candidate.width <= width) ?? null);
+      setUnit(
+        candidates.find((candidate) => candidate.width <= width) ??
+          (variant === 'leaderboard' && width > 0
+            ? adsterraConfig.banners.mobile
+            : null)
+      );
     });
     observer.observe(element);
     return () => observer.disconnect();
@@ -63,15 +70,26 @@ export function AdSlot({
           }
         >
           {unit && (
-            <iframe
+            <div
               key={unit.key}
-              title={`${label} ${unit.width} × ${unit.height}`}
-              width={unit.width}
-              height={unit.height}
-              srcDoc={bannerDocument(unit)}
-              scrolling="no"
-              className="block border-0"
-            />
+              className="overflow-hidden"
+              style={{
+                width: Math.min(availableWidth, unit.width),
+                height: unit.height,
+              }}
+            >
+              <iframe
+                title={`${label} ${unit.width} × ${unit.height}`}
+                width={unit.width}
+                height={unit.height}
+                srcDoc={bannerDocument(unit)}
+                scrolling="no"
+                className="block origin-top-left border-0"
+                style={{
+                  transform: `scale(${Math.min(1, availableWidth / unit.width)})`,
+                }}
+              />
+            </div>
           )}
         </div>
       </div>
