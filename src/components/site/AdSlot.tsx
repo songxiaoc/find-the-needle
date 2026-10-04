@@ -1,40 +1,80 @@
-/**
- * Ad placeholder. Reserves a fixed box so that wiring a real ad unit later does
- * NOT cause layout shift (CLS). Until an ad provider is wired, it renders a
- * labelled dev-only placeholder and renders NOTHING in production — so the live
- * site never shows the glaring empty white box you see on some wiki sites.
- *
- * To go live: replace the dev placeholder body with your ad provider's slot
- * markup (AdSense <ins>, etc.), keep the fixed `height` to preserve the CLS
- * guarantee, and drop the production early-return.
- */
+'use client';
+
+import { useEffect, useRef, useState } from 'react';
+
+import { adsterraConfig, type BannerUnit } from '@/config/advertising';
+
+import styles from './AdSlot.module.css';
+
+function bannerDocument(unit: BannerUnit) {
+  const options = {
+    key: unit.key,
+    format: 'iframe',
+    height: unit.height,
+    width: unit.width,
+    params: {},
+  };
+
+  // Each document has its own atOptions and supports parser-time document.write.
+  return `<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"></head><body style="margin:0;overflow:hidden"><script>atOptions=${JSON.stringify(options)};</script><script src="${adsterraConfig.bannerScriptOrigin}/${unit.key}/invoke.js"></script></body></html>`;
+}
+
 export function AdSlot({
-  height = 250,
+  variant = 'rectangle',
+  label = 'Advertisement',
   className = '',
 }: {
-  /** Reserved height in px — keep stable to avoid layout shift when ads load. */
-  height?: number;
+  variant?: 'rectangle' | 'leaderboard';
+  label?: string;
   className?: string;
 }) {
-  // No ad provider wired yet → show nothing in prod (no empty white box).
-  if (process.env.NODE_ENV === 'production') return null;
+  const slot = useRef<HTMLDivElement>(null);
+  const [unit, setUnit] = useState<BannerUnit | null>(null);
+
+  useEffect(() => {
+    const element = slot.current;
+    if (!element) return;
+
+    const observer = new ResizeObserver(([entry]) => {
+      const width = entry.contentRect.width;
+      const candidates =
+        variant === 'leaderboard'
+          ? [adsterraConfig.banners.desktop, adsterraConfig.banners.mobile]
+          : [adsterraConfig.banners.rectangle];
+      setUnit(candidates.find((candidate) => candidate.width <= width) ?? null);
+    });
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, [variant]);
 
   return (
-    <div
-      aria-label="Advertisement"
-      className={`border-site-outline-variant bg-site-surface-container text-site-outline grid place-items-center border border-dashed ${className}`}
-      style={{ height }}
+    <aside
+      aria-label={label}
+      className={`${styles.slot} ${className}`}
+      data-ad-placement={variant}
     >
-      <span
-        style={{
-          fontFamily: 'var(--font-site-mono)',
-          fontSize: 10,
-          letterSpacing: '0.2em',
-          textTransform: 'uppercase',
-        }}
-      >
-        Ad slot · {height}px
-      </span>
-    </div>
+      <p className="text-site-outline mb-2 text-center text-[10px] tracking-widest uppercase">
+        {label}
+      </p>
+      <div ref={slot} className={styles.container}>
+        <div
+          className={
+            variant === 'leaderboard' ? styles.leaderboard : styles.rectangle
+          }
+        >
+          {unit && (
+            <iframe
+              key={unit.key}
+              title={`${label} ${unit.width} × ${unit.height}`}
+              width={unit.width}
+              height={unit.height}
+              srcDoc={bannerDocument(unit)}
+              scrolling="no"
+              className="block border-0"
+            />
+          )}
+        </div>
+      </div>
+    </aside>
   );
 }

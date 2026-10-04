@@ -3,6 +3,7 @@ import { useLocale } from 'next-intl';
 
 import { Link } from '@/core/i18n/navigation';
 import { envConfigs, getPrimaryNavigation, siteProfile } from '@/config';
+import { advertisementLabel } from '@/config/advertising';
 import { getPublishedEntityKinds } from '@/config/entities-content';
 import { gameConfig, type FooterLinkGroup, type NavItem } from '@/config/game';
 import { getGuideCategories } from '@/config/guides-content';
@@ -10,9 +11,11 @@ import { locales } from '@/config/locale';
 import { getCommonMessages } from '@/config/locale/messages';
 import { uiDataAttributes } from '@/config/ui';
 
+import { AdSlot } from './AdSlot';
 import { LanguagePrompt } from './LanguagePrompt';
 import { LocaleSwitcher } from './LocaleSwitcher';
 import { MobileNav } from './MobileNav';
+import { NativeAd } from './NativeAd';
 import { activeNavHref } from './navActive';
 import { PatchBar } from './PatchBar';
 import { SocialLinks } from './SocialLinks';
@@ -290,7 +293,13 @@ export function SiteShell({
     >
       <SiteHeader activeHref={activeHref} navItems={navItems} locale={locale} />
       <PatchBar />
+      <div className="mx-auto max-w-[1440px] px-0 pt-6 min-[344px]:px-3 md:px-14">
+        <AdSlot variant="leaderboard" label={advertisementLabel(locale)} />
+      </div>
       <main>{children}</main>
+      <div className="mx-auto max-w-[1180px] px-6 pb-10 md:px-14">
+        <NativeAd label={advertisementLabel(locale)} />
+      </div>
       <SiteFooter entityKinds={entityKinds} locale={locale} />
       <LanguagePrompt locale={locale} />
     </div>

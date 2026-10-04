@@ -68,6 +68,7 @@ const LINKS = {
   feedback: 'https://github.com/songxiaoc/find-the-needle/issues',
   verify: 'https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB',
   cloudflare: 'https://www.cloudflare.com/privacypolicy/',
+  adsterra: 'https://adsterra.com/privacy-policy-managed/',
 } as const;
 
 const labels: Record<
@@ -94,6 +95,7 @@ const labels: Record<
       feedback: 'Report a site issue on GitHub',
       verify: 'Steam: verify game files',
       cloudflare: 'Cloudflare privacy policy',
+      adsterra: 'Adsterra privacy policy',
     },
     specs: ['Operating system', 'Processor', 'Memory', 'Graphics', 'Storage'],
     minimum: 'Minimum',
@@ -112,6 +114,7 @@ const labels: Record<
       feedback: 'Signaler un problème du site sur GitHub',
       verify: 'Steam : vérifier les fichiers du jeu',
       cloudflare: 'Politique de confidentialité de Cloudflare',
+      adsterra: 'Politique de confidentialité d’Adsterra',
     },
     specs: [
       'Système',
@@ -136,6 +139,7 @@ const labels: Record<
       feedback: 'Website-Fehler auf GitHub melden',
       verify: 'Steam: Spieldateien überprüfen',
       cloudflare: 'Datenschutzerklärung von Cloudflare',
+      adsterra: 'Datenschutzerklärung von Adsterra',
     },
     specs: [
       'Betriebssystem',
@@ -160,6 +164,7 @@ const labels: Record<
       feedback: 'Comunicar un error del sitio en GitHub',
       verify: 'Steam: verificar los archivos del juego',
       cloudflare: 'Política de privacidad de Cloudflare',
+      adsterra: 'Política de privacidad de Adsterra',
     },
     specs: [
       'Sistema operativo',
@@ -184,6 +189,7 @@ const labels: Record<
       feedback: 'Сообщить об ошибке сайта на GitHub',
       verify: 'Steam: проверка файлов игры',
       cloudflare: 'Политика конфиденциальности Cloudflare',
+      adsterra: 'Политика конфиденциальности Adsterra',
     },
     specs: [
       'Операционная система',
@@ -348,7 +354,8 @@ const content: Record<Locale, Record<ReferenceKey, Copy>> = {
         },
         {
           title: 'Analytics, advertising and payments',
-          text: 'We use Google Analytics 4 and Plausible, hosted at plausible.shipsolo.io, to understand site visits through aggregate statistics. Google Analytics may use cookies and send visit data to Google. You can manage cookies through your browser settings. This site does not currently embed advertising or session-recording scripts, offer user accounts or take payments. We do not sell personal information.',
+          text: 'We use Google Analytics 4 and Plausible, hosted at plausible.shipsolo.io, to understand site visits through aggregate statistics. Google Analytics may use cookies and send visit data to Google. You can manage cookies through your browser settings. Adsterra banners, native ads and Social Bar load third-party resources; Adsterra and its providers may process device and visit data to deliver ads. See its privacy policy below. This site does not embed session-recording scripts, offer user accounts or take payments. We do not sell personal information.',
+          link: 'adsterra',
         },
         {
           title: 'External links and messages',
@@ -539,7 +546,8 @@ const content: Record<Locale, Record<ReferenceKey, Copy>> = {
         },
         {
           title: 'Analyse, Werbung und Zahlungen',
-          text: 'Wir verwenden Google Analytics 4 und das unter plausible.shipsolo.io gehostete Plausible, um Website-Besuche anhand zusammengefasster Statistiken auszuwerten. Google Analytics kann Cookies verwenden und Besuchsdaten an Google senden. Cookies kannst du in den Einstellungen deines Browsers verwalten. Die Website bindet derzeit keine Werbe- oder Sitzungsaufzeichnungsskripte ein, bietet keine Nutzerkonten an und nimmt keine Zahlungen entgegen. Wir verkaufen keine personenbezogenen Daten.',
+          text: 'Wir verwenden Google Analytics 4 und das unter plausible.shipsolo.io gehostete Plausible, um Website-Besuche anhand zusammengefasster Statistiken auszuwerten. Google Analytics kann Cookies verwenden und Besuchsdaten an Google senden. Cookies kannst du in den Einstellungen deines Browsers verwalten. Adsterra-Banner, native Anzeigen und Social Bar laden Ressourcen von Drittanbietern; Adsterra und seine Dienstleister können Geräte- und Besuchsdaten zur Anzeigenauslieferung verarbeiten. Die Datenschutzerklärung ist unten verlinkt. Die Website bindet keine Sitzungsaufzeichnungsskripte ein, bietet keine Nutzerkonten an und nimmt keine Zahlungen entgegen. Wir verkaufen keine personenbezogenen Daten.',
+          link: 'adsterra',
         },
         {
           title: 'Externe Links und Nachrichten',
@@ -730,7 +738,8 @@ const content: Record<Locale, Record<ReferenceKey, Copy>> = {
         },
         {
           title: 'Analítica, publicidad y pagos',
-          text: 'Utilizamos Google Analytics 4 y Plausible, alojado en plausible.shipsolo.io, para conocer las visitas al sitio mediante estadísticas agregadas. Google Analytics puede utilizar cookies y enviar datos de las visitas a Google. Puedes gestionar las cookies en los ajustes de tu navegador. El sitio no incorpora actualmente scripts de publicidad ni de grabación de sesiones, no ofrece cuentas de usuario ni acepta pagos. No vendemos información personal.',
+          text: 'Utilizamos Google Analytics 4 y Plausible, alojado en plausible.shipsolo.io, para conocer las visitas al sitio mediante estadísticas agregadas. Google Analytics puede utilizar cookies y enviar datos de las visitas a Google. Puedes gestionar las cookies en los ajustes de tu navegador. Los banners, anuncios nativos y Social Bar de Adsterra cargan recursos de terceros; Adsterra y sus proveedores pueden tratar datos del dispositivo y de las visitas para mostrar anuncios. Consulta su política de privacidad enlazada abajo. El sitio no incorpora scripts de grabación de sesiones, no ofrece cuentas de usuario ni acepta pagos. No vendemos información personal.',
+          link: 'adsterra',
         },
         {
           title: 'Enlaces externos y mensajes',
@@ -921,7 +930,8 @@ const content: Record<Locale, Record<ReferenceKey, Copy>> = {
         },
         {
           title: 'Аналитика, реклама и платежи',
-          text: 'Мы используем Google Analytics 4 и Plausible, размещённый на plausible.shipsolo.io, для анализа посещений сайта по сводной статистике. Google Analytics может использовать файлы cookie и передавать данные о посещениях в Google. Управлять файлами cookie можно в настройках браузера. Сайт в настоящее время не встраивает скрипты рекламы или записи сеансов, не предлагает пользовательских аккаунтов и не принимает платежи. Мы не продаём персональные данные.',
+          text: 'Мы используем Google Analytics 4 и Plausible, размещённый на plausible.shipsolo.io, для анализа посещений сайта по сводной статистике. Google Analytics может использовать файлы cookie и передавать данные о посещениях в Google. Управлять файлами cookie можно в настройках браузера. Баннеры, нативная реклама и Social Bar от Adsterra загружают сторонние ресурсы; Adsterra и её поставщики могут обрабатывать данные устройства и посещений для показа рекламы. Ссылка на её политику конфиденциальности приведена ниже. Сайт не встраивает скрипты записи сеансов, не предлагает пользовательских аккаунтов и не принимает платежи. Мы не продаём персональные данные.',
+          link: 'adsterra',
         },
         {
           title: 'Внешние ссылки и сообщения',
@@ -1112,7 +1122,8 @@ const content: Record<Locale, Record<ReferenceKey, Copy>> = {
         },
         {
           title: 'Mesure d’audience, publicité et paiements',
-          text: 'Nous utilisons Google Analytics 4 et Plausible, hébergé sur plausible.shipsolo.io, pour comprendre la fréquentation du site à partir de statistiques agrégées. Google Analytics peut utiliser des cookies et transmettre des données de visite à Google. Vous pouvez gérer les cookies dans les paramètres de votre navigateur. Le site n’intègre actuellement aucun script de publicité ou d’enregistrement de session, ne propose pas de comptes et ne reçoit pas de paiements. Nous ne vendons pas de données personnelles.',
+          text: 'Nous utilisons Google Analytics 4 et Plausible, hébergé sur plausible.shipsolo.io, pour comprendre la fréquentation du site à partir de statistiques agrégées. Google Analytics peut utiliser des cookies et transmettre des données de visite à Google. Vous pouvez gérer les cookies dans les paramètres de votre navigateur. Les bannières, annonces natives et Social Bar d’Adsterra chargent des ressources tierces ; Adsterra et ses prestataires peuvent traiter des données sur votre appareil et vos visites pour diffuser des annonces. Consultez sa politique de confidentialité ci-dessous. Le site n’intègre aucun script d’enregistrement de session, ne propose pas de comptes et ne reçoit pas de paiements. Nous ne vendons pas de données personnelles.',
+          link: 'adsterra',
         },
         {
           title: 'Liens externes et messages',

@@ -1,6 +1,7 @@
 import { ChevronDown } from 'lucide-react';
 
 import { Link } from '@/core/i18n/navigation';
+import { advertisementLabel } from '@/config/advertising';
 import { getGuideCategories } from '@/config/guides-content';
 import { getCommonMessages } from '@/config/locale/messages';
 
@@ -125,7 +126,7 @@ export function WikiSidebar({
       )}
 
       <PlayCard locale={locale} />
-      <AdSlot />
+      <AdSlot label={advertisementLabel(locale ?? 'en')} />
     </div>
   );
 }

@@ -5,6 +5,7 @@ import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 
 import { routing } from '@/core/i18n/config';
+import { adsterraConfig } from '@/config/advertising';
 import { analyticsConfig } from '@/config/analytics';
 import { siteMetadata } from '@/shared/lib/seo';
 
@@ -65,6 +66,13 @@ gtag('config', ${JSON.stringify(gaId)});`}
       </head>
       <body suppressHydrationWarning className="overflow-x-hidden">
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
+
+        <Script
+          id="adsterra-social-bar"
+          src={adsterraConfig.socialBarScriptUrl}
+          strategy="afterInteractive"
+          data-cfasync="false"
+        />
 
         {plausibleDomain && (
           <Script

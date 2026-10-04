@@ -1,0 +1,29 @@
+.slot {
+  width: 100%;
+  min-width: 0;
+}
+
+.container {
+  container-type: inline-size;
+  width: 100%;
+}
+
+.leaderboard,
+.rectangle {
+  display: flex;
+  justify-content: center;
+}
+
+.leaderboard {
+  min-height: 50px;
+}
+
+.rectangle {
+  min-height: 250px;
+}
+
+@container (min-width: 728px) {
+  .leaderboard {
+    min-height: 90px;
+  }
+}
