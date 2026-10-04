@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Script from 'next/script';
+import { NativeAdRuntime } from '@/components/site/NativeAd';
 import { SiteJsonLd } from '@/components/site/SiteJsonLd';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
@@ -66,6 +67,7 @@ gtag('config', ${JSON.stringify(gaId)});`}
       </head>
       <body suppressHydrationWarning className="overflow-x-hidden">
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NativeAdRuntime />
 
         <Script
           id="adsterra-social-bar"
