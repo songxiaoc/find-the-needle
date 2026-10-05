@@ -1,0 +1,63 @@
+{
+  "eyebrow": "Neoficiální průvodce hrou na Steamu",
+  "description": "Hora sena. Drobná jehla. Poznejte začátek hry, naplánujte první výrobní linku a proměňte hledání v továrnu.",
+  "start": "Otevřít průvodce",
+  "demo": "Získat bezplatné demo",
+  "help": "S čím potřebujete pomoci?",
+  "cards": [
+    [
+      "Od první lopaty k prvnímu stroji",
+      "Zorientujte se ve sběru, prodeji a výběru dalšího vylepšení.",
+      "PRVNÍ KROKY"
+    ],
+    [
+      "Propojte pásy a zajistěte napájení",
+      "Využijte přichycení k prodejnímu místu, zkontrolujte síť a sledujte zastavenou výrobní linku.",
+      "AUTOMATIZACE"
+    ],
+    [
+      "Vyzkoušejte demo na Steamu",
+      "Nainstalujte demo, zkontrolujte počítač a zazálohujte uloženou hru.",
+      "DEMO A VYDÁNÍ"
+    ]
+  ],
+  "explore": "Stroje, jehly a aktualizace dema",
+  "exploreCards": [
+    [
+      "Poznejte stroje a výrobky",
+      "Pochopte účel vybavení a různé způsoby zpracování sena.",
+      "STROJE A VÝROBKY"
+    ],
+    [
+      "Chybí jehla? Sledujte výrobky ze sena",
+      "Zkontrolujte Silo, trasy obcházející skener a hlášený problém s 5/6 jehlami.",
+      "HLEDÁNÍ JEHEL"
+    ],
+    [
+      "Sledujte aktualizace dema",
+      "Přečtěte si oznámení vývojáře a změny v hratelném demu.",
+      "AKTUALIZACE DEMA"
+    ]
+  ],
+  "about": "Stoh sena je teprve začátek",
+  "paragraphs": [
+    "Find the Needle je hra z pohledu první osoby o zpracování sena od FindTheNeedleDev. Začněte ručními nástroji, vydělávejte senem a stavte stroje, které převezmou práci.",
+    "Dopravníkové pásy, skenery a zpracovatelské linky mění prosté hledání v rostoucí továrnu. Tento nezávislý průvodce pomáhá s orientací, aniž by prozradil závěrečnou záhadu."
+  ],
+  "stats": [
+    [
+      "Platforma",
+      "Windows · Steam"
+    ],
+    [
+      "Nyní dostupné",
+      "Bezplatné demo"
+    ],
+    [
+      "Plánované vydání plné hry",
+      "4. čtvrtletí 2026"
+    ]
+  ],
+  "steam": "Zobrazit hru na Steamu",
+  "readingTime": "3 min"
+}

@@ -1,0 +1,211 @@
+{
+  "practicalGuides": [
+    "Pomoc z bieżącym zapisem gry",
+    "Utwórz kopię zapisu dema",
+    "Sprawdź zatrzymany przenośnik lub sieć energetyczną",
+    "Szukaj zaginionej igły w silosie i skanerach"
+  ],
+  "labels": {
+    "home": "Strona główna",
+    "updated": "Aktualizacja: 27 września 2026",
+    "links": {
+      "store": "Find the Needle na Steam",
+      "demo": "Darmowe demo na Steam",
+      "community": "Dyskusje społeczności Steam",
+      "feedback": "Zgłoś problem strony na GitHub",
+      "verify": "Steam: sprawdź pliki gry",
+      "cloudflare": "Polityka prywatności Cloudflare",
+      "adsterra": "Polityka prywatności Adsterra"
+    },
+    "specs": [
+      "System operacyjny",
+      "Procesor",
+      "Pamięć",
+      "Grafika",
+      "Miejsce na dysku"
+    ],
+    "minimum": "Minimalne",
+    "recommended": "Zalecane",
+    "storage": "2 GB wolnego miejsca",
+    "gpu": "4 GB VRAM; Vulkan 1.3",
+    "platform": "Wymagania Windows"
+  },
+  "content": {
+    "faq": {
+      "title": "Find the Needle — częste pytania",
+      "description": "Termin premiery Find the Needle, darmowe demo, obsługiwane platformy i tryb jednoosobowy z odnośnikami do oficjalnych stron Steam.",
+      "intro": "Darmowe demo jest już dostępne. Steam podaje IV kwartał 2026 jako termin premiery pełnej gry. Strona sprawdzona 27 września 2026 nie zawierała dokładnej daty.",
+      "sections": [
+        {
+          "title": "Gdzie mogę zagrać w demo?",
+          "text": "Find the Needle Demo ukazało się 10 września 2026. Zainstaluj je z osobnej strony Steam; dodanie pełnej gry do listy życzeń nie instaluje dema.",
+          "link": "demo"
+        },
+        {
+          "title": "Na czym polega gra?",
+          "text": "Szukasz igieł w stogu siana, sprzedajesz siano i inwestujesz w narzędzia oraz maszyny. Ręczne kopanie stopniowo zamienia się w fabrykę z przenośnikami, prasami, skanerami i ramionami robotycznymi.",
+          "link": "store"
+        },
+        {
+          "title": "Czy jest tryb wieloosobowy?",
+          "text": "Steam opisuje Find the Needle jako grę jednoosobową. Nie zapowiada współpracy ani rywalizacji wieloosobowej."
+        },
+        {
+          "title": "Czy zagram na Macu, Linuksie lub konsoli?",
+          "text": "Zapowiedziana wersja Steam obsługuje Windows. Strona nie oferuje natywnych wersji macOS ani Linux i nie potwierdza wydania konsolowego. Nie mamy potwierdzonych danych o działaniu przez warstwy zgodności ani na urządzeniach przenośnych."
+        },
+        {
+          "title": "Jakie języki są obsługiwane?",
+          "text": "Steam wymienia 12 języków: angielski, francuski, niemiecki, hiszpański (Hiszpania), rosyjski, chiński uproszczony, japoński, koreański, polski, czeski, turecki i portugalski (Brazylia). Przed pobraniem sprawdź tabelę języków w sklepie. Opublikowane języki tej strony są widoczne w menu wyboru języka.",
+          "link": "store"
+        },
+        {
+          "title": "Czy postęp z dema zostanie przeniesiony?",
+          "text": "Informacje sklepu sprawdzone dla tego poradnika nie potwierdzają przenoszenia zapisów do pełnej gry. Zachowaj zapisy dema i poczekaj na jednoznaczny komunikat, zanim założysz, że postęp zostanie przeniesiony."
+        }
+      ]
+    },
+    "system-requirements": {
+      "title": "Find the Needle — wymagania sprzętowe",
+      "description": "Oficjalne minimalne i zalecane wymagania Windows dla Find the Needle, w tym obsługa Vulkan i ostrzeżenie dotyczące zintegrowanej grafiki.",
+      "intro": "Strona Steam wymaga Windows i dedykowanej karty graficznej. Zintegrowana grafika jest wyraźnie nieobsługiwana i może powodować awarie. Specyfikacje sprawdzono 27 września 2026.",
+      "sections": [
+        {
+          "title": "Przed instalacją na laptopie",
+          "text": "Porównaj dokładny model GPU i pamięć wideo, nie tylko RAM laptopa. Minimalna karta musi obsługiwać Vulkan 1.3. Jeśli laptop ma grafikę zintegrowaną i dedykowaną, upewnij się, że gra korzysta z dedykowanej."
+        },
+        {
+          "title": "Duże fabryki i urządzenia przenośne",
+          "text": "Twórca zaznacza, że bardzo duże fabryki mocno obciążają CPU. Spełnienie wymagań minimalnych nie gwarantuje konkretnej liczby klatek. Nie mamy zweryfikowanych wyników Steam Deck ani natywnych wymagań macOS/Linux.",
+          "link": "store"
+        }
+      ]
+    },
+    "troubleshooting": {
+      "title": "Find the Needle — rozwiązywanie problemów",
+      "description": "Bezpieczne pierwsze kroki przy awariach i problemach z uruchomieniem dema Find the Needle: zgodna grafika, weryfikacja plików Steam i przydatne dane do zgłoszenia błędu.",
+      "intro": "Jeśli demo nie startuje, najpierw sprawdź grafikę: oficjalne wymagania wykluczają układy zintegrowane i wymagają Vulkan 1.3. Poniższe kroki to ogólne kontrole Steam, a nie potwierdzone naprawy konkretnego błędu gry.",
+      "sections": [
+        {
+          "title": "1. Sprawdź sprzęt i aktualizacje",
+          "text": "Porównaj komputer z wymaganiami. Dokończ pobieranie w Steam, uruchom komputer ponownie i zainstaluj aktualny sterownik od producenta GPU. W laptopie z dwiema kartami wybierz dedykowaną dla gry w ustawieniach grafiki Windows."
+        },
+        {
+          "title": "2. Zweryfikuj instalację",
+          "text": "W bibliotece Steam kliknij prawym przyciskiem Find the Needle Demo i otwórz Właściwości → Zainstalowane pliki → Sprawdź spójność plików gry. Poczekaj na zakończenie, potem uruchom ponownie. Testuj po każdej zmianie, aby ustalić, co pomogło.",
+          "link": "verify"
+        },
+        {
+          "title": "3. Gdy rozrastająca się fabryka zwalnia",
+          "text": "Zamknij inne wymagające aplikacje i sprawdź, czy problem występuje tylko w dużej fabryce. Według twórcy duże fabryki dodatkowo obciążają CPU; samo obniżenie rozdzielczości może nie usunąć ograniczenia."
+        },
+        {
+          "title": "4. Zgłoś powtarzalny problem",
+          "text": "Podaj, czy grasz w demo, wersję Windows, CPU, GPU, wersję sterownika, dokładny komunikat błędu i kroki odtwarzające problem. W razie potrzeby dołącz zrzut ekranu po usunięciu danych osobowych. Zachowaj zapisy; nie zaczynaj diagnostyki od usuwania folderów zapisów.",
+          "link": "community"
+        }
+      ]
+    },
+    "about": {
+      "title": "O tym poradniku Find the Needle",
+      "description": "Poznaj niezależny poradnik fanowski Find the Needle, jego źródła, sposób zgłaszania poprawek i relację z twórcami gry.",
+      "intro": "findtheneedle.site to niezależny, nieoficjalny poradnik Find the Needle. Pomaga zrozumieć demo, zaplanować pierwszą fabrykę i sprawdzić praktyczne informacje przed grą.",
+      "sections": [
+        {
+          "title": "Niezależność od twórców gry",
+          "text": "Strona nie jest prowadzona, zatwierdzana ani sponsorowana przez FindTheNeedleDev, Hay Passionates ani Valve. Find the Needle tworzy FindTheNeedleDev, a wydaje Hay Passionates. Nazwy gry, grafiki i zrzuty ekranu należą do odpowiednich właścicieli."
+        },
+        {
+          "title": "Jak korzystamy ze źródeł",
+          "text": "Informacje o premierze i sprzęcie pochodzą z oficjalnych stron Steam. Poradniki odróżniają zapowiedziane funkcje od praktycznych sugestii. Demo i pełna gra mogą się zmieniać, dlatego datowane informacje należy czytać w kontekście daty aktualizacji.",
+          "link": "store"
+        },
+        {
+          "title": "Poprawki i współpraca",
+          "text": "Jeśli poradnik zawiera błąd lub tłumaczenie jest niejasne, prześlij URL strony, poprawkę i potwierdzający zrzut ekranu lub oficjalny link. Podaj używaną wersję dema lub gry.",
+          "link": "feedback"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Kontakt i poprawki",
+      "description": "Zgłoś błąd w poradniku Find the Needle lub odwiedź oficjalną społeczność Steam z pytaniem o grę.",
+      "intro": "Błędy strony, niedziałające linki i problemy tłumaczenia zgłaszaj w repozytorium GitHub strony. Błędy gry i pytania zakupowe kieruj do oficjalnych kanałów gry lub Pomocy Steam.",
+      "sections": [
+        {
+          "title": "Zgłoś problem strony",
+          "text": "Podaj URL, język, opis błędu i proponowaną poprawkę. Link do źródła lub zrzut ułatwi sprawdzenie. Publikowanie na GitHub wymaga konta; zgłoszenia są publiczne, więc nie podawaj haseł, danych płatniczych ani innych wrażliwych informacji.",
+          "link": "feedback"
+        },
+        {
+          "title": "Pomoc dotycząca gry",
+          "text": "Społeczność Steam udostępnia komunikaty twórcy i dyskusje o grze. Ta strona fanowska nie ma dostępu do zapisów gry, konta Steam ani zakupów i nie może dokonywać zwrotów.",
+          "link": "community"
+        },
+        {
+          "title": "Pytania o prawa i prywatność",
+          "text": "Pierwsze pytanie o prawa lub prywatność wyślij przez system zgłoszeń strony, wskazując odpowiednią stronę lub materiał. Nie publikuj dokumentów tożsamości ani poufnych dowodów w publicznym zgłoszeniu.",
+          "link": "feedback"
+        }
+      ]
+    },
+    "privacy-policy": {
+      "title": "Polityka prywatności",
+      "description": "Jak findtheneedle.site przetwarza żądania hostingu, preferencje przeglądarki, statystyki odwiedzin i zewnętrzne linki.",
+      "intro": "Ta polityka dotyczy findtheneedle.site, niezależnego poradnika Find the Needle. Czytanie strony nie wymaga konta, płatności ani przesłania formularza.",
+      "sections": [
+        {
+          "title": "Hosting i dane żądań",
+          "text": "Cloudflare hostuje i dostarcza tę stronę. Żądania mogą zawierać adres IP, przeglądarkę, żądany URL i czas, aby dostarczać treści, zapewniać bezpieczeństwo i zapobiegać nadużyciom. Cloudflare przetwarza te informacje według własnych warunków i polityki prywatności.",
+          "link": "cloudflare"
+        },
+        {
+          "title": "Preferencje na urządzeniu",
+          "text": "Pamięć lokalna przeglądarki zapamiętuje ustawienia interfejsu, takie jak wybór w podpowiedzi języka. Dane pozostają w tej przeglądarce do ich usunięcia. Możesz je usunąć w ustawieniach danych witryn; zapisane preferencje zostaną wtedy zresetowane."
+        },
+        {
+          "title": "Analityka, reklamy i płatności",
+          "text": "Używamy Google Analytics 4 i Plausible, hostowanego na plausible.shipsolo.io i pl.gameradar.online, aby poznawać ruch na podstawie zbiorczych statystyk. Google Analytics może używać plików cookie i przesyłać dane wizyt do Google. Plikami cookie zarządzasz w przeglądarce. Banery, reklamy natywne i Social Bar Adsterra ładują zasoby podmiotów trzecich; Adsterra i jego dostawcy mogą przetwarzać dane urządzenia i wizyt w celu wyświetlania reklam. Poniżej znajduje się jego polityka prywatności. Strona nie osadza skryptów nagrywania sesji, nie oferuje kont użytkowników ani nie przyjmuje płatności. Nie sprzedajemy danych osobowych.",
+          "link": "adsterra"
+        },
+        {
+          "title": "Zewnętrzne linki i wiadomości",
+          "text": "Po przejściu do Steam, GitHub lub innej usługi obowiązują jej zasady prywatności. Gdy publikujesz zgłoszenie GitHub, Twój profil i wiadomość mogą być publiczne. Udostępniaj tylko informacje potrzebne do opisania sprawy."
+        },
+        {
+          "title": "Pytania i zmiany",
+          "text": "Pytanie o prywatność zacznij od zgłoszenia na stronie bez wrażliwych danych osobowych. Zaktualizujemy politykę, gdy zmienią się praktyki przetwarzania danych, i podamy datę zmian na tej stronie.",
+          "link": "feedback"
+        }
+      ]
+    },
+    "terms-of-service": {
+      "title": "Warunki korzystania",
+      "description": "Warunki korzystania z niezależnego poradnika Find the Needle: treści, zewnętrzne linki, własność intelektualna i poprawki.",
+      "intro": "Warunki dotyczą korzystania z findtheneedle.site. Strona udostępnia bezpłatne informacje o grze i jest niezależna od gry, jej twórcy, wydawcy i Steam.",
+      "sections": [
+        {
+          "title": "Informacje w poradnikach",
+          "text": "Dążymy do użytecznych, dokładnych informacji, ale aktualizacje mogą zmieniać mechanikę, wymagania i dostępność gry. Przed zakupem lub zmianami wpływającymi na zapisany postęp sprawdź źródła oficjalne. Nie gwarantujemy nieprzerwanego dostępu ani aktualności każdego poradnika."
+        },
+        {
+          "title": "Treści gry i strony",
+          "text": "Nazwy, grafiki i zrzuty Find the Needle pozostają własnością odpowiednich uprawnionych, w tym FindTheNeedleDev i Hay Passionates. Ich obecność tutaj nie oznacza poparcia. Nie zakładaj, że materiały gry wolno ponownie wykorzystywać tylko dlatego, że są na tej stronie."
+        },
+        {
+          "title": "Dozwolone korzystanie",
+          "text": "Korzystaj zgodnie z prawem. Nie próbuj naruszać bezpieczeństwa, zakłócać dostępu ani przesyłać szkodliwych lub nielegalnych materiałów przez podane kanały zgłoszeń."
+        },
+        {
+          "title": "Usługi zewnętrzne",
+          "text": "Steam, GitHub i inne podlinkowane strony mają własne warunki. Nie kontrolujemy ich treści, zakupów, decyzji dotyczących kont ani dostępności. Strona nie sprzedaje gry i nie zapewnia zwrotów."
+        },
+        {
+          "title": "Poprawki i aktualizacje",
+          "text": "Problemy strony i pytania dotyczące praw przesyłaj przez system zgłoszeń, wskazując odpowiednią stronę. Warunki mogą się zmieniać wraz ze stroną; data oznacza bieżącą wersję. Nic tutaj nie ogranicza praw, których nie można wyłączyć na mocy obowiązującego prawa.",
+          "link": "feedback"
+        }
+      ]
+    }
+  }
+}

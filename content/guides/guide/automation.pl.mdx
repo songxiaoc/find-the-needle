@@ -1,0 +1,49 @@
+---
+title: "Połącz taśmociągi, zasilanie i punkt sprzedaży siana"
+description: "Korzystaj z przyciągania do punktu sprzedaży i trybu No Snap, sprawdź zatrzymaną sieć elektryczną i znajdź wąskie gardła przed rozbudową linii produkcji siana."
+date: '2026-09-27'
+lastModified: '2026-10-05'
+image: '/images/find-the-needle/screenshot-1.webp'
+---
+
+Aby uruchomić pierwszą trasę, połącz źródło siana z miejscem docelowym, zapewnij zasilanie tam, gdzie jest potrzebne, a następnie przepuść materiał, zanim dodasz kolejną gałąź. **Demo V8 dodało przyciąganie do <EntityLink kind="machines" id="hay-sell-stand">punktu sprzedaży siana (Hay Sell Stand)</EntityLink>, klawisz F włączający tryb No Snap oraz interakcję klawiszem E przy słupach energetycznych, która wyłącza sieć.** Te szczegóły pomagają, gdy linia wygląda na podłączoną, ale nie działa.
+
+## Najpierw połącz koniec trasy sprzedaży
+
+![Taśmociąg prowadzi od miejsca obok stogu siana do stoiska oznaczonego SELL HAY.](/images/find-the-needle/screenshot-1.webp)
+
+Miejscem docelowym na tym oficjalnym zrzucie ekranu jest stoisko **SELL HAY**. Aktualizacja V8 dodała przyciąganie taśm do tego miejsca i przebudowała układanie taśmociągów, wprowadzając automatyczne wyznaczanie trasy.
+
+1. Znajdź punkt sprzedaży i zostaw miejsce na dojście do niego.
+2. Umieść ostatni odcinek taśmy, korzystając z przyciągania do złącza stoiska.
+3. Łącz kolejne odcinki wstecz, w kierunku źródła materiału lub wyjścia maszyny.
+4. Podaj niewielką partię i śledź ją aż do punktu sprzedaży. Sprawdź, czy zmienia się wskazanie pieniędzy.
+
+Jeśli elementy ciągle przyciągają się w niechciane miejsce, według informacji o V8 **F włącza tryb No Snap**. Przy zmianie sposobu rozmieszczania kieruj się wskaźnikiem trybu i podpowiedziami w grze. Swobodne rozmieszczanie ułatwia kontrolę układu, ale nie dowodzi, że dwa końce rzeczywiście się łączą, więc później przetestuj przepływ materiału.
+
+## Gdy zasilane maszyny zatrzymują się jednocześnie
+
+Zanim wymienisz maszyny, sprawdź wspólne źródło prądu. V8 pozwala **wyłączyć całą sieć elektryczną, naciskając E przy słupie energetycznym**. Jeśli kilka maszyn zatrzymało się po interakcji ze słupem, najpierw sprawdź stan sieci, a następnie skorzystaj z aktualnej podpowiedzi przy słupie, aby przywrócić zasilanie.
+
+Ta sama aktualizacja dodała wizualne powiadomienie o zasilaniu poniżej wymaganego poziomu. To, że taśma dostarcza siano do maszyny, nie oznacza, że maszyna ma dość prądu. Odczytaj wskaźnik elektryczności przed zmianą trasy materiału.
+
+## Znajdź pierwszy punkt, w którym zatrzymuje się siano
+
+| Obserwacja | Co sprawdzić następnie |
+| --- | --- |
+| Taśma wejściowa jest pusta | Prześledź trasę wstecz do urządzenia zbierającego lub poprzedniej maszyny. |
+| Siano dociera, ale następna maszyna pozostaje bezczynna | Sprawdź zasilanie, wymagany materiał wejściowy i trasę wyjściową maszyny. |
+| Przed skanerem tworzy się kolejka | Obserwuj, czy skaner przetwarza materiał wolniej, niż jest on dostarczany. |
+| Materiał dociera do rozgałęzienia, ale nie trafia do celu | Prześledź osobno każdą gałąź wyjściową, w tym wszystkie trasy do punktu sprzedaży. |
+
+Te kontrole pomagają wyodrębnić problem; nie gwarantują, że każda zatrzymana maszyna ma tę samą przyczynę. V8 dodało w **<EntityLink kind="machines" id="pellet-disc-machine">maszynie Pellet Disc Machine</EntityLink>** wskaźniki zasobów **BRICKS / HAY**. Sprawdzaj je, zamiast zakładać, że wizualnie pełna taśma dostarcza wszystko, czego maszyna potrzebuje.
+
+## Rozbudowuj bez omijania kontroli igieł
+
+V8 wprowadziło **<EntityLink kind="machines" id="u-splitter">rozdzielacze U-Splitter</EntityLink>** i **<EntityLink kind="machines" id="u-joiner">łączniki U-Joiner</EntityLink>**. Gracze omawiający zatory przy skanerach sugerowali również podział przepływu na osobne trasy ze skanerami i połączenie wyjść dopiero za nimi. To propozycja układu od społeczności, a nie gwarancja zmierzonej przepustowości. Przetestuj każdą trasę, zanim powielisz ją w całej fabryce.
+
+Jeśli chcesz sprawdzać każdy produkt pod kątem igieł, prześledź **każdą** drogę do punktu sprzedaży przez układ skanowania. Uporządkowana główna linia nie wystarczy, jeśli inna gałąź ją omija. W poradniku [igły i skanery](/guides/guide/needles-and-scanners) znajdziesz wyjaśnienie twórcy dotyczące igieł wewnątrz produktów z siana.
+
+Przed przebudową zatrzymanej trasy skorzystaj z [kontroli linii](/tools/line-check), aby po kolei sprawdzić dostarczanie materiału, zasilanie, wyjście i objęcie tras skanowaniem.
+
+Źródła: [oficjalne informacje o Demo V8 z 11 września 2026 UTC](https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126), [dyskusja społeczności o skanerach](https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/). Jeśli sterowanie jest inne, sprawdź podpowiedzi w aktualnej wersji gry.

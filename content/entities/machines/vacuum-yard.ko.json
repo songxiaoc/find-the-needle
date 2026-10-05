@@ -1,0 +1,34 @@
+{
+  "id": "vacuum-yard",
+  "name": "진공 수집장(Vacuum Yard)",
+  "summary": "데모 V8 업데이트는 Vacuum Yard의 가격을 80% 낮췄다고 소개합니다. 이 과거 변경만으로 현재의 구체적인 구매 비용을 알 수는 없습니다.",
+  "updatedAt": "2026-10-05",
+  "version": "데모 V8 공지(2026년 9월 11일). 설치된 버전의 안내를 따르세요",
+  "data": {
+    "role": "건초 운반",
+    "scope": "데모 업데이트 정보 / 토론",
+    "check": "현재 구매 안내를 해결하려는 문제와 비교하세요. 건초가 이미 하류에서 기다린다면 다른 수집 업그레이드에 돈을 쓰기 전에 벨트와 스캔을 살피세요.",
+    "limits": "공지에는 현재 용량, 도달 범위, 전력 수요, 잠금 해제 조건이 없습니다. 이 구매를 전제로 계획하기 전에 설치된 게임에서 확인하세요."
+  },
+  "sources": [
+    {
+      "label": "공식 데모 V8 업데이트 정보 · 2026년 9월 11일",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "tools",
+      "id": "shovel"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation", "/guides/guide/getting-started"]
+}

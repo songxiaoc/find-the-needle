@@ -1,0 +1,54 @@
+---
+title: "Wyjaśnienie narzędzi, maszyn i produktów z siana"
+description: "Rozdziel zbieranie, transport, przetwarzanie i wykrywanie igieł, a przed zakupem sprawdź wymagania nowej maszyny."
+date: '2026-09-27'
+lastModified: '2026-10-05'
+image: '/images/find-the-needle/screenshot-2.webp'
+---
+
+Wybieraj sprzęt do zadania, które cię spowalnia: zbierania siana, przemieszczania, przetwarzania lub szukania igieł. Maszyna przetwarzająca potrzebuje trasy dostarczania materiału, a taśmociąg miejsca docelowego. Zakup obu bez sprawdzenia połączeń może pozostawić bezczynną linię.
+
+## Jaki sprzęt wykonuje dane zadanie?
+
+| Zadanie | Jakiego sprzętu szukać | Co sprawdzić |
+| --- | --- | --- |
+| Ręczne zbieranie | <EntityLink kind="tools" id="shovel">Łopaty (Shovel)</EntityLink>, <EntityLink kind="tools" id="pitchfork">widły (Pitchfork)</EntityLink>, odkurzacze | Jak narzędzie zbiera siano i gdzie je rozładujesz |
+| Przenoszenie siana | Wiadra, taczki | Wskaźnik pojemności i trasę do celu |
+| Automatyczny transport | <EntityLink kind="machines" id="conveyor-belt">Taśmociągi (Conveyor Belt)</EntityLink>, <EntityLink kind="machines" id="robotic-arm">ramiona robotyczne (Robotic Arm)</EntityLink> | Miejsce pobierania, kierunek ruchu i punkt przekazania |
+| Przetwarzanie | Prasy do bel, owijarki siana, maszyny papiernicze | Przyjmowany materiał i produkt wychodzący z maszyny |
+| Wykrywanie igieł | <EntityLink kind="tools" id="metal-detector">Wykrywacz metalu (Metal Detector)</EntityLink>, <EntityLink kind="machines" id="needle-scanner">skanery (Needle Scanner)</EntityLink> | Gdzie odbywa się wykrywanie na trasie kopania lub transportu |
+
+Te rodziny sprzętu występują w oficjalnym opisie gry. Sprawdź sklep i odblokowania w swoim demie, zanim oprzesz plan na przedmiocie pokazanym na stronie pełnej gry.
+
+![Widły obok wiadra, którego wskaźnik siana pokazuje 485 / 600.](/images/find-the-needle/screenshot-4.webp)
+
+Wskaźnik wiadra na tym oficjalnym zrzucie pokazuje aktualny ładunek względem pojemności. Obserwuj go podczas zbierania; widoczna liczba dotyczy jednego pokazanego zestawu, a nie każdego wiadra lub ulepszenia.
+
+Ręczny cykl zbierania opisują [Pierwsze kroki](/guides/guide/getting-started). Sprzęt do wykrywania opisuje poradnik [Igły i skanery](/guides/guide/needles-and-scanners).
+
+## Czym są produkty z siana?
+
+Sklep wymienia **masę z siana**, **sprasowane bele**, **cegły ekologiczne**, **papier z siana** i **pellet**. Nazwy opisują różne wyroby po przetwarzaniu: masę, zbite pakiety, cegły, papier i małe granulki. Nie są kolejnością receptur: nie zakładaj, że produkcja jednego automatycznie dostarcza materiał do kolejnego.
+
+Wybierając produkt, zacznij od maszyny, która go wytwarza, i prześledź wymagania wstecz. Przeczytaj oznaczenie wejścia, ustal, jak dostarczyć materiał, a potem sprawdź, dokąd może trafić wyjście. Łącząc dwie maszyny, szczególnie odróżniaj luźne siano od już przetworzonego produktu.
+
+Konkretny przykład: [aktualizacja Demo V8](https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126) dodała wskaźniki zasobów takie jak **BRICKS** i **HAY** do **<EntityLink kind="machines" id="pellet-disc-machine">Pellet Disc Machine</EntityLink>**. Odczytuj je przy podłączaniu; sama nazwa maszyny nie mówi, jaki materiał powinien trafiać do każdego złącza.
+
+## Sprawdź cały zakup, nie tylko maszynę
+
+![Ramiona robotyczne otaczają stóg siana, a kilka osobnych tras taśmociągów biegnie wokół magazynu.](/images/find-the-needle/screenshot-2.webp)
+
+Zrzut pokazuje, dlaczego miejsce na podłodze ma znaczenie: maszyny obok stogu to tylko część instalacji, bo ich taśmy też potrzebują przestrzeni.
+
+Przed wydaniem pieniędzy sprawdź:
+
+1. **Wejście:** czy istniejący układ dostarczy materiał przyjmowany przez tę maszynę?
+2. **Zasilanie:** jakiego połączenia potrzebuje i czy możesz do niego dotrzeć?
+3. **Wyjście:** skąd wyjdzie produkt i czy jest miejsce na podłączenie tej strony?
+4. **Cel:** czy wyjście zasili inną maszynę lub punkt sprzedaży, który je przyjmuje?
+
+Zostaw wystarczający budżet i miejsce na ukończenie tych połączeń. Potem obserwuj jedną pełną trasę materiału przed dodaniem kolejnej gałęzi; [poradnik automatyzacji](/guides/guide/automation) prowadzi przez kontrolę takiego układu.
+
+Aby zaplanować linię na podstawie własnych pomiarów, wprowadź zaobserwowane tempa do [kalkulatora produkcji](/tools/production-calculator) i porównaj dostarczanie materiału z wydajnością przetwarzania.
+
+Sprzęt, nazwy produktów i zrzuty ekranu: [oficjalna strona gry na Steam](https://store.steampowered.com/app/5160800/Find_The_Needle/) oraz [strona dema](https://store.steampowered.com/app/5165210/Find_The_Needle_Demo/).

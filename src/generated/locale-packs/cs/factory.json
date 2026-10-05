@@ -1,0 +1,128 @@
+{
+  "home": "Úvod",
+  "hub": "Tovární nástroje",
+  "intro": "Zkontrolujte zastavenou trasu, zaznamenávejte kontroly první funkční linky nebo porovnejte výrobní plány pomocí vlastních měření.",
+  "open": "Otevřít nástroj",
+  "tools": {
+    "line-check": {
+      "title": "Zkontrolujte výrobní linku",
+      "description": "Vyberte pozorovaný příznak a zkontrolujte napájení, tok materiálu a detekci jehel bez rozebírání továrny."
+    },
+    "checklist": {
+      "title": "Kontrolní seznam první výrobní linky",
+      "description": "Sledujte jednu trasu materiálu od sběru po prodej a uložte kontroly na tomto zařízení."
+    },
+    "production-calculator": {
+      "title": "Kalkulačka výroby a návratnosti",
+      "description": "Porovnejte dvě linky pomocí změřeného průtoku, zásob, prodejní ceny a nákladů."
+    }
+  },
+  "diagnosis": {
+    "prompt": "Co se děje?",
+    "steps": "Kontrolujte v tomto pořadí",
+    "links": "Podrobnější pohled",
+    "sources": "Zdroje diskusí a aktualizací",
+    "symptoms": [
+      {
+        "title": "Stroj nefunguje",
+        "note": "Začněte tím, co stroj zobrazuje. Jde o kontroly připojení, nikoli o zaručenou opravu chyby hry.",
+        "steps": [
+          "Přečtěte si označení vstupu a ověřte, že přijímá dodávaný materiál.",
+          "Zkontrolujte elektrické připojení, zejména pokud se několik napájených strojů zastavilo současně.",
+          "Sledujte výstup do místa, které jej přijímá. Před změnami pozorujte průchod jedné položky celou trasou."
+        ]
+      },
+      {
+        "title": "Seno nebo výrobky se hromadí",
+        "note": "Hráči navrhli paralelní skenovací trasy. Druhou trasu zkoušejte až po pozorování fronty u skeneru; nejde o ověřené univerzální uspořádání.",
+        "steps": [
+          "Najděte první místo, kde se materiál zastaví, a zkontrolujte následující spojení ve směru toku.",
+          "Zkontrolujte směr pásu, místa vyzvednutí a předání ramen a cílový vstup.",
+          "Je-li pozorovaným úzkým hrdlem skener, porovnejte paralelní trasu při zachování skenování všech prodejních tras. Měňte vždy jen jedno spojení."
+        ]
+      },
+      {
+        "title": "Jehla se prodala navzdory skeneru",
+        "note": "Vývojář uvádí, že jehly prodané uvnitř výrobků se vracejí do stohu sena. Hráči také hlásí, že při vytížených linkách ramena využívají boční trasy.",
+        "steps": [
+          "Sledujte výrobky ze Silo a ostatních zpracovatelských strojů až k Hay Sell Stand.",
+          "Pozorujte každé robotické rameno a všechny blízké pásy, na které dosáhne.",
+          "Ověřte skener na každé větvi, včetně větví připojených za hlavním skenerem."
+        ]
+      },
+      {
+        "title": "Silo hlásí čekající jehlu",
+        "note": "Jeden hráč navrhl přidat dost sena na vytvoření dalšího chuchvalce. Vývojář tuto opravu nepotvrdil.",
+        "steps": [
+          "Před testováním změny zazálohujte uloženou hru.",
+          "Přečtěte stav Silo a sledujte výstup. Podle vývojáře může být jehla zabalená v chuchvalci sena.",
+          "Pokud zkoušíte přidat seno, změňte pouze tuto proměnnou. Zastavte se při varování o zničení jehly; rozebrání Silo nezaručuje její získání zpět."
+        ]
+      },
+      {
+        "title": "5/6 jehel a žádné zbývající seno",
+        "note": "Při kontrole 27. září 2026 neobsahovala odkazovaná hlášení obecnou opravu potvrzenou vývojářem.",
+        "steps": [
+          "Uloženou hru zachovejte a zazálohujte; nemažte postup kvůli ověření domněnky.",
+          "Zaznamenejte počet jehel, zbývající seno, stav Silo a trasu přes skenery.",
+          "Projděte odkazované hlášení nebo údaje sdílejte v příslušné diskusi na Steamu. Běžný návrat jehel do stohu nedokazuje, že se každá chyba se ztracenou jehlou opraví sama."
+        ]
+      }
+    ]
+  },
+  "checklist": {
+    "note": "Kontroly se ukládají v tomto prohlížeči na tomto zařízení. Nečtou ani nemění uloženou hru.",
+    "progress": "Hotovo",
+    "reset": "Resetovat kontroly",
+    "loading": "Načítání uložených kontrol…",
+    "error": "Prohlížeč nemohl uložit nebo přečíst kontroly. Seznam můžete dál používat během této návštěvy.",
+    "guide": "Přečíst průvodce připojením",
+    "items": [
+      "Určete materiál vstupující na trasu.",
+      "Zkontrolujte výstup sběrného nebo skladovacího zařízení.",
+      "Zkontrolujte směr každého pásu a místo předání robotického ramene.",
+      "Připojte napájení tam, kde jej stroj vyžaduje.",
+      "Porovnejte označení každého vstupu s dodávaným materiálem.",
+      "Zajistěte, aby každá prodejní větev prošla skenerem.",
+      "Ověřte, že prodejní cíl přijímá výstupní výrobek.",
+      "Pozorujte jeden výrobek při průchodu celou trasou a pak zkontrolujte počítadlo jehel."
+    ]
+  },
+  "calculator": {
+    "note": "Zadejte vlastní pozorované hodnoty. Rychlosti jsou v jednotkách za minutu; všechny částky používají stejnou herní měnu. Ceny hry ani rychlosti strojů nejsou předvyplněny.",
+    "assumption": "Porovnávejte stejný materiál ve stejné jednotce. Pokud zpracování mění jednotky, nejprve převeďte všechny rychlosti a zásoby na ekvivalentní jednotky konečného výrobku. Odhad předpokládá stálý tok, dostatek energie, žádné ztráty a ukončení provozních nákladů po vyčerpání zásob.",
+    "plan": "Plán",
+    "optional": "volitelné",
+    "stage": "Fáze",
+    "rate": "Průtok (jednotky/min)",
+    "add": "Přidat fázi",
+    "remove": "Odebrat fázi",
+    "stock": "Dostupná zásoba (jednotky)",
+    "price": "Prodejní cena (měna/jednotka)",
+    "investment": "Počáteční investice (měna)",
+    "operating": "Provozní náklady (měna/min)",
+    "calculate": "Vypočítat / porovnat",
+    "invalid": "Vyplňte každé pole konečným číslem větším nebo rovným 0. Pro desetinná místa použijte tečku.",
+    "overflow": "Hodnoty jsou příliš velké pro spolehlivý výpočet. Použijte menší hodnoty.",
+    "capacity": "Kapacita linky",
+    "bottleneck": "Nejpomalejší fáze",
+    "duration": "Čas zpracování zásoby",
+    "revenue": "Tržby ze zásoby",
+    "profit": "Zisk ze zásoby po provozních nákladech a investici",
+    "margin": "Čistý příjem během provozu",
+    "payback": "Doba návratnosti investice",
+    "stopped": "Bez toku: alespoň jedna fáze má nulový průtok.",
+    "never": "Při této provozní marži nedojde k návratnosti.",
+    "insufficient": "Dostupná zásoba se vyčerpá před návratností.",
+    "empty": "Žádná zásoba ke zpracování.",
+    "minutes": "min",
+    "units": "jednotky/min",
+    "currency": "měna",
+    "formulas": "Jak se počítá",
+    "formulaText": "Kapacita = nejnižší rychlost fáze. Čas = zásoba ÷ kapacita. Čistý příjem/min = kapacita × cena − provozní náklady. Zisk ze zásoby = zásoba × cena − čas × provozní náklady − investice. Návratnost = investice ÷ čistý příjem/min, pouze dokud zbývá dost zásob.",
+    "comparison": "Výsledky",
+    "better": "Vyšší zisk ze zásoby:",
+    "equal": "Oba plány mají stejný zisk ze zásoby.",
+    "resultHint": "Výsledky popisují tuto dávku zásob, nikoli neomezenou výrobu. Jiný objem zásob může změnit, který plán vydělá více."
+  }
+}

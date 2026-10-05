@@ -1,0 +1,46 @@
+{
+  "id": "robotic-arm",
+  "name": "Ramię robotyczne",
+  "summary": "Ramiona robotyczne są częścią automatyzacji. Przy diagnozowaniu sprzedanych igieł sprawdź wszystkie taśmy w ich zasięgu: gracze zgłaszają przenoszenie materiału na pobliskie alternatywne trasy.",
+  "updatedAt": "2026-10-05",
+  "version": "Zgłoszenia społeczności (wrzesień 2026) i oficjalny opis sklepu",
+  "data": {
+    "role": "Transport",
+    "scope": "Informacje o demie / dyskusja",
+    "community": "Obserwuj ramię, gdy jego zwykła trasa jest zablokowana. Wrześniowa dyskusja sugeruje, że materiał może trafić na inną osiągalną taśmę; to rada graczy, nie potwierdzone wyjaśnienie każdej zaginionej igły.",
+    "check": "Prześledź każdą możliwą taśmę odbiorczą przez skaner przed sprzedażą. Przetestuj mały przepływ, zanim kupisz więcej ramion."
+  },
+  "sources": [
+    {
+      "label": "Oficjalny sklep Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Dyskusja społeczności o trasach · 21 września 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ],
+  "image": "/images/find-the-needle/screenshot-2.webp",
+  "imageAlt": "Pomarańczowe ramiona robotyczne otaczają stos siana obok kilku tras przenośników.",
+  "imageCaption": "Zwróć uwagę, jak blisko ramion przebiega kilka taśm. Sprawdzając własny układ, prześledź każdą taśmę w zasięgu ramienia. Oficjalny zrzut Steam.",
+  "imagePosition": "56% 45%",
+  "imageZoom": 1.8
+}

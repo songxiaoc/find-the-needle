@@ -1,0 +1,57 @@
+{
+  "kinds": {
+    "machines": {
+      "label": "Maszyny i logistyka",
+      "singularLabel": "Maszyna",
+      "description": "Sprawdź połączenia taśmociągów, zasilanie, trasy skanowania i sprzęt utrzymujący ruch siana."
+    },
+    "tools": {
+      "label": "Narzędzia ręczne",
+      "singularLabel": "Narzędzie",
+      "description": "Ręczne przenoszenie siana i wykrywanie igieł przed rozbudową fabryki."
+    },
+    "products": {
+      "label": "Produkty z siana",
+      "singularLabel": "Produkt",
+      "description": "Poznaj bryły siana, ukryte igły i rodziny produktów opisane dla pełnej gry."
+    }
+  },
+  "fields": {
+    "role": "Rola",
+    "scope": "Dostępne informacje",
+    "function": "Działanie",
+    "operation": "Sposób użycia",
+    "check": "Co sprawdzić",
+    "community": "Porady społeczności",
+    "limits": "Przed wydaniem pieniędzy",
+    "pulp": "Masa z siana",
+    "bales": "Sprasowane bele",
+    "bricks": "Cegły ekologiczne",
+    "paper": "Papier z siana",
+    "pellets": "Pellet"
+  },
+  "use": "Użycie i obsługa",
+  "checks": "Kontrole i decyzje",
+  "productTypes": "Rodziny produktów",
+  "search": "Szukaj",
+  "searchPlaceholder": "Nazwa, zastosowanie lub problem…",
+  "all": "Wszystkie",
+  "sort": "Sortuj",
+  "ascending": "Nazwa A–Z",
+  "descending": "Nazwa Z–A",
+  "updated": "Ostatnio aktualizowane",
+  "resultCount": "{shown} z {total}",
+  "clear": "Wyczyść wyszukiwanie i filtry",
+  "view": "Zobacz szczegóły",
+  "fullImage": "Zobacz obraz w pełnym rozmiarze",
+  "noMatches": "Brak pasujących wpisów",
+  "empty": "Spróbuj krótszego hasła lub usuń filtr.",
+  "reset": "Zresetuj wyszukiwanie",
+  "version": "Informacje i źródła",
+  "scope": "Podstawa informacji",
+  "checked": "Sprawdzono",
+  "related": "Powiązany sprzęt i produkty",
+  "guides": "Czytaj dalej w poradniku",
+  "back": "Wróć do",
+  "sources": "Źródła"
+}

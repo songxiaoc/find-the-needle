@@ -1,0 +1,38 @@
+{
+  "id": "shovel",
+  "name": "Kürek",
+  "summary": "Resmî mağaza küreği, bant ve makine almadan önce elle saman taşıyıp para kazanacağınız başlangıç aracı olarak tanıtır.",
+  "updatedAt": "2026-10-05",
+  "version": "Tam oyun mağaza açıklaması, 5 Ekim 2026'da kontrol edildi",
+  "data": {
+    "role": "Saman işleme ve taşıma",
+    "scope": "Tam oyun mağaza açıklaması",
+    "operation": "İlk oturum için az miktarda saman taşıyın, SELL HAY hedefini bulun ve oyunun etkileşim komutlarını izleyin. İğne aramayı yalnız yığını temizlemekten ayrı düşünün.",
+    "check": "Elle çalışmayı otomasyona çevirmeden önce yavaş adımı bulun: toplama, taşıma, satış veya tarama. Güncel oyun içi fiyatlarla o darboğaz için alım yapın."
+  },
+  "sources": [
+    {
+      "label": "Resmî Steam mağazası",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "tools",
+      "id": "pitchfork"
+    },
+    {
+      "kind": "tools",
+      "id": "metal-detector"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/getting-started", "/guides/guide/automation"]
+}

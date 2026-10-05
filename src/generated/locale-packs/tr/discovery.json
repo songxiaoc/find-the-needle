@@ -1,0 +1,30 @@
+{
+  "database": "Veritabanı",
+  "databaseTitle": "Makineler, aletler ve saman ürünleri",
+  "databaseIntro": "Ekipmanı görevine göre bulun, bağlantılarını kontrol edin ve samanı bir sonraki aşamaya kadar takip edin.",
+  "records": "kayıt",
+  "browse": "Göz at",
+  "relatedRecords": "Bu rehberdeki ekipman ve ürünler",
+  "tools": "Fabrika araçları",
+  "toolsTitle": "Üretim hattınızı çalıştırın",
+  "toolsIntro": "Durmuş hattı izleyin, kontrollerinizi kaydedin ve kendi ölçümlerinizle üretimi karşılaştırın.",
+  "interactive": "Etkileşimli",
+  "notFound": "Kayıt bulunamadı",
+  "toolCards": [
+    [
+      "Fabrika sorununun izini sürün",
+      "Gördüğünüz belirtiyi seçin ve sonraki güvenli kontrolleri uygulayın.",
+      "HAT KONTROLÜ"
+    ],
+    [
+      "Kurulum kontrol listenizi kaydedin",
+      "İnşa ederken bağlantıları, elektriği ve tarama rotalarını kontrol edin.",
+      "KONTROL LİSTESİ"
+    ],
+    [
+      "Üretim hatlarını karşılaştırın",
+      "Gözlemlediğiniz hızlarla darboğazları bulun ve yatırım geri dönüşünü tahmin edin.",
+      "HESAPLAYICI"
+    ]
+  ]
+}

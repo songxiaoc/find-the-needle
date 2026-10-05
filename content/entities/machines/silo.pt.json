@@ -1,0 +1,38 @@
+{
+  "id": "silo",
+  "name": "Silo",
+  "summary": "O Silo embala feno em porções. O desenvolvedor explica que agulhas podem permanecer dentro delas, então acompanhe a saída até um scanner antes de vender.",
+  "updatedAt": "2026-10-05",
+  "version": "Explicação do desenvolvedor (13 de setembro de 2026)",
+  "data": {
+    "role": "Armazenamento e embalagem",
+    "scope": "Notas da Demo / discussão",
+    "operation": "Examine o feno armazenado e as mensagens de agulhas do Silo, depois observe a esteira de saída. Uma agulha ainda listada dentro não é uma agulha já examinada pelo scanner.",
+    "community": "Um jogador sugere adicionar feno solto suficiente para completar outra carga de saída quando há uma agulha esperando. É uma sugestão da comunidade, sem tamanho universal de lote confirmado nem correção garantida.",
+    "check": "Evite desmontar um Silo para recuperar uma agulha: um jogador relatou um aviso de destruição. Mantenha o save e examine primeiro alimentação, saída e scanners."
+  },
+  "sources": [
+    {
+      "label": "Resposta do desenvolvedor e relatos de jogadores · 13 de setembro de 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

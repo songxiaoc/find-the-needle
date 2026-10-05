@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "title": "Find the Needle Wiki e Guias — Demo, Automação e Dicas",
+    "description": "Comece em Find the Needle: demo grátis no Steam, busca em montes de feno, melhorias, automação e requisitos de PC. Guias independentes para o futuro jogo incremental.",
+    "keywords": "Find the Needle, guia Find the Needle, wiki Find the Needle, demo Find the Needle, automação"
+  },
+  "navigation": {
+    "home": "Início",
+    "guides": "Guias",
+    "faq": "Perguntas frequentes",
+    "requirements": "Requisitos de PC",
+    "troubleshooting": "Solução de problemas",
+    "about": "Sobre",
+    "contact": "Contato",
+    "privacy": "Política de privacidade",
+    "terms": "Termos de uso",
+    "language": "Idioma",
+    "primary": "Navegação principal",
+    "demo": "Demo"
+  },
+  "footer": {
+    "guides": "Guias",
+    "resources": "Jogo e suporte",
+    "site": "Sobre este site",
+    "disclaimer": "Guia independente de fãs de Find the Needle. Sem vínculo com Hay Passionates. Nomes, artes e marcas do jogo pertencem aos respectivos titulares."
+  },
+  "category": {
+    "title": "Guias do jogo",
+    "description": "Entenda o ciclo de busca, planeje melhorias e conheça o conteúdo da demo no Steam."
+  },
+  "languagePrompt": {
+    "title": "Ler em {language}?",
+    "description": "Você pode ler este guia no idioma preferido. Sua escolha fica salva para as próximas visitas.",
+    "close": "Fechar sugestão de idioma",
+    "dismiss": "Manter este idioma"
+  },
+  "ui": {
+    "readGuide": "Ler guia",
+    "allGuides": "Todos os guias",
+    "onThisPage": "Nesta página",
+    "overview": "Visão geral",
+    "relatedGuides": "Guias relacionados",
+    "updated": "Atualizado",
+    "published": "Publicado",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "siteNavigation": "Navegação do site",
+    "wikiNavigation": "Navegação dos guias",
+    "viewOnSteam": "Ver no Steam",
+    "demoAvailable": "Demo gratuita disponível",
+    "comingQ4": "Jogo completo previsto para o 4º trimestre de 2026",
+    "guideCount": "{count} guias",
+    "backHome": "Voltar ao início",
+    "notFound": "Página não encontrada",
+    "gameplayImageAlt": "Esteira levando feno à estação de venda em Find The Needle",
+    "aboutGame": "Sobre o jogo",
+    "atAGlance": "Resumo rápido"
+  }
+}

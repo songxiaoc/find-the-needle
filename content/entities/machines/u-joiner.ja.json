@@ -1,0 +1,38 @@
+{
+  "id": "u-joiner",
+  "name": "U 型合流器（U-Joiner）",
+  "summary": "U-Joiner はデモ V8 で追加されたベルト経路部品の一種です。別々のラインをまとめる際は、すべての入力経路がすでにスキャンを通過しているか確認してください。",
+  "updatedAt": "2026-10-05",
+  "version": "デモ V8 の告知（2026 年 9 月 11 日）。インストール済みのバージョンの表示に従ってください",
+  "data": {
+    "role": "ベルト経路",
+    "scope": "デモの更新情報 / 議論",
+    "operation": "両方の入力と共通の出力をたどります。気づかない迂回経路から未スキャン製品が販売経路に入らないよう、各分岐を少量の流れで試してください。",
+    "community": "コミュニティの「分岐・スキャン・合流」の配置は問題の切り分け案であり、生産能力の向上を保証するものではありません。共通の出力が詰まる場合は、入力を増やす前に行き先を確認します。"
+  },
+  "sources": [
+    {
+      "label": "デモ V8 の公式更新情報 · 2026 年 9 月 11 日",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "コミュニティのスキャナーに関する議論 · 2026 年 9 月 16 日",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"]
+}

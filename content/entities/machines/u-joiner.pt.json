@@ -1,0 +1,38 @@
+{
+  "id": "u-joiner",
+  "name": "U-Joiner",
+  "summary": "U-Joiners são outro tipo de roteamento de esteiras adicionado na Demo V8. Ao combinar linhas separadas, confira se cada entrada já passou pelo scanner.",
+  "updatedAt": "2026-10-05",
+  "version": "Anúncio da Demo V8 (11 de setembro de 2026); siga as instruções da versão instalada",
+  "data": {
+    "role": "Roteamento de esteiras",
+    "scope": "Notas da Demo / discussão",
+    "operation": "Acompanhe as duas entradas e a saída compartilhada. Teste um pequeno fluxo em cada ramificação para que um desvio despercebido não leve produtos sem inspeção à venda.",
+    "community": "O layout dividir–examinar–juntar da comunidade é uma ideia de diagnóstico, não uma melhoria garantida de capacidade. Se a saída compartilhada congestionar, examine seu destino antes de adicionar entradas."
+  },
+  "sources": [
+    {
+      "label": "Notas oficiais da Demo V8 · 11 de setembro de 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Discussão da comunidade sobre scanners · 16 de setembro de 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"]
+}

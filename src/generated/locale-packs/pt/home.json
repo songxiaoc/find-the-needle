@@ -1,0 +1,63 @@
+{
+  "eyebrow": "Guia não oficial do jogo no Steam",
+  "description": "Uma montanha de feno. Uma agulha minúscula. Aprenda o ciclo inicial, planeje sua primeira linha de produção e transforme a busca em uma fábrica.",
+  "start": "Começar pelo guia",
+  "demo": "Baixar a demo grátis",
+  "help": "Com o que você precisa de ajuda?",
+  "cards": [
+    [
+      "Da primeira pá à primeira máquina",
+      "Entenda como coletar, vender e escolher sua próxima melhoria.",
+      "PRIMEIROS PASSOS"
+    ],
+    [
+      "Conecte as esteiras e ligue a energia",
+      "Use o encaixe no ponto de venda, confira a rede elétrica e siga o caminho de uma linha parada.",
+      "AUTOMAÇÃO"
+    ],
+    [
+      "Experimente a demo no Steam",
+      "Instale a demo, confira seu PC e faça uma cópia do seu save.",
+      "DEMO E LANÇAMENTO"
+    ]
+  ],
+  "explore": "Máquinas, agulhas e atualizações da demo",
+  "exploreCards": [
+    [
+      "Conheça as máquinas e os produtos",
+      "Entenda a função dos equipamentos e as diferentes formas de processar o feno.",
+      "MÁQUINAS E PRODUTOS"
+    ],
+    [
+      "Falta uma agulha? Siga os produtos de feno",
+      "Confira o Silo, os caminhos que desviam dos scanners e o problema relatado de 5/6 agulhas.",
+      "ENCONTRAR AGULHAS"
+    ],
+    [
+      "Acompanhe as atualizações da demo",
+      "Veja os anúncios do desenvolvedor e as mudanças na demo jogável.",
+      "ATUALIZAÇÕES DA DEMO"
+    ]
+  ],
+  "about": "O palheiro é só o começo",
+  "paragraphs": [
+    "Find the Needle é um jogo de processamento de feno em primeira pessoa desenvolvido por FindTheNeedleDev. Comece com ferramentas manuais, ganhe dinheiro com o feno e construa máquinas que assumem o trabalho.",
+    "Esteiras, scanners e linhas de processamento transformam uma busca simples em uma fábrica que cresce. Este guia independente ajuda você a se orientar sem revelar o mistério final."
+  ],
+  "stats": [
+    [
+      "Plataforma",
+      "Windows · Steam"
+    ],
+    [
+      "Disponível agora",
+      "Demo grátis"
+    ],
+    [
+      "Jogo completo previsto",
+      "4º trimestre de 2026"
+    ]
+  ],
+  "steam": "Ver o jogo no Steam",
+  "readingTime": "3 min"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "u-joiner",
+  "name": "Spojovač U",
+  "summary": "U-Joiner je další typ vedení pásů přidaný v Demo V8. Při spojování samostatných linek ověřte, že každá příchozí trasa již prošla skenováním.",
+  "updatedAt": "2026-10-05",
+  "version": "Oznámení Demo V8 (11. září 2026); řiďte se pokyny nainstalované verze",
+  "data": {
+    "role": "Vedení pásů",
+    "scope": "Poznámky k demu / diskuze",
+    "operation": "Sledujte oba vstupy i společný výstup. Každou větev otestujte malým tokem, aby přehlédnutá obchvatná trasa neposílala nenaskenované produkty k prodeji.",
+    "community": "Komunitní rozložení rozděl–skenuj–spoj je nápad pro diagnostiku, nikoli zaručené zvýšení kapacity. Ucpává-li se společný výstup, ověřte jeho cíl před přidáním dalších vstupů."
+  },
+  "sources": [
+    {
+      "label": "Oficiální poznámky Demo V8 · 11. září 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Komunitní diskuze o skenerech · 16. září 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"]
+}

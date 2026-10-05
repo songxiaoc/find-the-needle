@@ -1,0 +1,41 @@
+{
+  "id": "u-splitter",
+  "name": "Rozdzielacz U",
+  "summary": "U-Splitter to element prowadzenia taśm dodany w Demo V8. Używaj odgałęzień do sprawdzania lub rozdzielania linii produkcyjnej zamiast kierować wszystko jedną trasą.",
+  "updatedAt": "2026-10-05",
+  "version": "Ogłoszenie Demo V8 (11 września 2026); kieruj się podpowiedziami z zainstalowanej wersji",
+  "data": {
+    "role": "Prowadzenie taśm",
+    "scope": "Informacje o demie / dyskusja",
+    "community": "Gracze proponują osobne odnogi ze skanerami, gdy pierwotna linia się blokuje. Prześledź oba wyjścia przez skanowanie i w razie potrzeby połącz je dopiero potem.",
+    "check": "Obserwuj produkt wchodzący do każdej odnogi i docierający do celu. Informacje V8 nie określają proporcji rozdzielania ani gwarantowanego wzrostu przepustowości."
+  },
+  "sources": [
+    {
+      "label": "Oficjalne informacje Demo V8 · 11 września 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Dyskusja społeczności o skanerach · 16 września 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ]
+}

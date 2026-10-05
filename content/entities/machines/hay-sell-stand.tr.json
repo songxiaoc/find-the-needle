@@ -1,0 +1,46 @@
+{
+  "id": "hay-sell-stand",
+  "name": "Saman Satış Tezgâhı",
+  "summary": "Satış hedefinde SELL HAY yazar. Demo V8 konveyör bağlantısına yapışma ekledi. Geliştiriciye göre saman ürününün içinde satılan iğne yığına geri döner.",
+  "updatedAt": "2026-10-05",
+  "version": "Demo V8 duyurusu (11 Eylül 2026); kurulu sürümünüzün komutlarını izleyin",
+  "data": {
+    "role": "Satış",
+    "scope": "Demo notları / tartışma",
+    "operation": "Bandı yakında bitirmek yerine tezgâhın bağlantısını kullanın. Yerleştirme yapışmıyorsa F ile No Snap Mode'un açılıp açılmadığını kontrol edin.",
+    "check": "Son giriş kollarını taramaya kadar geriye izleyin. Geliştirici normal iğne dönüşünü anlatıyor; eksik iğne hatası için evrensel kurtarma garantisi vermiyor."
+  },
+  "sources": [
+    {
+      "label": "Resmî Demo V8 notları · 11 Eylül 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Geliştirici yanıtı ve oyuncu bildirimleri · 13 Eylül 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ],
+  "image": "/images/find-the-needle/screenshot-1.webp",
+  "imageAlt": "SELL HAY yazılı tezgâha saman taşıyan konveyör.",
+  "imageCaption": "Bant SELL HAY tezgâhının önüne bağlanıyor. Hedefi tanımak için kullanın; görüntüdeki fiyatlar güncel fiyat kaynağı değildir. Resmî Steam görüntüsü.",
+  "imagePosition": "60% 55%",
+  "imageZoom": 1.4
+}

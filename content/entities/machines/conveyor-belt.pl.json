@@ -1,0 +1,50 @@
+{
+  "id": "conveyor-belt",
+  "name": "Przenośnik taśmowy",
+  "summary": "Taśmy przenoszą siano między urządzeniami. Demo V8 zmieniło przyciąganie elementów i dodało automatyczne wyznaczanie trasy; F włącza No Snap Mode, gdy potrzebujesz swobodnego ustawiania.",
+  "updatedAt": "2026-10-05",
+  "version": "Ogłoszenie Demo V8 (11 września 2026); kieruj się podpowiedziami z zainstalowanej wersji",
+  "data": {
+    "role": "Transport",
+    "scope": "Informacje o demie / dyskusja",
+    "operation": "Połącz krótki odcinek i zobacz, czy produkt przez niego przejeżdża, zanim wydłużysz linię. Taśma kończąca się blisko maszyny nie potwierdza działającego połączenia.",
+    "check": "Zacznij od pierwszego zatrzymanego produktu i prześledź drogę wstecz. Sprawdź cel dalszej trasy, każde połączenie i to, czy boczna ścieżka omija skanowanie."
+  },
+  "sources": [
+    {
+      "label": "Oficjalne informacje Demo V8 · 11 września 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Dyskusja społeczności o trasach · 21 września 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    },
+    {
+      "label": "Oficjalna ilustracja Steam",
+      "url": "https://store.steampowered.com/app/5165210/Find_The_Needle_Demo/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"],
+  "image": "/images/find-the-needle/official-demo-yard.webp",
+  "imageAlt": "Przenośnik transportuje małe kępy siana ze stosu do stanowiska SELL HAY.",
+  "imageCaption": "Prześledź ukośną taśmę od lewego tyłu do miejsca dostawy przy SELL HAY. Oficjalny zrzut dema na Steam.",
+  "imagePosition": "35% 50%"
+}

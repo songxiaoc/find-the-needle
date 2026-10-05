@@ -1,0 +1,46 @@
+{
+  "id": "hay-sell-stand",
+  "name": "Stanowisko sprzedaży siana",
+  "summary": "Miejsce sprzedaży oznaczono SELL HAY. Demo V8 dodało przyciąganie połączenia przenośnika. Według twórcy igła sprzedana wewnątrz produktu z siana wraca do stosu.",
+  "updatedAt": "2026-10-05",
+  "version": "Ogłoszenie Demo V8 (11 września 2026); kieruj się podpowiedziami z zainstalowanej wersji",
+  "data": {
+    "role": "Sprzedaż",
+    "scope": "Informacje o demie / dyskusja",
+    "operation": "Użyj złącza stanowiska zamiast kończyć taśmę obok. Jeśli elementy się nie przyciągają, sprawdź, czy F nie włączyło No Snap Mode.",
+    "check": "Prześledź ostatnie dopływające odnogi wstecz do skanowania. Twórca opisuje zwykły powrót igieł, a nie uniwersalną gwarancję odzyskania przy błędzie zaginionej igły."
+  },
+  "sources": [
+    {
+      "label": "Oficjalne informacje Demo V8 · 11 września 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Odpowiedź twórcy i zgłoszenia graczy · 13 września 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ],
+  "image": "/images/find-the-needle/screenshot-1.webp",
+  "imageAlt": "Przenośnik transportujący siano do stanowiska oznaczonego SELL HAY.",
+  "imageCaption": "Taśma łączy się z przodem stanowiska SELL HAY. Obraz pomaga rozpoznać cel; widoczne ceny nie są źródłem aktualnych cen. Oficjalny zrzut Steam.",
+  "imagePosition": "60% 55%",
+  "imageZoom": 1.4
+}

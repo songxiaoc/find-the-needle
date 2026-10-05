@@ -1,0 +1,46 @@
+{
+  "id": "metal-detector",
+  "name": "Detector de Metais",
+  "summary": "A loja oficial descreve o começo da busca manual com um detector de metais, antes de esteiras, scanners e braços robóticos assumirem mais tarefas.",
+  "updatedAt": "2026-10-05",
+  "version": "Descrição da loja do jogo completo, verificada em 5 de outubro de 2026",
+  "data": {
+    "role": "Detecção de agulhas",
+    "scope": "Descrição da loja do jogo completo",
+    "operation": "Use o retorno atual do detector ao buscar manualmente. Acompanhe o que você já examinou; não substitua os sinais do jogo por uma lista fixa de coordenadas.",
+    "check": "Se a produção já embalou feno em produtos, examine também armazenamento e rotas de scanners. O desenvolvedor explica que agulhas podem permanecer dentro dos produtos, não só no feno solto."
+  },
+  "sources": [
+    {
+      "label": "Loja oficial do Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Resposta do desenvolvedor e relatos de jogadores · 13 de setembro de 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "silo"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/getting-started",
+    "/guides/guide/needles-and-scanners"
+  ],
+  "image": "/images/find-the-needle/official-research.webp",
+  "imageAlt": "Árvore de pesquisa com Metal Detector abaixo de Scanner Mk I Plans.",
+  "imageCaption": "A pesquisa Metal Detector fica abaixo de Scanner Mk I Plans. Imagem oficial do Steam.",
+  "imagePosition": "40% 37%",
+  "imageZoom": 3
+}

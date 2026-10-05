@@ -1,0 +1,46 @@
+{
+  "id": "hay-sell-stand",
+  "name": "Stanoviště prodeje sena",
+  "summary": "Cíl prodeje je označen SELL HAY. Demo V8 přidalo přichytávání přípojky dopravníku. Podle vývojáře se jehla prodaná uvnitř produktu ze sena vrátí do hromady.",
+  "updatedAt": "2026-10-05",
+  "version": "Oznámení Demo V8 (11. září 2026); řiďte se pokyny nainstalované verze",
+  "data": {
+    "role": "Prodej",
+    "scope": "Poznámky k demu / diskuze",
+    "operation": "Použijte přípojku stanoviště, místo abyste pás ukončili poblíž. Pokud se umístění nepřichytává, ověřte, zda klávesa F nezapnula No Snap Mode.",
+    "check": "Sledujte poslední příchozí větve zpět ke skenování. Vývojář popisuje běžný návrat jehel, nikoli univerzální záruku obnovení při chybě se ztracenou jehlou."
+  },
+  "sources": [
+    {
+      "label": "Oficiální poznámky Demo V8 · 11. září 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Odpověď vývojáře a hlášení hráčů · 13. září 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ],
+  "image": "/images/find-the-needle/screenshot-1.webp",
+  "imageAlt": "Dopravník převážející seno ke stanovišti označenému SELL HAY.",
+  "imageCaption": "Pás navazuje na přední stranu stanoviště SELL HAY. Snímek pomáhá určit cíl; uvedené ceny nejsou zdrojem aktuálních cen. Oficiální snímek Steam.",
+  "imagePosition": "60% 55%",
+  "imageZoom": 1.4
+}

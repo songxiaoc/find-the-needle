@@ -1,0 +1,34 @@
+{
+  "id": "vacuum-yard",
+  "name": "Odkurzacz podwórzowy",
+  "summary": "Vacuum Yard wymieniono w aktualizacji Demo V8, która obniżyła jego cenę o 80%. Ta historyczna zmiana nie podaje dzisiejszego pełnego kosztu zakupu.",
+  "updatedAt": "2026-10-05",
+  "version": "Ogłoszenie Demo V8 (11 września 2026); kieruj się podpowiedziami z zainstalowanej wersji",
+  "data": {
+    "role": "Przenoszenie siana",
+    "scope": "Informacje o demie / dyskusja",
+    "check": "Porównaj bieżący komunikat zakupu z problemem, który próbujesz rozwiązać. Jeśli siano już czeka na dalszej trasie, sprawdź taśmy i skanowanie przed wydaniem pieniędzy na kolejne ulepszenie zbierania.",
+    "limits": "Ogłoszenie nie podaje aktualnej pojemności, zasięgu, zapotrzebowania na prąd ani wymagań odblokowania. Sprawdź je w zainstalowanej grze przed planowaniem zakupu."
+  },
+  "sources": [
+    {
+      "label": "Oficjalne informacje Demo V8 · 11 września 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "tools",
+      "id": "shovel"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation", "/guides/guide/getting-started"]
+}

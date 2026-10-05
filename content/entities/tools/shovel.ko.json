@@ -1,0 +1,38 @@
+{
+  "id": "shovel",
+  "name": "삽(Shovel)",
+  "summary": "공식 상점은 삽을 벨트와 기계를 사기 전에 손으로 건초를 옮기고 돈을 버는 시작 도구로 소개합니다.",
+  "updatedAt": "2026-10-05",
+  "version": "정식 게임 상점 설명, 2026년 10월 5일 확인",
+  "data": {
+    "role": "건초 운반",
+    "scope": "정식 게임 상점 설명",
+    "operation": "첫 플레이에서는 소량의 건초를 다루고 SELL HAY 목적지를 찾은 뒤 게임의 상호작용 안내를 따르세요. 바늘 찾기와 단순히 더미를 치우는 일은 구분하세요.",
+    "check": "수동 작업을 자동화로 바꾸기 전에 느린 단계가 수집, 운반, 판매, 스캔 중 무엇인지 확인하세요. 현재 게임 가격으로 해당 병목에 맞는 장비를 구매하세요."
+  },
+  "sources": [
+    {
+      "label": "Steam 공식 상점",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "tools",
+      "id": "pitchfork"
+    },
+    {
+      "kind": "tools",
+      "id": "metal-detector"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/getting-started", "/guides/guide/automation"]
+}

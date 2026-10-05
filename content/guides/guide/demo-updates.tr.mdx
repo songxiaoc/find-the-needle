@@ -1,0 +1,46 @@
+---
+title: "Demo güncellemeleri: V8 neleri değiştirdi, neleri kontrol etmeli?"
+description: "Demo V8 bant, elektrik ve performans değişikliklerinin pratik özeti; tarihli resmî haberler ve tam oyunun çıkış planı."
+date: '2026-09-27'
+lastModified: '2026-10-05'
+image: '/images/find-the-needle/screenshot-1.webp'
+---
+
+**Demo V8, konveyör yerleştirmeyi, elektrik geri bildirimini ve dağınık saman performansını değiştirdi.** Resmî notlar **11 Eylül 2026 UTC** tarihinde yayımlandı. Bu, belgelenmiş güncellemenin özetidir; bugün kurulu sürümün V8 olduğu iddiası değildir. Haberler 4 Ekim 2026'da kontrol edildi.
+
+4 Ekim 2026 itibarıyla resmî Steam haber akışı hâlâ 25 Eylül popülerlik duyurusuyla bitiyor. Bu akışta daha yeni herkese açık oynanış yama notları bulunamadı. Tam oyun için plan hâlâ 2026'nın dördüncü çeyreği; kesin çıkış günü belirtilmemiş. Belgelenen bant ve elektrik değişiklikleri için aşağıdaki V8 özetini kullanın.
+
+## Fabrikanızı etkileyen değişiklikler
+
+| V8 değişikliği | Düzeninizde ne yapmalı? |
+| --- | --- |
+| Bantlar Hay Sell Stand'e yapışıyor; yerleştirmeye otomatik yol bulma eklendi | Bant tezgâha varıyor ama satış olmuyorsa son bağlantıyı tekrar kontrol edin. |
+| F, No Snap modunu açıyor | Güzergâha uygun modu kullanın, ardından bağlantıyı malzemeyle test edin. |
+| Direkte E bütün şebekeyi kapatabilir | Direği kullandıktan sonra birkaç makine durursa şebeke durumuna bakın. |
+| Düşük elektrik için görsel bildirim | Boştaki makineyi değiştirmeden önce elektrik uyarısını okuyun. |
+| U-Splitters ve U-Joiners eklendi | Paralel hatlar kurarken mevcut kavşakları inceleyin. |
+| <EntityLink kind="machines" id="pellet-disc-machine">Pellet Disc Machine</EntityLink>, BRICKS / HAY göstergeleri aldı | Makinenin hangi girdiyi beklediğini kontrol edin. |
+
+Çalışma sırası için [bantları ve elektriği bağlama](/guides/guide/automation) rehberine bakın.
+
+## Performans ve satın alma değişiklikleri
+
+Güncelleme, kare hızını iyileştirmek için yerdeki dağınık samanı kümeler hâlinde topluyor. Varsayılan zıplama yüksekliğini artırıyor, oyun içi ipuçları ekliyor ve her birini sıralamadan başka hata düzeltmelerinden söz ediyor. Bildirilen 5/6 eksik iğne durumu için bir düzeltme belirtmiyor.
+
+**V8'de <EntityLink kind="machines" id="vacuum-yard">Vacuum Yard</EntityLink> fiyatı %80 azaltıldı.** Bu tarihsel bir fiyat değişikliğidir, güncel fiyat teklifi değildir. Eski bir videoya göre alışveriş planlamadan önce kendi oyununuzdaki tutarı karşılaştırın.
+
+## Çıkış ve topluluk kilometre taşları
+
+- **10 Eylül:** ücretsiz Demo Steam'de yayımlandı.
+- **11 Eylül UTC:** geliştirici yukarıdaki V8 oynanış değişikliklerini yayımladı.
+- **15, 20 ve 23 Eylül:** geliştirici Demo popülerliğinde ilk 10, ilk 5 ve ilk 3 başarılarını duyurdu.
+- **25 Eylül:** geliştirici, Steam'in en çok oynanan demolarında birinci sıraya ulaşıldığını duyurdu. Bu tarihli bir duyuruydu; sitenin gösterdiği canlı sıralama değil.
+- **30 Eylül:** AleDev11, Demo için resmî olmayan eşli oyun modunu 0.19.5 sürümüne güncelledi. Steam temel oyunu hâlâ tek oyunculu listeliyor; gereksinim ve sınırlamalar için [Demo rehberine](/guides/guide/demo) bakın.
+- **27 Eylül:** [SteamDB](https://steamdb.info/app/5165210/charts/) bu tarihte Demo için **21.203 eşzamanlı oyuncu** zirvesi kaydediyor. Bu tarihsel oyuncu sayısıdır, yeni yama veya canlı demo sıralaması değildir.
+- **Tam oyun:** Steam, 4 Ekim itibarıyla kesin gün vermeden **2026'nın dördüncü çeyreğini** listeliyor.
+
+Popülerlik duyuruları yeni makineleri anlatmaz veya bir hatanın düzeltildiğini kanıtlamaz. Oynanış değişiklikleri için gerçek yama notlarını izleyin. Kurulum, gereksinimler ve kayıt yedekleri için [Demo rehberine](/guides/guide/demo) bakın.
+
+Tek tek ekipman kontrolü için [makine kaynağını](/database/machines) açın, ardından girdiyi kurulu sürümün etiket ve komutlarıyla karşılaştırın.
+
+Kaynaklar: [resmî V8 duyurusu](https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126), [resmî haber akışı](https://store.steampowered.com/news/app/5160800), [Demo sayfası](https://store.steampowered.com/app/5165210/), [tam oyun sayfası](https://store.steampowered.com/app/5160800/).

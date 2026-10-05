@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "title": "Find the Needle Wiki ve Rehberler — Demo, Otomasyon ve İpuçları",
+    "description": "Find the Needle'a başlayın: ücretsiz Steam demosu, saman yığınlarında arama, yükseltmeler, otomasyon ve PC gereksinimleri. Yakında çıkacak artımlı oyun için bağımsız rehberler.",
+    "keywords": "Find the Needle, Find the Needle rehberi, Find the Needle wiki, Find the Needle demo, otomasyon"
+  },
+  "navigation": {
+    "home": "Ana sayfa",
+    "guides": "Rehberler",
+    "faq": "Sık sorulan sorular",
+    "requirements": "PC gereksinimleri",
+    "troubleshooting": "Sorun giderme",
+    "about": "Hakkında",
+    "contact": "İletişim",
+    "privacy": "Gizlilik politikası",
+    "terms": "Kullanım koşulları",
+    "language": "Dil",
+    "primary": "Ana gezinme",
+    "demo": "Demo"
+  },
+  "footer": {
+    "guides": "Rehberler",
+    "resources": "Oyun ve destek",
+    "site": "Bu site hakkında",
+    "disclaimer": "Find the Needle için bağımsız hayran rehberi. Hay Passionates ile bağlantılı değildir. Oyun adları, görseller ve ticari markalar ilgili sahiplerine aittir."
+  },
+  "category": {
+    "title": "Oyun rehberleri",
+    "description": "Arama döngüsünü öğrenin, yükseltmeleri planlayın ve Steam demosunun sunduklarını anlayın."
+  },
+  "languagePrompt": {
+    "title": "{language} dilinde okumak ister misiniz?",
+    "description": "Rehberi tercih ettiğiniz dilde okuyabilirsiniz. Seçiminiz sonraki ziyaretler için kaydedilir.",
+    "close": "Dil önerisini kapat",
+    "dismiss": "Bu dili koru"
+  },
+  "ui": {
+    "readGuide": "Rehberi oku",
+    "allGuides": "Tüm rehberler",
+    "onThisPage": "Bu sayfada",
+    "overview": "Genel bakış",
+    "relatedGuides": "İlgili rehberler",
+    "updated": "Güncellendi",
+    "published": "Yayımlandı",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "siteNavigation": "Site gezinmesi",
+    "wikiNavigation": "Rehber gezinmesi",
+    "viewOnSteam": "Steam'de görüntüle",
+    "demoAvailable": "Ücretsiz demo mevcut",
+    "comingQ4": "Tam oyun 2026'nın 4. çeyreğinde planlanıyor",
+    "guideCount": "{count} rehber",
+    "backHome": "Ana sayfaya dön",
+    "notFound": "Sayfa bulunamadı",
+    "gameplayImageAlt": "Find The Needle'da samanı satış istasyonuna taşıyan taşıma bandı",
+    "aboutGame": "Oyun hakkında",
+    "atAGlance": "Bir bakışta"
+  }
+}

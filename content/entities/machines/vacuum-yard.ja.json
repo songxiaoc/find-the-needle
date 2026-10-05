@@ -1,0 +1,34 @@
+{
+  "id": "vacuum-yard",
+  "name": "バキュームヤード（Vacuum Yard）",
+  "summary": "デモ V8 の更新情報には Vacuum Yard の価格を 80% 下げたとあります。この過去の変更から、現在の具体的な購入価格は判断できません。",
+  "updatedAt": "2026-10-05",
+  "version": "デモ V8 の告知（2026 年 9 月 11 日）。インストール済みのバージョンの表示に従ってください",
+  "data": {
+    "role": "干し草の取り扱い",
+    "scope": "デモの更新情報 / 議論",
+    "check": "現在の購入表示と解決したい問題を比較してください。すでに下流で干し草が待っているなら、収集のアップグレードに追加投資する前にベルトとスキャンを確認します。",
+    "limits": "告知には現在の容量、届く範囲、電力需要、解除条件が記載されていません。この購入を前提に計画する前に、インストール済みゲームで確認してください。"
+  },
+  "sources": [
+    {
+      "label": "デモ V8 の公式更新情報 · 2026 年 9 月 11 日",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "tools",
+      "id": "shovel"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation", "/guides/guide/getting-started"]
+}

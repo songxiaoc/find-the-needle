@@ -1,0 +1,41 @@
+{
+  "id": "hay-wad",
+  "name": "Porção de Feno",
+  "summary": "Uma porção de feno é feno embalado pelo Silo. O desenvolvedor confirma que pode conter agulha, então um produto embalado não é automaticamente seguro para vender sem inspeção.",
+  "updatedAt": "2026-10-05",
+  "version": "Explicação do desenvolvedor (13 de setembro de 2026)",
+  "data": {
+    "role": "Feno embalado",
+    "scope": "Notas da Demo / discussão",
+    "operation": "Acompanhe a porção desde a saída do Silo por todas as esteiras e transferências de braços. Confira se a rota inclui um scanner antes de se unir à linha final de venda.",
+    "check": "O desenvolvedor diz que uma agulha vendida dentro de um produto volta à pilha. Se o Silo ainda lista uma agulha esperando, investigue a saída em vez de presumir que ela já voltou."
+  },
+  "sources": [
+    {
+      "label": "Resposta do desenvolvedor e relatos de jogadores · 13 de setembro de 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "silo"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "products",
+      "id": "hay-products"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

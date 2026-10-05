@@ -1,0 +1,38 @@
+{
+  "id": "silo",
+  "name": "Silo",
+  "summary": "Silo balí seno do smotků. Vývojář vysvětluje, že v nich mohou zůstat jehly, proto před prodejem sledujte výstup směrem ke skeneru.",
+  "updatedAt": "2026-10-05",
+  "version": "Vysvětlení vývojáře (13. září 2026)",
+  "data": {
+    "role": "Skladování a balení",
+    "scope": "Poznámky k demu / diskuze",
+    "operation": "Zkontrolujte zprávy sila o uloženém seně a jehlách a sledujte výstupní pás. Jehla stále vykázaná uvnitř není totéž jako již naskenovaná jehla.",
+    "community": "Hráč navrhuje při čekající jehle přidat dost volného sena k dokončení další výstupní dávky. Jde o komunitní tip bez potvrzené univerzální velikosti dávky nebo zaručené opravy.",
+    "check": "Nedemontujte silo kvůli získání jehly: hráč hlásil upozornění na zničení. Zachovejte uloženou hru a nejprve ověřte přísun, výstup a skenování."
+  },
+  "sources": [
+    {
+      "label": "Odpověď vývojáře a hlášení hráčů · 13. září 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

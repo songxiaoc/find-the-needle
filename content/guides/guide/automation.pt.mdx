@@ -1,0 +1,49 @@
+---
+title: 'Conecte esteiras, energia e o ponto de venda de feno'
+description: 'Use o encaixe no ponto de venda e o modo No Snap, verifique uma rede elétrica parada e encontre gargalos antes de ampliar sua linha de feno.'
+date: '2026-09-27'
+lastModified: '2026-10-05'
+image: '/images/find-the-needle/screenshot-1.webp'
+---
+
+Para montar a primeira rota funcional, conecte a fonte de feno ao destino, confirme a energia onde for necessária e faça o material passar antes de acrescentar outra ramificação. **A Demo V8 adicionou encaixe no <EntityLink kind="machines" id="hay-sell-stand">Hay Sell Stand</EntityLink>, F para o modo No Snap e uma interação com E nos postes para desligar a rede.** Esses detalhes ajudam quando a linha parece conectada, mas não funciona.
+
+## Conecte primeiro a ponta de venda
+
+![Uma esteira vai da lateral da pilha de feno até a barraca marcada SELL HAY.](/images/find-the-needle/screenshot-1.webp)
+
+O destino nesta captura oficial é a barraca **SELL HAY**. A atualização V8 adicionou encaixe de esteiras nesse ponto e reformulou a colocação com busca automática de caminho.
+
+1. Identifique o ponto de venda e deixe espaço para se aproximar.
+2. Coloque a última seção da esteira usando a conexão de encaixe da barraca.
+3. Conecte a rota para trás, até a fonte ou saída da máquina que deseja transportar.
+4. Alimente um pequeno lote e acompanhe-o até a venda. Confira se o valor do dinheiro muda.
+
+Se a colocação insistir em encaixar onde você não quer, **F ativa o modo No Snap**, segundo as notas da V8. Observe o indicador de modo e as instruções do jogo ao mudar a forma de colocação. Posicionar livremente ajuda no controle do layout; isso não prova que duas pontas estejam conectadas, portanto teste o fluxo depois.
+
+## Quando máquinas elétricas param juntas
+
+Antes de substituir máquinas, verifique a alimentação elétrica compartilhada. A V8 permite **desligar toda a rede pressionando E em um poste**. Se várias máquinas pararam depois dessa interação, examine primeiro o estado da rede e siga a instrução atual do poste para restaurá-la.
+
+A mesma atualização adicionou um aviso visual quando a energia fica abaixo da necessidade. Uma esteira levando feno à máquina não demonstra que ela tenha energia suficiente. Leia a indicação elétrica antes de alterar a rota do material.
+
+## Encontre o primeiro ponto onde o feno para
+
+| O que você observa | O que verificar em seguida |
+| --- | --- |
+| A esteira de entrada está vazia | Siga a rota de volta ao coletor ou à máquina anterior. |
+| O feno chega, mas a próxima máquina fica ociosa | Confira energia, material exigido e caminho de saída da máquina. |
+| Forma-se uma fila diante do scanner | Observe se ele processa mais devagar do que o material chega. |
+| O material chega a uma junção, mas não ao destino | Acompanhe cada saída separadamente, inclusive a rota até o ponto de venda. |
+
+Essas verificações ajudam a isolar uma falha; não prometem que toda máquina parada tenha a mesma causa. Na **<EntityLink kind="machines" id="pellet-disc-machine">Pellet Disc Machine</EntityLink>**, a V8 adicionou indicadores de recursos **BRICKS / HAY**. Confira-os em vez de presumir que uma esteira visualmente cheia forneça tudo o que ela precisa.
+
+## Amplie sem pular a verificação de agulhas
+
+A V8 introduziu **<EntityLink kind="machines" id="u-splitter">U-Splitters</EntityLink>** e **<EntityLink kind="machines" id="u-joiner">U-Joiners</EntityLink>**. Jogadores discutindo congestionamento de scanners também sugeriram separar o fluxo em pistas de scanners e juntar as saídas depois. É uma sugestão de layout da comunidade, não uma garantia de vazão medida. Teste cada pista antes de replicá-la pela fábrica.
+
+Se a meta é verificar todos os produtos em busca de agulhas, acompanhe **todos** os caminhos até a venda através do sistema de scanners. Uma linha principal organizada não ajuda se outra ramificação a contorna. Veja [agulhas e scanners](/guides/guide/needles-and-scanners) para a explicação do desenvolvedor sobre agulhas dentro de produtos de feno.
+
+Antes de reconstruir uma rota parada, use a [verificação da linha](/tools/line-check) para conferir, em ordem, fornecimento, energia, saída e cobertura dos scanners.
+
+Fontes: [notas oficiais da Demo V8, 11 de setembro de 2026 UTC](https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126), [discussão da comunidade sobre scanners](https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/). Confira as instruções da sua versão se os controles forem diferentes.

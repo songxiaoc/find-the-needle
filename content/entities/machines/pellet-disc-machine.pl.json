@@ -1,0 +1,43 @@
+{
+  "id": "pellet-disc-machine",
+  "name": "Maszyna do krążków pelletu",
+  "summary": "Demo V8 dodało do Pellet Disc Machine wskaźniki zasobów, takie jak BRICKS i HAY. Czytaj te etykiety przy sprawdzaniu zatrzymanej linii przetwarzania.",
+  "updatedAt": "2026-10-05",
+  "version": "Ogłoszenie Demo V8 (11 września 2026); kieruj się podpowiedziami z zainstalowanej wersji",
+  "data": {
+    "role": "Przetwarzanie",
+    "scope": "Informacje o demie / dyskusja",
+    "operation": "Dopasuj wyświetlane etykiety zasobów do materiału docierającego każdym połączeniem. Sprawdź zasilanie i przepływ na wejściu przed zmianą układu.",
+    "limits": "Aktualizacja opisuje wskaźniki, nie pełny przepis. Ilości, produkty i tempo odczytuj z aktualnych wymagań maszyny w grze."
+  },
+  "sources": [
+    {
+      "label": "Oficjalne informacje Demo V8 · 11 września 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Oficjalna ilustracja Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "power-pole"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "products",
+      "id": "hay-products"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"],
+  "image": "/images/find-the-needle/official-automation.webp",
+  "imageAlt": "Ekran badań z Small Arm Plans pośrodku i Pellet Discs Plans w pobliżu prawego górnego rogu.",
+  "imageCaption": "Poszukaj Pellet Discs Plans przy prawym górnym rogu menu badań. Oficjalna ilustracja Steam.",
+  "imagePosition": "94% 26%",
+  "imageZoom": 3
+}

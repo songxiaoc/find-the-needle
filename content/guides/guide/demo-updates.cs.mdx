@@ -1,0 +1,46 @@
+---
+title: "Aktualizace dema: co změnilo V8 a co ověřit"
+description: "Praktický souhrn změn pásů, napájení a výkonu v Demo V8 s datovanými oficiálními zprávami a plánem vydání plné hry."
+date: '2026-09-27'
+lastModified: '2026-10-05'
+image: '/images/find-the-needle/screenshot-1.webp'
+---
+
+**Demo V8 změnilo umisťování dopravníků, zpětnou vazbu elektrické sítě a výkon při práci s volným senem.** Oficiální poznámky byly zveřejněny **11. září 2026 UTC**. Toto je souhrn doložené aktualizace, nikoli tvrzení, že dnes máte nainstalované V8. Zprávy ověřeny 4. října 2026.
+
+K 4. říjnu 2026 oficiální zpravodajský kanál Steamu stále končí oznámením popularity z 25. září. V tomto kanálu nebyly nalezeny novější veřejné poznámky k herním aktualizacím. Plná hra zůstává plánována na 4. čtvrtletí 2026 bez přesného dne vydání. Doložené změny pásů a napájení najdete v souhrnu V8 níže.
+
+## Změny ovlivňující vaši továrnu
+
+| Změna ve V8 | Co udělat ve svém rozložení |
+| --- | --- |
+| Pásy se přichytávají k Hay Sell Stand; umisťování získalo automatické hledání trasy | Pokud pás dorazí ke stanovišti, ale neprodává, znovu ověřte koncové spojení. |
+| F zapíná režim No Snap | Použijte vhodný režim umisťování a poté otestujte spojení materiálem. |
+| E u elektrického sloupu může vypnout celou síť | Pokud po použití sloupu zastaví několik strojů, ověřte stav sítě. |
+| Vizuální upozornění na nízké napájení | Před výměnou nečinného stroje čtěte elektrické varování. |
+| Přidány U-Splitters a U-Joiners | Při plánování souběžných větví prohlédněte dostupné spojovací prvky. |
+| <EntityLink kind="machines" id="pellet-disc-machine">Stroj na peletové kotouče</EntityLink> získal ukazatele BRICKS / HAY | Ověřte, na který vstup stroj čeká. |
+
+Pracovní postup najdete v návodu [propojení pásů a napájení](/guides/guide/automation).
+
+## Změny výkonu a nákupů
+
+Aktualizace seskupuje volné seno na zemi do shluků pro zlepšení snímkové frekvence. Také zvyšuje výchozí výšku skoku, přidává herní tipy a zmiňuje další opravy chyb bez jednotlivého výčtu. Neuvádí opravu hlášeného problému s chybějící jehlou při stavu 5/6.
+
+**Cena <EntityLink kind="machines" id="vacuum-yard">dvorního vysavače</EntityLink> ve V8 klesla o 80 %.** Jde o historickou změnu ceny, ne aktuální nabídku. Než budete nákup plánovat podle staršího videa, porovnejte částku ve vlastní hře.
+
+## Milníky vydání a komunity
+
+- **10. září:** bezplatné demo vyšlo na Steamu.
+- **11. září UTC:** vývojář zveřejnil výše uvedené herní změny V8.
+- **15., 20. a 23. září:** vývojář oznámil dosažení první desítky, pětice a trojice v popularitě dem.
+- **25. září:** vývojář oznámil první místo mezi nejhranějšími demy Steamu. Jde o datované oznámení, nikoli živý žebříček na tomto webu.
+- **30. září:** autor modu AleDev11 aktualizoval neoficiální kooperativní mod dema na verzi 0.19.5. Steam stále uvádí základní hru jako hru pro jednoho hráče; požadavky a omezení najdete v [návodu k demu](/guides/guide/demo).
+- **27. září:** [SteamDB](https://steamdb.info/app/5165210/charts/) pro tento den eviduje maximum dema **21 203 současně hrajících hráčů**. Jde o historický počet hráčů, nikoli novou aktualizaci nebo živé pořadí dem.
+- **Plná hra:** Steam k 4. říjnu uvádí **4. čtvrtletí 2026** bez přesného dne vydání.
+
+Oznámení popularity nepopisují nové stroje ani nedokazují opravu chyby. Herní změny sledujte v samotných poznámkách k aktualizacím. Instalaci, specifikace a zálohování najdete v [návodu k demu](/guides/guide/demo).
+
+Pro kontrolu jednotlivého vybavení otevřete [přehled strojů](/database/machines) a porovnejte položku se štítky a pokyny nainstalované verze.
+
+Zdroje: [oficiální oznámení V8](https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126), [oficiální zpravodajský kanál](https://store.steampowered.com/news/app/5160800), [stránka dema](https://store.steampowered.com/app/5165210/), [stránka plné hry](https://store.steampowered.com/app/5160800/).

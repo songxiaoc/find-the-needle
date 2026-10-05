@@ -1,0 +1,57 @@
+{
+  "kinds": {
+    "machines": {
+      "label": "Máquinas e logística",
+      "singularLabel": "Máquina",
+      "description": "Confira conexões das esteiras, energia, caminhos de escaneamento e equipamentos que mantêm o feno em movimento."
+    },
+    "tools": {
+      "label": "Ferramentas manuais",
+      "singularLabel": "Ferramenta",
+      "description": "Manuseio manual do feno e detecção de agulhas antes de ampliar a fábrica."
+    },
+    "products": {
+      "label": "Produtos de feno",
+      "singularLabel": "Produto",
+      "description": "Entenda os tufos de feno, as agulhas escondidas e as famílias de produtos descritas para o jogo completo."
+    }
+  },
+  "fields": {
+    "role": "Função",
+    "scope": "Informações disponíveis",
+    "function": "O que faz",
+    "operation": "Como usar",
+    "check": "O que conferir",
+    "community": "Conselhos da comunidade",
+    "limits": "Antes de gastar",
+    "pulp": "Polpa de feno",
+    "bales": "Fardos comprimidos",
+    "bricks": "Tijolos ecológicos",
+    "paper": "Papel de feno",
+    "pellets": "Pellets"
+  },
+  "use": "Uso e operação",
+  "checks": "Verificações e decisões",
+  "productTypes": "Famílias de produtos",
+  "search": "Buscar",
+  "searchPlaceholder": "Nome, uso ou problema…",
+  "all": "Todos",
+  "sort": "Ordenar",
+  "ascending": "Nome A–Z",
+  "descending": "Nome Z–A",
+  "updated": "Atualizados recentemente",
+  "resultCount": "{shown} de {total}",
+  "clear": "Limpar busca e filtros",
+  "view": "Ver detalhes",
+  "fullImage": "Ver imagem em tamanho original",
+  "noMatches": "Nenhum registro correspondente",
+  "empty": "Tente uma busca mais curta ou remova um filtro.",
+  "reset": "Redefinir busca",
+  "version": "Informações e fontes",
+  "scope": "Baseado em",
+  "checked": "Conferido em",
+  "related": "Equipamentos e produtos relacionados",
+  "guides": "Continue com um guia",
+  "back": "Voltar para",
+  "sources": "Fontes"
+}

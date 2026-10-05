@@ -1,0 +1,46 @@
+{
+  "id": "robotic-arm",
+  "name": "Braço Robótico",
+  "summary": "Braços robóticos fazem parte da automação. Ao investigar agulhas vendidas, examine todas as esteiras ao alcance: jogadores relatam que os braços colocam material em rotas alternativas próximas.",
+  "updatedAt": "2026-10-05",
+  "version": "Relatos da comunidade (setembro de 2026) e descrição oficial da loja",
+  "data": {
+    "role": "Transporte",
+    "scope": "Notas da Demo / discussão",
+    "community": "Observe o braço enquanto seu destino normal está congestionado. A discussão de setembro sugere que outra esteira ao alcance pode receber material; é conselho de jogadores, não uma explicação confirmada para toda agulha perdida.",
+    "check": "Acompanhe todas as esteiras que podem receber material por um scanner antes da venda. Teste a rota com pouco fluxo antes de comprar mais braços."
+  },
+  "sources": [
+    {
+      "label": "Loja oficial do Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Discussão da comunidade sobre rotas · 21 de setembro de 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ],
+  "image": "/images/find-the-needle/screenshot-2.webp",
+  "imageAlt": "Braços robóticos laranja cercam uma pilha de feno ao lado de várias rotas de esteiras.",
+  "imageCaption": "Observe como os braços ficam perto de várias esteiras. Ao conferir seu layout, acompanhe cada esteira ao alcance de um braço. Captura oficial do Steam.",
+  "imagePosition": "56% 45%",
+  "imageZoom": 1.8
+}

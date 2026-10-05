@@ -1,0 +1,38 @@
+{
+  "id": "shovel",
+  "name": "Łopata",
+  "summary": "Oficjalny sklep przedstawia łopatę jako początkowe narzędzie do ręcznego przenoszenia siana i zarabiania przed zakupem taśm i maszyn.",
+  "updatedAt": "2026-10-05",
+  "version": "Opis sklepu pełnej gry, sprawdzony 5 października 2026",
+  "data": {
+    "role": "Przenoszenie siana",
+    "scope": "Opis sklepu pełnej gry",
+    "operation": "Na pierwszą sesję przenieś małą ilość siana, znajdź cel SELL HAY i korzystaj z podpowiedzi gry. Szukanie igieł traktuj oddzielnie od samego usuwania stosu.",
+    "check": "Przed automatyzacją ustal najwolniejszy etap: zbieranie, przenoszenie, sprzedaż lub skanowanie. Kupuj pod kątem tego wąskiego gardła według bieżących cen w grze."
+  },
+  "sources": [
+    {
+      "label": "Oficjalny sklep Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "tools",
+      "id": "pitchfork"
+    },
+    {
+      "kind": "tools",
+      "id": "metal-detector"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/getting-started", "/guides/guide/automation"]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "hay-wad",
+  "name": "Zwitek siana",
+  "summary": "Zwitek to siano zapakowane przez silos. Twórca potwierdza, że może zawierać igłę, więc opakowany produkt nie jest automatycznie bezpieczny do sprzedaży bez skanowania.",
+  "updatedAt": "2026-10-05",
+  "version": "Wyjaśnienie twórcy (13 września 2026)",
+  "data": {
+    "role": "Pakowane siano",
+    "scope": "Informacje o demie / dyskusja",
+    "operation": "Prześledź zwitek od wyjścia silosu przez każdą taśmę i przeniesienie ramieniem. Sprawdź, czy trasa obejmuje skanowanie przed połączeniem z końcową linią sprzedaży.",
+    "check": "Twórca mówi, że igła sprzedana wewnątrz produktu wraca do stosu. Jeśli silos nadal wykazuje oczekującą igłę, zbadaj jego wyjście zamiast zakładać, że igła już wróciła."
+  },
+  "sources": [
+    {
+      "label": "Odpowiedź twórcy i zgłoszenia graczy · 13 września 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "silo"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "products",
+      "id": "hay-products"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

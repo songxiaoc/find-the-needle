@@ -1,0 +1,57 @@
+{
+  "kinds": {
+    "machines": {
+      "label": "기계와 물류",
+      "singularLabel": "기계",
+      "description": "컨베이어 연결, 전력, 스캔 경로, 건초를 계속 이동시키는 장비를 확인하세요."
+    },
+    "tools": {
+      "label": "수동 도구",
+      "singularLabel": "도구",
+      "description": "공장을 확장하기 전 수동 건초 운반과 바늘 감지."
+    },
+    "products": {
+      "label": "건초 제품",
+      "singularLabel": "제품",
+      "description": "건초 뭉치, 숨겨진 바늘, 정식 게임에서 소개한 제품군을 알아보세요."
+    }
+  },
+  "fields": {
+    "role": "역할",
+    "scope": "확인 가능한 정보",
+    "function": "기능",
+    "operation": "사용 방법",
+    "check": "점검할 내용",
+    "community": "커뮤니티 조언",
+    "limits": "구매 전 확인",
+    "pulp": "건초 펄프",
+    "bales": "압축 건초 베일",
+    "bricks": "친환경 벽돌",
+    "paper": "건초 종이",
+    "pellets": "펠릿"
+  },
+  "use": "용도와 조작",
+  "checks": "점검과 선택",
+  "productTypes": "제품군",
+  "search": "검색",
+  "searchPlaceholder": "이름, 용도 또는 문제…",
+  "all": "전체",
+  "sort": "정렬",
+  "ascending": "이름 A–Z",
+  "descending": "이름 Z–A",
+  "updated": "최근 업데이트",
+  "resultCount": "전체 {total}개 중 {shown}개",
+  "clear": "검색과 필터 지우기",
+  "view": "상세 보기",
+  "fullImage": "원본 크기 이미지 보기",
+  "noMatches": "일치하는 항목 없음",
+  "empty": "더 짧은 검색어를 쓰거나 필터를 제거하세요.",
+  "reset": "검색 초기화",
+  "version": "정보와 출처",
+  "scope": "정보 근거",
+  "checked": "확인일",
+  "related": "관련 장비와 제품",
+  "guides": "가이드 계속 읽기",
+  "back": "돌아가기",
+  "sources": "출처"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "pitchfork",
+  "name": "Forcado",
+  "summary": "O forcado é uma ferramenta manual de feno citada pela loja oficial. As capturas mostram seu uso em primeira pessoa ao lado da pilha e de um recipiente.",
+  "updatedAt": "2026-10-05",
+  "version": "Descrição da loja do jogo completo, verificada em 5 de outubro de 2026",
+  "data": {
+    "role": "Manuseio de feno",
+    "scope": "Descrição da loja do jogo completo",
+    "operation": "Use as instruções atuais para coletar e mover feno. A captura da loja ilustra a posição da ferramenta; não estabelece tamanho universal de carga nem número de ações.",
+    "check": "Compare o esforço com sua pá atual e as opções de transporte. Se carregar for a parte lenta, confira a próxima melhoria de transporte em vez de presumir que outra ferramenta manual resolva."
+  },
+  "sources": [
+    {
+      "label": "Loja oficial do Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "tools",
+      "id": "shovel"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "tools",
+      "id": "metal-detector"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/getting-started"],
+  "image": "/images/find-the-needle/screenshot-3.webp",
+  "imageAlt": "Forcado em primeira pessoa diante da pilha de feno.",
+  "imageCaption": "O forcado fica diretamente contra a pilha. Siga as instruções atuais de interação para usá-lo; a imagem não mostra uma localização de agulha. Captura oficial do Steam.",
+  "imagePosition": "50% 85%"
+}

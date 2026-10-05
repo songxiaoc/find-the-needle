@@ -16,11 +16,17 @@
   "managedFiles": [
     "src/components/site/active-fonts.ts",
     "src/components/site/brand.css",
+    "src/config/locale/messages/cs/common.json",
     "src/config/locale/messages/de/common.json",
     "src/config/locale/messages/en/common.json",
     "src/config/locale/messages/es/common.json",
     "src/config/locale/messages/fr/common.json",
+    "src/config/locale/messages/ja/common.json",
+    "src/config/locale/messages/ko/common.json",
+    "src/config/locale/messages/pl/common.json",
+    "src/config/locale/messages/pt/common.json",
     "src/config/locale/messages/ru/common.json",
+    "src/config/locale/messages/tr/common.json",
     "src/config/locale/messages/zh/common.json",
     "src/config/style/active-theme.css",
     "src/generated/asset-manifest.json",
@@ -40,6 +46,12 @@
     "de",
     "es",
     "ru",
-    "zh"
+    "zh",
+    "ja",
+    "ko",
+    "pl",
+    "cs",
+    "tr",
+    "pt"
   ]
 }

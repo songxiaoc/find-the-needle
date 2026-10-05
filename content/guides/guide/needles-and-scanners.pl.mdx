@@ -1,0 +1,46 @@
+---
+title: "Igły, skanery i brakująca ostatnia igła"
+description: "Zrozum igły wewnątrz produktów z siana, sprawdź trasy omijające skanery i postępuj przy stanie 5/6 igieł bez usuwania zapisu."
+date: '2026-09-27'
+lastModified: '2026-10-05'
+image: '/images/find-the-needle/screenshot-2.webp'
+---
+
+**Igła może podróżować wewnątrz produktu z siana.** Twórca wyjaśnia, że <EntityLink kind="machines" id="silo">Silo</EntityLink> pakuje igły w bryły siana, a igły sprzedane z produktami w <EntityLink kind="machines" id="hay-sell-stand">Hay Sell Stand</EntityLink> wracają do stogu. Usunięcie widocznego stogu i zebranie jego igieł to zatem różne rzeczy.
+
+## Śledź produkty, nie tylko stóg
+
+W odpowiedzi z 13 września FindTheNeedleDev podaje, że Silo normalnie nie niszczy igły: może ona wyjść wewnątrz bryły siana lub innego produktu z siana. Jeśli taki produkt trafi bezpośrednio do punktu sprzedaży, igła zostaje sprzedana i wraca do stogu.
+
+Jeśli podejrzewasz, że igła przeszła przez fabrykę:
+
+1. Odczytaj stan maszyn przechowujących lub pakujących materiał, szczególnie Silo.
+2. Prześledź wyjście z tych maszyn w kierunku skanera i punktu sprzedaży.
+3. Sprawdź każdą gałąź, także trasy łączące się za skanerem.
+4. Obserwuj kilka produktów na trasie, aby odróżnić działające połączenie od taśmy biegnącej jedynie w pobliżu.
+
+![Wiele rozgałęzień taśmociągów i ramion robotycznych otacza stóg siana na oficjalnym zrzucie fabryki.](/images/find-the-needle/screenshot-2.webp)
+
+Ten widok pomaga zrozumieć, dlaczego kontrola tylko jednej taśmy może pominąć część fabryki. To oficjalny układ promocyjny, a nie schemat gwarantujący trasę igły.
+
+## Silo pokazuje oczekującą igłę
+
+W tej samej dyskusji gracz zgłosił stan **44 Loose Straw, 1 Needle Waiting** (44 jednostki luźnej słomy, 1 oczekująca igła), bez dalszego wyjścia z Silo. Inny gracz zaproponował dodanie siana wystarczającego na kolejną bryłę. To sugestia społeczności, a nie rozwiązanie potwierdzone przez twórcę, zaś wyświetlana ilość pochodzi z przypadku tego gracza.
+
+Przed eksperymentami [zrób kopię zapisu](/guides/guide/demo). Nie traktuj rozebrania Silo jako gwarantowanej metody odzyskania igły: inna odpowiedź zgłaszała przy tym ostrzeżenie o jej zniszczeniu. Zatrzymaj się, jeśli gra ostrzega, że działanie coś zniszczy.
+
+## Igła została sprzedana mimo skanera
+
+W dyskusji z 21 września gracze sugerowali sprawdzenie, czy ramiona robotyczne mogły odkładać materiał na inną taśmę w zasięgu, gdy główna była zatłoczona. Obserwuj własne ramiona i pobliskie linie, zanim cokolwiek przebudujesz. Jeśli produkt wybiera boczną trasę, sprawdź, czy ona także przechodzi przez skaner.
+
+W przypadku kolejki przed skanerem [poradnik automatyzacji](/guides/guide/automation) opisuje społecznościową propozycję równoległych tras skanowania. Nie podajemy tu zweryfikowanej uniwersalnej liczby maszyn ani gwarantowanego tempa przetwarzania.
+
+## Utknąłeś na 5/6 i nie ma już siana?
+
+Gracze zgłaszali dokładnie taki stan. Według kontroli z **27 września 2026 r.** podlinkowane raporty nie zawierają ogólnego rozwiązania potwierdzonego przez twórcę. Normalny mechanizm powrotu do stogu nie dowodzi, że każdy błąd zaginionej igły rozwiązuje się sam.
+
+Zachowaj zapis. Zanotuj liczbę igieł, pozostałe siano, wszelkie informacje o stanie Silo i trasę przez skanery, a potem dodaj te szczegóły do odpowiedniej dyskusji na Steam. Nie kasuj postępu ani nie rozbieraj całej fabryki tylko po to, aby sprawdzić domysł.
+
+Użyj [kontroli linii](/tools/line-check), aby prześledzić trasę przez dostarczanie materiału, maszyny i skanery przed zmianą fabryki.
+
+Źródła: [twórca o Silo i obiegu igieł](https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/), [dyskusja o omijaniu skanera](https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/), [zgłoszenie 5/6 igieł i braku siana](https://steamcommunity.com/app/5160800/discussions/0/587312703065119554/).

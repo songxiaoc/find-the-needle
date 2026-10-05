@@ -1,0 +1,54 @@
+{
+  "id": "needle-scanner",
+  "name": "Skaner igieł",
+  "summary": "Skaner należy do zautomatyzowanej linii szukania igieł. Jeśli igła trafia do sprzedaży, sprawdź trasę każdego produktu z siana, nie tylko głównej taśmy.",
+  "updatedAt": "2026-10-05",
+  "version": "Zgłoszenia społeczności (wrzesień 2026) i oficjalny opis sklepu",
+  "data": {
+    "role": "Wykrywanie igieł",
+    "scope": "Informacje o demie / dyskusja",
+    "check": "Prześledź każdą taśmę, również te w zasięgu ramienia robotycznego. Szukaj odnogi łączącej się z trasą sprzedaży za skanerem. Obserwuj aktualne ustawienia i wskaźniki skanera w grze.",
+    "community": "Gracze sugerują rozdzielanie zakorkowanej linii na osobne skanery i ponowne łączenie za nimi. Najpierw wykonaj mały test; nie określa to tempa skanowania ani nie gwarantuje przyspieszenia."
+  },
+  "sources": [
+    {
+      "label": "Oficjalny sklep Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Dyskusja społeczności o trasach · 21 września 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    },
+    {
+      "label": "Dyskusja społeczności o skanerach · 16 września 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "robotic-arm"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ],
+  "image": "/images/find-the-needle/official-research.webp",
+  "imageAlt": "Menu badań z węzłami Needle Cabinet, Scanner Mk I Plans i Metal Detector.",
+  "imageCaption": "Znajdź Scanner Mk I Plans tuż nad Metal Detector w menu badań. Oficjalna ilustracja Steam.",
+  "imagePosition": "40% 31%",
+  "imageZoom": 3
+}

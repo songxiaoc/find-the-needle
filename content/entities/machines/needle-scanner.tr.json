@@ -1,0 +1,54 @@
+{
+  "id": "needle-scanner",
+  "name": "İğne Tarayıcısı",
+  "summary": "Tarayıcı otomatik iğne arama hattının parçasıdır. İğne satış tezgâhına ulaştığında yalnız ana bandı değil, her saman ürününün güzergâhını kontrol edin.",
+  "updatedAt": "2026-10-05",
+  "version": "Topluluk bildirimleri (Eylül 2026) ve resmî mağaza açıklaması",
+  "data": {
+    "role": "İğne algılama",
+    "scope": "Demo notları / tartışma",
+    "check": "Her bandı ve robot kolun erişebildiği bantları takip edin. Tarayıcıdan sonra satış güzergâhına birleşen kol arayın. Tarayıcının güncel oyun içi ayar ve göstergelerini gözleyin.",
+    "community": "Oyuncular, tıkanan hattı ayrı tarayıcılara bölüp sonra birleştirmeyi öneriyor. Büyütmeden önce küçük bir test yapın; bu bir tarama hızı veya garantili hız artışı belirlemez."
+  },
+  "sources": [
+    {
+      "label": "Resmî Steam mağazası",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Topluluk güzergâh tartışması · 21 Eylül 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    },
+    {
+      "label": "Topluluk tarayıcı tartışması · 16 Eylül 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "robotic-arm"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ],
+  "image": "/images/find-the-needle/official-research.webp",
+  "imageAlt": "Needle Cabinet, Scanner Mk I Plans ve Metal Detector düğümlerini gösteren araştırma menüsü.",
+  "imageCaption": "Araştırma menüsünde Metal Detector'un hemen üstündeki Scanner Mk I Plans'ı bulun. Resmî Steam görseli.",
+  "imagePosition": "40% 31%",
+  "imageZoom": 3
+}

@@ -1,0 +1,128 @@
+{
+  "home": "Início",
+  "hub": "Ferramentas da fábrica",
+  "intro": "Confira uma rota parada, acompanhe sua primeira linha funcionando ou compare planos de produção com suas próprias medições.",
+  "open": "Abrir ferramenta",
+  "tools": {
+    "line-check": {
+      "title": "Confira sua linha de produção",
+      "description": "Escolha o sintoma que você vê para conferir energia, fluxo de materiais e detecção de agulhas sem desmontar a fábrica."
+    },
+    "checklist": {
+      "title": "Checklist da primeira linha de produção",
+      "description": "Siga uma rota de material da coleta à venda e salve as verificações neste dispositivo."
+    },
+    "production-calculator": {
+      "title": "Calculadora de produção e retorno do investimento",
+      "description": "Compare duas linhas usando vazão medida, estoque, preço de venda e custos."
+    }
+  },
+  "diagnosis": {
+    "prompt": "O que está acontecendo?",
+    "steps": "Confira nesta ordem",
+    "links": "Veja mais detalhes",
+    "sources": "Fontes de discussões e atualizações",
+    "symptoms": [
+      {
+        "title": "Uma máquina não funciona",
+        "note": "Comece pelo que a máquina mostra. Estas são verificações de conexões, não uma solução garantida para um bug do jogo.",
+        "steps": [
+          "Leia o rótulo da entrada e confira se ela aceita o material que está chegando.",
+          "Confira a conexão elétrica, especialmente se várias máquinas que precisam de energia pararam juntas.",
+          "Siga a saída até um destino que a aceite. Observe um item completar a rota antes de mudar qualquer coisa."
+        ]
+      },
+      {
+        "title": "Feno ou produtos estão se acumulando",
+        "note": "Jogadores sugeriram rotas de escaneamento paralelas. Teste uma segunda rota somente após observar uma fila no scanner; não é um layout universal verificado.",
+        "steps": [
+          "Encontre o primeiro ponto onde o material para e inspecione a próxima conexão no sentido do fluxo.",
+          "Confira o sentido das esteiras, as posições de coleta e entrega dos braços e a entrada do destino.",
+          "Se o scanner for o gargalo observado, compare uma rota paralela mantendo todas as rotas de venda passando por escaneamento. Mude uma conexão por vez."
+        ]
+      },
+      {
+        "title": "Uma agulha foi vendida mesmo com scanner",
+        "note": "O desenvolvedor diz que agulhas vendidas dentro de produtos voltam ao palheiro. Jogadores também relatam que braços usam rotas laterais quando as linhas estão congestionadas.",
+        "steps": [
+          "Siga os produtos do Silo e das outras máquinas de processamento até o Hay Sell Stand.",
+          "Observe cada braço robótico e as esteiras próximas que ele consegue alcançar.",
+          "Confira se cada ramificação tem um scanner, incluindo as que se unem à linha depois do scanner principal."
+        ]
+      },
+      {
+        "title": "O Silo indica uma agulha aguardando",
+        "note": "Um jogador sugeriu adicionar feno suficiente para formar outro tufo. Essa sugestão não é uma correção confirmada pelo desenvolvedor.",
+        "steps": [
+          "Faça uma cópia do seu save antes de testar uma mudança.",
+          "Leia o status do Silo e siga sua saída. Segundo o desenvolvedor, uma agulha pode ser embalada em um tufo de feno.",
+          "Se testar adicionar feno, mude apenas essa variável. Pare se o jogo avisar que uma agulha será destruída; desmontar o Silo não garante recuperá-la."
+        ]
+      },
+      {
+        "title": "5/6 agulhas e nenhum feno restante",
+        "note": "Os relatos vinculados aqui não continham uma solução geral confirmada pelo desenvolvedor quando foram conferidos em 27 de setembro de 2026.",
+        "steps": [
+          "Preserve seu save e faça uma cópia; não apague o progresso para testar uma suposição.",
+          "Anote a contagem de agulhas, o feno restante, o status do Silo e a rota pelos scanners.",
+          "Leia o relato vinculado ou compartilhe essas informações em uma discussão pertinente no Steam. O mecanismo habitual de retorno ao palheiro não prova que todo bug de agulha desaparecida se resolve sozinho."
+        ]
+      }
+    ]
+  },
+  "checklist": {
+    "note": "As verificações são salvas neste navegador e neste dispositivo. Elas não leem nem alteram seu save do jogo.",
+    "progress": "Concluídas",
+    "reset": "Redefinir verificações",
+    "loading": "Carregando verificações salvas…",
+    "error": "Este navegador não conseguiu salvar ou ler suas verificações. Você ainda pode usar a lista durante esta visita.",
+    "guide": "Ler o guia de conexões",
+    "items": [
+      "Identifique o material que entra na sua rota.",
+      "Confira a saída da coleta ou do armazenamento.",
+      "Confira o sentido de cada esteira e o ponto de entrega de cada braço robótico.",
+      "Conecte a energia onde a máquina precisar.",
+      "Compare cada rótulo de entrada com o material que chega.",
+      "Garanta que cada ramificação de venda passe por um scanner.",
+      "Confira se o destino de venda aceita o produto da saída.",
+      "Observe um produto completar toda a rota e depois confira o contador de agulhas."
+    ]
+  },
+  "calculator": {
+    "note": "Insira os valores que você observou. As taxas usam unidades por minuto; todos os valores monetários usam a mesma moeda do jogo. Nenhum preço do jogo ou velocidade de máquina é preenchido previamente.",
+    "assumption": "Compare o mesmo material na mesma unidade. Se o processamento mudar as unidades, primeiro converta todas as taxas e o estoque para unidades equivalentes do produto final. A estimativa pressupõe fluxo estável, energia suficiente, nenhuma perda e custos operacionais que param quando o estoque acaba.",
+    "plan": "Plano",
+    "optional": "opcional",
+    "stage": "Etapa",
+    "rate": "Vazão (unidades/min)",
+    "add": "Adicionar etapa",
+    "remove": "Remover etapa",
+    "stock": "Estoque disponível (unidades)",
+    "price": "Preço de venda (moeda/unidade)",
+    "investment": "Investimento inicial (moeda)",
+    "operating": "Custo operacional (moeda/min)",
+    "calculate": "Calcular / comparar",
+    "invalid": "Preencha cada campo com um número finito maior ou igual a 0. Use ponto para os decimais.",
+    "overflow": "Os valores são grandes demais para um cálculo confiável. Use valores menores.",
+    "capacity": "Capacidade da linha",
+    "bottleneck": "Etapa mais lenta",
+    "duration": "Tempo para processar o estoque",
+    "revenue": "Receita do estoque",
+    "profit": "Lucro do estoque após custos operacionais e investimento",
+    "margin": "Receita líquida durante a operação",
+    "payback": "Tempo para recuperar o investimento",
+    "stopped": "Sem fluxo: pelo menos uma etapa tem vazão zero.",
+    "never": "Não há retorno com esta margem operacional.",
+    "insufficient": "O estoque disponível acaba antes do retorno do investimento.",
+    "empty": "Não há estoque para processar.",
+    "minutes": "min",
+    "units": "unidades/min",
+    "currency": "moeda",
+    "formulas": "Como é calculado",
+    "formulaText": "Capacidade = menor taxa das etapas. Tempo = estoque ÷ capacidade. Receita líquida/min = capacidade × preço − custo operacional. Lucro do estoque = estoque × preço − tempo × custo operacional − investimento. Retorno = investimento ÷ receita líquida/min, somente enquanto houver estoque suficiente.",
+    "comparison": "Resultados",
+    "better": "Maior lucro do estoque:",
+    "equal": "Os dois planos têm o mesmo lucro do estoque.",
+    "resultHint": "Os resultados descrevem este lote de estoque, não uma produção ilimitada. Quantidades diferentes de estoque podem mudar qual plano rende mais."
+  }
+}

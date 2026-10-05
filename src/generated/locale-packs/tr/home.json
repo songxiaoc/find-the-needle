@@ -1,0 +1,63 @@
+{
+  "eyebrow": "Steam oyunu için gayriresmî rehber",
+  "description": "Bir dağ saman. Küçücük bir iğne. Başlangıç döngüsünü öğrenin, ilk üretim hattınızı planlayın ve arayışı bir fabrikaya dönüştürün.",
+  "start": "Rehbere başlayın",
+  "demo": "Ücretsiz demoyu indirin",
+  "help": "Hangi konuda yardıma ihtiyacınız var?",
+  "cards": [
+    [
+      "İlk küreğinizden ilk makinenize",
+      "Toplama, satış ve bir sonraki yükseltmeyi seçmenin mantığını öğrenin.",
+      "BAŞLANGIÇ"
+    ],
+    [
+      "Bantları bağlayın ve elektriği çalıştırın",
+      "Satış noktasına hizalama özelliğini kullanın, elektrik ağını kontrol edin ve durmuş üretim hattını izleyin.",
+      "OTOMASYON"
+    ],
+    [
+      "Steam demosunu deneyin",
+      "Demoyu yükleyin, bilgisayarınızı kontrol edin ve kayıt dosyanızı yedekleyin.",
+      "DEMO VE ÇIKIŞ"
+    ]
+  ],
+  "explore": "Makineler, iğneler ve demo güncellemeleri",
+  "exploreCards": [
+    [
+      "Makineleri ve ürünleri tanıyın",
+      "Ekipmanın işlevlerini ve samanı işlemenin farklı yollarını öğrenin.",
+      "MAKİNELER VE ÜRÜNLER"
+    ],
+    [
+      "Bir iğne mi eksik? Saman ürünlerini takip edin",
+      "Silo'yu, tarayıcıyı atlayan yolları ve bildirilen 5/6 iğne sorununu kontrol edin.",
+      "İĞNE BULMA"
+    ],
+    [
+      "Demo güncellemelerini takip edin",
+      "Geliştirici duyurularını ve oynanabilir demodaki değişiklikleri öğrenin.",
+      "DEMO GÜNCELLEMELERİ"
+    ]
+  ],
+  "about": "Saman yığını yalnızca başlangıç",
+  "paragraphs": [
+    "Find the Needle, FindTheNeedleDev tarafından geliştirilen birinci şahıs saman işleme oyunudur. El aletleriyle başlayın, samandan para kazanın ve işi devralacak makineler kurun.",
+    "Konveyör bantları, tarayıcılar ve işleme hatları basit bir arayışı büyüyen bir fabrikaya dönüştürür. Bu bağımsız rehber, sondaki gizemi açıklamadan oyuna alışmanıza yardımcı olur."
+  ],
+  "stats": [
+    [
+      "Platform",
+      "Windows · Steam"
+    ],
+    [
+      "Şimdi mevcut",
+      "Ücretsiz demo"
+    ],
+    [
+      "Tam oyun için planlanan dönem",
+      "2026'nın 4. çeyreği"
+    ]
+  ],
+  "steam": "Oyunu Steam'de görüntüleyin",
+  "readingTime": "3 dk"
+}

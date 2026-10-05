@@ -1,0 +1,43 @@
+{
+  "id": "pellet-disc-machine",
+  "name": "Pellet Disc Machine",
+  "summary": "A Demo V8 adicionou indicadores como BRICKS e HAY à Pellet Disc Machine. Leia esses rótulos ao conferir uma linha de processamento parada.",
+  "updatedAt": "2026-10-05",
+  "version": "Anúncio da Demo V8 (11 de setembro de 2026); siga as instruções da versão instalada",
+  "data": {
+    "role": "Processamento",
+    "scope": "Notas da Demo / discussão",
+    "operation": "Compare os rótulos de recursos da máquina com o material que chega a cada conexão. Confira energia e movimento da entrada antes de mudar o layout.",
+    "limits": "A atualização cita indicadores, não uma receita completa. Use as exigências atuais da máquina no jogo para quantidades, saídas e velocidade."
+  },
+  "sources": [
+    {
+      "label": "Notas oficiais da Demo V8 · 11 de setembro de 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Imagem oficial do Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "power-pole"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "products",
+      "id": "hay-products"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"],
+  "image": "/images/find-the-needle/official-automation.webp",
+  "imageAlt": "Tela de pesquisa com Small Arm Plans no centro e Pellet Discs Plans perto do canto superior direito.",
+  "imageCaption": "Procure Pellet Discs Plans perto do canto superior direito do menu de pesquisa. Imagem oficial do Steam.",
+  "imagePosition": "94% 26%",
+  "imageZoom": 3
+}

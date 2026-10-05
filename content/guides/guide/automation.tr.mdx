@@ -1,0 +1,49 @@
+---
+title: "Konveyörleri, elektriği ve saman satış tezgâhını bağlayın"
+description: "Satış tezgâhına yapışmayı ve No Snap modunu kullanın, duran elektrik şebekesini kontrol edin ve saman hattını büyütmeden önce darboğazları bulun."
+date: '2026-09-27'
+lastModified: '2026-10-05'
+image: '/images/find-the-needle/screenshot-1.webp'
+---
+
+İlk çalışan güzergâh için saman kaynağını hedefine bağlayın, gereken yerlerde elektriği doğrulayın ve yeni bir kol eklemeden önce malzeme geçirin. **Demo V8, <EntityLink kind="machines" id="hay-sell-stand">Hay Sell Stand</EntityLink> için yapışma, No Snap modu için F ve elektrik direklerinde şebekeyi kapatan E etkileşimini ekledi.** Hat bağlı görünüp çalışmadığında bu ayrıntılar işe yarar.
+
+## Önce satış ucunu bağlayın
+
+![Bir konveyör, saman yığınının yanından SELL HAY yazılı tezgâha uzanıyor.](/images/find-the-needle/screenshot-1.webp)
+
+Bu resmî görüntüde hedef **SELL HAY** tezgâhıdır. V8 burada bant yapışmasını ekledi ve konveyör yerleştirmeyi otomatik yol bulmayla yeniledi.
+
+1. Satış noktasını belirleyin ve yaklaşmak için yer bırakın.
+2. Son bant parçasını tezgâhın yapışma bağlantısıyla yerleştirin.
+3. Taşımak istediğiniz kaynağa veya makine çıkışına doğru geriye bağlayın.
+4. Küçük bir parti besleyip satış noktasına kadar izleyin. Para göstergesinin değiştiğini kontrol edin.
+
+Yerleştirme istemediğiniz yere yapışıyorsa, V8 notlarına göre **F, No Snap modunu açar**. Yerleştirme davranışını değiştirirken oyun içi mod göstergesine ve komutlara bakın. Serbest yerleştirme düzeni kontrol etmeyi kolaylaştırır; iki ucun gerçekten bağlandığını kanıtlamaz, bu yüzden sonrasında malzeme akışını test edin.
+
+## Elektrikli makineler birlikte durduğunda
+
+Makine değiştirmeden önce ortak elektrik kaynağını kontrol edin. V8, **elektrik direğinde E'ye basarak bütün şebekeyi kapatmanıza** izin verir. Direkle etkileşimden sonra birkaç makine durduysa önce şebekenin durumuna bakın ve elektriği geri açmak için direğin güncel komutunu izleyin.
+
+Aynı güncelleme, güç gereksinimin altına düştüğünde görsel bildirim ekledi. Bir bandın makineye saman getirmesi makinenin yeterli elektrik aldığını göstermez. Malzeme güzergâhını değiştirmeden önce elektrik göstergesini okuyun.
+
+## Samanın ilk durduğu noktayı bulun
+
+| Gözlem | Sonraki kontrol |
+| --- | --- |
+| Giriş bandı boş | Güzergâhı toplayıcıya veya önceki makineye doğru geriye izleyin. |
+| Saman geliyor ama sonraki makine boşta | Elektriği, gereken girdiyi ve makinenin çıkış yolunu kontrol edin. |
+| Tarayıcı önünde kuyruk oluşuyor | Tarayıcının malzemeyi geliş hızından daha yavaş işleyip işlemediğini izleyin. |
+| Malzeme kavşağa geliyor ama hedefe ulaşmıyor | Satış tezgâhı yolu dâhil her çıkış kolunu ayrı izleyin. |
+
+Bu kontroller arızayı ayırmaya yardımcı olur; duran her makinenin aynı nedeni olduğunu garanti etmez. V8, **<EntityLink kind="machines" id="pellet-disc-machine">Pellet Disc Machine</EntityLink>** için **BRICKS / HAY** kaynak göstergelerini ekledi. Dolu görünen bandın bütün ihtiyaçları karşıladığını varsaymak yerine bunlara bakın.
+
+## İğne kontrolünü atlamadan büyütün
+
+V8, **<EntityLink kind="machines" id="u-splitter">U-Splitters</EntityLink>** ve **<EntityLink kind="machines" id="u-joiner">U-Joiners</EntityLink>** ekledi. Tarayıcı tıkanmasını tartışan oyuncular, akışı ayrı tarayıcı şeritlerine bölüp çıkışları sonra birleştirmeyi de önerdi. Bu bir topluluk düzen önerisidir, ölçülmüş verim garantisi değildir. Fabrika boyunca kopyalamadan önce her şeridi test edin.
+
+Amaç bütün ürünlerde iğne kontrolü yapmaksa, satışa giden **her** yolun tarama düzeninden geçtiğini izleyin. Başka bir kol tarayıcıyı atlıyorsa düzenli bir ana hat yetmez. Saman ürünlerinin içindeki iğnelere ilişkin geliştirici açıklaması için [iğneler ve tarayıcılar](/guides/guide/needles-and-scanners) rehberine bakın.
+
+Duran güzergâhı yeniden kurmadan önce [hat kontrolü](/tools/line-check) ile besleme, elektrik, çıkış ve tarayıcı kapsamını sırayla kontrol edin.
+
+Kaynaklar: [resmî Demo V8 notları, 11 Eylül 2026 UTC](https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126), [topluluğun tarayıcı tartışması](https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/). Kontroller farklıysa mevcut sürümünüzün komutlarına bakın.

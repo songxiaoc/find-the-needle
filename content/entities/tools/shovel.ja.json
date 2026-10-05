@@ -1,0 +1,38 @@
+{
+  "id": "shovel",
+  "name": "シャベル（Shovel）",
+  "summary": "公式ストアは、シャベルを手作業で干し草を運び、ベルトや機械を買う前に資金を稼ぐための最初の道具として紹介しています。",
+  "updatedAt": "2026-10-05",
+  "version": "製品版のストア説明。2026 年 10 月 5 日確認",
+  "data": {
+    "role": "干し草の取り扱い",
+    "scope": "製品版のストア説明",
+    "operation": "最初のプレイでは少量の干し草を扱い、SELL HAY の行き先を探し、ゲームの操作案内に従ってください。針探しと単に山を片づけることは別々に考えましょう。",
+    "check": "手作業を自動化に置き換える前に、収集、運搬、販売、スキャンのどこが遅いかを確認します。現在のゲーム内価格で、そのボトルネックに対応する設備を買ってください。"
+  },
+  "sources": [
+    {
+      "label": "Steam 公式ストア",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "tools",
+      "id": "pitchfork"
+    },
+    {
+      "kind": "tools",
+      "id": "metal-detector"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/getting-started", "/guides/guide/automation"]
+}

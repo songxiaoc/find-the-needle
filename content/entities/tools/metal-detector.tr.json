@@ -1,0 +1,46 @@
+{
+  "id": "metal-detector",
+  "name": "Metal Dedektörü",
+  "summary": "Resmî mağaza, bantlar, tarayıcılar ve robot kollar daha fazla işi üstlenmeden önce metal dedektörüyle elle iğne aramaya başlamayı anlatır.",
+  "updatedAt": "2026-10-05",
+  "version": "Tam oyun mağaza açıklaması, 5 Ekim 2026'da kontrol edildi",
+  "data": {
+    "role": "İğne algılama",
+    "scope": "Tam oyun mağaza açıklaması",
+    "operation": "Elle ararken dedektörün güncel geri bildirimini kullanın. İncelediğiniz yerleri takip edin; oyun sinyallerinin yerine sabit koordinat listesi koymayın.",
+    "check": "Üretim samanı ürünlere paketlediyse depolamayı ve tarayıcı yollarını da inceleyin. Geliştirici iğnelerin yalnız dağınık samanda değil ürünlerde de kalabildiğini açıklıyor."
+  },
+  "sources": [
+    {
+      "label": "Resmî Steam mağazası",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Geliştirici yanıtı ve oyuncu bildirimleri · 13 Eylül 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "silo"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/getting-started",
+    "/guides/guide/needles-and-scanners"
+  ],
+  "image": "/images/find-the-needle/official-research.webp",
+  "imageAlt": "Scanner Mk I Plans altında Metal Detector bulunan araştırma ağacı.",
+  "imageCaption": "Metal Detector araştırma girdisi Scanner Mk I Plans altında yer alır. Resmî Steam görseli.",
+  "imagePosition": "40% 37%",
+  "imageZoom": 3
+}

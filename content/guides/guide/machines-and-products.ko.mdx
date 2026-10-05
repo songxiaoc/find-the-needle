@@ -1,0 +1,54 @@
+---
+title: "도구, 기계, 건초 제품 설명"
+description: "수집, 운송, 가공, 바늘 탐지를 구분하고 새 기계를 사기 전에 요구 사항을 확인하세요."
+date: '2026-09-27'
+lastModified: '2026-10-05'
+image: '/images/find-the-needle/screenshot-2.webp'
+---
+
+진행을 늦추는 작업에 맞춰 장비를 고르세요. 건초 수집, 운반, 가공, 바늘 찾기입니다. 가공기는 공급 경로가, 컨베이어는 목적지가 필요합니다. 연결을 확인하지 않고 둘 다 사면 라인이 멈춰 있을 수 있습니다.
+
+## 어떤 장비가 어떤 일을 하나요?
+
+| 작업 | 살펴볼 장비 | 확인 사항 |
+| --- | --- | --- |
+| 수동 수집 | <EntityLink kind="tools" id="shovel">삽</EntityLink>, <EntityLink kind="tools" id="pitchfork">쇠스랑</EntityLink>, 흡입 도구 | 건초를 모으는 방식과 내릴 장소 |
+| 건초 운반 | 양동이, 외바퀴 손수레 | 용량 표시와 목적지까지 거리 |
+| 자동 운송 | <EntityLink kind="machines" id="conveyor-belt">컨베이어</EntityLink>, <EntityLink kind="machines" id="robotic-arm">로봇 팔</EntityLink> | 집는 위치, 이동 방향, 전달 지점 |
+| 가공 | 베일러, 건초 포장기, 제지기 | 받는 재료와 나오는 제품 |
+| 바늘 탐지 | <EntityLink kind="tools" id="metal-detector">금속 탐지기</EntityLink>, <EntityLink kind="machines" id="needle-scanner">스캐너</EntityLink> | 채집·벨트 경로 중 탐지하는 위치 |
+
+이 장비 유형은 공식 게임 설명에 등장합니다. 정식 게임 상점의 물품으로 계획하기 전에 Demo 상점과 해금을 확인하세요.
+
+![건초 표시가 485 / 600인 양동이 옆에 쇠스랑이 있습니다.](/images/find-the-needle/screenshot-4.webp)
+
+공식 이미지의 양동이는 현재 적재량과 용량을 표시합니다. 수집할 때 이 표시를 보세요. 수치는 해당 이미지의 설비이며 모든 양동이나 업그레이드의 용량이 아닙니다.
+
+수동 수집은 [시작 가이드](/guides/guide/getting-started), 탐지 장비는 [바늘과 스캐너](/guides/guide/needles-and-scanners)를 참고하세요.
+
+## 건초 제품은 무엇인가요?
+
+상점에는 **hay pulp(건초 펄프)**, **compressed bales(압축 건초 묶음)**, **eco bricks(친환경 벽돌)**, **hay paper(건초 종이)**, **pellets(펠릿)**가 나옵니다. 각각 펄프, 압축 묶음, 벽돌, 종이, 작은 알갱이인 서로 다른 가공 출력입니다. 제조 순서가 아니므로 하나를 만들면 자동으로 다음 제품에 공급된다고 가정하지 마세요.
+
+제품을 고를 때는 만드는 기계부터 거슬러 생각하세요. 입력 라벨을 읽고 그 재료를 어떻게 공급할지 찾은 뒤 출력이 갈 곳을 확인하세요. 두 기계를 연결할 때 특히 흩어진 건초와 이미 가공된 제품을 구분하세요.
+
+예를 들어 [Demo V8 업데이트](https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126)는 **<EntityLink kind="machines" id="pellet-disc-machine">Pellet Disc Machine</EntityLink>**에 **BRICKS**, **HAY** 같은 자원 표시를 추가했습니다. 연결할 때 표시를 읽으세요. 기계 이름만으로 각 연결에 필요한 재료를 알 수는 없습니다.
+
+## 기계뿐 아니라 구매 전체를 확인하세요
+
+![로봇 팔이 건초 더미를 둘러싸고 여러 독립 컨베이어 경로가 창고 주변으로 이어집니다.](/images/find-the-needle/screenshot-2.webp)
+
+이미지는 바닥 공간이 중요한 이유를 보여줍니다. 더미 옆 기계는 설비의 일부이고 벨트도 공간이 필요합니다.
+
+돈을 쓰기 전에 확인하세요.
+
+1. **입력:** 현재 설비가 기계가 받는 재료를 전달할 수 있나요?
+2. **전력:** 어떤 연결이 필요하며 닿을 수 있나요?
+3. **출력:** 제품은 어디로 나오며 그쪽을 연결할 공간이 있나요?
+4. **목적지:** 다른 기계로 보낼 건가요, 해당 제품을 받는 판매 지점으로 보낼 건가요?
+
+연결을 완성할 예산과 공간을 남기세요. 다른 분기를 추가하기 전에 전체 재료 경로 하나를 관찰하세요. [자동화 가이드](/guides/guide/automation)에서 배치 점검을 설명합니다.
+
+측정값으로 라인을 계획하려면 [생산 계산기](/tools/production-calculator)에 관찰한 속도를 입력해 공급과 가공 능력을 비교하세요.
+
+장비, 제품 이름, 스크린샷: [공식 Steam 게임 페이지](https://store.steampowered.com/app/5160800/Find_The_Needle/), [Demo 페이지](https://store.steampowered.com/app/5165210/Find_The_Needle_Demo/).

@@ -1,0 +1,30 @@
+{
+  "database": "Banco de dados",
+  "databaseTitle": "Máquinas, ferramentas e produtos de feno",
+  "databaseIntro": "Encontre equipamentos pela função, confira suas conexões e siga o feno até a próxima etapa.",
+  "records": "registros",
+  "browse": "Explorar",
+  "relatedRecords": "Equipamentos e produtos deste guia",
+  "tools": "Ferramentas da fábrica",
+  "toolsTitle": "Coloque sua linha de produção para funcionar",
+  "toolsIntro": "Siga uma linha parada, registre suas verificações e compare a produção com suas próprias medições.",
+  "interactive": "Interativo",
+  "notFound": "Registro não encontrado",
+  "toolCards": [
+    [
+      "Investigue um problema na fábrica",
+      "Escolha o sintoma que você vê e siga as próximas verificações seguras.",
+      "VERIFICAÇÃO DA LINHA"
+    ],
+    [
+      "Salve seu checklist de montagem",
+      "Confira conexões, energia e rotas de escaneamento enquanto constrói.",
+      "CHECKLIST"
+    ],
+    [
+      "Compare linhas de produção",
+      "Encontre gargalos e estime o retorno com base nas taxas observadas.",
+      "CALCULADORA"
+    ]
+  ]
+}

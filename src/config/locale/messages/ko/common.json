@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "title": "Find the Needle 위키 및 가이드 — 데모, 자동화, 팁",
+    "description": "Find the Needle 시작하기: 무료 Steam 데모, 건초 더미에서 바늘 찾기, 업그레이드, 자동화, PC 요구 사항. 출시 예정인 증분형 게임을 위한 독립 가이드.",
+    "keywords": "Find the Needle, Find the Needle 가이드, Find the Needle 위키, Find the Needle 데모, 자동화"
+  },
+  "navigation": {
+    "home": "홈",
+    "guides": "가이드",
+    "faq": "자주 묻는 질문",
+    "requirements": "PC 요구 사항",
+    "troubleshooting": "문제 해결",
+    "about": "소개",
+    "contact": "연락",
+    "privacy": "개인정보 처리방침",
+    "terms": "이용약관",
+    "language": "언어",
+    "primary": "주 메뉴",
+    "demo": "데모"
+  },
+  "footer": {
+    "guides": "가이드",
+    "resources": "게임 및 지원",
+    "site": "사이트 소개",
+    "disclaimer": "독립적인 Find the Needle 팬 가이드입니다. Hay Passionates와 관계가 없습니다. 게임 이름, 아트워크, 상표는 각 소유자에게 귀속됩니다."
+  },
+  "category": {
+    "title": "게임 가이드",
+    "description": "바늘 찾기 흐름을 배우고 업그레이드를 계획하며 Steam 데모의 내용을 확인하세요."
+  },
+  "languagePrompt": {
+    "title": "{language}(으)로 읽으시겠어요?",
+    "description": "선호하는 언어로 가이드를 볼 수 있습니다. 선택은 다음 방문을 위해 저장됩니다.",
+    "close": "언어 제안 닫기",
+    "dismiss": "현재 언어 유지"
+  },
+  "ui": {
+    "readGuide": "가이드 읽기",
+    "allGuides": "모든 가이드",
+    "onThisPage": "이 페이지의 내용",
+    "overview": "개요",
+    "relatedGuides": "관련 가이드",
+    "updated": "업데이트",
+    "published": "게시",
+    "openMenu": "메뉴 열기",
+    "closeMenu": "메뉴 닫기",
+    "siteNavigation": "사이트 탐색",
+    "wikiNavigation": "가이드 탐색",
+    "viewOnSteam": "Steam에서 보기",
+    "demoAvailable": "무료 데모 이용 가능",
+    "comingQ4": "정식 게임 2026년 4분기 출시 예정",
+    "guideCount": "가이드 {count}개",
+    "backHome": "홈으로 돌아가기",
+    "notFound": "페이지를 찾을 수 없습니다",
+    "gameplayImageAlt": "Find The Needle에서 건초를 판매소로 운반하는 컨베이어",
+    "aboutGame": "게임 소개",
+    "atAGlance": "한눈에 보기"
+  }
+}

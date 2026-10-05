@@ -1,0 +1,211 @@
+{
+  "practicalGuides": [
+    "Mevcut kayıt dosyanız için yardım",
+    "Demo kaydınızı yedekleyin",
+    "Durmuş taşıma bandını veya elektrik şebekesini kontrol edin",
+    "Kaybolan iğneyi silo ve tarayıcılar boyunca takip edin"
+  ],
+  "labels": {
+    "home": "Ana sayfa",
+    "updated": "27 Eylül 2026 tarihinde güncellendi",
+    "links": {
+      "store": "Steam'de Find the Needle",
+      "demo": "Steam'de ücretsiz demo",
+      "community": "Steam topluluk tartışmaları",
+      "feedback": "GitHub'da site sorunu bildirin",
+      "verify": "Steam: oyun dosyalarını doğrulayın",
+      "cloudflare": "Cloudflare gizlilik politikası",
+      "adsterra": "Adsterra gizlilik politikası"
+    },
+    "specs": [
+      "İşletim sistemi",
+      "İşlemci",
+      "Bellek",
+      "Grafik",
+      "Depolama"
+    ],
+    "minimum": "Minimum",
+    "recommended": "Önerilen",
+    "storage": "2 GB kullanılabilir alan",
+    "gpu": "4 GB VRAM; Vulkan 1.3",
+    "platform": "Windows gereksinimleri"
+  },
+  "content": {
+    "faq": {
+      "title": "Find the Needle sık sorulan sorular",
+      "description": "Find the Needle çıkış dönemi, ücretsiz demo, desteklenen platformlar ve tek oyunculu mod hakkında bilgiler ile resmi Steam sayfaları.",
+      "intro": "Ücretsiz demo şu anda oynanabilir. Steam, tam oyunun çıkışını 2026'nın 4. çeyreği olarak listeliyor. 27 Eylül 2026 tarihinde kontrol edilen sayfada kesin bir gün açıklanmamıştı.",
+      "sections": [
+        {
+          "title": "Demoyu nerede oynayabilirim?",
+          "text": "Find the Needle Demo, 10 Eylül 2026 tarihinde çıktı. Kendi Steam sayfasından yükleyin; tam oyunu istek listenize eklemek demoyu yüklemez.",
+          "link": "demo"
+        },
+        {
+          "title": "Oyunda ne yapılıyor?",
+          "text": "Saman yığınında iğne arar, saman satar ve kazancınızı araçlarla makinelere yatırırsınız. Elle kazı yapmak, taşıma bantları, balyalama makineleri, tarayıcılar ve robot kollar içeren bir fabrikaya dönüşür.",
+          "link": "store"
+        },
+        {
+          "title": "Çok oyunculu mu?",
+          "text": "Steam, Find the Needle'ı tek oyunculu bir oyun olarak tanımlıyor. İş birliğine dayalı veya rekabetçi çok oyunculu mod duyurulmuyor."
+        },
+        {
+          "title": "Mac, Linux veya konsollarda oynayabilir miyim?",
+          "text": "Duyurulan Steam sürümü Windows'u destekliyor. Sayfada yerel macOS veya Linux sürümleri sunulmuyor ve konsol çıkışı doğrulanmıyor. Uyumluluk katmanları veya taşınabilir cihaz performansı burada doğrulanmış değildir."
+        },
+        {
+          "title": "Hangi dilleri destekliyor?",
+          "text": "Steam 12 dil listeliyor: İngilizce, Fransızca, Almanca, İspanyolca (İspanya), Rusça, Basitleştirilmiş Çince, Japonca, Korece, Lehçe, Çekçe, Türkçe ve Portekizce (Brezilya). İndirmeden önce mağazadaki dil tablosunu kontrol edin. Bu sitede yayımlanmış diller için dil seçicisine bakın.",
+          "link": "store"
+        },
+        {
+          "title": "Demo ilerlemesi aktarılacak mı?",
+          "text": "Bu rehber için kontrol edilen mağaza bilgileri, kayıtların tam oyuna aktarılacağını doğrulamıyor. Demo kayıtlarını saklayın ve ilerlemenin taşınacağını varsaymadan önce açık bir duyuru bekleyin."
+        }
+      ]
+    },
+    "system-requirements": {
+      "title": "Find the Needle sistem gereksinimleri",
+      "description": "Find the Needle için resmi Windows minimum ve önerilen özellikleri; Vulkan desteği ve tümleşik GPU uyarısı dahil.",
+      "intro": "Steam sayfası Windows ve ayrı bir ekran kartı gerektiriyor. Tümleşik grafiklerin desteklenmediği açıkça belirtiliyor ve bunlar çökmeye yol açabilir. Özellikler 27 Eylül 2026 tarihinde kontrol edildi.",
+      "sections": [
+        {
+          "title": "Dizüstü bilgisayara yüklemeden önce",
+          "text": "Yalnızca RAM'i değil, tam GPU modelini ve video belleğini karşılaştırın. Minimum GPU, Vulkan 1.3 desteklemelidir. Dizüstünde hem tümleşik hem ayrı GPU varsa oyunun ayrı GPU'yu kullandığından emin olun."
+        },
+        {
+          "title": "Büyük fabrikalar ve taşınabilir cihazlar",
+          "text": "Geliştirici, çok büyük fabrikaların CPU'yu zorladığını belirtiyor. Minimum gereksinimleri karşılamak belirli bir kare hızını garanti etmez. Doğrulanmış Steam Deck performans sonuçları veya yerel macOS/Linux gereksinimleri sunmuyoruz.",
+          "link": "store"
+        }
+      ]
+    },
+    "troubleshooting": {
+      "title": "Find the Needle sorun giderme",
+      "description": "Find the Needle demo çökme ve başlatma sorunlarında güvenli ilk kontroller: desteklenen grafikler, Steam dosya doğrulaması ve yararlı hata raporu bilgileri.",
+      "intro": "Demo başlamıyorsa önce grafik donanımını kontrol edin: resmi gereksinimler tümleşik grafikleri dışlıyor ve Vulkan 1.3 desteği istiyor. Aşağıdaki adımlar genel Steam kontrolleridir; belirli bir oyun hatası için doğrulanmış çözümler değildir.",
+      "sections": [
+        {
+          "title": "1. Donanımı ve güncellemeleri kontrol edin",
+          "text": "Bilgisayarınızı sistem gereksinimleriyle karşılaştırın. Bekleyen Steam indirmelerini bitirin, bilgisayarı yeniden başlatın ve GPU üreticisinin güncel grafik sürücüsünü yükleyin. İki GPU'lu dizüstünde Windows grafik ayarlarında oyun için ayrı GPU'yu seçin."
+        },
+        {
+          "title": "2. Kurulumu doğrulayın",
+          "text": "Steam kütüphanesinde Find the Needle Demo'ya sağ tıklayın ve Özellikler → Yüklü Dosyalar → Oyun dosyalarının bütünlüğünü doğrula yolunu açın. Yeniden başlatmadan önce işlemin bitmesini bekleyin. Hangi adımın işe yaradığını anlayabilmek için her değişiklikten sonra test edin.",
+          "link": "verify"
+        },
+        {
+          "title": "3. Fabrika büyüdükçe yavaşlıyorsa",
+          "text": "Diğer ağır uygulamaları kapatın ve yavaşlamanın yalnızca büyük fabrikada olup olmadığını kontrol edin. Geliştirici, büyük fabrikaların CPU yükünü artırdığını söylüyor; yalnızca çözünürlüğü düşürmek bu sınırı gidermeyebilir."
+        },
+        {
+          "title": "4. Tekrarlanabilir bir sorunu bildirin",
+          "text": "Demo oynayıp oynamadığınızı, Windows sürümünü, CPU, GPU, sürücü sürümü, tam hata metni ve sorunu tekrarlama adımlarını ekleyin. Gerekirse kişisel bilgileri kaldırılmış ekran görüntüsü ekleyin. Mevcut kayıtları koruyun; ilk sorun giderme adımı olarak kayıt klasörlerini silmeyin.",
+          "link": "community"
+        }
+      ]
+    },
+    "about": {
+      "title": "Bu Find the Needle rehberi hakkında",
+      "description": "Bağımsız Find the Needle hayran rehberinin kaynakları, düzeltmeleri ve oyun yaratıcılarıyla ilişkisi hakkında bilgi edinin.",
+      "intro": "findtheneedle.site, Find the Needle için bağımsız ve resmi olmayan bir rehberdir. Oyuncuların demoyu anlamasına, ilk fabrikasını planlamasına ve oynamadan önce pratik bilgileri kontrol etmesine yardımcı olur.",
+      "sections": [
+        {
+          "title": "Oyun yaratıcılarından bağımsız",
+          "text": "Bu site FindTheNeedleDev, Hay Passionates veya Valve tarafından işletilmez, onaylanmaz ya da desteklenmez. Find the Needle, FindTheNeedleDev tarafından geliştirilir ve Hay Passionates tarafından yayımlanır. Oyun adları, görseller ve ekran görüntüleri ilgili sahiplerine aittir."
+        },
+        {
+          "title": "Kaynakları nasıl kullanıyoruz?",
+          "text": "Çıkış ve donanım bilgileri resmi Steam sayfalarından alınır. Rehberler, duyurulmuş özellikleri pratik önerilerden ayırır. Demo ve tam oyun değişebileceğinden tarihli açıklamaları güncelleme tarihine göre okuyun.",
+          "link": "store"
+        },
+        {
+          "title": "Düzeltmeler ve katkılar",
+          "text": "Bir rehber hatalıysa veya çeviri anlaşılmıyorsa sayfa URL'sini, düzeltmeyi ve destekleyen ekran görüntüsünü ya da resmi bağlantıyı gönderin. Kullandığınız demo veya oyun sürümünü belirtin.",
+          "link": "feedback"
+        }
+      ]
+    },
+    "contact": {
+      "title": "İletişim ve düzeltmeler",
+      "description": "Find the Needle rehberindeki bir hatayı bildirin veya oyun soruları için resmi Steam topluluğunu bulun.",
+      "intro": "Site düzeltmeleri, bozuk bağlantılar veya çeviri sorunları için sitenin GitHub deposunda bir issue açın. Oyun hataları ve satın alma soruları, oyunun resmi kanallarına veya Steam Destek'e yöneltilmelidir.",
+      "sections": [
+        {
+          "title": "Site sorunu bildirin",
+          "text": "Sayfa URL'sini, dili, hatayı ve önerilen düzeltmeyi yazın. Kaynak bağlantısı veya ekran görüntüsü kontrolü kolaylaştırır. GitHub'da gönderi için hesap gerekir; issue'lar herkese açıktır, bu yüzden şifre, ödeme bilgisi veya başka hassas bilgiler eklemeyin.",
+          "link": "feedback"
+        },
+        {
+          "title": "Oyun için yardım alın",
+          "text": "Steam topluluğunda geliştirici duyuruları ve oyun tartışmaları bulunur. Bu hayran sitesi oyun kayıtlarınıza, Steam hesabınıza veya satın alımlarınıza erişemez ve iade yapamaz.",
+          "link": "community"
+        },
+        {
+          "title": "Haklar ve gizlilik soruları",
+          "text": "İlk hak veya gizlilik sorusu için sitenin issue takip sistemini kullanın ve ilgili sayfa ya da materyali belirtin. Kimlik belgelerini veya gizli kanıtları herkese açık bir issue'da paylaşmayın.",
+          "link": "feedback"
+        }
+      ]
+    },
+    "privacy-policy": {
+      "title": "Gizlilik politikası",
+      "description": "findtheneedle.site'ın barındırma isteklerini, tarayıcı tercihlerini, ziyaret istatistiklerini ve üçüncü taraf bağlantılarını nasıl ele aldığı.",
+      "intro": "Bu politika, bağımsız Find the Needle rehberi findtheneedle.site'ı kapsar. Siteyi okumak için hesap, ödeme veya form gönderimi gerekmez.",
+      "sections": [
+        {
+          "title": "Barındırma ve istek verileri",
+          "text": "Cloudflare bu siteyi barındırır ve sunar. İçerik sunumu, güvenlik ve kötüye kullanımı önlemek için istekler IP adresi, tarayıcı, istenen URL ve istek zamanı gibi bilgiler içerebilir. Cloudflare bu bilgileri kendi koşulları ve gizlilik politikası kapsamında işler.",
+          "link": "cloudflare"
+        },
+        {
+          "title": "Cihazınızdaki tercihler",
+          "text": "Tarayıcının yerel depolaması, dil önerisi seçimi gibi arayüz tercihlerini hatırlamak için kullanılır. Siz temizleyene kadar veriler o tarayıcıda kalır. Tarayıcının site verisi ayarlarıyla silebilirsiniz; kaydedilmiş tercihler sıfırlanır."
+        },
+        {
+          "title": "Analiz, reklam ve ödemeler",
+          "text": "Toplu istatistiklerle site ziyaretlerini anlamak için Google Analytics 4 ve plausible.shipsolo.io ile pl.gameradar.online üzerinde barındırılan Plausible kullanıyoruz. Google Analytics çerez kullanabilir ve ziyaret verilerini Google'a gönderebilir. Çerezleri tarayıcı ayarlarından yönetebilirsiniz. Adsterra banner'ları, yerel reklamlar ve Social Bar üçüncü taraf kaynaklarını yükler; Adsterra ve sağlayıcıları reklam sunmak için cihaz ve ziyaret verilerini işleyebilir. Aşağıdaki gizlilik politikasına bakın. Site oturum kaydı betikleri yerleştirmez, kullanıcı hesabı sunmaz ve ödeme almaz. Kişisel bilgileri satmıyoruz.",
+          "link": "adsterra"
+        },
+        {
+          "title": "Dış bağlantılar ve mesajlar",
+          "text": "Steam, GitHub veya başka bir hizmete giden bağlantıyı izlediğinizde o hizmetin gizlilik uygulamaları geçerlidir. GitHub issue'su gönderirseniz profiliniz ve mesajınız herkese açık olabilir. Yalnızca isteğinizi açıklamak için gerekli bilgileri paylaşın."
+        },
+        {
+          "title": "Sorular ve değişiklikler",
+          "text": "Gizlilik sorusu için hassas kişisel bilgiler eklemeden ilk site issue'sunu açın. Sitenin veri uygulamaları değiştiğinde politikayı güncelleyecek ve bu sayfada revizyon tarihini göstereceğiz.",
+          "link": "feedback"
+        }
+      ]
+    },
+    "terms-of-service": {
+      "title": "Kullanım koşulları",
+      "description": "Bağımsız Find the Needle rehberini kullanma koşulları; içerik, dış bağlantılar, fikri mülkiyet ve düzeltmeler dahil.",
+      "intro": "Bu koşullar findtheneedle.site kullanımınız için geçerlidir. Site ücretsiz oyun bilgisi sunar ve oyundan, geliştiricisinden, yayıncısından ve Steam'den bağımsızdır.",
+      "sections": [
+        {
+          "title": "Rehber bilgileri",
+          "text": "Yararlı ve doğru bilgiler sunmayı amaçlıyoruz; ancak güncellemeler mekanikleri, gereksinimleri ve kullanılabilirliği değiştirebilir. Satın almadan veya kayıtlı ilerlemenizi etkileyen değişikliklerden önce resmi kaynakları kontrol edin. Kesintisiz erişimi veya her rehberin güncel kalmasını garanti etmiyoruz."
+        },
+        {
+          "title": "Oyun ve site içeriği",
+          "text": "Find the Needle adları, görselleri ve ekran görüntüleri, FindTheNeedleDev ve Hay Passionates dahil ilgili hak sahiplerinin mülkiyetindedir. Burada görünmeleri onay anlamına gelmez. Oyun materyallerinin yalnızca bu sitede bulunduğu için yeniden kullanılabileceğini varsaymayın."
+        },
+        {
+          "title": "Kabul edilebilir kullanım",
+          "text": "Siteyi yasalara uygun kullanın. Güvenliğini ihlal etmeye, erişimi kesintiye uğratmaya veya bağlantılı geri bildirim kanallarından zararlı ya da yasa dışı materyal göndermeye çalışmayın."
+        },
+        {
+          "title": "Üçüncü taraf hizmetleri",
+          "text": "Steam, GitHub ve diğer bağlantılı sitelerin kendi koşulları vardır. İçeriklerini, satın alımlarını, hesap kararlarını veya kullanılabilirliklerini kontrol etmiyoruz. Site oyunu satmaz ve iade sağlamaz."
+        },
+        {
+          "title": "Düzeltmeler ve güncellemeler",
+          "text": "Siteyle ilgili endişeleri veya hak sorularını ilgili sayfayı belirterek issue takip sistemi üzerinden gönderin. Site değiştikçe koşullar değişebilir; sayfadaki tarih mevcut revizyonu gösterir. Buradaki hiçbir şey yürürlükteki hukuk kapsamında dışlanamayan hakları sınırlamaz.",
+          "link": "feedback"
+        }
+      ]
+    }
+  }
+}

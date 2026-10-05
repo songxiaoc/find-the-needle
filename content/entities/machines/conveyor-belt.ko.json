@@ -1,0 +1,50 @@
+{
+  "id": "conveyor-belt",
+  "name": "컨베이어 벨트(Conveyor Belt)",
+  "summary": "벨트는 장비 사이에서 건초를 이동시킵니다. 데모 V8은 맞춰 붙이기 기능을 개선하고 자동 경로 탐색을 추가했습니다. 자유 배치가 필요하면 F로 No Snap Mode를 켜세요.",
+  "updatedAt": "2026-10-05",
+  "version": "데모 V8 공지(2026년 9월 11일). 설치된 버전의 안내를 따르세요",
+  "data": {
+    "role": "운송",
+    "scope": "데모 업데이트 정보 / 토론",
+    "operation": "짧은 구간을 연결하고 제품이 통과하는 것을 본 뒤 라인을 늘리세요. 벨트가 기계 근처에서 끝난다는 사실만으로 연결이 작동한다고 판단할 수 없습니다.",
+    "check": "처음 멈춘 제품에서 역으로 따라가세요. 하류 목적지, 각 연결, 스캔을 우회하는 옆 경로가 있는지 확인하세요."
+  },
+  "sources": [
+    {
+      "label": "공식 데모 V8 업데이트 정보 · 2026년 9월 11일",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "커뮤니티 경로 토론 · 2026년 9월 21일",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    },
+    {
+      "label": "Steam 공식 이미지",
+      "url": "https://store.steampowered.com/app/5165210/Find_The_Needle_Demo/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"],
+  "image": "/images/find-the-needle/official-demo-yard.webp",
+  "imageAlt": "컨베이어가 건초 더미에서 작은 건초 덩어리를 SELL HAY 판매대로 운반합니다.",
+  "imageCaption": "왼쪽 뒤에서 SELL HAY 전달 지점으로 이어지는 대각선 벨트를 따라가세요. Steam 공식 데모 스크린샷.",
+  "imagePosition": "35% 50%"
+}

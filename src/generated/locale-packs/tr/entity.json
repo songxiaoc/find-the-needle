@@ -1,0 +1,57 @@
+{
+  "kinds": {
+    "machines": {
+      "label": "Makineler ve lojistik",
+      "singularLabel": "Makine",
+      "description": "Konveyör bağlantılarını, elektriği, tarama yollarını ve samanı hareket ettiren ekipmanı kontrol edin."
+    },
+    "tools": {
+      "label": "El aletleri",
+      "singularLabel": "Alet",
+      "description": "Fabrikayı büyütmeden önce elle saman taşıma ve iğne tespiti."
+    },
+    "products": {
+      "label": "Saman ürünleri",
+      "singularLabel": "Ürün",
+      "description": "Saman yumaklarını, gizli iğneleri ve tam oyun için açıklanan ürün gruplarını tanıyın."
+    }
+  },
+  "fields": {
+    "role": "Görev",
+    "scope": "Mevcut bilgiler",
+    "function": "Ne yapar?",
+    "operation": "Nasıl kullanılır?",
+    "check": "Neler kontrol edilmeli?",
+    "community": "Topluluk tavsiyesi",
+    "limits": "Para harcamadan önce",
+    "pulp": "Saman hamuru",
+    "bales": "Sıkıştırılmış balyalar",
+    "bricks": "Ekolojik tuğlalar",
+    "paper": "Saman kâğıdı",
+    "pellets": "Peletler"
+  },
+  "use": "Kullanım ve çalışma",
+  "checks": "Kontroller ve kararlar",
+  "productTypes": "Ürün grupları",
+  "search": "Ara",
+  "searchPlaceholder": "Ad, kullanım veya sorun…",
+  "all": "Tümü",
+  "sort": "Sırala",
+  "ascending": "Ad A–Z",
+  "descending": "Ad Z–A",
+  "updated": "Son güncellenenler",
+  "resultCount": "{total} kayıttan {shown}",
+  "clear": "Aramayı ve filtreleri temizle",
+  "view": "Ayrıntıları görüntüle",
+  "fullImage": "Tam boy resmi görüntüle",
+  "noMatches": "Eşleşen kayıt yok",
+  "empty": "Daha kısa bir arama deneyin veya bir filtreyi kaldırın.",
+  "reset": "Aramayı sıfırla",
+  "version": "Bilgiler ve kaynaklar",
+  "scope": "Dayanak",
+  "checked": "Kontrol tarihi",
+  "related": "Bağlantılı ekipman ve ürünler",
+  "guides": "Bir rehberle devam edin",
+  "back": "Geri dön",
+  "sources": "Kaynaklar"
+}

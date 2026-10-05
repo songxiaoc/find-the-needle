@@ -1,0 +1,30 @@
+{
+  "database": "Baza danych",
+  "databaseTitle": "Maszyny, narzędzia i produkty z siana",
+  "databaseIntro": "Znajdź sprzęt według zadania, sprawdź jego połączenia i śledź siano do następnego etapu.",
+  "records": "wpisów",
+  "browse": "Przeglądaj",
+  "relatedRecords": "Sprzęt i produkty w tym poradniku",
+  "tools": "Narzędzia fabryczne",
+  "toolsTitle": "Uruchom linię produkcyjną",
+  "toolsIntro": "Prześledź zatrzymaną linię, zapisuj kontrole i porównuj produkcję na podstawie własnych pomiarów.",
+  "interactive": "Interaktywne",
+  "notFound": "Nie znaleziono wpisu",
+  "toolCards": [
+    [
+      "Znajdź przyczynę problemu w fabryce",
+      "Wybierz widoczny objaw i wykonaj kolejne bezpieczne kontrole.",
+      "KONTROLA LINII"
+    ],
+    [
+      "Zapisz listę kontroli montażu",
+      "Sprawdzaj połączenia, zasilanie i trasy skanowania podczas budowy.",
+      "LISTA KONTROLNA"
+    ],
+    [
+      "Porównaj linie produkcyjne",
+      "Znajdź wąskie gardła i oszacuj zwrot na podstawie obserwowanych temp.",
+      "KALKULATOR"
+    ]
+  ]
+}

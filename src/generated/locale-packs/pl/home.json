@@ -1,0 +1,63 @@
+{
+  "eyebrow": "Nieoficjalny poradnik do gry na Steam",
+  "description": "Góra siana. Maleńka igła. Poznaj początek gry, zaplanuj pierwszą linię produkcyjną i zamień poszukiwania w fabrykę.",
+  "start": "Otwórz poradnik",
+  "demo": "Pobierz darmowe demo",
+  "help": "W czym potrzebujesz pomocy?",
+  "cards": [
+    [
+      "Od pierwszej łopaty do pierwszej maszyny",
+      "Zrozum zbieranie, sprzedaż i wybór kolejnego ulepszenia.",
+      "PIERWSZE KROKI"
+    ],
+    [
+      "Połącz taśmociągi i uruchom zasilanie",
+      "Korzystaj z przyciągania do punktu sprzedaży, sprawdź sieć i prześledź zatrzymaną linię produkcyjną.",
+      "AUTOMATYZACJA"
+    ],
+    [
+      "Wypróbuj demo na Steam",
+      "Zainstaluj demo, sprawdź komputer i wykonaj kopię zapisu gry.",
+      "DEMO I PREMIERA"
+    ]
+  ],
+  "explore": "Maszyny, igły i aktualizacje dema",
+  "exploreCards": [
+    [
+      "Poznaj maszyny i produkty",
+      "Zrozum przeznaczenie sprzętu i różne sposoby przetwarzania siana.",
+      "MASZYNY I PRODUKTY"
+    ],
+    [
+      "Brakuje igły? Śledź produkty z siana",
+      "Sprawdź Silo, drogi omijające skaner i zgłoszony problem z 5/6 igłami.",
+      "SZUKANIE IGIEŁ"
+    ],
+    [
+      "Śledź aktualizacje dema",
+      "Poznaj ogłoszenia twórcy i zmiany w grywalnym demie.",
+      "AKTUALIZACJE DEMA"
+    ]
+  ],
+  "about": "Stóg siana to dopiero początek",
+  "paragraphs": [
+    "Find the Needle to pierwszoosobowa gra o przetwarzaniu siana autorstwa FindTheNeedleDev. Zacznij od narzędzi ręcznych, zarabiaj na sianie i buduj maszyny, które przejmą pracę.",
+    "Taśmociągi, skanery i linie przetwarzania zmieniają proste poszukiwania w rosnącą fabrykę. Ten niezależny poradnik pomaga poznać grę bez zdradzania końcowej tajemnicy."
+  ],
+  "stats": [
+    [
+      "Platforma",
+      "Windows · Steam"
+    ],
+    [
+      "Dostępne teraz",
+      "Darmowe demo"
+    ],
+    [
+      "Planowana pełna wersja",
+      "IV kwartał 2026"
+    ]
+  ],
+  "steam": "Zobacz grę na Steam",
+  "readingTime": "3 min"
+}

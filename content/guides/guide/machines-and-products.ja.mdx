@@ -1,0 +1,54 @@
+---
+title: "道具、機械、干し草製品の解説"
+description: "回収、運搬、加工、針検出を区別し、新しい機械に必要なものを購入前に確認しましょう。"
+date: '2026-09-27'
+lastModified: '2026-10-05'
+image: '/images/find-the-needle/screenshot-2.webp'
+---
+
+遅くなっている作業に合わせて設備を選びます。干し草の回収、運搬、加工、針探しです。加工機には供給経路、コンベヤーには目的地が必要です。接続を確認せず両方を買うとラインが動かないままになることがあります。
+
+## どの設備がどの作業をする？
+
+| 作業 | 探す設備 | 確認事項 |
+| --- | --- | --- |
+| 手動回収 | <EntityLink kind="tools" id="shovel">ショベル</EntityLink>、<EntityLink kind="tools" id="pitchfork">フォーク</EntityLink>、吸引道具 | 回収の方法と荷下ろし場所 |
+| 干し草の運搬 | バケツ、一輪車 | 容量表示と目的地への移動 |
+| 自動輸送 | <EntityLink kind="machines" id="conveyor-belt">コンベヤー</EntityLink>、<EntityLink kind="machines" id="robotic-arm">ロボットアーム</EntityLink> | 取り上げ位置、移動方向、届け先 |
+| 加工 | ベーラー、干し草包装機、製紙機 | 受け入れる材料と出てくる製品 |
+| 針検出 | <EntityLink kind="tools" id="metal-detector">金属探知機</EntityLink>、<EntityLink kind="machines" id="needle-scanner">スキャナー</EntityLink> | 掘る経路やベルト経路のどこで検出するか |
+
+これらの設備分類は公式ゲーム紹介に登場します。製品版ストアの品目を前提にする前に、自分の Demo の店と解放項目を確認してください。
+
+![フォークの横に、干し草表示が 485 / 600 のバケツがある。](/images/find-the-needle/screenshot-4.webp)
+
+この公式画像のバケツは現在量と容量を表示しています。回収中は表示を見ます。ここでの数値は写っている設備のものであり、すべてのバケツやアップグレードの容量ではありません。
+
+手動回収は [はじめ方](/guides/guide/getting-started)、検出設備は [針とスキャナー](/guides/guide/needles-and-scanners) を参照してください。
+
+## 干し草製品には何がある？
+
+ストアには **hay pulp（干し草パルプ）**、**compressed bales（圧縮ベール）**、**eco bricks（エコレンガ）**、**hay paper（干し草の紙）**、**pellets（ペレット）** が挙げられています。それぞれパルプ、圧縮した束、レンガ、紙、小さな粒という異なる加工品です。レシピの順序ではないので、一つ作れば自動的に次の原料になると考えないでください。
+
+製品を選ぶときは作る機械から逆にたどります。入力ラベルを読み、その材料の供給方法を確認し、出力の行き先を調べます。二つの機械をつなぐときは特に、未加工の干し草と加工済み製品を区別してください。
+
+例えば [Demo V8 更新](https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126) は **<EntityLink kind="machines" id="pellet-disc-machine">Pellet Disc Machine</EntityLink>** に **BRICKS**、**HAY** などの資源表示を追加しました。接続時は表示を読んでください。機械名だけでは各接続に必要な材料は分かりません。
+
+## 機械だけでなく購入全体を確認する
+
+![干し草の山をロボットアームが囲み、倉庫に複数の独立したコンベヤー経路がある。](/images/find-the-needle/screenshot-2.webp)
+
+画像が示すように床面積は大切です。山のそばの機械は設備の一部であり、ベルトにも空間が必要です。
+
+購入前に確認します。
+
+1. **入力：** 現在の設備で機械が受け入れる材料を供給できますか？
+2. **電力：** 必要な接続は何で、そこまで届きますか？
+3. **出力：** 製品はどこから出て、その側を接続する空間はありますか？
+4. **目的地：** 別の機械に送りますか、それとも受け入れ可能な売却地点ですか？
+
+接続を完成させる予算と空間を残します。新たな分岐の前に材料が経路全体を通るのを確認してください。[自動化ガイド](/guides/guide/automation) が配置の点検を説明します。
+
+自分の測定値で計画するには [生産計算機](/tools/production-calculator) に観測した速度を入力し、供給と加工能力を比べます。
+
+設備、製品名、画像：[公式 Steam ゲームページ](https://store.steampowered.com/app/5160800/Find_The_Needle/) と [Demo ページ](https://store.steampowered.com/app/5165210/Find_The_Needle_Demo/)。

@@ -1,0 +1,39 @@
+{
+  "id": "power-pole",
+  "name": "전봇대(Power Pole)",
+  "summary": "데모 V8에서는 전봇대에서 E를 눌러 전체 전력망을 끌 수 있습니다. 여러 기계가 함께 멈추면 실수로 꺼졌는지 확인하세요.",
+  "updatedAt": "2026-10-05",
+  "version": "데모 V8 공지(2026년 9월 11일). 설치된 버전의 안내를 따르세요",
+  "data": {
+    "role": "전력",
+    "scope": "데모 업데이트 정보 / 토론",
+    "check": "전력망 알림을 읽으세요. V8은 전력이 필요한 기준보다 낮아지면 시각적 경고를 표시하도록 했습니다. 생산을 확장하기 전에 전력망 상태와 연결된 기계를 확인하세요.",
+    "limits": "현재 게임이 표시하는 전력 수요와 발전량을 사용하세요. 공지에는 기계별 소비 전력, 공통 배선 범위, 전체 발전기 예산이 제공되지 않습니다."
+  },
+  "sources": [
+    {
+      "label": "공식 데모 V8 업데이트 정보 · 2026년 9월 11일",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Steam 공식 상점",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "pellet-disc-machine"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"],
+  "image": "/images/find-the-needle/screenshot-5.webp",
+  "imageAlt": "Electricity, Power Pole, 관련 전력 업그레이드가 표시된 Yard Research 연구 트리.",
+  "imageCaption": "Power Pole은 POWER 분기에 있습니다. 현재 비용과 선행 조건은 설치된 게임의 연구 트리에서 확인하세요. 이 홍보용 스크린샷은 잠금 해제 점검표가 아닙니다. Steam 공식 스크린샷.",
+  "imagePosition": "55% 73%",
+  "imageZoom": 2
+}

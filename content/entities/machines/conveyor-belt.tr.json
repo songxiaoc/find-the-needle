@@ -1,0 +1,50 @@
+{
+  "id": "conveyor-belt",
+  "name": "Konveyör Bandı",
+  "summary": "Bantlar ekipmanlar arasında saman taşır. Demo V8 yapışmayı yeniledi ve otomatik yol bulmayı ekledi; serbest yerleştirme gerektiğinde F, No Snap Mode'u açar.",
+  "updatedAt": "2026-10-05",
+  "version": "Demo V8 duyurusu (11 Eylül 2026); kurulu sürümünüzün komutlarını izleyin",
+  "data": {
+    "role": "Taşıma",
+    "scope": "Demo notları / tartışma",
+    "operation": "Kısa bir parça bağlayıp hattı uzatmadan önce bir ürünün geçtiğini izleyin. Bandın makine yakınında bitmesi bağlantının çalıştığını göstermeye yetmez.",
+    "check": "İlk duran üründen geriye doğru kontrol edin. Sonraki hedefe, her birleşmeye ve taramayı atlayan yan yollara bakın."
+  },
+  "sources": [
+    {
+      "label": "Resmî Demo V8 notları · 11 Eylül 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Topluluk güzergâh tartışması · 21 Eylül 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    },
+    {
+      "label": "Resmî Steam görseli",
+      "url": "https://store.steampowered.com/app/5165210/Find_The_Needle_Demo/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"],
+  "image": "/images/find-the-needle/official-demo-yard.webp",
+  "imageAlt": "Bir konveyör, küçük saman kümelerini yığından SELL HAY tezgâhına taşıyor.",
+  "imageCaption": "Arka soldaki çapraz bandı SELL HAY teslim noktasına kadar izleyin. Resmî Steam Demo görüntüsü.",
+  "imagePosition": "35% 50%"
+}

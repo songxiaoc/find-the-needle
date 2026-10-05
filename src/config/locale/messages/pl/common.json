@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "title": "Find the Needle — wiki i poradniki: demo, automatyzacja i wskazówki",
+    "description": "Zacznij Find the Needle: darmowe demo Steam, szukanie w stogach siana, ulepszenia, automatyzacja i wymagania PC. Niezależne poradniki do nadchodzącej gry przyrostowej.",
+    "keywords": "Find the Needle, poradnik Find the Needle, wiki Find the Needle, demo Find the Needle, automatyzacja"
+  },
+  "navigation": {
+    "home": "Strona główna",
+    "guides": "Poradniki",
+    "faq": "Częste pytania",
+    "requirements": "Wymagania PC",
+    "troubleshooting": "Rozwiązywanie problemów",
+    "about": "O stronie",
+    "contact": "Kontakt",
+    "privacy": "Polityka prywatności",
+    "terms": "Warunki korzystania",
+    "language": "Język",
+    "primary": "Nawigacja główna",
+    "demo": "Demo"
+  },
+  "footer": {
+    "guides": "Poradniki",
+    "resources": "Gra i pomoc",
+    "site": "O tej stronie",
+    "disclaimer": "Niezależny poradnik fanowski Find the Needle. Niepowiązany z Hay Passionates. Nazwy gry, grafiki i znaki towarowe należą do odpowiednich właścicieli."
+  },
+  "category": {
+    "title": "Poradniki do gry",
+    "description": "Poznaj cykl szukania, zaplanuj ulepszenia i sprawdź zawartość dema Steam."
+  },
+  "languagePrompt": {
+    "title": "Czytać w języku {language}?",
+    "description": "Możesz czytać poradnik w preferowanym języku. Wybór zostanie zapisany na kolejne wizyty.",
+    "close": "Zamknij sugestię języka",
+    "dismiss": "Zachowaj obecny język"
+  },
+  "ui": {
+    "readGuide": "Czytaj poradnik",
+    "allGuides": "Wszystkie poradniki",
+    "onThisPage": "Na tej stronie",
+    "overview": "Przegląd",
+    "relatedGuides": "Powiązane poradniki",
+    "updated": "Aktualizacja",
+    "published": "Publikacja",
+    "openMenu": "Otwórz menu",
+    "closeMenu": "Zamknij menu",
+    "siteNavigation": "Nawigacja strony",
+    "wikiNavigation": "Nawigacja poradników",
+    "viewOnSteam": "Zobacz na Steam",
+    "demoAvailable": "Darmowe demo dostępne",
+    "comingQ4": "Pełna gra planowana na IV kwartał 2026",
+    "guideCount": "{count} poradników",
+    "backHome": "Wróć na stronę główną",
+    "notFound": "Nie znaleziono strony",
+    "gameplayImageAlt": "Przenośnik przewożący siano do punktu sprzedaży w Find The Needle",
+    "aboutGame": "O grze",
+    "atAGlance": "W skrócie"
+  }
+}

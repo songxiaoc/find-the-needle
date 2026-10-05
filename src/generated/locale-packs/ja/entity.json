@@ -1,0 +1,57 @@
+{
+  "kinds": {
+    "machines": {
+      "label": "機械と物流",
+      "singularLabel": "機械",
+      "description": "コンベヤーの接続、電力、スキャン経路、干し草を運び続ける設備を確認しましょう。"
+    },
+    "tools": {
+      "label": "手作業の道具",
+      "singularLabel": "道具",
+      "description": "工場を拡張する前の手作業による干し草の移動と針の検出。"
+    },
+    "products": {
+      "label": "干し草製品",
+      "singularLabel": "製品",
+      "description": "干し草の塊、隠れた針、製品版で説明されている製品群を理解しましょう。"
+    }
+  },
+  "fields": {
+    "role": "役割",
+    "scope": "利用可能な情報",
+    "function": "機能",
+    "operation": "使い方",
+    "check": "確認事項",
+    "community": "コミュニティの助言",
+    "limits": "購入前に",
+    "pulp": "干し草パルプ",
+    "bales": "圧縮ベール",
+    "bricks": "エコレンガ",
+    "paper": "干し草紙",
+    "pellets": "ペレット"
+  },
+  "use": "用途と操作",
+  "checks": "確認と判断",
+  "productTypes": "製品群",
+  "search": "検索",
+  "searchPlaceholder": "名前、用途、問題…",
+  "all": "すべて",
+  "sort": "並べ替え",
+  "ascending": "名前 A–Z",
+  "descending": "名前 Z–A",
+  "updated": "最近更新",
+  "resultCount": "{total} 件中 {shown} 件",
+  "clear": "検索と絞り込みを解除",
+  "view": "詳細を見る",
+  "fullImage": "原寸画像を見る",
+  "noMatches": "一致する項目がありません",
+  "empty": "検索語を短くするか、絞り込みを外してください。",
+  "reset": "検索をリセット",
+  "version": "情報と出典",
+  "scope": "情報の根拠",
+  "checked": "確認日",
+  "related": "関連する設備と製品",
+  "guides": "ガイドを読み進める",
+  "back": "戻る",
+  "sources": "出典"
+}

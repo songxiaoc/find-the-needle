@@ -1,0 +1,49 @@
+---
+title: "Propojte dopravníky, napájení a stanoviště prodeje sena"
+description: "Použijte přichytávání u prodeje a režim No Snap, ověřte zastavenou elektrickou síť a najděte úzká místa před rozšířením linky na seno."
+date: '2026-09-27'
+lastModified: '2026-10-05'
+image: '/images/find-the-needle/screenshot-1.webp'
+---
+
+Pro první funkční trasu propojte přísun sena s cílem, ověřte napájení tam, kde je potřeba, a před přidáním další větve pošlete linkou materiál. **Demo V8 přidalo přichytávání u <EntityLink kind="machines" id="hay-sell-stand">stanoviště prodeje sena</EntityLink>, klávesu F pro režim No Snap a interakci E u elektrických sloupů pro vypnutí sítě.** Tyto podrobnosti pomáhají, když linka vypadá propojená, ale neběží.
+
+## Nejprve připojte konec u prodeje
+
+![Dopravník vede od hromady sena ke stanovišti označenému SELL HAY.](/images/find-the-needle/screenshot-1.webp)
+
+Cílem na tomto oficiálním snímku je stanoviště **SELL HAY**. Aktualizace V8 zde přidala přichytávání pásů a přepracovala umisťování dopravníků pomocí automatického hledání trasy.
+
+1. Najděte prodejní místo a ponechte prostor pro přístup.
+2. Umístěte poslední úsek pásu pomocí přichytávací přípojky stanoviště.
+3. Pokračujte proti směru toku k přísunu nebo výstupu stroje, který chcete přepravovat.
+4. Přiveďte malou dávku a sledujte ji až k prodeji. Ověřte změnu ukazatele peněz.
+
+Pokud se umístění stále přichytává tam, kde nechcete, podle poznámek V8 **klávesa F zapíná režim No Snap**. Při změně chování umisťování používejte ukazatel režimu a pokyny ve hře. Volné umisťování usnadňuje kontrolu rozložení; nedokazuje skutečné propojení dvou konců, proto následně otestujte tok materiálu.
+
+## Když se napájené stroje zastaví současně
+
+Před výměnou strojů zkontrolujte společný přívod elektřiny. V8 umožňuje **vypnout celou elektrickou síť stisknutím E u elektrického sloupu**. Jestliže se několik strojů zastavilo po interakci se sloupem, nejprve ověřte stav sítě a obnovte ji podle aktuálního pokynu u sloupu.
+
+Stejná aktualizace přidala vizuální upozornění, když napájení klesne pod potřebnou úroveň. Pás přivážející seno ke stroji nedokazuje, že stroj dostává dost elektřiny. Před změnou materiálové trasy čtěte ukazatel napájení.
+
+## Najděte první místo, kde se seno zastavuje
+
+| Co pozorujete | Co zkontrolovat dál |
+| --- | --- |
+| Vstupní pás je prázdný | Sledujte trasu zpět ke sběrači nebo předchozímu stroji. |
+| Seno přichází, ale další stroj zůstává nečinný | Ověřte elektřinu, požadovaný vstup a výstupní trasu stroje. |
+| Před skenerem se tvoří fronta | Sledujte, zda skener zpracovává materiál pomaleji, než přichází. |
+| Materiál dorazí na křižovatku, ale nedojde k cíli | Sledujte každou výstupní větev zvlášť, včetně cest k prodeji. |
+
+Tyto kontroly pomáhají určit závadu; nezaručují stejnou příčinu u každého zastaveného stroje. U **<EntityLink kind="machines" id="pellet-disc-machine">stroje na peletové kotouče</EntityLink>** přidalo V8 ukazatele zdrojů **BRICKS / HAY**. Čtěte je, místo abyste předpokládali, že vizuálně plný pás dodává vše potřebné.
+
+## Rozšiřujte bez obcházení kontroly jehel
+
+V8 přidalo **<EntityLink kind="machines" id="u-splitter">rozdělovače U</EntityLink>** a **<EntityLink kind="machines" id="u-joiner">spojovače U</EntityLink>**. Hráči diskutující o ucpání skenerů také navrhli rozdělení do samostatných skenovacích větví a spojení výstupu až za nimi. Jde o komunitní návrh rozložení, nikoli záruku změřené průchodnosti. Před kopírováním po celé továrně otestujte každou větev.
+
+Pokud chcete kontrolovat všechny produkty na jehly, sledujte **každou** cestu k prodeji přes své skenery. Úhledná hlavní linka nepomůže, pokud ji jiná větev obchází. V návodu [jehly a skenery](/guides/guide/needles-and-scanners) najdete vysvětlení vývojáře o jehlách uvnitř výrobků ze sena.
+
+Než přestavíte zastavenou trasu, projděte [kontrolu linky](/tools/line-check) a postupně ověřte přísun, napájení, výstup a pokrytí skenery.
+
+Zdroje: [oficiální poznámky Demo V8, 11. září 2026 UTC](https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126), [komunitní diskuze o skenerech](https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/). Pokud se ovládání liší, řiďte se pokyny své aktuální verze.

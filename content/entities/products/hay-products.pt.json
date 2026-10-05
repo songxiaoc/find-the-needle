@@ -1,0 +1,54 @@
+{
+  "id": "hay-products",
+  "name": "Produtos de Feno Processado",
+  "summary": "A loja do jogo completo descreve polpa de feno, fardos comprimidos, tijolos ecológicos, papel de feno e pellets. Use o resumo para reconhecer as famílias de produtos; não é uma lista de tudo desbloqueado na Demo.",
+  "updatedAt": "2026-10-05",
+  "version": "Descrição da loja do jogo completo, verificada em 5 de outubro de 2026",
+  "data": {
+    "role": "Produtos processados",
+    "scope": "Descrição da loja do jogo completo",
+    "pulp": "Um produto de feno processado citado pela loja. Leia a receita e os equipamentos exigidos no jogo atual antes de reservar uma linha para ele.",
+    "bales": "Feno comprimido aparece entre as famílias de produtos, e a loja cita enfardadeiras. Não confunda um fardo comprimido com a porção de feno do Silo ao conferir agulhas armazenadas.",
+    "bricks": "Tijolos ecológicos são citados na loja. Separadamente, a Demo V8 adicionou o rótulo BRICKS à Pellet Disc Machine; esse rótulo sozinho não fornece a receita completa.",
+    "paper": "Papel de feno e máquinas de papel aparecem na descrição do jogo completo. Confira se o maquinário está disponível na sua versão antes de planejar produção de papel.",
+    "pellets": "Pellets são uma família listada. A Pellet Disc Machine também aparece nas notas oficiais da Demo, mas elas não confirmam todas as entradas, quantidades de saída nem valores de venda.",
+    "check": "O desenvolvedor explica que produtos de feno podem conter agulhas. Mantenha scanners na rota ao ampliar o processamento. Use receitas e preços do jogo para o orçamento; não há ranking universal de lucro confirmado aqui."
+  },
+  "sources": [
+    {
+      "label": "Loja oficial do Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Notas oficiais da Demo V8 · 11 de setembro de 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Resposta do desenvolvedor e relatos de jogadores · 13 de setembro de 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    },
+    {
+      "kind": "machines",
+      "id": "pellet-disc-machine"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ],
+  "image": "/images/find-the-needle/official-hay-bales.webp",
+  "imageAlt": "Dois fardos retangulares de feno presos por cintas viajam em esteiras ramificadas ao lado de máquinas verdes de processamento.",
+  "imageCaption": "Observe os fardos presos por cintas nas esteiras ramificadas. Quadro do vídeo oficial Hay products do Steam em 10,5 segundos.",
+  "imagePosition": "34% 66%",
+  "imageZoom": 1.2
+}

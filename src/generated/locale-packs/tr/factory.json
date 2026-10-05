@@ -1,0 +1,128 @@
+{
+  "home": "Ana sayfa",
+  "hub": "Fabrika araçları",
+  "intro": "Durmuş bir rotayı kontrol edin, ilk çalışan hattınızın kontrollerini kaydedin veya kendi ölçümlerinizle üretim planlarını karşılaştırın.",
+  "open": "Aracı aç",
+  "tools": {
+    "line-check": {
+      "title": "Üretim hattınızı kontrol edin",
+      "description": "Fabrikanızı sökmeden elektriği, malzeme akışını ve iğne tespitini kontrol etmek için gördüğünüz belirtiyi seçin."
+    },
+    "checklist": {
+      "title": "İlk üretim hattı kontrol listesi",
+      "description": "Bir malzeme rotasını toplamadan satışa kadar takip edin ve kontrollerinizi bu cihaza kaydedin."
+    },
+    "production-calculator": {
+      "title": "Üretim ve yatırım geri dönüş hesaplayıcısı",
+      "description": "Ölçülen akış, stok, satış fiyatı ve maliyetlerle iki hattı karşılaştırın."
+    }
+  },
+  "diagnosis": {
+    "prompt": "Ne oluyor?",
+    "steps": "Bu sırayla kontrol edin",
+    "links": "Daha yakından bakın",
+    "sources": "Tartışma ve güncelleme kaynakları",
+    "symptoms": [
+      {
+        "title": "Bir makine çalışmıyor",
+        "note": "Makinenin gösterdiği bilgilerle başlayın. Bunlar bağlantı kontrolleridir; bir oyun hatasını kesin olarak düzeltmez.",
+        "steps": [
+          "Giriş etiketini okuyun ve gelen malzemenin kabul edildiğini kontrol edin.",
+          "Özellikle elektrik gerektiren birkaç makine birlikte durmuşsa güç bağlantısını kontrol edin.",
+          "Çıkışı onu kabul eden bir hedefe kadar takip edin. Bir şeyi değiştirmeden önce bir öğenin rotayı tamamlamasını izleyin."
+        ]
+      },
+      {
+        "title": "Saman veya ürünler birikiyor",
+        "note": "Oyuncular paralel tarama yollarını önermiştir. İkinci yolu yalnızca tarayıcı önünde kuyruk gözlemledikten sonra deneyin; doğrulanmış evrensel bir düzen değildir.",
+        "steps": [
+          "Malzemenin durduğu ilk noktayı bulun, ardından akış yönündeki sonraki bağlantıyı inceleyin.",
+          "Bant yönünü, kolların alma ve bırakma noktalarını ve hedefin girişini kontrol edin.",
+          "Gözlenen darboğaz tarayıcıysa her satış rotasını taramadan geçirerek paralel bir yolu karşılaştırın. Her seferinde yalnızca bir bağlantıyı değiştirin."
+        ]
+      },
+      {
+        "title": "Tarayıcıya rağmen bir iğne satıldı",
+        "note": "Geliştirici, ürünlerin içinde satılan iğnelerin saman yığınına döndüğünü söylüyor. Oyuncular yoğun hatlarda kolların yan rotalara yöneldiğini de bildiriyor.",
+        "steps": [
+          "Silo ve diğer işleme makinelerinden çıkan ürünleri Hay Sell Stand'e kadar takip edin.",
+          "Her robot kolunu ve erişebildiği yakındaki bantları gözlemleyin.",
+          "Ana tarayıcıdan sonra yeniden birleşen dallar da dahil her dalda tarayıcı olup olmadığını kontrol edin."
+        ]
+      },
+      {
+        "title": "Silo bir iğnenin beklediğini söylüyor",
+        "note": "Bir oyuncu başka bir saman yumağı oluşturacak kadar saman eklemeyi önerdi. Bu öneri geliştirici tarafından doğrulanmış bir çözüm değildir.",
+        "steps": [
+          "Bir değişikliği denemeden önce kayıt dosyanızı yedekleyin.",
+          "Silo durumunu okuyun ve çıkışını takip edin. Geliştiriciye göre bir iğne saman yumağının içine paketlenebilir.",
+          "Saman eklemeyi deniyorsanız yalnızca bu değişkeni değiştirin. Oyun iğnenin yok edileceği uyarısını verirse durun; Silo'yu sökmek kesin bir kurtarma yöntemi değildir."
+        ]
+      },
+      {
+        "title": "5/6 iğne var, hiç saman kalmadı",
+        "note": "Burada bağlantı verilen raporlar, 27 Eylül 2026'da kontrol edildiğinde geliştirici tarafından doğrulanmış genel bir çözüm içermiyordu.",
+        "steps": [
+          "Kaydınızı koruyup yedekleyin; bir tahmini denemek için ilerlemenizi silmeyin.",
+          "İğne sayısını, kalan samanı, Silo durumunu ve tarayıcılardan geçen rotayı kaydedin.",
+          "Bağlantı verilen raporu inceleyin veya bu ayrıntıları ilgili bir Steam tartışmasında paylaşın. Normal yığına dönüş mekanizması her kayıp iğne hatasının kendiliğinden düzeleceğini kanıtlamaz."
+        ]
+      }
+    ]
+  },
+  "checklist": {
+    "note": "Kontroller bu cihazdaki bu tarayıcıya kaydedilir. Oyun kaydınızı okumaz veya değiştirmezler.",
+    "progress": "Tamamlanan",
+    "reset": "Kontrolleri sıfırla",
+    "loading": "Kaydedilen kontroller yükleniyor…",
+    "error": "Bu tarayıcı kontrollerinizi kaydedemedi veya okuyamadı. Listeyi bu ziyaret boyunca kullanabilirsiniz.",
+    "guide": "Bağlantı rehberini okuyun",
+    "items": [
+      "Rotanıza giren malzemeyi belirleyin.",
+      "Toplama veya depolama çıkışını kontrol edin.",
+      "Her bant yönünü ve robot kolunun teslim noktasını kontrol edin.",
+      "Makinenin gerektirdiği yerlere elektrik bağlayın.",
+      "Her giriş etiketini gelen malzemeyle eşleştirin.",
+      "Her satış dalının bir tarayıcıdan geçtiğinden emin olun.",
+      "Satış hedefinin çıkış ürününü kabul ettiğini kontrol edin.",
+      "Bir ürünün bütün rotayı tamamlamasını izleyin, ardından iğne sayacını kontrol edin."
+    ]
+  },
+  "calculator": {
+    "note": "Kendi gözlemlediğiniz değerleri girin. Hızlar dakikada birim olarak belirtilir; tüm parasal değerler aynı oyun içi para birimini kullanır. Oyun fiyatları veya makine hızları önceden doldurulmaz.",
+    "assumption": "Aynı malzemeyi aynı birimle karşılaştırın. İşleme birimleri değiştiriyorsa önce tüm hızları ve stoku eşdeğer son ürün birimlerine çevirin. Tahmin, sabit akış, yeterli elektrik, kayıp olmaması ve stok bitince işletme maliyetlerinin durması varsayımlarına dayanır.",
+    "plan": "Plan",
+    "optional": "isteğe bağlı",
+    "stage": "Aşama",
+    "rate": "Akış (birim/dk)",
+    "add": "Aşama ekle",
+    "remove": "Aşamayı kaldır",
+    "stock": "Mevcut stok (birim)",
+    "price": "Satış fiyatı (para/birim)",
+    "investment": "İlk yatırım (para)",
+    "operating": "İşletme maliyeti (para/dk)",
+    "calculate": "Hesapla / karşılaştır",
+    "invalid": "Her alanı 0 veya daha büyük sonlu bir sayıyla doldurun. Ondalık sayılarda nokta kullanın.",
+    "overflow": "Bu değerler güvenilir hesaplama için fazla büyük. Daha küçük değerler kullanın.",
+    "capacity": "Hat kapasitesi",
+    "bottleneck": "En yavaş aşama",
+    "duration": "Stoku işleme süresi",
+    "revenue": "Stok geliri",
+    "profit": "İşletme maliyetleri ve yatırım sonrası stok kârı",
+    "margin": "Çalışma sırasında net gelir",
+    "payback": "Yatırımı geri kazanma süresi",
+    "stopped": "Akış yok: en az bir aşamanın akışı sıfır.",
+    "never": "Bu işletme marjıyla yatırım geri kazanılamaz.",
+    "insufficient": "Mevcut stok, yatırım geri kazanılmadan biter.",
+    "empty": "İşlenecek stok yok.",
+    "minutes": "dk",
+    "units": "birim/dk",
+    "currency": "para",
+    "formulas": "Nasıl hesaplanır?",
+    "formulaText": "Kapasite = en düşük aşama hızı. Süre = stok ÷ kapasite. Net gelir/dk = kapasite × fiyat − işletme maliyeti. Stok kârı = stok × fiyat − süre × işletme maliyeti − yatırım. Geri dönüş = yatırım ÷ net gelir/dk; yalnızca yeterli stok kaldığı sürece.",
+    "comparison": "Sonuçlar",
+    "better": "Daha yüksek stok kârı:",
+    "equal": "İki planın stok kârı aynı.",
+    "resultHint": "Sonuçlar sınırsız üretimi değil, bu stok partisini açıklar. Farklı stok miktarları hangi planın daha çok kazandırdığını değiştirebilir."
+  }
+}

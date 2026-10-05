@@ -1,0 +1,30 @@
+{
+  "database": "Databáze",
+  "databaseTitle": "Stroje, nástroje a výrobky ze sena",
+  "databaseIntro": "Najděte vybavení podle účelu, zkontrolujte jeho připojení a sledujte seno do další fáze.",
+  "records": "záznamů",
+  "browse": "Procházet",
+  "relatedRecords": "Vybavení a výrobky v tomto průvodci",
+  "tools": "Tovární nástroje",
+  "toolsTitle": "Rozběhněte výrobní linku",
+  "toolsIntro": "Sledujte zastavenou linku, zaznamenávejte kontroly a porovnávejte výrobu pomocí vlastních měření.",
+  "interactive": "Interaktivní",
+  "notFound": "Záznam nenalezen",
+  "toolCards": [
+    [
+      "Najděte příčinu problému v továrně",
+      "Vyberte pozorovaný příznak a projděte další bezpečné kontroly.",
+      "KONTROLA LINKY"
+    ],
+    [
+      "Uložte kontrolní seznam sestavení",
+      "Při stavbě kontrolujte připojení, napájení a skenovací trasy.",
+      "KONTROLNÍ SEZNAM"
+    ],
+    [
+      "Porovnejte výrobní linky",
+      "Najděte úzká hrdla a odhadněte návratnost podle pozorovaných rychlostí.",
+      "KALKULAČKA"
+    ]
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "pellet-disc-machine",
+  "name": "Pellet Disc Machine",
+  "summary": "Demo V8, Pellet Disc Machine'e BRICKS ve HAY gibi kaynak göstergeleri ekledi. Duran işleme hattını kontrol ederken bu etiketleri okuyun.",
+  "updatedAt": "2026-10-05",
+  "version": "Demo V8 duyurusu (11 Eylül 2026); kurulu sürümünüzün komutlarını izleyin",
+  "data": {
+    "role": "İşleme",
+    "scope": "Demo notları / tartışma",
+    "operation": "Makinenin kaynak etiketlerini her bağlantıya gelen malzemeyle eşleştirin. Düzeni değiştirmeden önce elektriği ve gelen malzemenin hareketini kontrol edin.",
+    "limits": "Güncelleme göstergeleri adlandırır, tam tarif vermez. Miktar, çıktı ve hız için makinenizin güncel oyun içi gereksinimlerini kullanın."
+  },
+  "sources": [
+    {
+      "label": "Resmî Demo V8 notları · 11 Eylül 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Resmî Steam görseli",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "power-pole"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "products",
+      "id": "hay-products"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"],
+  "image": "/images/find-the-needle/official-automation.webp",
+  "imageAlt": "Ortada Small Arm Plans, sağ üst yakınında Pellet Discs Plans bulunan araştırma ekranı.",
+  "imageCaption": "Araştırma menüsünde sağ üst yakınında Pellet Discs Plans'ı arayın. Resmî Steam görseli.",
+  "imagePosition": "94% 26%",
+  "imageZoom": 3
+}

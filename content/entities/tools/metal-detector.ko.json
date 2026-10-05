@@ -1,0 +1,46 @@
+{
+  "id": "metal-detector",
+  "name": "금속 탐지기(Metal Detector)",
+  "summary": "공식 상점은 금속 탐지기로 직접 바늘을 찾는 것으로 시작하고 이후 벨트, 스캐너, 로봇 팔이 더 많은 작업을 맡는다고 설명합니다.",
+  "updatedAt": "2026-10-05",
+  "version": "정식 게임 상점 설명, 2026년 10월 5일 확인",
+  "data": {
+    "role": "바늘 감지",
+    "scope": "정식 게임 상점 설명",
+    "operation": "수동으로 찾을 때는 탐지기의 현재 반응을 사용하세요. 살핀 곳을 기록하고 고정 좌표 목록으로 게임의 신호를 대신하지 마세요.",
+    "check": "생산 과정에서 건초가 이미 제품으로 포장되었다면 저장 장비와 스캐너 경로도 살피세요. 개발자는 바늘이 흩어진 건초뿐 아니라 건초 제품 안에도 남을 수 있다고 설명합니다."
+  },
+  "sources": [
+    {
+      "label": "Steam 공식 상점",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "개발자 답변과 플레이어 보고 · 2026년 9월 13일",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "silo"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/getting-started",
+    "/guides/guide/needles-and-scanners"
+  ],
+  "image": "/images/find-the-needle/official-research.webp",
+  "imageAlt": "Scanner Mk I Plans 아래에 Metal Detector 항목이 있는 연구 트리.",
+  "imageCaption": "Metal Detector 연구 항목은 Scanner Mk I Plans 아래에 있습니다. Steam 공식 이미지.",
+  "imagePosition": "40% 37%",
+  "imageZoom": 3
+}

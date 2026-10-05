@@ -1,0 +1,54 @@
+{
+  "id": "hay-products",
+  "name": "Przetworzone produkty z siana",
+  "summary": "Sklep pełnej gry opisuje masę z siana, sprasowane bele, ekologiczne cegły, papier z siana i pellet. Przegląd pomaga rozpoznać rodziny produktów; nie jest listą wszystkiego odblokowanego w demie.",
+  "updatedAt": "2026-10-05",
+  "version": "Opis sklepu pełnej gry, sprawdzony 5 października 2026",
+  "data": {
+    "role": "Produkty przetworzone",
+    "scope": "Opis sklepu pełnej gry",
+    "pulp": "Przetworzony produkt z siana wymieniony w sklepie. Sprawdź przepis i wymagany sprzęt w bieżącej grze przed przeznaczeniem dla niego linii produkcyjnej.",
+    "bales": "Sprasowane siano należy do wymienionych rodzin produktów, a sklep wspomina prasy. Przy sprawdzaniu przechowywanych igieł nie utożsamiaj sprasowanej beli ze zwitkiem z silosu.",
+    "bricks": "Sklep wymienia ekologiczne cegły. Osobno Demo V8 dodało etykietę BRICKS do Pellet Disc Machine; sama etykieta nie podaje pełnego przepisu.",
+    "paper": "Papier z siana i maszyny papiernicze występują w opisie pełnej gry. Przed zaplanowaniem produkcji papieru sprawdź, czy odpowiednie maszyny są dostępne w Twojej wersji.",
+    "pellets": "Pellet to wymieniona rodzina produktów. Pellet Disc Machine pojawia się też w oficjalnych informacjach dema, ale nie potwierdzają one wszystkich surowców, ilości produktów ani wartości sprzedaży.",
+    "check": "Twórca wyjaśnia, że produkty z siana mogą zawierać igły. Zachowaj skanowanie na trasie przy rozbudowie przetwarzania. Budżet opieraj na przepisach i cenach w grze; nie mamy potwierdzonego uniwersalnego rankingu zyskowności."
+  },
+  "sources": [
+    {
+      "label": "Oficjalny sklep Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Oficjalne informacje Demo V8 · 11 września 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Odpowiedź twórcy i zgłoszenia graczy · 13 września 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    },
+    {
+      "kind": "machines",
+      "id": "pellet-disc-machine"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ],
+  "image": "/images/find-the-needle/official-hay-bales.webp",
+  "imageAlt": "Dwie prostokątne bele siana spięte pasami jadą rozgałęzionymi taśmami obok zielonych maszyn przetwarzających.",
+  "imageCaption": "Zwróć uwagę na spięte bele jadące po rozgałęzieniach. Kadr oficjalnego filmu Steam o produktach z siana z 10,5 sekundy.",
+  "imagePosition": "34% 66%",
+  "imageZoom": 1.2
+}

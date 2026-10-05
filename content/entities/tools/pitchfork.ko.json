@@ -1,0 +1,38 @@
+{
+  "id": "pitchfork",
+  "name": "쇠스랑(Pitchfork)",
+  "summary": "쇠스랑은 공식 상점에 소개된 수동 건초 도구 중 하나입니다. 스크린샷은 건초 더미와 용기 옆에서 1인칭으로 사용하는 모습을 보여 줍니다.",
+  "updatedAt": "2026-10-05",
+  "version": "정식 게임 상점 설명, 2026년 10월 5일 확인",
+  "data": {
+    "role": "건초 운반",
+    "scope": "정식 게임 상점 설명",
+    "operation": "현재 운반 안내를 따라 건초를 모으고 옮기세요. 상점 스크린샷은 도구의 위치를 보여 줄 뿐 공통 적재량이나 동작 횟수를 정해 주지는 않습니다.",
+    "check": "현재 삽과 운송 수단을 기준으로 운반 수고를 비교하세요. 나르는 과정이 느리다면 다른 수동 도구로 해결된다고 가정하지 말고 다음 운송 업그레이드를 확인하세요."
+  },
+  "sources": [
+    {
+      "label": "Steam 공식 상점",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "tools",
+      "id": "shovel"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "tools",
+      "id": "metal-detector"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/getting-started"],
+  "image": "/images/find-the-needle/screenshot-3.webp",
+  "imageAlt": "건초 더미 앞에서 쇠스랑을 든 1인칭 화면.",
+  "imageCaption": "쇠스랑이 건초 더미에 바로 닿아 있습니다. 운반은 현재 상호작용 안내를 따르세요. 이 이미지는 바늘 위치를 보여 주지 않습니다. Steam 공식 스크린샷.",
+  "imagePosition": "50% 85%"
+}

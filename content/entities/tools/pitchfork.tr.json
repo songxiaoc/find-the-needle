@@ -1,0 +1,38 @@
+{
+  "id": "pitchfork",
+  "name": "Yaba",
+  "summary": "Yaba, resmî mağazanın adlandırdığı elle saman toplama araçlarından biridir. Görüntülerde yığın ve kap yanında birinci şahıs kullanımı gösterilir.",
+  "updatedAt": "2026-10-05",
+  "version": "Tam oyun mağaza açıklaması, 5 Ekim 2026'da kontrol edildi",
+  "data": {
+    "role": "Saman işleme ve taşıma",
+    "scope": "Tam oyun mağaza açıklaması",
+    "operation": "Saman toplamak ve taşımak için güncel komutları kullanın. Mağaza görüntüsü aracın konumunu gösterir; ortak yük boyutu veya işlem sayısı belirlemez.",
+    "check": "Kullanım çabasını mevcut kürek ve taşıma seçeneklerinizle karşılaştırın. Taşıma yavaşsa başka el aracının çözeceğini varsaymak yerine sonraki taşıma yükseltmesine bakın."
+  },
+  "sources": [
+    {
+      "label": "Resmî Steam mağazası",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "tools",
+      "id": "shovel"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "tools",
+      "id": "metal-detector"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/getting-started"],
+  "image": "/images/find-the-needle/screenshot-3.webp",
+  "imageAlt": "Saman yığınının önünde birinci şahıs bakışıyla tutulan yaba.",
+  "imageCaption": "Yaba doğrudan saman yığınına dayanıyor. Kullanım için güncel etkileşim komutlarınızı izleyin; bu görsel iğne konumu göstermez. Resmî Steam görüntüsü.",
+  "imagePosition": "50% 85%"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "u-joiner",
+  "name": "Łącznik U",
+  "summary": "U-Joiner to kolejny typ prowadzenia taśm dodany w Demo V8. Łącząc osobne linie, upewnij się, że każda przychodząca trasa przeszła już przez skaner.",
+  "updatedAt": "2026-10-05",
+  "version": "Ogłoszenie Demo V8 (11 września 2026); kieruj się podpowiedziami z zainstalowanej wersji",
+  "data": {
+    "role": "Prowadzenie taśm",
+    "scope": "Informacje o demie / dyskusja",
+    "operation": "Prześledź oba wejścia i wspólne wyjście. Przetestuj mały przepływ na każdej odnodze, aby niezauważone obejście nie kierowało nieskanowanych produktów do sprzedaży.",
+    "community": "Układ rozdziel–skanuj–połącz to pomysł społeczności na diagnostykę, nie gwarantowana poprawa przepustowości. Jeśli wspólne wyjście się blokuje, sprawdź jego cel przed dodaniem wejść."
+  },
+  "sources": [
+    {
+      "label": "Oficjalne informacje Demo V8 · 11 września 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Dyskusja społeczności o skanerach · 16 września 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"]
+}

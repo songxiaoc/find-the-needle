@@ -1,0 +1,38 @@
+{
+  "id": "u-joiner",
+  "name": "U형 합류기(U-Joiner)",
+  "summary": "U-Joiner는 데모 V8에 추가된 또 다른 벨트 경로 부품입니다. 별도 라인을 합칠 때는 각 유입 경로가 이미 스캔을 통과했는지 확인하세요.",
+  "updatedAt": "2026-10-05",
+  "version": "데모 V8 공지(2026년 9월 11일). 설치된 버전의 안내를 따르세요",
+  "data": {
+    "role": "벨트 경로",
+    "scope": "데모 업데이트 정보 / 토론",
+    "operation": "두 입력과 공통 출력을 따라가세요. 눈치채지 못한 우회 경로가 미스캔 제품을 판매 경로로 보내지 않도록 각 분기를 적은 흐름으로 시험하세요.",
+    "community": "커뮤니티의 분기–스캔–합류 배치는 문제 해결을 위한 아이디어이며 생산 능력 향상을 보장하지 않습니다. 공통 출력이 밀리면 입력을 더 추가하기 전에 목적지를 점검하세요."
+  },
+  "sources": [
+    {
+      "label": "공식 데모 V8 업데이트 정보 · 2026년 9월 11일",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "커뮤니티 스캐너 토론 · 2026년 9월 16일",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "silo",
+  "name": "Silos",
+  "summary": "Silos pakuje siano w zwitki. Twórca wyjaśnia, że igły mogą pozostać wewnątrz, dlatego przed sprzedażą prześledź wyjście do skanera.",
+  "updatedAt": "2026-10-05",
+  "version": "Wyjaśnienie twórcy (13 września 2026)",
+  "data": {
+    "role": "Przechowywanie i pakowanie",
+    "scope": "Informacje o demie / dyskusja",
+    "operation": "Sprawdź komunikaty o przechowywanym sianie i igłach, a następnie obserwuj taśmę wyjściową silosu. Igła nadal wykazana wewnątrz nie jest tym samym co igła już przeskanowana.",
+    "community": "Gracz sugeruje dodanie wystarczającej ilości luźnego siana do ukończenia kolejnego ładunku, gdy igła czeka wewnątrz. To sugestia społeczności, bez potwierdzonej uniwersalnej wielkości partii ani gwarantowanej naprawy.",
+    "check": "Nie demontuj silosu, aby odzyskać igłę: gracz zgłosił ostrzeżenie o zniszczeniu. Zachowaj zapis i najpierw sprawdź dopływ, wyjście oraz skanowanie."
+  },
+  "sources": [
+    {
+      "label": "Odpowiedź twórcy i zgłoszenia graczy · 13 września 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "robotic-arm",
+  "name": "Robotické rameno",
+  "summary": "Robotická ramena patří k automatizaci hry. Při zkoumání prodaných jehel ověřte všechny pásy v dosahu: hráči hlásí, že ramena odkládají materiál na blízké alternativní trasy.",
+  "updatedAt": "2026-10-05",
+  "version": "Komunitní hlášení (září 2026) a oficiální popis obchodu",
+  "data": {
+    "role": "Přeprava",
+    "scope": "Poznámky k demu / diskuze",
+    "community": "Pozorujte rameno, když je běžný cíl ucpaný. Zářijová diskuze naznačuje, že materiál může dostat jiný pás v dosahu; jde o radu hráčů, ne potvrzené vysvětlení každé ztracené jehly.",
+    "check": "Sledujte každý možný přijímací pás přes skener před prodejem. Před nákupem dalších ramen otestujte trasu s malým tokem."
+  },
+  "sources": [
+    {
+      "label": "Oficiální obchod Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Komunitní diskuze o trasování · 21. září 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ],
+  "image": "/images/find-the-needle/screenshot-2.webp",
+  "imageAlt": "Oranžová robotická ramena obklopují hromadu sena vedle několika dopravníkových tras.",
+  "imageCaption": "Všimněte si blízkosti ramen k několika pásům. Ve vlastním rozložení sledujte každý pás, na který rameno dosáhne. Oficiální snímek Steam.",
+  "imagePosition": "56% 45%",
+  "imageZoom": 1.8
+}

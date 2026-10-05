@@ -1,0 +1,41 @@
+{
+  "id": "hay-wad",
+  "name": "Saman Yumağı",
+  "summary": "Saman yumağı Silo'nun paketlediği samandır. Geliştirici iğne içerebileceğini doğruluyor; paketli ürün taramadan otomatik olarak güvenle satılamaz.",
+  "updatedAt": "2026-10-05",
+  "version": "Geliştirici açıklaması (13 Eylül 2026)",
+  "data": {
+    "role": "Paketlenmiş saman",
+    "scope": "Demo notları / tartışma",
+    "operation": "Yumağı Silo çıkışından her bant ve kol aktarımı boyunca izleyin. Son satış hattına katılmadan önce yolunun taramayı içerdiğini kontrol edin.",
+    "check": "Geliştirici, saman ürünü içinde satılan iğnenin yığına döndüğünü söylüyor. Silo hâlâ bekleyen iğne gösteriyorsa iğnenin geri döndüğünü varsaymak yerine çıkışı araştırın."
+  },
+  "sources": [
+    {
+      "label": "Geliştirici yanıtı ve oyuncu bildirimleri · 13 Eylül 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "silo"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "products",
+      "id": "hay-products"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

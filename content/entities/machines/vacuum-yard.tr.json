@@ -1,0 +1,34 @@
+{
+  "id": "vacuum-yard",
+  "name": "Vacuum Yard",
+  "summary": "Vacuum Yard, fiyatını %80 azaltan Demo V8 güncellemesinde adlandırılıyor. Bu tarihsel değişiklik bugünkü kesin satın alma maliyetini göstermez.",
+  "updatedAt": "2026-10-05",
+  "version": "Demo V8 duyurusu (11 Eylül 2026); kurulu sürümünüzün komutlarını izleyin",
+  "data": {
+    "role": "Saman işleme ve taşıma",
+    "scope": "Demo notları / tartışma",
+    "check": "Güncel alım komutunu çözmek istediğiniz sorunla karşılaştırın. Saman ileride zaten bekliyorsa başka toplama yükseltmesine para vermeden önce bant ve taramayı inceleyin.",
+    "limits": "Duyuru güncel kapasite, erişim, elektrik talebi veya açılım gereksinimi vermez. Alımı planlamadan önce bu ayrıntıları kurulu oyunda kontrol edin."
+  },
+  "sources": [
+    {
+      "label": "Resmî Demo V8 notları · 11 Eylül 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "tools",
+      "id": "shovel"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation", "/guides/guide/getting-started"]
+}

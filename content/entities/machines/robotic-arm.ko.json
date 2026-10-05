@@ -1,0 +1,46 @@
+{
+  "id": "robotic-arm",
+  "name": "로봇 팔(Robotic Arm)",
+  "summary": "로봇 팔은 게임 자동화의 일부입니다. 바늘이 판매된 원인을 조사할 때는 닿을 수 있는 모든 벨트를 살피세요. 팔이 가까운 다른 경로에 재료를 내려놓는다는 플레이어 보고가 있습니다.",
+  "updatedAt": "2026-10-05",
+  "version": "커뮤니티 보고(2026년 9월)와 공식 상점 설명",
+  "data": {
+    "role": "운송",
+    "scope": "데모 업데이트 정보 / 토론",
+    "community": "평소 목적지가 막혔을 때 팔을 관찰하세요. 9월 토론에서는 닿을 수 있는 다른 벨트가 재료를 받을 수 있다고 제안합니다. 플레이어의 조언이며 모든 바늘 실종을 설명하는 확인된 원인은 아닙니다.",
+    "check": "받는 경로가 될 수 있는 모든 벨트가 판매대 전에 스캐너를 통과하는지 확인하세요. 팔을 더 사기 전에 적은 흐름으로 경로를 시험하세요."
+  },
+  "sources": [
+    {
+      "label": "Steam 공식 상점",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "커뮤니티 경로 토론 · 2026년 9월 21일",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ],
+  "image": "/images/find-the-needle/screenshot-2.webp",
+  "imageAlt": "여러 컨베이어 경로 옆에서 주황색 로봇 팔들이 건초 더미를 둘러싸고 있습니다.",
+  "imageCaption": "팔과 여러 벨트가 얼마나 가까운지 보세요. 자신의 배치를 확인할 때는 팔이 닿는 각 벨트를 따라가세요. Steam 공식 스크린샷.",
+  "imagePosition": "56% 45%",
+  "imageZoom": 1.8
+}

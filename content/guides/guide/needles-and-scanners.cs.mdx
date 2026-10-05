@@ -1,0 +1,46 @@
+---
+title: "Jehly, skenery a chybějící poslední jehla"
+description: "Pochopte jehly uvnitř výrobků ze sena, ověřte trasy obcházející skenery a řešte stav 5/6 bez mazání uložené hry."
+date: '2026-09-27'
+lastModified: '2026-10-05'
+image: '/images/find-the-needle/screenshot-2.webp'
+---
+
+**Jehla se může přepravovat uvnitř výrobku ze sena.** Vývojář vysvětluje, že <EntityLink kind="machines" id="silo">silo</EntityLink> balí jehly do smotků sena a jehly prodané s výrobky na <EntityLink kind="machines" id="hay-sell-stand">stanovišti prodeje sena</EntityLink> se vracejí do kupky. Odklizení viditelné hromady a úspěšné získání jejích jehel jsou proto různé věci.
+
+## Sledujte výrobky, nejen hromadu
+
+V odpovědi z 13. září FindTheNeedleDev uvádí, že silo běžně jehlu nezničí: může vyjít ve smotku nebo jiném výrobku ze sena. Pokud produkt jde přímo k prodeji, jehla se prodá a vrátí do hromady.
+
+Pokud si myslíte, že jehla prošla továrnou:
+
+1. Čtěte stav strojů skladujících či balících materiál, zejména sila.
+2. Sledujte výstup těchto strojů ke skeneru a prodeji.
+3. Ověřte každou větev včetně tras spojujících se až za skenerem.
+4. Sledujte několik produktů celou trasou a rozlište funkční spojení od pásu, který pouze vede poblíž.
+
+![Několik dopravníkových větví a robotických ramen obklopuje hromadu sena na oficiálním snímku továrny.](/images/find-the-needle/screenshot-2.webp)
+
+Přehled ukazuje, proč kontrola jediného pásu může část továrny vynechat. Jde o oficiální propagační rozložení, nikoli plán zaručené trasy jehly.
+
+## Silo uvádí čekající jehlu
+
+Ve stejné diskuzi hráč hlásil **44 Loose Straw, 1 Needle Waiting**, aniž by ze sila pokračoval výstup. Jiný hráč navrhl doplnit dost sena pro další smotek. Jde o komunitní návrh, nikoli opravu potvrzenou vývojářem, a zobrazené množství patří danému případu.
+
+Před experimentováním [zálohujte uloženou hru](/guides/guide/demo). Demontáž sila nepovažujte za zaručenou obnovu: jiná odpověď hlásila varování před zničením jehly při tomto kroku. Pokud hra varuje, že akce něco zničí, zastavte se.
+
+## Jehla se prodala i přes skener
+
+V diskuzi z 21. září hráči doporučili ověřit, zda ramena při ucpání hlavního pásu nemohou položit materiál na jiný pás v dosahu. Před přestavbou pozorujte vlastní ramena a blízké linky. Pokud produkt použije boční trasu, ověřte, zda také prochází skenerem.
+
+U fronty před skenerem popisuje [návod k automatizaci](/guides/guide/automation) komunitní návrh souběžných skenovacích větví. Nemáme zde ověřený univerzální počet strojů ani zaručenou rychlost zpracování.
+
+## Zasekli jste se na 5/6 a seno došlo?
+
+Hráči hlásili přesně tento stav. Při ověření **27. září 2026** odkazovaná hlášení neobsahovala obecnou opravu potvrzenou vývojářem. Běžný mechanismus návratu do hromady nedokazuje, že se každá chyba s chybějící jehlou vyřeší sama.
+
+Uloženou hru zachovejte. Zaznamenejte počet jehel, zbývající seno, stav sila a trasu přes skenery a přidejte tyto údaje do příslušné diskuze Steamu. Nemažte postup ani nedemontujte celou továrnu pouze kvůli vyzkoušení domněnky.
+
+Pomocí [kontroly linky](/tools/line-check) sledujte před změnou továrny trasu přes přísun, stroje a skenery.
+
+Zdroje: [vývojář o silu a oběhu jehel](https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/), [diskuze o obcházení skenerů](https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/), [hlášení 5/6 bez sena](https://steamcommunity.com/app/5160800/discussions/0/587312703065119554/).

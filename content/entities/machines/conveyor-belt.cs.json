@@ -1,0 +1,50 @@
+{
+  "id": "conveyor-belt",
+  "name": "Pásový dopravník",
+  "summary": "Pásy přepravují seno mezi zařízeními. Demo V8 přepracovalo přichytávání a přidalo automatické hledání trasy; klávesa F zapíná No Snap Mode pro volné umisťování.",
+  "updatedAt": "2026-10-05",
+  "version": "Oznámení Demo V8 (11. září 2026); řiďte se pokyny nainstalované verze",
+  "data": {
+    "role": "Přeprava",
+    "scope": "Poznámky k demu / diskuze",
+    "operation": "Nejprve propojte krátký úsek a sledujte, zda jím produkt projde, než trasu prodloužíte. Pás končící poblíž stroje sám nepotvrzuje funkční spojení.",
+    "check": "Postupujte zpět od prvního zastaveného produktu. Ověřte navazující cíl, každé spojení a případnou boční trasu obcházející skenování."
+  },
+  "sources": [
+    {
+      "label": "Oficiální poznámky Demo V8 · 11. září 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Komunitní diskuze o trasování · 21. září 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    },
+    {
+      "label": "Oficiální obrázek Steam",
+      "url": "https://store.steampowered.com/app/5165210/Find_The_Needle_Demo/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"],
+  "image": "/images/find-the-needle/official-demo-yard.webp",
+  "imageAlt": "Dopravník převáží malé chomáče sena z hromady ke stanovišti SELL HAY.",
+  "imageCaption": "Sledujte šikmý pás od levého zadního rohu k místu doručení u SELL HAY. Oficiální snímek dema na Steamu.",
+  "imagePosition": "35% 50%"
+}

@@ -1,0 +1,50 @@
+{
+  "id": "conveyor-belt",
+  "name": "Esteira Transportadora",
+  "summary": "Esteiras transportam feno entre equipamentos. A Demo V8 reformulou o encaixe e adicionou busca automática de caminho; F ativa No Snap Mode quando você precisa de colocação livre.",
+  "updatedAt": "2026-10-05",
+  "version": "Anúncio da Demo V8 (11 de setembro de 2026); siga as instruções da versão instalada",
+  "data": {
+    "role": "Transporte",
+    "scope": "Notas da Demo / discussão",
+    "operation": "Conecte uma seção curta e observe um produto atravessá-la antes de ampliar a linha. Terminar a esteira perto da máquina não demonstra que a conexão funciona.",
+    "check": "Volte a partir do primeiro produto parado. Confira o destino seguinte, cada junção e se uma rota lateral contorna o scanner."
+  },
+  "sources": [
+    {
+      "label": "Notas oficiais da Demo V8 · 11 de setembro de 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Discussão da comunidade sobre rotas · 21 de setembro de 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    },
+    {
+      "label": "Imagem oficial do Steam",
+      "url": "https://store.steampowered.com/app/5165210/Find_The_Needle_Demo/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"],
+  "image": "/images/find-the-needle/official-demo-yard.webp",
+  "imageAlt": "Uma esteira leva pequenos montes de feno da pilha até a barraca SELL HAY.",
+  "imageCaption": "Siga a esteira diagonal do fundo à esquerda até a entrega em SELL HAY. Captura oficial da Demo no Steam.",
+  "imagePosition": "35% 50%"
+}

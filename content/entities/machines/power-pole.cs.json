@@ -1,0 +1,39 @@
+{
+  "id": "power-pole",
+  "name": "Elektrický sloup",
+  "summary": "Demo V8 umožňuje klávesou E u elektrického sloupu vypnout celou síť. Pokud se zastaví několik strojů současně, ověřte, zda nedošlo k nechtěnému vypnutí.",
+  "updatedAt": "2026-10-05",
+  "version": "Oznámení Demo V8 (11. září 2026); řiďte se pokyny nainstalované verze",
+  "data": {
+    "role": "Napájení",
+    "scope": "Poznámky k demu / diskuze",
+    "check": "Čtěte upozornění elektrické sítě: V8 přidalo vizuální varování při poklesu napájení pod požadovaný práh. Před rozšířením výroby zkontrolujte stav sítě a připojené stroje.",
+    "limits": "Používejte spotřebu a výrobu zobrazenou v aktuální hře. Oznámení neuvádí příkon jednotlivých strojů, univerzální dosah vedení ani úplný rozpočet generátorů."
+  },
+  "sources": [
+    {
+      "label": "Oficiální poznámky Demo V8 · 11. září 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Oficiální obchod Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "pellet-disc-machine"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"],
+  "image": "/images/find-the-needle/screenshot-5.webp",
+  "imageAlt": "Strom Yard Research s Electricity, Power Pole a souvisejícími vylepšeními napájení.",
+  "imageCaption": "Power Pole je ve větvi POWER. Aktuální ceny a předpoklady ověřte ve vlastním stromu výzkumu; tento propagační snímek není seznam podmínek odemčení. Oficiální snímek Steam.",
+  "imagePosition": "55% 73%",
+  "imageZoom": 2
+}

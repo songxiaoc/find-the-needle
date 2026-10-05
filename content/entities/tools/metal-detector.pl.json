@@ -1,0 +1,46 @@
+{
+  "id": "metal-detector",
+  "name": "Wykrywacz metalu",
+  "summary": "Oficjalny sklep opisuje rozpoczęcie ręcznego szukania igieł wykrywaczem metalu, zanim taśmy, skanery i ramiona robotyczne przejmą więcej pracy.",
+  "updatedAt": "2026-10-05",
+  "version": "Opis sklepu pełnej gry, sprawdzony 5 października 2026",
+  "data": {
+    "role": "Wykrywanie igieł",
+    "scope": "Opis sklepu pełnej gry",
+    "operation": "Przy ręcznym szukaniu kieruj się aktualnymi wskazaniami wykrywacza. Pamiętaj, co zostało sprawdzone; nie zastępuj sygnałów gry stałą listą współrzędnych.",
+    "check": "Jeśli produkcja już zapakowała siano, sprawdź też magazynowanie i trasy skanerów. Twórca wyjaśnia, że igły mogą pozostać w produktach, nie tylko w luźnym sianie."
+  },
+  "sources": [
+    {
+      "label": "Oficjalny sklep Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Odpowiedź twórcy i zgłoszenia graczy · 13 września 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "silo"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/getting-started",
+    "/guides/guide/needles-and-scanners"
+  ],
+  "image": "/images/find-the-needle/official-research.webp",
+  "imageAlt": "Drzewo badań z Metal Detector poniżej Scanner Mk I Plans.",
+  "imageCaption": "Wpis badań Metal Detector znajduje się pod Scanner Mk I Plans. Oficjalna ilustracja Steam.",
+  "imagePosition": "40% 37%",
+  "imageZoom": 3
+}

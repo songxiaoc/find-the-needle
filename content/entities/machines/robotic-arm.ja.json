@@ -1,0 +1,46 @@
+{
+  "id": "robotic-arm",
+  "name": "ロボットアーム（Robotic Arm）",
+  "summary": "ロボットアームはゲームの自動化を担う設備です。針が売られた原因を調べる際は、届くすべてのベルトを確認してください。近くの別経路へ物料を置くというプレイヤーの報告があります。",
+  "updatedAt": "2026-10-05",
+  "version": "コミュニティの報告（2026 年 9 月）と公式ストアの説明",
+  "data": {
+    "role": "輸送",
+    "scope": "デモの更新情報 / 議論",
+    "community": "通常の行き先が詰まっている間のアームを観察してください。9 月の議論では、届く別のベルトが物料を受け取る可能性が示されています。これはプレイヤーの助言であり、すべての針消失を説明する確認済みの情報ではありません。",
+    "check": "受け取り先になり得る各ベルトが、販売台の前でスキャナーを通るように確認します。アームを買い足す前に、少量の流れで経路を試してください。"
+  },
+  "sources": [
+    {
+      "label": "Steam 公式ストア",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "コミュニティの経路に関する議論 · 2026 年 9 月 21 日",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ],
+  "image": "/images/find-the-needle/screenshot-2.webp",
+  "imageAlt": "複数のコンベヤー経路の横で、オレンジ色のロボットアームが干し草の山を囲んでいます。",
+  "imageCaption": "アームと複数のベルトとの距離に注目してください。自分の配置を確認する際は、アームが届く各ベルトをたどります。Steam 公式画像。",
+  "imagePosition": "56% 45%",
+  "imageZoom": 1.8
+}

@@ -1,0 +1,38 @@
+{
+  "id": "pitchfork",
+  "name": "Vidle",
+  "summary": "Vidle jsou jedním z ručních nástrojů na seno uvedených v oficiálním obchodě. Snímky ukazují použití z pohledu první osoby u hromady a nádoby.",
+  "updatedAt": "2026-10-05",
+  "version": "Popis obchodu plné hry, ověřen 5. října 2026",
+  "data": {
+    "role": "Manipulace se senem",
+    "scope": "Popis obchodu plné hry",
+    "operation": "Seno sbírejte a přesouvejte podle aktuálních pokynů. Snímek obchodu ukazuje polohu nástroje, ne univerzální velikost nákladu ani počet úkonů.",
+    "check": "Porovnejte námahu s aktuální lopatou a možnostmi přepravy. Pokud je pomalé přenášení, ověřte další vylepšení dopravy, místo abyste předpokládali, že problém vyřeší jiný ruční nástroj."
+  },
+  "sources": [
+    {
+      "label": "Oficiální obchod Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "tools",
+      "id": "shovel"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "tools",
+      "id": "metal-detector"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/getting-started"],
+  "image": "/images/find-the-needle/screenshot-3.webp",
+  "imageAlt": "Vidle držené z pohledu první osoby před hromadou sena.",
+  "imageCaption": "Vidle jsou přímo u hromady. Při manipulaci se řiďte aktuálními pokyny; obrázek neukazuje umístění jehly. Oficiální snímek Steam.",
+  "imagePosition": "50% 85%"
+}

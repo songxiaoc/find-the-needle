@@ -1,0 +1,54 @@
+{
+  "id": "needle-scanner",
+  "name": "바늘 스캐너(Needle Scanner)",
+  "summary": "스캐너는 자동 바늘 탐색 라인의 일부입니다. 바늘이 판매대에 도착했다면 주 벨트뿐 아니라 모든 건초 제품의 경로를 확인하세요.",
+  "updatedAt": "2026-10-05",
+  "version": "커뮤니티 보고(2026년 9월)와 공식 상점 설명",
+  "data": {
+    "role": "바늘 감지",
+    "scope": "데모 업데이트 정보 / 토론",
+    "check": "각 벨트와 로봇 팔이 닿는 모든 벨트를 따라가세요. 스캐너 뒤에서 판매 경로에 합류하는 분기를 찾으세요. 스캐너의 현재 게임 내 설정과 표시를 관찰하세요.",
+    "community": "플레이어들은 막힌 라인을 별도 스캐너로 나눈 뒤 다시 합치자고 제안합니다. 확장 전에 소규모로 시험하세요. 이 제안은 스캔 속도나 확실한 속도 향상을 입증하지 않습니다."
+  },
+  "sources": [
+    {
+      "label": "Steam 공식 상점",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "커뮤니티 경로 토론 · 2026년 9월 21일",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    },
+    {
+      "label": "커뮤니티 스캐너 토론 · 2026년 9월 16일",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "robotic-arm"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ],
+  "image": "/images/find-the-needle/official-research.webp",
+  "imageAlt": "Needle Cabinet, Scanner Mk I Plans, Metal Detector 항목이 보이는 연구 메뉴.",
+  "imageCaption": "연구 메뉴에서 Metal Detector 바로 위의 Scanner Mk I Plans를 찾으세요. Steam 공식 이미지.",
+  "imagePosition": "40% 31%",
+  "imageZoom": 3
+}

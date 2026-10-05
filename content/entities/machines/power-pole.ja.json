@@ -1,0 +1,39 @@
+{
+  "id": "power-pole",
+  "name": "電柱（Power Pole）",
+  "summary": "デモ V8 では電柱で E を押すと電力網全体を停止できます。複数の機械が同時に止まった場合は、誤って停止していないか確認してください。",
+  "updatedAt": "2026-10-05",
+  "version": "デモ V8 の告知（2026 年 9 月 11 日）。インストール済みのバージョンの表示に従ってください",
+  "data": {
+    "role": "電力",
+    "scope": "デモの更新情報 / 議論",
+    "check": "電力網の通知を読んでください。V8 では電力が必要な基準を下回った際の視覚的な警告が追加されました。生産を拡張する前に、電力網の状態と接続された機械を確認します。",
+    "limits": "現在のゲームに表示される需要と発電量を使ってください。告知には機械ごとの消費電力、共通の配線範囲、発電設備全体の予算は記載されていません。"
+  },
+  "sources": [
+    {
+      "label": "デモ V8 の公式更新情報 · 2026 年 9 月 11 日",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Steam 公式ストア",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "pellet-disc-machine"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"],
+  "image": "/images/find-the-needle/screenshot-5.webp",
+  "imageAlt": "Electricity、Power Pole、関連する電力アップグレードが表示された Yard Research の研究ツリー。",
+  "imageCaption": "Power Pole は POWER の分岐にあります。現在の費用と前提条件はインストール済みゲームの研究ツリーで確認してください。この宣伝画像は解除条件のチェックリストではありません。Steam 公式画像。",
+  "imagePosition": "55% 73%",
+  "imageZoom": 2
+}

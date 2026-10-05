@@ -1,0 +1,54 @@
+{
+  "id": "hay-products",
+  "name": "İşlenmiş Saman Ürünleri",
+  "summary": "Tam oyun mağazası saman hamuru, sıkıştırılmış balyalar, ekolojik tuğlalar, saman kâğıdı ve peletleri anlatır. Bu özeti ürün gruplarını tanımak için kullanın; Demo'da açılan her şeyin listesi değildir.",
+  "updatedAt": "2026-10-05",
+  "version": "Tam oyun mağaza açıklaması, 5 Ekim 2026'da kontrol edildi",
+  "data": {
+    "role": "İşlenmiş ürünler",
+    "scope": "Tam oyun mağaza açıklaması",
+    "pulp": "Mağazada adı verilen işlenmiş saman ürünü. Ürün için hat ayırmadan önce mevcut oyunda tarif ve gereken ekipmanı okuyun.",
+    "bales": "Sıkıştırılmış saman ürün grupları arasındadır ve mağaza balyalayıcıları belirtir. Depolanan iğneleri kontrol ederken sıkıştırılmış balyayı Silo'nun saman yumağıyla eş tutmayın.",
+    "bricks": "Mağaza ekolojik tuğlaları adlandırır. Ayrı olarak Demo V8, Pellet Disc Machine'e BRICKS kaynak etiketi ekledi; bu etiket tek başına tam tarifini vermez.",
+    "paper": "Saman kâğıdı ve kâğıt makineleri tam oyun açıklamasında bulunur. Kâğıt üretimi planlamadan önce ilgili makinenin sürümünüzde mevcut olduğunu kontrol edin.",
+    "pellets": "Peletler listelenen ürün grubudur. Pellet Disc Machine de resmî Demo notlarında yer alır ama notlar her girdiyi, çıktı miktarını veya satış değerini doğrulamaz.",
+    "check": "Geliştirici saman ürünlerinin iğne içerebildiğini açıklıyor. İşleme büyürken taramayı güzergâhta tutun. Bütçe için oyun içi tarif ve fiyatları kullanın; burada doğrulanmış ortak kâr sıralaması yoktur."
+  },
+  "sources": [
+    {
+      "label": "Resmî Steam mağazası",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Resmî Demo V8 notları · 11 Eylül 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Geliştirici yanıtı ve oyuncu bildirimleri · 13 Eylül 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    },
+    {
+      "kind": "machines",
+      "id": "pellet-disc-machine"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ],
+  "image": "/images/find-the-needle/official-hay-bales.webp",
+  "imageAlt": "Bağlanmış iki dikdörtgen saman balyası, yeşil işleme makineleri yanında dallanan bantlarda ilerliyor.",
+  "imageCaption": "Dallanan bantlarda ilerleyen bağlanmış balyalara bakın. Resmî Steam Hay products videosunun 10,5 saniyesindeki kare.",
+  "imagePosition": "34% 66%",
+  "imageZoom": 1.2
+}

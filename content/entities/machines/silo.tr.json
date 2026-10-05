@@ -1,0 +1,38 @@
+{
+  "id": "silo",
+  "name": "Silo",
+  "summary": "Silo samanı yumaklara paketler. Geliştirici, iğnelerin bu yumakların içinde kalabildiğini açıklıyor; bu yüzden satıştan önce çıktıyı bir tarayıcıya doğru izleyin.",
+  "updatedAt": "2026-10-05",
+  "version": "Geliştirici açıklaması (13 Eylül 2026)",
+  "data": {
+    "role": "Depolama ve paketleme",
+    "scope": "Demo notları / tartışma",
+    "operation": "Silo'nun depolanan saman ve iğne mesajlarını inceleyin, sonra çıkış bandını izleyin. Hâlâ içinde listelenen iğne, taranmış iğneyle aynı değildir.",
+    "community": "Bir oyuncu, iğne beklerken yeni bir çıkış yükünü tamamlayacak kadar dağınık saman eklemeyi öneriyor. Bu topluluk önerisidir; doğrulanmış ortak parti boyutu veya garantili çözüm yoktur.",
+    "check": "İğneyi kurtarmak için Silo'yu sökmeyin: bir oyuncu yok etme uyarısı bildirdi. Kaydınızı saklayın; önce besleme, çıkış ve taramayı inceleyin."
+  },
+  "sources": [
+    {
+      "label": "Geliştirici yanıtı ve oyuncu bildirimleri · 13 Eylül 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

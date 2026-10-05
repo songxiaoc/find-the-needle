@@ -1,0 +1,54 @@
+{
+  "id": "needle-scanner",
+  "name": "Skener jehel",
+  "summary": "Skener je součástí automatické linky hledání jehel. Pokud se jehla dostane k prodeji, ověřte trasu každého produktu ze sena, ne pouze hlavní pás.",
+  "updatedAt": "2026-10-05",
+  "version": "Komunitní hlášení (září 2026) a oficiální popis obchodu",
+  "data": {
+    "role": "Detekce jehel",
+    "scope": "Poznámky k demu / diskuze",
+    "check": "Sledujte každý pás, včetně pásů v dosahu robotického ramene. Hledejte větev napojenou na prodejní trasu až za skenerem. Pozorujte aktuální nastavení a ukazatele skeneru ve hře.",
+    "community": "Hráči doporučují rozdělit ucpanou linku mezi samostatné skenery a za nimi ji spojit. Před rozšířením proveďte malý test; tento tip neurčuje rychlost skenování ani nezaručuje zrychlení."
+  },
+  "sources": [
+    {
+      "label": "Oficiální obchod Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Komunitní diskuze o trasování · 21. září 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    },
+    {
+      "label": "Komunitní diskuze o skenerech · 16. září 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "robotic-arm"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ],
+  "image": "/images/find-the-needle/official-research.webp",
+  "imageAlt": "Nabídka výzkumu s uzly Needle Cabinet, Scanner Mk I Plans a Metal Detector.",
+  "imageCaption": "Najděte Scanner Mk I Plans těsně nad Metal Detector v nabídce výzkumu. Oficiální obrázek Steam.",
+  "imagePosition": "40% 31%",
+  "imageZoom": 3
+}

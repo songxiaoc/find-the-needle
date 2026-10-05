@@ -1,0 +1,46 @@
+{
+  "id": "robotic-arm",
+  "name": "Robot Kol",
+  "summary": "Robot kollar oyunun otomasyonunun parçasıdır. Satılan iğneleri araştırırken erişilebilir bütün bantlara bakın: oyuncular kolların yakındaki alternatif yollara malzeme koyduğunu bildiriyor.",
+  "updatedAt": "2026-10-05",
+  "version": "Topluluk bildirimleri (Eylül 2026) ve resmî mağaza açıklaması",
+  "data": {
+    "role": "Taşıma",
+    "scope": "Demo notları / tartışma",
+    "community": "Normal hedefi tıkanmışken kolu gözleyin. Eylül tartışması, erişilebilir başka bandın malzeme alabileceğini öneriyor; bu oyuncu tavsiyesidir, kaybolan her iğnenin doğrulanmış açıklaması değildir.",
+    "check": "Malzeme alabilecek her bandı satış tezgâhından önce bir tarayıcıdan geçecek şekilde izleyin. Daha fazla kol almadan önce güzergâhı küçük akışla test edin."
+  },
+  "sources": [
+    {
+      "label": "Resmî Steam mağazası",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Topluluk güzergâh tartışması · 21 Eylül 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ],
+  "image": "/images/find-the-needle/screenshot-2.webp",
+  "imageAlt": "Turuncu robot kollar, birkaç konveyör yolunun yanındaki saman yığınını çevreliyor.",
+  "imageCaption": "Kolların birkaç banda ne kadar yakın olduğuna bakın. Kendi düzeninizi kontrol ederken bir kolun erişebildiği her bandı izleyin. Resmî Steam görüntüsü.",
+  "imagePosition": "56% 45%",
+  "imageZoom": 1.8
+}

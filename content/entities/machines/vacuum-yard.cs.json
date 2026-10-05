@@ -1,0 +1,34 @@
+{
+  "id": "vacuum-yard",
+  "name": "Dvorní vysavač",
+  "summary": "Vacuum Yard je uveden v aktualizaci Demo V8, která snížila jeho cenu o 80 %. Tato historická změna neříká dnešní celkovou pořizovací cenu.",
+  "updatedAt": "2026-10-05",
+  "version": "Oznámení Demo V8 (11. září 2026); řiďte se pokyny nainstalované verze",
+  "data": {
+    "role": "Manipulace se senem",
+    "scope": "Poznámky k demu / diskuze",
+    "check": "Porovnejte aktuální nabídku nákupu s řešeným problémem. Pokud seno již čeká dál na lince, zkontrolujte pásy a skenování, než utratíte za další vylepšení sběru.",
+    "limits": "Oznámení neuvádí aktuální kapacitu, dosah, spotřebu ani podmínku odemčení. Před plánováním nákupu je ověřte v nainstalované hře."
+  },
+  "sources": [
+    {
+      "label": "Oficiální poznámky Demo V8 · 11. září 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "tools",
+      "id": "shovel"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation", "/guides/guide/getting-started"]
+}

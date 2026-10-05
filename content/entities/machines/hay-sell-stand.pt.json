@@ -1,0 +1,46 @@
+{
+  "id": "hay-sell-stand",
+  "name": "Ponto de Venda de Feno",
+  "summary": "O destino de venda é marcado SELL HAY. A Demo V8 adicionou encaixe à conexão da esteira. Segundo o desenvolvedor, uma agulha vendida dentro de um produto de feno volta à pilha.",
+  "updatedAt": "2026-10-05",
+  "version": "Anúncio da Demo V8 (11 de setembro de 2026); siga as instruções da versão instalada",
+  "data": {
+    "role": "Venda",
+    "scope": "Notas da Demo / discussão",
+    "operation": "Use a conexão da barraca em vez de parar a esteira perto dela. Se não houver encaixe, confira se F ativou No Snap Mode.",
+    "check": "Acompanhe as últimas ramificações de entrada de volta até os scanners. O desenvolvedor descreve a reciclagem normal das agulhas, não uma garantia universal de recuperação de um bug de agulha ausente."
+  },
+  "sources": [
+    {
+      "label": "Notas oficiais da Demo V8 · 11 de setembro de 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Resposta do desenvolvedor e relatos de jogadores · 13 de setembro de 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ],
+  "image": "/images/find-the-needle/screenshot-1.webp",
+  "imageAlt": "Esteira transportando feno até a barraca marcada SELL HAY.",
+  "imageCaption": "A esteira encontra a frente da barraca SELL HAY. Use a imagem para identificar o destino; seus preços não são referências atuais. Captura oficial do Steam.",
+  "imagePosition": "60% 55%",
+  "imageZoom": 1.4
+}

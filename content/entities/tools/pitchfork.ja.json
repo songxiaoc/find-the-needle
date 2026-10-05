@@ -1,0 +1,38 @@
+{
+  "id": "pitchfork",
+  "name": "干し草用フォーク（Pitchfork）",
+  "summary": "フォークは公式ストアに記載された手作業用の干し草道具の一つです。画像では干し草の山と容器の横で一人称視点で使われています。",
+  "updatedAt": "2026-10-05",
+  "version": "製品版のストア説明。2026 年 10 月 5 日確認",
+  "data": {
+    "role": "干し草の取り扱い",
+    "scope": "製品版のストア説明",
+    "operation": "現在の操作案内に従って干し草を集め、移動させます。ストア画像は道具の位置を示していますが、共通の運搬量や操作回数を示すものではありません。",
+    "check": "現在のシャベルと輸送手段に対して、取り扱いの手間を比較してください。運搬が遅いなら、別の手道具で解決すると考える前に、次の輸送アップグレードを確認します。"
+  },
+  "sources": [
+    {
+      "label": "Steam 公式ストア",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "tools",
+      "id": "shovel"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "tools",
+      "id": "metal-detector"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/getting-started"],
+  "image": "/images/find-the-needle/screenshot-3.webp",
+  "imageAlt": "干し草の山の前でフォークを持つ一人称視点。",
+  "imageCaption": "フォークは干し草の山に直接当てられています。操作は現在の画面の案内に従ってください。この画像は針の位置を示すものではありません。Steam 公式画像。",
+  "imagePosition": "50% 85%"
+}

@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "title": "Find the Needle Wiki・攻略 — デモ版、自動化、ヒント",
+    "description": "Find the Needle を始めよう：無料 Steam デモ版、干し草の山での針探し、アップグレード、自動化、PC 動作環境。発売予定のインクリメンタルゲームの独立ガイド。",
+    "keywords": "Find the Needle, Find the Needle 攻略, Find the Needle wiki, Find the Needle デモ, 自動化"
+  },
+  "navigation": {
+    "home": "ホーム",
+    "guides": "攻略",
+    "faq": "よくある質問",
+    "requirements": "PC 動作環境",
+    "troubleshooting": "トラブル対処",
+    "about": "サイトについて",
+    "contact": "お問い合わせ",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "language": "言語",
+    "primary": "メインナビゲーション",
+    "demo": "デモ版"
+  },
+  "footer": {
+    "guides": "攻略",
+    "resources": "ゲーム・サポート",
+    "site": "このサイトについて",
+    "disclaimer": "Find the Needle の独立したファンガイドです。Hay Passionates とは関係ありません。ゲーム名、アート、商標は各権利者に帰属します。"
+  },
+  "category": {
+    "title": "ゲーム攻略",
+    "description": "針探しの流れを学び、アップグレードを計画し、Steam デモ版の内容を確認しましょう。"
+  },
+  "languagePrompt": {
+    "title": "{language}で読みますか？",
+    "description": "お好みの言語でこのガイドを閲覧できます。選択は次回以降の訪問のために保存されます。",
+    "close": "言語の提案を閉じる",
+    "dismiss": "現在の言語を維持"
+  },
+  "ui": {
+    "readGuide": "ガイドを読む",
+    "allGuides": "すべてのガイド",
+    "onThisPage": "このページの内容",
+    "overview": "概要",
+    "relatedGuides": "関連ガイド",
+    "updated": "更新",
+    "published": "公開",
+    "openMenu": "メニューを開く",
+    "closeMenu": "メニューを閉じる",
+    "siteNavigation": "サイトナビゲーション",
+    "wikiNavigation": "ガイドナビゲーション",
+    "viewOnSteam": "Steam で見る",
+    "demoAvailable": "無料デモ版を配信中",
+    "comingQ4": "製品版は2026年第4四半期に発売予定",
+    "guideCount": "{count}件のガイド",
+    "backHome": "ホームに戻る",
+    "notFound": "ページが見つかりません",
+    "gameplayImageAlt": "Find The Needle で干し草を販売所に運ぶコンベア",
+    "aboutGame": "ゲームについて",
+    "atAGlance": "早見情報"
+  }
+}

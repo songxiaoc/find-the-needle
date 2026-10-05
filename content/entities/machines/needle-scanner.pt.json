@@ -1,0 +1,54 @@
+{
+  "id": "needle-scanner",
+  "name": "Scanner de Agulhas",
+  "summary": "O scanner faz parte da linha automatizada de busca de agulhas. Quando uma agulha chega à venda, confira a rota de todos os produtos de feno, não só a esteira principal.",
+  "updatedAt": "2026-10-05",
+  "version": "Relatos da comunidade (setembro de 2026) e descrição oficial da loja",
+  "data": {
+    "role": "Detecção de agulhas",
+    "scope": "Notas da Demo / discussão",
+    "check": "Acompanhe cada esteira e qualquer esteira ao alcance de um braço robótico. Procure uma ramificação que se junte à venda depois do scanner. Observe suas configurações e indicadores atuais no jogo.",
+    "community": "Jogadores sugerem dividir uma linha congestionada entre scanners separados e reuni-la depois. Faça um teste pequeno antes de ampliar; isso não estabelece taxa de leitura nem aumento garantido de velocidade."
+  },
+  "sources": [
+    {
+      "label": "Loja oficial do Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Discussão da comunidade sobre rotas · 21 de setembro de 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    },
+    {
+      "label": "Discussão da comunidade sobre scanners · 16 de setembro de 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "robotic-arm"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ],
+  "image": "/images/find-the-needle/official-research.webp",
+  "imageAlt": "Menu de pesquisa mostrando Needle Cabinet, Scanner Mk I Plans e Metal Detector.",
+  "imageCaption": "Encontre Scanner Mk I Plans logo acima de Metal Detector no menu de pesquisa. Imagem oficial do Steam.",
+  "imagePosition": "40% 31%",
+  "imageZoom": 3
+}

@@ -1,0 +1,54 @@
+{
+  "id": "hay-products",
+  "name": "干し草加工製品（Processed Hay Products）",
+  "summary": "製品版のストアには、干し草パルプ、圧縮ベール、エコレンガ、干し草紙、ペレットが紹介されています。製品群の把握に使ってください。デモで解除される全製品の一覧ではありません。",
+  "updatedAt": "2026-10-05",
+  "version": "製品版のストア説明。2026 年 10 月 5 日確認",
+  "data": {
+    "role": "加工製品",
+    "scope": "製品版のストア説明",
+    "pulp": "ストアに記載された干し草加工製品です。生産ラインを確保する前に、現在のゲームでレシピと必要な設備を確認してください。",
+    "bales": "圧縮干し草は製品群に含まれ、ストアにはベーラーの記載もあります。保管された針を確認する際は、圧縮ベールを Silo の干し草の塊と同一視しないでください。",
+    "bricks": "ストアにはエコレンガが記載されています。またデモ V8 では Pellet Disc Machine に BRICKS の資源表示が追加されましたが、その表示だけでは完全なレシピはわかりません。",
+    "paper": "製品版の説明には干し草紙と紙製造機が登場します。紙の生産を前提に計画する前に、自分のバージョンで関連機械が使えるか確認してください。",
+    "pellets": "ペレットは紹介された製品群の一つです。公式デモの更新情報にも Pellet Disc Machine が記載されていますが、すべての入力、出力数量、販売価値が確認できるわけではありません。",
+    "check": "開発者によると干し草製品には針が含まれる場合があります。加工を拡張しても経路にスキャンを残してください。予算にはゲーム内のレシピと価格を使います。ここには確認済みの共通の利益順位はありません。"
+  },
+  "sources": [
+    {
+      "label": "Steam 公式ストア",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "デモ V8 の公式更新情報 · 2026 年 9 月 11 日",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "開発者の返信とプレイヤーの報告 · 2026 年 9 月 13 日",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    },
+    {
+      "kind": "machines",
+      "id": "pellet-disc-machine"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ],
+  "image": "/images/find-the-needle/official-hay-bales.webp",
+  "imageAlt": "緑色の加工機械の横で、バンドで留められた 2 個の長方形の干し草ベールが分岐したベルトを進んでいます。",
+  "imageCaption": "分岐したベルトを進む、バンドで留められた干し草ベールに注目してください。Steam 公式「Hay products」動画の 10.5 秒時点。",
+  "imagePosition": "34% 66%",
+  "imageZoom": 1.2
+}

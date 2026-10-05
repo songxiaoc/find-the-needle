@@ -1,0 +1,38 @@
+{
+  "id": "shovel",
+  "name": "Lopata",
+  "summary": "Oficiální obchod představuje lopatu jako počáteční nástroj k ručnímu přesouvání sena a vydělávání před nákupem pásů a strojů.",
+  "updatedAt": "2026-10-05",
+  "version": "Popis obchodu plné hry, ověřen 5. října 2026",
+  "data": {
+    "role": "Manipulace se senem",
+    "scope": "Popis obchodu plné hry",
+    "operation": "Při prvním hraní přesuňte malé množství sena, najděte cíl SELL HAY a řiďte se pokyny hry. Hledání jehel oddělujte od pouhého odklízení hromady.",
+    "check": "Před nahrazením ruční práce automatizací určete pomalý krok: sběr, přenášení, prodej či skenování. Nakupujte pro toto úzké hrdlo podle aktuálních cen ve hře."
+  },
+  "sources": [
+    {
+      "label": "Oficiální obchod Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "tools",
+      "id": "pitchfork"
+    },
+    {
+      "kind": "tools",
+      "id": "metal-detector"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/getting-started", "/guides/guide/automation"]
+}

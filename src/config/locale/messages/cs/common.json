@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "title": "Find the Needle — wiki a návody: demo, automatizace a tipy",
+    "description": "Začněte s Find the Needle: bezplatné demo Steam, hledání v kupkách sena, vylepšení, automatizace a požadavky PC. Nezávislé návody k připravované inkrementální hře.",
+    "keywords": "Find the Needle, návod Find the Needle, wiki Find the Needle, demo Find the Needle, automatizace"
+  },
+  "navigation": {
+    "home": "Domů",
+    "guides": "Návody",
+    "faq": "Časté dotazy",
+    "requirements": "Požadavky PC",
+    "troubleshooting": "Řešení problémů",
+    "about": "O webu",
+    "contact": "Kontakt",
+    "privacy": "Ochrana soukromí",
+    "terms": "Podmínky použití",
+    "language": "Jazyk",
+    "primary": "Hlavní navigace",
+    "demo": "Demo"
+  },
+  "footer": {
+    "guides": "Návody",
+    "resources": "Hra a podpora",
+    "site": "O tomto webu",
+    "disclaimer": "Nezávislý fanouškovský návod Find the Needle. Bez spojení s Hay Passionates. Názvy, grafika a ochranné známky patří příslušným vlastníkům."
+  },
+  "category": {
+    "title": "Herní návody",
+    "description": "Poznejte cyklus hledání, naplánujte vylepšení a zjistěte, co nabízí demo Steam."
+  },
+  "languagePrompt": {
+    "title": "Číst v jazyce {language}?",
+    "description": "Návod můžete číst ve svém preferovaném jazyce. Volba se uloží pro další návštěvy.",
+    "close": "Zavřít doporučení jazyka",
+    "dismiss": "Ponechat tento jazyk"
+  },
+  "ui": {
+    "readGuide": "Číst návod",
+    "allGuides": "Všechny návody",
+    "onThisPage": "Na této stránce",
+    "overview": "Přehled",
+    "relatedGuides": "Související návody",
+    "updated": "Aktualizováno",
+    "published": "Publikováno",
+    "openMenu": "Otevřít nabídku",
+    "closeMenu": "Zavřít nabídku",
+    "siteNavigation": "Navigace webu",
+    "wikiNavigation": "Navigace návodů",
+    "viewOnSteam": "Zobrazit na Steamu",
+    "demoAvailable": "Bezplatné demo k dispozici",
+    "comingQ4": "Plná hra plánována na 4. čtvrtletí 2026",
+    "guideCount": "{count} návodů",
+    "backHome": "Zpět domů",
+    "notFound": "Stránka nenalezena",
+    "gameplayImageAlt": "Dopravník přepravující seno k prodejní stanici ve Find The Needle",
+    "aboutGame": "O hře",
+    "atAGlance": "Rychlý přehled"
+  }
+}

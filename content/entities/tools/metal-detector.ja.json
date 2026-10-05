@@ -1,0 +1,46 @@
+{
+  "id": "metal-detector",
+  "name": "金属探知機（Metal Detector）",
+  "summary": "公式ストアでは、まず金属探知機を使って手作業で針を探し、その後ベルト、スキャナー、ロボットアームが作業の多くを引き継ぐと説明されています。",
+  "updatedAt": "2026-10-05",
+  "version": "製品版のストア説明。2026 年 10 月 5 日確認",
+  "data": {
+    "role": "針の検出",
+    "scope": "製品版のストア説明",
+    "operation": "手作業で探す際は、現在の探知機の反応を使ってください。調べた場所を記録し、固定の座標一覧をゲームの反応の代わりにしないでください。",
+    "check": "すでに干し草が製品にまとめられているなら、保管とスキャナーの経路も確認してください。開発者によると、針はばらの干し草だけでなく、干し草製品の中にも残る場合があります。"
+  },
+  "sources": [
+    {
+      "label": "Steam 公式ストア",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "開発者の返信とプレイヤーの報告 · 2026 年 9 月 13 日",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "silo"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/getting-started",
+    "/guides/guide/needles-and-scanners"
+  ],
+  "image": "/images/find-the-needle/official-research.webp",
+  "imageAlt": "Scanner Mk I Plans の下に Metal Detector がある研究ツリー。",
+  "imageCaption": "Metal Detector の研究項目は Scanner Mk I Plans の下にあります。Steam 公式画像。",
+  "imagePosition": "40% 37%",
+  "imageZoom": 3
+}

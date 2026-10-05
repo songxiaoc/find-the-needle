@@ -1,0 +1,38 @@
+{
+  "id": "silo",
+  "name": "사일로(Silo)",
+  "summary": "Silo는 건초를 뭉치로 포장합니다. 개발자는 바늘이 그 안에 남을 수 있다고 설명하므로 판매 전에 출력 경로를 스캐너까지 따라가세요.",
+  "updatedAt": "2026-10-05",
+  "version": "개발자 설명(2026년 9월 13일)",
+  "data": {
+    "role": "저장과 포장",
+    "scope": "데모 업데이트 정보 / 토론",
+    "operation": "Silo의 저장된 건초와 바늘 메시지를 살핀 뒤 출력 벨트를 보세요. 내부에 여전히 표시되는 바늘은 이미 스캔된 바늘과 다릅니다.",
+    "community": "한 플레이어는 바늘이 기다릴 때 다음 출력 묶음을 완성할 만큼 흩어진 건초를 추가하라고 제안합니다. 커뮤니티 제안이며 확인된 공통 묶음 크기나 보장된 해결책은 없습니다.",
+    "check": "바늘을 되찾으려고 Silo를 해체하는 일은 피하세요. 한 플레이어가 파괴 경고를 보고했습니다. 저장 파일을 보존하고 먼저 투입, 출력, 스캔을 살피세요."
+  },
+  "sources": [
+    {
+      "label": "개발자 답변과 플레이어 보고 · 2026년 9월 13일",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

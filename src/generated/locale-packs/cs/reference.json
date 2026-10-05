@@ -1,0 +1,211 @@
+{
+  "practicalGuides": [
+    "Pomoc s aktuální uloženou hrou",
+    "Zálohujte uloženou hru z dema",
+    "Zkontrolujte zastavený dopravník nebo elektrickou síť",
+    "Sledujte ztracenou jehlu přes silo a skenery"
+  ],
+  "labels": {
+    "home": "Domů",
+    "updated": "Aktualizováno 27. září 2026",
+    "links": {
+      "store": "Find the Needle na Steamu",
+      "demo": "Bezplatné demo na Steamu",
+      "community": "Diskuze komunity Steam",
+      "feedback": "Nahlásit problém webu na GitHubu",
+      "verify": "Steam: ověření souborů hry",
+      "cloudflare": "Zásady ochrany soukromí Cloudflare",
+      "adsterra": "Zásady ochrany soukromí Adsterra"
+    },
+    "specs": [
+      "Operační systém",
+      "Procesor",
+      "Paměť",
+      "Grafika",
+      "Úložiště"
+    ],
+    "minimum": "Minimální",
+    "recommended": "Doporučené",
+    "storage": "2 GB volného místa",
+    "gpu": "4 GB VRAM; Vulkan 1.3",
+    "platform": "Požadavky pro Windows"
+  },
+  "content": {
+    "faq": {
+      "title": "Find the Needle — časté dotazy",
+      "description": "Termín vydání Find the Needle, bezplatné demo, podporované platformy a hra pro jednoho hráče s odkazy na oficiální stránky Steamu.",
+      "intro": "Bezplatné demo je již dostupné. Steam uvádí vydání plné hry ve 4. čtvrtletí 2026. Na stránce zkontrolované 27. září 2026 nebyl oznámen přesný den vydání.",
+      "sections": [
+        {
+          "title": "Kde si mohu zahrát demo?",
+          "text": "Find the Needle Demo vyšlo 10. září 2026. Nainstalujte ho přes samostatnou stránku na Steamu; přidání plné hry do seznamu přání demo nenainstaluje.",
+          "link": "demo"
+        },
+        {
+          "title": "Co se ve hře dělá?",
+          "text": "Hledáte jehly v kupce sena, prodáváte seno a investujete do nástrojů a strojů. Ruční kopání postupně přeroste v továrnu s dopravníky, lisy, skenery a robotickými rameny.",
+          "link": "store"
+        },
+        {
+          "title": "Podporuje hra více hráčů?",
+          "text": "Steam uvádí Find the Needle jako hru pro jednoho hráče. Nepropaguje kooperativní ani soutěžní multiplayer."
+        },
+        {
+          "title": "Mohu hrát na Macu, Linuxu nebo konzoli?",
+          "text": "Oznámená verze na Steamu podporuje Windows. Stránka nenabízí nativní verze pro macOS ani Linux a nepotvrzuje konzolové vydání. Nemáme ověřené údaje o výkonu přes vrstvy kompatibility ani na přenosných zařízeních."
+        },
+        {
+          "title": "Jaké jazyky hra podporuje?",
+          "text": "Steam uvádí 12 jazyků: angličtinu, francouzštinu, němčinu, španělštinu (Španělsko), ruštinu, zjednodušenou čínštinu, japonštinu, korejštinu, polštinu, češtinu, turečtinu a portugalštinu (Brazílie). Před stažením zkontrolujte tabulku jazyků v obchodě. Zveřejněné jazyky tohoto webu najdete ve výběru jazyka.",
+          "link": "store"
+        },
+        {
+          "title": "Přenese se postup z dema?",
+          "text": "Informace obchodu ověřené pro tento návod nepotvrzují přenos uložených her do plné verze. Uložení z dema si ponechte a než začnete s přenosem počítat, vyčkejte na výslovné oznámení."
+        }
+      ]
+    },
+    "system-requirements": {
+      "title": "Find the Needle — systémové požadavky",
+      "description": "Oficiální minimální a doporučené požadavky Windows pro Find the Needle včetně podpory Vulkan a upozornění na integrované GPU.",
+      "intro": "Steam vyžaduje Windows a samostatnou grafickou kartu. Integrovaná grafika výslovně není podporována a může způsobovat pády. Tyto specifikace byly ověřeny 27. září 2026.",
+      "sections": [
+        {
+          "title": "Před instalací na notebook",
+          "text": "Porovnejte přesný model GPU a videopaměť, nikoli jen RAM notebooku. Minimální GPU musí podporovat Vulkan 1.3. Má-li notebook integrovanou i samostatnou grafiku, zajistěte, aby hra používala samostatnou kartu."
+        },
+        {
+          "title": "Velké továrny a přenosná zařízení",
+          "text": "Vývojář upozorňuje, že velmi velké továrny výrazně zatěžují CPU. Splnění minimálních požadavků nezaručuje konkrétní snímkovou frekvenci. Nemáme ověřené výsledky výkonu Steam Decku ani nativní požadavky pro macOS/Linux.",
+          "link": "store"
+        }
+      ]
+    },
+    "troubleshooting": {
+      "title": "Find the Needle — řešení problémů",
+      "description": "Bezpečné první kontroly při pádech a potížích se spuštěním dema Find the Needle: podporovaná grafika, ověření souborů Steamu a údaje pro hlášení chyby.",
+      "intro": "Pokud se demo nespustí, nejprve ověřte grafickou kartu: oficiální požadavky vylučují integrovanou grafiku a vyžadují Vulkan 1.3. Následují obecné kontroly Steamu, nikoli ověřené opravy konkrétní chyby hry.",
+      "sections": [
+        {
+          "title": "1. Zkontrolujte hardware a aktualizace",
+          "text": "Porovnejte počítač s požadavky. Dokončete stahování ve Steamu, restartujte počítač a nainstalujte aktuální ovladač od výrobce GPU. Na notebooku se dvěma GPU vyberte ve grafických nastaveních Windows pro hru samostatnou kartu."
+        },
+        {
+          "title": "2. Ověřte instalaci",
+          "text": "V knihovně Steamu klikněte pravým tlačítkem na Find the Needle Demo a otevřete Vlastnosti → Nainstalované soubory → Ověřit integritu souborů hry. Před dalším spuštěním počkejte na dokončení. Testujte po každé změně, abyste poznali, co pomohlo.",
+          "link": "verify"
+        },
+        {
+          "title": "3. Když rostoucí továrna zpomaluje",
+          "text": "Zavřete jiné náročné aplikace a ověřte, zda se zpomalení objevuje jen u velké továrny. Vývojář uvádí, že velké továrny více zatěžují CPU; samotné snížení rozlišení tento limit nemusí vyřešit."
+        },
+        {
+          "title": "4. Nahlaste opakovatelný problém",
+          "text": "Uveďte, zda hrajete demo, verzi Windows, CPU, GPU, verzi ovladače, přesný text chyby a postup k jejímu zopakování. Případně přiložte snímek po odstranění osobních údajů. Uložené hry si ponechte; nemažte jejich složky jako první krok diagnostiky.",
+          "link": "community"
+        }
+      ]
+    },
+    "about": {
+      "title": "O tomto návodu Find the Needle",
+      "description": "Seznamte se s nezávislým fanouškovským návodem Find the Needle, jeho zdroji, opravami a vztahem k tvůrcům hry.",
+      "intro": "findtheneedle.site je nezávislý, neoficiální návod k Find the Needle. Pomáhá hráčům pochopit demo, naplánovat první továrnu a ověřit praktické informace před hraním.",
+      "sections": [
+        {
+          "title": "Nezávislost na tvůrcích hry",
+          "text": "Web neprovozují, neschvalují ani nesponzorují FindTheNeedleDev, Hay Passionates ani Valve. Find the Needle vyvíjí FindTheNeedleDev a vydává Hay Passionates. Názvy, grafika a snímky hry patří příslušným vlastníkům."
+        },
+        {
+          "title": "Jak pracujeme se zdroji",
+          "text": "Informace o vydání a hardwaru pocházejí z oficiálních stránek Steamu. Návody rozlišují oznámené funkce od praktických doporučení. Demo i plná hra se mohou měnit, proto datované informace čtěte v kontextu jejich aktualizace.",
+          "link": "store"
+        },
+        {
+          "title": "Opravy a příspěvky",
+          "text": "Je-li návod chybný nebo překlad nejasný, pošlete URL stránky, opravu a podpůrný snímek či oficiální odkaz. Uveďte použitou verzi dema nebo hry.",
+          "link": "feedback"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Kontakt a opravy",
+      "description": "Nahlaste chybu v návodu Find the Needle nebo najděte oficiální komunitu Steam pro otázky ke hře.",
+      "intro": "Opravy webu, nefunkční odkazy a překlady hlaste v repozitáři webu na GitHubu. Chyby hry a otázky k nákupu řešte s oficiálními kanály hry nebo podporou Steamu.",
+      "sections": [
+        {
+          "title": "Nahlásit problém webu",
+          "text": "Uveďte URL, jazyk, chybu a navrženou opravu. Odkaz na zdroj nebo snímek usnadní kontrolu. GitHub vyžaduje účet; hlášení jsou veřejná, proto nepřikládejte hesla, platební údaje ani jiné citlivé informace.",
+          "link": "feedback"
+        },
+        {
+          "title": "Pomoc s hrou",
+          "text": "Komunita Steam nabízí oznámení vývojáře a diskuze o hře. Tento fanouškovský web nemá přístup k uloženým hrám, účtu Steam ani nákupům a nemůže vracet peníze.",
+          "link": "community"
+        },
+        {
+          "title": "Dotazy k právům a soukromí",
+          "text": "První dotaz k právům nebo soukromí odešlete přes hlášení webu a označte dotčenou stránku či materiál. Ve veřejném hlášení nezveřejňujte doklady totožnosti ani důvěrné důkazy.",
+          "link": "feedback"
+        }
+      ]
+    },
+    "privacy-policy": {
+      "title": "Zásady ochrany soukromí",
+      "description": "Jak findtheneedle.site nakládá s požadavky hostingu, předvolbami prohlížeče, statistikami návštěvnosti a externími odkazy.",
+      "intro": "Tyto zásady se vztahují na findtheneedle.site, nezávislý návod Find the Needle. Čtení webu nevyžaduje účet, platbu ani odeslání formuláře.",
+      "sections": [
+        {
+          "title": "Hosting a údaje požadavků",
+          "text": "Cloudflare web hostuje a doručuje. Pro doručování, bezpečnost a prevenci zneužití mohou požadavky obsahovat IP adresu, prohlížeč, požadované URL a čas. Cloudflare tyto informace zpracovává podle vlastních podmínek a zásad ochrany soukromí.",
+          "link": "cloudflare"
+        },
+        {
+          "title": "Předvolby ve vašem zařízení",
+          "text": "Místní úložiště prohlížeče pamatuje nastavení rozhraní, například volbu u jazykového doporučení. Údaje zůstávají v prohlížeči, dokud je nesmažete. Odstraníte je v nastavení dat webů; uložené předvolby se tím obnoví na výchozí."
+        },
+        {
+          "title": "Analytika, reklama a platby",
+          "text": "Používáme Google Analytics 4 a Plausible hostovaný na plausible.shipsolo.io a pl.gameradar.online pro pochopení návštěv pomocí souhrnných statistik. Google Analytics může používat cookies a posílat údaje o návštěvách Googlu. Cookies spravujete v prohlížeči. Bannery, nativní reklamy a Social Bar Adsterra načítají zdroje třetích stran; Adsterra a jeho poskytovatelé mohou zpracovávat údaje zařízení a návštěv pro doručování reklam. Jeho zásady ochrany soukromí jsou níže. Web nevkládá skripty zaznamenávající relace, nenabízí uživatelské účty ani nepřijímá platby. Osobní údaje neprodáváme.",
+          "link": "adsterra"
+        },
+        {
+          "title": "Externí odkazy a zprávy",
+          "text": "Po přechodu na Steam, GitHub či jinou službu platí její vlastní postupy ochrany soukromí. Zveřejníte-li hlášení na GitHubu, váš profil a zpráva mohou být veřejné. Sdílejte pouze informace nutné k vysvětlení dotazu."
+        },
+        {
+          "title": "Dotazy a změny",
+          "text": "Dotaz na soukromí začněte hlášením webu bez citlivých osobních údajů. Při změně postupů práce s daty tyto zásady aktualizujeme a na stránce uvedeme datum revize.",
+          "link": "feedback"
+        }
+      ]
+    },
+    "terms-of-service": {
+      "title": "Podmínky použití",
+      "description": "Podmínky používání nezávislého návodu Find the Needle včetně obsahu, externích odkazů, duševního vlastnictví a oprav.",
+      "intro": "Tyto podmínky platí pro používání findtheneedle.site. Web poskytuje bezplatné informace o hře a je nezávislý na hře, vývojáři, vydavateli a Steamu.",
+      "sections": [
+        {
+          "title": "Informace v návodech",
+          "text": "Usilujeme o užitečné a přesné informace, ale aktualizace mohou měnit mechaniky, požadavky a dostupnost hry. Před nákupem či změnami ovlivňujícími uložený postup zkontrolujte oficiální zdroje. Nezaručujeme nepřerušený přístup ani aktuálnost každého návodu."
+        },
+        {
+          "title": "Obsah hry a webu",
+          "text": "Názvy, grafika a snímky Find the Needle zůstávají majetkem příslušných držitelů práv, včetně FindTheNeedleDev a Hay Passionates. Jejich uvedení zde neznamená schválení. Nepředpokládejte, že herní materiály lze znovu použít jen proto, že jsou na tomto webu."
+        },
+        {
+          "title": "Přípustné používání",
+          "text": "Používejte web v souladu se zákonem. Nepokoušejte se narušit bezpečnost, blokovat přístup ani zasílat škodlivé či nezákonné materiály přes odkazované kanály zpětné vazby."
+        },
+        {
+          "title": "Služby třetích stran",
+          "text": "Steam, GitHub a další odkazované weby mají vlastní podmínky. Neovládáme jejich obsah, nákupy, rozhodnutí o účtech ani dostupnost. Tento web neprodává hru ani neposkytuje refundace."
+        },
+        {
+          "title": "Opravy a aktualizace",
+          "text": "Problémy webu a dotazy k právům posílejte přes hlášení s uvedením příslušné stránky. Podmínky se mohou měnit spolu s webem; datum označuje aktuální revizi. Nic zde neomezuje práva, která podle platných zákonů nelze vyloučit.",
+          "link": "feedback"
+        }
+      ]
+    }
+  }
+}

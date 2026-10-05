@@ -1,0 +1,46 @@
+---
+title: "İğneler, tarayıcılar ve kayıp son iğne"
+description: "Saman ürünlerinin içindeki iğneleri anlayın, tarayıcıları atlayan yolları kontrol edin ve kaydınızı silmeden 5/6 iğne durumunu ele alın."
+date: '2026-09-27'
+lastModified: '2026-10-05'
+image: '/images/find-the-needle/screenshot-2.webp'
+---
+
+**Bir iğne saman ürününün içinde taşınabilir.** Geliştirici, <EntityLink kind="machines" id="silo">Silo</EntityLink> makinesinin iğneleri saman yumaklarına paketlediğini ve <EntityLink kind="machines" id="hay-sell-stand">Hay Sell Stand</EntityLink> noktasında ürünlerle satılan iğnelerin saman yığınına döndüğünü açıklıyor. Görünen yığını temizlemek ile içindeki iğneleri başarıyla toplamak bu yüzden farklıdır.
+
+## Yalnız yığını değil, ürünleri takip edin
+
+13 Eylül geliştirici yanıtında FindTheNeedleDev, Silo'nun normalde iğneyi yok etmediğini söylüyor: iğne bir saman yumağının veya başka saman ürününün içinde çıkabilir. Ürün doğrudan satışa giderse iğne satılır ve yığına geri döner.
+
+Bir iğnenin fabrikanızdan geçtiğini düşünüyorsanız:
+
+1. Özellikle Silo olmak üzere malzeme tutan veya paketleyen makinelerin durumunu okuyun.
+2. Bu makinelerin çıkışını tarayıcı ve satış noktasına doğru izleyin.
+3. Tarayıcıdan sonra tekrar birleşen yollar dâhil her kolu kontrol edin.
+4. Birkaç ürünü yol boyunca izleyerek çalışan bağlantıyla yalnızca yakından geçen bandı ayırın.
+
+![Resmî fabrika görüntüsünde çok sayıda konveyör kolu ve robot kol saman yığınını çevreliyor.](/images/find-the-needle/screenshot-2.webp)
+
+Yalnız bir bandı kontrol etmenin fabrikanın bir kısmını nasıl kaçırabileceğini bu genel görüntüde görebilirsiniz. Bu resmî tanıtım düzenidir, garantili iğne güzergâhı planı değildir.
+
+## Silo bir iğnenin beklediğini söylüyor
+
+Aynı tartışmada bir oyuncu **44 Loose Straw, 1 Needle Waiting** gösterildiğini, Silo'dan başka çıktı gelmediğini bildirdi. Başka bir oyuncu yeni bir yumak üretmeye yetecek saman eklemeyi önerdi. Bu topluluk önerisidir, geliştiricinin doğruladığı düzeltme değildir; görünen miktar da o oyuncunun vakasına aittir.
+
+Denemeden önce [kaydınızı yedekleyin](/guides/guide/demo). Silo'yu sökmeyi garantili kurtarma yöntemi saymayın: başka bir yanıt, bunu yaparken iğne yok etme uyarısı bildiriyor. Oyun eylemin bir şeyi yok edeceğini söylüyorsa durun.
+
+## Tarayıcı olmasına rağmen bir iğne satıldı
+
+21 Eylül tartışmasında oyuncular, ana bant tıkandığında robot kolların erişilebilen başka banda malzeme koyup koyamadığını kontrol etmeyi önerdi. Bir şeyi yeniden kurmadan önce kendi kollarınızı ve yakındaki hatları gözleyin. Ürün yan yola gidiyorsa o yolun da tarayıcıdan geçtiğini doğrulayın.
+
+Tarayıcı önündeki kuyruk için [otomasyon rehberi](/guides/guide/automation) topluluğun paralel tarama şeritleri önerisini ele alır. Burada doğrulanmış evrensel makine sayısı veya garantili işleme hızı yoktur.
+
+## Saman kalmadı ama 5/6'da mı takıldınız?
+
+Oyuncular tam bu durumu bildirdi. **27 Eylül 2026** kontrolü itibarıyla bağlantılı bildirimlerde geliştiricinin doğruladığı genel çözüm yok. Normal yığına dönüş mekanizması her eksik iğne hatasının kendiliğinden düzeldiğini göstermez.
+
+Kaydınızı saklayın. İğne sayısını, kalan samanı, Silo durumunu ve tarayıcılardan geçen güzergâhı kaydedip ilgili Steam tartışmasına ekleyin. Sırf bir tahmini denemek için ilerlemeyi silmekten veya bütün fabrikayı sökmekten kaçının.
+
+Fabrikayı değiştirmeden önce [hat kontrolü](/tools/line-check) ile besleme, makineler ve tarayıcılar boyunca güzergâhı izleyin.
+
+Kaynaklar: [geliştiricinin Silo ve iğne dolaşımı açıklaması](https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/), [tarayıcıyı atlama tartışması](https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/), [5/6 ve sıfır saman bildirimi](https://steamcommunity.com/app/5160800/discussions/0/587312703065119554/).

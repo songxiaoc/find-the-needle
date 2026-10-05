@@ -1,0 +1,46 @@
+{
+  "id": "metal-detector",
+  "name": "Detektor kovů",
+  "summary": "Oficiální obchod popisuje začátek hledání jehel ručně s detektorem kovů, než větší část práce převezmou pásy, skenery a robotická ramena.",
+  "updatedAt": "2026-10-05",
+  "version": "Popis obchodu plné hry, ověřen 5. října 2026",
+  "data": {
+    "role": "Detekce jehel",
+    "scope": "Popis obchodu plné hry",
+    "operation": "Při ručním hledání používejte aktuální zpětnou vazbu detektoru. Sledujte již prohledaná místa; nenahrazujte signály hry pevně daným seznamem souřadnic.",
+    "check": "Pokud výroba již zabalila seno do výrobků, ověřte i skladování a trasy skenerů. Vývojář vysvětluje, že jehly mohou zůstat ve výrobcích ze sena, nejen ve volném seně."
+  },
+  "sources": [
+    {
+      "label": "Oficiální obchod Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Odpověď vývojáře a hlášení hráčů · 13. září 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "silo"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/getting-started",
+    "/guides/guide/needles-and-scanners"
+  ],
+  "image": "/images/find-the-needle/official-research.webp",
+  "imageAlt": "Strom výzkumu s položkou Metal Detector pod Scanner Mk I Plans.",
+  "imageCaption": "Výzkumná položka Metal Detector je pod Scanner Mk I Plans. Oficiální obrázek Steam.",
+  "imagePosition": "40% 37%",
+  "imageZoom": 3
+}

@@ -1,0 +1,38 @@
+{
+  "id": "pitchfork",
+  "name": "Widły",
+  "summary": "Widły to jedno z ręcznych narzędzi do siana wymienionych w oficjalnym sklepie. Zrzuty pokazują użycie z pierwszej osoby obok stosu i pojemnika.",
+  "updatedAt": "2026-10-05",
+  "version": "Opis sklepu pełnej gry, sprawdzony 5 października 2026",
+  "data": {
+    "role": "Przenoszenie siana",
+    "scope": "Opis sklepu pełnej gry",
+    "operation": "Zbieraj i przenoś siano według aktualnych podpowiedzi. Zrzut sklepu pokazuje pozycję narzędzia, nie ustala uniwersalnej wielkości ładunku ani liczby działań.",
+    "check": "Porównaj wysiłek z obecną łopatą i opcjami transportu. Jeśli przenoszenie jest najwolniejsze, sprawdź kolejne ulepszenie transportu zamiast zakładać, że rozwiąże to inne narzędzie ręczne."
+  },
+  "sources": [
+    {
+      "label": "Oficjalny sklep Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "tools",
+      "id": "shovel"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "tools",
+      "id": "metal-detector"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/getting-started"],
+  "image": "/images/find-the-needle/screenshot-3.webp",
+  "imageAlt": "Widły trzymane z perspektywy pierwszej osoby przed stosem siana.",
+  "imageCaption": "Widły są trzymane bezpośrednio przy stosie. Obsługę wykonuj według bieżących podpowiedzi; ten obraz nie wskazuje miejsca igły. Oficjalny zrzut Steam.",
+  "imagePosition": "50% 85%"
+}

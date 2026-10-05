@@ -1,0 +1,54 @@
+{
+  "id": "hay-products",
+  "name": "Zpracované výrobky ze sena",
+  "summary": "Obchod plné hry popisuje senovou hmotu, slisované balíky, ekologické cihly, papír ze sena a pelety. Přehled pomáhá rozpoznat skupiny produktů; nejde o seznam všeho odemčeného v demu.",
+  "updatedAt": "2026-10-05",
+  "version": "Popis obchodu plné hry, ověřen 5. října 2026",
+  "data": {
+    "role": "Zpracované produkty",
+    "scope": "Popis obchodu plné hry",
+    "pulp": "Zpracovaný výrobek ze sena uvedený v obchodě. Než mu vyhradíte výrobní linku, ověřte recept a potřebné vybavení v aktuální hře.",
+    "bales": "Lisované seno je mezi skupinami produktů a obchod zmiňuje lisy. Při kontrole uložených jehel nezaměňujte slisovaný balík se smotkem ze sila.",
+    "bricks": "Obchod uvádí ekologické cihly. Samostatně Demo V8 přidalo štítek BRICKS ke stroji Pellet Disc Machine; samotný štítek nepopisuje úplný recept.",
+    "paper": "Papír ze sena a papírenské stroje se objevují v popisu plné hry. Než naplánujete výrobu papíru, ověřte dostupnost příslušných strojů ve své verzi.",
+    "pellets": "Pelety jsou uvedenou skupinou výrobků. Pellet Disc Machine je i v oficiálních poznámkách dema, ale ty nepotvrzují všechny vstupy, výstupní množství ani prodejní cenu.",
+    "check": "Vývojář vysvětluje, že výrobky ze sena mohou obsahovat jehly. Při rozšiřování zpracování ponechte skenování v trase. Rozpočet stavte na receptech a cenách ve hře; nemáme potvrzené univerzální pořadí výnosnosti."
+  },
+  "sources": [
+    {
+      "label": "Oficiální obchod Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Oficiální poznámky Demo V8 · 11. září 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Odpověď vývojáře a hlášení hráčů · 13. září 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    },
+    {
+      "kind": "machines",
+      "id": "pellet-disc-machine"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ],
+  "image": "/images/find-the-needle/official-hay-bales.webp",
+  "imageAlt": "Dva obdélníkové balíky sena stažené páskami jedou po rozvětvených dopravnících vedle zelených zpracovatelských strojů.",
+  "imageCaption": "Všimněte si stažených balíků na rozvětvených pásech. Záběr z oficiálního videa Steam o výrobcích ze sena v čase 10,5 sekundy.",
+  "imagePosition": "34% 66%",
+  "imageZoom": 1.2
+}

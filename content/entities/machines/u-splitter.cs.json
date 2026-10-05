@@ -1,0 +1,41 @@
+{
+  "id": "u-splitter",
+  "name": "Rozdělovač U",
+  "summary": "U-Splitter je součást pro vedení pásů přidaná v Demo V8. Rozdělené trasy používejte ke kontrole či rozložení výrobní linky místo posílání všeho jedinou cestou.",
+  "updatedAt": "2026-10-05",
+  "version": "Oznámení Demo V8 (11. září 2026); řiďte se pokyny nainstalované verze",
+  "data": {
+    "role": "Vedení pásů",
+    "scope": "Poznámky k demu / diskuze",
+    "community": "Hráči navrhují samostatné větve se skenery při ucpání původní linky. Sledujte oba výstupy přes skenování a v případě potřeby je spojte až potom.",
+    "check": "Sledujte produkt vstupující do každé větve až k cíli. Poznámky V8 neuvádějí poměry rozdělování ani zaručené zvýšení průchodnosti."
+  },
+  "sources": [
+    {
+      "label": "Oficiální poznámky Demo V8 · 11. září 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Komunitní diskuze o skenerech · 16. září 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ]
+}

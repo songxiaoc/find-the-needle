@@ -1,0 +1,41 @@
+{
+  "id": "u-splitter",
+  "name": "U-Splitter",
+  "summary": "U-Splitters, Demo V8'de eklenen bant yönlendirme parçalarıdır. Her şeyi tek yola göndermek yerine hattı incelemek veya dağıtmak gerektiğinde bölünmüş yollar kullanın.",
+  "updatedAt": "2026-10-05",
+  "version": "Demo V8 duyurusu (11 Eylül 2026); kurulu sürümünüzün komutlarını izleyin",
+  "data": {
+    "role": "Bant yönlendirme",
+    "scope": "Demo notları / tartışma",
+    "community": "Oyuncular, asıl tarama hattı tıkandığında ayrı tarayıcı kolları öneriyor. İki çıkışı da taramadan geçirin, sonra gerekiyorsa birleştirin.",
+    "check": "Bir ürünün her kola girip hedefine ulaştığını izleyin. V8 notu dengeleme oranlarını veya garantili verim artışlarını belirtmez."
+  },
+  "sources": [
+    {
+      "label": "Resmî Demo V8 notları · 11 Eylül 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Topluluk tarayıcı tartışması · 16 Eylül 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ]
+}

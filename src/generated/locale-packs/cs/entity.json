@@ -1,0 +1,57 @@
+{
+  "kinds": {
+    "machines": {
+      "label": "Stroje a logistika",
+      "singularLabel": "Stroj",
+      "description": "Zkontrolujte připojení dopravníků, napájení, skenovací trasy a vybavení udržující seno v pohybu."
+    },
+    "tools": {
+      "label": "Ruční nástroje",
+      "singularLabel": "Nástroj",
+      "description": "Ruční manipulace se senem a detekce jehel před rozšířením továrny."
+    },
+    "products": {
+      "label": "Výrobky ze sena",
+      "singularLabel": "Výrobek",
+      "description": "Poznejte chuchvalce sena, skryté jehly a skupiny výrobků popsané pro plnou hru."
+    }
+  },
+  "fields": {
+    "role": "Úloha",
+    "scope": "Dostupné informace",
+    "function": "Co dělá",
+    "operation": "Jak jej používat",
+    "check": "Co zkontrolovat",
+    "community": "Rady komunity",
+    "limits": "Před nákupem",
+    "pulp": "Senová hmota",
+    "bales": "Lisované balíky",
+    "bricks": "Ekologické cihly",
+    "paper": "Papír ze sena",
+    "pellets": "Pelety"
+  },
+  "use": "Použití a obsluha",
+  "checks": "Kontroly a rozhodnutí",
+  "productTypes": "Skupiny výrobků",
+  "search": "Hledat",
+  "searchPlaceholder": "Název, použití nebo problém…",
+  "all": "Vše",
+  "sort": "Řazení",
+  "ascending": "Název A–Z",
+  "descending": "Název Z–A",
+  "updated": "Nedávno aktualizované",
+  "resultCount": "{shown} z {total}",
+  "clear": "Vymazat hledání a filtry",
+  "view": "Zobrazit podrobnosti",
+  "fullImage": "Zobrazit obrázek v plné velikosti",
+  "noMatches": "Žádné odpovídající záznamy",
+  "empty": "Zkuste kratší hledaný výraz nebo odeberte filtr.",
+  "reset": "Resetovat hledání",
+  "version": "Informace a zdroje",
+  "scope": "Podklad",
+  "checked": "Zkontrolováno",
+  "related": "Související vybavení a výrobky",
+  "guides": "Pokračovat průvodcem",
+  "back": "Zpět na",
+  "sources": "Zdroje"
+}

@@ -1,0 +1,128 @@
+{
+  "home": "Strona główna",
+  "hub": "Narzędzia fabryczne",
+  "intro": "Sprawdź zatrzymaną trasę, zapisuj kontrole pierwszej działającej linii lub porównuj plany produkcji na podstawie własnych pomiarów.",
+  "open": "Otwórz narzędzie",
+  "tools": {
+    "line-check": {
+      "title": "Sprawdź linię produkcyjną",
+      "description": "Wybierz widoczny objaw, aby sprawdzić zasilanie, przepływ materiału i wykrywanie igieł bez rozbierania fabryki."
+    },
+    "checklist": {
+      "title": "Lista kontrolna pierwszej linii",
+      "description": "Prześledź jedną trasę materiału od zbierania do sprzedaży i zapisz wyniki kontroli na tym urządzeniu."
+    },
+    "production-calculator": {
+      "title": "Kalkulator produkcji i zwrotu inwestycji",
+      "description": "Porównaj dwie linie na podstawie zmierzonej przepustowości, zapasu, ceny sprzedaży i kosztów."
+    }
+  },
+  "diagnosis": {
+    "prompt": "Co się dzieje?",
+    "steps": "Sprawdzaj w tej kolejności",
+    "links": "Sprawdź szczegóły",
+    "sources": "Źródła dyskusji i aktualizacji",
+    "symptoms": [
+      {
+        "title": "Maszyna nie działa",
+        "note": "Zacznij od informacji wyświetlanych przez maszynę. To kontrole połączeń, a nie gwarantowane rozwiązanie błędu gry.",
+        "steps": [
+          "Odczytaj oznaczenie wejścia i sprawdź, czy przyjmuje dostarczany materiał.",
+          "Sprawdź podłączenie zasilania, zwłaszcza jeśli kilka zasilanych maszyn zatrzymało się jednocześnie.",
+          "Prześledź wyjście do miejsca, które przyjmuje produkt. Zanim cokolwiek zmienisz, obserwuj jeden przedmiot przechodzący całą trasę."
+        ]
+      },
+      {
+        "title": "Siano lub produkty się spiętrzają",
+        "note": "Gracze proponowali równoległe tory skanowania. Wypróbuj drugi tor dopiero po zauważeniu kolejki przy skanerze; nie jest to zweryfikowany układ uniwersalny.",
+        "steps": [
+          "Znajdź pierwszy punkt zatrzymania materiału, a następnie sprawdź kolejne połączenie w kierunku przepływu.",
+          "Sprawdź kierunek taśm, pozycje pobierania i odkładania ramion oraz wejście docelowe.",
+          "Jeśli obserwowanym wąskim gardłem jest skaner, porównaj tor równoległy, zachowując skanowanie wszystkich tras sprzedaży. Zmieniaj jedno połączenie naraz."
+        ]
+      },
+      {
+        "title": "Igła została sprzedana mimo skanera",
+        "note": "Twórca podaje, że igły sprzedane wewnątrz produktów wracają do stogu siana. Gracze zgłaszają też boczne trasy ramion przy zatłoczonych liniach.",
+        "steps": [
+          "Prześledź produkty od Silo i pozostałych maszyn przetwarzających aż do Hay Sell Stand.",
+          "Obserwuj każde ramię robotyczne i pobliskie taśmy w jego zasięgu.",
+          "Sprawdź obecność skanera na każdym odgałęzieniu, także tym, które łączy się z linią za głównym skanerem."
+        ]
+      },
+      {
+        "title": "Silo pokazuje oczekującą igłę",
+        "note": "Jeden z graczy zaproponował dodanie siana wystarczającego do utworzenia kolejnej bryły. Twórca nie potwierdził tego rozwiązania.",
+        "steps": [
+          "Wykonaj kopię zapisu gry przed testowaniem zmiany.",
+          "Odczytaj stan Silo i prześledź wyjście. Według twórcy igła może zostać zapakowana w bryłę siana.",
+          "Jeśli testujesz dodanie siana, zmień tylko ten czynnik. Zatrzymaj się przy ostrzeżeniu o zniszczeniu igły; rozebranie Silo nie gwarantuje jej odzyskania."
+        ]
+      },
+      {
+        "title": "5/6 igieł i brak siana",
+        "note": "Podczas sprawdzania 27 września 2026 r. podlinkowane zgłoszenia nie zawierały ogólnego rozwiązania potwierdzonego przez twórcę.",
+        "steps": [
+          "Zachowaj zapis gry i wykonaj jego kopię; nie kasuj postępu, aby sprawdzić domysł.",
+          "Zapisz liczbę igieł, pozostałe siano, stan Silo i trasę przez skanery.",
+          "Przeczytaj podlinkowane zgłoszenie lub udostępnij te informacje w odpowiedniej dyskusji na Steam. Zwykły powrót do stogu nie dowodzi, że każdy błąd zaginionej igły naprawi się sam."
+        ]
+      }
+    ]
+  },
+  "checklist": {
+    "note": "Kontrole są zapisywane w tej przeglądarce na tym urządzeniu. Nie odczytują ani nie zmieniają zapisu gry.",
+    "progress": "Ukończone",
+    "reset": "Wyzeruj kontrole",
+    "loading": "Wczytywanie zapisanych kontroli…",
+    "error": "Przeglądarka nie mogła zapisać lub odczytać kontroli. Nadal możesz korzystać z listy podczas tej wizyty.",
+    "guide": "Przeczytaj poradnik połączeń",
+    "items": [
+      "Określ materiał wchodzący na trasę.",
+      "Sprawdź wyjście zbierania lub magazynowania.",
+      "Sprawdź kierunek każdej taśmy i punkt przekazania ramienia robotycznego.",
+      "Podłącz zasilanie tam, gdzie wymaga go maszyna.",
+      "Dopasuj oznaczenie każdego wejścia do dostarczanego materiału.",
+      "Upewnij się, że każde odgałęzienie sprzedaży przechodzi przez skaner.",
+      "Sprawdź, czy miejsce sprzedaży przyjmuje produkt wyjściowy.",
+      "Obserwuj jeden produkt przechodzący całą trasę, a następnie sprawdź licznik igieł."
+    ]
+  },
+  "calculator": {
+    "note": "Wprowadź własne obserwowane wartości. Tempo podaje się w jednostkach na minutę, a wszystkie kwoty w tej samej walucie gry. Ceny gry i prędkości maszyn nie są wypełnione z góry.",
+    "assumption": "Porównuj ten sam materiał w tej samej jednostce. Jeśli przetwarzanie zmienia jednostki, najpierw przelicz wszystkie tempa i zapas na równoważne jednostki produktu końcowego. Szacunek zakłada stały przepływ, wystarczające zasilanie, brak strat i ustanie kosztów operacyjnych po wyczerpaniu zapasu.",
+    "plan": "Plan",
+    "optional": "opcjonalnie",
+    "stage": "Etap",
+    "rate": "Przepustowość (jednostki/min)",
+    "add": "Dodaj etap",
+    "remove": "Usuń etap",
+    "stock": "Dostępny zapas (jednostki)",
+    "price": "Cena sprzedaży (waluta/jednostka)",
+    "investment": "Inwestycja początkowa (waluta)",
+    "operating": "Koszt pracy (waluta/min)",
+    "calculate": "Oblicz / porównaj",
+    "invalid": "Wypełnij każde pole skończoną liczbą nie mniejszą niż 0. Używaj kropki jako separatora dziesiętnego.",
+    "overflow": "Wartości są zbyt duże do wiarygodnego obliczenia. Użyj mniejszych wartości.",
+    "capacity": "Wydajność linii",
+    "bottleneck": "Najwolniejszy etap",
+    "duration": "Czas przetworzenia zapasu",
+    "revenue": "Przychód z zapasu",
+    "profit": "Zysk z zapasu po kosztach pracy i inwestycji",
+    "margin": "Dochód netto podczas pracy",
+    "payback": "Czas zwrotu inwestycji",
+    "stopped": "Brak przepływu: co najmniej jeden etap ma zerową przepustowość.",
+    "never": "Brak zwrotu przy tej marży operacyjnej.",
+    "insufficient": "Dostępny zapas wyczerpie się przed zwrotem inwestycji.",
+    "empty": "Brak zapasu do przetworzenia.",
+    "minutes": "min",
+    "units": "jednostki/min",
+    "currency": "waluta",
+    "formulas": "Sposób obliczania",
+    "formulaText": "Wydajność = najniższe tempo etapu. Czas = zapas ÷ wydajność. Dochód netto/min = wydajność × cena − koszt pracy. Zysk z zapasu = zapas × cena − czas × koszt pracy − inwestycja. Zwrot = inwestycja ÷ dochód netto/min, tylko gdy pozostaje wystarczający zapas.",
+    "comparison": "Wyniki",
+    "better": "Wyższy zysk z zapasu:",
+    "equal": "Oba plany dają taki sam zysk z zapasu.",
+    "resultHint": "Wyniki dotyczą tej partii zapasu, a nie nieograniczonej produkcji. Inna ilość zapasu może zmienić to, który plan zarabia więcej."
+  }
+}

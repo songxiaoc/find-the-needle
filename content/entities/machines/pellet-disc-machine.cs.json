@@ -1,0 +1,43 @@
+{
+  "id": "pellet-disc-machine",
+  "name": "Stroj na peletové kotouče",
+  "summary": "Demo V8 přidalo ke stroji Pellet Disc Machine ukazatele zdrojů jako BRICKS a HAY. Při kontrole zastavené zpracovatelské linky čtěte tyto štítky.",
+  "updatedAt": "2026-10-05",
+  "version": "Oznámení Demo V8 (11. září 2026); řiďte se pokyny nainstalované verze",
+  "data": {
+    "role": "Zpracování",
+    "scope": "Poznámky k demu / diskuze",
+    "operation": "Porovnejte zobrazené štítky zdrojů s materiálem přicházejícím jednotlivými přípojkami. Před změnou rozložení ověřte napájení a pohyb na vstupu.",
+    "limits": "Aktualizace uvádí ukazatele, ne úplný recept. Množství, výstupy a rychlost zjišťujte z aktuálních požadavků stroje ve hře."
+  },
+  "sources": [
+    {
+      "label": "Oficiální poznámky Demo V8 · 11. září 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Oficiální obrázek Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "power-pole"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "products",
+      "id": "hay-products"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"],
+  "image": "/images/find-the-needle/official-automation.webp",
+  "imageAlt": "Obrazovka výzkumu se Small Arm Plans uprostřed a Pellet Discs Plans poblíž pravého horního rohu.",
+  "imageCaption": "Hledejte Pellet Discs Plans u pravého horního rohu nabídky výzkumu. Oficiální obrázek Steam.",
+  "imagePosition": "94% 26%",
+  "imageZoom": 3
+}

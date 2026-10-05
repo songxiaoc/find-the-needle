@@ -1,0 +1,38 @@
+{
+  "id": "shovel",
+  "name": "Pá",
+  "summary": "A loja oficial apresenta a pá como ferramenta inicial para mover feno à mão e ganhar dinheiro antes de comprar esteiras e máquinas.",
+  "updatedAt": "2026-10-05",
+  "version": "Descrição da loja do jogo completo, verificada em 5 de outubro de 2026",
+  "data": {
+    "role": "Manuseio de feno",
+    "scope": "Descrição da loja do jogo completo",
+    "operation": "Na primeira sessão, manuseie um pouco de feno, encontre SELL HAY e siga as instruções de interação. Diferencie buscar agulhas de simplesmente limpar a pilha.",
+    "check": "Antes de substituir trabalho manual por automação, identifique a etapa lenta: coletar, carregar, vender ou examinar. Compre para esse gargalo usando os preços atuais do jogo."
+  },
+  "sources": [
+    {
+      "label": "Loja oficial do Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "tools",
+      "id": "pitchfork"
+    },
+    {
+      "kind": "tools",
+      "id": "metal-detector"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/getting-started", "/guides/guide/automation"]
+}

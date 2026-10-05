@@ -1,0 +1,41 @@
+{
+  "id": "hay-wad",
+  "name": "Smotek sena",
+  "summary": "Smotek je seno zabalené v silu. Vývojář potvrzuje, že může obsahovat jehlu, takže zabalený produkt nelze automaticky bezpečně prodávat bez skenování.",
+  "updatedAt": "2026-10-05",
+  "version": "Vysvětlení vývojáře (13. září 2026)",
+  "data": {
+    "role": "Zabalené seno",
+    "scope": "Poznámky k demu / diskuze",
+    "operation": "Sledujte smotek od výstupu sila přes každý pás a přesun ramenem. Ověřte, že trasa zahrnuje skenování před připojením k závěrečné prodejní lince.",
+    "check": "Vývojář uvádí, že jehla prodaná uvnitř výrobku se vrátí do hromady. Pokud silo stále uvádí čekající jehlu, prozkoumejte výstup, místo abyste předpokládali, že už se vrátila."
+  },
+  "sources": [
+    {
+      "label": "Odpověď vývojáře a hlášení hráčů · 13. září 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "silo"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "products",
+      "id": "hay-products"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}
