@@ -1,0 +1,38 @@
+{
+  "id": "silo",
+  "name": "Silo",
+  "summary": "The Silo packs hay into hay wads. The developer explains that needles can stay inside those wads, so follow the output toward a scanner before selling.",
+  "updatedAt": "2026-10-05",
+  "version": "Developer explanation (September 13, 2026)",
+  "data": {
+    "role": "Storage and packaging",
+    "scope": "Demo notes / discussion",
+    "operation": "Inspect the Silo’s stored hay and needle messages, then watch its output belt. A needle still listed inside is not the same as a needle already scanned.",
+    "community": "A player suggests adding enough loose hay to complete another output load when a needle is waiting. This is a community suggestion, with no confirmed universal batch size or guaranteed fix.",
+    "check": "Avoid dismantling a Silo to recover a needle: a player reported a destruction warning. Keep your save and inspect feed, output and scanning first."
+  },
+  "sources": [
+    {
+      "label": "Developer reply and player reports · September 13, 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

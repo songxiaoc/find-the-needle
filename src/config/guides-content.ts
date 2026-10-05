@@ -16,6 +16,7 @@ import path from 'path';
 import GithubSlugger from 'github-slugger';
 import matter from 'gray-matter';
 
+import { GUIDE_RELATIONS } from '@/config/guide-relations';
 import { GUIDE_CATEGORIES, type GuideCategory } from '@/config/guides';
 import { getCommonMessages } from '@/config/locale/messages';
 import { localeOfFile, stripLocaleSuffix } from '@/config/locale/wiring';
@@ -183,12 +184,24 @@ export function getGuidePage(
   return null;
 }
 
-/** Same-category siblings, excluding the current article. */
+/** Prefer the next relevant player task, with category siblings as a fallback. */
 export function getRelatedGuides(
   item: GuideItem,
   locale = 'en',
   limit = 4
 ): GuideItem[] {
+  const relatedSlugs = GUIDE_RELATIONS[item.slug];
+  if (relatedSlugs) {
+    const guides = new Map(
+      getAllGuides(locale).map((guide) => [guide.slug, guide])
+    );
+    return relatedSlugs
+      .map((slug) => guides.get(slug))
+      .filter((guide): guide is GuideItem => Boolean(guide))
+      .filter((guide) => guide.slug !== item.slug)
+      .slice(0, limit);
+  }
+
   return getGuidesByCategory(item.category, locale)
     .filter((g) => g.slug !== item.slug)
     .slice(0, limit);

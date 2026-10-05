@@ -1,3 +1,5 @@
+import { ENTITY_KINDS } from '../entities';
+
 export const PUBLIC_PAGES = [
   { path: '/', label: 'Home' },
   { path: '/guides', label: 'Guides' },
@@ -8,6 +10,11 @@ export const PUBLIC_PAGES = [
   { path: '/contact', label: 'Contact' },
   { path: '/privacy-policy', label: 'Privacy policy' },
   { path: '/terms-of-service', label: 'Terms of use' },
+  { path: '/database', label: 'Database' },
+  { path: '/tools', label: 'Factory tools' },
+  { path: '/tools/line-check', label: 'Production line check' },
+  { path: '/tools/checklist', label: 'Factory checklist' },
+  { path: '/tools/production-calculator', label: 'Production calculator' },
 ] as const;
 
 export const GUIDE_PATHS = [
@@ -23,4 +30,18 @@ export const GUIDE_PATHS = [
 export const PUBLIC_PATHS: ReadonlySet<string> = new Set([
   ...PUBLIC_PAGES.map((page) => page.path),
   ...GUIDE_PATHS,
+  ...ENTITY_KINDS.map((kind) => kind.route),
 ]);
+
+export function isPublicPath(path: string): boolean {
+  return (
+    PUBLIC_PATHS.has(path) ||
+    ENTITY_KINDS.some((kind) => {
+      const prefix = `${kind.route}/`;
+      return (
+        path.startsWith(prefix) &&
+        /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(path.slice(prefix.length))
+      );
+    })
+  );
+}

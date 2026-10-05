@@ -28,7 +28,7 @@ jobs:
           node-version: 24
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm format:check && pnpm lint && pnpm typecheck && pnpm validate:site
+      - run: pnpm format:check && pnpm lint && pnpm typecheck && pnpm validate:site && pnpm test:tools
       - run: pnpm exec opennextjs-cloudflare build
       - name: Check Worker artifact
         run: "! grep -R -F 'require(this.middlewareManifestPath)' .open-next/server-functions"

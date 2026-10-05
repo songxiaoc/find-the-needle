@@ -1,0 +1,42 @@
+{
+  "id": "conveyor-belt",
+  "name": "Convoyeur (Conveyor Belt)",
+  "summary": "Les convoyeurs déplacent le foin entre les équipements. La démo V8 a revu l’accrochage et ajouté le tracé automatique ; F active No Snap Mode pour une pose libre.",
+  "updatedAt": "2026-10-05",
+  "version": "Annonce de la démo V8 (11 septembre 2026) ; suivez les indications de votre version",
+  "data": {
+    "role": "Transport",
+    "scope": "Notes et discussions de la démo",
+    "operation": "Raccordez un court tronçon et regardez un produit le traverser avant de prolonger la ligne. Un convoyeur près d’une machine ne prouve pas que le raccordement fonctionne.",
+    "check": "Remontez depuis le premier produit arrêté. Vérifiez la destination en aval, chaque jonction et les branches qui pourraient contourner la détection."
+  },
+  "sources": [
+    {
+      "label": "Notes officielles de la démo V8 · 11 septembre 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Discussion communautaire sur les circuits · 21 septembre 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "conveyor-belt",
+  "name": "Förderband (Conveyor Belt)",
+  "summary": "Förderbänder bewegen Heu zwischen Geräten. Demo V8 überarbeitete das Einrasten und ergänzte automatische Wegfindung; F aktiviert No Snap Mode für freie Platzierung.",
+  "updatedAt": "2026-10-05",
+  "version": "Demo-V8-Ankündigung (11. September 2026); beachte die Hinweise deiner installierten Version",
+  "data": {
+    "role": "Transport",
+    "scope": "Demo-Notizen / Diskussion",
+    "operation": "Schließe ein kurzes Stück an und beobachte ein Produkt darauf, bevor du die Linie verlängerst. Ein Bandende neben einer Maschine beweist noch keine funktionierende Verbindung.",
+    "check": "Gehe vom ersten stehen gebliebenen Produkt aus rückwärts vor. Prüfe das Ziel, jede Verbindung und Nebenwege, die am Scanner vorbeiführen."
+  },
+  "sources": [
+    {
+      "label": "Offizielle Demo-V8-Notizen · 11. September 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Community-Diskussion zu Transportwegen · 21. September 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"]
+}

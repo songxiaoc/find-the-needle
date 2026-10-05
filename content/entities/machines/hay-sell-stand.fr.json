@@ -1,0 +1,44 @@
+{
+  "id": "hay-sell-stand",
+  "name": "Stand de vente de foin (Hay Sell Stand)",
+  "summary": "Le point de vente porte l’inscription SELL HAY. La démo V8 a ajouté l’accrochage du convoyeur. Selon le développeur, une aiguille vendue dans un produit retourne dans le tas.",
+  "updatedAt": "2026-10-05",
+  "version": "Annonce de la démo V8 (11 septembre 2026) ; suivez les indications de votre version",
+  "data": {
+    "role": "Vente",
+    "scope": "Notes et discussions de la démo",
+    "operation": "Raccordez le convoyeur au stand au lieu de l’arrêter à proximité. Si l’accrochage ne se fait pas, vérifiez si F a activé No Snap Mode.",
+    "check": "Remontez les dernières branches jusqu’au scanner. Le développeur décrit le recyclage normal des aiguilles, pas une récupération garantie en cas de bug."
+  },
+  "sources": [
+    {
+      "label": "Notes officielles de la démo V8 · 11 septembre 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Réponse du développeur et témoignages · 13 septembre 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ],
+  "image": "/images/find-the-needle/screenshot-1.webp",
+  "imageAlt": "Convoyeur transportant du foin vers le stand marqué SELL HAY.",
+  "imageCaption": "Le convoyeur rejoint l’avant du stand SELL HAY. Repérez ainsi la destination ; les prix de l’image ne sont pas des tarifs actuels. Capture Steam officielle."
+}

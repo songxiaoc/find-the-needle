@@ -1,0 +1,38 @@
+{
+  "id": "shovel",
+  "name": "Pelle (Shovel)",
+  "summary": "La boutique officielle présente la pelle comme l’outil de départ pour déplacer le foin à la main et gagner de l’argent avant d’acheter convoyeurs et machines.",
+  "updatedAt": "2026-10-05",
+  "version": "Présentation du jeu complet, vérifiée le 5 octobre 2026",
+  "data": {
+    "role": "Manipulation du foin",
+    "scope": "Présentation du jeu complet",
+    "operation": "Pour commencer, manipulez une petite quantité de foin, repérez SELL HAY et suivez les indications d’interaction du jeu. Vider le tas et chercher les aiguilles restent deux tâches distinctes.",
+    "check": "Avant d’automatiser, identifiez l’étape lente : collecte, transport, vente ou détection. Choisissez l’achat adapté à ce blocage selon les prix affichés en jeu."
+  },
+  "sources": [
+    {
+      "label": "Boutique Steam officielle",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "tools",
+      "id": "pitchfork"
+    },
+    {
+      "kind": "tools",
+      "id": "metal-detector"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/getting-started", "/guides/guide/automation"]
+}

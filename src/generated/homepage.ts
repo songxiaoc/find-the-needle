@@ -1,6 +1,22 @@
 import type { HomeBlock } from '@/config/homepage-schema';
+import { FACTORY_TOOL_PATHS, getDiscoveryCopy } from '@/content/discovery-copy';
 
 import { homeCopy } from './home-copy';
+
+function expansionBlocks(locale: string): HomeBlock[] {
+  const copy = getDiscoveryCopy(locale);
+  return [
+    { id: 'factory-records', type: 'entity-index', title: copy.databaseTitle, sub: copy.databaseIntro, previewLimit: 2 },
+    {
+      id: 'factory-tools', type: 'start-cards', title: copy.toolsTitle,
+      items: copy.toolCards.map(([title, description, tag], i) => ({
+        id: ['line-check', 'checklist', 'production-calculator'][i], type: i === 0 ? 'featured' : 'latest',
+        href: FACTORY_TOOL_PATHS[i], title, description, tag,
+        readingTime: copy.interactive, tagTone: i === 0 ? 'solid' : 'amber',
+      })),
+    },
+  ];
+}
 
 export const generatedHomeBlocks = [
   {
@@ -98,6 +114,7 @@ export const generatedHomeBlocks = [
       },
     ],
   },
+  ...expansionBlocks('en'),
   {
     id: 'about-game',
     type: 'about',
@@ -122,6 +139,9 @@ export const generatedHomeBlocksI18n = Object.fromEntries(
   Object.entries(homeCopy).map(([locale, copy]) => [
     locale,
     generatedHomeBlocks.map((block): HomeBlock => {
+      if (block.id === 'factory-records' || block.id === 'factory-tools') {
+        return expansionBlocks(locale).find((translated) => translated.id === block.id)!;
+      }
       if (block.type === 'hero')
         return {
           ...block,
@@ -149,12 +169,13 @@ export const generatedHomeBlocksI18n = Object.fromEntries(
           })),
         };
       }
+      if (block.type !== 'about') return block;
       return {
         ...block,
         title: copy.about,
         paragraphs: [...copy.paragraphs],
         stats: copy.stats.map(([label, value]) => ({ label, value })),
-        cta: { ...block.cta, label: copy.steam },
+        cta: block.cta ? { ...block.cta, label: copy.steam } : undefined,
       };
     }),
   ])

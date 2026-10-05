@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import { getEntityCopy } from '@/content/entity-copy';
+
 import { Link } from '@/core/i18n/navigation';
 import {
   getEntityField,
@@ -23,18 +26,21 @@ export function EntityDetail({
   entity,
   relatedEntities,
   relatedGuides,
+  locale = 'en',
 }: {
   kind: EntityKind;
   entity: EntityRecord;
   relatedEntities: ResolvedEntityLink[];
   relatedGuides: ResolvedGuideLink[];
+  locale?: string;
 }) {
+  const copy = getEntityCopy(locale);
   return (
     <article className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_300px]">
       <div className="min-w-0">
         <header className="border-site-outline-strong bg-site-surface-container border p-6 md:p-10">
           <p className="font-site-mono text-site-primary text-[10px] font-semibold tracking-[0.18em] uppercase">
-            {kind.singularLabel} record
+            {kind.singularLabel}
           </p>
           <h1 className="site-display-lg text-site-on-surface mt-4 text-balance">
             {entity.name}
@@ -45,6 +51,23 @@ export function EntityDetail({
         </header>
 
         <div className="mt-10 space-y-10">
+          {entity.image && entity.imageAlt && (
+            <figure>
+              <Image
+                src={entity.image}
+                alt={entity.imageAlt}
+                width={1600}
+                height={900}
+                sizes="(max-width: 1024px) 100vw, 900px"
+                className="border-site-outline-strong h-auto w-full border"
+              />
+              {entity.imageCaption && (
+                <figcaption className="text-site-on-surface-variant mt-3 text-sm leading-6">
+                  {entity.imageCaption}
+                </figcaption>
+              )}
+            </figure>
+          )}
           {kind.detailSections.map((section) => {
             const populatedFields = section.fields.filter(
               (fieldId) => entity.data[fieldId] !== undefined
@@ -69,7 +92,7 @@ export function EntityDetail({
                     </p>
                   )}
                 </div>
-                <dl className="border-site-outline-strong bg-site-outline-strong grid gap-px border sm:grid-cols-2">
+                <dl className="border-site-outline-strong bg-site-outline-strong grid gap-px border">
                   {populatedFields.map((fieldId) => (
                     <div
                       key={fieldId}
@@ -78,7 +101,7 @@ export function EntityDetail({
                       <dt className="font-site-mono text-site-outline text-[10px] tracking-[0.14em] uppercase">
                         {getEntityField(kind, fieldId)?.label ?? fieldId}
                       </dt>
-                      <dd className="text-site-on-surface mt-2 text-base tabular-nums">
+                      <dd className="text-site-on-surface mt-2 text-base leading-7">
                         <EntityFieldValue
                           kind={kind}
                           fieldId={fieldId}
@@ -97,22 +120,36 @@ export function EntityDetail({
       <aside className="space-y-6 self-start lg:sticky lg:top-24">
         <section className="border-site-outline-strong bg-site-surface-container border p-5">
           <h2 className="font-site-mono text-site-primary text-[10px] font-semibold tracking-[0.16em] uppercase">
-            Version information
+            {copy.version}
           </h2>
           <dl className="mt-4 space-y-3 text-sm">
-            <div className="flex items-center justify-between gap-4">
-              <dt className="text-site-on-surface-variant">Game build</dt>
-              <dd className="font-site-mono text-site-on-surface tabular-nums">
-                v{entity.version}
+            <div className="space-y-1">
+              <dt className="text-site-on-surface-variant">{copy.scope}</dt>
+              <dd className="text-site-on-surface leading-6">
+                {entity.version}
               </dd>
             </div>
             <div className="flex items-center justify-between gap-4">
-              <dt className="text-site-on-surface-variant">Updated</dt>
+              <dt className="text-site-on-surface-variant">{copy.checked}</dt>
               <dd className="font-site-mono text-site-on-surface tabular-nums">
                 <time dateTime={entity.updatedAt}>{entity.updatedAt}</time>
               </dd>
             </div>
           </dl>
+          <ul className="border-site-outline-strong mt-4 space-y-3 border-t pt-4 text-sm">
+            {entity.sources.map((source) => (
+              <li key={source.url}>
+                <a
+                  href={source.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-site-primary focus-visible:outline-site-primary decoration-site-outline leading-6 underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2"
+                >
+                  {source.label} ↗
+                </a>
+              </li>
+            ))}
+          </ul>
         </section>
 
         {relatedEntities.length > 0 && (
@@ -124,7 +161,7 @@ export function EntityDetail({
               id="related-entities-heading"
               className="font-site-mono text-site-primary text-[10px] font-semibold tracking-[0.16em] uppercase"
             >
-              Related records
+              {copy.related}
             </h2>
             <ul className="divide-site-outline-variant mt-3 divide-y">
               {relatedEntities.map((related) => (
@@ -153,7 +190,7 @@ export function EntityDetail({
               id="related-guides-heading"
               className="font-site-mono text-site-primary text-[10px] font-semibold tracking-[0.16em] uppercase"
             >
-              Related guides
+              {copy.guides}
             </h2>
             <ul className="divide-site-outline-variant mt-3 divide-y">
               {relatedGuides.map((guide) => (
@@ -174,7 +211,7 @@ export function EntityDetail({
           href={kind.route}
           className="font-site-mono text-site-primary focus-visible:outline-site-primary inline-block text-[10px] font-semibold tracking-[0.14em] uppercase focus-visible:outline-2 focus-visible:outline-offset-4"
         >
-          ← Back to {kind.label}
+          ← {copy.back} {kind.label}
         </Link>
       </aside>
     </article>

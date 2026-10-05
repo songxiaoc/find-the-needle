@@ -1,0 +1,41 @@
+{
+  "id": "metal-detector",
+  "name": "Détecteur de métaux (Metal Detector)",
+  "summary": "La boutique officielle décrit une recherche d’aiguilles à la main avec un détecteur de métaux, avant de confier davantage de travail aux convoyeurs, scanners et bras robotisés.",
+  "updatedAt": "2026-10-05",
+  "version": "Présentation du jeu complet, vérifiée le 5 octobre 2026",
+  "data": {
+    "role": "Détection d’aiguilles",
+    "scope": "Présentation du jeu complet",
+    "operation": "Fiez-vous aux indications actuelles du détecteur pour chercher à la main. Retenez les zones examinées et utilisez les signaux du jeu plutôt qu’une liste de coordonnées fixes.",
+    "check": "Si la production a déjà emballé le foin, examinez aussi stockage et circuits de détection. Le développeur précise que des aiguilles peuvent rester dans les produits, pas seulement dans le foin en vrac."
+  },
+  "sources": [
+    {
+      "label": "Boutique Steam officielle",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Réponse du développeur et témoignages · 13 septembre 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "silo"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/getting-started",
+    "/guides/guide/needles-and-scanners"
+  ]
+}

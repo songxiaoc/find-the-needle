@@ -1,0 +1,41 @@
+{
+  "id": "hay-wad",
+  "name": "Hay Wad",
+  "summary": "A hay wad is packaged hay from a Silo. The developer confirms that it can contain a needle, so a packaged product is not automatically safe to sell without scanning.",
+  "updatedAt": "2026-10-05",
+  "version": "Developer explanation (September 13, 2026)",
+  "data": {
+    "role": "Packaged hay",
+    "scope": "Demo notes / discussion",
+    "operation": "Follow the wad from Silo output through every belt and arm transfer. Check that its route includes scanning before joining the final selling line.",
+    "check": "The developer says a needle sold inside a hay product goes back to the pile. If a Silo still lists a waiting needle, investigate its output rather than assuming the needle has already returned."
+  },
+  "sources": [
+    {
+      "label": "Developer reply and player reports · September 13, 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "silo"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "products",
+      "id": "hay-products"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

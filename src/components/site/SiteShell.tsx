@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { FACTORY_TOOL_PATHS, getDiscoveryCopy } from '@/content/discovery-copy';
 import { useLocale } from 'next-intl';
 
 import { Link } from '@/core/i18n/navigation';
@@ -12,6 +13,7 @@ import { getCommonMessages } from '@/config/locale/messages';
 import { uiDataAttributes } from '@/config/ui';
 
 import { AdSlot } from './AdSlot';
+import { FactoryEngagement } from './FactoryEngagement';
 import { LanguagePrompt } from './LanguagePrompt';
 import { LocaleSwitcher } from './LocaleSwitcher';
 import { MobileNav } from './MobileNav';
@@ -69,7 +71,7 @@ function SiteHeader({
         >
           <BrandMark />
         </Link>
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-5 xl:flex">
           {(() => {
             const activeNav = activeNavHref(activeHref, localizedNavItems);
             return localizedNavItems.map((item) => {
@@ -126,7 +128,7 @@ function SiteFooter({
   };
   const entityGroup: FooterLinkGroup | null = entityKinds.length
     ? {
-        heading: 'Database',
+        heading: getDiscoveryCopy(locale).database,
         links: entityKinds.map((kind) => ({
           label: kind.label,
           href: kind.route,
@@ -136,6 +138,13 @@ function SiteFooter({
   const footerGroups: FooterLinkGroup[] = [
     guidesGroup,
     ...(entityGroup ? [entityGroup] : []),
+    {
+      heading: getDiscoveryCopy(locale).tools,
+      links: FACTORY_TOOL_PATHS.map((href, i) => ({
+        href,
+        label: getDiscoveryCopy(locale).toolCards[i][0],
+      })),
+    },
     {
       heading: copy.footer.resources,
       links: [
@@ -161,7 +170,7 @@ function SiteFooter({
       style={{ background: 'var(--site-surface-lowest)' }}
     >
       <div className="mx-auto max-w-[1440px] px-6 pt-12 pb-8 md:px-14">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-[2fr_1fr_1fr_1fr]">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-[1.6fr_repeat(5,minmax(0,1fr))]">
           <div>
             <div className="flex items-center gap-3">
               <BrandMark width={184} height={43} />
@@ -261,7 +270,7 @@ export function SiteShell({
   const currentLocale = useLocale();
   const locale = requestedLocale ?? currentLocale;
   const entityKinds = siteProfile.features.entities
-    ? getPublishedEntityKinds()
+    ? getPublishedEntityKinds(locale)
     : [];
   const copy = getCommonMessages(locale);
   const routeLabels: Record<string, string> = {
@@ -273,6 +282,8 @@ export function SiteShell({
     '/about': copy.navigation.about,
     '/contact': copy.navigation.contact,
     '/guides/guide/demo': copy.navigation.demo,
+    '/tools': getDiscoveryCopy(locale).tools,
+    '/database': getDiscoveryCopy(locale).database,
   };
   const navItems: NavItem[] = getPrimaryNavigation().map((item) => ({
     ...item,
@@ -283,7 +294,10 @@ export function SiteShell({
     entityKinds.length > 0 &&
     !navItems.some((item) => item.href === '/database')
   ) {
-    navItems.push({ label: 'Database', href: '/database' });
+    navItems.push({
+      label: getDiscoveryCopy(locale).database,
+      href: '/database',
+    });
   }
 
   return (
@@ -302,6 +316,7 @@ export function SiteShell({
       </div>
       <SiteFooter entityKinds={entityKinds} locale={locale} />
       <LanguagePrompt locale={locale} />
+      <FactoryEngagement />
     </div>
   );
 }

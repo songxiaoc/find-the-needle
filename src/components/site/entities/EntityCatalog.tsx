@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
+import { getEntityCopy } from '@/content/entity-copy';
 
 import { Link } from '@/core/i18n/navigation';
 import {
@@ -14,10 +15,14 @@ import { EntityFieldValue } from './EntityFieldValue';
 export function EntityCatalog({
   kind,
   entities,
+  locale = 'en',
 }: {
   kind: EntityKind;
   entities: EntityRecord[];
+  locale?: string;
 }) {
+  const copy = getEntityCopy(locale);
+  const [query, setQuery] = useState('');
   const [filters, setFilters] = useState<Record<string, string>>({});
   const [sort, setSort] = useState('name-asc');
 
@@ -34,36 +39,61 @@ export function EntityCatalog({
                   .filter((value) => value !== undefined)
                   .map(String)
               ),
-            ].sort((a, b) => a.localeCompare(b)),
+            ].sort((a, b) => a.localeCompare(b, locale)),
         ])
       ),
-    [entities, kind.facets]
+    [entities, kind.facets, locale]
   );
 
   const results = useMemo(() => {
-    const filtered = entities.filter((entity) =>
-      kind.facets.every((facet) => {
-        const selected = filters[facet.field];
-        return !selected || String(entity.data[facet.field] ?? '') === selected;
-      })
+    const search = query.trim().toLocaleLowerCase(locale);
+    const filtered = entities.filter(
+      (entity) =>
+        [entity.name, entity.summary, ...Object.values(entity.data)]
+          .join(' ')
+          .toLocaleLowerCase(locale)
+          .includes(search) &&
+        kind.facets.every((facet) => {
+          const selected = filters[facet.field];
+          return (
+            !selected || String(entity.data[facet.field] ?? '') === selected
+          );
+        })
     );
 
     return filtered.sort((a, b) => {
-      if (sort === 'name-desc') return b.name.localeCompare(a.name);
+      if (sort === 'name-desc') return b.name.localeCompare(a.name, locale);
       if (sort === 'updated-desc') {
         return (
-          b.updatedAt.localeCompare(a.updatedAt) || a.name.localeCompare(b.name)
+          b.updatedAt.localeCompare(a.updatedAt) ||
+          a.name.localeCompare(b.name, locale)
         );
       }
-      return a.name.localeCompare(b.name);
+      return a.name.localeCompare(b.name, locale);
     });
-  }, [entities, filters, kind.facets, sort]);
+  }, [entities, filters, kind.facets, sort, query, locale]);
 
-  const hasFilters = Object.values(filters).some(Boolean);
+  const hasFilters = query.length > 0 || Object.values(filters).some(Boolean);
+  const reset = () => {
+    setFilters({});
+    setQuery('');
+  };
 
   return (
     <div>
       <div className="border-site-outline-strong bg-site-surface-container mb-8 grid gap-5 border p-5 md:grid-cols-[repeat(auto-fit,minmax(180px,1fr))]">
+        <label className="text-site-on-surface-variant flex flex-col gap-2 text-sm">
+          <span className="font-site-mono text-[10px] font-semibold tracking-[0.16em] uppercase">
+            {copy.search}
+          </span>
+          <input
+            type="search"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder={copy.searchPlaceholder}
+            className="border-site-outline-strong bg-site-surface text-site-on-surface focus-visible:outline-site-primary min-h-11 w-full border px-3 text-sm focus-visible:outline-2 focus-visible:outline-offset-2"
+          />
+        </label>
         {kind.facets.map((facet) => (
           <label
             key={facet.field}
@@ -82,7 +112,7 @@ export function EntityCatalog({
               }
               className="border-site-outline-strong bg-site-surface text-site-on-surface focus-visible:outline-site-primary min-h-11 border px-3 text-sm focus-visible:outline-2 focus-visible:outline-offset-2"
             >
-              <option value="">All {facet.label.toLowerCase()}</option>
+              <option value="">{copy.all}</option>
               {(facetOptions[facet.field] ?? []).map((option) => (
                 <option key={option} value={option}>
                   {option}
@@ -94,16 +124,16 @@ export function EntityCatalog({
 
         <label className="text-site-on-surface-variant flex flex-col gap-2 text-sm">
           <span className="font-site-mono text-[10px] font-semibold tracking-[0.16em] uppercase">
-            Sort
+            {copy.sort}
           </span>
           <select
             value={sort}
             onChange={(event) => setSort(event.target.value)}
             className="border-site-outline-strong bg-site-surface text-site-on-surface focus-visible:outline-site-primary min-h-11 border px-3 text-sm focus-visible:outline-2 focus-visible:outline-offset-2"
           >
-            <option value="name-asc">Name A–Z</option>
-            <option value="name-desc">Name Z–A</option>
-            <option value="updated-desc">Recently updated</option>
+            <option value="name-asc">{copy.ascending}</option>
+            <option value="name-desc">{copy.descending}</option>
+            <option value="updated-desc">{copy.updated}</option>
           </select>
         </label>
       </div>
@@ -113,15 +143,17 @@ export function EntityCatalog({
           aria-live="polite"
           className="font-site-mono text-site-on-surface-variant text-xs tabular-nums"
         >
-          {results.length} of {entities.length} {kind.label.toLowerCase()}
+          {copy.resultCount
+            .replace('{shown}', String(results.length))
+            .replace('{total}', String(entities.length))}
         </p>
         {hasFilters && (
           <button
             type="button"
-            onClick={() => setFilters({})}
+            onClick={reset}
             className="font-site-mono text-site-primary focus-visible:outline-site-primary text-[10px] font-semibold tracking-[0.14em] uppercase underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
           >
-            Clear filters
+            {copy.clear}
           </button>
         )}
       </div>
@@ -147,7 +179,7 @@ export function EntityCatalog({
               <p className="text-site-on-surface-variant mt-3 max-w-[60ch] text-sm leading-6">
                 {entity.summary}
               </p>
-              <dl className="mt-6 grid grid-cols-3 gap-4">
+              <dl className="mt-6 grid grid-cols-2 gap-4">
                 {kind.cardFields.map((fieldId) => (
                   <div key={fieldId} className="min-w-0">
                     <dt className="font-site-mono text-site-outline text-[9px] tracking-[0.12em] uppercase">
@@ -167,7 +199,7 @@ export function EntityCatalog({
                 href={entity.href}
                 className="font-site-mono text-site-primary focus-visible:outline-site-primary mt-auto pt-6 text-[10px] font-semibold tracking-[0.14em] uppercase focus-visible:outline-2 focus-visible:outline-offset-4"
               >
-                View record →
+                {copy.view} →
               </Link>
             </article>
           ))}
@@ -175,17 +207,17 @@ export function EntityCatalog({
       ) : (
         <section className="border-site-outline-strong bg-site-surface-container border px-6 py-12 text-center">
           <h2 className="site-headline-lg text-site-on-surface">
-            No matching {kind.label.toLowerCase()}
+            {copy.noMatches}
           </h2>
           <p className="text-site-on-surface-variant mx-auto mt-3 max-w-[52ch] text-sm">
-            The current filters exclude every published record.
+            {copy.empty}
           </p>
           <button
             type="button"
-            onClick={() => setFilters({})}
+            onClick={reset}
             className="border-site-primary text-site-primary focus-visible:outline-site-primary mt-6 min-h-11 border px-5 text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2"
           >
-            Reset filters
+            {copy.reset}
           </button>
         </section>
       )}

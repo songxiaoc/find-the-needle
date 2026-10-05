@@ -14,6 +14,7 @@ import {
   supportedLocaleCodes,
 } from '../src/config/locale';
 import { readCommonMessages } from '../src/config/locale/message-schema';
+import { PUBLIC_PATHS } from '../src/config/locale/routes';
 import { assertI18nWiring } from '../src/config/locale/wiring';
 import { uiRecipe, validateUIRecipe } from '../src/config/ui';
 import siteManifest from '../src/generated/site-manifest.json';
@@ -214,6 +215,7 @@ for (const item of gameConfig.nav) {
 }
 
 const knownRoutes = new Set([
+  ...PUBLIC_PATHS,
   '/',
   '/guides',
   '/about',

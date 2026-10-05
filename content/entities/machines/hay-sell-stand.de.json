@@ -1,0 +1,44 @@
+{
+  "id": "hay-sell-stand",
+  "name": "Heuverkaufsstand (Hay Sell Stand)",
+  "summary": "Die Verkaufsstelle trägt die Aufschrift SELL HAY. Demo V8 ergänzte das Einrasten am Bandanschluss. Laut Entwickler kehrt eine mit einem Heuprodukt verkaufte Nadel in den Haufen zurück.",
+  "updatedAt": "2026-10-05",
+  "version": "Demo-V8-Ankündigung (11. September 2026); beachte die Hinweise deiner installierten Version",
+  "data": {
+    "role": "Verkauf",
+    "scope": "Demo-Notizen / Diskussion",
+    "operation": "Nutze den Anschluss am Stand, statt das Band nur daneben enden zu lassen. Rastet es nicht ein, prüfe, ob F den No Snap Mode aktiviert hat.",
+    "check": "Verfolge die letzten Zuführungen zurück zum Scanner. Die Entwicklerantwort erklärt den normalen Nadelkreislauf und garantiert keine Rettung bei einem Fehler mit fehlenden Nadeln."
+  },
+  "sources": [
+    {
+      "label": "Offizielle Demo-V8-Notizen · 11. September 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Entwicklerantwort und Spielerberichte · 13. September 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ],
+  "image": "/images/find-the-needle/screenshot-1.webp",
+  "imageAlt": "Förderband mit Heu zum Stand mit der Aufschrift SELL HAY.",
+  "imageCaption": "Das Band führt zur Vorderseite des SELL HAY-Stands. So erkennst du das Ziel; die Preise im Bild gelten nicht als aktuelle Preisangaben. Offizieller Steam-Screenshot."
+}

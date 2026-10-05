@@ -1,0 +1,37 @@
+{
+  "id": "pitchfork",
+  "name": "Pitchfork",
+  "summary": "The pitchfork is one of the manual hay tools named by the official store. The screenshots show it in first-person use beside the pile and a container.",
+  "updatedAt": "2026-10-05",
+  "version": "Full-game store description, checked October 5, 2026",
+  "data": {
+    "role": "Hay handling",
+    "scope": "Full-game store description",
+    "operation": "Use the current handling prompts to collect and move hay. The store screenshot illustrates the tool’s position; it does not establish a universal load size or number of actions.",
+    "check": "Compare handling effort with your current shovel and transport options. If carrying is the slow part, check the next transport upgrade instead of assuming another hand tool solves it."
+  },
+  "sources": [
+    {
+      "label": "Official Steam store",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "tools",
+      "id": "shovel"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "tools",
+      "id": "metal-detector"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/getting-started"],
+  "image": "/images/find-the-needle/screenshot-3.webp",
+  "imageAlt": "First-person pitchfork held in front of the hay pile.",
+  "imageCaption": "The fork is held directly against the hay pile. Follow your current interaction prompts for handling; this image does not show a needle location. Official Steam screenshot."
+}

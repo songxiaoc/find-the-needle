@@ -1,0 +1,38 @@
+{
+  "id": "u-joiner",
+  "name": "U-Verbinder (U-Joiner)",
+  "summary": "U-Joiner sind ein weiterer in Demo V8 ergänzter Bandbauteiltyp. Prüfe beim Zusammenführen, ob jeder eingehende Weg bereits einen Scanner durchlaufen hat.",
+  "updatedAt": "2026-10-05",
+  "version": "Demo-V8-Ankündigung (11. September 2026); beachte die Hinweise deiner installierten Version",
+  "data": {
+    "role": "Bandführung",
+    "scope": "Demo-Notizen / Diskussion",
+    "operation": "Verfolge beide Eingänge und den gemeinsamen Ausgang. Teste jeden Ast mit wenig Material, damit ein übersehener Nebenweg keine ungescannten Produkte zum Verkauf bringt.",
+    "community": "Der Community-Aufbau Verteilen–Scannen–Verbinden ist ein Diagnosevorschlag, keine garantierte Leistungssteigerung. Staut sich der gemeinsame Ausgang, prüfe zuerst sein Ziel."
+  },
+  "sources": [
+    {
+      "label": "Offizielle Demo-V8-Notizen · 11. September 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Community-Diskussion zu Scannern · 16. September 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"]
+}

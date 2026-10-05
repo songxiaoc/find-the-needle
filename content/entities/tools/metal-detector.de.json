@@ -1,0 +1,41 @@
+{
+  "id": "metal-detector",
+  "name": "Metalldetektor (Metal Detector)",
+  "summary": "Laut offizieller Beschreibung beginnt die Nadelsuche von Hand mit einem Metalldetektor. Später übernehmen Bänder, Scanner und Roboterarme mehr Arbeit.",
+  "updatedAt": "2026-10-05",
+  "version": "Beschreibung des vollständigen Spiels, geprüft am 5. Oktober 2026",
+  "data": {
+    "role": "Nadelsuche",
+    "scope": "Beschreibung des vollständigen Spiels",
+    "operation": "Nutze bei der Handsuche die aktuellen Rückmeldungen des Detektors. Merke dir geprüfte Bereiche und orientiere dich an den Spielsignalen statt an festen Koordinaten.",
+    "check": "Ist Heu bereits verpackt, prüfe auch Lager und Scanwege. Laut Entwickler können Nadeln in Heuprodukten stecken und nicht nur im losen Heu."
+  },
+  "sources": [
+    {
+      "label": "Offizielle Steam-Seite",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Entwicklerantwort und Spielerberichte · 13. September 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "silo"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/getting-started",
+    "/guides/guide/needles-and-scanners"
+  ]
+}

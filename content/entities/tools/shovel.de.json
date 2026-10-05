@@ -1,0 +1,38 @@
+{
+  "id": "shovel",
+  "name": "Schaufel (Shovel)",
+  "summary": "Die offizielle Spielbeschreibung nennt die Schaufel als Startwerkzeug: Bewege Heu von Hand und verdiene Geld für Bänder und Maschinen.",
+  "updatedAt": "2026-10-05",
+  "version": "Beschreibung des vollständigen Spiels, geprüft am 5. Oktober 2026",
+  "data": {
+    "role": "Heu bewegen",
+    "scope": "Beschreibung des vollständigen Spiels",
+    "operation": "Bewege zu Beginn eine kleine Menge Heu, finde SELL HAY und folge den Interaktionshinweisen. Den Haufen abzutragen und Nadeln zu finden sind zwei getrennte Aufgaben.",
+    "check": "Finde vor der Automatisierung den langsamen Schritt: Sammeln, Tragen, Verkaufen oder Scannen. Kaufe für diesen Engpass zu den aktuellen Preisen im Spiel."
+  },
+  "sources": [
+    {
+      "label": "Offizielle Steam-Seite",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "tools",
+      "id": "pitchfork"
+    },
+    {
+      "kind": "tools",
+      "id": "metal-detector"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/getting-started", "/guides/guide/automation"]
+}

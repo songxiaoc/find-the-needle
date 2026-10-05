@@ -1,0 +1,41 @@
+{
+  "id": "u-splitter",
+  "name": "U-Verteiler (U-Splitter)",
+  "summary": "U-Splitter sind in Demo V8 ergänzte Bauteile für Bandwege. Getrennte Wege helfen, eine Linie zu prüfen oder zu verteilen, statt alles über ein Band zu schicken.",
+  "updatedAt": "2026-10-05",
+  "version": "Demo-V8-Ankündigung (11. September 2026); beachte die Hinweise deiner installierten Version",
+  "data": {
+    "role": "Bandführung",
+    "scope": "Demo-Notizen / Diskussion",
+    "community": "Spieler schlagen bei Scannerstau getrennte Scanäste vor. Führe beide Ausgänge durch Scanner und verbinde sie bei Bedarf erst danach.",
+    "check": "Beobachte auf jedem Ast ein Produkt bis zum Ziel. Die V8-Notizen nennen keine Verteilungsverhältnisse oder garantierte Mehrleistung."
+  },
+  "sources": [
+    {
+      "label": "Offizielle Demo-V8-Notizen · 11. September 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Community-Diskussion zu Scannern · 16. September 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ]
+}

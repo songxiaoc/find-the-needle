@@ -1,3 +1,5 @@
+import { getEntityCopy } from '@/content/entity-copy';
+
 import type { SemanticDomain } from './game-semantics';
 
 export type EntityScalar = string | number | boolean;
@@ -44,58 +46,55 @@ export type EntityRecord = {
   readonly name: string;
   readonly summary: string;
   readonly image?: string;
+  readonly imageAlt?: string;
+  readonly imageCaption?: string;
   readonly updatedAt: string;
   readonly version: string;
   readonly data: Readonly<Record<string, EntityScalar>>;
+  readonly sources: readonly { readonly label: string; readonly url: string }[];
   readonly relatedEntities: readonly EntityRelation[];
   readonly relatedGuides: readonly string[];
   readonly href: string;
 };
 
-export const ENTITY_KINDS: readonly EntityKind[] = [
-  {
-    id: 'items',
-    label: 'Items',
-    singularLabel: 'Item',
-    route: '/database/items',
-    description:
-      'Browse equipment and consumables with comparable attributes, acquisition sources, and guide references.',
-    fields: [
-      { id: 'type', label: 'Type' },
-      { id: 'rarity', label: 'Rarity', semantic: 'rarity' },
-      { id: 'slot', label: 'Slot' },
-      { id: 'power', label: 'Power' },
-      { id: 'weight', label: 'Weight' },
-      { id: 'source', label: 'Source' },
-      { id: 'location', label: 'Location' },
-    ],
+function kindsForLocale(locale: string): EntityKind[] {
+  const copy = getEntityCopy(locale);
+  return ['machines', 'tools', 'products'].map((id) => ({
+    id,
+    ...copy.kinds[id as keyof typeof copy.kinds],
+    route: `/database/${id}`,
+    fields: Object.entries(copy.fields).map(([fieldId, label]) => ({
+      id: fieldId,
+      label,
+    })),
     facets: [
-      { field: 'type', label: 'Type' },
-      { field: 'rarity', label: 'Rarity' },
+      { field: 'role', label: copy.fields.role },
+      { field: 'scope', label: copy.fields.scope },
     ],
-    cardFields: ['type', 'rarity', 'power'],
+    cardFields: ['role', 'scope'],
     detailSections: [
+      { id: 'use', label: copy.use, fields: ['function', 'operation'] },
       {
-        id: 'identity',
-        label: 'Classification',
-        fields: ['type', 'rarity', 'slot'],
+        id: 'checks',
+        label: copy.checks,
+        fields: ['check', 'community', 'limits'],
       },
       {
-        id: 'attributes',
-        label: 'Base attributes',
-        fields: ['power', 'weight'],
-      },
-      {
-        id: 'acquisition',
-        label: 'Acquisition',
-        fields: ['source', 'location'],
+        id: 'products',
+        label: copy.productTypes,
+        fields: ['pulp', 'bales', 'bricks', 'paper', 'pellets'],
       },
     ],
-  },
-];
+  }));
+}
 
-export function getEntityKind(id: string): EntityKind | undefined {
-  return ENTITY_KINDS.find((kind) => kind.id === id);
+export const ENTITY_KINDS: readonly EntityKind[] = kindsForLocale('en');
+
+export function getEntityKind(
+  id: string,
+  locale = 'en'
+): EntityKind | undefined {
+  return kindsForLocale(locale).find((kind) => kind.id === id);
 }
 
 export function getEntityField(

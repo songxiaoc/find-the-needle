@@ -1,0 +1,49 @@
+{
+  "id": "needle-scanner",
+  "name": "Needle Scanner",
+  "summary": "The scanner is part of the automated needle-search line. Check the route of every hay product, not only the main belt, when a needle reaches the selling stand.",
+  "updatedAt": "2026-10-05",
+  "version": "Community reports (September 2026) and official store description",
+  "data": {
+    "role": "Needle detection",
+    "scope": "Demo notes / discussion",
+    "check": "Follow each belt and any belt within reach of a robotic arm. Look for a branch that joins the selling route after the scanner. Observe the scanner’s current in-game settings and indicators.",
+    "community": "Players suggest splitting a backed-up line across separate scanners, then joining it afterward. Try a small test before expanding; this does not establish a scanning rate or guaranteed speed increase."
+  },
+  "sources": [
+    {
+      "label": "Official Steam store",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Community routing discussion · September 21, 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    },
+    {
+      "label": "Community scanner discussion · September 16, 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "robotic-arm"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

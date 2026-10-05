@@ -2,7 +2,7 @@
 title: 'Tools, machines and hay products explained'
 description: 'Separate collection, transport, processing and needle detection, then check what a new machine needs before buying it.'
 date: '2026-09-27'
-lastModified: '2026-09-27'
+lastModified: '2026-10-05'
 image: '/images/find-the-needle/screenshot-2.webp'
 ---
 
@@ -12,11 +12,11 @@ Choose equipment for the job that is slowing you down: collecting hay, moving it
 
 | Job | Equipment to look for | What to check |
 | --- | --- | --- |
-| Manual collection | Shovels, pitchforks, vacuums | How the tool gathers hay and where you will unload it |
+| Manual collection | <EntityLink kind="tools" id="shovel">Shovels</EntityLink>, <EntityLink kind="tools" id="pitchfork">pitchforks</EntityLink>, vacuums | How the tool gathers hay and where you will unload it |
 | Carrying hay | Buckets, wheelbarrows | The capacity display and the trip to your destination |
-| Automatic transport | Conveyors, robotic arms | Pickup position, travel direction and delivery point |
+| Automatic transport | <EntityLink kind="machines" id="conveyor-belt">Conveyors</EntityLink>, <EntityLink kind="machines" id="robotic-arm">robotic arms</EntityLink> | Pickup position, travel direction and delivery point |
 | Processing | Balers, hay wrappers, paper machines | Accepted material and the product leaving the machine |
-| Needle detection | Metal detector, scanners | Where detection happens along your digging or conveyor route |
+| Needle detection | <EntityLink kind="tools" id="metal-detector">Metal detector</EntityLink>, <EntityLink kind="machines" id="needle-scanner">scanners</EntityLink> | Where detection happens along your digging or conveyor route |
 
 These equipment families appear in the official game description. Check your Demo's shop and unlocks before planning around an item shown on the full game's store page.
 
@@ -32,7 +32,7 @@ The store names **hay pulp**, **compressed bales**, **eco bricks**, **hay paper*
 
 When choosing a product, work backward from the machine that makes it. Read its input label, identify how you can supply that material, then check where the output can go. In particular, distinguish loose hay from an already processed product when connecting two machines.
 
-For a concrete example, the [Demo V8 update](https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126) added resource indicators such as **BRICKS** and **HAY** to the **Pellet Disc Machine**. Read those indicators when connecting it; the machine's name alone does not tell you which material belongs at each connection.
+For a concrete example, the [Demo V8 update](https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126) added resource indicators such as **BRICKS** and **HAY** to the **<EntityLink kind="machines" id="pellet-disc-machine">Pellet Disc Machine</EntityLink>**. Read those indicators when connecting it; the machine's name alone does not tell you which material belongs at each connection.
 
 ## Check the whole purchase, not just the machine
 
@@ -48,5 +48,7 @@ Before spending, check:
 4. **Destination:** will the output feed another machine or a sale point that accepts it?
 
 Leave enough budget and space to finish those connections. Then observe one complete material route before adding another branch; the [automation guide](/guides/guide/automation) walks through that layout check.
+
+To plan a line around your own measurements, enter the rates you observe in the [production calculator](/tools/production-calculator) and compare supply with processing capacity.
 
 Equipment, product names and screenshots: [official Steam game page](https://store.steampowered.com/app/5160800/Find_The_Needle/) and [Demo page](https://store.steampowered.com/app/5165210/Find_The_Needle_Demo/).

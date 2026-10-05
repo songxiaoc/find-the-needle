@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import matter from 'gray-matter';
 
 import { PUBLIC_PATHS } from '../src/config/locale/routes.ts';
@@ -10,7 +10,18 @@ import {
 
 const base = new URL(process.argv[2] || 'http://localhost:3000');
 const canonicalOrigin = 'https://findtheneedle.site';
-const expectedPages = PUBLIC_PATHS.size * locales.length;
+const entityPaths = readdirSync(
+  new URL('../content/entities/', import.meta.url),
+  { withFileTypes: true }
+)
+  .filter((entry) => entry.isDirectory())
+  .flatMap((entry) =>
+    readdirSync(new URL(`../content/entities/${entry.name}/`, import.meta.url))
+      .filter((file) => /^[a-z0-9-]+\.json$/.test(file))
+      .map((file) => `/database/${entry.name}/${file.slice(0, -5)}`)
+  );
+const expectedPaths = new Set([...PUBLIC_PATHS, ...entityPaths]);
+const expectedPages = expectedPaths.size * locales.length;
 const preview = /\.(workers|pages)\.dev$/.test(base.hostname);
 const failures = [];
 const snapshots = new Map();
@@ -93,7 +104,7 @@ assert.equal(
   'Sitemap must not contain duplicate URLs'
 );
 const publishedPaths = new Set(urls.map((url) => new URL(url).pathname));
-for (const path of PUBLIC_PATHS) {
+for (const path of expectedPaths) {
   for (const locale of locales) {
     const expectedPath = new URL(languageUrl(path, locale)).pathname;
     check(
@@ -265,12 +276,12 @@ for (const [url, alternates] of snapshots) {
 
 const absentPaths = [
   '/docs',
-  '/database',
+  '/database/unknown',
   '/does-not-exist',
   '/ja',
   '/it/guides',
   '/fr/docs',
-  '/de/database',
+  '/de/database/machines/unknown',
   '/ru/guides/guide/unknown',
 ];
 for (const path of absentPaths) {

@@ -1,0 +1,37 @@
+{
+  "id": "power-pole",
+  "name": "Poteau électrique (Power Pole)",
+  "summary": "La démo V8 permet de couper tout le réseau électrique avec E sur un poteau. Vérifiez une coupure accidentelle si plusieurs machines s’arrêtent ensemble.",
+  "updatedAt": "2026-10-05",
+  "version": "Annonce de la démo V8 (11 septembre 2026) ; suivez les indications de votre version",
+  "data": {
+    "role": "Alimentation",
+    "scope": "Notes et discussions de la démo",
+    "check": "Consultez l’alerte du réseau : V8 a ajouté un avertissement visuel sous le seuil d’alimentation requis. Vérifiez l’état du réseau et les machines raccordées avant d’agrandir la production.",
+    "limits": "Utilisez la demande et la production affichées en jeu. L’annonce ne donne ni consommation par machine, ni portée universelle des câbles, ni budget complet de génération."
+  },
+  "sources": [
+    {
+      "label": "Notes officielles de la démo V8 · 11 septembre 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Boutique Steam officielle",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "pellet-disc-machine"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"],
+  "image": "/images/find-the-needle/screenshot-5.webp",
+  "imageAlt": "Arbre Yard Research montrant Electricity, Power Pole et des améliorations électriques.",
+  "imageCaption": "Power Pole se trouve dans la branche POWER. Consultez votre arbre en jeu pour les coûts et prérequis actuels ; cette image promotionnelle n’est pas une liste de déblocages. Capture Steam officielle."
+}

@@ -1,0 +1,49 @@
+{
+  "id": "hay-products",
+  "name": "Processed Hay Products",
+  "summary": "The full-game store describes hay pulp, compressed bales, eco bricks, hay paper and pellets. Use this overview to recognise the product families; it is not a list of everything unlocked in the demo.",
+  "updatedAt": "2026-10-05",
+  "version": "Full-game store description, checked October 5, 2026",
+  "data": {
+    "role": "Processed products",
+    "scope": "Full-game store description",
+    "pulp": "A processed hay product named by the store. Read the recipe and required equipment in your current game before reserving a production line for it.",
+    "bales": "Compressed hay is listed among the product families, and the store mentions balers. Do not equate a compressed bale with the Silo’s hay wad when checking stored needles.",
+    "bricks": "Eco bricks are named in the store. Separately, Demo V8 added a BRICKS resource label to the Pellet Disc Machine; that label alone does not give its complete recipe.",
+    "paper": "Hay paper and paper machines appear in the full-game description. Check that the relevant machinery is available in your build before planning around paper production.",
+    "pellets": "Pellets are a listed product family. The Pellet Disc Machine is also named in official demo notes, but those notes do not confirm every input, output quantity or selling value.",
+    "check": "The developer explains that hay products can contain needles. Keep scanning in the route as processing expands. Use in-game recipes and prices for a budget; there is no confirmed universal profit ranking here."
+  },
+  "sources": [
+    {
+      "label": "Official Steam store",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Official Demo V8 notes · September 11, 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Developer reply and player reports · September 13, 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    },
+    {
+      "kind": "machines",
+      "id": "pellet-disc-machine"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ]
+}

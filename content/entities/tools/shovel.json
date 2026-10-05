@@ -1,0 +1,38 @@
+{
+  "id": "shovel",
+  "name": "Shovel",
+  "summary": "The official store introduces the shovel as your starting tool for moving hay by hand and earning money before buying belts and machines.",
+  "updatedAt": "2026-10-05",
+  "version": "Full-game store description, checked October 5, 2026",
+  "data": {
+    "role": "Hay handling",
+    "scope": "Full-game store description",
+    "operation": "For a first-session plan, handle a small amount of hay, find the SELL HAY destination and follow the game’s interaction prompts. Keep needle searching separate from simply clearing the pile.",
+    "check": "Before replacing manual work with automation, identify the slow step: collecting, carrying, selling or scanning. Buy for that bottleneck using your current in-game prices."
+  },
+  "sources": [
+    {
+      "label": "Official Steam store",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "tools",
+      "id": "pitchfork"
+    },
+    {
+      "kind": "tools",
+      "id": "metal-detector"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/getting-started", "/guides/guide/automation"]
+}

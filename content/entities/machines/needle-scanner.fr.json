@@ -1,0 +1,49 @@
+{
+  "id": "needle-scanner",
+  "name": "Scanner d’aiguilles (Needle Scanner)",
+  "summary": "Le scanner fait partie de la ligne automatisée de recherche d’aiguilles. Vérifiez le trajet de chaque produit, pas seulement du convoyeur principal, si une aiguille arrive à la vente.",
+  "updatedAt": "2026-10-05",
+  "version": "Témoignages communautaires (septembre 2026) et boutique officielle",
+  "data": {
+    "role": "Détection d’aiguilles",
+    "scope": "Notes et discussions de la démo",
+    "check": "Suivez chaque convoyeur, y compris ceux à portée des bras robotisés. Cherchez une branche rejoignant la vente après le scanner. Consultez ses réglages et ses indications en jeu.",
+    "community": "Des joueurs proposent de répartir une ligne engorgée entre plusieurs scanners, puis de réunir les sorties. Testez à petite échelle avant d’agrandir ; aucun débit ni gain garanti n’est établi."
+  },
+  "sources": [
+    {
+      "label": "Boutique Steam officielle",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Discussion communautaire sur les circuits · 21 septembre 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    },
+    {
+      "label": "Discussion communautaire sur les scanners · 16 septembre 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "robotic-arm"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

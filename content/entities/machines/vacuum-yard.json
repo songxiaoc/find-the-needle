@@ -1,0 +1,34 @@
+{
+  "id": "vacuum-yard",
+  "name": "Vacuum Yard",
+  "summary": "Vacuum Yard is named in the Demo V8 update, which reduced its price by 80%. That historical change does not tell you today’s absolute purchase cost.",
+  "updatedAt": "2026-10-05",
+  "version": "Demo V8 announcement (September 11, 2026); follow your installed build’s prompts",
+  "data": {
+    "role": "Hay handling",
+    "scope": "Demo notes / discussion",
+    "check": "Compare the current purchase prompt with the problem you are trying to solve. If hay already waits downstream, inspect belts and scanning before spending on another collection upgrade.",
+    "limits": "The announcement gives no current capacity, reach, power demand or unlock requirement. Check those details in your installed game before planning around this purchase."
+  },
+  "sources": [
+    {
+      "label": "Official Demo V8 notes · September 11, 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "tools",
+      "id": "shovel"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation", "/guides/guide/getting-started"]
+}

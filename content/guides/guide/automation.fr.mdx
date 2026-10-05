@@ -2,11 +2,11 @@
 title: 'Raccorder les convoyeurs, l’électricité et le point de vente du foin'
 description: 'Utilisez l’accrochage au comptoir et le mode No Snap, vérifiez un réseau électrique arrêté et repérez les blocages avant d’agrandir votre ligne.'
 date: '2026-09-27'
-lastModified: '2026-09-27'
+lastModified: '2026-10-05'
 image: '/images/find-the-needle/screenshot-1.webp'
 ---
 
-Pour obtenir un premier trajet fonctionnel, reliez l’approvisionnement à sa destination, vérifiez l’électricité là où elle est nécessaire, puis faites circuler des matières avant d’ajouter une branche. **Demo V8 a ajouté l’accrochage au Hay Sell Stand, F pour le mode No Snap et une interaction avec E sur les poteaux électriques pour couper le réseau.** Ces détails sont utiles lorsqu’une ligne semble raccordée mais ne fonctionne pas.
+Pour obtenir un premier trajet fonctionnel, reliez l’approvisionnement à sa destination, vérifiez l’électricité là où elle est nécessaire, puis faites circuler des matières avant d’ajouter une branche. **Demo V8 a ajouté l’accrochage au <EntityLink kind="machines" id="hay-sell-stand">Hay Sell Stand</EntityLink>, F pour le mode No Snap et une interaction avec E sur les poteaux électriques pour couper le réseau.** Ces détails sont utiles lorsqu’une ligne semble raccordée mais ne fonctionne pas.
 
 ## Raccordez d’abord l’arrivée au point de vente
 
@@ -36,12 +36,14 @@ Cette mise à jour a également ajouté un avertissement visuel lorsque la puiss
 | Une file se forme devant un scanner | Regardez si le scanner traite les matières moins vite qu’elles n’arrivent. |
 | Les matières atteignent une jonction mais ratent leur destination | Suivez séparément chaque branche de sortie, y compris les trajets vers le comptoir de vente. |
 
-Ces vérifications aident à isoler un problème ; elles ne signifient pas que tous les arrêts ont la même cause. V8 a ajouté les indicateurs de ressources **BRICKS / HAY** à la **Pellet Disc Machine**. Consultez-les plutôt que de supposer qu’un convoyeur visiblement plein fournit tout ce dont elle a besoin.
+Ces vérifications aident à isoler un problème ; elles ne signifient pas que tous les arrêts ont la même cause. V8 a ajouté les indicateurs de ressources **BRICKS / HAY** à la **<EntityLink kind="machines" id="pellet-disc-machine">Pellet Disc Machine</EntityLink>**. Consultez-les plutôt que de supposer qu’un convoyeur visiblement plein fournit tout ce dont elle a besoin.
 
 ## Agrandissez sans contourner la détection des aiguilles
 
-V8 a introduit les **U-Splitters** et **U-Joiners**, des séparateurs et des jonctions en U. Dans une discussion sur l’engorgement des scanners, des joueurs ont aussi suggéré de créer plusieurs voies avec chacune son scanner, puis de réunir les sorties. C’est une proposition d’agencement de la communauté, pas une garantie de débit mesuré. Testez chaque voie avant de la reproduire dans toute l’usine.
+V8 a introduit les **<EntityLink kind="machines" id="u-splitter">U-Splitters</EntityLink>** et **<EntityLink kind="machines" id="u-joiner">U-Joiners</EntityLink>**, des séparateurs et des jonctions en U. Dans une discussion sur l’engorgement des scanners, des joueurs ont aussi suggéré de créer plusieurs voies avec chacune son scanner, puis de réunir les sorties. C’est une proposition d’agencement de la communauté, pas une garantie de débit mesuré. Testez chaque voie avant de la reproduire dans toute l’usine.
 
 Si vous voulez vérifier chaque produit pour y trouver les aiguilles, faites passer **tous** les trajets vers le point de vente par votre dispositif de scan. Une ligne principale bien organisée ne suffit pas si une branche la contourne. Consultez [Aiguilles et scanners](/guides/guide/needles-and-scanners) pour l’explication du développeur sur les aiguilles contenues dans les produits du foin.
+
+Avant de reconstruire une ligne arrêtée, suivez la [vérification de ligne](/tools/line-check) pour contrôler dans l’ordre l’approvisionnement, l’électricité, la sortie et le passage par les scanners.
 
 Sources : [notes officielles de Demo V8, 11 septembre 2026 UTC](https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126), [discussion communautaire sur les scanners](https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/). Si les commandes diffèrent, consultez les indications de votre version.

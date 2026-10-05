@@ -1,0 +1,37 @@
+{
+  "id": "power-pole",
+  "name": "Power Pole",
+  "summary": "Demo V8 lets you shut down the entire electricity network with E on a power pole. Check for an accidental shutdown when several machines stop together.",
+  "updatedAt": "2026-10-05",
+  "version": "Demo V8 announcement (September 11, 2026); follow your installed build’s prompts",
+  "data": {
+    "role": "Power",
+    "scope": "Demo notes / discussion",
+    "check": "Read the power network notification: V8 added a visual warning when power falls below the required threshold. Check the network state and connected machines before expanding production.",
+    "limits": "Use the current game’s displayed demand and generation. The announcement does not provide per-machine wattage, a universal wire range or a complete generator budget."
+  },
+  "sources": [
+    {
+      "label": "Official Demo V8 notes · September 11, 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Official Steam store",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "pellet-disc-machine"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"],
+  "image": "/images/find-the-needle/screenshot-5.webp",
+  "imageAlt": "Yard Research tree showing Electricity, Power Pole and related power upgrades.",
+  "imageCaption": "Power Pole appears in the POWER branch. Use your installed research tree for current costs and prerequisites; this promotional screenshot is not an unlock checklist. Official Steam screenshot."
+}

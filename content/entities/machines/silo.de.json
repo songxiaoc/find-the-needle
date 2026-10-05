@@ -1,0 +1,38 @@
+{
+  "id": "silo",
+  "name": "Silo",
+  "summary": "Das Silo verpackt Heu zu Bündeln. Laut Entwickler können darin Nadeln bleiben. Verfolge den Ausgang deshalb über einen Scanner, bevor du verkaufst.",
+  "updatedAt": "2026-10-05",
+  "version": "Entwicklererklärung (13. September 2026)",
+  "data": {
+    "role": "Lagerung und Verpackung",
+    "scope": "Demo-Notizen / Diskussion",
+    "operation": "Prüfe die Anzeigen für gelagertes Heu und Nadeln und beobachte dann das Ausgangsband. Eine im Silo angezeigte Nadel ist noch nicht automatisch gescannt.",
+    "community": "Ein Spieler empfiehlt, bei einer wartenden Nadel genug loses Heu für eine weitere Ausgabe nachzufüllen. Das ist ein Community-Tipp ohne bestätigte feste Menge oder garantierte Lösung.",
+    "check": "Baue ein Silo zur Nadelrettung nicht einfach ab: Ein Spieler berichtete von einer Zerstörungswarnung. Behalte deinen Spielstand und prüfe zuerst Zuführung, Ausgabe und Scanweg."
+  },
+  "sources": [
+    {
+      "label": "Entwicklerantwort und Spielerberichte · 13. September 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

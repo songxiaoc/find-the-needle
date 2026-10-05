@@ -2,11 +2,11 @@
 title: 'Connect conveyor belts, power and the hay sell stand'
 description: 'Use sell-stand snapping and No Snap mode, check a stopped power grid, and trace bottlenecks before expanding your hay production line.'
 date: '2026-09-27'
-lastModified: '2026-09-27'
+lastModified: '2026-10-05'
 image: '/images/find-the-needle/screenshot-1.webp'
 ---
 
-For a first working route, connect the hay supply to its destination, confirm power where needed, then send material through before adding another branch. **Demo V8 added snapping at the Hay Sell Stand, F for No Snap mode and an E interaction at power poles to shut down the grid.** Those details are useful when a line looks connected but will not run.
+For a first working route, connect the hay supply to its destination, confirm power where needed, then send material through before adding another branch. **Demo V8 added snapping at the <EntityLink kind="machines" id="hay-sell-stand">Hay Sell Stand</EntityLink>, F for No Snap mode and an E interaction at power poles to shut down the grid.** Those details are useful when a line looks connected but will not run.
 
 ## Connect the sale end first
 
@@ -36,12 +36,14 @@ The same update added a visual notice when power is below the required level. A 
 | A queue builds in front of a scanner | Watch whether the scanner processes material more slowly than it arrives. |
 | Material reaches a junction but misses its destination | Trace each outgoing branch separately, including any route to the sell stand. |
 
-These checks help isolate a fault; they are not promises that every stalled machine has the same cause. On the **Pellet Disc Machine**, V8 added **BRICKS / HAY** resource indicators, so inspect those instead of assuming a visually full belt supplies everything it needs.
+These checks help isolate a fault; they are not promises that every stalled machine has the same cause. On the **<EntityLink kind="machines" id="pellet-disc-machine">Pellet Disc Machine</EntityLink>**, V8 added **BRICKS / HAY** resource indicators, so inspect those instead of assuming a visually full belt supplies everything it needs.
 
 ## Expand without bypassing the needle check
 
-V8 introduced **U-Splitters** and **U-Joiners**. Players discussing scanner congestion have also suggested splitting into separate scanner lanes and joining the output afterward. That is a community layout suggestion, not a measured throughput guarantee. Test each lane before copying it across the factory.
+V8 introduced **<EntityLink kind="machines" id="u-splitter">U-Splitters</EntityLink>** and **<EntityLink kind="machines" id="u-joiner">U-Joiners</EntityLink>**. Players discussing scanner congestion have also suggested splitting into separate scanner lanes and joining the output afterward. That is a community layout suggestion, not a measured throughput guarantee. Test each lane before copying it across the factory.
 
 If the goal is to check every product for needles, trace **every** path to the sale point through your scanning setup. A tidy main line does not help if another branch bypasses it. See [needles and scanners](/guides/guide/needles-and-scanners) for the developer's explanation of needles inside hay products.
+
+Before rebuilding a stopped route, work through the [line check](/tools/line-check) to check supply, power, output and scanner coverage in order.
 
 Sources: [official Demo V8 notes, September 11, 2026 UTC](https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126), [community scanner discussion](https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/). Check your current build's prompts if controls differ.

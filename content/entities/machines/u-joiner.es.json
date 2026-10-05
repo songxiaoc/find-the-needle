@@ -1,0 +1,38 @@
+{
+  "id": "u-joiner",
+  "name": "Unión U (U-Joiner)",
+  "summary": "Los U-Joiners son otro tipo de componente añadido en la demo V8. Al combinar líneas, comprueba que cada ruta entrante haya pasado por escaneo.",
+  "updatedAt": "2026-10-05",
+  "version": "Anuncio de la demo V8 (11 de septiembre de 2026); sigue las indicaciones de tu versión",
+  "data": {
+    "role": "Rutas de cintas",
+    "scope": "Notas y debate de la demo",
+    "operation": "Sigue ambas entradas y la salida común. Prueba poco material en cada rama para que un desvío inadvertido no envíe productos sin escanear a la venta.",
+    "community": "La distribución comunitaria dividir–escanear–unir es una idea de diagnóstico, no una mejora garantizada. Si se atasca la salida común, revisa su destino antes de añadir entradas."
+  },
+  "sources": [
+    {
+      "label": "Notas oficiales de la demo V8 · 11 de septiembre de 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Debate comunitario sobre escáneres · 16 de septiembre de 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"]
+}

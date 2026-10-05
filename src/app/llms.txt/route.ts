@@ -1,3 +1,7 @@
+import {
+  getAllEntities,
+  getPublishedEntityKinds,
+} from '@/config/entities-content';
 import { gameConfig } from '@/config/game';
 import { getAllGuides, getGuideCategories } from '@/config/guides-content';
 import { localeNames, locales } from '@/config/locale';
@@ -24,7 +28,16 @@ function buildLlmsTxt(): string {
             `- ${guide.title}: ${localizedUrl(guide.href, locale)}\n  ${guide.description}`
         )
         .join('\n');
-      return `## ${localeNames[locale]}\n\n${references}\n${categories}\n${guides}`;
+      const records = [
+        ...getPublishedEntityKinds(locale).map(
+          (kind) => `- ${kind.label}: ${localizedUrl(kind.route, locale)}`
+        ),
+        ...getAllEntities(locale).map(
+          (entity) =>
+            `- ${entity.name}: ${localizedUrl(entity.href, locale)}\n  ${entity.summary}`
+        ),
+      ].join('\n');
+      return `## ${localeNames[locale]}\n\n${references}\n${categories}\n${guides}\n${records}`;
     })
     .join('\n\n');
 

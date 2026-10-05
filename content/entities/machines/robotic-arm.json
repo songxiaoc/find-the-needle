@@ -1,0 +1,44 @@
+{
+  "id": "robotic-arm",
+  "name": "Robotic Arm",
+  "summary": "Robotic arms are part of the game’s automation. When diagnosing sold needles, inspect all reachable belts: players report arms placing material onto nearby alternative routes.",
+  "updatedAt": "2026-10-05",
+  "version": "Community reports (September 2026) and official store description",
+  "data": {
+    "role": "Transport",
+    "scope": "Demo notes / discussion",
+    "community": "Observe the arm while its usual destination is backed up. The September discussion suggests that another reachable belt can receive material; this is player advice, not a confirmed explanation for every lost needle.",
+    "check": "Trace every possible receiving belt through a scanner before the sell stand. Test the routing with a small flow before buying more arms."
+  },
+  "sources": [
+    {
+      "label": "Official Steam store",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Community routing discussion · September 21, 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ],
+  "image": "/images/find-the-needle/screenshot-2.webp",
+  "imageAlt": "Orange robotic arms surround a hay pile beside several conveyor routes.",
+  "imageCaption": "Look at how close the arms sit to several belts. When checking your own layout, follow each belt an arm can reach. Official Steam screenshot."
+}

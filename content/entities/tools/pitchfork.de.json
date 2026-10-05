@@ -1,0 +1,37 @@
+{
+  "id": "pitchfork",
+  "name": "Heugabel (Pitchfork)",
+  "summary": "Die Heugabel ist eines der offiziell genannten Handwerkzeuge. Die Screenshots zeigen sie aus der Ich-Perspektive am Haufen und neben einem Behälter.",
+  "updatedAt": "2026-10-05",
+  "version": "Beschreibung des vollständigen Spiels, geprüft am 5. Oktober 2026",
+  "data": {
+    "role": "Heu bewegen",
+    "scope": "Beschreibung des vollständigen Spiels",
+    "operation": "Folge den aktuellen Hinweisen, um Heu aufzunehmen und zu bewegen. Das Bild zeigt die Werkzeugposition, aber keine allgemeine Ladungsgröße oder Aktionszahl.",
+    "check": "Vergleiche den Aufwand mit deiner Schaufel und deinen Transportmöglichkeiten. Ist das Tragen langsam, prüfe eine Transportverbesserung, statt automatisch ein anderes Handwerkzeug zu kaufen."
+  },
+  "sources": [
+    {
+      "label": "Offizielle Steam-Seite",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "tools",
+      "id": "shovel"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "tools",
+      "id": "metal-detector"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/getting-started"],
+  "image": "/images/find-the-needle/screenshot-3.webp",
+  "imageAlt": "Heugabel aus der Ich-Perspektive vor dem Heuhaufen.",
+  "imageCaption": "Die Gabel liegt direkt vor dem Haufen. Folge deinen Bedienhinweisen; das Bild zeigt keinen Nadelstandort. Offizieller Steam-Screenshot."
+}

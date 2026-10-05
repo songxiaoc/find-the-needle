@@ -1,0 +1,38 @@
+{
+  "id": "u-joiner",
+  "name": "U-Joiner",
+  "summary": "U-Joiners are another belt-routing type added in Demo V8. When combining separate lines, check that each incoming route has already passed through scanning.",
+  "updatedAt": "2026-10-05",
+  "version": "Demo V8 announcement (September 11, 2026); follow your installed build’s prompts",
+  "data": {
+    "role": "Belt routing",
+    "scope": "Demo notes / discussion",
+    "operation": "Trace both inputs and the shared output. Test a small flow on each branch so an unnoticed bypass does not feed unscanned products into the selling route.",
+    "community": "The community’s split–scan–join layout is a troubleshooting idea, not a guaranteed capacity upgrade. If the shared output backs up, inspect its destination before adding more inputs."
+  },
+  "sources": [
+    {
+      "label": "Official Demo V8 notes · September 11, 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Community scanner discussion · September 16, 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"]
+}

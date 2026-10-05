@@ -1,0 +1,37 @@
+{
+  "id": "pitchfork",
+  "name": "Fourche (Pitchfork)",
+  "summary": "La fourche est un outil manuel cité par la boutique officielle. Les captures montrent son utilisation à la première personne près du tas et d’un récipient.",
+  "updatedAt": "2026-10-05",
+  "version": "Présentation du jeu complet, vérifiée le 5 octobre 2026",
+  "data": {
+    "role": "Manipulation du foin",
+    "scope": "Présentation du jeu complet",
+    "operation": "Suivez les indications actuelles pour prendre et déplacer le foin. La capture montre la position de l’outil ; elle ne fixe ni charge universelle ni nombre d’actions.",
+    "check": "Comparez l’effort avec votre pelle et les moyens de transport disponibles. Si le transport est lent, examinez une amélioration de transport plutôt que de compter sur un autre outil manuel."
+  },
+  "sources": [
+    {
+      "label": "Boutique Steam officielle",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "tools",
+      "id": "shovel"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "tools",
+      "id": "metal-detector"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/getting-started"],
+  "image": "/images/find-the-needle/screenshot-3.webp",
+  "imageAlt": "Fourche tenue à la première personne devant le tas de foin.",
+  "imageCaption": "La fourche se trouve directement devant le tas. Suivez les indications de manipulation de votre version ; cette image ne montre pas l’emplacement d’une aiguille. Capture Steam officielle."
+}

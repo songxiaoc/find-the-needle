@@ -1,0 +1,49 @@
+{
+  "id": "needle-scanner",
+  "name": "Escáner de agujas (Needle Scanner)",
+  "summary": "El escáner forma parte de la búsqueda automatizada. Comprueba la ruta de cada producto, además de la cinta principal, cuando una aguja llegue al puesto de venta.",
+  "updatedAt": "2026-10-05",
+  "version": "Testimonios comunitarios (septiembre de 2026) y tienda oficial",
+  "data": {
+    "role": "Detección de agujas",
+    "scope": "Notas y debate de la demo",
+    "check": "Sigue cada cinta, incluidas las que están al alcance de un brazo robótico. Busca ramas que lleguen a la venta después del escáner. Observa sus ajustes e indicadores actuales en el juego.",
+    "community": "Los jugadores proponen dividir una línea atascada entre varios escáneres y unirla después. Haz una prueba pequeña antes de ampliar; no hay una tasa de escaneo ni una mejora garantizada."
+  },
+  "sources": [
+    {
+      "label": "Tienda oficial de Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Debate comunitario sobre rutas · 21 de septiembre de 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    },
+    {
+      "label": "Debate comunitario sobre escáneres · 16 de septiembre de 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "robotic-arm"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

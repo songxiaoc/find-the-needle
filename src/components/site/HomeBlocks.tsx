@@ -10,6 +10,7 @@ import {
   GuideCard,
   SectionHead,
 } from '@/components/site/ui';
+import { getDiscoveryCopy } from '@/content/discovery-copy';
 import { useTranslations } from 'next-intl';
 
 import { Link } from '@/core/i18n/navigation';
@@ -250,6 +251,7 @@ function EntityIndexBlock({
   ctx: HomeCtx;
 }) {
   const previewLimit = Math.max(1, block.previewLimit ?? 3);
+  const copy = getDiscoveryCopy(ctx.locale);
 
   return (
     <section>
@@ -267,7 +269,7 @@ function EntityIndexBlock({
           >
             <div className="bg-site-surface-container flex flex-col p-6 md:p-8">
               <p className="font-site-mono text-site-primary text-[10px] font-semibold tracking-[0.16em] uppercase">
-                {entities.length} record{entities.length === 1 ? '' : 's'}
+                {entities.length} {copy.records}
               </p>
               <h3 className="site-headline-lg text-site-on-surface mt-3">
                 {kind.label}
@@ -279,7 +281,7 @@ function EntityIndexBlock({
                 href={kind.route}
                 className="font-site-mono text-site-primary focus-visible:outline-site-primary mt-6 w-fit text-[10px] font-semibold tracking-[0.14em] uppercase focus-visible:outline-2 focus-visible:outline-offset-4 lg:mt-auto lg:pt-8"
               >
-                Browse all {kind.label.toLowerCase()} →
+                {copy.browse} {kind.label} →
               </Link>
             </div>
 

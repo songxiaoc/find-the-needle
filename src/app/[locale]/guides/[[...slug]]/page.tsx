@@ -13,6 +13,7 @@
  */
 import { notFound } from 'next/navigation';
 import { EntityLink } from '@/components/site/entities/EntityLink';
+import { GuideRecords } from '@/components/site/entities/GuideRecords';
 import { OnThisPage } from '@/components/site/OnThisPage';
 import {
   buildPageMetadata,
@@ -347,6 +348,7 @@ async function ArticleDetail({
         <ArticleHeader h1={data.title} lastUpdated={lastUpdated} />
         {toc.length > 0 && <OnThisPage items={toc} />}
         <div className="prose prose-lg mt-8">{MDXContent}</div>
+        <GuideRecords href={page.url} locale={locale} />
         {related.length > 0 && (
           <RelatedGuides
             items={related.map((r) => ({

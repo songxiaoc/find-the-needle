@@ -1,0 +1,41 @@
+{
+  "id": "u-splitter",
+  "name": "U-Splitter",
+  "summary": "U-Splitters are belt-routing components added in Demo V8. Use split routes when you need to inspect or distribute a production line rather than send everything down one path.",
+  "updatedAt": "2026-10-05",
+  "version": "Demo V8 announcement (September 11, 2026); follow your installed build’s prompts",
+  "data": {
+    "role": "Belt routing",
+    "scope": "Demo notes / discussion",
+    "community": "Players propose separate scanner branches when the original scanning line backs up. Follow both outputs through scanning, then join them afterward if needed.",
+    "check": "Watch one product enter each branch and reach its destination. The V8 note does not specify balancing ratios or guaranteed throughput gains."
+  },
+  "sources": [
+    {
+      "label": "Official Demo V8 notes · September 11, 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Community scanner discussion · September 16, 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ]
+}

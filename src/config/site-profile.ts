@@ -55,8 +55,8 @@ export const siteProfile: SiteProfile = {
   features: {
     search: false,
     patchStatus: false,
-    entities: false,
-    tools: false,
+    entities: true,
+    tools: true,
     saveImport: false,
     community: false,
     market: false,

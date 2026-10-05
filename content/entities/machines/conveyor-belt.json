@@ -1,0 +1,42 @@
+{
+  "id": "conveyor-belt",
+  "name": "Conveyor Belt",
+  "summary": "Belts move hay between equipment. Demo V8 reworked snapping and added automatic pathfinding; F enables No Snap Mode when you need free placement.",
+  "updatedAt": "2026-10-05",
+  "version": "Demo V8 announcement (September 11, 2026); follow your installed build’s prompts",
+  "data": {
+    "role": "Transport",
+    "scope": "Demo notes / discussion",
+    "operation": "Connect a short section and watch a product cross it before extending the line. A belt ending near a machine is not enough to show that the connection is working.",
+    "check": "Work backward from the first stopped product. Check the downstream destination, each join and whether a side route bypasses scanning."
+  },
+  "sources": [
+    {
+      "label": "Official Demo V8 notes · September 11, 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Community routing discussion · September 21, 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"]
+}

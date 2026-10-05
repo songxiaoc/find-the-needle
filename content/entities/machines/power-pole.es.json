@@ -1,0 +1,37 @@
+{
+  "id": "power-pole",
+  "name": "Poste eléctrico (Power Pole)",
+  "summary": "La demo V8 permite apagar toda la red eléctrica con E en un poste. Comprueba si hubo un apagado accidental cuando varias máquinas se detengan a la vez.",
+  "updatedAt": "2026-10-05",
+  "version": "Anuncio de la demo V8 (11 de septiembre de 2026); sigue las indicaciones de tu versión",
+  "data": {
+    "role": "Electricidad",
+    "scope": "Notas y debate de la demo",
+    "check": "Lee el aviso de la red: V8 añadió una advertencia visual cuando la electricidad baja del umbral requerido. Comprueba el estado de la red y las máquinas conectadas antes de ampliar.",
+    "limits": "Usa la demanda y generación que muestra tu juego. El anuncio no incluye consumo por máquina, alcance universal del cableado ni presupuesto completo de generadores."
+  },
+  "sources": [
+    {
+      "label": "Notas oficiales de la demo V8 · 11 de septiembre de 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Tienda oficial de Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "pellet-disc-machine"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"],
+  "image": "/images/find-the-needle/screenshot-5.webp",
+  "imageAlt": "Árbol Yard Research con Electricity, Power Pole y mejoras eléctricas.",
+  "imageCaption": "Power Pole aparece en la rama POWER. Consulta tu árbol actual para costes y requisitos; esta imagen promocional no es una lista de desbloqueos. Captura oficial de Steam."
+}

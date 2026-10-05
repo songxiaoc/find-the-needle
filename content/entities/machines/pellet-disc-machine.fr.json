@@ -1,0 +1,34 @@
+{
+  "id": "pellet-disc-machine",
+  "name": "Machine à granulés (Pellet Disc Machine)",
+  "summary": "La démo V8 a ajouté des indications de ressources comme BRICKS et HAY à la Pellet Disc Machine. Consultez-les lorsqu’une ligne de transformation s’arrête.",
+  "updatedAt": "2026-10-05",
+  "version": "Annonce de la démo V8 (11 septembre 2026) ; suivez les indications de votre version",
+  "data": {
+    "role": "Transformation",
+    "scope": "Notes et discussions de la démo",
+    "operation": "Comparez les ressources affichées aux matériaux arrivant à chaque raccordement. Vérifiez l’alimentation et le mouvement des entrées avant de modifier l’installation.",
+    "limits": "L’annonce cite des indicateurs, pas une recette complète. Consultez les exigences actuelles de la machine en jeu pour les quantités, sorties et vitesses."
+  },
+  "sources": [
+    {
+      "label": "Notes officielles de la démo V8 · 11 septembre 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "power-pole"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "products",
+      "id": "hay-products"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"]
+}

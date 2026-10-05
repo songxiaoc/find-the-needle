@@ -1,0 +1,38 @@
+{
+  "id": "shovel",
+  "name": "Лопата (Shovel)",
+  "summary": "Официальная страница представляет лопату как начальный инструмент: перемещайте сено вручную и зарабатывайте на конвейеры и машины.",
+  "updatedAt": "2026-10-05",
+  "version": "Описание полной игры, проверено 5 октября 2026",
+  "data": {
+    "role": "Работа с сеном",
+    "scope": "Описание полной игры",
+    "operation": "Для начала переместите немного сена, найдите SELL HAY и следуйте подсказкам взаимодействия. Уборка стога и поиск иголок — разные задачи.",
+    "check": "Перед автоматизацией найдите медленный этап: сбор, перенос, продажу или сканирование. Выбирайте покупку для этого узкого места по текущим ценам игры."
+  },
+  "sources": [
+    {
+      "label": "Официальная страница Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "tools",
+      "id": "pitchfork"
+    },
+    {
+      "kind": "tools",
+      "id": "metal-detector"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/getting-started", "/guides/guide/automation"]
+}

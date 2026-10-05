@@ -1,0 +1,37 @@
+{
+  "id": "power-pole",
+  "name": "Strommast (Power Pole)",
+  "summary": "In Demo V8 kannst du mit E an einem Strommast das gesamte Netz abschalten. Prüfe eine versehentliche Abschaltung, wenn mehrere Maschinen gleichzeitig stehen bleiben.",
+  "updatedAt": "2026-10-05",
+  "version": "Demo-V8-Ankündigung (11. September 2026); beachte die Hinweise deiner installierten Version",
+  "data": {
+    "role": "Stromversorgung",
+    "scope": "Demo-Notizen / Diskussion",
+    "check": "Achte auf die Netzmeldung: V8 ergänzte eine visuelle Warnung bei zu wenig Leistung. Prüfe Netzstatus und angeschlossene Maschinen, bevor du die Produktion ausbaust.",
+    "limits": "Nutze Bedarf und Erzeugung aus deiner aktuellen Spielanzeige. Die Ankündigung enthält keine Leistung je Maschine, allgemeine Kabelreichweite oder vollständige Generatorplanung."
+  },
+  "sources": [
+    {
+      "label": "Offizielle Demo-V8-Notizen · 11. September 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Offizielle Steam-Seite",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "pellet-disc-machine"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"],
+  "image": "/images/find-the-needle/screenshot-5.webp",
+  "imageAlt": "Yard-Research-Baum mit Electricity, Power Pole und Strom-Upgrades.",
+  "imageCaption": "Power Pole liegt im POWER-Zweig. Aktuelle Kosten und Voraussetzungen findest du in deinem Spielbaum; dieses Werbebild ist keine Freischaltliste. Offizieller Steam-Screenshot."
+}

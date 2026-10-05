@@ -2,11 +2,11 @@
 title: 'Förderbänder, Strom und den Heuverkaufsstand verbinden'
 description: 'Nutze Einrasten und No Snap, prüfe ein abgeschaltetes Stromnetz und finde Engpässe, bevor du deine Heuverarbeitung ausbaust.'
 date: '2026-09-27'
-lastModified: '2026-09-27'
+lastModified: '2026-10-05'
 image: '/images/find-the-needle/screenshot-1.webp'
 ---
 
-Verbinde für den ersten funktionierenden Weg die Heuzufuhr mit ihrem Ziel, prüfe bei Bedarf die Stromversorgung und schicke Material hindurch, bevor du eine weitere Abzweigung baust. **Demo V8 ergänzte das Einrasten am Hay Sell Stand, F für den Modus No Snap und eine E-Interaktion an Strommasten zum Abschalten des Netzes.** Diese Details helfen, wenn eine Linie verbunden aussieht, aber nicht läuft.
+Verbinde für den ersten funktionierenden Weg die Heuzufuhr mit ihrem Ziel, prüfe bei Bedarf die Stromversorgung und schicke Material hindurch, bevor du eine weitere Abzweigung baust. **Demo V8 ergänzte das Einrasten am <EntityLink kind="machines" id="hay-sell-stand">Hay Sell Stand</EntityLink>, F für den Modus No Snap und eine E-Interaktion an Strommasten zum Abschalten des Netzes.** Diese Details helfen, wenn eine Linie verbunden aussieht, aber nicht läuft.
 
 ## Verbinde zuerst das Ende an der Verkaufsstelle
 
@@ -36,12 +36,14 @@ Dasselbe Update ergänzte einen sichtbaren Hinweis, wenn die Leistung unter dem 
 | Vor einem Scanner bildet sich eine Warteschlange | Beobachte, ob der Scanner langsamer arbeitet, als Material ankommt. |
 | Material erreicht eine Verzweigung, verfehlt aber sein Ziel | Verfolge jede ausgehende Strecke einzeln, auch Wege zum Verkaufsstand. |
 
-Diese Prüfungen helfen beim Eingrenzen eines Fehlers; nicht jede stillstehende Maschine hat dieselbe Ursache. Die **Pellet Disc Machine** erhielt mit V8 Materialanzeigen für **BRICKS / HAY**. Lies diese Anzeigen, statt anzunehmen, dass ein sichtbar volles Band alles Nötige liefert.
+Diese Prüfungen helfen beim Eingrenzen eines Fehlers; nicht jede stillstehende Maschine hat dieselbe Ursache. Die **<EntityLink kind="machines" id="pellet-disc-machine">Pellet Disc Machine</EntityLink>** erhielt mit V8 Materialanzeigen für **BRICKS / HAY**. Lies diese Anzeigen, statt anzunehmen, dass ein sichtbar volles Band alles Nötige liefert.
 
 ## Erweitere die Anlage, ohne die Nadelsuche zu umgehen
 
-V8 führte **U-Splitters** und **U-Joiners** ein, also U-förmige Verteiler und Zusammenführungen. Spieler haben bei Diskussionen über Scannerstaus außerdem vorgeschlagen, das Material auf getrennte Scannerstrecken zu verteilen und danach wieder zusammenzuführen. Das ist ein Bauvorschlag aus der Community, keine Zusage für einen gemessenen Durchsatz. Teste jede Strecke, bevor du sie in der ganzen Fabrik nachbaust.
+V8 führte **<EntityLink kind="machines" id="u-splitter">U-Splitters</EntityLink>** und **<EntityLink kind="machines" id="u-joiner">U-Joiners</EntityLink>** ein, also U-förmige Verteiler und Zusammenführungen. Spieler haben bei Diskussionen über Scannerstaus außerdem vorgeschlagen, das Material auf getrennte Scannerstrecken zu verteilen und danach wieder zusammenzuführen. Das ist ein Bauvorschlag aus der Community, keine Zusage für einen gemessenen Durchsatz. Teste jede Strecke, bevor du sie in der ganzen Fabrik nachbaust.
 
 Soll jedes Produkt auf Nadeln geprüft werden, führe **jeden** Weg zur Verkaufsstelle durch deine Scanneranlage. Eine ordentliche Hauptstrecke hilft nicht, wenn eine andere Abzweigung daran vorbeiführt. Unter [Nadeln und Scanner](/guides/guide/needles-and-scanners) findest du die Erklärung des Entwicklers zu Nadeln in Heuprodukten.
+
+Bevor du eine gestoppte Strecke umbaust, gehe die [Linienprüfung](/tools/line-check) durch: Zufuhr, Strom, Ausgang und Scannerabdeckung der Reihe nach.
 
 Quellen: [offizielle Notizen zu Demo V8 vom 11. September 2026 UTC](https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126), [Community-Diskussion über Scanner](https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/). Bei abweichender Steuerung gelten die Hinweise deiner aktuellen Version.

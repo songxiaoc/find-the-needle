@@ -1,0 +1,49 @@
+{
+  "id": "hay-products",
+  "name": "Produits transformés du foin",
+  "summary": "La boutique du jeu complet présente pâte de foin, balles compressées, briques écologiques, papier de foin et granulés. Ce panorama aide à reconnaître les familles, sans les donner toutes comme débloquées dans la démo.",
+  "updatedAt": "2026-10-05",
+  "version": "Présentation du jeu complet, vérifiée le 5 octobre 2026",
+  "data": {
+    "role": "Produits transformés",
+    "scope": "Présentation du jeu complet",
+    "pulp": "Produit transformé cité par la boutique. Consultez la recette et le matériel requis dans votre version avant de lui réserver une ligne.",
+    "bales": "Le foin compressé figure parmi les produits et la boutique mentionne des presses. Ne confondez pas une balle compressée et un paquet du Silo pour chercher une aiguille stockée.",
+    "bricks": "Les briques écologiques sont citées en boutique. La démo V8 a aussi ajouté l’indication BRICKS sur la Pellet Disc Machine ; ce seul libellé ne donne pas sa recette complète.",
+    "paper": "Le papier de foin et les machines à papier figurent dans la présentation du jeu complet. Vérifiez leur disponibilité dans votre version avant de planifier la production.",
+    "pellets": "Les granulés sont une famille citée. La Pellet Disc Machine figure aussi dans les notes officielles de la démo, sans confirmation de tous les ingrédients, quantités produites ou valeurs de vente.",
+    "check": "Le développeur précise que les produits peuvent contenir des aiguilles. Maintenez la détection dans les circuits en développant la transformation. Calculez avec les recettes et prix en jeu ; aucun classement universel de rentabilité n’est confirmé."
+  },
+  "sources": [
+    {
+      "label": "Boutique Steam officielle",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Notes officielles de la démo V8 · 11 septembre 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Réponse du développeur et témoignages · 13 septembre 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    },
+    {
+      "kind": "machines",
+      "id": "pellet-disc-machine"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ]
+}

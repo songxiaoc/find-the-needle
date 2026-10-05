@@ -1,0 +1,41 @@
+{
+  "id": "hay-wad",
+  "name": "Paquete de heno (Hay Wad)",
+  "summary": "Un hay wad es heno empaquetado por un Silo. El desarrollador confirma que puede contener una aguja: estar empaquetado no significa que se pueda vender sin escanear.",
+  "updatedAt": "2026-10-05",
+  "version": "Explicación del desarrollador (13 de septiembre de 2026)",
+  "data": {
+    "role": "Heno empaquetado",
+    "scope": "Notas y debate de la demo",
+    "operation": "Sigue el paquete desde la salida del Silo por cada cinta y transferencia de brazo. Comprueba que pase por escaneo antes de llegar a la línea final de venta.",
+    "check": "El desarrollador indica que una aguja vendida dentro de un producto vuelve al montón. Si el Silo aún muestra una aguja esperando, investiga su salida en vez de asumir que ya volvió."
+  },
+  "sources": [
+    {
+      "label": "Respuesta del desarrollador y testimonios · 13 de septiembre de 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "silo"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "products",
+      "id": "hay-products"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

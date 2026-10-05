@@ -1,0 +1,38 @@
+{
+  "id": "silo",
+  "name": "Silo",
+  "summary": "El Silo empaqueta el heno. El desarrollador explica que las agujas pueden quedar dentro de los paquetes; revisa la salida hacia un escáner antes de vender.",
+  "updatedAt": "2026-10-05",
+  "version": "Explicación del desarrollador (13 de septiembre de 2026)",
+  "data": {
+    "role": "Almacenamiento y empaquetado",
+    "scope": "Notas y debate de la demo",
+    "operation": "Revisa los avisos de heno y agujas almacenados y observa la cinta de salida. Una aguja indicada dentro no equivale a una aguja ya escaneada.",
+    "community": "Un jugador aconseja añadir suficiente heno suelto para completar otra carga cuando hay una aguja esperando. Es un consejo comunitario sin cantidad universal ni solución garantizada.",
+    "check": "Evita desmontar el Silo para recuperar una aguja: un jugador notificó un aviso de destrucción. Conserva tu partida y revisa primero alimentación, salida y escaneo."
+  },
+  "sources": [
+    {
+      "label": "Respuesta del desarrollador y testimonios · 13 de septiembre de 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

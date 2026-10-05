@@ -1,0 +1,44 @@
+{
+  "id": "robotic-arm",
+  "name": "Roboterarm (Robotic Arm)",
+  "summary": "Roboterarme gehören zur Automatisierung. Prüfe bei verkauften Nadeln alle erreichbaren Bänder: Spieler berichten, dass Arme Material auf benachbarte Wege legen.",
+  "updatedAt": "2026-10-05",
+  "version": "Community-Berichte (September 2026) und offizielle Spielbeschreibung",
+  "data": {
+    "role": "Transport",
+    "scope": "Demo-Notizen / Diskussion",
+    "community": "Beobachte den Arm, wenn sein übliches Ziel gestaut ist. Laut September-Diskussion kann ein anderes erreichbares Band Material erhalten. Das ist ein Spielerhinweis, keine bestätigte Erklärung für jede verlorene Nadel.",
+    "check": "Verfolge jedes mögliche Empfangsband über einen Scanner zum Verkaufsstand. Teste die Führung mit wenig Material, bevor du weitere Arme kaufst."
+  },
+  "sources": [
+    {
+      "label": "Offizielle Steam-Seite",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Community-Diskussion zu Transportwegen · 21. September 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ],
+  "image": "/images/find-the-needle/screenshot-2.webp",
+  "imageAlt": "Orange Roboterarme um einen Heuhaufen neben mehreren Förderbandwegen.",
+  "imageCaption": "Die Arme stehen nah an mehreren Bändern. Verfolge in deinem Aufbau jedes Band, das ein Arm erreichen kann. Offizieller Steam-Screenshot."
+}

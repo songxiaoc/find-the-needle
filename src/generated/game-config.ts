@@ -20,6 +20,7 @@ export const generatedGameConfig = {
   game: { genre: ['Simulation', 'Automation', 'Incremental'], platforms: ['Windows'], developer: 'FindTheNeedleDev' },
   nav: [
     { label: 'Guides', href: '/guides' },
+    { label: 'Factory tools', href: '/tools' },
     { label: 'Demo', href: '/guides/guide/demo' },
     { label: 'System requirements', href: '/system-requirements' },
     { label: 'FAQ', href: '/faq' },

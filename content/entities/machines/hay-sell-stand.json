@@ -1,0 +1,44 @@
+{
+  "id": "hay-sell-stand",
+  "name": "Hay Sell Stand",
+  "summary": "The selling destination is marked SELL HAY. Demo V8 added snapping to its conveyor connection. A needle sold inside a hay product returns to the pile, according to the developer.",
+  "updatedAt": "2026-10-05",
+  "version": "Demo V8 announcement (September 11, 2026); follow your installed build’s prompts",
+  "data": {
+    "role": "Selling",
+    "scope": "Demo notes / discussion",
+    "operation": "Use the connection at the stand rather than stopping the belt nearby. If placement does not snap, check whether F has enabled No Snap Mode.",
+    "check": "Trace the last incoming branches back to scanning. The developer describes normal needle recycling, not a universal recovery guarantee for a missing-needle bug."
+  },
+  "sources": [
+    {
+      "label": "Official Demo V8 notes · September 11, 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Developer reply and player reports · September 13, 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ],
+  "image": "/images/find-the-needle/screenshot-1.webp",
+  "imageAlt": "Conveyor carrying hay toward the stall marked SELL HAY.",
+  "imageCaption": "The belt meets the front of the SELL HAY stand. Use this to identify the destination; the screenshot’s prices are not current price references. Official Steam screenshot."
+}

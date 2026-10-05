@@ -2,7 +2,7 @@
 title: 'Comprendre les outils, les machines et les produits du foin'
 description: 'Distinguez collecte, transport, transformation et détection des aiguilles, puis vérifiez les besoins d’une machine avant de l’acheter.'
 date: '2026-09-27'
-lastModified: '2026-09-27'
+lastModified: '2026-10-05'
 image: '/images/find-the-needle/screenshot-2.webp'
 ---
 
@@ -12,11 +12,11 @@ Choisissez votre équipement selon la tâche qui vous ralentit : ramasser le foi
 
 | Tâche | Équipements à chercher | À vérifier |
 | --- | --- | --- |
-| Ramassage manuel | Pelles, fourches, aspirateurs | Comment l’outil ramasse le foin et où vous le déposerez |
+| Ramassage manuel | <EntityLink kind="tools" id="shovel">Pelles</EntityLink>, <EntityLink kind="tools" id="pitchfork">fourches</EntityLink>, aspirateurs | Comment l’outil ramasse le foin et où vous le déposerez |
 | Transport du foin | Seaux, brouettes | L’indicateur de capacité et le trajet jusqu’à la destination |
-| Transport automatique | Convoyeurs, bras robotisés | Le point de prise, le sens de circulation et le point de dépôt |
+| Transport automatique | <EntityLink kind="machines" id="conveyor-belt">Convoyeurs</EntityLink>, <EntityLink kind="machines" id="robotic-arm">bras robotisés</EntityLink> | Le point de prise, le sens de circulation et le point de dépôt |
 | Transformation | Presses à balles, enrubanneuses, machines à papier | La matière acceptée et le produit qui ressort |
-| Détection des aiguilles | Détecteur de métaux, scanners | L’endroit où la détection intervient dans votre parcours de fouille ou de convoyage |
+| Détection des aiguilles | <EntityLink kind="tools" id="metal-detector">Détecteur de métaux</EntityLink>, <EntityLink kind="machines" id="needle-scanner">scanners</EntityLink> | L’endroit où la détection intervient dans votre parcours de fouille ou de convoyage |
 
 Ces familles d’équipements figurent dans la description officielle du jeu. Vérifiez la boutique et les déblocages de votre démo avant de prévoir une installation autour d’un objet montré sur la page du jeu complet.
 
@@ -32,7 +32,7 @@ La boutique cite la **pâte de foin**, les **balles compressées**, les **brique
 
 Pour choisir un produit, partez de la machine qui le fabrique et remontez la chaîne. Lisez son étiquette d’entrée, trouvez comment lui fournir cette matière, puis vérifiez la destination de sa sortie. Distinguez notamment le foin en vrac d’un produit déjà transformé lorsque vous raccordez deux machines.
 
-Par exemple, la [mise à jour Demo V8](https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126) a ajouté des indicateurs de ressources comme **BRICKS** et **HAY** à la **Pellet Disc Machine**. Lisez-les lors du raccordement : le nom de la machine ne suffit pas à savoir quelle matière correspond à chaque connexion.
+Par exemple, la [mise à jour Demo V8](https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126) a ajouté des indicateurs de ressources comme **BRICKS** et **HAY** à la **<EntityLink kind="machines" id="pellet-disc-machine">Pellet Disc Machine</EntityLink>**. Lisez-les lors du raccordement : le nom de la machine ne suffit pas à savoir quelle matière correspond à chaque connexion.
 
 ## Prévoyez les raccordements dans votre achat
 
@@ -48,5 +48,7 @@ Avant de dépenser, vérifiez :
 4. **Destination :** le produit ira-t-il vers une autre machine ou vers un point de vente qui l’accepte ?
 
 Gardez assez de budget et de place pour terminer ces raccordements. Observez ensuite un trajet complet avant d’ajouter une branche ; le [guide d’automatisation](/guides/guide/automation) détaille cette vérification.
+
+Pour dimensionner une ligne à partir de vos observations, saisissez vos débits dans le [calculateur de production](/tools/production-calculator) et comparez l’approvisionnement à la capacité de traitement.
 
 Équipements, noms des produits et captures : [page Steam officielle du jeu](https://store.steampowered.com/app/5160800/Find_The_Needle/) et [page de la démo](https://store.steampowered.com/app/5165210/Find_The_Needle_Demo/).

@@ -1,0 +1,38 @@
+{
+  "id": "silo",
+  "name": "Silo",
+  "summary": "Le Silo emballe le foin en paquets. Le développeur précise que des aiguilles peuvent y rester : suivez donc la sortie vers un scanner avant la vente.",
+  "updatedAt": "2026-10-05",
+  "version": "Explication du développeur (13 septembre 2026)",
+  "data": {
+    "role": "Stockage et emballage",
+    "scope": "Notes et discussions de la démo",
+    "operation": "Consultez les indications de foin et d’aiguilles stockés, puis observez le convoyeur de sortie. Une aiguille encore affichée à l’intérieur n’a pas forcément été scannée.",
+    "community": "Un joueur conseille d’ajouter assez de foin en vrac pour terminer un nouveau paquet lorsqu’une aiguille attend. Ce conseil communautaire ne confirme ni quantité universelle ni réparation garantie.",
+    "check": "Évitez de démonter le Silo pour récupérer une aiguille : un joueur a signalé un avertissement de destruction. Conservez votre sauvegarde et vérifiez d’abord arrivée, sortie et détection."
+  },
+  "sources": [
+    {
+      "label": "Réponse du développeur et témoignages · 13 septembre 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

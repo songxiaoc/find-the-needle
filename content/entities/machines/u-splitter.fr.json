@@ -1,0 +1,41 @@
+{
+  "id": "u-splitter",
+  "name": "Répartiteur U (U-Splitter)",
+  "summary": "Les U-Splitters sont des éléments de routage ajoutés dans la démo V8. Divisez un trajet pour examiner ou répartir une ligne plutôt que tout envoyer dans une seule direction.",
+  "updatedAt": "2026-10-05",
+  "version": "Annonce de la démo V8 (11 septembre 2026) ; suivez les indications de votre version",
+  "data": {
+    "role": "Routage des convoyeurs",
+    "scope": "Notes et discussions de la démo",
+    "community": "Des joueurs proposent plusieurs branches de scanners si la ligne initiale s’engorge. Faites passer les deux sorties par la détection, puis réunissez-les si nécessaire.",
+    "check": "Observez un produit entrer dans chaque branche et atteindre sa destination. Les notes V8 ne précisent ni proportions de répartition ni gain de débit garanti."
+  },
+  "sources": [
+    {
+      "label": "Notes officielles de la démo V8 · 11 septembre 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Discussion communautaire sur les scanners · 16 septembre 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ]
+}

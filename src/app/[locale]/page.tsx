@@ -85,9 +85,9 @@ export default async function HomePage({
   // The homepage is NOT a fixed layout — it's the ordered HOME_BLOCKS list
   // (src/config/homepage.ts) rendered by <HomeBlocks>. Data-driven blocks
   // (latest-guides / category-grid / entity-index) get runtime data via `ctx`.
-  const entityKinds = getPublishedEntityKinds().map((kind) => ({
+  const entityKinds = getPublishedEntityKinds(locale).map((kind) => ({
     kind,
-    entities: getEntities(kind.id),
+    entities: getEntities(kind.id, locale),
   }));
   const ctx = {
     locale,

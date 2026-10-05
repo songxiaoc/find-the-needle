@@ -1,0 +1,38 @@
+{
+  "id": "shovel",
+  "name": "Pala (Shovel)",
+  "summary": "La tienda oficial presenta la pala como herramienta inicial para mover heno a mano y ganar dinero antes de comprar cintas y máquinas.",
+  "updatedAt": "2026-10-05",
+  "version": "Descripción del juego completo, comprobada el 5 de octubre de 2026",
+  "data": {
+    "role": "Manejo del heno",
+    "scope": "Descripción del juego completo",
+    "operation": "Para empezar, maneja poco heno, localiza SELL HAY y sigue las indicaciones de interacción. Despejar el montón y encontrar agujas son tareas distintas.",
+    "check": "Antes de automatizar, identifica la parte lenta: recoger, transportar, vender o escanear. Compra para ese cuello de botella según los precios actuales del juego."
+  },
+  "sources": [
+    {
+      "label": "Tienda oficial de Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "tools",
+      "id": "pitchfork"
+    },
+    {
+      "kind": "tools",
+      "id": "metal-detector"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/getting-started", "/guides/guide/automation"]
+}

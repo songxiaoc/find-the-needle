@@ -1,0 +1,44 @@
+{
+  "id": "robotic-arm",
+  "name": "Bras robotisé (Robotic Arm)",
+  "summary": "Les bras robotisés font partie de l’automatisation. Si des aiguilles sont vendues, vérifiez tous les convoyeurs à portée : des joueurs signalent des dépôts sur des trajets voisins.",
+  "updatedAt": "2026-10-05",
+  "version": "Témoignages communautaires (septembre 2026) et boutique officielle",
+  "data": {
+    "role": "Transport",
+    "scope": "Notes et discussions de la démo",
+    "community": "Observez le bras lorsque sa destination habituelle est engorgée. La discussion de septembre suggère qu’un autre convoyeur à portée peut recevoir le matériau ; cela n’explique pas forcément toute aiguille perdue.",
+    "check": "Suivez chaque convoyeur pouvant recevoir du matériau jusqu’à un scanner avant le stand de vente. Testez le trajet à faible débit avant d’acheter d’autres bras."
+  },
+  "sources": [
+    {
+      "label": "Boutique Steam officielle",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Discussion communautaire sur les circuits · 21 septembre 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ],
+  "image": "/images/find-the-needle/screenshot-2.webp",
+  "imageAlt": "Bras robotisés orange autour d’un tas de foin près de plusieurs convoyeurs.",
+  "imageCaption": "Les bras sont proches de plusieurs convoyeurs. Pour vérifier votre installation, suivez chaque convoyeur qu’un bras peut atteindre. Capture Steam officielle."
+}

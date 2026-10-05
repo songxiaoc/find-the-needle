@@ -1,0 +1,38 @@
+{
+  "id": "u-joiner",
+  "name": "Jonction U (U-Joiner)",
+  "summary": "Les U-Joiners sont un autre élément de routage ajouté dans la démo V8. Avant de réunir des lignes, vérifiez que chaque arrivée passe déjà par un scanner.",
+  "updatedAt": "2026-10-05",
+  "version": "Annonce de la démo V8 (11 septembre 2026) ; suivez les indications de votre version",
+  "data": {
+    "role": "Routage des convoyeurs",
+    "scope": "Notes et discussions de la démo",
+    "operation": "Suivez les deux arrivées et la sortie commune. Testez un faible débit sur chaque branche pour éviter qu’un détour envoie des produits non scannés vers la vente.",
+    "community": "Le montage communautaire séparation–détection–jonction est une piste de dépannage, pas une amélioration garantie. Si la sortie commune se bloque, vérifiez sa destination avant d’ajouter des entrées."
+  },
+  "sources": [
+    {
+      "label": "Notes officielles de la démo V8 · 11 septembre 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Discussion communautaire sur les scanners · 16 septembre 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"]
+}

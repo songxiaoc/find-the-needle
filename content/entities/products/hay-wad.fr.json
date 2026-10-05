@@ -1,0 +1,41 @@
+{
+  "id": "hay-wad",
+  "name": "Paquet de foin (Hay Wad)",
+  "summary": "Un hay wad est un paquet de foin produit par un Silo. Le développeur confirme qu’il peut contenir une aiguille : un produit emballé doit aussi passer par la détection avant la vente.",
+  "updatedAt": "2026-10-05",
+  "version": "Explication du développeur (13 septembre 2026)",
+  "data": {
+    "role": "Foin emballé",
+    "scope": "Notes et discussions de la démo",
+    "operation": "Suivez le paquet depuis la sortie du Silo à travers chaque convoyeur et transfert de bras. Vérifiez qu’il passe par la détection avant de rejoindre la vente.",
+    "check": "Selon le développeur, une aiguille vendue dans un produit retourne au tas. Si un Silo affiche encore une aiguille en attente, examinez sa sortie plutôt que de supposer son retour."
+  },
+  "sources": [
+    {
+      "label": "Réponse du développeur et témoignages · 13 septembre 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "silo"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "products",
+      "id": "hay-products"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

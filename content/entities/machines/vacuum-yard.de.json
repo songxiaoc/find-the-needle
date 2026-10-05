@@ -1,0 +1,34 @@
+{
+  "id": "vacuum-yard",
+  "name": "Vacuum Yard",
+  "summary": "Vacuum Yard wird im Demo-V8-Update genannt; sein Preis wurde damals um 80 % gesenkt. Daraus lässt sich der heutige Kaufpreis nicht ablesen.",
+  "updatedAt": "2026-10-05",
+  "version": "Demo-V8-Ankündigung (11. September 2026); beachte die Hinweise deiner installierten Version",
+  "data": {
+    "role": "Heu bewegen",
+    "scope": "Demo-Notizen / Diskussion",
+    "check": "Vergleiche die aktuelle Kaufanzeige mit deinem Problem. Wartet bereits Heu hinter der Sammlung, prüfe Bänder und Scanner, bevor du eine weitere Sammelverbesserung kaufst.",
+    "limits": "Die Ankündigung nennt keine aktuelle Kapazität, Reichweite, Leistungsaufnahme oder Freischaltbedingung. Prüfe diese Angaben in deiner installierten Version vor der Kaufplanung."
+  },
+  "sources": [
+    {
+      "label": "Offizielle Demo-V8-Notizen · 11. September 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "tools",
+      "id": "shovel"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation", "/guides/guide/getting-started"]
+}

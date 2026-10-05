@@ -4,7 +4,7 @@ import createIntlMiddleware from 'next-intl/middleware';
 import { routing } from '@/core/i18n/config';
 import { locales } from '@/config/locale';
 import { getCommonMessages } from '@/config/locale/messages';
-import { PUBLIC_PATHS } from '@/config/locale/routes';
+import { isPublicPath } from '@/config/locale/routes';
 
 const intlMiddleware = createIntlMiddleware(routing);
 
@@ -30,7 +30,7 @@ export async function middleware(request: NextRequest) {
   const segments = pathname.split('/').filter(Boolean);
   const locale = locales.includes(segments[0]) ? segments.shift()! : 'en';
   const route = `/${segments.join('/')}`;
-  if (!PUBLIC_PATHS.has(route)) {
+  if (!isPublicPath(route)) {
     const copy = getCommonMessages(locale);
     const home = locale === 'en' ? '/' : `/${locale}`;
     return new NextResponse(

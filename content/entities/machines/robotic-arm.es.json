@@ -1,0 +1,44 @@
+{
+  "id": "robotic-arm",
+  "name": "Brazo robótico (Robotic Arm)",
+  "summary": "Los brazos robóticos forman parte de la automatización. Si se venden agujas, revisa todas las cintas a su alcance: los jugadores describen depósitos en rutas cercanas alternativas.",
+  "updatedAt": "2026-10-05",
+  "version": "Testimonios comunitarios (septiembre de 2026) y tienda oficial",
+  "data": {
+    "role": "Transporte",
+    "scope": "Notas y debate de la demo",
+    "community": "Observa el brazo cuando su destino habitual esté atascado. El debate de septiembre sugiere que otra cinta cercana puede recibir material; es un consejo de jugadores, no la explicación confirmada de toda aguja perdida.",
+    "check": "Sigue cada posible cinta receptora hasta un escáner antes del puesto de venta. Prueba la ruta con poco material antes de comprar más brazos."
+  },
+  "sources": [
+    {
+      "label": "Tienda oficial de Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Debate comunitario sobre rutas · 21 de septiembre de 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ],
+  "image": "/images/find-the-needle/screenshot-2.webp",
+  "imageAlt": "Brazos robóticos naranjas rodean un montón de heno junto a varias rutas de cintas.",
+  "imageCaption": "Observa la cercanía de los brazos a varias cintas. En tu fábrica, sigue cada cinta que un brazo pueda alcanzar. Captura oficial de Steam."
+}

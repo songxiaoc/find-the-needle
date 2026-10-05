@@ -1,0 +1,49 @@
+{
+  "id": "hay-products",
+  "name": "Verarbeitete Heuprodukte",
+  "summary": "Die Beschreibung des vollständigen Spiels nennt Heubrei, gepresste Ballen, Ökoziegel, Heupapier und Pellets. Diese Übersicht ordnet die Gruppen ein; sie ist keine Liste aller Demo-Freischaltungen.",
+  "updatedAt": "2026-10-05",
+  "version": "Beschreibung des vollständigen Spiels, geprüft am 5. Oktober 2026",
+  "data": {
+    "role": "Verarbeitete Produkte",
+    "scope": "Beschreibung des vollständigen Spiels",
+    "pulp": "Ein in der Spielbeschreibung genanntes Heuprodukt. Prüfe Rezept und benötigte Geräte in deiner Version, bevor du eine Linie dafür einplanst.",
+    "bales": "Gepresstes Heu gehört zu den genannten Gruppen; die Beschreibung nennt auch Ballenpressen. Setze einen gepressten Ballen bei der Nadelsuche nicht mit einem Silo-Bündel gleich.",
+    "bricks": "Ökoziegel werden in der Spielbeschreibung genannt. Demo V8 ergänzte außerdem die Anzeige BRICKS an der Pellet Disc Machine; die Anzeige allein ist kein vollständiges Rezept.",
+    "paper": "Heupapier und Papiermaschinen stehen in der Beschreibung des vollständigen Spiels. Prüfe deren Verfügbarkeit in deiner Version, bevor du Papierproduktion einplanst.",
+    "pellets": "Pellets sind eine genannte Produktgruppe. Die Pellet Disc Machine steht auch in offiziellen Demo-Notizen; diese bestätigen aber nicht alle Zutaten, Ausgabemengen oder Verkaufswerte.",
+    "check": "Laut Entwickler können Heuprodukte Nadeln enthalten. Behalte beim Ausbau der Verarbeitung das Scannen im Weg. Kalkuliere mit Spielrezepten und Preisen; eine allgemeine Gewinnrangliste ist nicht bestätigt."
+  },
+  "sources": [
+    {
+      "label": "Offizielle Steam-Seite",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Offizielle Demo-V8-Notizen · 11. September 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Entwicklerantwort und Spielerberichte · 13. September 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    },
+    {
+      "kind": "machines",
+      "id": "pellet-disc-machine"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "hay-sell-stand",
+  "name": "Puesto de venta de heno (Hay Sell Stand)",
+  "summary": "El destino de venta lleva el letrero SELL HAY. La demo V8 añadió el ajuste automático de su cinta. Según el desarrollador, una aguja vendida dentro de un producto vuelve al montón.",
+  "updatedAt": "2026-10-05",
+  "version": "Anuncio de la demo V8 (11 de septiembre de 2026); sigue las indicaciones de tu versión",
+  "data": {
+    "role": "Venta",
+    "scope": "Notas y debate de la demo",
+    "operation": "Conecta la cinta al puesto en lugar de terminarla cerca. Si no se ajusta, comprueba si F ha activado No Snap Mode.",
+    "check": "Sigue las últimas ramas entrantes hasta el escaneo. El desarrollador describe el retorno normal de agujas, no una recuperación garantizada ante un fallo de agujas desaparecidas."
+  },
+  "sources": [
+    {
+      "label": "Notas oficiales de la demo V8 · 11 de septiembre de 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Respuesta del desarrollador y testimonios · 13 de septiembre de 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ],
+  "image": "/images/find-the-needle/screenshot-1.webp",
+  "imageAlt": "Cinta transportando heno hacia el puesto marcado SELL HAY.",
+  "imageCaption": "La cinta llega a la parte frontal del puesto SELL HAY. Sirve para identificar el destino; sus precios no son una referencia actual. Captura oficial de Steam."
+}

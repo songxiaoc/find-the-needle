@@ -2,7 +2,7 @@
 title: 'Herramientas, máquinas y productos del heno'
 description: 'Distingue la recogida, el transporte, el procesamiento y la detección de agujas, y comprueba qué necesita cada máquina antes de comprarla.'
 date: '2026-09-27'
-lastModified: '2026-09-27'
+lastModified: '2026-10-05'
 image: '/images/find-the-needle/screenshot-2.webp'
 ---
 
@@ -12,11 +12,11 @@ Elige el equipo según la tarea que te frena: recoger heno, moverlo, procesarlo 
 
 | Tarea | Equipo que buscar | Qué comprobar |
 | --- | --- | --- |
-| Recogida manual | Palas, horcas, aspiradoras | Cómo recoge heno la herramienta y dónde lo descargarás |
+| Recogida manual | <EntityLink kind="tools" id="shovel">Palas</EntityLink>, <EntityLink kind="tools" id="pitchfork">horcas</EntityLink>, aspiradoras | Cómo recoge heno la herramienta y dónde lo descargarás |
 | Transporte de heno | Cubos, carretillas | El indicador de capacidad y el trayecto hasta el destino |
-| Transporte automático | Cintas transportadoras, brazos robóticos | Punto de recogida, sentido de circulación y punto de entrega |
+| Transporte automático | <EntityLink kind="machines" id="conveyor-belt">Cintas transportadoras</EntityLink>, <EntityLink kind="machines" id="robotic-arm">brazos robóticos</EntityLink> | Punto de recogida, sentido de circulación y punto de entrega |
 | Procesamiento | Empacadoras, envolvedoras de heno, máquinas de papel | Material que aceptan y producto que sale |
-| Detección de agujas | Detector de metales, escáneres | Dónde se realiza la detección mientras excavas o a lo largo de la cinta |
+| Detección de agujas | <EntityLink kind="tools" id="metal-detector">Detector de metales</EntityLink>, <EntityLink kind="machines" id="needle-scanner">escáneres</EntityLink> | Dónde se realiza la detección mientras excavas o a lo largo de la cinta |
 
 Estas familias de equipos aparecen en la descripción oficial. Consulta la tienda y los desbloqueos de tu demo antes de planificar alrededor de un objeto mostrado en la página del juego completo.
 
@@ -32,7 +32,7 @@ La tienda menciona **pulpa de heno**, **pacas comprimidas**, **ladrillos ecológ
 
 Cuando elijas un producto, empieza por la máquina que lo fabrica y recorre la cadena hacia atrás. Lee la etiqueta de entrada, identifica cómo suministrar ese material y comprueba adónde puede ir la salida. Al conectar dos máquinas, distingue especialmente el heno suelto de un producto ya procesado.
 
-Por ejemplo, la [actualización Demo V8](https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126) añadió indicadores de recursos como **BRICKS** y **HAY** a la **Pellet Disc Machine**. Léelos al conectarla: el nombre de la máquina por sí solo no indica qué material corresponde a cada conexión.
+Por ejemplo, la [actualización Demo V8](https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126) añadió indicadores de recursos como **BRICKS** y **HAY** a la **<EntityLink kind="machines" id="pellet-disc-machine">Pellet Disc Machine</EntityLink>**. Léelos al conectarla: el nombre de la máquina por sí solo no indica qué material corresponde a cada conexión.
 
 ## Incluye las conexiones en la compra
 
@@ -48,5 +48,7 @@ Antes de gastar, comprueba:
 4. **Destino:** ¿el producto irá a otra máquina o a un punto de venta que lo acepte?
 
 Reserva presupuesto y espacio para completar esas conexiones. Después observa una ruta completa antes de añadir otra rama; la [guía de automatización](/guides/guide/automation) explica cómo revisarla.
+
+Para planificar una línea con tus propias mediciones, introduce los ritmos que observes en la [calculadora de producción](/tools/production-calculator) y compara el suministro con la capacidad de procesamiento.
 
 Equipos, nombres de productos y capturas: [página oficial del juego en Steam](https://store.steampowered.com/app/5160800/Find_The_Needle/) y [página de la demo](https://store.steampowered.com/app/5165210/Find_The_Needle_Demo/).

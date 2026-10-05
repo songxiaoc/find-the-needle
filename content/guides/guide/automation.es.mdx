@@ -2,11 +2,11 @@
 title: 'Conecta las cintas, la electricidad y el puesto de venta de heno'
 description: 'Usa el encaje en el puesto y el modo No Snap, revisa una red eléctrica detenida y localiza los atascos antes de ampliar la producción.'
 date: '2026-09-27'
-lastModified: '2026-09-27'
+lastModified: '2026-10-05'
 image: '/images/find-the-needle/screenshot-1.webp'
 ---
 
-Para que funcione tu primera ruta, conecta el suministro de heno con su destino, confirma la electricidad donde haga falta y envía material antes de añadir otra rama. **Demo V8 añadió el encaje en el Hay Sell Stand, F para el modo No Snap y una interacción con E en los postes eléctricos para apagar la red.** Estos detalles ayudan cuando una línea parece conectada pero no funciona.
+Para que funcione tu primera ruta, conecta el suministro de heno con su destino, confirma la electricidad donde haga falta y envía material antes de añadir otra rama. **Demo V8 añadió el encaje en el <EntityLink kind="machines" id="hay-sell-stand">Hay Sell Stand</EntityLink>, F para el modo No Snap y una interacción con E en los postes eléctricos para apagar la red.** Estos detalles ayudan cuando una línea parece conectada pero no funciona.
 
 ## Conecta primero el extremo de venta
 
@@ -36,12 +36,14 @@ La misma actualización añadió un aviso visual cuando la potencia está por de
 | Se acumula una cola delante de un escáner | Observa si procesa el material más despacio de lo que llega. |
 | El material alcanza una unión pero no llega a su destino | Sigue cada salida por separado, incluidas las rutas al puesto de venta. |
 
-Estas comprobaciones ayudan a aislar un fallo; no prometen que todas las máquinas detenidas tengan la misma causa. V8 añadió indicadores de recursos **BRICKS / HAY** a la **Pellet Disc Machine**. Consúltalos en vez de suponer que una cinta visiblemente llena entrega todo lo necesario.
+Estas comprobaciones ayudan a aislar un fallo; no prometen que todas las máquinas detenidas tengan la misma causa. V8 añadió indicadores de recursos **BRICKS / HAY** a la **<EntityLink kind="machines" id="pellet-disc-machine">Pellet Disc Machine</EntityLink>**. Consúltalos en vez de suponer que una cinta visiblemente llena entrega todo lo necesario.
 
 ## Amplía sin saltarte la detección de agujas
 
-V8 introdujo **U-Splitters** y **U-Joiners**, divisores y uniones en U. En conversaciones sobre atascos de escáneres, algunos jugadores también han propuesto separar el flujo en carriles con sus propios escáneres y unir las salidas después. Es una sugerencia de diseño de la comunidad, no una garantía de rendimiento medido. Prueba cada carril antes de copiarlo por toda la fábrica.
+V8 introdujo **<EntityLink kind="machines" id="u-splitter">U-Splitters</EntityLink>** y **<EntityLink kind="machines" id="u-joiner">U-Joiners</EntityLink>**, divisores y uniones en U. En conversaciones sobre atascos de escáneres, algunos jugadores también han propuesto separar el flujo en carriles con sus propios escáneres y unir las salidas después. Es una sugerencia de diseño de la comunidad, no una garantía de rendimiento medido. Prueba cada carril antes de copiarlo por toda la fábrica.
 
 Si quieres comprobar todos los productos en busca de agujas, haz que **todas** las rutas al punto de venta pasen por tu sistema de escaneo. Una línea principal ordenada no ayuda si otra rama se la salta. Consulta [Agujas y escáneres](/guides/guide/needles-and-scanners) para leer la explicación del desarrollador sobre las agujas dentro de productos de heno.
+
+Antes de reconstruir una ruta detenida, usa la [revisión de la línea](/tools/line-check) para comprobar, en orden, suministro, electricidad, salida y paso por los escáneres.
 
 Fuentes: [notas oficiales de Demo V8, 11 de septiembre de 2026 UTC](https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126), [conversación comunitaria sobre escáneres](https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/). Si los controles son distintos, consulta las indicaciones de tu versión actual.

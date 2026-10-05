@@ -1,11 +1,15 @@
 import type { MetadataRoute } from 'next';
 
+import {
+  getAllEntities,
+  getPublishedEntityKinds,
+} from '@/config/entities-content';
 import { getAllGuides, getGuideCategories } from '@/config/guides-content';
 import { locales } from '@/config/locale';
 import { PUBLIC_PAGES } from '@/config/locale/routes';
 import { hreflangAlternates, localizedUrl } from '@/shared/lib/seo';
 
-const SITE_LAST_UPDATED = '2026-09-27';
+const SITE_LAST_UPDATED = '2026-10-05';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const guides = getAllGuides();
@@ -28,6 +32,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...guides.map((guide) => ({
       path: guide.href,
       updated: guide.lastModified ?? guide.date,
+    })),
+    ...getPublishedEntityKinds().map((kind) => ({
+      path: kind.route,
+      updated: hubDate,
+    })),
+    ...getAllEntities().map((entity) => ({
+      path: entity.href,
+      updated: entity.updatedAt,
     })),
   ];
   return locales.flatMap((locale) =>

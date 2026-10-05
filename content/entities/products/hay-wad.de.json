@@ -1,0 +1,41 @@
+{
+  "id": "hay-wad",
+  "name": "Heubündel (Hay Wad)",
+  "summary": "Ein Hay Wad ist vom Silo verpacktes Heu. Der Entwickler bestätigt, dass eine Nadel darin stecken kann. Auch ein verpacktes Produkt sollte vor dem Verkauf durch den Scanner.",
+  "updatedAt": "2026-10-05",
+  "version": "Entwicklererklärung (13. September 2026)",
+  "data": {
+    "role": "Verpacktes Heu",
+    "scope": "Demo-Notizen / Diskussion",
+    "operation": "Verfolge das Bündel vom Silo über alle Bänder und Armübergaben. Prüfe den Scanweg, bevor es auf die letzte Verkaufslinie gelangt.",
+    "check": "Laut Entwickler geht eine in einem Produkt verkaufte Nadel zurück in den Haufen. Zeigt das Silo noch eine wartende Nadel an, prüfe seine Ausgabe, statt die Rückkehr anzunehmen."
+  },
+  "sources": [
+    {
+      "label": "Entwicklerantwort und Spielerberichte · 13. September 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "silo"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "products",
+      "id": "hay-products"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

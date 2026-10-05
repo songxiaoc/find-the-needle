@@ -1,0 +1,49 @@
+{
+  "id": "needle-scanner",
+  "name": "Nadelscanner (Needle Scanner)",
+  "summary": "Der Scanner gehört zur automatischen Nadelsuche. Prüfe den Weg jedes Heuprodukts und nicht nur das Hauptband, wenn eine Nadel beim Verkauf landet.",
+  "updatedAt": "2026-10-05",
+  "version": "Community-Berichte (September 2026) und offizielle Spielbeschreibung",
+  "data": {
+    "role": "Nadelsuche",
+    "scope": "Demo-Notizen / Diskussion",
+    "check": "Verfolge jedes Band, auch die Bänder in Reichweite eines Roboterarms. Suche nach Abzweigen, die erst hinter dem Scanner zum Verkauf führen. Prüfe die aktuellen Einstellungen und Anzeigen im Spiel.",
+    "community": "Spieler empfehlen, eine gestaute Linie auf getrennte Scanner aufzuteilen und danach zusammenzuführen. Teste das zunächst klein; eine Scanrate oder garantierte Beschleunigung ist damit nicht belegt."
+  },
+  "sources": [
+    {
+      "label": "Offizielle Steam-Seite",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Community-Diskussion zu Transportwegen · 21. September 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    },
+    {
+      "label": "Community-Diskussion zu Scannern · 16. September 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "robotic-arm"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

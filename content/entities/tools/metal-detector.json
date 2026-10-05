@@ -1,0 +1,41 @@
+{
+  "id": "metal-detector",
+  "name": "Metal Detector",
+  "summary": "The official store describes beginning the needle search by hand with a metal detector, before belts, scanners and robotic arms take over more of the work.",
+  "updatedAt": "2026-10-05",
+  "version": "Full-game store description, checked October 5, 2026",
+  "data": {
+    "role": "Needle detection",
+    "scope": "Full-game store description",
+    "operation": "Use the detector’s own current feedback when searching manually. Keep track of what you have inspected; do not substitute a fixed coordinate list for the game’s signals.",
+    "check": "If production has already packed hay into products, also inspect storage and scanner routes. The developer explains that needles can remain inside hay products, not only in loose hay."
+  },
+  "sources": [
+    {
+      "label": "Official Steam store",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Developer reply and player reports · September 13, 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "silo"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/getting-started",
+    "/guides/guide/needles-and-scanners"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "conveyor-belt",
+  "name": "Cinta transportadora (Conveyor Belt)",
+  "summary": "Las cintas mueven heno entre equipos. La demo V8 renovó el ajuste y añadió trazado automático; F activa No Snap Mode para colocar libremente.",
+  "updatedAt": "2026-10-05",
+  "version": "Anuncio de la demo V8 (11 de septiembre de 2026); sigue las indicaciones de tu versión",
+  "data": {
+    "role": "Transporte",
+    "scope": "Notas y debate de la demo",
+    "operation": "Conecta un tramo corto y observa un producto atravesarlo antes de prolongar la línea. Que una cinta termine cerca de una máquina no demuestra que esté conectada.",
+    "check": "Retrocede desde el primer producto detenido. Comprueba el destino posterior, cada unión y las rutas secundarias que puedan evitar el escáner."
+  },
+  "sources": [
+    {
+      "label": "Notas oficiales de la demo V8 · 11 de septiembre de 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Debate comunitario sobre rutas · 21 de septiembre de 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"]
+}

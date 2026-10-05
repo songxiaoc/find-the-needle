@@ -1,0 +1,37 @@
+{
+  "id": "pitchfork",
+  "name": "Horca (Pitchfork)",
+  "summary": "La horca es una herramienta manual citada por la tienda oficial. Las capturas la muestran en primera persona junto al montón y un recipiente.",
+  "updatedAt": "2026-10-05",
+  "version": "Descripción del juego completo, comprobada el 5 de octubre de 2026",
+  "data": {
+    "role": "Manejo del heno",
+    "scope": "Descripción del juego completo",
+    "operation": "Sigue las indicaciones actuales para recoger y mover heno. La imagen muestra la posición de la herramienta; no establece capacidad universal ni número de acciones.",
+    "check": "Compara el esfuerzo con tu pala y opciones de transporte. Si transportar es lo lento, revisa una mejora de transporte en vez de suponer que otra herramienta lo resolverá."
+  },
+  "sources": [
+    {
+      "label": "Tienda oficial de Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "tools",
+      "id": "shovel"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "tools",
+      "id": "metal-detector"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/getting-started"],
+  "image": "/images/find-the-needle/screenshot-3.webp",
+  "imageAlt": "Horca sostenida en primera persona frente al montón de heno.",
+  "imageCaption": "La horca se sostiene directamente frente al montón. Sigue tus indicaciones actuales; esta imagen no muestra una ubicación de aguja. Captura oficial de Steam."
+}

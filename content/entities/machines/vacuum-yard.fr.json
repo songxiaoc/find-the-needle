@@ -1,0 +1,34 @@
+{
+  "id": "vacuum-yard",
+  "name": "Vacuum Yard",
+  "summary": "Vacuum Yard est cité dans les notes de la démo V8, qui ont réduit son prix de 80 %. Cette modification passée ne donne pas son coût d’achat actuel.",
+  "updatedAt": "2026-10-05",
+  "version": "Annonce de la démo V8 (11 septembre 2026) ; suivez les indications de votre version",
+  "data": {
+    "role": "Manipulation du foin",
+    "scope": "Notes et discussions de la démo",
+    "check": "Comparez l’offre d’achat actuelle au problème à résoudre. Si le foin attend déjà en aval, vérifiez les convoyeurs et la détection avant une autre amélioration de collecte.",
+    "limits": "L’annonce ne donne ni capacité actuelle, ni portée, ni consommation, ni prérequis. Vérifiez ces détails dans votre version avant de planifier cet achat."
+  },
+  "sources": [
+    {
+      "label": "Notes officielles de la démo V8 · 11 septembre 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "tools",
+      "id": "shovel"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation", "/guides/guide/getting-started"]
+}

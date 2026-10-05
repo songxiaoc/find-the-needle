@@ -1,0 +1,41 @@
+{
+  "id": "u-splitter",
+  "name": "Divisor U (U-Splitter)",
+  "summary": "Los U-Splitters son componentes de rutas añadidos en la demo V8. Divide las rutas para inspeccionar o distribuir la producción en lugar de enviarla por un único camino.",
+  "updatedAt": "2026-10-05",
+  "version": "Anuncio de la demo V8 (11 de septiembre de 2026); sigue las indicaciones de tu versión",
+  "data": {
+    "role": "Rutas de cintas",
+    "scope": "Notas y debate de la demo",
+    "community": "Los jugadores proponen ramas con escáneres separados cuando se atasca la línea original. Haz pasar ambas salidas por escaneo y únelas después si hace falta.",
+    "check": "Observa un producto entrar en cada rama y llegar a su destino. Las notas V8 no especifican proporciones de reparto ni ganancias garantizadas de rendimiento."
+  },
+  "sources": [
+    {
+      "label": "Notas oficiales de la demo V8 · 11 de septiembre de 2026",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Debate comunitario sobre escáneres · 16 de septiembre de 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ]
+}

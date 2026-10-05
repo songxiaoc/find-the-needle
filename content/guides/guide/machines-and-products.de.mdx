@@ -2,7 +2,7 @@
 title: 'Werkzeuge, Maschinen und Heuprodukte erklärt'
 description: 'Unterscheide Sammeln, Transport, Verarbeitung und Nadelsuche und prüfe vor dem Kauf, was eine neue Maschine benötigt.'
 date: '2026-09-27'
-lastModified: '2026-09-27'
+lastModified: '2026-10-05'
 image: '/images/find-the-needle/screenshot-2.webp'
 ---
 
@@ -12,11 +12,11 @@ Wähle Ausrüstung für den Arbeitsschritt, der dich aufhält: Heu sammeln, tran
 
 | Aufgabe | Passende Ausrüstung | Darauf solltest du achten |
 | --- | --- | --- |
-| Manuelles Sammeln | Schaufeln, Heugabeln, Sauger | Wie das Werkzeug Heu aufnimmt und wo du es ablädst |
+| Manuelles Sammeln | <EntityLink kind="tools" id="shovel">Schaufeln</EntityLink>, <EntityLink kind="tools" id="pitchfork">Heugabeln</EntityLink>, Sauger | Wie das Werkzeug Heu aufnimmt und wo du es ablädst |
 | Heu befördern | Eimer, Schubkarren | Füllstandsanzeige und Weg zum Ziel |
-| Automatischer Transport | Förderbänder, Roboterarme | Aufnahmepunkt, Transportrichtung und Abgabepunkt |
+| Automatischer Transport | <EntityLink kind="machines" id="conveyor-belt">Förderbänder</EntityLink>, <EntityLink kind="machines" id="robotic-arm">Roboterarme</EntityLink> | Aufnahmepunkt, Transportrichtung und Abgabepunkt |
 | Verarbeitung | Ballenpressen, Ballenwickler, Papiermaschinen | Angenommenes Material und ausgegebenes Produkt |
-| Nadeln aufspüren | Metalldetektor, Scanner | Wo die Suche beim Abtragen oder entlang des Förderbands stattfindet |
+| Nadeln aufspüren | <EntityLink kind="tools" id="metal-detector">Metalldetektor</EntityLink>, <EntityLink kind="machines" id="needle-scanner">Scanner</EntityLink> | Wo die Suche beim Abtragen oder entlang des Förderbands stattfindet |
 
 Diese Ausrüstungsgruppen stehen in der offiziellen Spielbeschreibung. Prüfe den Shop und die Freischaltungen deiner Demo, bevor du mit einem Gegenstand von der Shopseite des vollständigen Spiels planst.
 
@@ -32,7 +32,7 @@ Der Shop nennt **Heupulpe**, **gepresste Ballen**, **Ökoziegel**, **Heupapier**
 
 Plane vom gewünschten Produkt rückwärts. Lies an der passenden Maschine nach, welches Eingangsmaterial sie braucht, wie du es liefern kannst und wohin ihr Produkt weitergeleitet wird. Unterscheide beim Verbinden zweier Maschinen besonders zwischen losem Heu und bereits verarbeitetem Material.
 
-Ein konkretes Beispiel: Das [Update Demo V8](https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126) ergänzte an der **Pellet Disc Machine** Materialanzeigen wie **BRICKS** und **HAY**. Lies diese Anzeigen beim Anschließen. Der Maschinenname allein verrät nicht, welches Material zu welchem Anschluss gehört.
+Ein konkretes Beispiel: Das [Update Demo V8](https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126) ergänzte an der **<EntityLink kind="machines" id="pellet-disc-machine">Pellet Disc Machine</EntityLink>** Materialanzeigen wie **BRICKS** und **HAY**. Lies diese Anzeigen beim Anschließen. Der Maschinenname allein verrät nicht, welches Material zu welchem Anschluss gehört.
 
 ## Plane die Anschlüsse beim Kauf mit ein
 
@@ -48,5 +48,7 @@ Prüfe vor dem Kauf:
 4. **Ziel:** Geht das Produkt an eine weitere Maschine oder an eine Verkaufsstelle, die es annimmt?
 
 Lass genug Budget und Platz für diese Verbindungen übrig. Beobachte danach einen vollständigen Materialweg, bevor du eine weitere Abzweigung baust. Der [Automatisierungsguide](/guides/guide/automation) hilft dir bei dieser Prüfung.
+
+Gib für deine Planung die selbst beobachteten Raten in den [Produktionsrechner](/tools/production-calculator) ein und vergleiche Zufuhr und Verarbeitungskapazität.
 
 Ausrüstung, Produktnamen und Screenshots: [offizielle Steam-Spielseite](https://store.steampowered.com/app/5160800/Find_The_Needle/) und [Demoseite](https://store.steampowered.com/app/5165210/Find_The_Needle_Demo/).

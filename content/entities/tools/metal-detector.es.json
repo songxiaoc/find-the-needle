@@ -1,0 +1,41 @@
+{
+  "id": "metal-detector",
+  "name": "Detector de metales (Metal Detector)",
+  "summary": "La tienda oficial describe una búsqueda manual con detector de metales antes de delegar más trabajo a cintas, escáneres y brazos robóticos.",
+  "updatedAt": "2026-10-05",
+  "version": "Descripción del juego completo, comprobada el 5 de octubre de 2026",
+  "data": {
+    "role": "Detección de agujas",
+    "scope": "Descripción del juego completo",
+    "operation": "Usa las señales actuales del detector durante la búsqueda manual. Recuerda qué has revisado y sigue las señales del juego en vez de una lista de coordenadas fijas.",
+    "check": "Si el heno ya está empaquetado, revisa también almacenamiento y rutas de escaneo. El desarrollador explica que las agujas pueden permanecer en productos, además de en heno suelto."
+  },
+  "sources": [
+    {
+      "label": "Tienda oficial de Steam",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Respuesta del desarrollador y testimonios · 13 de septiembre de 2026",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "silo"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/getting-started",
+    "/guides/guide/needles-and-scanners"
+  ]
+}
