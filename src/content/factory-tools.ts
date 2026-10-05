@@ -1,3 +1,5 @@
+import { additionalFactoryCopy } from '@/generated/additional-locales';
+
 export const FACTORY_TOOL_IDS = [
   'line-check',
   'checklist',
@@ -761,7 +763,14 @@ const ru: FactoryCopy = {
   },
 };
 
-const copy: Record<string, FactoryCopy> = { en, fr, de, es, ru };
+const copy: Record<string, FactoryCopy> = {
+  en,
+  fr,
+  de,
+  es,
+  ru,
+  ...additionalFactoryCopy,
+};
 export function getFactoryCopy(locale: string): FactoryCopy {
   return copy[locale] ?? en;
 }

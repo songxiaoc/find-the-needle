@@ -1,0 +1,54 @@
+{
+  "id": "needle-scanner",
+  "name": "针扫描器（Needle Scanner）",
+  "summary": "扫描器属于自动找针产线的一部分。如果针到了出售台，应检查每一种干草产品的路线，而不只看主传送带。",
+  "updatedAt": "2026-10-05",
+  "version": "社区反馈（2026 年 9 月）与官方商店介绍",
+  "data": {
+    "role": "针检测",
+    "scope": "试玩版更新说明／讨论",
+    "check": "沿着每条传送带，以及机械臂够得到的传送带逐一检查。留意是否有支路在扫描器之后接入出售路线。观察扫描器当前的游戏内设置和指示信息。",
+    "community": "玩家建议把拥堵的产线拆分到不同扫描器，再在扫描后合流。扩建前先小规模测试；这项建议没有确定扫描速度，也不保证一定提速。"
+  },
+  "sources": [
+    {
+      "label": "Steam 官方商店",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "社区运输路线讨论 · 2026 年 9 月 21 日",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    },
+    {
+      "label": "社区扫描器讨论 · 2026 年 9 月 16 日",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "robotic-arm"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ],
+  "image": "/images/find-the-needle/official-research.webp",
+  "imageAlt": "研究菜单中显示 Needle Cabinet、Scanner Mk I Plans 和 Metal Detector 节点。",
+  "imageCaption": "在研究菜单的 Metal Detector 上方找到 Scanner Mk I Plans。Steam 官方图片。",
+  "imagePosition": "40% 31%",
+  "imageZoom": 3
+}

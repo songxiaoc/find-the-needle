@@ -1,4 +1,7 @@
+import { additionalHomeCopy } from './additional-locales';
+
 export const homeCopy = {
+  ...additionalHomeCopy,
   fr: {
     eyebrow: 'Guide non officiel du jeu Steam',
     description:

@@ -1,3 +1,5 @@
+import { additionalEntityCopy } from '@/generated/additional-locales';
+
 export type EntityCopy = {
   kinds: Record<
     'machines' | 'tools' | 'products',
@@ -31,6 +33,7 @@ export type EntityCopy = {
 };
 
 const copy: Record<string, EntityCopy> = {
+  ...additionalEntityCopy,
   en: {
     kinds: {
       machines: {

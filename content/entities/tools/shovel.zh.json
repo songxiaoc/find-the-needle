@@ -1,0 +1,38 @@
+{
+  "id": "shovel",
+  "name": "铲子（Shovel）",
+  "summary": "官方商店将铲子介绍为初始工具：先手动搬运干草并赚钱，再购买传送带和机器。",
+  "updatedAt": "2026-10-05",
+  "version": "完整版商店介绍，核对日期：2026 年 10 月 5 日",
+  "data": {
+    "role": "干草搬运",
+    "scope": "完整版商店介绍",
+    "operation": "第一次游玩时，可先搬运少量干草，找到 SELL HAY 出售点，并按游戏交互提示操作。找针和单纯清理草堆是不同目标。",
+    "check": "用自动化替代手动操作前，先找出慢在哪一步：收集、搬运、出售还是扫描。按当前游戏内价格，为这个瓶颈购买设备。"
+  },
+  "sources": [
+    {
+      "label": "Steam 官方商店",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "tools",
+      "id": "pitchfork"
+    },
+    {
+      "kind": "tools",
+      "id": "metal-detector"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/getting-started", "/guides/guide/automation"]
+}

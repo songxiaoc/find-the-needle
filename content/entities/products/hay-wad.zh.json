@@ -1,0 +1,41 @@
+{
+  "id": "hay-wad",
+  "name": "干草团（Hay Wad）",
+  "summary": "干草团是筒仓打包后的干草。开发者确认它可能含有针，因此打包好的产品也不能默认未经扫描就安全出售。",
+  "updatedAt": "2026-10-05",
+  "version": "开发者说明（2026 年 9 月 13 日）",
+  "data": {
+    "role": "打包干草",
+    "scope": "试玩版更新说明／讨论",
+    "operation": "从筒仓输出开始，沿传送带和每次机械臂转移跟踪草团。接入最终出售产线前，确认路线包含扫描环节。",
+    "check": "开发者表示，藏在干草产品中被卖掉的针会回到草堆。如果筒仓仍显示有针等待输出，应调查输出，而不要假设针已经返回。"
+  },
+  "sources": [
+    {
+      "label": "开发者回复与玩家反馈 · 2026 年 9 月 13 日",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "silo"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "products",
+      "id": "hay-products"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

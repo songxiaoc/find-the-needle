@@ -1,0 +1,54 @@
+{
+  "id": "hay-products",
+  "name": "干草加工产品",
+  "summary": "完整版商店介绍了干草浆、压缩草捆、环保砖、干草纸和颗粒。可用本页辨认产品类别；它不是试玩版全部已解锁产品的清单。",
+  "updatedAt": "2026-10-05",
+  "version": "完整版商店介绍，核对日期：2026 年 10 月 5 日",
+  "data": {
+    "role": "加工产品",
+    "scope": "完整版商店介绍",
+    "pulp": "商店列出的一种干草加工产品。为它预留产线前，先读当前游戏的配方和所需设备。",
+    "bales": "压缩干草属于商店列出的产品类别，商店还提到了打包机。检查储存的针时，不要把压缩草捆等同于筒仓产出的干草团。",
+    "bricks": "商店列出了环保砖。此外，Demo V8 为 Pellet Disc Machine 加入了 BRICKS 资源标签；仅凭这个标签无法确定完整配方。",
+    "paper": "完整版介绍中出现了干草纸和造纸机器。规划纸张生产前，应检查当前版本是否提供相关设备。",
+    "pellets": "颗粒是商店列出的产品类别。官方试玩版更新也提到 Pellet Disc Machine，但这些说明没有确认所有输入、输出数量或售价。",
+    "check": "开发者解释，干草产品可能含有针。扩大加工时，也要保留扫描环节。预算请使用游戏内配方和价格；这里没有经过确认的通用利润排名。"
+  },
+  "sources": [
+    {
+      "label": "Steam 官方商店",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "Demo V8 官方更新说明 · 2026 年 9 月 11 日",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "开发者回复与玩家反馈 · 2026 年 9 月 13 日",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    },
+    {
+      "kind": "machines",
+      "id": "pellet-disc-machine"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ],
+  "image": "/images/find-the-needle/official-hay-bales.webp",
+  "imageAlt": "两个扎带固定的长方形草捆，在绿色加工机器旁的分支传送带上移动。",
+  "imageCaption": "观察分支传送带上移动的扎带草捆。Steam 官方 Hay products 视频第 10.5 秒画面。",
+  "imagePosition": "34% 66%",
+  "imageZoom": 1.2
+}

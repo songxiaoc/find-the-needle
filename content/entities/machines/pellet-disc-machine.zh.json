@@ -1,0 +1,43 @@
+{
+  "id": "pellet-disc-machine",
+  "name": "颗粒圆盘机（Pellet Disc Machine）",
+  "summary": "Demo V8 为 Pellet Disc Machine 加入了 BRICKS、HAY 等资源指示。排查停住的加工产线时，先读这些标签。",
+  "updatedAt": "2026-10-05",
+  "version": "Demo V8 公告（2026 年 9 月 11 日）；操作以已安装版本的提示为准",
+  "data": {
+    "role": "加工",
+    "scope": "试玩版更新说明／讨论",
+    "operation": "核对机器显示的资源标签与各连接点送来的物料是否匹配。改布局前，先检查供电和输入物料是否移动。",
+    "limits": "更新说明只提到资源指示，没有给出完整配方。数量、产出和速度应以当前游戏内机器要求为准。"
+  },
+  "sources": [
+    {
+      "label": "Demo V8 官方更新说明 · 2026 年 9 月 11 日",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Steam 官方图片",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "power-pole"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "products",
+      "id": "hay-products"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"],
+  "image": "/images/find-the-needle/official-automation.webp",
+  "imageAlt": "研究界面中央显示 Small Arm Plans，右上方附近显示 Pellet Discs Plans。",
+  "imageCaption": "在研究菜单右上方附近寻找 Pellet Discs Plans。Steam 官方图片。",
+  "imagePosition": "94% 26%",
+  "imageZoom": 3
+}

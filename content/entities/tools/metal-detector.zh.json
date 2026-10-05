@@ -1,0 +1,46 @@
+{
+  "id": "metal-detector",
+  "name": "金属探测器（Metal Detector）",
+  "summary": "官方商店介绍，玩家最初用金属探测器手动找针，随后让传送带、扫描器和机械臂承担更多工作。",
+  "updatedAt": "2026-10-05",
+  "version": "完整版商店介绍，核对日期：2026 年 10 月 5 日",
+  "data": {
+    "role": "针检测",
+    "scope": "完整版商店介绍",
+    "operation": "手动搜索时，使用探测器当前给出的反馈。记录已检查的区域，不要用一份固定坐标清单代替游戏信号。",
+    "check": "如果生产已经把干草打包成产品，也要检查储存与扫描路线。开发者解释，针可能留在干草产品里，而不只存在于散草中。"
+  },
+  "sources": [
+    {
+      "label": "Steam 官方商店",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "开发者回复与玩家反馈 · 2026 年 9 月 13 日",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "silo"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/getting-started",
+    "/guides/guide/needles-and-scanners"
+  ],
+  "image": "/images/find-the-needle/official-research.webp",
+  "imageAlt": "研究树中，Metal Detector 条目位于 Scanner Mk I Plans 下方。",
+  "imageCaption": "Metal Detector 研究条目位于 Scanner Mk I Plans 下方。Steam 官方图片。",
+  "imagePosition": "40% 37%",
+  "imageZoom": 3
+}

@@ -1,0 +1,46 @@
+{
+  "id": "hay-sell-stand",
+  "name": "干草出售台（Hay Sell Stand）",
+  "summary": "出售目的地标有 SELL HAY。Demo V8 为其传送带连接加入了吸附功能。开发者表示，藏在干草产品中被卖掉的针会回到草堆。",
+  "updatedAt": "2026-10-05",
+  "version": "Demo V8 公告（2026 年 9 月 11 日）；操作以已安装版本的提示为准",
+  "data": {
+    "role": "出售",
+    "scope": "试玩版更新说明／讨论",
+    "operation": "使用出售台上的连接点，不要只把传送带停在附近。若放置时没有吸附，检查是否按 F 开启了 No Snap Mode（无吸附模式）。",
+    "check": "从最后几条输入支路回溯到扫描环节。开发者描述的是正常的针回收机制，并非对所有丢针问题的恢复保证。"
+  },
+  "sources": [
+    {
+      "label": "Demo V8 官方更新说明 · 2026 年 9 月 11 日",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "开发者回复与玩家反馈 · 2026 年 9 月 13 日",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ],
+  "image": "/images/find-the-needle/screenshot-1.webp",
+  "imageAlt": "传送带将干草送向标有 SELL HAY 的摊位。",
+  "imageCaption": "传送带接入 SELL HAY 出售台的正面。可据此辨认目的地；截图中的价格不能作为当前价格参考。Steam 官方截图。",
+  "imagePosition": "60% 55%",
+  "imageZoom": 1.4
+}

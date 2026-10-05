@@ -1,0 +1,46 @@
+{
+  "id": "robotic-arm",
+  "name": "机械臂（Robotic Arm）",
+  "summary": "机械臂是游戏自动化的一部分。排查针被卖掉的问题时，要检查所有可触及的传送带：玩家反馈，机械臂可能把物料放到附近的其他路线。",
+  "updatedAt": "2026-10-05",
+  "version": "社区反馈（2026 年 9 月）与官方商店介绍",
+  "data": {
+    "role": "运输",
+    "scope": "试玩版更新说明／讨论",
+    "community": "在机械臂通常的目的地拥堵时观察它。9 月的讨论指出，其他可触及的传送带可能接收到物料；这是玩家建议，不能解释所有丢针情况。",
+    "check": "检查每条可能接收物料的传送带，确认它在出售台之前经过扫描器。购买更多机械臂前，先用少量物料测试路线。"
+  },
+  "sources": [
+    {
+      "label": "Steam 官方商店",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "社区运输路线讨论 · 2026 年 9 月 21 日",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ],
+  "image": "/images/find-the-needle/screenshot-2.webp",
+  "imageAlt": "橙色机械臂围绕草堆摆放，旁边有多条传送路线。",
+  "imageCaption": "观察机械臂与多条传送带之间的距离。检查自己的布局时，要沿机械臂能碰到的每条传送带查看。Steam 官方截图。",
+  "imagePosition": "56% 45%",
+  "imageZoom": 1.8
+}

@@ -1,0 +1,38 @@
+{
+  "id": "u-joiner",
+  "name": "U 型合流器（U-Joiner）",
+  "summary": "U-Joiner 是 Demo V8 新增的另一种传送带路由部件。合并不同产线时，检查每条输入路线是否已经经过扫描。",
+  "updatedAt": "2026-10-05",
+  "version": "Demo V8 公告（2026 年 9 月 11 日）；操作以已安装版本的提示为准",
+  "data": {
+    "role": "传送带分流与合流",
+    "scope": "试玩版更新说明／讨论",
+    "operation": "检查两个输入和共用输出。在每条支路上测试少量物料，避免未察觉的旁路把未经扫描的产品送入出售路线。",
+    "community": "社区提出的分流、扫描、再合流布局是一种排查思路，不保证增加产能。若共用输出拥堵，应先检查目的地，再增加输入。"
+  },
+  "sources": [
+    {
+      "label": "Demo V8 官方更新说明 · 2026 年 9 月 11 日",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "社区扫描器讨论 · 2026 年 9 月 16 日",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"]
+}

@@ -4,11 +4,23 @@ import {
   PageRoot,
 } from '@/components/site/PageFrame';
 import { SectionTitle } from '@/components/site/ui';
+import { additionalReferenceCopy } from '@/generated/additional-locales';
 import { setRequestLocale } from 'next-intl/server';
 
 import { Link } from '@/core/i18n/navigation';
 
-type Locale = 'en' | 'fr' | 'de' | 'es' | 'ru';
+type AdditionalLocale = keyof typeof additionalReferenceCopy;
+type AdditionalPack = (typeof additionalReferenceCopy)[AdditionalLocale];
+type Locale = 'en' | 'fr' | 'de' | 'es' | 'ru' | AdditionalLocale;
+
+function referencePart<Key extends keyof AdditionalPack>(key: Key) {
+  return Object.fromEntries(
+    Object.entries(additionalReferenceCopy).map(([locale, copy]) => [
+      locale,
+      copy[key],
+    ])
+  ) as Record<AdditionalLocale, AdditionalPack[Key]>;
+}
 export type ReferenceKey =
   | 'faq'
   | 'system-requirements'
@@ -24,7 +36,8 @@ type Copy = {
   intro: string;
   sections: Section[];
 };
-const practicalGuides = {
+const practicalGuides: Record<Locale, readonly string[]> = {
+  ...referencePart('practicalGuides'),
   en: [
     'Help with your current save',
     'Back up your Demo save',
@@ -85,6 +98,7 @@ const labels: Record<
     platform: string;
   }
 > = {
+  ...referencePart('labels'),
   en: {
     home: 'Home',
     updated: 'Updated 27 September 2026',
@@ -207,6 +221,10 @@ const labels: Record<
 };
 
 const content: Record<Locale, Record<ReferenceKey, Copy>> = {
+  ...(referencePart('content') as Record<
+    AdditionalLocale,
+    Record<ReferenceKey, Copy>
+  >),
   en: {
     faq: {
       title: 'Find the Needle FAQ',
@@ -235,7 +253,7 @@ const content: Record<Locale, Record<ReferenceKey, Copy>> = {
         },
         {
           title: 'Which languages does it support?',
-          text: 'Steam lists English, French, German, Spanish (Spain) and Russian among the game’s supported languages. Check the store language table before downloading; this guide site also offers these five languages.',
+          text: 'Steam lists English, French, German, Spanish (Spain) and Russian among the game’s supported languages. Check the store language table before downloading; use this site’s language selector to see the available guide translations.',
           link: 'store',
         },
         {
@@ -427,7 +445,7 @@ const content: Record<Locale, Record<ReferenceKey, Copy>> = {
         },
         {
           title: 'Welche Sprachen werden unterstützt?',
-          text: 'Steam nennt unter anderem Englisch, Französisch, Deutsch, Spanisch (Spanien) und Russisch. Prüfe vor dem Download die Sprachtabelle. Diese Website ist ebenfalls in diesen fünf Sprachen verfügbar.',
+          text: 'Steam nennt unter anderem Englisch, Französisch, Deutsch, Spanisch (Spanien) und Russisch. Prüfe vor dem Download die Sprachtabelle. Die verfügbaren Übersetzungen dieser Website findest du in der Sprachauswahl.',
           link: 'store',
         },
         {
@@ -619,7 +637,7 @@ const content: Record<Locale, Record<ReferenceKey, Copy>> = {
         },
         {
           title: '¿Qué idiomas incluye?',
-          text: 'Steam indica, entre otros, inglés, francés, alemán, español de España y ruso. Consulta la tabla de idiomas antes de descargarlo. Esta web también está disponible en esos cinco idiomas.',
+          text: 'Steam indica, entre otros, inglés, francés, alemán, español de España y ruso. Consulta la tabla de idiomas antes de descargarlo. El selector de idiomas de esta web muestra las traducciones disponibles.',
           link: 'store',
         },
         {
@@ -811,7 +829,7 @@ const content: Record<Locale, Record<ReferenceKey, Copy>> = {
         },
         {
           title: 'Какие языки поддерживаются?',
-          text: 'В Steam среди языков указаны английский, французский, немецкий, испанский (Испания) и русский. Перед загрузкой проверьте таблицу языков. Наш сайт также доступен на этих пяти языках.',
+          text: 'В Steam среди языков указаны английский, французский, немецкий, испанский (Испания) и русский. Перед загрузкой проверьте таблицу языков. Доступные переводы сайта указаны в меню выбора языка.',
           link: 'store',
         },
         {
@@ -1003,7 +1021,7 @@ const content: Record<Locale, Record<ReferenceKey, Copy>> = {
         },
         {
           title: 'Quelles langues sont proposées ?',
-          text: 'Steam indique notamment l’anglais, le français, l’allemand, l’espagnol d’Espagne et le russe. Consultez le tableau des langues avant de télécharger le jeu. Ce site est également disponible dans ces cinq langues.',
+          text: 'Steam indique notamment l’anglais, le français, l’allemand, l’espagnol d’Espagne et le russe. Consultez le tableau des langues avant de télécharger le jeu. Le sélecteur de langue du site indique les traductions disponibles.',
           link: 'store',
         },
         {

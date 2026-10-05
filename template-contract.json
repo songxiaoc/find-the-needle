@@ -11,7 +11,21 @@
     "theme-selector-v1"
   ],
   "supported": {
-    "locales": ["en", "zh", "ja", "ko", "de", "fr", "es", "pt", "id", "ru"],
+    "locales": [
+      "en",
+      "zh",
+      "ja",
+      "ko",
+      "de",
+      "fr",
+      "es",
+      "pt",
+      "id",
+      "ru",
+      "pl",
+      "cs",
+      "tr"
+    ],
     "defaultLocales": ["en"],
     "themes": ["tactical", "pixel", "neon", "aurora", "sakura"],
     "heroStyles": [

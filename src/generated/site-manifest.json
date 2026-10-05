@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "templateContractVersion": 1,
-  "templateContractSha256": "2c666b1e47e86159f123f18661364df02ea83969b80c61694ddd31ba8a043ea9",
+  "templateContractSha256": "30fd6bc8b7860668a5af6309f7515910634f19a1030623a3e33269eef0cae397",
   "requiredCapabilities": [
     "asset-manifest-v1",
     "generated-config-v1",
@@ -21,6 +21,7 @@
     "src/config/locale/messages/es/common.json",
     "src/config/locale/messages/fr/common.json",
     "src/config/locale/messages/ru/common.json",
+    "src/config/locale/messages/zh/common.json",
     "src/config/style/active-theme.css",
     "src/generated/asset-manifest.json",
     "src/generated/game-config.ts",
@@ -38,6 +39,7 @@
     "fr",
     "de",
     "es",
-    "ru"
+    "ru",
+    "zh"
   ]
 }

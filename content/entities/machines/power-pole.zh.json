@@ -1,0 +1,39 @@
+{
+  "id": "power-pole",
+  "name": "电线杆（Power Pole）",
+  "summary": "Demo V8 允许在电线杆处按 E 关闭整个电网。多台机器同时停机时，检查是否误关了电网。",
+  "updatedAt": "2026-10-05",
+  "version": "Demo V8 公告（2026 年 9 月 11 日）；操作以已安装版本的提示为准",
+  "data": {
+    "role": "供电",
+    "scope": "试玩版更新说明／讨论",
+    "check": "查看电网通知：V8 在电力低于所需阈值时加入了视觉警告。扩大生产前，检查电网状态和已接入机器。",
+    "limits": "使用当前游戏显示的用电需求和发电量。公告没有提供各机器功率、通用接线距离或完整的发电设备预算。"
+  },
+  "sources": [
+    {
+      "label": "Demo V8 官方更新说明 · 2026 年 9 月 11 日",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Steam 官方商店",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "pellet-disc-machine"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"],
+  "image": "/images/find-the-needle/screenshot-5.webp",
+  "imageAlt": "Yard Research 研究树显示 Electricity、Power Pole 及相关电力升级。",
+  "imageCaption": "Power Pole 位于 POWER 分支。当前费用和前置要求请查已安装版本的研究树；这张宣传截图不是解锁清单。Steam 官方截图。",
+  "imagePosition": "55% 73%",
+  "imageZoom": 2
+}

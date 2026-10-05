@@ -1,0 +1,38 @@
+{
+  "id": "silo",
+  "name": "筒仓（Silo）",
+  "summary": "筒仓把干草打包成干草团。开发者解释，针可能留在这些草团里，因此出售前应沿输出路线检查扫描环节。",
+  "updatedAt": "2026-10-05",
+  "version": "开发者说明（2026 年 9 月 13 日）",
+  "data": {
+    "role": "储存与打包",
+    "scope": "试玩版更新说明／讨论",
+    "operation": "查看筒仓中的干草和针状态信息，再观察输出传送带。状态中仍列在仓内的针，不等于已经扫描到的针。",
+    "community": "有玩家建议，针等待输出时可以补入足够的散装干草，完成下一份打包输出。这是社区建议，没有确认通用批量，也不保证修复问题。",
+    "check": "不要为了取回针而直接拆筒仓：有玩家反馈出现了销毁警告。先保留存档，再检查输入、输出和扫描。"
+  },
+  "sources": [
+    {
+      "label": "开发者回复与玩家反馈 · 2026 年 9 月 13 日",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

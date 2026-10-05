@@ -1,0 +1,54 @@
+---
+title: '工具、机器与干草产品说明'
+description: '分清收集、运输、加工和找针的用途，购买新机器前确认它需要什么。'
+date: '2026-09-27'
+lastModified: '2026-10-05'
+image: '/images/find-the-needle/screenshot-2.webp'
+---
+
+根据拖慢进度的环节选择设备：收集干草、运输、加工，或寻找针。加工设备需要供给线路，传送带需要目的地。如果买下两者却不检查连接，可能留下整条闲置生产线。
+
+## 哪种设备负责哪种工作？
+
+| 工作 | 可查看的设备 | 检查要点 |
+| --- | --- | --- |
+| 手动收集 | <EntityLink kind="tools" id="shovel">铲子</EntityLink>、<EntityLink kind="tools" id="pitchfork">草叉</EntityLink>、吸尘工具 | 工具如何收集干草，以及在哪里卸下 |
+| 搬运干草 | 桶、手推车 | 容量显示与前往目的地的路程 |
+| 自动运输 | <EntityLink kind="machines" id="conveyor-belt">传送带</EntityLink>、<EntityLink kind="machines" id="robotic-arm">机械臂</EntityLink> | 拾取位置、运输方向和投放点 |
+| 加工 | 打包机、干草包裹机、造纸机 | 接受的物料与机器输出的产品 |
+| 找针 | <EntityLink kind="tools" id="metal-detector">金属探测器</EntityLink>、<EntityLink kind="machines" id="needle-scanner">针扫描器</EntityLink> | 在挖掘或传送线路的哪个位置进行检测 |
+
+这些设备类别出现在官方游戏介绍中。依据完整版商店页面的物品规划之前，请检查 Demo 商店与解锁内容。
+
+![草叉位于桶旁，桶上的干草显示为 485 / 600。](/images/find-the-needle/screenshot-4.webp)
+
+这张官方截图中的桶显示了当前装载量与容量。收集时请关注该显示；这里的数值只是图中这一套设备的状态，不代表所有桶或升级后的容量。
+
+手动收集循环可从[新手入门](/guides/guide/getting-started)开始了解。检测设备见[针与扫描器](/guides/guide/needles-and-scanners)。
+
+## 干草产品有哪些？
+
+商店列出了 **hay pulp（干草浆）**、**compressed bales（压缩草捆）**、**eco bricks（环保砖）**、**hay paper（干草纸）** 和 **pellets（颗粒）**。这些名称代表不同的加工产物：浆料、压紧的捆、砖、纸和小颗粒。它们不是配方顺序，不能假设生产其中一种就会自动为下一种提供原料。
+
+选择产品时，从制造它的机器倒推。读取输入标签，确认如何供应该物料，再检查输出的去处。连接两台机器时，尤其要分清散装干草与已加工产品。
+
+例如，[Demo V8 更新](https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126)为 **<EntityLink kind="machines" id="pellet-disc-machine">Pellet Disc Machine（颗粒圆盘机）</EntityLink>** 加入了 **BRICKS** 和 **HAY** 等资源指示。连接时请查看这些指示，仅凭机器名称无法判断每个接口应该接入哪种物料。
+
+## 核算整套投入，不只看机器
+
+![机械臂围绕干草堆，数条独立的传送线路绕着仓库运行。](/images/find-the-needle/screenshot-2.webp)
+
+这张截图说明了空间为何重要：干草堆旁的机器只是整套设施的一部分，它们的传送带也需要空间。
+
+花钱前请检查：
+
+1. **输入：** 现有设备能否送来这台机器接受的物料？
+2. **电力：** 需要什么连接，能否接到那里？
+3. **输出：** 产品从哪里离开，是否有空间连接这一侧？
+4. **目的地：** 输出是送到另一台机器，还是送到接受这种产品的售卖点？
+
+留出足够预算和空间完成这些连接。增加分支前，先观察一条完整物料线路；[自动化指南](/guides/guide/automation)介绍了布局检查过程。
+
+若要根据自己的测量规划生产线，可在[生产计算器](/tools/production-calculator)中输入观察到的速率，比较供给量与加工能力。
+
+设备、产品名称与截图：[官方 Steam 游戏页面](https://store.steampowered.com/app/5160800/Find_The_Needle/)及 [Demo 页面](https://store.steampowered.com/app/5165210/Find_The_Needle_Demo/)。

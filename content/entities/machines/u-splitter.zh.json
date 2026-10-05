@@ -1,0 +1,41 @@
+{
+  "id": "u-splitter",
+  "name": "U 型分流器（U-Splitter）",
+  "summary": "U-Splitter 是 Demo V8 新增的传送带路由部件。需要检查或分配产线物料时，可以使用分流路线，而不是把全部物料送到同一路径。",
+  "updatedAt": "2026-10-05",
+  "version": "Demo V8 公告（2026 年 9 月 11 日）；操作以已安装版本的提示为准",
+  "data": {
+    "role": "传送带分流与合流",
+    "scope": "试玩版更新说明／讨论",
+    "community": "原有扫描产线拥堵时，玩家建议建立不同的扫描器支路。检查两条输出都经过扫描，再按需要合流。",
+    "check": "观察一件产品进入每条支路并到达目的地。V8 更新说明没有规定分配比例，也没有保证吞吐量提升。"
+  },
+  "sources": [
+    {
+      "label": "Demo V8 官方更新说明 · 2026 年 9 月 11 日",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "社区扫描器讨论 · 2026 年 9 月 16 日",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ]
+}

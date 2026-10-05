@@ -3,7 +3,7 @@ import { getTranslations } from 'next-intl/server';
 
 import { envConfigs } from '@/config';
 import { gameConfig } from '@/config/game';
-import { defaultLocale, locales } from '@/config/locale';
+import { defaultLocale, localeLanguageTag, locales } from '@/config/locale';
 
 /** Route root is '', everything else keeps a single leading slash. */
 function normalizePath(path: string): string {
@@ -41,7 +41,7 @@ export function hreflangAlternates(
     'x-default': localizedUrl(path, defaultLocale),
   };
   for (const locale of locales) {
-    alternates[locale] = localizedUrl(path, locale);
+    alternates[localeLanguageTag(locale)] = localizedUrl(path, locale);
   }
   return alternates;
 }

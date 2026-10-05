@@ -1,0 +1,34 @@
+{
+  "id": "vacuum-yard",
+  "name": "庭院吸草设备（Vacuum Yard）",
+  "summary": "Demo V8 更新提到 Vacuum Yard，并把它的价格降低了 80%。这次历史调整不能说明今天的实际购买价格。",
+  "updatedAt": "2026-10-05",
+  "version": "Demo V8 公告（2026 年 9 月 11 日）；操作以已安装版本的提示为准",
+  "data": {
+    "role": "干草搬运",
+    "scope": "试玩版更新说明／讨论",
+    "check": "将当前购买提示与想解决的问题作对照。如果干草已经堵在下游，购买另一个收集升级前，应先检查传送带和扫描环节。",
+    "limits": "公告没有给出当前容量、作用范围、用电需求或解锁要求。围绕这项购买制定计划前，请在已安装的游戏中查看。"
+  },
+  "sources": [
+    {
+      "label": "Demo V8 官方更新说明 · 2026 年 9 月 11 日",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "tools",
+      "id": "shovel"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation", "/guides/guide/getting-started"]
+}

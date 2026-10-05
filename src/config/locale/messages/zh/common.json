@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "title": "Find the Needle Wiki 与攻略 — 试玩、自动化与技巧",
+    "description": "从 Find the Needle 入门：免费 Steam 试玩版、干草堆寻针、升级、自动化和电脑配置。为这款即将推出的增量游戏提供独立攻略。",
+    "keywords": "Find the Needle, Find the Needle 攻略, Find the Needle wiki, Find the Needle 试玩版, 自动化"
+  },
+  "navigation": {
+    "home": "首页",
+    "guides": "攻略",
+    "faq": "常见问题",
+    "requirements": "电脑配置",
+    "troubleshooting": "故障排查",
+    "about": "关于",
+    "contact": "联系",
+    "privacy": "隐私政策",
+    "terms": "使用条款",
+    "language": "语言",
+    "primary": "主导航",
+    "demo": "试玩版"
+  },
+  "footer": {
+    "guides": "攻略",
+    "resources": "游戏与支持",
+    "site": "关于本站",
+    "disclaimer": "独立的 Find the Needle 玩家攻略站，与 Hay Passionates 无关联。游戏名称、美术和商标归各自权利人所有。"
+  },
+  "category": {
+    "title": "游戏攻略",
+    "description": "了解寻针循环、规划升级，并查看 Steam 试玩版提供的内容。"
+  },
+  "languagePrompt": {
+    "title": "使用{language}阅读？",
+    "description": "你可以用偏好的语言查看这篇攻略。我们会保存你的选择，供以后访问时使用。",
+    "close": "关闭语言建议",
+    "dismiss": "保留当前语言"
+  },
+  "ui": {
+    "readGuide": "阅读攻略",
+    "allGuides": "全部攻略",
+    "onThisPage": "本页目录",
+    "overview": "概览",
+    "relatedGuides": "相关攻略",
+    "updated": "更新于",
+    "published": "发布于",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "siteNavigation": "网站导航",
+    "wikiNavigation": "攻略导航",
+    "viewOnSteam": "在 Steam 查看",
+    "demoAvailable": "免费试玩版现已推出",
+    "comingQ4": "完整版计划于2026年第四季度推出",
+    "guideCount": "{count}篇攻略",
+    "backHome": "返回首页",
+    "notFound": "页面不存在",
+    "gameplayImageAlt": "Find The Needle 中将干草运往出售站的传送带",
+    "aboutGame": "关于游戏",
+    "atAGlance": "快速了解"
+  }
+}

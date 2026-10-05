@@ -163,7 +163,9 @@ export const generatedHomeBlocksI18n = Object.fromEntries(
             description: cards[i][1],
             tag: cards[i][2],
             readingTime:
-              locale === 'ru'
+              'readingTime' in copy
+                ? copy.readingTime
+                : locale === 'ru'
                 ? item.readingTime.replace('min', 'мин')
                 : item.readingTime,
           })),

@@ -1,3 +1,5 @@
+import { additionalDiscoveryCopy } from '@/generated/additional-locales';
+
 type DiscoveryCopy = {
   database: string;
   databaseTitle: string;
@@ -14,6 +16,7 @@ type DiscoveryCopy = {
 };
 
 const discoveryCopy: Record<string, DiscoveryCopy> = {
+  ...additionalDiscoveryCopy,
   en: {
     database: 'Database',
     databaseTitle: 'Machines, tools and hay products',

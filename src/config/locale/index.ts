@@ -13,7 +13,10 @@ export const SUPPORTED_LOCALES = {
   fr: 'Français',
   es: 'Español',
   ru: 'Русский',
-  pt: 'Português',
+  pt: 'Português (Brasil)',
+  pl: 'Polski',
+  cs: 'Čeština',
+  tr: 'Türkçe',
   id: 'Bahasa Indonesia',
 } as const;
 
@@ -40,6 +43,15 @@ export const localeAliases: Record<string, string> = {
   'zh-SG': 'zh',
   'pt-BR': 'pt',
 };
+
+export const localeLanguageTags: Partial<Record<SupportedLocale, string>> = {
+  zh: 'zh-CN',
+  pt: 'pt-BR',
+};
+
+export function localeLanguageTag(locale: string): string {
+  return localeLanguageTags[locale as SupportedLocale] ?? locale;
+}
 
 export const localePrefix = 'as-needed';
 export const localeDetection = false;

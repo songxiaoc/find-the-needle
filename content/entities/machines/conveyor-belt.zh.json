@@ -1,0 +1,50 @@
+{
+  "id": "conveyor-belt",
+  "name": "传送带（Conveyor Belt）",
+  "summary": "传送带用于在设备之间输送干草。Demo V8 重做了吸附放置并加入自动寻路；需要自由放置时，按 F 开启 No Snap Mode（无吸附模式）。",
+  "updatedAt": "2026-10-05",
+  "version": "Demo V8 公告（2026 年 9 月 11 日）；操作以已安装版本的提示为准",
+  "data": {
+    "role": "运输",
+    "scope": "试玩版更新说明／讨论",
+    "operation": "先连接一小段，观察一件产品通过，再延长产线。传送带末端靠近机器，并不能证明连接已经正常工作。",
+    "check": "从第一个停住的产品向后排查。检查下游目的地、各个接头，以及是否有支路绕过扫描。"
+  },
+  "sources": [
+    {
+      "label": "Demo V8 官方更新说明 · 2026 年 9 月 11 日",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "社区运输路线讨论 · 2026 年 9 月 21 日",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    },
+    {
+      "label": "Steam 官方图片",
+      "url": "https://store.steampowered.com/app/5165210/Find_The_Needle_Demo/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"],
+  "image": "/images/find-the-needle/official-demo-yard.webp",
+  "imageAlt": "传送带把小团干草从草堆送向标有 SELL HAY 的出售台。",
+  "imageCaption": "沿画面左后方的斜向传送带，找到它在 SELL HAY 出售台的交付位置。Steam 官方试玩版截图。",
+  "imagePosition": "35% 50%"
+}

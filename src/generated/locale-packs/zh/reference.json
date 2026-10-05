@@ -1,0 +1,211 @@
+{
+  "practicalGuides": [
+    "当前存档相关帮助",
+    "备份试玩版存档",
+    "检查停滞的传送带或电网",
+    "沿筒仓和扫描器追踪丢失的针"
+  ],
+  "labels": {
+    "home": "首页",
+    "updated": "更新于2026年9月27日",
+    "links": {
+      "store": "Steam 上的 Find the Needle",
+      "demo": "Steam 免费试玩版",
+      "community": "Steam 社区讨论",
+      "feedback": "在 GitHub 报告网站问题",
+      "verify": "Steam：验证游戏文件",
+      "cloudflare": "Cloudflare 隐私政策",
+      "adsterra": "Adsterra 隐私政策"
+    },
+    "specs": [
+      "操作系统",
+      "处理器",
+      "内存",
+      "显卡",
+      "存储空间"
+    ],
+    "minimum": "最低配置",
+    "recommended": "推荐配置",
+    "storage": "2 GB 可用空间",
+    "gpu": "4 GB 显存；Vulkan 1.3",
+    "platform": "Windows 配置要求"
+  },
+  "content": {
+    "faq": {
+      "title": "Find the Needle 常见问题",
+      "description": "了解 Find the Needle 的发售时间、免费试玩版、支持平台和单人模式，并查看官方 Steam 商店页面。",
+      "intro": "免费试玩版现已推出。Steam 标注完整版计划于2026年第四季度发售；截至2026年9月27日查看商店页面时，尚未公布具体日期。",
+      "sections": [
+        {
+          "title": "在哪里下载试玩版？",
+          "text": "Find the Needle Demo 于2026年9月10日推出。请从试玩版独立的 Steam 商店页面安装；将完整版加入愿望单并不会安装试玩版。",
+          "link": "demo"
+        },
+        {
+          "title": "游戏怎么玩？",
+          "text": "在干草堆里寻找针，出售干草，再将收入投入工具和机器。从手动挖掘逐步发展成拥有传送带、打包机、扫描器和机械臂的工厂。",
+          "link": "store"
+        },
+        {
+          "title": "支持多人游戏吗？",
+          "text": "Steam 商店将 Find the Needle 列为单人游戏，未宣传合作或竞技多人模式。"
+        },
+        {
+          "title": "能在 Mac、Linux 或主机上玩吗？",
+          "text": "已公布的 Steam 版本支持 Windows。商店页面未提供原生 macOS 或 Linux 版本，也未确认主机版。本站没有经过验证的兼容层或掌机性能信息。"
+        },
+        {
+          "title": "支持哪些语言？",
+          "text": "Steam 列出了12种支持语言：英语、法语、德语、西班牙语（西班牙）、俄语、简体中文、日语、韩语、波兰语、捷克语、土耳其语和葡萄牙语（巴西）。下载前请查看商店语言表；本站已上线的语言以语言选择器为准。",
+          "link": "store"
+        },
+        {
+          "title": "试玩版进度能继承吗？",
+          "text": "本攻略查阅的商店信息未确认能将存档转移到完整版。请保留试玩版存档，在官方明确宣布前，不要默认进度可以继承。"
+        }
+      ]
+    },
+    "system-requirements": {
+      "title": "Find the Needle 系统配置要求",
+      "description": "Find the Needle 官方 Windows 最低和推荐配置，包括 Vulkan 支持要求及集成显卡警告。",
+      "intro": "Steam 商店要求使用 Windows 和独立显卡，并明确不支持集成显卡，使用集成显卡可能导致崩溃。以下配置核对于2026年9月27日。",
+      "sections": [
+        {
+          "title": "在笔记本上安装前",
+          "text": "请核对显卡的具体型号和显存，而不只是笔记本内存。最低要求显卡支持 Vulkan 1.3。如果笔记本同时配有集成和独立显卡，请确保游戏使用独立显卡。"
+        },
+        {
+          "title": "大型工厂与掌机",
+          "text": "开发者指出，超大型工厂会显著增加 CPU 负载。达到最低配置并不能保证某个具体帧率。本站没有经过验证的 Steam Deck 性能结果，也没有可提供的原生 macOS 或 Linux 配置要求。",
+          "link": "store"
+        }
+      ]
+    },
+    "troubleshooting": {
+      "title": "Find the Needle 故障排查",
+      "description": "针对 Find the Needle 试玩版崩溃和无法启动问题的初步检查：显卡支持、Steam 文件验证，以及报告问题时应提供的信息。",
+      "intro": "如果试玩版无法启动，请先检查显卡：官方配置明确排除集成显卡，并要求支持 Vulkan 1.3。以下是通用的 Steam 检查步骤，并非已确认能修复某个游戏错误的方法。",
+      "sections": [
+        {
+          "title": "1. 检查硬件和更新",
+          "text": "将电脑配置与系统要求对照。完成待下载的 Steam 更新，重启电脑，并从显卡制造商处安装当前显卡驱动。双显卡笔记本请在 Windows 图形设置中为游戏选择独立显卡。"
+        },
+        {
+          "title": "2. 验证安装文件",
+          "text": "在 Steam 库中右键点击 Find the Needle Demo，打开“属性 → 已安装文件 → 验证游戏文件的完整性”。验证结束后再启动。每次更改后单独测试，方便判断哪个步骤有效。",
+          "link": "verify"
+        },
+        {
+          "title": "3. 工厂扩大后变慢",
+          "text": "关闭其他占用较多资源的应用，检查是否只有大型工厂出现卡顿。开发者表示大型工厂会增加 CPU 负载，单纯降低分辨率可能无法解决这一限制。"
+        },
+        {
+          "title": "4. 报告可复现的问题",
+          "text": "说明是否使用试玩版，并提供 Windows 版本、CPU、显卡、驱动版本、完整报错文本和复现步骤。必要时附上已去除个人信息的截图。保留现有存档，不要将删除存档文件夹作为首个排查步骤。",
+          "link": "community"
+        }
+      ]
+    },
+    "about": {
+      "title": "关于本站 Find the Needle 攻略",
+      "description": "了解这个独立的 Find the Needle 玩家攻略站、信息来源、纠错方式，以及与游戏创作者的关系。",
+      "intro": "findtheneedle.site 是独立的非官方 Find the Needle 攻略站，帮助玩家了解试玩版、规划第一座工厂，并在游玩前核对实用信息。",
+      "sections": [
+        {
+          "title": "独立于游戏创作者",
+          "text": "本站并非由 FindTheNeedleDev、Hay Passionates 或 Valve 运营、认可或赞助。Find the Needle 由 FindTheNeedleDev 开发、Hay Passionates 发行。游戏名称、美术和截图归各自权利人所有。"
+        },
+        {
+          "title": "我们如何使用来源",
+          "text": "发售和硬件信息来自官方 Steam 商店页面。攻略区分已公布的功能与实用建议。试玩版和完整版可能更新，因此阅读带日期的信息时，请结合其更新日期判断。",
+          "link": "store"
+        },
+        {
+          "title": "纠错与投稿",
+          "text": "如果攻略有误或译文不清楚，请提交页面网址、修改建议，以及支持该建议的截图或官方链接。请注明你使用的试玩版或游戏版本。",
+          "link": "feedback"
+        }
+      ]
+    },
+    "contact": {
+      "title": "联系与纠错",
+      "description": "报告 Find the Needle 攻略中的错误，或前往官方 Steam 社区咨询游戏相关问题。",
+      "intro": "如需纠正网站内容、报告失效链接或翻译问题，请在本站 GitHub 仓库创建 issue。游戏错误和购买问题请联系游戏官方渠道或 Steam 客服。",
+      "sections": [
+        {
+          "title": "报告网站问题",
+          "text": "请提供页面网址、语言、错误内容和修改建议。来源链接或截图有助于核对。GitHub 发帖需要账号；issue 是公开的，请勿填写密码、支付信息或其他敏感信息。",
+          "link": "feedback"
+        },
+        {
+          "title": "获取游戏帮助",
+          "text": "Steam 社区可查看开发者公告和游戏讨论。本站无法访问你的游戏存档、Steam 账号或购买记录，也无法办理退款。",
+          "link": "community"
+        },
+        {
+          "title": "权利与隐私咨询",
+          "text": "初次咨询权利或隐私问题时，请使用网站 issue 跟踪器，并注明涉及的页面或素材。请勿在公开 issue 中发布身份证件或保密证据。",
+          "link": "feedback"
+        }
+      ]
+    },
+    "privacy-policy": {
+      "title": "隐私政策",
+      "description": "了解 findtheneedle.site 如何处理托管请求、浏览器偏好、访问统计和第三方链接。",
+      "intro": "本政策适用于独立的 Find the Needle 攻略站 findtheneedle.site。浏览本站无需账号、付款或提交表单。",
+      "sections": [
+        {
+          "title": "托管与请求数据",
+          "text": "Cloudflare 托管并分发本站。为提供页面、保障安全和防止滥用，请求可能涉及 IP 地址、浏览器、请求网址和请求时间等信息。Cloudflare 根据其自身条款和隐私政策处理这些信息。",
+          "link": "cloudflare"
+        },
+        {
+          "title": "设备上的偏好设置",
+          "text": "本站使用浏览器本地存储记住界面偏好，例如语言提示选择。除非你清除，这些数据会保留在该浏览器中。你可以通过浏览器的网站数据设置删除它们，已保存的偏好也会随之重置。"
+        },
+        {
+          "title": "访问分析、广告与支付",
+          "text": "我们使用 Google Analytics 4 和托管于 plausible.shipsolo.io、pl.gameradar.online 的 Plausible，通过汇总统计了解网站访问情况。Google Analytics 可能使用 Cookie，并向 Google 发送访问数据。你可以在浏览器设置中管理 Cookie。Adsterra 横幅、原生广告和 Social Bar 会加载第三方资源；Adsterra 及其服务提供商可能为投放广告处理设备和访问数据。请查看下方的 Adsterra 隐私政策。本站不嵌入会话录制脚本，不提供用户账号，也不收取付款。我们不出售个人信息。",
+          "link": "adsterra"
+        },
+        {
+          "title": "外部链接与留言",
+          "text": "访问 Steam、GitHub 或其他服务链接后，将适用该服务自身的隐私处理方式。如果发布 GitHub issue，你的个人资料和留言可能公开。请只分享解释问题所需的信息。"
+        },
+        {
+          "title": "问题与变更",
+          "text": "如有隐私问题，请先创建网站 issue，且不要填写敏感个人信息。当本站的数据处理方式发生变化时，我们会更新本政策，并在本页显示修订日期。",
+          "link": "feedback"
+        }
+      ]
+    },
+    "terms-of-service": {
+      "title": "使用条款",
+      "description": "独立 Find the Needle 攻略站的使用条款，涵盖内容、外部链接、知识产权和纠错。",
+      "intro": "这些条款适用于你对 findtheneedle.site 的使用。本站免费提供游戏信息，独立于游戏、开发者、发行商和 Steam。",
+      "sections": [
+        {
+          "title": "攻略信息",
+          "text": "我们力求提供有用且准确的信息，但游戏更新可能改变机制、配置要求和可用情况。购买或更改会影响存档进度的设置前，请核对官方来源。我们不保证访问始终不中断，也不保证每篇攻略始终保持最新。"
+        },
+        {
+          "title": "游戏与网站内容",
+          "text": "Find the Needle 的名称、美术和截图仍归各自权利人所有，包括 FindTheNeedleDev 和 Hay Passionates。其在本站出现不代表权利人认可本站。请勿仅因为游戏素材出现在本站，就认为可以自由复用。"
+        },
+        {
+          "title": "合理使用",
+          "text": "请依法使用本站。不得尝试破坏本站安全、妨碍访问，或通过所链接的反馈渠道提交有害或违法材料。"
+        },
+        {
+          "title": "第三方服务",
+          "text": "Steam、GitHub 和其他链接网站有各自的条款。我们不控制其内容、购买流程、账号决定或可用情况。本站不销售游戏，也不办理退款。"
+        },
+        {
+          "title": "纠错与更新",
+          "text": "如有网站问题或权利咨询，请通过 issue 跟踪器提交，并注明相关页面。这些条款可能随网站变化而更新，本页日期表示当前修订版本。本条款不限制适用法律规定不可排除的权利。",
+          "link": "feedback"
+        }
+      ]
+    }
+  }
+}

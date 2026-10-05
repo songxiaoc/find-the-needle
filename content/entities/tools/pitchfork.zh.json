@@ -1,0 +1,38 @@
+{
+  "id": "pitchfork",
+  "name": "草叉（Pitchfork）",
+  "summary": "草叉是官方商店列出的手动干草工具之一。截图展示了玩家在草堆和容器旁以第一人称使用它。",
+  "updatedAt": "2026-10-05",
+  "version": "完整版商店介绍，核对日期：2026 年 10 月 5 日",
+  "data": {
+    "role": "干草搬运",
+    "scope": "完整版商店介绍",
+    "operation": "按照当前搬运提示收集并移动干草。商店截图只展示工具位置，不能确定通用装载量或操作次数。",
+    "check": "比较草叉、当前铲子及运输方案的搬运负担。如果慢在运输，应查看下一项运输升级，不要认为换一种手动工具就能解决。"
+  },
+  "sources": [
+    {
+      "label": "Steam 官方商店",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "tools",
+      "id": "shovel"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "tools",
+      "id": "metal-detector"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/getting-started"],
+  "image": "/images/find-the-needle/screenshot-3.webp",
+  "imageAlt": "第一人称视角中，草叉举在草堆前方。",
+  "imageCaption": "草叉直接靠在草堆前。操作请遵循当前交互提示；这张图片没有显示针的位置。Steam 官方截图。",
+  "imagePosition": "50% 85%"
+}
