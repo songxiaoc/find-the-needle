@@ -40,5 +40,7 @@
   ],
   "image": "/images/find-the-needle/screenshot-1.webp",
   "imageAlt": "Convoyeur transportant du foin vers le stand marqué SELL HAY.",
-  "imageCaption": "Le convoyeur rejoint l’avant du stand SELL HAY. Repérez ainsi la destination ; les prix de l’image ne sont pas des tarifs actuels. Capture Steam officielle."
+  "imageCaption": "Le convoyeur rejoint l’avant du stand SELL HAY. Repérez ainsi la destination ; les prix de l’image ne sont pas des tarifs actuels. Capture Steam officielle.",
+  "imagePosition": "60% 55%",
+  "imageZoom": 1.4
 }

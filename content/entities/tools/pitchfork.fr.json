@@ -33,5 +33,6 @@
   "relatedGuides": ["/guides/guide/getting-started"],
   "image": "/images/find-the-needle/screenshot-3.webp",
   "imageAlt": "Fourche tenue à la première personne devant le tas de foin.",
-  "imageCaption": "La fourche se trouve directement devant le tas. Suivez les indications de manipulation de votre version ; cette image ne montre pas l’emplacement d’une aiguille. Capture Steam officielle."
+  "imageCaption": "La fourche se trouve directement devant le tas. Suivez les indications de manipulation de votre version ; cette image ne montre pas l’emplacement d’une aiguille. Capture Steam officielle.",
+  "imagePosition": "50% 85%"
 }

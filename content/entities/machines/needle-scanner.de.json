@@ -45,5 +45,10 @@
   "relatedGuides": [
     "/guides/guide/needles-and-scanners",
     "/guides/guide/automation"
-  ]
+  ],
+  "image": "/images/find-the-needle/official-research.webp",
+  "imageAlt": "Forschungsmenü mit den Knoten Needle Cabinet, Scanner Mk I Plans und Metal Detector.",
+  "imageCaption": "Suche Scanner Mk I Plans direkt über Metal Detector im Forschungsmenü. Offizielles Steam-Bild.",
+  "imagePosition": "40% 31%",
+  "imageZoom": 3
 }

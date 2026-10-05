@@ -40,5 +40,7 @@
   ],
   "image": "/images/find-the-needle/screenshot-1.webp",
   "imageAlt": "Conveyor carrying hay toward the stall marked SELL HAY.",
-  "imageCaption": "The belt meets the front of the SELL HAY stand. Use this to identify the destination; the screenshot’s prices are not current price references. Official Steam screenshot."
+  "imageCaption": "The belt meets the front of the SELL HAY stand. Use this to identify the destination; the screenshot’s prices are not current price references. Official Steam screenshot.",
+  "imagePosition": "60% 55%",
+  "imageZoom": 1.4
 }

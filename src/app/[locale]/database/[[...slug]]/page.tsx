@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { EntityCatalog } from '@/components/site/entities/EntityCatalog';
 import { EntityDetail } from '@/components/site/entities/EntityDetail';
+import { EntityImage } from '@/components/site/entities/EntityImage';
 import {
   buildPageMetadata,
   PageFrame,
@@ -184,11 +185,26 @@ export default async function DatabasePage({
               <div className="grid gap-5 md:grid-cols-3">
                 {getPublishedEntityKinds(locale).map((category) => {
                   const records = getEntities(category.id, locale);
+                  const cover = records.find(
+                    (record) => record.image && record.imageAlt
+                  );
                   return (
                     <section
                       key={category.id}
-                      className="border-site-outline-strong bg-site-surface-container border p-6"
+                      className="border-site-outline-strong bg-site-surface-container min-w-0 border p-6"
                     >
+                      {cover && (
+                        <Link
+                          href={category.route}
+                          className="focus-visible:outline-site-primary -mx-6 -mt-6 mb-6 block focus-visible:outline-2 focus-visible:outline-offset-[-2px]"
+                        >
+                          <EntityImage
+                            entity={cover}
+                            preview
+                            sizes="(max-width: 767px) calc(100vw - 48px), (max-width: 1440px) calc((100vw - 112px) / 3), 440px"
+                          />
+                        </Link>
+                      )}
                       <p className="text-site-primary text-sm">
                         {records.length} {copy.records}
                       </p>

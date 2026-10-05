@@ -32,6 +32,11 @@ const entityFileSchema = z
     image: z.string().trim().min(1).optional(),
     imageAlt: z.string().trim().min(1).optional(),
     imageCaption: z.string().trim().min(1).optional(),
+    imagePosition: z
+      .string()
+      .regex(/^(?:100|\d{1,2})(?:\.\d+)?% (?:100|\d{1,2})(?:\.\d+)?%$/)
+      .optional(),
+    imageZoom: z.number().min(1).max(3).optional(),
     updatedAt: z.string().regex(ISO_DATE_PATTERN),
     version: z.string().trim().min(1),
     data: z.record(z.string(), entityScalarSchema),

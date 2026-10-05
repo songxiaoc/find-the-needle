@@ -17,6 +17,7 @@ export type EntityCopy = {
   resultCount: string;
   clear: string;
   view: string;
+  fullImage: string;
   noMatches: string;
   empty: string;
   reset: string;
@@ -78,6 +79,7 @@ const copy: Record<string, EntityCopy> = {
     resultCount: '{shown} of {total}',
     clear: 'Clear search and filters',
     view: 'View details',
+    fullImage: 'View full-size image',
     noMatches: 'No matching entries',
     empty: 'Try a shorter search or remove a filter.',
     reset: 'Reset search',
@@ -137,6 +139,7 @@ const copy: Record<string, EntityCopy> = {
     resultCount: '{shown} sur {total}',
     clear: 'Effacer recherche et filtres',
     view: 'Voir les détails',
+    fullImage: 'Voir l’image en grand',
     noMatches: 'Aucune entrée trouvée',
     empty: 'Essayez un terme plus court ou retirez un filtre.',
     reset: 'Réinitialiser la recherche',
@@ -196,6 +199,7 @@ const copy: Record<string, EntityCopy> = {
     resultCount: '{shown} von {total}',
     clear: 'Suche und Filter löschen',
     view: 'Details ansehen',
+    fullImage: 'Bild in voller Größe ansehen',
     noMatches: 'Keine passenden Einträge',
     empty: 'Versuche einen kürzeren Suchbegriff oder entferne einen Filter.',
     reset: 'Suche zurücksetzen',
@@ -255,6 +259,7 @@ const copy: Record<string, EntityCopy> = {
     resultCount: '{shown} de {total}',
     clear: 'Borrar búsqueda y filtros',
     view: 'Ver detalles',
+    fullImage: 'Ver imagen a tamaño completo',
     noMatches: 'No hay resultados',
     empty: 'Prueba una búsqueda más corta o elimina un filtro.',
     reset: 'Restablecer búsqueda',
@@ -314,6 +319,7 @@ const copy: Record<string, EntityCopy> = {
     resultCount: '{shown} из {total}',
     clear: 'Очистить поиск и фильтры',
     view: 'Подробнее',
+    fullImage: 'Открыть изображение в полном размере',
     noMatches: 'Ничего не найдено',
     empty: 'Сократите запрос или уберите фильтр.',
     reset: 'Сбросить поиск',

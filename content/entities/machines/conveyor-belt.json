@@ -18,6 +18,10 @@
     {
       "label": "Community routing discussion · September 21, 2026",
       "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    },
+    {
+      "label": "Official Steam image",
+      "url": "https://store.steampowered.com/app/5165210/Find_The_Needle_Demo/"
     }
   ],
   "relatedEntities": [
@@ -38,5 +42,9 @@
       "id": "needle-scanner"
     }
   ],
-  "relatedGuides": ["/guides/guide/automation"]
+  "relatedGuides": ["/guides/guide/automation"],
+  "image": "/images/find-the-needle/official-demo-yard.webp",
+  "imageAlt": "A conveyor carries small hay clumps from a hay pile toward the SELL HAY stand.",
+  "imageCaption": "Follow the diagonal belt from the back left to its delivery point at SELL HAY. Official Steam Demo screenshot.",
+  "imagePosition": "35% 50%"
 }

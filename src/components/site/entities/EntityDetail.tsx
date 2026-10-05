@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { getEntityCopy } from '@/content/entity-copy';
 
 import { Link } from '@/core/i18n/navigation';
@@ -9,6 +8,7 @@ import {
 } from '@/config/entities';
 
 import { EntityFieldValue } from './EntityFieldValue';
+import { EntityImage } from './EntityImage';
 
 export type ResolvedEntityLink = {
   name: string;
@@ -45,29 +45,42 @@ export function EntityDetail({
           <h1 className="site-display-lg text-site-on-surface mt-4 text-balance [overflow-wrap:anywhere] hyphens-auto">
             {entity.name}
           </h1>
+          {entity.image && entity.imageAlt && (
+            <figure className="border-site-outline-strong mt-6 border">
+              <a
+                href={entity.image}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={copy.fullImage}
+                className="focus-visible:outline-site-primary block cursor-zoom-in focus-visible:outline-2 focus-visible:outline-offset-[-2px]"
+              >
+                <EntityImage
+                  entity={entity}
+                  sizes="(max-width: 1023px) calc(100vw - 96px), (max-width: 1440px) calc(100vw - 492px), 948px"
+                  priority
+                />
+              </a>
+              {entity.imageCaption && (
+                <figcaption className="text-site-on-surface-variant px-4 py-3 text-sm leading-6">
+                  {entity.imageCaption}{' '}
+                  <a
+                    href={entity.image}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-site-primary underline underline-offset-4"
+                  >
+                    {copy.fullImage} ↗
+                  </a>
+                </figcaption>
+              )}
+            </figure>
+          )}
           <p className="site-body-lg text-site-on-surface-variant mt-5 max-w-[65ch]">
             {entity.summary}
           </p>
         </header>
 
         <div className="mt-10 space-y-10">
-          {entity.image && entity.imageAlt && (
-            <figure>
-              <Image
-                src={entity.image}
-                alt={entity.imageAlt}
-                width={1600}
-                height={900}
-                sizes="(max-width: 1024px) 100vw, 900px"
-                className="border-site-outline-strong h-auto w-full border"
-              />
-              {entity.imageCaption && (
-                <figcaption className="text-site-on-surface-variant mt-3 text-sm leading-6">
-                  {entity.imageCaption}
-                </figcaption>
-              )}
-            </figure>
-          )}
           {kind.detailSections.map((section) => {
             const populatedFields = section.fields.filter(
               (fieldId) => entity.data[fieldId] !== undefined

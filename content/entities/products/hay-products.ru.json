@@ -45,5 +45,10 @@
   "relatedGuides": [
     "/guides/guide/automation",
     "/guides/guide/needles-and-scanners"
-  ]
+  ],
+  "image": "/images/find-the-needle/official-hay-bales.webp",
+  "imageAlt": "Два перевязанных прямоугольных тюка сена на разветвлённых конвейерах рядом с зелёными обрабатывающими машинами.",
+  "imageCaption": "Посмотрите на перевязанные тюки сена на разветвлённых лентах. Кадр официального видео Steam Hay products на отметке 10,5 секунды.",
+  "imagePosition": "34% 66%",
+  "imageZoom": 1.2
 }

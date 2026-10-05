@@ -45,5 +45,10 @@
   "relatedGuides": [
     "/guides/guide/automation",
     "/guides/guide/needles-and-scanners"
-  ]
+  ],
+  "image": "/images/find-the-needle/official-hay-bales.webp",
+  "imageAlt": "Deux balles de foin rectangulaires sanglées circulent sur des convoyeurs ramifiés près de machines de traitement vertes.",
+  "imageCaption": "Repérez les balles de foin sanglées sur les convoyeurs ramifiés. Image de la vidéo officielle Steam Hay products à 10,5 secondes.",
+  "imagePosition": "34% 66%",
+  "imageZoom": 1.2
 }

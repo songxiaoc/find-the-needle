@@ -11,6 +11,7 @@ import {
 } from '@/config/entities';
 
 import { EntityFieldValue } from './EntityFieldValue';
+import { EntityImage } from './EntityImage';
 
 export function EntityCatalog({
   kind,
@@ -163,44 +164,58 @@ export function EntityCatalog({
           {results.map((entity) => (
             <article
               key={entity.id}
-              className="bg-site-surface-container flex min-h-56 flex-col p-6"
+              className="bg-site-surface-container flex min-h-56 min-w-0 flex-col"
             >
-              <p className="font-site-mono text-site-primary text-[10px] font-semibold tracking-[0.16em] uppercase">
-                {kind.singularLabel}
-              </p>
-              <h2 className="site-headline-lg text-site-on-surface mt-3">
+              {entity.image && entity.imageAlt && (
                 <Link
                   href={entity.href}
-                  className="focus-visible:outline-site-primary hover:text-site-primary transition-colors focus-visible:outline-2 focus-visible:outline-offset-4"
+                  className="focus-visible:outline-site-primary block focus-visible:outline-2 focus-visible:outline-offset-[-2px]"
                 >
-                  {entity.name}
+                  <EntityImage
+                    entity={entity}
+                    preview
+                    sizes="(max-width: 767px) calc(100vw - 48px), (max-width: 1440px) calc((100vw - 112px) / 2), 664px"
+                  />
                 </Link>
-              </h2>
-              <p className="text-site-on-surface-variant mt-3 max-w-[60ch] text-sm leading-6">
-                {entity.summary}
-              </p>
-              <dl className="mt-6 grid grid-cols-2 gap-4">
-                {kind.cardFields.map((fieldId) => (
-                  <div key={fieldId} className="min-w-0">
-                    <dt className="font-site-mono text-site-outline text-[9px] tracking-[0.12em] uppercase">
-                      {getEntityField(kind, fieldId)?.label ?? fieldId}
-                    </dt>
-                    <dd className="text-site-on-surface mt-1 text-sm tabular-nums">
-                      <EntityFieldValue
-                        kind={kind}
-                        fieldId={fieldId}
-                        value={entity.data[fieldId]}
-                      />
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-              <Link
-                href={entity.href}
-                className="font-site-mono text-site-primary focus-visible:outline-site-primary mt-auto pt-6 text-[10px] font-semibold tracking-[0.14em] uppercase focus-visible:outline-2 focus-visible:outline-offset-4"
-              >
-                {copy.view} →
-              </Link>
+              )}
+              <div className="flex flex-1 flex-col p-6">
+                <p className="font-site-mono text-site-primary text-[10px] font-semibold tracking-[0.16em] uppercase">
+                  {kind.singularLabel}
+                </p>
+                <h2 className="site-headline-lg text-site-on-surface mt-3 [overflow-wrap:anywhere] hyphens-auto">
+                  <Link
+                    href={entity.href}
+                    className="focus-visible:outline-site-primary hover:text-site-primary transition-colors focus-visible:outline-2 focus-visible:outline-offset-4"
+                  >
+                    {entity.name}
+                  </Link>
+                </h2>
+                <p className="text-site-on-surface-variant mt-3 max-w-[60ch] text-sm leading-6">
+                  {entity.summary}
+                </p>
+                <dl className="mt-6 grid grid-cols-2 gap-4">
+                  {kind.cardFields.map((fieldId) => (
+                    <div key={fieldId} className="min-w-0">
+                      <dt className="font-site-mono text-site-outline text-[9px] tracking-[0.12em] uppercase">
+                        {getEntityField(kind, fieldId)?.label ?? fieldId}
+                      </dt>
+                      <dd className="text-site-on-surface mt-1 text-sm tabular-nums">
+                        <EntityFieldValue
+                          kind={kind}
+                          fieldId={fieldId}
+                          value={entity.data[fieldId]}
+                        />
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+                <Link
+                  href={entity.href}
+                  className="font-site-mono text-site-primary focus-visible:outline-site-primary mt-auto pt-6 text-[10px] font-semibold tracking-[0.14em] uppercase focus-visible:outline-2 focus-visible:outline-offset-4"
+                >
+                  {copy.view} →
+                </Link>
+              </div>
             </article>
           ))}
         </div>

@@ -37,5 +37,10 @@
   "relatedGuides": [
     "/guides/guide/getting-started",
     "/guides/guide/needles-and-scanners"
-  ]
+  ],
+  "image": "/images/find-the-needle/official-research.webp",
+  "imageAlt": "Research tree with the Metal Detector entry below Scanner Mk I Plans.",
+  "imageCaption": "The Metal Detector research entry sits below Scanner Mk I Plans. Official Steam image.",
+  "imagePosition": "40% 37%",
+  "imageZoom": 3
 }

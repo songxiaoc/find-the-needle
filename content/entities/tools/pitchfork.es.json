@@ -33,5 +33,6 @@
   "relatedGuides": ["/guides/guide/getting-started"],
   "image": "/images/find-the-needle/screenshot-3.webp",
   "imageAlt": "Horca sostenida en primera persona frente al montón de heno.",
-  "imageCaption": "La horca se sostiene directamente frente al montón. Sigue tus indicaciones actuales; esta imagen no muestra una ubicación de aguja. Captura oficial de Steam."
+  "imageCaption": "La horca se sostiene directamente frente al montón. Sigue tus indicaciones actuales; esta imagen no muestra una ubicación de aguja. Captura oficial de Steam.",
+  "imagePosition": "50% 85%"
 }

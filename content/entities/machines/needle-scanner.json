@@ -45,5 +45,10 @@
   "relatedGuides": [
     "/guides/guide/needles-and-scanners",
     "/guides/guide/automation"
-  ]
+  ],
+  "image": "/images/find-the-needle/official-research.webp",
+  "imageAlt": "Research menu showing Needle Cabinet, Scanner Mk I Plans and Metal Detector nodes.",
+  "imageCaption": "Find Scanner Mk I Plans just above Metal Detector in the research menu. Official Steam image.",
+  "imagePosition": "40% 31%",
+  "imageZoom": 3
 }

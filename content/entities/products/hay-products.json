@@ -45,5 +45,10 @@
   "relatedGuides": [
     "/guides/guide/automation",
     "/guides/guide/needles-and-scanners"
-  ]
+  ],
+  "image": "/images/find-the-needle/official-hay-bales.webp",
+  "imageAlt": "Two strapped rectangular hay bales travel on branching conveyor belts beside green processing machines.",
+  "imageCaption": "Look at the strapped hay bales travelling on the branching belts. Official Steam Hay products video frame at 10.5 seconds.",
+  "imagePosition": "34% 66%",
+  "imageZoom": 1.2
 }

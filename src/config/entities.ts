@@ -48,6 +48,8 @@ export type EntityRecord = {
   readonly image?: string;
   readonly imageAlt?: string;
   readonly imageCaption?: string;
+  readonly imagePosition?: string;
+  readonly imageZoom?: number;
   readonly updatedAt: string;
   readonly version: string;
   readonly data: Readonly<Record<string, EntityScalar>>;

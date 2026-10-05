@@ -33,5 +33,6 @@
   "relatedGuides": ["/guides/guide/getting-started"],
   "image": "/images/find-the-needle/screenshot-3.webp",
   "imageAlt": "First-person pitchfork held in front of the hay pile.",
-  "imageCaption": "The fork is held directly against the hay pile. Follow your current interaction prompts for handling; this image does not show a needle location. Official Steam screenshot."
+  "imageCaption": "The fork is held directly against the hay pile. Follow your current interaction prompts for handling; this image does not show a needle location. Official Steam screenshot.",
+  "imagePosition": "50% 85%"
 }

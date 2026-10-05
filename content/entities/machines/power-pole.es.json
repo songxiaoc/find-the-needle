@@ -33,5 +33,7 @@
   "relatedGuides": ["/guides/guide/automation"],
   "image": "/images/find-the-needle/screenshot-5.webp",
   "imageAlt": "Árbol Yard Research con Electricity, Power Pole y mejoras eléctricas.",
-  "imageCaption": "Power Pole aparece en la rama POWER. Consulta tu árbol actual para costes y requisitos; esta imagen promocional no es una lista de desbloqueos. Captura oficial de Steam."
+  "imageCaption": "Power Pole aparece en la rama POWER. Consulta tu árbol actual para costes y requisitos; esta imagen promocional no es una lista de desbloqueos. Captura oficial de Steam.",
+  "imagePosition": "55% 73%",
+  "imageZoom": 2
 }

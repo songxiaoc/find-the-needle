@@ -45,5 +45,10 @@
   "relatedGuides": [
     "/guides/guide/automation",
     "/guides/guide/needles-and-scanners"
-  ]
+  ],
+  "image": "/images/find-the-needle/official-hay-bales.webp",
+  "imageAlt": "Zwei rechteckige, gebundene Heuballen auf verzweigten Förderbändern neben grünen Verarbeitungsmaschinen.",
+  "imageCaption": "Betrachte die gebundenen Heuballen auf den verzweigten Bändern. Bild aus dem offiziellen Steam-Video Hay products bei 10,5 Sekunden.",
+  "imagePosition": "34% 66%",
+  "imageZoom": 1.2
 }

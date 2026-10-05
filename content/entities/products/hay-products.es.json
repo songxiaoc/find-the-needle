@@ -45,5 +45,10 @@
   "relatedGuides": [
     "/guides/guide/automation",
     "/guides/guide/needles-and-scanners"
-  ]
+  ],
+  "image": "/images/find-the-needle/official-hay-bales.webp",
+  "imageAlt": "Dos balas de heno rectangulares atadas circulan por cintas ramificadas junto a máquinas de procesado verdes.",
+  "imageCaption": "Observa las balas de heno atadas sobre las cintas ramificadas. Fotograma del vídeo oficial Steam Hay products a los 10,5 segundos.",
+  "imagePosition": "34% 66%",
+  "imageZoom": 1.2
 }

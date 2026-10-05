@@ -14,6 +14,10 @@
     {
       "label": "Official Demo V8 notes · September 11, 2026",
       "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "Official Steam image",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
     }
   ],
   "relatedEntities": [
@@ -30,5 +34,10 @@
       "id": "hay-products"
     }
   ],
-  "relatedGuides": ["/guides/guide/automation"]
+  "relatedGuides": ["/guides/guide/automation"],
+  "image": "/images/find-the-needle/official-automation.webp",
+  "imageAlt": "Research screen with Small Arm Plans in the centre and Pellet Discs Plans near the upper right.",
+  "imageCaption": "Look near the upper right for Pellet Discs Plans in the research menu. Official Steam image.",
+  "imagePosition": "94% 26%",
+  "imageZoom": 3
 }

@@ -40,5 +40,7 @@
   ],
   "image": "/images/find-the-needle/screenshot-2.webp",
   "imageAlt": "Orange robotic arms surround a hay pile beside several conveyor routes.",
-  "imageCaption": "Look at how close the arms sit to several belts. When checking your own layout, follow each belt an arm can reach. Official Steam screenshot."
+  "imageCaption": "Look at how close the arms sit to several belts. When checking your own layout, follow each belt an arm can reach. Official Steam screenshot.",
+  "imagePosition": "56% 45%",
+  "imageZoom": 1.8
 }

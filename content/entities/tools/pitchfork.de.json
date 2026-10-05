@@ -33,5 +33,6 @@
   "relatedGuides": ["/guides/guide/getting-started"],
   "image": "/images/find-the-needle/screenshot-3.webp",
   "imageAlt": "Heugabel aus der Ich-Perspektive vor dem Heuhaufen.",
-  "imageCaption": "Die Gabel liegt direkt vor dem Haufen. Folge deinen Bedienhinweisen; das Bild zeigt keinen Nadelstandort. Offizieller Steam-Screenshot."
+  "imageCaption": "Die Gabel liegt direkt vor dem Haufen. Folge deinen Bedienhinweisen; das Bild zeigt keinen Nadelstandort. Offizieller Steam-Screenshot.",
+  "imagePosition": "50% 85%"
 }

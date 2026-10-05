@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { DragScrollRow } from '@/components/site/DragScrollRow';
 import { EntityFieldValue } from '@/components/site/entities/EntityFieldValue';
+import { EntityImage } from '@/components/site/entities/EntityImage';
 import { HeroTrailer } from '@/components/site/HeroTrailer';
 import {
   Chip,
@@ -268,6 +269,20 @@ function EntityIndexBlock({
             className="border-site-outline-strong bg-site-outline-strong grid gap-px border-b last:border-b-0 lg:grid-cols-[minmax(240px,0.72fr)_minmax(0,1.28fr)]"
           >
             <div className="bg-site-surface-container flex flex-col p-6 md:p-8">
+              {entities.some((entity) => entity.image && entity.imageAlt) && (
+                <Link
+                  href={kind.route}
+                  className="focus-visible:outline-site-primary -mx-6 -mt-6 mb-6 block focus-visible:outline-2 focus-visible:outline-offset-[-2px] md:-mx-8 md:-mt-8"
+                >
+                  <EntityImage
+                    entity={entities.find(
+                      (entity) => entity.image && entity.imageAlt
+                    )!}
+                    preview
+                    sizes="(max-width: 1023px) calc(100vw - 48px), 480px"
+                  />
+                </Link>
+              )}
               <p className="font-site-mono text-site-primary text-[10px] font-semibold tracking-[0.16em] uppercase">
                 {entities.length} {copy.records}
               </p>

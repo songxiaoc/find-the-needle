@@ -40,5 +40,7 @@
   ],
   "image": "/images/find-the-needle/screenshot-2.webp",
   "imageAlt": "Bras robotisés orange autour d’un tas de foin près de plusieurs convoyeurs.",
-  "imageCaption": "Les bras sont proches de plusieurs convoyeurs. Pour vérifier votre installation, suivez chaque convoyeur qu’un bras peut atteindre. Capture Steam officielle."
+  "imageCaption": "Les bras sont proches de plusieurs convoyeurs. Pour vérifier votre installation, suivez chaque convoyeur qu’un bras peut atteindre. Capture Steam officielle.",
+  "imagePosition": "56% 45%",
+  "imageZoom": 1.8
 }

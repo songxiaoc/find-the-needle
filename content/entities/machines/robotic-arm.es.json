@@ -40,5 +40,7 @@
   ],
   "image": "/images/find-the-needle/screenshot-2.webp",
   "imageAlt": "Brazos robóticos naranjas rodean un montón de heno junto a varias rutas de cintas.",
-  "imageCaption": "Observa la cercanía de los brazos a varias cintas. En tu fábrica, sigue cada cinta que un brazo pueda alcanzar. Captura oficial de Steam."
+  "imageCaption": "Observa la cercanía de los brazos a varias cintas. En tu fábrica, sigue cada cinta que un brazo pueda alcanzar. Captura oficial de Steam.",
+  "imagePosition": "56% 45%",
+  "imageZoom": 1.8
 }
