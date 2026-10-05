@@ -42,7 +42,7 @@ export function EntityDetail({
           <p className="font-site-mono text-site-primary text-[10px] font-semibold tracking-[0.18em] uppercase">
             {kind.singularLabel}
           </p>
-          <h1 className="site-display-lg text-site-on-surface mt-4 text-balance">
+          <h1 className="site-display-lg text-site-on-surface mt-4 text-balance [overflow-wrap:anywhere] hyphens-auto">
             {entity.name}
           </h1>
           <p className="site-body-lg text-site-on-surface-variant mt-5 max-w-[65ch]">

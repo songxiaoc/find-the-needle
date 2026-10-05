@@ -93,7 +93,7 @@ export default async function ToolsPage({
     <PageRoot>
       <PageFrame mode="wide" breadcrumbs={breadcrumbs} activeHref="/tools">
         <header className="mb-8 max-w-3xl">
-          <h1 className="site-display-lg text-site-on-surface">
+          <h1 className="site-display-lg text-site-on-surface [overflow-wrap:anywhere] hyphens-auto">
             {id ? copy.tools[id].title : copy.hub}
           </h1>
           <p className="text-site-on-surface-variant mt-4 text-base leading-7">

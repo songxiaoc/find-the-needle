@@ -156,7 +156,7 @@ export default async function DatabasePage({
         ) : (
           <>
             <header className="mb-8 max-w-3xl">
-              <h1 className="site-display-lg text-site-on-surface">
+              <h1 className="site-display-lg text-site-on-surface [overflow-wrap:anywhere] hyphens-auto">
                 {kind?.label ?? copy.databaseTitle}
               </h1>
               <p className="text-site-on-surface-variant mt-4 leading-7">
