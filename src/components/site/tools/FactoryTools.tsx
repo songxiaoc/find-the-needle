@@ -18,11 +18,11 @@ import {
 } from './production-math';
 
 const PANEL =
-  'border-site-outline-strong bg-site-surface-container border p-5 md:p-7';
+  'site-card border-site-outline-strong bg-site-surface-container border p-5 md:p-7';
 const BUTTON =
-  'border-site-primary text-site-primary hover:bg-site-primary/10 focus-visible:outline-site-primary min-h-11 border px-4 py-2 text-sm focus-visible:outline-2 focus-visible:outline-offset-4';
+  'site-control border-site-primary text-site-primary hover:bg-site-primary/10 focus-visible:outline-site-primary min-h-11 border px-4 py-2 text-sm focus-visible:outline-2 focus-visible:outline-offset-4';
 const INPUT =
-  'border-site-outline-strong bg-site-surface text-site-on-surface focus-visible:outline-site-primary w-full min-w-0 border p-3 focus-visible:outline-2 focus-visible:outline-offset-2';
+  'site-control border-site-outline-strong bg-site-surface text-site-on-surface focus-visible:outline-site-primary w-full min-w-0 border p-3 focus-visible:outline-2 focus-visible:outline-offset-2';
 const CHECK_IDS = CHECKLIST_IDS;
 const MAX_STAGES = 12;
 

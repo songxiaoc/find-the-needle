@@ -38,7 +38,7 @@ export function EntityDetail({
   return (
     <article className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_300px]">
       <div className="min-w-0">
-        <header className="border-site-outline-strong bg-site-surface-container border p-6 md:p-10">
+        <header className="site-card border-site-outline-strong bg-site-surface-container border p-6 md:p-10">
           <p className="font-site-mono text-site-primary text-[10px] font-semibold tracking-[0.18em] uppercase">
             {kind.singularLabel}
           </p>
@@ -46,7 +46,7 @@ export function EntityDetail({
             {entity.name}
           </h1>
           {entity.image && entity.imageAlt && (
-            <figure className="border-site-outline-strong mt-6 border">
+            <figure className="site-card border-site-outline-strong mt-6 overflow-hidden border">
               <a
                 href={entity.image}
                 target="_blank"
@@ -131,7 +131,7 @@ export function EntityDetail({
       </div>
 
       <aside className="space-y-6 self-start lg:sticky lg:top-24">
-        <section className="border-site-outline-strong bg-site-surface-container border p-5">
+        <section className="site-card border-site-outline-strong bg-site-surface-container border p-5">
           <h2 className="font-site-mono text-site-primary text-[10px] font-semibold tracking-[0.16em] uppercase">
             {copy.version}
           </h2>
@@ -168,7 +168,7 @@ export function EntityDetail({
         {relatedEntities.length > 0 && (
           <nav
             aria-labelledby="related-entities-heading"
-            className="border-site-outline-strong bg-site-surface-container border p-5"
+            className="site-card border-site-outline-strong bg-site-surface-container border p-5"
           >
             <h2
               id="related-entities-heading"
@@ -197,7 +197,7 @@ export function EntityDetail({
         {relatedGuides.length > 0 && (
           <nav
             aria-labelledby="related-guides-heading"
-            className="border-site-outline-strong bg-site-surface-container border p-5"
+            className="site-card border-site-outline-strong bg-site-surface-container border p-5"
           >
             <h2
               id="related-guides-heading"

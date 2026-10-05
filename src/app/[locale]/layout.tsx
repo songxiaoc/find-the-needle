@@ -3,6 +3,7 @@ import Script from 'next/script';
 import { NativeAdRuntime } from '@/components/site/NativeAd';
 import { PlausibleAnalytics } from '@/components/site/PlausibleAnalytics';
 import { SiteJsonLd } from '@/components/site/SiteJsonLd';
+import { SiteThemeProvider } from '@/components/site/SiteThemeProvider';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 
@@ -42,7 +43,7 @@ export default async function LocaleLayout({
   const clarityId = process.env.NEXT_PUBLIC_CLARITY_ID || '';
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} className="dark" suppressHydrationWarning>
       <head>
         {/* Site-wide @graph: WebSite + Organization + VideoGame, cross-linked
          * by @id. Per-page Article JSON-LD references #website / #game. */}
@@ -66,7 +67,9 @@ gtag('config', ${JSON.stringify(gaId)});`}
         )}
       </head>
       <body suppressHydrationWarning className="overflow-x-hidden">
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <SiteThemeProvider>
+          <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        </SiteThemeProvider>
         <NativeAdRuntime />
 
         <Script

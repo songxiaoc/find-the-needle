@@ -18,7 +18,7 @@ export function PlayCard({ locale = 'en' }: { locale?: string }) {
   return (
     <section
       aria-label={`${copy.ui.viewOnSteam}: ${gameFullName}`}
-      className="ui-shaped border-site-outline-strong bg-site-surface-container overflow-hidden border"
+      className="site-card ui-shaped border-site-outline-strong bg-site-surface-container overflow-hidden border"
     >
       {coverImage && (
         <img
@@ -54,7 +54,7 @@ export function PlayCard({ locale = 'en' }: { locale?: string }) {
           href={playUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-site-primary text-site-on-primary mt-3 inline-flex items-center gap-2 px-4 py-2.5 transition-[filter] hover:brightness-110"
+          className="site-control bg-site-primary text-site-on-primary mt-3 inline-flex items-center gap-2 px-4 py-2.5 transition-[filter] hover:brightness-110"
           style={{
             fontFamily: 'var(--font-site-display)',
             fontSize: 13,

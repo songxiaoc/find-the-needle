@@ -24,7 +24,7 @@ export function HeroTrailer({ trailerUrl, gameTitle }: HeroTrailerProps) {
     <>
       <button
         type="button"
-        className="group border-site-outline-strong bg-site-surface-container hover:border-site-primary relative w-full cursor-pointer overflow-hidden border transition-colors"
+        className="site-card site-interactive-card group border-site-outline-strong bg-site-surface-container hover:border-site-primary relative w-full cursor-pointer overflow-hidden border transition-colors"
         aria-label={`Watch ${gameTitle} official trailer`}
         onClick={() => setOpen(true)}
       >
@@ -62,12 +62,12 @@ export function HeroTrailer({ trailerUrl, gameTitle }: HeroTrailerProps) {
           <div className="relative w-full max-w-4xl">
             <iframe
               src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
-              className="aspect-video w-full"
+              className="site-card aspect-video w-full"
               allow="autoplay; encrypted-media"
               allowFullScreen
             />
             <button
-              className="absolute -top-9 right-0 text-sm text-white/80 hover:text-white"
+              className="site-control absolute -top-9 right-0 text-sm text-white/80 hover:text-white"
               onClick={() => setOpen(false)}
             >
               ✕ Close

@@ -16,7 +16,7 @@ function bannerDocument(unit: BannerUnit) {
   };
 
   // Each document has its own atOptions and supports parser-time document.write.
-  return `<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"></head><body style="margin:0;overflow:hidden"><script>atOptions=${JSON.stringify(options)};</script><script src="${adsterraConfig.bannerScriptOrigin}/${unit.key}/invoke.js"></script></body></html>`;
+  return `<!doctype html><html style="background:transparent"><head><meta name="viewport" content="width=device-width, initial-scale=1"></head><body style="margin:0;overflow:hidden;background:transparent"><script>atOptions=${JSON.stringify(options)};</script><script src="${adsterraConfig.bannerScriptOrigin}/${unit.key}/invoke.js"></script></body></html>`;
 }
 
 export function AdSlot({

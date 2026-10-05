@@ -1,108 +1,108 @@
-/* ════════════════════════════════════════════════════════════════════════
- * TACTICAL CONSOLE — default theme preset.
- *
- * Warm light surfaces, monospace data labels, square edges. Quiet,
- * info-dense — the out-of-the-box look that fits most games.
- *
- * Per-theme palette + typography + radius. The per-GAME accent comes from the
- * brand knob in ../../brand.css (--brand-primary); --site-primary derives from
- * it, so accent × theme stay independent. Variable NAMES match every other
- * theme, so swapping themes never touches a component.
- * ════════════════════════════════════════════════════════════════════════ */
-
+/* Warm neutral surfaces share runtime tokens so cards, prose and controls
+ * switch together without rebuilding Tailwind's color utilities. */
+:root,
 .site-theme {
-  /* --- Surfaces ----------------------------------- */
-  --site-surface-lowest: #eeede8; /* footer */
-  --site-surface: #faf9f6; /* page bg */
-  --site-surface-low: #f3f2ed; /* alternating section bg */
-  --site-surface-container: #ffffff; /* card */
-  --site-surface-high: #f5f3ed; /* card hover */
-  --site-surface-highest: #e2e0d8; /* unused tier */
-
-  /* --- Foreground ------------------------------------------------------ */
-  --site-on-surface: #202733; /* text */
-  --site-on-surface-variant: #53606f; /* textDim */
-  --site-outline: #626d7b; /* textMute (mono labels) */
-  --site-outline-variant: #e2e0d8; /* thin 1px rule */
-  --site-outline-strong: #cdc9be; /* 1px rule for stronger separators */
-  --site-text-faint: #667383;
-
-  /* --- Primary: derived from the brand knob (../../brand.css) ---------- */
+  --site-surface-lowest: #e9e5dc;
+  --site-surface: #f2efe8;
+  --site-surface-low: #ece8df;
+  --site-surface-container: #f9f7f1;
+  --site-surface-high: #fdfbf5;
+  --site-surface-highest: #e3ddd1;
+  --site-on-surface: #292a26;
+  --site-on-surface-variant: #62645c;
+  --site-outline: #62645c;
+  --site-outline-variant: #e5dfd3;
+  --site-outline-strong: #dcd6ca;
+  --site-text-faint: #62645c;
+  --site-blue: #245fba;
+  --site-blue-dim: #1c478b;
+  --site-green: #1c7540;
+  --site-green-dim: #e8f4ec;
+  --site-red: #b82d35;
+  --site-red-dim: #fbe9eb;
+  --site-tertiary: var(--site-green);
+  --site-tertiary-container: var(--site-green-dim);
+  --site-on-tertiary: #ffffff;
+  --site-on-tertiary-container: var(--site-on-surface);
+  --site-error: var(--site-red);
+  --site-error-container: var(--site-red-dim);
+  --site-on-error: #ffffff;
   --site-primary: var(--brand-primary);
   --site-primary-dim: var(--brand-primary-dim);
   --site-primary-container: var(--brand-primary);
   --site-on-primary: var(--brand-on-primary);
   --site-on-primary-container: var(--brand-on-primary);
-
-  /* --- Secondary (matches primary by default) -------------------------- */
   --site-secondary: var(--brand-primary);
   --site-secondary-container: var(--brand-primary);
   --site-on-secondary: var(--brand-on-primary);
   --site-on-secondary-container: var(--brand-on-primary);
-
-  /* --- Functional accents (match the game's HUD) ---------------------- */
-  --site-blue: #245fba; /* pick / team / info */
-  --site-blue-dim: #1c478b;
-  --site-green: #1c7540; /* live / buff / selected */
-  --site-green-dim: #e8f4ec;
-  --site-red: #b82d35; /* ban / nerf / CC */
-  --site-red-dim: #fbe9eb;
-
-  /* --- Tertiary remap (kept for Tier-A badge etc.) --------------------- */
-  --site-tertiary: #1c7540;
-  --site-tertiary-container: #e8f4ec;
-  --site-on-tertiary: #ffffff;
-  --site-on-tertiary-container: #202733;
-
-  /* --- Error / negative ------------------------------------------------ */
-  --site-error: #b82d35;
-  --site-error-container: #fbe9eb;
-  --site-on-error: #ffffff;
-
-  /* Corner radius for this theme (square). Also overrides shadcn docs radius. */
-  --radius: 0.5rem;
-
-  background-color: var(--site-surface);
-  color: var(--site-on-surface);
+  --radius: 0.625rem;
+  --site-control-radius: 0.375rem;
+  --site-hover-shadow: 0 8px 24px -12px rgb(68 56 34 / 24%);
   color-scheme: light;
 }
 
-/* Tailwind v4 theme tokens — generates bg-site-*, text-site-*, etc.
- * NOTE: --color-site-primary* are NOT here — they come from ../../brand.css
- * (@theme inline) so the accent honors the per-game brand knob. */
+.dark,
+.dark .site-theme {
+  --site-surface-lowest: #171917;
+  --site-surface: #1d201d;
+  --site-surface-low: #222521;
+  --site-surface-container: #282c27;
+  --site-surface-high: #30352e;
+  --site-surface-highest: #383e35;
+  --site-on-surface: #eeeae1;
+  --site-on-surface-variant: #bebfb3;
+  --site-outline: #a6aa9d;
+  --site-outline-variant: #343a31;
+  --site-outline-strong: #3b4236;
+  --site-text-faint: #a6aa9d;
+  --site-blue: #99bcef;
+  --site-blue-dim: #26374b;
+  --site-green: #9fc296;
+  --site-green-dim: #273b2a;
+  --site-red: #efa9a0;
+  --site-red-dim: #452c29;
+  --site-on-tertiary: #1d201d;
+  --site-on-error: #1d201d;
+  --site-hover-shadow: 0 10px 28px -12px rgb(10 14 8 / 50%);
+  color-scheme: dark;
+}
+
+.site-theme {
+  background-color: var(--site-surface);
+  color: var(--site-on-surface);
+}
+
+@theme inline {
+  --color-site-surface: var(--site-surface);
+  --color-site-surface-lowest: var(--site-surface-lowest);
+  --color-site-surface-low: var(--site-surface-low);
+  --color-site-surface-container: var(--site-surface-container);
+  --color-site-surface-high: var(--site-surface-high);
+  --color-site-surface-highest: var(--site-surface-highest);
+  --color-site-on-surface: var(--site-on-surface);
+  --color-site-on-surface-variant: var(--site-on-surface-variant);
+  --color-site-outline: var(--site-outline);
+  --color-site-outline-variant: var(--site-outline-variant);
+  --color-site-outline-strong: var(--site-outline-strong);
+  --color-site-tertiary: var(--site-tertiary);
+  --color-site-tertiary-container: var(--site-tertiary-container);
+  --color-site-on-tertiary: var(--site-on-tertiary);
+  --color-site-on-tertiary-container: var(--site-on-tertiary-container);
+  --color-site-blue: var(--site-blue);
+  --color-site-green: var(--site-green);
+  --color-site-red: var(--site-red);
+  --color-site-error: var(--site-error);
+  --color-site-error-container: var(--site-error-container);
+  --color-site-on-error: var(--site-on-error);
+}
+
 @theme {
-  --color-site-surface: #faf9f6;
-  --color-site-surface-lowest: #eeede8;
-  --color-site-surface-low: #f3f2ed;
-  --color-site-surface-container: #ffffff;
-  --color-site-surface-high: #f5f3ed;
-  --color-site-surface-highest: #e2e0d8;
-
-  --color-site-on-surface: #202733;
-  --color-site-on-surface-variant: #53606f;
-  --color-site-outline: #626d7b;
-  --color-site-outline-variant: #e2e0d8;
-  --color-site-outline-strong: #cdc9be;
-
-  --color-site-tertiary: #1c7540;
-  --color-site-tertiary-container: #e8f4ec;
-  --color-site-on-tertiary: #ffffff;
-  --color-site-on-tertiary-container: #202733;
-
-  --color-site-blue: #245fba;
-  --color-site-green: #1c7540;
-  --color-site-red: #b82d35;
-
-  --color-site-error: #b82d35;
-  --color-site-error-container: #fbe9eb;
-  --color-site-on-error: #ffffff;
-
   --font-site-display: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
   --font-site-body: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
   --font-site-mono: 'JetBrains Mono', ui-monospace, monospace;
 }
 
-/* --- Typography helpers (scoped to .site-theme to avoid shadcn clashes) - */
 .site-theme .site-display-lg {
   font-family: var(--font-site-display);
   font-size: 72px;
@@ -165,12 +165,6 @@
   text-transform: uppercase;
 }
 
-/* Square edges (no border-radius) on site primitives — remove if your game uses rounded UI. */
-.site-theme .site-square,
-.site-theme .site-square * {
-  border-radius: 0 !important;
-}
-
 @media (max-width: 768px) {
   .site-theme .site-display-lg {
     font-size: 44px;
@@ -178,11 +172,4 @@
   .site-theme .site-headline-lg {
     font-size: 28px;
   }
-}
-
-/* Focus ring — matches primary accent */
-.site-theme a:focus-visible,
-.site-theme button:focus-visible {
-  outline: 1px solid var(--site-primary);
-  outline-offset: 2px;
 }

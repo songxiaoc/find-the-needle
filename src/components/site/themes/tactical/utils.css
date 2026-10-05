@@ -1,7 +1,67 @@
-/* TACTICAL CONSOLE — effect utilities.
- *
- * This theme uses no special effect classes (the look is flat + square, driven
- * entirely by tokens.css). The file exists so every theme bundle has the same
- * three parts (tokens.css / utils.css / fonts.ts) and active-theme.css can
- * import it unconditionally. Add theme-specific utility classes here if needed.
- */
+/* Keep shared UI controls and the document background on the site palette. */
+:root,
+.dark {
+  --background: var(--site-surface);
+  --foreground: var(--site-on-surface);
+  --card: var(--site-surface-container);
+  --card-foreground: var(--site-on-surface);
+  --popover: var(--site-surface-container);
+  --popover-foreground: var(--site-on-surface);
+  --secondary: var(--site-surface-low);
+  --secondary-foreground: var(--site-on-surface);
+  --muted: var(--site-surface-low);
+  --muted-foreground: var(--site-on-surface-variant);
+  --accent: var(--site-surface-high);
+  --accent-foreground: var(--site-on-surface);
+  --border: var(--site-outline-strong);
+  --input: var(--site-outline-strong);
+  --sidebar: var(--site-surface-low);
+  --sidebar-foreground: var(--site-on-surface);
+  --sidebar-border: var(--site-outline-variant);
+}
+
+.site-theme .site-card {
+  border-radius: var(--ui-radius, var(--radius));
+}
+
+.site-theme .site-control,
+.site-theme[data-ui-shape] .ui-shaped:is(a, button):not(.site-card) {
+  border-radius: var(--site-control-radius);
+}
+
+.site-theme .site-interactive-card {
+  transition:
+    background-color var(--ui-motion-duration, 180ms),
+    border-color var(--ui-motion-duration, 180ms),
+    box-shadow var(--ui-motion-duration, 180ms);
+}
+
+@media (hover: hover) {
+  .site-theme .site-interactive-card:hover {
+    background-color: var(--site-surface-high);
+    border-color: color-mix(
+      in srgb,
+      var(--site-primary) 40%,
+      var(--site-outline-variant)
+    );
+    box-shadow: var(--site-hover-shadow);
+  }
+}
+
+@layer base {
+  .site-theme :is(a, button, input, select, summary):focus-visible {
+    outline: 2px solid var(--site-primary);
+    outline-offset: 3px;
+  }
+}
+
+.site-theme .prose :not(pre) > code,
+.site-theme .semantic-value {
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-theme .site-interactive-card {
+    transition: none;
+  }
+}

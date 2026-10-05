@@ -122,7 +122,7 @@ export function OnThisPage({
   return (
     <>
       {/* Mobile / tablet: collapsible disclosure in normal flow. */}
-      <details className="border-site-outline-variant bg-site-surface-container mb-8 border p-4 xl:hidden">
+      <details className="site-card border-site-outline-variant bg-site-surface-container mb-8 border p-4 xl:hidden">
         <summary className="cursor-pointer list-none">{heading}</summary>
         <div className="mt-3">{list}</div>
       </details>

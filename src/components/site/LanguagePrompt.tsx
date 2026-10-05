@@ -62,13 +62,13 @@ export function LanguagePrompt({ locale }: { locale: string }) {
   return (
     <aside
       aria-live="polite"
-      className="border-site-outline-strong bg-site-surface-container fixed right-4 bottom-4 z-[70] w-[min(360px,calc(100vw-2rem))] border p-5 shadow-2xl"
+      className="site-card border-site-outline-strong bg-site-surface-container fixed right-4 bottom-4 z-[70] w-[min(360px,calc(100vw-2rem))] border p-5 shadow-2xl"
     >
       <button
         type="button"
         aria-label={t('close')}
         onClick={dismiss}
-        className="text-site-outline hover:text-site-on-surface absolute top-3 right-3 h-8 w-8 text-xl"
+        className="site-control text-site-outline hover:text-site-on-surface absolute top-3 right-3 h-8 w-8 text-xl"
       >
         ×
       </button>
@@ -83,14 +83,14 @@ export function LanguagePrompt({ locale }: { locale: string }) {
           href={pathname}
           locale={suggestion}
           onClick={() => setSuggestion(null)}
-          className="bg-site-primary text-site-on-primary px-4 py-2 text-sm font-semibold"
+          className="site-control bg-site-primary text-site-on-primary px-4 py-2 text-sm font-semibold"
         >
           {localeNames[suggestion]}
         </LocaleLink>
         <button
           type="button"
           onClick={dismiss}
-          className="text-site-on-surface-variant hover:text-site-primary px-2 py-2 text-sm"
+          className="site-control text-site-on-surface-variant hover:text-site-primary px-2 py-2 text-sm"
         >
           {t('dismiss')}
         </button>

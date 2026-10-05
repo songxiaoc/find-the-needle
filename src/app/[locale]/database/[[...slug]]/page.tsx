@@ -173,7 +173,7 @@ export default async function DatabasePage({
                   key={category.id}
                   href={category.route}
                   aria-current={kind?.id === category.id ? 'page' : undefined}
-                  className="border-site-outline-strong text-site-primary border px-4 py-3 text-sm hover:underline"
+                  className="site-control border-site-outline-strong text-site-primary border px-4 py-3 text-sm hover:underline"
                 >
                   {category.label} ({getEntities(category.id, locale).length})
                 </Link>
@@ -189,7 +189,7 @@ export default async function DatabasePage({
                   return (
                     <section
                       key={category.id}
-                      className="border-site-outline-strong bg-site-surface-container min-w-0 border p-6"
+                      className="site-card site-interactive-card border-site-outline-strong bg-site-surface-container min-w-0 overflow-hidden border p-6"
                     >
                       {cover && (
                         <Link

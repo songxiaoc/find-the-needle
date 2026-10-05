@@ -8,8 +8,8 @@
   "categoryCard": "outlined",
   "articleLayout": "technical-document",
   "density": "comfortable",
-  "shape": "square",
-  "motion": "minimal",
+  "shape": "soft",
+  "motion": "subtle",
   "customBlocks": [],
   "rationale": "TomeWiki reading layouts with a warm hay accent and official warehouse gameplay.",
   "homepage": {

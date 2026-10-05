@@ -182,7 +182,7 @@ function DatabaseStatsBlock({
         sub={block.sub}
         rightSlot={<HubLink href={'/database'} />}
       />
-      <dl className="border-site-outline-strong bg-site-surface grid border sm:grid-cols-2 lg:grid-cols-[1.35fr_repeat(3,minmax(0,0.75fr))]">
+      <dl className="site-card border-site-outline-strong bg-site-surface grid border sm:grid-cols-2 lg:grid-cols-[1.35fr_repeat(3,minmax(0,0.75fr))]">
         <div className="border-site-outline-variant flex min-h-40 flex-col justify-between border-b p-6 sm:col-span-2 md:p-8 lg:col-span-1 lg:border-r lg:border-b-0">
           <dt className="font-site-mono text-site-on-surface-variant text-[10px] font-semibold tracking-[0.16em] uppercase">
             Published records
@@ -266,11 +266,11 @@ function EntityIndexBlock({
         sub={block.sub}
         rightSlot={<HubLink href={'/database'} />}
       />
-      <div className="border-site-outline-strong bg-site-outline-strong border">
+      <div className="grid gap-5">
         {ctx.entityKinds.map(({ kind, entities }) => (
           <article
             key={kind.id}
-            className="border-site-outline-strong bg-site-outline-strong grid gap-px border-b last:border-b-0 lg:grid-cols-[minmax(240px,0.72fr)_minmax(0,1.28fr)]"
+            className="site-card border-site-outline-strong bg-site-outline-strong grid gap-px overflow-hidden border lg:grid-cols-[minmax(240px,0.72fr)_minmax(0,1.28fr)]"
           >
             <div className="bg-site-surface-container flex flex-col p-6 md:p-8">
               {getEntityCover(kind, entities) && (
@@ -354,12 +354,13 @@ function SectionFrame({
   const surface = {
     plain: '',
     panel:
-      'ui-shaped border border-site-outline-strong bg-site-surface-container p-5 sm:p-7',
+      'site-card ui-shaped border border-site-outline-strong bg-site-surface-container p-5 sm:p-7',
     tinted:
-      'ui-shaped border border-site-primary/30 bg-site-primary/5 p-5 sm:p-7',
+      'site-card ui-shaped border border-site-primary/30 bg-site-primary/5 p-5 sm:p-7',
     'contrast-band':
-      'ui-shaped border border-site-outline-strong bg-site-surface-high p-5 sm:p-8',
-    framed: 'ui-shaped border-2 border-site-outline-strong p-5 sm:p-7',
+      'site-card ui-shaped border border-site-outline-strong bg-site-surface-high p-5 sm:p-8',
+    framed:
+      'site-card ui-shaped border-2 border-site-outline-strong p-5 sm:p-7',
   }[recipe.section];
   return (
     <section
@@ -509,7 +510,7 @@ function HeroBlock({
 
   if (style === 'gameplay-panel' && gameConfig.gameplayImage) {
     return (
-      <section className="border-site-outline-strong bg-site-outline-strong grid gap-px overflow-hidden border lg:grid-cols-[0.9fr_1.1fr]">
+      <section className="site-card border-site-outline-strong bg-site-outline-strong grid gap-px overflow-hidden border lg:grid-cols-[0.9fr_1.1fr]">
         <div className="px-grid-bg bg-site-surface flex min-h-[480px] flex-col justify-center p-7 md:min-h-[560px] md:p-12 lg:p-16">
           {eyebrow}
           <h1 className="site-display-lg text-site-on-surface max-w-[14ch]">
@@ -554,7 +555,7 @@ function HeroBlock({
             <div className="mt-6 flex flex-wrap gap-2.5">{chips}</div>
             <Ctas ctas={block.ctas} />
           </div>
-          <div className="ui-shaped border-site-outline-strong bg-site-surface-container overflow-hidden border">
+          <div className="site-card ui-shaped border-site-outline-strong bg-site-surface-container overflow-hidden border">
             <img
               src={gameConfig.coverImage}
               alt={`${gameConfig.gameFullName} key art`}
@@ -688,7 +689,7 @@ function StartCard({
     <Link
       href={c.href}
       draggable={false}
-      className={`ui-shaped border-site-outline-strong bg-site-surface-container text-site-on-surface hover:border-site-primary flex border no-underline transition-colors ${featured ? 'flex-col justify-between p-7 lg:min-h-[320px] lg:p-9' : compact ? 'min-h-11 items-center gap-4 p-4' : `min-h-[240px] flex-col p-6 ${rail ? 'w-[88vw] shrink-0 snap-start sm:w-[360px]' : ''}`}`}
+      className={`site-card site-interactive-card ui-shaped border-site-outline-strong bg-site-surface-container text-site-on-surface hover:border-site-primary flex border no-underline transition-colors ${featured ? 'flex-col justify-between p-7 lg:min-h-[320px] lg:p-9' : compact ? 'min-h-11 items-center gap-4 p-4' : `min-h-[240px] flex-col p-6 ${rail ? 'w-[88vw] shrink-0 snap-start sm:w-[360px]' : ''}`}`}
     >
       <div className={compact ? 'min-w-0 flex-1' : 'w-full'}>
         <div className="mb-4 flex items-center justify-between gap-3">
@@ -742,7 +743,7 @@ function CodeCardsBlock({
         {block.codes.map((c) => (
           <div
             key={c.code}
-            className="ui-shaped border-site-outline-strong bg-site-surface-container border p-5"
+            className="site-card ui-shaped border-site-outline-strong bg-site-surface-container border p-5"
           >
             <div className="mb-3 flex items-center justify-between gap-2">
               <code
@@ -792,7 +793,7 @@ function TierGridBlock({
         sub={block.description}
         rightSlot={<HubLink href={block.href} />}
       />
-      <div className="border-site-outline-strong bg-site-surface-container border">
+      <div className="site-card border-site-outline-strong bg-site-surface-container border">
         {block.rows.map((r, i) => (
           <div
             key={`${r.tier}-${r.label}`}
@@ -859,7 +860,7 @@ function StepByStepBlock({
             ? 'grid gap-3 md:grid-cols-2 xl:grid-cols-4'
             : checklist
               ? 'grid gap-3 sm:grid-cols-2 xl:grid-cols-3'
-              : 'ui-shaped border-site-outline-strong bg-site-surface-container overflow-hidden border'
+              : 'site-card ui-shaped border-site-outline-strong bg-site-surface-container overflow-hidden border'
         }
       >
         {block.steps.map((s, i) => (
@@ -867,7 +868,7 @@ function StepByStepBlock({
             key={i}
             className={
               horizontal || checklist
-                ? 'ui-shaped border-site-outline-strong bg-site-surface-container border p-5'
+                ? 'site-card ui-shaped border-site-outline-strong bg-site-surface-container border p-5'
                 : 'grid grid-cols-[44px_1fr] items-start gap-4 px-5 py-4'
             }
             style={
@@ -951,7 +952,7 @@ function CardListBlock({
               className={
                 rows
                   ? 'grid gap-2 py-4 sm:grid-cols-[minmax(180px,0.4fr)_1fr] sm:items-center'
-                  : `ui-shaped border-site-outline-strong bg-site-surface-container border p-5 ${bentoSpan}`
+                  : `site-card ui-shaped border-site-outline-strong bg-site-surface-container border p-5 ${bentoSpan}`
               }
             >
               <p
@@ -1005,7 +1006,7 @@ function AboutBlock({
           ))}
           {block.cta ? <Ctas ctas={[block.cta]} /> : null}
         </div>
-        <div className="ui-shaped border-site-outline-strong bg-site-surface-container border p-6">
+        <div className="site-card ui-shaped border-site-outline-strong bg-site-surface-container border p-6">
           <p
             className="text-site-primary mb-4"
             style={{
@@ -1059,7 +1060,7 @@ function FinalCtaBlock({
   block: Extract<HomeBlock, { type: 'final-cta' }>;
 }) {
   return (
-    <section className="ui-shaped border-site-outline-strong bg-site-surface-container border p-10 text-center">
+    <section className="site-card ui-shaped border-site-outline-strong bg-site-surface-container border p-10 text-center">
       <h2 className="site-headline-lg text-site-on-surface">{block.title}</h2>
       {block.description ? (
         <p className="site-body-lg text-site-on-surface-variant mx-auto mt-4 max-w-2xl">
@@ -1106,12 +1107,12 @@ function LatestGuidesBlock({
         }
         rightSlot={<HubLink href={'/guides'} />}
       />
-      <div className="border-site-outline-strong bg-site-surface-container border">
+      <div className="site-card border-site-outline-strong bg-site-surface-container border">
         {latestGuides.map((g, i) => (
           <Link
             key={g.slug}
             href={g.href}
-            className="text-site-on-surface hover:bg-site-surface-high grid grid-cols-[40px_1fr_24px] items-center gap-4 px-5 py-5 no-underline sm:grid-cols-[60px_1fr_200px_40px] sm:gap-5 sm:px-6"
+            className="text-site-on-surface hover:bg-site-surface-high grid grid-cols-[40px_1fr_24px] items-center gap-4 px-5 py-5 no-underline first:rounded-t-[var(--ui-radius)] last:rounded-b-[var(--ui-radius)] sm:grid-cols-[60px_1fr_200px_40px] sm:gap-5 sm:px-6"
             style={{
               borderTop:
                 i > 0 ? '1px solid var(--site-outline-variant)' : 'none',
@@ -1166,7 +1167,7 @@ function LatestGuidesBlock({
         {totalGuides > latestGuides.length && (
           <Link
             href="/guides"
-            className="text-site-primary hover:bg-site-surface-high flex items-center justify-between px-6 py-5 no-underline"
+            className="text-site-primary hover:bg-site-surface-high flex items-center justify-between px-6 py-5 no-underline last:rounded-b-[var(--ui-radius)]"
             style={{ borderTop: '1px solid var(--site-outline-variant)' }}
           >
             <span

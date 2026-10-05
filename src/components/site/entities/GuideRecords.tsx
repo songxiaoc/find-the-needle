@@ -17,7 +17,7 @@ export function GuideRecords({
   const copy = getDiscoveryCopy(locale);
   return (
     <nav
-      className="border-site-outline-strong mt-10 border p-5"
+      className="site-card border-site-outline-strong mt-10 border p-5"
       aria-label={copy.relatedRecords}
     >
       <h2 className="site-headline-lg">{copy.relatedRecords}</h2>

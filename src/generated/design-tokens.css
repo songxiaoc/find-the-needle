@@ -2,11 +2,11 @@
 .site-theme {
   --generated-ui-archetype: "tactical";
   --generated-ui-density: "comfortable";
-  --generated-ui-shape: "square";
-  --generated-ui-motion: "minimal";
-  --ui-radius: 0px;
+  --generated-ui-shape: "soft";
+  --generated-ui-motion: "subtle";
+  --ui-radius: 10px;
   --ui-section-gap: 4rem;
-  --ui-motion-duration: 0ms;
+  --ui-motion-duration: 180ms;
 }
 
 .site-theme[data-ui-shape='square'] .ui-shaped { border-radius: 0; }

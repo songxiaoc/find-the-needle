@@ -105,7 +105,7 @@ export default async function ToolsPage({
             {FACTORY_TOOL_IDS.map((tool) => (
               <article
                 key={tool}
-                className="border-site-outline-strong bg-site-surface-container flex flex-col border p-6"
+                className="site-card site-interactive-card border-site-outline-strong bg-site-surface-container flex flex-col border p-6"
               >
                 <h2 className="site-headline-lg">
                   <Link

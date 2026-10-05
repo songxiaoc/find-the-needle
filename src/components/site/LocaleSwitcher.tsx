@@ -33,7 +33,7 @@ export function LocaleSwitcher() {
             {currentLocale}
           </span>
         </summary>
-        <div className="border-site-outline bg-site-surface absolute top-full right-0 z-50 mt-1 min-w-[120px] border py-1 shadow-lg">
+        <div className="site-card border-site-outline-strong bg-site-surface absolute top-full right-0 z-50 mt-1 min-w-[120px] overflow-hidden border py-1 shadow-lg">
           {locales.map((l) => (
             <LocaleLink
               key={l}

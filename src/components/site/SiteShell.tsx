@@ -21,13 +21,16 @@ import { NativeAd } from './NativeAd';
 import { activeNavHref } from './navActive';
 import { PatchBar } from './PatchBar';
 import { SocialLinks } from './SocialLinks';
+import { ThemeToggle } from './ThemeToggle';
 
 function BrandMark({
   width = 230,
   height = 54,
+  compact = false,
 }: {
   width?: number;
   height?: number;
+  compact?: boolean;
 }) {
   return (
     <img
@@ -35,7 +38,7 @@ function BrandMark({
       alt={gameConfig.siteName}
       width={width}
       height={height}
-      className="site-brandmark block h-auto w-[160px] shrink-0 md:w-[230px]"
+      className={`site-brandmark block h-auto shrink-0 ${compact ? 'w-[124px] min-[375px]:w-[160px] md:w-[230px]' : 'w-[160px] md:w-[230px]'}`}
     />
   );
 }
@@ -62,14 +65,14 @@ function SiteHeader({
   return (
     <header className="border-site-outline-variant bg-site-surface border-b">
       <nav
-        className="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-4 md:px-14"
+        className="mx-auto flex max-w-[1440px] items-center justify-between gap-3 px-4 py-4 md:px-14"
         aria-label={copy.navigation.primary}
       >
         <Link
           href="/"
           className="text-site-on-surface flex items-center no-underline"
         >
-          <BrandMark />
+          <BrandMark compact />
         </Link>
         <div className="hidden items-center gap-5 xl:flex">
           {(() => {
@@ -94,14 +97,15 @@ function SiteHeader({
             });
           })()}
         </div>
-        {/* Language switcher — auto-shown when locales.length > 1 (no-op for en-only sites).
-            Path-aware (next-intl): switching locale stays on the current page. */}
-        {locales.length > 1 && <LocaleSwitcher />}
-        <MobileNav
-          activeHref={activeHref}
-          navItems={navItems}
-          categories={categories}
-        />
+        <div className="flex shrink-0 items-center gap-1 md:gap-2">
+          <ThemeToggle locale={locale} />
+          {locales.length > 1 && <LocaleSwitcher />}
+          <MobileNav
+            activeHref={activeHref}
+            navItems={navItems}
+            categories={categories}
+          />
+        </div>
       </nav>
     </header>
   );

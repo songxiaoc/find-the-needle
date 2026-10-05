@@ -202,7 +202,7 @@ export function Hero({
   secondaryCta?: { label: string; href: string };
 }) {
   return (
-    <div className="border-site-outline-strong bg-site-surface-container border p-6 md:p-12">
+    <div className="site-card border-site-outline-strong bg-site-surface-container border p-6 md:p-12">
       <Chip tone="amber">{eyebrow}</Chip>
       <h1 className="site-display-lg text-site-on-surface mt-5">{title}</h1>
       <p className="site-body-lg mt-6 max-w-[60ch]">{subtitle}</p>
@@ -235,7 +235,7 @@ export function CtaPrimary({
   return (
     <Link
       href={href}
-      className="ui-shaped bg-site-primary text-site-on-primary inline-flex items-center justify-center gap-2.5 px-5 py-3.5 transition-[filter] hover:brightness-110"
+      className="site-control ui-shaped bg-site-primary text-site-on-primary inline-flex items-center justify-center gap-2.5 px-5 py-3.5 transition-[filter] hover:brightness-110"
       style={{
         fontFamily: 'var(--font-site-display)',
         fontSize: 14,
@@ -264,7 +264,7 @@ export function CtaSecondary({
   return (
     <Link
       href={href}
-      className="ui-shaped border-site-outline-strong text-site-on-surface hover:text-site-primary inline-flex items-center justify-center border px-5 py-3.5 transition-colors"
+      className="site-control ui-shaped border-site-outline-strong text-site-on-surface hover:text-site-primary inline-flex items-center justify-center border px-5 py-3.5 transition-colors"
       style={{
         fontFamily: 'var(--font-site-display)',
         fontSize: 14,
@@ -350,7 +350,7 @@ export function GuideCard({
   return (
     <Link
       href={href}
-      className="group border-site-outline-strong bg-site-surface-container text-site-on-surface hover:border-site-primary flex h-full min-h-[260px] flex-col border p-6 no-underline transition-colors"
+      className="site-card site-interactive-card group border-site-outline-strong bg-site-surface-container text-site-on-surface hover:border-site-primary flex h-full min-h-[260px] flex-col border p-6 no-underline transition-colors"
     >
       <div className="mb-7 flex items-center justify-between">
         <div className="flex items-center gap-3">
@@ -464,7 +464,7 @@ export function QuickStartCard({
   );
   if (!href) {
     return (
-      <div className="border-site-outline-strong bg-site-surface-container border p-5">
+      <div className="site-card border-site-outline-strong bg-site-surface-container border p-5">
         {inner}
       </div>
     );
@@ -472,7 +472,7 @@ export function QuickStartCard({
   return (
     <Link
       href={href}
-      className="border-site-outline-strong bg-site-surface-container hover:border-site-primary block border p-5 transition-colors"
+      className="site-card site-interactive-card border-site-outline-strong bg-site-surface-container hover:border-site-primary block border p-5 transition-colors"
     >
       {inner}
     </Link>
@@ -486,7 +486,7 @@ export function QuickStartCard({
 
 export function QuickAnswer({ children }: { children: ReactNode }) {
   return (
-    <div className="border-site-outline-strong border-l-site-primary bg-site-surface-container border border-l-2 p-5">
+    <div className="site-card border-site-outline-strong border-l-site-primary bg-site-surface-container border border-l-2 p-5">
       <p
         className="text-site-primary"
         style={{
@@ -794,7 +794,7 @@ export function FaqAccordion({ items }: { items: FaqItem[] }) {
       <Accordion.Root
         type="single"
         collapsible
-        className="divide-site-outline-variant border-site-outline-strong bg-site-surface-container divide-y border"
+        className="site-card divide-site-outline-variant border-site-outline-strong bg-site-surface-container divide-y border"
       >
         {items.map((item, i) => (
           <Accordion.Item value={`item-${i}`} key={i}>

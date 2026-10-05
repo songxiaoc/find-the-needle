@@ -6,9 +6,8 @@
  * ║  The bundled skill writes both files when you pick a theme.            ║
  * ╚══════════════════════════════════════════════════════════════════════╝
  *
- * Build-time selection — Tailwind @theme generates utilities at build, so a
- * theme is chosen here, not toggled at runtime. The per-game accent is set
- * separately in ../../components/site/brand.css.
+ * The preset is selected at build time. Its shared color tokens support the
+ * runtime light/dark switch; the per-game accent lives in brand.css.
  */
 @import '../../components/site/themes/tactical/tokens.css';
 @import '../../components/site/themes/tactical/utils.css';

@@ -82,7 +82,7 @@ export function EntityCatalog({
 
   return (
     <div>
-      <div className="border-site-outline-strong bg-site-surface-container mb-8 grid gap-5 border p-5 md:grid-cols-[repeat(auto-fit,minmax(180px,1fr))]">
+      <div className="site-card border-site-outline-strong bg-site-surface-container mb-8 grid gap-5 border p-5 md:grid-cols-[repeat(auto-fit,minmax(180px,1fr))]">
         <label className="text-site-on-surface-variant flex flex-col gap-2 text-sm">
           <span className="font-site-mono text-[10px] font-semibold tracking-[0.16em] uppercase">
             {copy.search}
@@ -92,7 +92,7 @@ export function EntityCatalog({
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             placeholder={copy.searchPlaceholder}
-            className="border-site-outline-strong bg-site-surface text-site-on-surface focus-visible:outline-site-primary min-h-11 w-full border px-3 text-sm focus-visible:outline-2 focus-visible:outline-offset-2"
+            className="site-control border-site-outline-strong bg-site-surface text-site-on-surface focus-visible:outline-site-primary min-h-11 w-full border px-3 text-sm focus-visible:outline-2 focus-visible:outline-offset-2"
           />
         </label>
         {kind.facets.map((facet) => (
@@ -111,7 +111,7 @@ export function EntityCatalog({
                   [facet.field]: event.target.value,
                 }))
               }
-              className="border-site-outline-strong bg-site-surface text-site-on-surface focus-visible:outline-site-primary min-h-11 border px-3 text-sm focus-visible:outline-2 focus-visible:outline-offset-2"
+              className="site-control border-site-outline-strong bg-site-surface text-site-on-surface focus-visible:outline-site-primary min-h-11 border px-3 text-sm focus-visible:outline-2 focus-visible:outline-offset-2"
             >
               <option value="">{copy.all}</option>
               {(facetOptions[facet.field] ?? []).map((option) => (
@@ -130,7 +130,7 @@ export function EntityCatalog({
           <select
             value={sort}
             onChange={(event) => setSort(event.target.value)}
-            className="border-site-outline-strong bg-site-surface text-site-on-surface focus-visible:outline-site-primary min-h-11 border px-3 text-sm focus-visible:outline-2 focus-visible:outline-offset-2"
+            className="site-control border-site-outline-strong bg-site-surface text-site-on-surface focus-visible:outline-site-primary min-h-11 border px-3 text-sm focus-visible:outline-2 focus-visible:outline-offset-2"
           >
             <option value="name-asc">{copy.ascending}</option>
             <option value="name-desc">{copy.descending}</option>
@@ -152,7 +152,7 @@ export function EntityCatalog({
           <button
             type="button"
             onClick={reset}
-            className="font-site-mono text-site-primary focus-visible:outline-site-primary text-[10px] font-semibold tracking-[0.14em] uppercase underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
+            className="site-control font-site-mono text-site-primary focus-visible:outline-site-primary text-[10px] font-semibold tracking-[0.14em] uppercase underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
           >
             {copy.clear}
           </button>
@@ -160,11 +160,11 @@ export function EntityCatalog({
       </div>
 
       {results.length > 0 ? (
-        <div className="border-site-outline-strong bg-site-outline-strong grid gap-px border md:grid-cols-2">
+        <div className="grid gap-5 md:grid-cols-2">
           {results.map((entity) => (
             <article
               key={entity.id}
-              className="bg-site-surface-container flex min-h-56 min-w-0 flex-col"
+              className="site-card site-interactive-card border-site-outline-strong bg-site-surface-container flex min-h-56 min-w-0 flex-col overflow-hidden border"
             >
               {entity.image && entity.imageAlt && (
                 <Link
@@ -220,7 +220,7 @@ export function EntityCatalog({
           ))}
         </div>
       ) : (
-        <section className="border-site-outline-strong bg-site-surface-container border px-6 py-12 text-center">
+        <section className="site-card border-site-outline-strong bg-site-surface-container border px-6 py-12 text-center">
           <h2 className="site-headline-lg text-site-on-surface">
             {copy.noMatches}
           </h2>
@@ -230,7 +230,7 @@ export function EntityCatalog({
           <button
             type="button"
             onClick={reset}
-            className="border-site-primary text-site-primary focus-visible:outline-site-primary mt-6 min-h-11 border px-5 text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2"
+            className="site-control border-site-primary text-site-primary focus-visible:outline-site-primary mt-6 min-h-11 border px-5 text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2"
           >
             {copy.reset}
           </button>

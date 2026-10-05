@@ -14,14 +14,27 @@
  * accents (it's the text/icon color that sits ON the brand color).
  */
 :root {
-  --brand-primary: #936000;
-  --brand-primary-dim: #704900;
-  --brand-on-primary: #ffffff;
+  --brand-accent: #875800;
+  --brand-accent-dim: #704900;
+  --brand-ink: #ffffff;
+  --brand-primary: var(--brand-accent);
+  --brand-primary-dim: var(--brand-accent-dim);
+  --brand-on-primary: var(--brand-ink);
+}
+
+.dark {
+  --brand-accent: #d9ac56;
+  --brand-accent-dim: #bd9140;
+  --brand-ink: #211d15;
 }
 
 /* The transparent wordmark was drawn for dark backgrounds. */
 .site-brandmark {
   filter: brightness(0.18);
+}
+
+.dark .site-brandmark {
+  filter: none;
 }
 
 /* Map the brand knob into the Tailwind color utilities. `inline` lets the

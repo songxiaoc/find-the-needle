@@ -37,7 +37,7 @@ export function WikiSidebar({
       {categories.length > 0 && (
         <nav
           aria-label={copy.ui.wikiNavigation}
-          className="border-site-outline-strong bg-site-surface-container border"
+          className="site-card border-site-outline-strong bg-site-surface-container border"
         >
           <p
             className="border-site-outline-variant text-site-outline border-b px-4 py-3"
