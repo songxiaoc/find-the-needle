@@ -13,6 +13,7 @@
 @import '../../generated/design-tokens.css';
 @import '../../components/site/semantic.css';
 @import '../../components/site/prose.css';
+@import '../../components/site/home.css';
 
 @custom-variant dark (&:is(.dark *));
 

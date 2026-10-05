@@ -266,43 +266,37 @@ function EntityIndexBlock({
         sub={block.sub}
         rightSlot={<HubLink href={'/database'} />}
       />
-      <div className="grid gap-5">
+      <div className="grid items-start gap-5 md:grid-cols-2 xl:grid-cols-3">
         {ctx.entityKinds.map(({ kind, entities }) => (
           <article
             key={kind.id}
-            className="site-card border-site-outline-strong bg-site-outline-strong grid gap-px overflow-hidden border lg:grid-cols-[minmax(240px,0.72fr)_minmax(0,1.28fr)]"
+            className="site-card border-site-outline-strong bg-site-surface-container flex min-w-0 flex-col overflow-hidden border"
           >
-            <div className="bg-site-surface-container flex flex-col p-6 md:p-8">
-              {getEntityCover(kind, entities) && (
-                <Link
-                  href={kind.route}
-                  className="focus-visible:outline-site-primary -mx-6 -mt-6 mb-6 block focus-visible:outline-2 focus-visible:outline-offset-[-2px] md:-mx-8 md:-mt-8"
-                >
-                  <EntityImage
-                    entity={getEntityCover(kind, entities)!}
-                    preview
-                    sizes="(max-width: 1023px) calc(100vw - 48px), 480px"
-                  />
-                </Link>
-              )}
+            {getEntityCover(kind, entities) && (
+              <Link
+                href={kind.route}
+                className="focus-visible:outline-site-primary block focus-visible:outline-2 focus-visible:outline-offset-[-2px]"
+              >
+                <EntityImage
+                  entity={getEntityCover(kind, entities)!}
+                  preview
+                  sizes="(max-width: 767px) calc(100vw - 48px), (max-width: 1023px) calc((100vw - 132px) / 2), (max-width: 1279px) calc((100vw - 492px) / 2), (max-width: 1439px) calc((100vw - 512px) / 3), 310px"
+                />
+              </Link>
+            )}
+            <div className="p-5">
               <p className="font-site-mono text-site-primary text-[10px] font-semibold tracking-[0.16em] uppercase">
                 {entities.length} {copy.records}
               </p>
-              <h3 className="site-headline-lg text-site-on-surface mt-3">
+              <h3 className="site-headline-md text-site-on-surface mt-3 [overflow-wrap:anywhere] hyphens-auto">
                 {kind.label}
               </h3>
               <p className="text-site-on-surface-variant mt-3 max-w-[52ch] text-sm leading-6">
                 {kind.description}
               </p>
-              <Link
-                href={kind.route}
-                className="font-site-mono text-site-primary focus-visible:outline-site-primary mt-6 w-fit text-[10px] font-semibold tracking-[0.14em] uppercase focus-visible:outline-2 focus-visible:outline-offset-4 lg:mt-auto lg:pt-8"
-              >
-                {copy.browse} {kind.label} →
-              </Link>
             </div>
 
-            <ol className="bg-site-surface">
+            <ol className="border-site-outline-variant border-t">
               {entities.slice(0, previewLimit).map((entity, index) => (
                 <li
                   key={entity.id}
@@ -310,33 +304,43 @@ function EntityIndexBlock({
                 >
                   <Link
                     href={entity.href}
-                    className="focus-visible:outline-site-primary group bg-site-surface hover:bg-site-surface-high grid min-h-24 gap-4 px-5 py-4 transition-colors focus-visible:outline-2 focus-visible:outline-offset-[-2px] sm:grid-cols-[2rem_minmax(0,1fr)_auto] sm:items-center"
+                    className="focus-visible:outline-site-primary group hover:bg-site-surface-high grid grid-cols-[1.25rem_minmax(0,1fr)] gap-3 px-5 py-4 transition-colors focus-visible:outline-2 focus-visible:outline-offset-[-2px]"
                   >
                     <span className="font-site-mono text-site-outline text-xs tabular-nums">
                       {String(index + 1).padStart(2, '0')}
                     </span>
                     <span className="min-w-0">
-                      <strong className="text-site-on-surface group-hover:text-site-primary block text-base font-semibold transition-colors">
+                      <strong className="text-site-on-surface group-hover:text-site-primary block text-base font-semibold [overflow-wrap:anywhere] transition-colors">
                         {entity.name}
                       </strong>
-                      <span className="text-site-on-surface-variant mt-1 block truncate text-sm">
+                      <span className="text-site-on-surface-variant mt-1 line-clamp-2 text-sm leading-6">
                         {entity.summary}
                       </span>
-                    </span>
-                    <span className="flex flex-wrap items-center gap-2 sm:justify-end">
-                      {kind.cardFields.slice(0, 2).map((fieldId) => (
-                        <EntityFieldValue
-                          key={fieldId}
-                          kind={kind}
-                          fieldId={fieldId}
-                          value={entity.data[fieldId]}
-                        />
-                      ))}
+                      <span className="text-site-outline mt-2 flex flex-wrap gap-x-3 gap-y-1 text-xs leading-5">
+                        {kind.cardFields.slice(0, 2).map((fieldId) => (
+                          <span
+                            key={fieldId}
+                            className="min-w-0 [overflow-wrap:anywhere]"
+                          >
+                            <EntityFieldValue
+                              kind={kind}
+                              fieldId={fieldId}
+                              value={entity.data[fieldId]}
+                            />
+                          </span>
+                        ))}
+                      </span>
                     </span>
                   </Link>
                 </li>
               ))}
             </ol>
+            <Link
+              href={kind.route}
+              className="font-site-mono border-site-outline-variant text-site-primary hover:bg-site-surface-high focus-visible:outline-site-primary border-t px-5 py-4 text-[10px] leading-5 font-semibold tracking-[0.1em] uppercase focus-visible:outline-2 focus-visible:outline-offset-[-2px]"
+            >
+              {copy.browse} {kind.label} →
+            </Link>
           </article>
         ))}
       </div>
@@ -510,31 +514,30 @@ function HeroBlock({
 
   if (style === 'gameplay-panel' && gameConfig.gameplayImage) {
     return (
-      <section className="site-card border-site-outline-strong bg-site-outline-strong grid gap-px overflow-hidden border lg:grid-cols-[0.9fr_1.1fr]">
-        <div className="px-grid-bg bg-site-surface flex min-h-[480px] flex-col justify-center p-7 md:min-h-[560px] md:p-12 lg:p-16">
+      <section className="home-gameplay-hero site-card border-site-outline-strong bg-site-surface relative isolate overflow-hidden border">
+        <div
+          aria-hidden="true"
+          className="home-gameplay-hero__media pointer-events-none absolute inset-0"
+        >
+          <img
+            src={gameConfig.gameplayImage}
+            alt=""
+            className="absolute inset-0 h-full w-full object-cover object-right"
+            width={1920}
+            height={1080}
+          />
+        </div>
+        <div className="relative z-10 flex flex-col justify-center p-7 md:min-h-[520px] md:p-12 lg:p-16">
           {eyebrow}
           <h1 className="site-display-lg text-site-on-surface max-w-[14ch]">
             {block.title}
           </h1>
-          <p className="site-body-lg mt-7 max-w-[52ch]">{block.description}</p>
+          <p className="site-body-lg mt-7 max-w-[48ch]">{block.description}</p>
           <div className="mt-6 flex flex-wrap gap-2.5">{chips}</div>
           <Ctas ctas={block.ctas} />
-          <p className="site-mono text-site-primary mt-10 border-t border-[var(--site-outline-strong)] pt-4">
+          <p className="site-mono text-site-primary mt-10 max-w-xl border-t border-[var(--site-outline-strong)] pt-4">
             {t('comingQ4')}
           </p>
-        </div>
-        <div className="bg-site-surface-container relative min-h-[320px] overflow-hidden lg:min-h-0">
-          <img
-            src={gameConfig.gameplayImage}
-            alt={t('gameplayImageAlt')}
-            className="absolute inset-0 h-full w-full object-cover"
-            width={1920}
-            height={1080}
-          />
-          <div
-            aria-hidden
-            className="absolute inset-0 bg-[linear-gradient(180deg,transparent_55%,color-mix(in_srgb,var(--site-surface)_78%,transparent)_100%)]"
-          />
         </div>
       </section>
     );

@@ -1,0 +1,23 @@
+.home-gameplay-hero {
+  --hero-image-opacity: 0.28;
+  --hero-image-mask: linear-gradient(90deg, transparent, #000 100%);
+}
+
+.dark .home-gameplay-hero {
+  --hero-image-opacity: 0.48;
+}
+
+.home-gameplay-hero__media {
+  opacity: var(--hero-image-opacity);
+  mask-image: var(--hero-image-mask);
+}
+
+@media (max-width: 767px) {
+  .home-gameplay-hero {
+    --hero-image-opacity: 0.16;
+  }
+
+  .dark .home-gameplay-hero {
+    --hero-image-opacity: 0.28;
+  }
+}
