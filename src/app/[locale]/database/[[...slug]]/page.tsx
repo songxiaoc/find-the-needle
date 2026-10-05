@@ -12,7 +12,7 @@ import { getDiscoveryCopy } from '@/content/discovery-copy';
 import { setRequestLocale } from 'next-intl/server';
 
 import { Link } from '@/core/i18n/navigation';
-import { getEntityKind } from '@/config/entities';
+import { getEntityCover, getEntityKind } from '@/config/entities';
 import {
   getAllEntities,
   getEntities,
@@ -185,9 +185,7 @@ export default async function DatabasePage({
               <div className="grid gap-5 md:grid-cols-3">
                 {getPublishedEntityKinds(locale).map((category) => {
                   const records = getEntities(category.id, locale);
-                  const cover = records.find(
-                    (record) => record.image && record.imageAlt
-                  );
+                  const cover = getEntityCover(category, records);
                   return (
                     <section
                       key={category.id}

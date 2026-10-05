@@ -29,6 +29,7 @@ export type EntityKind = {
   readonly singularLabel: string;
   readonly route: string;
   readonly description: string;
+  readonly coverEntityId?: string;
   readonly fields: readonly EntityFieldDefinition[];
   readonly facets: readonly FilterDefinition[];
   readonly cardFields: readonly string[];
@@ -59,12 +60,32 @@ export type EntityRecord = {
   readonly href: string;
 };
 
+const ENTITY_COVERS: Readonly<Record<string, string>> = {
+  machines: 'conveyor-belt',
+  tools: 'pitchfork',
+  products: 'hay-products',
+};
+
+export function getEntityCover(
+  kind: EntityKind,
+  entities: readonly EntityRecord[]
+) {
+  const illustrated = entities.filter(
+    (entity) => entity.image && entity.imageAlt
+  );
+  return (
+    illustrated.find((entity) => entity.id === kind.coverEntityId) ??
+    illustrated[0]
+  );
+}
+
 function kindsForLocale(locale: string): EntityKind[] {
   const copy = getEntityCopy(locale);
   return ['machines', 'tools', 'products'].map((id) => ({
     id,
     ...copy.kinds[id as keyof typeof copy.kinds],
     route: `/database/${id}`,
+    coverEntityId: ENTITY_COVERS[id],
     fields: Object.entries(copy.fields).map(([fieldId, label]) => ({
       id: fieldId,
       label,

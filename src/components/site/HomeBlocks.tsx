@@ -15,7 +15,11 @@ import { getDiscoveryCopy } from '@/content/discovery-copy';
 import { useTranslations } from 'next-intl';
 
 import { Link } from '@/core/i18n/navigation';
-import type { EntityKind, EntityRecord } from '@/config/entities';
+import {
+  getEntityCover,
+  type EntityKind,
+  type EntityRecord,
+} from '@/config/entities';
 import { gameConfig } from '@/config/game';
 import type { HomeBlock } from '@/config/homepage';
 import {
@@ -269,15 +273,13 @@ function EntityIndexBlock({
             className="border-site-outline-strong bg-site-outline-strong grid gap-px border-b last:border-b-0 lg:grid-cols-[minmax(240px,0.72fr)_minmax(0,1.28fr)]"
           >
             <div className="bg-site-surface-container flex flex-col p-6 md:p-8">
-              {entities.some((entity) => entity.image && entity.imageAlt) && (
+              {getEntityCover(kind, entities) && (
                 <Link
                   href={kind.route}
                   className="focus-visible:outline-site-primary -mx-6 -mt-6 mb-6 block focus-visible:outline-2 focus-visible:outline-offset-[-2px] md:-mx-8 md:-mt-8"
                 >
                   <EntityImage
-                    entity={entities.find(
-                      (entity) => entity.image && entity.imageAlt
-                    )!}
+                    entity={getEntityCover(kind, entities)!}
                     preview
                     sizes="(max-width: 1023px) calc(100vw - 48px), 480px"
                   />
