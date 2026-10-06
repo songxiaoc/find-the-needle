@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import Script from 'next/script';
-import { NativeAdRuntime } from '@/components/site/NativeAd';
+// import { NativeAdRuntime } from '@/components/site/NativeAd';
 import { PlausibleAnalytics } from '@/components/site/PlausibleAnalytics';
 import { SiteJsonLd } from '@/components/site/SiteJsonLd';
 import { SiteThemeProvider } from '@/components/site/SiteThemeProvider';
@@ -8,7 +8,7 @@ import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 
 import { routing } from '@/core/i18n/config';
-import { adsterraConfig } from '@/config/advertising';
+// import { adsterraConfig } from '@/config/advertising';
 import { analyticsConfig } from '@/config/analytics';
 import { siteMetadata } from '@/shared/lib/seo';
 
@@ -70,6 +70,7 @@ gtag('config', ${JSON.stringify(gaId)});`}
         <SiteThemeProvider>
           <NextIntlClientProvider>{children}</NextIntlClientProvider>
         </SiteThemeProvider>
+        {/* Third-party ad runtimes temporarily disabled, including Social Bar.
         <NativeAdRuntime />
 
         <Script
@@ -78,6 +79,8 @@ gtag('config', ${JSON.stringify(gaId)});`}
           strategy="afterInteractive"
           data-cfasync="false"
         />
+
+        */}
 
         {analyticsConfig.gameradarPlausibleScriptUrl && (
           <Script id="gameradar-plausible-init" strategy="beforeInteractive">
