@@ -1,11 +1,11 @@
 import { ChevronDown } from 'lucide-react';
 
 import { Link } from '@/core/i18n/navigation';
-// import { advertisementLabel } from '@/config/advertising';
+import { advertisementLabel } from '@/config/advertising';
 import { getGuideCategories } from '@/config/guides-content';
 import { getCommonMessages } from '@/config/locale/messages';
 
-// import { AdSlot } from './AdSlot';
+import { AdSlot } from './AdSlot';
 import { PlayCard } from './PlayCard';
 
 /**
@@ -126,9 +126,7 @@ export function WikiSidebar({
       )}
 
       <PlayCard locale={locale} />
-      {/* Third-party ads temporarily disabled.
       <AdSlot label={advertisementLabel(locale ?? 'en')} />
-      */}
     </div>
   );
 }
