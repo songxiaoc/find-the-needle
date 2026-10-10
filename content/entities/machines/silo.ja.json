@@ -1,0 +1,38 @@
+{
+  "id": "silo",
+  "name": "サイロ（Silo）",
+  "summary": "Silo は干し草を塊にまとめます。開発者によると、塊の中に針が残る場合があるため、販売前に出力をスキャナーまでたどってください。",
+  "updatedAt": "2026-10-05",
+  "version": "開発者の説明（2026 年 9 月 13 日）",
+  "data": {
+    "role": "保管と梱包",
+    "scope": "デモの更新情報 / 議論",
+    "operation": "Silo 内の干し草と針のメッセージを確認してから、出力ベルトを観察します。内部にまだ表示される針は、すでにスキャンされた針とは異なります。",
+    "community": "針が待機している場合、次の出力分を完成させるだけのばらの干し草を追加するというプレイヤーの提案があります。コミュニティの提案であり、共通のバッチ量や確実な修正方法は確認されていません。",
+    "check": "針を回収するために Silo を解体するのは避けてください。破壊警告が出たというプレイヤーの報告があります。セーブを保持し、まず搬入、出力、スキャンを確認します。"
+  },
+  "sources": [
+    {
+      "label": "開発者の返信とプレイヤーの報告 · 2026 年 9 月 13 日",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "hay-wad",
+  "name": "干し草の塊（Hay Wad）",
+  "summary": "干し草の塊は Silo でまとめられた干し草です。開発者は針が入る場合があると確認しています。梱包された製品だからといって、スキャンなしで安全に売れるとは限りません。",
+  "updatedAt": "2026-10-05",
+  "version": "開発者の説明（2026 年 9 月 13 日）",
+  "data": {
+    "role": "梱包された干し草",
+    "scope": "デモの更新情報 / 議論",
+    "operation": "Silo の出力から各ベルトとアームの受け渡しを経て塊をたどります。最終販売ラインに合流する前に、その経路にスキャンが含まれるか確認してください。",
+    "check": "開発者によると、干し草製品の中に入ったまま売られた針は山へ戻ります。Silo に待機中の針がまだ表示される場合は、すでに戻ったと考えずに出力を調べてください。"
+  },
+  "sources": [
+    {
+      "label": "開発者の返信とプレイヤーの報告 · 2026 年 9 月 13 日",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "silo"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "products",
+      "id": "hay-products"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ]
+}

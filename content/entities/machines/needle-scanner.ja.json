@@ -1,0 +1,54 @@
+{
+  "id": "needle-scanner",
+  "name": "針スキャナー（Needle Scanner）",
+  "summary": "スキャナーは自動で針を探すラインの一部です。針が販売台に届いた場合は、主ベルトだけでなくすべての干し草製品の経路を確認してください。",
+  "updatedAt": "2026-10-05",
+  "version": "コミュニティの報告（2026 年 9 月）と公式ストアの説明",
+  "data": {
+    "role": "針の検出",
+    "scope": "デモの更新情報 / 議論",
+    "check": "各ベルトと、ロボットアームが届くすべてのベルトをたどります。スキャナーの後で販売経路に合流する分岐を探してください。現在のゲーム内設定とスキャナーの表示を確認します。",
+    "community": "プレイヤーは、詰まったラインを別々のスキャナーへ分け、通過後に合流させることを提案しています。拡張前に小規模で試してください。この提案からスキャン速度や確実な速度向上は判断できません。"
+  },
+  "sources": [
+    {
+      "label": "Steam 公式ストア",
+      "url": "https://store.steampowered.com/app/5160800/Find_The_Needle/"
+    },
+    {
+      "label": "コミュニティの経路に関する議論 · 2026 年 9 月 21 日",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    },
+    {
+      "label": "コミュニティのスキャナーに関する議論 · 2026 年 9 月 16 日",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "robotic-arm"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/needles-and-scanners",
+    "/guides/guide/automation"
+  ],
+  "image": "/images/find-the-needle/official-research.webp",
+  "imageAlt": "Needle Cabinet、Scanner Mk I Plans、Metal Detector の項目が表示された研究メニュー。",
+  "imageCaption": "研究メニューで Metal Detector のすぐ上にある Scanner Mk I Plans を探してください。Steam 公式画像。",
+  "imagePosition": "40% 31%",
+  "imageZoom": 3
+}

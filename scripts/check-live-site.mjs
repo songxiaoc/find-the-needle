@@ -1,7 +1,13 @@
+// Run with: node --import tsx scripts/check-live-site.mjs [base-url]
+// tsx resolves the shared TypeScript configuration and its path aliases.
 import assert from 'node:assert/strict';
 import { readdirSync, readFileSync } from 'node:fs';
 import matter from 'gray-matter';
 
+import {
+  localeLanguageTag,
+  supportedLocaleCodes,
+} from '../src/config/locale/index.ts';
 import { PUBLIC_PATHS } from '../src/config/locale/routes.ts';
 import {
   generatedDefaultLocale as defaultLocale,
@@ -103,6 +109,30 @@ assert.equal(
   urls.length,
   'Sitemap must not contain duplicate URLs'
 );
+
+for (const match of sitemap.matchAll(/<url>([\s\S]*?)<\/url>/g)) {
+  const entry = match[1];
+  const url = decode(entry.match(/<loc>([^<]+)<\/loc>/)?.[1] || '');
+  const path = new URL(url).pathname;
+  const alternates = new Map(
+    tags(entry, 'xhtml:link').map((link) => [link.hreflang, link.href])
+  );
+  check(
+    alternates.size === locales.length + 1,
+    `${path}: sitemap alternate count`
+  );
+  for (const language of [...locales, 'x-default']) {
+    check(
+      alternates.get(localeLanguageTag(language)) ===
+        languageUrl(
+          semanticPath(path),
+          language === 'x-default' ? defaultLocale : language
+        ),
+      `${path}: invalid sitemap ${language} alternate`
+    );
+  }
+}
+
 const publishedPaths = new Set(urls.map((url) => new URL(url).pathname));
 for (const path of expectedPaths) {
   for (const locale of locales) {
@@ -213,7 +243,7 @@ for (let offset = 0; offset < urls.length; offset += 4) {
         );
         for (const language of [...locales, 'x-default']) {
           check(
-            alternates.get(language) ===
+            alternates.get(localeLanguageTag(language)) ===
               languageUrl(
                 semanticPath(path),
                 language === 'x-default' ? defaultLocale : language
@@ -268,7 +298,7 @@ for (const [url, alternates] of snapshots) {
   const locale = routeLocale(new URL(url).pathname);
   for (const alternate of alternates.values()) {
     check(
-      snapshots.get(alternate)?.get(locale) === url,
+      snapshots.get(alternate)?.get(localeLanguageTag(locale)) === url,
       `${url}: hreflang is not reciprocal with ${alternate}`
     );
   }
@@ -278,8 +308,9 @@ const absentPaths = [
   '/docs',
   '/database/unknown',
   '/does-not-exist',
-  '/ja',
-  '/it/guides',
+  ...[...new Set([...supportedLocaleCodes, 'it', 'uk', 'ar', 'fa', 'zh-TW'])]
+    .filter((locale) => !locales.includes(locale))
+    .flatMap((locale) => [`/${locale}`, `/${locale}/guides`]),
   '/fr/docs',
   '/de/database/machines/unknown',
   '/ru/guides/guide/unknown',

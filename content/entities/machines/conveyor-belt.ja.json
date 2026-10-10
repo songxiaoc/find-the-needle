@@ -1,0 +1,50 @@
+{
+  "id": "conveyor-belt",
+  "name": "コンベヤーベルト（Conveyor Belt）",
+  "summary": "ベルトは設備間で干し草を運びます。デモ V8 でスナップが改良され、自動経路探索が追加されました。自由に配置したい場合は F で No Snap Mode を有効にします。",
+  "updatedAt": "2026-10-05",
+  "version": "デモ V8 の告知（2026 年 9 月 11 日）。インストール済みのバージョンの表示に従ってください",
+  "data": {
+    "role": "輸送",
+    "scope": "デモの更新情報 / 議論",
+    "operation": "短い区間を接続し、製品が通過するのを確認してからラインを延ばしてください。ベルトが機械の近くで終わっているだけでは、接続が機能しているとは判断できません。",
+    "check": "最初に止まった製品から逆にたどります。下流の行き先、各接続、スキャンを迂回する脇道の有無を確認してください。"
+  },
+  "sources": [
+    {
+      "label": "デモ V8 の公式更新情報 · 2026 年 9 月 11 日",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "コミュニティの経路に関する議論 · 2026 年 9 月 21 日",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567046289381054539/"
+    },
+    {
+      "label": "Steam 公式画像",
+      "url": "https://store.steampowered.com/app/5165210/Find_The_Needle_Demo/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "hay-sell-stand"
+    },
+    {
+      "kind": "machines",
+      "id": "u-splitter"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    }
+  ],
+  "relatedGuides": ["/guides/guide/automation"],
+  "image": "/images/find-the-needle/official-demo-yard.webp",
+  "imageAlt": "コンベヤーが干し草の山から小さな干し草の塊を SELL HAY の販売台へ運んでいます。",
+  "imageCaption": "左奥から SELL HAY の受け渡し地点へ続く斜めのベルトをたどってください。Steam の公式デモ画像。",
+  "imagePosition": "35% 50%"
+}

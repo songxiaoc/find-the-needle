@@ -1,0 +1,41 @@
+{
+  "id": "u-splitter",
+  "name": "U 型分岐器（U-Splitter）",
+  "summary": "U-Splitter はデモ V8 で追加されたベルト経路部品です。すべてを 1 本の経路に流すのではなく、ラインを確認したり分散させたりしたい場合に分岐を使います。",
+  "updatedAt": "2026-10-05",
+  "version": "デモ V8 の告知（2026 年 9 月 11 日）。インストール済みのバージョンの表示に従ってください",
+  "data": {
+    "role": "ベルト経路",
+    "scope": "デモの更新情報 / 議論",
+    "community": "元のスキャンラインが詰まるとき、プレイヤーは別々のスキャナー分岐を提案しています。両方の出力をスキャンに通し、必要ならその後で合流させてください。",
+    "check": "1 個の製品が各分岐に入り、行き先に到達するのを観察します。V8 の更新情報には分配比率や確実な処理量向上は記載されていません。"
+  },
+  "sources": [
+    {
+      "label": "デモ V8 の公式更新情報 · 2026 年 9 月 11 日",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "コミュニティのスキャナーに関する議論 · 2026 年 9 月 16 日",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/567045939002396961/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "machines",
+      "id": "u-joiner"
+    },
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ]
+}

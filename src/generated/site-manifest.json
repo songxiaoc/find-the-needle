@@ -20,6 +20,7 @@
     "src/config/locale/messages/en/common.json",
     "src/config/locale/messages/es/common.json",
     "src/config/locale/messages/fr/common.json",
+    "src/config/locale/messages/ja/common.json",
     "src/config/locale/messages/ru/common.json",
     "src/config/locale/messages/zh/common.json",
     "src/config/style/active-theme.css",
@@ -40,6 +41,7 @@
     "de",
     "es",
     "ru",
-    "zh"
+    "zh",
+    "ja"
   ]
 }

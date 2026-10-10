@@ -1,0 +1,46 @@
+{
+  "id": "hay-sell-stand",
+  "name": "干し草販売台（Hay Sell Stand）",
+  "summary": "販売先には SELL HAY と表示されています。デモ V8 でコンベヤー接続へのスナップが追加されました。開発者によると、干し草製品の中に入ったまま売られた針は山に戻ります。",
+  "updatedAt": "2026-10-05",
+  "version": "デモ V8 の告知（2026 年 9 月 11 日）。インストール済みのバージョンの表示に従ってください",
+  "data": {
+    "role": "販売",
+    "scope": "デモの更新情報 / 議論",
+    "operation": "ベルトを近くで止めるのではなく、販売台の接続口を使ってください。配置がスナップしない場合は、F で No Snap Mode が有効になっていないか確認します。",
+    "check": "最後に合流する分岐をスキャン地点まで逆にたどります。開発者の説明は通常の針の再循環についてであり、針消失の不具合から必ず回復できる保証ではありません。"
+  },
+  "sources": [
+    {
+      "label": "デモ V8 の公式更新情報 · 2026 年 9 月 11 日",
+      "url": "https://steamcommunity.com/games/5160800/announcements/detail/688642424435639126"
+    },
+    {
+      "label": "開発者の返信とプレイヤーの報告 · 2026 年 9 月 13 日",
+      "url": "https://steamcommunity.com/app/5160800/discussions/0/563667940587640064/"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "kind": "machines",
+      "id": "conveyor-belt"
+    },
+    {
+      "kind": "machines",
+      "id": "needle-scanner"
+    },
+    {
+      "kind": "products",
+      "id": "hay-wad"
+    }
+  ],
+  "relatedGuides": [
+    "/guides/guide/automation",
+    "/guides/guide/needles-and-scanners"
+  ],
+  "image": "/images/find-the-needle/screenshot-1.webp",
+  "imageAlt": "SELL HAY と表示された販売台へ干し草を運ぶコンベヤー。",
+  "imageCaption": "ベルトが SELL HAY の販売台の正面につながっています。行き先の確認に使ってください。画像の価格は現在の価格の参考にはなりません。Steam 公式画像。",
+  "imagePosition": "60% 55%",
+  "imageZoom": 1.4
+}

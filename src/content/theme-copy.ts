@@ -30,6 +30,11 @@ const copy: Record<string, ThemeCopy> = {
     light: 'Включить светлую тему',
     dark: 'Включить тёмную тему',
   },
+  ja: {
+    toggle: '配色を切り替える',
+    light: 'ライトテーマに切り替える',
+    dark: 'ダークテーマに切り替える',
+  },
   zh: {
     toggle: '切换配色',
     light: '切换为浅色',
