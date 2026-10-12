@@ -3,34 +3,42 @@
 import { useEffect } from 'react';
 
 import { adsterraConfig } from '@/config/advertising';
+import { afterDocumentAdDelay } from '@/shared/lib/ad-delay';
 
 let nativeObserver: MutationObserver | undefined;
 
 export function NativeAdRuntime() {
-  useEffect(() => {
-    if (nativeObserver) return;
+  useEffect(
+    () =>
+      afterDocumentAdDelay(() => {
+        if (nativeObserver) return;
 
-    // The provider skips a placement key after its first initialization.
-    // Keep one runtime per document, including locale layout remounts.
-    const wrapper = document.createElement('div');
-    const container = document.createElement('div');
-    container.id = adsterraConfig.native.containerId;
-    const script = document.createElement('script');
-    script.async = true;
-    script.dataset.cfasync = 'false';
-    script.src = adsterraConfig.native.scriptUrl;
-    wrapper.append(container);
+        // The provider skips a placement key after its first initialization.
+        // Keep one runtime per document, including locale layout remounts.
+        const wrapper = document.createElement('div');
+        const container = document.createElement('div');
+        container.id = adsterraConfig.native.containerId;
+        const script = document.createElement('script');
+        script.async = true;
+        script.dataset.cfasync = 'false';
+        script.src = adsterraConfig.native.scriptUrl;
+        wrapper.append(container);
 
-    const placeAd = () => {
-      const host = document.querySelector('[data-ad-native-host]');
-      if (host && wrapper.parentNode !== host) host.append(wrapper);
-    };
-    placeAd();
-    wrapper.append(script);
+        const placeAd = () => {
+          const host = document.querySelector('[data-ad-native-host]');
+          if (host && wrapper.parentNode !== host) host.append(wrapper);
+        };
+        placeAd();
+        wrapper.append(script);
 
-    nativeObserver = new MutationObserver(placeAd);
-    nativeObserver.observe(document.body, { childList: true, subtree: true });
-  }, []);
+        nativeObserver = new MutationObserver(placeAd);
+        nativeObserver.observe(document.body, {
+          childList: true,
+          subtree: true,
+        });
+      }),
+    []
+  );
 
   return null;
 }

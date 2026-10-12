@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import { adsterraConfig, type BannerUnit } from '@/config/advertising';
 
 import styles from './AdSlot.module.css';
+import { useAdDelay } from './useAdDelay';
 
 function bannerDocument(unit: BannerUnit) {
   const options = {
@@ -28,6 +29,7 @@ export function AdSlot({
   label?: string;
   className?: string;
 }) {
+  const ready = useAdDelay();
   const slot = useRef<HTMLDivElement>(null);
   const [unit, setUnit] = useState<BannerUnit | null>(null);
   const [availableWidth, setAvailableWidth] = useState(0);
@@ -69,7 +71,7 @@ export function AdSlot({
             variant === 'leaderboard' ? styles.leaderboard : styles.rectangle
           }
         >
-          {unit && (
+          {ready && unit && (
             <div
               key={unit.key}
               className="overflow-hidden"

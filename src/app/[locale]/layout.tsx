@@ -4,11 +4,11 @@ import { NativeAdRuntime } from '@/components/site/NativeAd';
 import { PlausibleAnalytics } from '@/components/site/PlausibleAnalytics';
 import { SiteJsonLd } from '@/components/site/SiteJsonLd';
 import { SiteThemeProvider } from '@/components/site/SiteThemeProvider';
+import { SocialBarAd } from '@/components/site/SocialBarAd';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 
 import { routing } from '@/core/i18n/config';
-import { adsterraConfig } from '@/config/advertising';
 import { analyticsConfig } from '@/config/analytics';
 import { siteMetadata } from '@/shared/lib/seo';
 
@@ -72,12 +72,7 @@ gtag('config', ${JSON.stringify(gaId)});`}
         </SiteThemeProvider>
         <NativeAdRuntime />
 
-        <Script
-          id="adsterra-social-bar"
-          src={adsterraConfig.socialBarScriptUrl}
-          strategy="afterInteractive"
-          data-cfasync="false"
-        />
+        <SocialBarAd />
 
         {analyticsConfig.gameradarPlausibleScriptUrl && (
           <Script id="gameradar-plausible-init" strategy="beforeInteractive">
