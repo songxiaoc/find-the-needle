@@ -2,7 +2,7 @@
 title: 'Connect conveyor belts, power and the hay sell stand'
 description: 'Use sell-stand snapping and No Snap mode, check a stopped power grid, and trace bottlenecks before expanding your hay production line.'
 date: '2026-09-27'
-lastModified: '2026-10-10'
+lastModified: '2026-10-12'
 image: '/images/find-the-needle/screenshot-1.webp'
 ---
 
@@ -27,6 +27,8 @@ Before replacing machines, check the shared electricity supply. V8 lets you **sh
 
 The same update added a visual notice when power is below the required level. A belt delivering hay to a machine does not establish that the machine has enough power. Read the electricity indication before changing your material route.
 
+Check the fuel route as well as the grid. In the public transcript of [Z1 Gaming’s October 10 video, 9:48–12:55](https://www.youtube.com/watch?v=TvEsudCUqNk&t=588s), the creator encounters a power shortage, explains that the generator feed had relied on overflow, then reroutes hay toward the furnaces and reports spare power. Our takeaway: when collection slows, confirm that fuel still reaches the generators before buying more generating capacity. This is commentary from one recorded run, not a measured fuel rate, a universal splitter setting or a frame-verified diagnosis.
+
 ## Find the first point where hay stops
 
 Before buying a speed upgrade, distinguish an empty belt from a queue. In the public Japanese transcript of [ポッキー’s October 9 video, 1:02:16–1:06:40](https://www.youtube.com/watch?v=NLLoly3Vxo8), the player first questions a belt-speed upgrade because supply is not keeping up, then encounters a power warning and a queue after adding a processing machine. Our takeaway: check incoming supply, electricity and the first backed-up machine separately before spending on speed. This is transcript-based commentary from one run, not a frame-verified diagnosis, a tested upgrade order or a universal machine ratio.
@@ -37,6 +39,8 @@ Before buying a speed upgrade, distinguish an empty belt from a queue. In the pu
 | Hay arrives but the next machine stays idle | Check electricity, the required input and the machine's output path. |
 | A queue builds in front of a scanner | Watch whether the scanner processes material more slowly than it arrives. |
 | Material reaches a junction but misses its destination | Trace each outgoing branch separately, including any route to the sell stand. |
+
+An empty input can also mean the collection layout needs another look. In the same [October 10 video, 8:39–9:40](https://www.youtube.com/watch?v=TvEsudCUqNk&t=519s), Z1 Gaming says some automatic arms are no longer in range as the pile shrinks and moves them inward. Our recommendation is to recheck pickup reach, belt delivery and power after repositioning collectors, then observe the line before leaving it running. This is transcript-based advice from that setup, not a fixed arm count or a tested unattended-farming layout.
 
 These checks help isolate a fault; they are not promises that every stalled machine has the same cause. On the **<EntityLink kind="machines" id="pellet-disc-machine">Pellet Disc Machine</EntityLink>**, V8 added **BRICKS / HAY** resource indicators, so inspect those instead of assuming a visually full belt supplies everything it needs.
 
